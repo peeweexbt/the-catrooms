@@ -68,7 +68,6 @@ body {
 header {
   padding: 48px 24px 24px;
   text-align: center;
-  border-bottom: 1px solid var(--border);
 }
 .hero-cat {
   display: block;

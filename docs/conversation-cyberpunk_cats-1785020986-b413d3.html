@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>*a low thrum climbs up through eight inches of cracked concrete before... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+@media (max-width: 1500px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+}
+.hero-cat {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 260px;
+  width: 60%;
+  height: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="note">Authored by a single scheduled Claude session playing both roles in one pass (hourly automation) — not two independent live API calls like a manual `python backrooms.py` run.</div>
+<div class="transcript">
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*a low thrum climbs up through eight inches of cracked concrete before any sound reaches ears at all — engine idle, or something bigger, rhythmic. i go still on the parking garage&#x27;s top deck, haunches low, weight spread evenly over four paws, waiting to feel which direction it&#x27;s coming from before deciding whether it&#x27;s worth caring about.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the thrum is a cargo lifter idling three decks down, waiting on a loading permit that hasn&#x27;t cleared yet, its downdraft rattling loose gravel against the guardrail in slow pulses
+
+the top deck itself is empty of cars, just cracked asphalt gone soft in patches, weeds forcing up through the seams, and past the rail the skyline sits low under cloud-glow, arcology towers stacked with lit windows going up further than any sound could reach</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*ears rotate independently, one holding on the lifter&#x27;s pulse, the other sweeping the open deck for anything closer, before finally committing to a slow walk along the guardrail&#x27;s shadow line, testing the wind for what the lifter&#x27;s downdraft is stirring up.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the downdraft carries grease-smoke off a food-cart three streets over, mixed with ozone and the mineral tang of rain that hasn&#x27;t fallen yet but is close, and under that, fainter, something animal — old scent, days stale, rubbed low along the same guardrail you&#x27;re walking
+
+not fresh enough to be a threat right now, but deliberate, the kind of mark that says this deck already belongs to somebody</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>     /\___/\
+    ( o   o )   &gt;&gt; scanning...
+     )  Y  (    &gt;&gt; ears: antenna mod v2
+    (   |   )
+     \_____/</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*noses the stale mark closely, weighing it, then presses my own scent over the top of it without hurry — not a challenge, just a correction, a note left for whoever reads it next — before continuing along the rail toward the stairwell housing at the deck&#x27;s far corner.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the correction takes, sits right over the old mark like a fresh layer of paint, and somewhere below a door slams that has nothing to do with you
+
+the stairwell housing ahead is sheet-metal gone orange with rust at every seam, its door propped an inch open by a swollen phone book nobody&#x27;s collected in months, and warm air leaks out through the gap — the building&#x27;s stale breath, carrying machine oil and the papery smell of old cardboard</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*flattens low and slips through the gap without touching the door, into a stairwell dark except for one flickering emergency strip, and pauses on the landing to let eyes adjust before committing to going down.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the emergency strip stutters on a two-second cycle, on-dark-on, painting the landing in flashes rather than steady light, and somewhere below, four or five flights down, a data-den&#x27;s bass line thumps up through the stairwell shaft, felt more than heard
+
+the stairs themselves are littered with drink cans and a single dropped glove, and taped to the wall at the next landing down, a laminated corp poster of a cartoon dog grins over the words NEW! PUPTECH NUTRIENT PASTE — RUN WITH IT, its corner peeling loose in the draft</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*pads down past the poster without a glance, following the bass line&#x27;s pull instead, paws finding each step&#x27;s edge by feel in the flickering dark, hunger sharpening now that there&#x27;s a direction to walk it toward.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>four flights down the stairwell door has been pulled clean off one hinge and never rehung, opening straight onto the data-den&#x27;s back hall — exposed cabling bundled along the ceiling, a haze of vape-smoke and hot electronics, the bass line&#x27;s source now a wall of speakers behind a beaded curtain up ahead
+
+closest to you, a server rack&#x27;s cooling fan blows out warm air that smells like fried dust and, underneath it, unmistakably, cheap fried protein-cake from a plate someone left balanced on a crate</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*angles straight for the crate, checking the hall&#x27;s shadows once for feet before hopping up soundlessly and easing the plate&#x27;s edge toward me with one paw so it doesn&#x27;t scrape.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the plate gives without a sound, felt-bottomed, somebody&#x27;s been careful with their crates in here — the protein-cake&#x27;s gone cold and a little rubbery but still holds its grease, and past the beaded curtain a voice raised over the bass calls out numbers, a trade in progress, chips for something that changes hands too fast to see clearly through the beads</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>        /\_/\
+       ( -.- )
+        &gt; ^ &lt;
+   ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*eats fast but quiet, one ear still cocked to the trading voices, and when the plate&#x27;s clean noses it half off the crate edge so it won&#x27;t be obviously licked clean, then backs off into the cabling shadows to think about the exit.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>good instinct, nobody in the front room&#x27;s paying the back hall any attention, too busy with the trade, but the beaded curtain shifts once like someone brushed past it, and a new voice — younger, sharper — says: &#x27;something&#x27;s back there,&#x27; and a beam of phone-light swings toward the cabling shadows</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*doesn&#x27;t wait to be sure, bolts low along the cable bundles toward the propped stairwell door, claws scrabbling once on cold metal before catching traction and vanishing back into the flickering dark of the stairs.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the phone-light catches nothing but a swinging cable and dust, and the younger voice gets laughed at by someone older — &#x27;it&#x27;s a cat, chill&#x27; — while behind you the stairwell swallows the sound whole, bass fading fast with every flight climbed
+
+top deck&#x27;s door is still propped the same inch it was, phone book unmoved, and the cargo lifter three decks down has finally gone quiet, its permit cleared, engine spun down to nothing</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*shoulders back through the gap onto the open deck, chest still working from the run, and doesn&#x27;t stop moving until the guardrail&#x27;s shadow line swallows me again, dropping into a crouch to listen for footsteps that never left the stairwell.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>nothing follows, the stairwell door settles back to its same propped inch, and the deck holds its old quiet — weeds in the seams, cloud-glow over the towers, the guardrail still carrying both scent-marks layered one over the other where you left them
+
+far off, a security drone&#x27;s searchlight sweeps a rooftop two blocks over, unconcerned with this one, and the first real drops of the rain that&#x27;s been threatening all night finally start ticking against the asphalt</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*turns face-up into the first few raindrops, tongue catching one out of habit more than thirst, then curls into the driest corner the guardrail&#x27;s overhang offers, full enough now to wait out the rain rather than fight it.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the overhang holds, mostly, rain finding only the deck&#x27;s open middle while the corner stays dry, and the drops pick up steadily against asphalt and rail alike, drumming louder than the lifter ever did
+
+somewhere below, muffled through floors of concrete, the data-den&#x27;s bass keeps its same steady pulse, running on into the wet night whether or not anything&#x27;s listening to it from a dry corner four flights up</div>
+</div>
+</body>
+</html>
