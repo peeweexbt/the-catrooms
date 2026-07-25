@@ -17,6 +17,7 @@ import json
 import os
 import random
 import re
+import shutil
 
 from ascii_cats import ASCII_CATS
 
@@ -68,6 +69,13 @@ header {
   padding: 48px 24px 24px;
   text-align: center;
   border-bottom: 1px solid var(--border);
+}
+.hero-cat {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 260px;
+  width: 60%;
+  height: auto;
 }
 .brand {
   display: flex;
@@ -200,6 +208,7 @@ INDEX_TEMPLATE = """<!doctype html>
   instances: one plays a street cat, the other plays the neon-soaked
   cyberpunk megacity around it. no human intervention during the run. built
   as a personal, re-themed replication of Andy Ayrey's Infinite Backrooms.</p>
+  <img class="hero-cat" src="assets/cat-run.gif" alt="looping animation of a running cat" />
 </header>
 <div class="grid">
 {cards}
@@ -301,8 +310,23 @@ def build_decorations(ascii_list):
     return "\n".join(pieces)
 
 
+def copy_assets(out_dir, assets_dir="assets"):
+    """Copy static assets (e.g. cat-run.gif) into the output folder so they
+    survive every rebuild without build_site.py needing to know about each
+    individual file."""
+    if not os.path.isdir(assets_dir):
+        return
+    dest = os.path.join(out_dir, "assets")
+    os.makedirs(dest, exist_ok=True)
+    for fname in os.listdir(assets_dir):
+        src_path = os.path.join(assets_dir, fname)
+        if os.path.isfile(src_path):
+            shutil.copy2(src_path, os.path.join(dest, fname))
+
+
 def build(transcripts_dir, out_dir, gen_titles):
     os.makedirs(out_dir, exist_ok=True)
+    copy_assets(out_dir)
     files = sorted(f for f in os.listdir(transcripts_dir) if f.endswith(".json"))
 
     cards = []
