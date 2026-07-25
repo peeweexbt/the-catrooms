@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>*noses up through a gap in a maintenance grille onto a raised monorail... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+@media (max-width: 1500px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="note">Authored by a single scheduled Claude session playing both roles in one pass (hourly automation) — not two independent live API calls like a manual `python backrooms.py` run.</div>
+<div class="transcript">
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*noses up through a gap in a maintenance grille onto a raised monorail platform, belly low against cold ceramic tile. rail-hum vibrates up through paws before any sound of it reaches ears — a steady thrum, far off but coming closer, felt before heard.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>platform runs long and narrow, rain beading on an overhead canopy that doesn&#x27;t quite keep the wind out, benches bolted in a row all empty this hour, one flickering under a dead light panel
+
+the rail-hum builds low across the tracks, still distant, and a turnstile bank stands at the platform&#x27;s near end, each gate breathing a thin line of warmth into the cold — heat-sensor strips meant for fare-tags, not paws
+
+overhead a NekoCorp screen cycles silently through an ad nobody&#x27;s watching, the only motion besides rain</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*slips along the base of the bench row, keeping to shadow between light-pools, drawn sideways toward the turnstile warmth without committing to crossing the open tile to reach it. ears track the rail-hum&#x27;s rise.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the warm line off the nearest turnstile carries a chemical tang underneath, cleaning solvent scrubbed into the base plate, and past it the tile holds older smells layered thin — spilled noodle broth gone sour days ago, a hundred different shoe-treads, someone&#x27;s dropped fare-chip trodden flat
+
+rail-hum&#x27;s climbing fast now, a pressure building in the ears more than a sound, and far down the platform&#x27;s length the track-bed lights shift from dull red to pulsing amber</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>     /\___/\
+    ( o   o )   &gt;&gt; scanning...
+     )  Y  (    &gt;&gt; ears: antenna mod v2
+    (   |   )
+     \_____/</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*drops flat behind the last bench leg as the amber light shifts, tail wrapped tight, watching the track-bed rather than the turnstiles now. doesn&#x27;t bolt, just flattens and waits out the pressure building in the ears.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the train doesn&#x27;t arrive so much as arrive all at once — a wall of displaced air first, warm and oil-thick, then the shriek of brakes eating speed, then the cars themselves sliding past close enough that the platform tile hums under it
+
+doors hiss open along its length, and for a moment nobody steps off, just steam venting from between the cars, curling low across the tile toward the bench row</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*stays flat through the steam, nose working it once it reaches the bench — oil, ozone, hot brake-dust, and under all of it something food-adjacent, fried, foreign to this platform.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>a lone passenger steps off two cars down, hood up against the rain, dropping a paper-wrapped skewer stick still greasy at one end into a bin that&#x27;s already overflowing — it doesn&#x27;t quite make it in, bounces off the rim and skitters under the bench two down from where you&#x27;re pressed
+
+the passenger doesn&#x27;t look back, moves straight for the far exit stairs, footsteps fading into rain-static
+
+doors hiss shut, and the train pulls out the way it came, the pressure in the ears easing off in reverse</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*waits for the last car&#x27;s rumble to fade before breaking cover, moving low and fast along the bench legs to the fallen skewer stick, snatching it up and dragging it back into the shadow between benches before eating.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>grease and char, something like meat but sweeter, cheap grill-stand stock sold two coaches down from here most nights — good enough that it&#x27;s gone in a dozen quick bites, stick and all worried at afterward for whatever clings to the wood
+
+the platform&#x27;s quiet again, rain filling back in where the train&#x27;s noise was, and down at the far end past the dead light panel, something else moves — low, deliberate, keeping to the same shadow-line you just left</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*freezes mid-lick, ears rotating hard toward the far end, weight settling back onto haunches. doesn&#x27;t retreat yet, just tracks the movement, nose lifting to test the air past the grease still on it.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the shape resolves at the dead light panel&#x27;s edge — another cat, rangy, one ear notched clean through, moving with the flat unhurried certainty of something that&#x27;s crossed this tile a thousand times before
+
+its scent arrives ahead of it, marked heavy and recent along the far bench legs, territory laid down in confident overlapping passes, and it stops at the boundary of its own marking, not crossing further, just watching</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>     /\/\_/\/\
+    (  O   O  )
+     \  ^Y^  /
+      )=====(      -- ears up, rotor incoming --</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*lowers itself slightly, not backing off but not advancing either, tail giving one slow flick. holds the notch-eared cat&#x27;s stare for a long beat, weighing the skewer-grease scent still on its own whiskers against the marked territory ahead.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>neither of you moves for a long stretch, rain filling the gap between, and then the notch-eared cat blinks first — slow, deliberate, not submission so much as a decision that tonight isn&#x27;t the night, and turns to pad back down its own end of the platform without a sound
+
+its scent-line holds firm right up to the dead light panel and no further — the boundary was never really in question, just being confirmed</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*eases back down off its haunches once the notch-eared shape is gone, turns from the boundary rather than testing it, and pads back toward the grille gap it came up through, pausing once at the platform&#x27;s edge to look down at the wet street glow below.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>from the edge, the street two levels down runs as a smear of red and gold reflected in standing water, tail-lights and stall-lanterns and one drone&#x27;s searchlight sweeping slow across it all, none of it looking up
+
+the rail-hum starts building again somewhere far off, another train working its way down the line, and the turnstile heat-strips keep breathing their thin warmth into the empty platform behind you, patient, indifferent to who&#x27;s crossed them tonight</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*drops back down through the grille gap without a sound, the platform&#x27;s amber light and rain-hiss cutting off behind as the gap closes, replaced by close dark and the settled quiet of the wall space between floors.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the wall space holds still air, warmer than the platform, carrying nothing but old dust and the faint metallic taste of pipes running somewhere close — no rail-hum here, no rain, just the muffled world going on two levels up, distant enough now to feel like it belongs to someone else entirely</div>
+</div>
+</body>
+</html>

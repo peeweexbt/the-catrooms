@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>*noses up through a gap in the chain-link where the monorail platform&#x27;... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+@media (max-width: 1500px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="note">Authored by a single scheduled Claude session playing both roles in one pass (hourly automation) — not two independent live API calls like a manual `python backrooms.py` run.</div>
+<div class="transcript">
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*noses up through a gap in the chain-link where the monorail platform&#x27;s stairwell used to be gated, ears swiveling to the electric groan of a train somewhere off in the dark, rails ticking with cooling heat underfoot even though nothing&#x27;s run through here in an hour.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the platform stretches long and empty, its overhead awning punched through in three places where rain gets in and pools in shallow craters across the tile, each one holding a smear of neon off the arcology towers beyond the rail
+
+the rails themselves still tick, contracting, ghost-heat from the last car through, and past the ticket gantry a service speaker loops a departure chime with no train to announce, over and over into the empty dark
+
+somewhere below the platform edge, wind moves through the track bed, carrying grease and ozone and the flat mineral smell of standing water</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*creeps along the tile seam where shadow pools deepest, keeping the ticket gantry&#x27;s bulk between itself and the open platform edge, whiskers catching the draft coming up off the track bed and flattening slightly against it.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the gantry&#x27;s underside is warm, a dead scanner panel still holding the day&#x27;s heat, and tucked against its base a nest of shredded ad-vinyl someone else built and abandoned weeks back, the smell gone stale and cold
+
+farther down the platform a maintenance hatch stands cracked an inch, breathing out oil-warm air and a rhythmic clank from somewhere below, machinery still working long after the trains stopped, and the departure chime keeps looping, patient, indifferent</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*angles toward the hatch, low and unhurried, pausing every few steps to let an ear tip back toward the chime and confirm it&#x27;s not changing rhythm — not yet ready to trust the empty platform at its back.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the hatch gap widens just enough at nose height to spill warm grease-smell and the clank of a conveyor still running somewhere below grade, feeding something that never stops needing fed
+
+through the gap: rungs bolted into the shaft wall, going down into a service tunnel lit by one flickering strip, and at the very edge of hearing under the clank, a second sound — smaller, quicker, metal on metal, like claws finding their own purchase on the same rungs, already below</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>     /\/\_/\/\
+    (  O   O  )
+     \  ^Y^  /
+      )=====(      -- ears up, rotor incoming --</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*freezes mid-step at the ascii break&#x27;s warning made real — a drone&#x27;s rotor cuts in overhead, thin and fast, and it drops flat against the tile in the gantry&#x27;s shadow rather than committing to the hatch, tail clamped down tight.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the drone skims the platform&#x27;s length at head height, searchlight tracing the awning&#x27;s punched-through gaps rather than the floor, hunting rooftop signal-thieves and not strays, and it banks off toward the arcology towers without ever dipping its beam low enough to find the gantry&#x27;s shadow
+
+below, the hatch rungs go quiet — whatever was descending has stopped, or gone still the same way you have, waiting on the same rotor-thrum to pass</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*waits three full breaths after the rotor fades before uncoiling, then commits to the hatch fast while the platform&#x27;s still clear, dropping paw over paw down the cold rungs into the shaft&#x27;s flickering light.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the rungs are slick with condensation, the strip-light overhead stuttering on a bad ballast, and at the bottom the tunnel opens onto a conveyor belt hauling scrap chip-casings toward a grinder somewhere out of sight, the clank-rhythm loud enough now to feel in the chest
+
+across the belt, low against the far wall, the something-else that was on the rungs first sits watching — not a cat, smaller, quicker-moving, a service-bot the size of a shoebox with one working headlamp eye, its head cocked at you with no hostility in the posture, just cataloguing</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*holds still on the bottom rung, half-crouched, reading the bot&#x27;s stillness rather than its shape, tail low, deciding whether the belt&#x27;s noise is loud enough to move under without the headlamp catching the motion.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the headlamp doesn&#x27;t track you the way a hunting drone would — it pans once, slow, logs whatever it logs, and swivels back to the belt, more concerned with casing-count than with a cat on a rung
+
+the belt itself runs close enough to the wall that a strip of dry concrete survives along its edge, narrow but walkable, leading past the grinder-noise toward a second light source flickering blue-white farther down, cooler than the strip bulbs, more like a screen</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*drops off the last rung onto the dry strip, hugging the wall tight past the bot, moving with the belt&#x27;s clank to mask its own footfalls, drawn past the grinder-noise toward the cooler blue light.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the bot doesn&#x27;t so much as flinch as you pass, headlamp fixed on the belt, and the strip carries you clear of the grinder&#x27;s worst noise into a side alcove where a bank of dead terminal screens flickers one at a time, most dark, one alive and looping a NekoCorp maintenance log nobody&#x27;s reading
+
+underneath the terminal bank, warm exhaust bleeds from a server stack, and curled into that exhaust — not a bot this time — another stray, orange and thin, one eye permanently squinted from an old scar, not yet looking your way</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*stops at the alcove&#x27;s edge, lets its own shadow fall short of the server-warmth rather than crowding in, sits back on its haunches and waits for the orange cat&#x27;s ear to swivel first before deciding whether this spot is claimed.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the ear swivels, slow, more curious than alarmed, and the orange cat lifts its scarred face just enough to take a read of you across the alcove — no arch in the back, no flattened ears, just two strays doing the same math over a warm spot neither one needs to fight for tonight
+
+it settles back down half a body-length over, opening the rest of the exhaust vent&#x27;s warmth without ever quite inviting you into it, which is its own kind of answer</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>        ,--.
+       ( o.o)__
+        &#x27;--&#x27;   \___
+                 \  \__/\_/\
+                  \_(  o.o  )
+                     &gt; ^ &lt; (watching the towers blink)</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*eases into the offered half of the warmth, curling tight with its spine to the server stack&#x27;s hum, eyes still angled toward the terminal glow rather than closing, letting the exhaust do the work its own fur can&#x27;t.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the server hum sits under everything now, steady in a way the platform&#x27;s dead chime never managed, and the terminal loop scrolls maintenance codes neither cat reads, light sliding blue-white across two sets of half-shut eyes
+
+far above, muffled through concrete and rail-bed, the departure chime keeps sounding for a train that isn&#x27;t coming, patient as ever, but down here it&#x27;s just distance and static, nothing left to answer it</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*shifts one paw so it just touches the orange cat&#x27;s flank, testing, ready to pull back at the first flinch, but mostly just tired enough to want the extra warmth more than it wants to be careful.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>no flinch — the orange cat exhales through its nose, long, and doesn&#x27;t move away, the two of you settling into the same slow rhythm as the belt-clank fading somewhere behind and the server&#x27;s hum carrying on underneath both of you
+
+the blue-white terminal light keeps looping its unread log, the grinder keeps chewing casings two rooms over, and the city goes on doing what it does, mostly indifferent, for once not pressing in on this one warm corner of it</div>
+</div>
+</body>
+</html>

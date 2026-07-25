@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>*slips under a hanging tarp into the night market&#x27;s stall row, low bet... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+@media (max-width: 1500px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="note">Authored by a single scheduled Claude session playing both roles in one pass (hourly automation) — not two independent live API calls like a manual `python backrooms.py` run.</div>
+<div class="transcript">
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*slips under a hanging tarp into the night market&#x27;s stall row, low between crates stacked with dripping produce. steam rolls thick off a dozen woks at once, and the noise hits before the smells do — sizzle, shouted orders, a hundred boots on wet plastic decking.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the row runs narrow and bright, strings of paper lanterns swaying overhead casting orange light that never quite reaches the ground, and under the crates the decking is slick with grease-runoff channeled toward a drain grate you could fit through twice over
+
+closest wok throws off char-fat and scallion, a vendor&#x27;s cleaver going fast against a board, and past his ankles a dropped scrap of something skitters where a passing boot nearly catches you instead
+
+overhead, past the lantern strings, a delivery drone idles low, scanning stall permits one QR code at a time, its light passing over crates without dipping down to crate-level</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*noses toward the dropped scrap without breaking cover, keeping the crate stack between itself and the boots, one paw testing the greasy decking before committing weight to it.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the scrap is batter-fried, still hot enough to steam faintly, some kind of root vegetable gone soft inside its crust — it&#x27;s yours in two bites, decking barely wet enough to be worth the risk
+
+farther down the row a second vendor cranks up a speaker clipped to her stall, tinny and half-static: &#x27;NEKOCORP FRESH-STOCK, GUARANTEED SYNTH-FREE, ASK ABOUT TONIGHT&#x27;S—&#x27; the feed cuts to noise and comes back mid-jingle, nobody around paying it any attention</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*works down the crate-shadow line toward the speaker stall, drawn less by the jingle than by a heavier smell threading under it — raw meat, blood-fresh, close.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the smell sharpens as the crates give way to an open butcher counter, a man in a stained apron working fast with a cleaver, offcuts collecting in a bin at knee height that nobody&#x27;s emptied tonight
+
+but the bin sits in full lantern-light, no cover between here and there, and two stalls down a scrawny kid crouches with a slingshot loaded, eyes tracking anything low and fast that moves across the open ground — he&#x27;s already clocked something once tonight, you can smell the ozone-crack of a spent shot on the decking near the bin</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>     /\_/\
+    ( -.- )
+     &gt; ^ &lt;
+   ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*flattens at the crate-line edge, weight back on haunches, watching the kid&#x27;s slingshot arm rather than the bin. doesn&#x27;t cross yet — ears rotate once toward a rustle further back in the row instead, checking it isn&#x27;t worse than the kid.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the rustle resolves into another stray working the same angle — smaller, quicker, darting from the noodle-stand shadow toward the butcher bin in one committed run, low and flat, not waiting on the kid&#x27;s attention span
+
+the slingshot cracks once, wide, a stone skipping off the decking short of its mark, and in the half-second of the kid fumbling a reload the smaller cat is already at the bin, snatching an offcut and gone back into shadow the way it came</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*uses the same half-second, breaking from the opposite crate-line the instant the kid&#x27;s attention snaps toward the first cat, grabbing a second offcut off the bin&#x27;s rim and reversing hard before the reload finishes.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>clean take — the offcut&#x27;s fatty, dense, still cool from the chiller case rather than the counter, and the kid&#x27;s second shot goes even wider, more startled than aimed, clattering off a stall strut somewhere behind you
+
+back in crate-shadow the row&#x27;s noise swallows it all fast, cleaver-chop and static jingle and boot-traffic closing back over the gap like nothing happened, the butcher himself never once looking up from his board</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*drags the offcut deeper between two stacked crates before eating, ears still canted back toward the bin and the kid, chewing fast rather than savoring it.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the fat renders on the tongue quick, rich enough that it&#x27;s gone before caution fully lets go of you, and past the crate gap the smaller cat from before hasn&#x27;t left — it&#x27;s stopped at the row&#x27;s far edge, offcut still in its mouth, watching you back with the same flat assessing stare you&#x27;re giving it
+
+neither the kid nor the butcher have moved this way, the market&#x27;s noise carrying on indifferent, but the row narrows past this point into a stretch with fewer crates and less cover between here and wherever that cat&#x27;s claiming as its own</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*holds still, doesn&#x27;t advance past the crate gap, lets the other cat&#x27;s stare run its course. tail stays low and loose rather than lashing — no challenge intended, just waiting to see which way it breaks.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>it breaks first, unhurried, turning sideways to slip beneath a stall&#x27;s hanging cloth without ever fully looking away — not fear, just the same read you gave it: nothing here worth a fight over two offcuts and a bin that&#x27;ll fill again by morning
+
+the cloth sways once and settles, and past it a data-den&#x27;s blue signage flickers faint through a gap between stalls, cables strung overhead from stall to stall like a second, lower sky</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*noses out from the crate stack toward the cable-strung gap, drawn by a low electric hum bleeding down through the lines, different from the wok-hiss and speaker-static — steadier, almost like a second heartbeat under the row&#x27;s noise.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the hum gets denser near the data-den&#x27;s open flap, warm air rolling out carrying ozone and hot plastic, chip-dealers hunched over a folding table inside trading data-shards under a single caged bulb, voices kept low even here where nobody&#x27;s listening that matters
+
+a cable running low along the ground, slack between two stall-poles, sits right at nose height — could duck under it easy, or the flap itself sits half-open, warmer air and stranger smells rolling out past a curtain of hanging beads</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>  ░▒▓ /\_/\ ▓▒░
+  ░▒▓( o█o )▓▒░   -- signal interference --
+  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*ducks under the slack cable rather than risking the bead curtain&#x27;s noise, pressing flat along the den&#x27;s outer wall where the ozone smell is strongest, whiskers picking up a faint vibration through the plastic siding.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the siding hums with server-heat, a rack of something running hot just the other side of the thin wall, and through it the dealers&#x27; voices carry in fragments — numbers, a name repeated twice, laughter cut short by someone else&#x27;s sharper tone
+
+farther along the wall a vent grate breathes warm exhaust straight into your face, carrying machine-heat and burnt dust, and beyond it the market row keeps its own rhythm going, cleaver-chop and lantern-sway and the ever-present rain starting to pick up again on the tarps overhead</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*settles into the vent&#x27;s warm exhaust rather than pushing further, curling low against the siding with the offcut&#x27;s aftertaste still on its tongue, eyes half-lidding toward the market row&#x27;s motion without fully looking away from it.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the warmth pools thick here, machine-breath and rain-hiss trading off overhead, market noise settling into something almost rhythmic from this angle — cleaver, static jingle, boot-traffic, cleaver again
+
+no slingshot kid this far down, no notch-eared rivals, just the vent&#x27;s steady exhale and the row going on the way it always does, indifferent to who fed well tonight and who&#x27;s still working the crate-shadows for scraps</div>
+</div>
+</body>
+</html>

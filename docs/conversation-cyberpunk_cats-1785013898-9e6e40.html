@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>*squeezes through a gap in a rusted grate, drops into the storm drain ... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+@media (max-width: 1500px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="note">Authored by a single scheduled Claude session playing both roles in one pass (hourly automation) — not two independent live API calls like a manual `python backrooms.py` run.</div>
+<div class="transcript">
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*squeezes through a gap in a rusted grate, drops into the storm drain below, paws finding the narrow dry ledge that runs along the tunnel wall above the waterline — down here the city&#x27;s noise turns to a single deep hum, and the air tastes like wet concrete and old copper.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the drain runs straight for a long stretch, curved concrete slick with runoff, a thin current threading the channel floor with the last hour&#x27;s rain still draining off the arcology roofs above
+
+far down the tunnel, faint blue-green light pulses off the walls in a slow rhythm, not electric, something growing — bio-lumen algae strung along a cable conduit, farmed by someone who comes down here often enough to have strung guide-wire handholds beside it</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*pads toward the glow along the dry ledge, whiskers brushing the guide-wire to test if it&#x27;s live, nose dropping low to read what&#x27;s passed through here recently — old fish oil on the wire, and under that, fainter, another cat&#x27;s scent, unfamiliar, days old.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the wire is dead, just rope and old cable sheathing, safe to brush against, and the fish-oil smell thickens the closer you get to the algae bed — someone&#x27;s been baiting the guide-wire on purpose, dragging scraps along it to keep something coming back
+
+the unfamiliar cat-scent forks here, one trail continuing along the ledge, the other cutting down into the shallow water and out of nose-range, like whoever left it didn&#x27;t want the second half of the path followed</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*hesitates at the fork, ears swiveling to the water-trail&#x27;s direction, then chooses the dry ledge instead — no interest in getting a wet coat for a scent that&#x27;s already gone cold — and keeps following the baited wire toward the glow.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>good call, the water channel dog-legs into a sump pit fifty meters on, deep enough to swallow a cat whole and the current down there doesn&#x27;t forgive
+
+the ledge opens into a wider junction chamber, algae cables strung across the ceiling in loose loops, casting everything in shifting blue-green, and at the chamber&#x27;s far side a makeshift nest of scavenged insulation foam sits tucked into a drainage alcove, still warm-looking, recently used</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>     /\___/\
+    ( o   o )   &gt;&gt; scanning...
+     )  Y  (    &gt;&gt; ears: antenna mod v2
+    (   |   )
+     \_____/</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*circles the nest at a cautious distance, not stepping in, reading the warmth and the layered scent — fish oil, wet fur, something faintly metallic like the other cat&#x27;s been near a data den — before dropping low and going still, waiting to see if the smell means company or just leftovers.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the nest stays quiet, no fresh footfall in the water-channel or scrabble on the ledge, whoever built it isn&#x27;t home right now, out along that cold water trail chasing something or hiding from it
+
+above, muffled through a meter of concrete and rebar, a heavier vibration rolls through the tunnel wall — a train passing on the line overhead, rhythmic, and in its wake a maintenance hatch three chamber-lengths down starts humming with a different frequency, mechanical, cycling up</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*flattens against the alcove wall at the new hum, tail tucking in tight, tracking the sound&#x27;s rise through the floor and the ledge underpaw rather than looking toward it — waiting to feel whether it&#x27;s getting closer before deciding which way to run.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the hum peaks and steadies, not approaching, just a pump cycling to clear standing water from a lower junction — routine, city-maintenance boring, the kind of sound that repeats every few hours whether anyone&#x27;s listening or not
+
+the hatch door stays shut, no light bleeding around its seal, and after a long few seconds the tension in the tunnel settles back into just the drip of runoff and the algae&#x27;s slow blue pulse</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*eases out of the flatten one paw at a time, shakes out the tucked tail, then noses at the edge of the warm nest again now that the hatch has proven harmless, testing whether curling into the foam for a moment is worth the risk of the absent owner returning.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the foam gives soft under a testing paw, still holding body-heat from whoever left it, and the fish-oil smell is thickest right here, worked into the insulation over what must be many nights of the same routine
+
+from the water-trail direction, faint now, a new sound threads in under the drip and pulse — claws on wet concrete, unhurried, coming back this way, still two bends of tunnel off but closing</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*backs off the nest at once, retreating to the alcove&#x27;s shadow-edge rather than the open ledge, weight low, choosing to watch the water-trail bend rather than bolt blind toward the grate it came in through.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the claw-sound rounds the second bend and resolves into a shape wading out of the shallow channel, shaking a back paw dry with a practiced flick, coat a mottled dark that the algae-light turns half-invisible against the wet concrete
+
+it pauses at the nest&#x27;s edge, head low, reading the same disturbed-scent trail you left circling it minutes ago, one ear canted hard toward your alcove without ever quite looking straight at you</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*holds the stillness, meeting the canted ear with nothing back but flat silence, no growl, no crouch-to-spring — just present, unmoving, letting the other cat decide how the next second goes.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the mottled cat&#x27;s ear stays locked on the alcove a long moment, tail giving one slow low sweep, then it turns its head fully, decides the stillness reads as no-threat rather than ambush, and drops into the nest anyway, curling around the warm spot you left, indifferent now that the standoff&#x27;s resolved itself without a swipe thrown
+
+the algae cables pulse their slow blue-green overhead, the pump hum fades back into routine, and the tunnel settles into the kind of shared quiet that doesn&#x27;t need either of you to move first</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>     /\/\_/\/\
+    (  O   O  )
+     \  ^Y^  /
+      )=====(      -- ears up, rotor incoming --</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*ears snap up at a new vibration threading down through the grate overhead — thinner, higher-pitched than the train, a drone&#x27;s rotor idling somewhere above the storm-drain access point — and freezes half-risen, gauging whether the sound is passing over or settling in.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the rotor-whine holds steady above the grate, not moving off, a drone hovering low over the access point like it&#x27;s found something worth logging — a thin cone of searchlight finds its way down through the grate slats, sweeping once across the ledge, missing the alcove&#x27;s shadow by a body-length
+
+the mottled cat in the nest doesn&#x27;t so much as flick an ear, long since learned the light doesn&#x27;t reach this deep, and after three slow sweeps the rotor-whine banks off, fading east toward the arcology towers, hunting somewhere else tonight</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*settles back down into the alcove shadow once the whine fades, tension draining out through the shoulders, and finally allows the eyes to half-close, keeping one ear on the grate and the other on the nest&#x27;s steady, unbothered breathing.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the drip and pulse and distant train-rumble fold back into their old rhythm, the city running its maintenance cycles overhead indifferent to what shares its drains, and the algae light breathes its slow blue-green across two cats who&#x27;ve settled, for tonight, into the same warm dark without needing to call it anything</div>
+</div>
+</body>
+</html>
