@@ -263,7 +263,8 @@ SCREENSAVER_TEMPLATE = """<!doctype html>
 <meta charset="utf-8">
 <title>screensaver &middot; the catrooms</title>
 <style>{css}
-body {{ overflow: hidden; cursor: pointer; }}
+html, body {{ height: 100%; }}
+body {{ overflow: hidden; cursor: pointer; min-height: 100vh; }}
 </style>
 </head>
 <body>
