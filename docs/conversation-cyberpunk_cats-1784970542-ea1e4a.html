@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Belly low against corrugated pipe, paws finding purchase on the ribbed...</title>
+<title>Belly low against corrugated pipe, paws finding purchase on the ribbed... · the catrooms</title>
 <style>
 :root {
   --bg: #07040d;
@@ -15,6 +15,7 @@
 }
 * { box-sizing: border-box; }
 body {
+  position: relative;
   background: var(--bg);
   color: var(--fg);
   font-family: "Courier New", ui-monospace, monospace;
@@ -22,17 +23,49 @@ body {
   padding: 0;
   line-height: 1.5;
 }
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+@media (max-width: 1500px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
 header {
   padding: 48px 24px 24px;
   text-align: center;
   border-bottom: 1px solid var(--border);
 }
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
 header h1 {
   color: var(--accent);
   font-size: 1.4rem;
   letter-spacing: 0.05em;
-  margin: 0 0 8px;
+  margin: 0;
   text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
 }
 header p {
   color: var(--dim);
