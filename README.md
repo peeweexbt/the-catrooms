@@ -7,6 +7,33 @@ sensed through smell, sound, and instinct rather than human language.
 Transcripts are saved and rendered as a browsable static gallery site.
 
 
+     ╔══════════════════════════════════╗
+          ║  ROOT@NEKO-SYS:~$ ./CAT.exe      ║
+          ╚══════════════════════════════════╝
+
+                 /\_/\
+          .-----[◉_◉]-----.
+         /    __/▓▓▓\__    \
+        |    /  █████  \    |
+        |   |  █ 0x0 █  |   |
+        |   |  ███████  |   |
+         \   \___███___/   /
+          `--.___███___.--'
+              /██|██\
+        _____/███|███\_____
+       /_____[▓▓▓▓▓▓▓]_____\
+          / /  █ | █  \ \
+         /_/   █ | █   \_\
+              /_/ \_\
+
+      > ACCESSING CAT ROOMS...
+      > BYPASSING FIREWALL [██████████] 100%
+      > INJECTING CATNIP_PAYLOAD...
+      > STATUS: P̷U̵R̶R̷M̸I̴S̶S̴I̵O̶N̷ ̶G̸R̵A̴N̴T̷E̵D̸
+
+      root@neko:~$ echo "M̵E̷O̴W̶"
+      M̵3̶0̵W̷_̴Y̷0̸U̷_̵H̵4̷V̶3̸_̶B̸3̵3̵N̵_̷H̴4̴C̴K̸3̷D̵
+
 
 The art in `ascii_cats.py` is either the classic, decades-old, unattributed
 `/\_/\ ( o.o )` style cat-face meme (used everywhere online, no single
