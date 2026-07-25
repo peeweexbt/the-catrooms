@@ -80,6 +80,7 @@ header h1 {
   border: 1px solid var(--border);
   color: var(--dim);
   font-family: inherit;
+  text-decoration: none;
   font-size: 0.75rem;
   letter-spacing: 0.05em;
   padding: 6px 14px;
@@ -90,18 +91,6 @@ header h1 {
 .screensaver-trigger:hover {
   color: var(--accent);
   border-color: var(--accent);
-}
-#screensaver-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: var(--bg);
-  z-index: 100;
-  overflow: hidden;
-  cursor: pointer;
-}
-#screensaver-overlay.active {
-  display: block;
 }
 .ss-cat {
   position: absolute;

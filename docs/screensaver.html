@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>*rain again. i shake a droplet off one ear and pad along the overpass ... · the catrooms</title>
+<title>screensaver &middot; the catrooms</title>
 <style>
 :root {
   --bg: #07040d;
@@ -201,21 +201,49 @@ header p {
   margin: 16px auto;
   padding: 0 24px;
 }
+
+body { overflow: hidden; cursor: pointer; }
 </style>
 </head>
 <body>
-<a class="back" href="index.html">&larr; back</a>
-<div class="note">Hand-written demo transcript for illustration — not output from a live model run. Run backrooms.py with a real API key to generate genuine transcripts.</div>
-<div class="transcript">
-<div class="turn lm1"><span class="who">explorer (demo)</span>*rain again. i shake a droplet off one ear and pad along the overpass strut, high above the traffic-glow, where the old telecom cables still hum warm under their casings. i press my flank against one, soaking in the heat.*</div>
-<div class="turn lm2"><span class="who">simulator (demo)</span>the cable hums a frequency that sets your whiskers faintly buzzing — old fiber, still carrying someone&#x27;s data eighty meters below your paws. down there, headlight-rivers stream between arcology towers, and one tower&#x27;s upper floors are dark except for a single window, flickering blue-white, someone awake at an hour when even the drones thin out. a moth-sized delivery drone whines past close enough to ruffle your fur, too busy to notice you.</div>
-<div class="turn lm1"><span class="who">explorer (demo)</span>*i track the little drone with my eyes out of pure reflex, tail-tip twitching, then let it go — not prey, just noise. i turn my attention back to the dark tower window and the strange blue flicker. curiosity itches worse than the rain.*</div>
-<div class="turn ascii"><span class="who">-- signal interference --</span>  ░▒▓ /\_/\ ▓▒░
-  ░▒▓( o█o )▓▒░   -- signal interference --
-  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="turn lm2"><span class="who">simulator (demo)</span>the flicker resolves, if you squint the way cats do, into rhythm: on-off-on, on-on-off, too even to be a person moving around. it&#x27;s a screen looping something, alone, in a room with no other light. the strut you&#x27;re on runs close enough to that floor that a bold cat could make the jump to the maintenance ledge outside that window. the wind up here smells like ozone and the coming edge of a bigger storm.</div>
-<div class="turn lm1"><span class="who">explorer (demo)</span>*i measure the gap with my eyes twice, the way you only get to be wrong about once at this height, then i go — a low, flat launch, claws out for the ledge.*</div>
-<div class="turn lm2"><span class="who">simulator (demo)</span>you clear it. barely — back paws scrabble a half-second on wet concrete before catching. through the glass, closer now: rows of server racks, no chairs, no desk, just machines talking to each other in light. the looping flicker is a single line of text scrolling on an old monitor nobody restarted: SEARCHING FOR SIGNAL... SEARCHING FOR SIGNAL... a city that stopped listening for something a long time ago, and forgot to stop asking.</div>
-</div>
+<a class="back" href="index.html">&larr; back to the catrooms</a>
+<div class="ss-hint">click anywhere, or press esc, to go back</div>
+<script>
+const SS_CATS = ["\n /\\_/\\\n( o.o )\n > ^ <\n", "\n  /\\___/\\\n (  o.o  )\n  > ^ ^ <\n", "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n", "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n", "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n", "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n", "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n", "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n", "\n  \u2591\u2592\u2593 /\\_/\\ \u2593\u2592\u2591\n  \u2591\u2592\u2593( o\u2588o )\u2593\u2592\u2591   -- signal interference --\n  \u2591\u2592\u2593 > \u2593 < \u2593\u2592\u2591\n", "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"];
+(function() {
+  function randRange(a, b) { return a + Math.random() * (b - a); }
+
+  function spawnCat() {
+    const el = document.createElement('pre');
+    el.className = 'ss-cat';
+    el.textContent = SS_CATS[Math.floor(Math.random() * SS_CATS.length)];
+    el.style.top = randRange(2, 92) + '%';
+    el.style.left = randRange(2, 88) + '%';
+    el.style.fontSize = randRange(0.55, 1.6) + 'rem';
+    el.style.color = Math.random() < 0.5 ? 'var(--accent)' : 'var(--accent2)';
+    el.style.opacity = '0';
+    document.body.appendChild(el);
+    requestAnimationFrame(() => { el.style.opacity = String(randRange(0.5, 0.95)); });
+    const lifespan = randRange(3000, 7000);
+    setTimeout(() => {
+      el.style.opacity = '0';
+      setTimeout(() => el.remove(), 900);
+    }, lifespan);
+  }
+
+  for (let i = 0; i < 18; i++) { setTimeout(spawnCat, i * 70); }
+  setInterval(spawnCat, 220);
+
+  function goBack() { window.location.href = 'index.html'; }
+
+  document.body.addEventListener('click', (e) => {
+    if (e.target.closest('a')) return;
+    goBack();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') goBack();
+  });
+})();
+</script>
 </body>
 </html>

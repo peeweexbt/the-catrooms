@@ -104,6 +104,7 @@ header h1 {
   border: 1px solid var(--border);
   color: var(--dim);
   font-family: inherit;
+  text-decoration: none;
   font-size: 0.75rem;
   letter-spacing: 0.05em;
   padding: 6px 14px;
@@ -114,18 +115,6 @@ header h1 {
 .screensaver-trigger:hover {
   color: var(--accent);
   border-color: var(--accent);
-}
-#screensaver-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: var(--bg);
-  z-index: 100;
-  overflow: hidden;
-  cursor: pointer;
-}
-#screensaver-overlay.active {
-  display: block;
 }
 .ss-cat {
   position: absolute;
@@ -259,21 +248,30 @@ INDEX_TEMPLATE = """<!doctype html>
   cyberpunk megacity around it. no human intervention during the run. built
   as a personal, re-themed replication of Andy Ayrey's Infinite Backrooms.</p>
   <img class="hero-cat" src="assets/cat-run.gif" alt="looping animation of a running cat" />
-  <button class="screensaver-trigger" id="screensaver-trigger" type="button">&gt;&gt; screensaver mode</button>
+  <a class="screensaver-trigger" href="screensaver.html">&gt;&gt; screensaver mode</a>
 </header>
 <div class="grid">
 {cards}
 </div>
-<div id="screensaver-overlay" aria-hidden="true">
-  <div class="ss-hint">click anywhere, or press esc, to exit</div>
-</div>
+</body>
+</html>
+"""
+
+SCREENSAVER_TEMPLATE = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>screensaver &middot; the catrooms</title>
+<style>{css}
+body {{ overflow: hidden; cursor: pointer; }}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back to the catrooms</a>
+<div class="ss-hint">click anywhere, or press esc, to go back</div>
 <script>
 const SS_CATS = {ascii_json};
 (function() {{
-  const overlay = document.getElementById('screensaver-overlay');
-  const trigger = document.getElementById('screensaver-trigger');
-  let spawnTimer = null;
-
   function randRange(a, b) {{ return a + Math.random() * (b - a); }}
 
   function spawnCat() {{
@@ -285,7 +283,7 @@ const SS_CATS = {ascii_json};
     el.style.fontSize = randRange(0.55, 1.6) + 'rem';
     el.style.color = Math.random() < 0.5 ? 'var(--accent)' : 'var(--accent2)';
     el.style.opacity = '0';
-    overlay.appendChild(el);
+    document.body.appendChild(el);
     requestAnimationFrame(() => {{ el.style.opacity = String(randRange(0.5, 0.95)); }});
     const lifespan = randRange(3000, 7000);
     setTimeout(() => {{
@@ -294,26 +292,17 @@ const SS_CATS = {ascii_json};
     }}, lifespan);
   }}
 
-  function startScreensaver() {{
-    overlay.classList.add('active');
-    overlay.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-    for (let i = 0; i < 18; i++) {{ setTimeout(spawnCat, i * 70); }}
-    spawnTimer = setInterval(spawnCat, 220);
-  }}
+  for (let i = 0; i < 18; i++) {{ setTimeout(spawnCat, i * 70); }}
+  setInterval(spawnCat, 220);
 
-  function stopScreensaver() {{
-    overlay.classList.remove('active');
-    overlay.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-    if (spawnTimer) {{ clearInterval(spawnTimer); spawnTimer = null; }}
-    overlay.querySelectorAll('.ss-cat').forEach(el => el.remove());
-  }}
+  function goBack() {{ window.location.href = 'index.html'; }}
 
-  trigger.addEventListener('click', startScreensaver);
-  overlay.addEventListener('click', stopScreensaver);
+  document.body.addEventListener('click', (e) => {{
+    if (e.target.closest('a')) return;
+    goBack();
+  }});
   document.addEventListener('keydown', (e) => {{
-    if (e.key === 'Escape') stopScreensaver();
+    if (e.key === 'Escape') goBack();
   }});
 }})();
 </script>
@@ -488,10 +477,13 @@ def build(transcripts_dir, out_dir, gen_titles):
         css=CSS,
         decorations=build_decorations(ASCII_CATS),
         cards="\n".join(cards) or "<p style='color:#6b8f6a'>no transcripts yet — run backrooms.py first</p>",
-        ascii_json=json.dumps(ASCII_CATS),
     )
     with open(os.path.join(out_dir, "index.html"), "w") as f:
         f.write(index_html)
+
+    screensaver_html = SCREENSAVER_TEMPLATE.format(css=CSS, ascii_json=json.dumps(ASCII_CATS))
+    with open(os.path.join(out_dir, "screensaver.html"), "w") as f:
+        f.write(screensaver_html)
 
     print(f"Built site with {len(files)} conversation(s) -> {os.path.join(out_dir, 'index.html')}")
 
