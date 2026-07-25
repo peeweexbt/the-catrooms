@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+site/
+
+# machine-specific automation files — these contain your local username/paths
+# and don't belong in a public repo
+com.cats.backrooms.autopush.plist
+push.log
+launchd.log
