@@ -97,6 +97,57 @@ header h1 {
   margin: 0;
   text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
 }
+.screensaver-trigger {
+  display: inline-block;
+  margin: 18px auto 0;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--dim);
+  font-family: inherit;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.screensaver-trigger:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+#screensaver-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 100;
+  overflow: hidden;
+  cursor: pointer;
+}
+#screensaver-overlay.active {
+  display: block;
+}
+.ss-cat {
+  position: absolute;
+  margin: 0;
+  white-space: pre;
+  line-height: 1.15;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 8px currentColor;
+  transition: opacity 0.9s ease;
+}
+.ss-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
 header p {
   color: var(--dim);
   max-width: 640px;
@@ -208,10 +259,64 @@ INDEX_TEMPLATE = """<!doctype html>
   cyberpunk megacity around it. no human intervention during the run. built
   as a personal, re-themed replication of Andy Ayrey's Infinite Backrooms.</p>
   <img class="hero-cat" src="assets/cat-run.gif" alt="looping animation of a running cat" />
+  <button class="screensaver-trigger" id="screensaver-trigger" type="button">&gt;&gt; screensaver mode</button>
 </header>
 <div class="grid">
 {cards}
 </div>
+<div id="screensaver-overlay" aria-hidden="true">
+  <div class="ss-hint">click anywhere, or press esc, to exit</div>
+</div>
+<script>
+const SS_CATS = {ascii_json};
+(function() {{
+  const overlay = document.getElementById('screensaver-overlay');
+  const trigger = document.getElementById('screensaver-trigger');
+  let spawnTimer = null;
+
+  function randRange(a, b) {{ return a + Math.random() * (b - a); }}
+
+  function spawnCat() {{
+    const el = document.createElement('pre');
+    el.className = 'ss-cat';
+    el.textContent = SS_CATS[Math.floor(Math.random() * SS_CATS.length)];
+    el.style.top = randRange(2, 92) + '%';
+    el.style.left = randRange(2, 88) + '%';
+    el.style.fontSize = randRange(0.55, 1.6) + 'rem';
+    el.style.color = Math.random() < 0.5 ? 'var(--accent)' : 'var(--accent2)';
+    el.style.opacity = '0';
+    overlay.appendChild(el);
+    requestAnimationFrame(() => {{ el.style.opacity = String(randRange(0.5, 0.95)); }});
+    const lifespan = randRange(3000, 7000);
+    setTimeout(() => {{
+      el.style.opacity = '0';
+      setTimeout(() => el.remove(), 900);
+    }}, lifespan);
+  }}
+
+  function startScreensaver() {{
+    overlay.classList.add('active');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    for (let i = 0; i < 18; i++) {{ setTimeout(spawnCat, i * 70); }}
+    spawnTimer = setInterval(spawnCat, 220);
+  }}
+
+  function stopScreensaver() {{
+    overlay.classList.remove('active');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (spawnTimer) {{ clearInterval(spawnTimer); spawnTimer = null; }}
+    overlay.querySelectorAll('.ss-cat').forEach(el => el.remove());
+  }}
+
+  trigger.addEventListener('click', startScreensaver);
+  overlay.addEventListener('click', stopScreensaver);
+  document.addEventListener('keydown', (e) => {{
+    if (e.key === 'Escape') stopScreensaver();
+  }});
+}})();
+</script>
 </body>
 </html>
 """
@@ -383,6 +488,7 @@ def build(transcripts_dir, out_dir, gen_titles):
         css=CSS,
         decorations=build_decorations(ASCII_CATS),
         cards="\n".join(cards) or "<p style='color:#6b8f6a'>no transcripts yet — run backrooms.py first</p>",
+        ascii_json=json.dumps(ASCII_CATS),
     )
     with open(os.path.join(out_dir, "index.html"), "w") as f:
         f.write(index_html)
