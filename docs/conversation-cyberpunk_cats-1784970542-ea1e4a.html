@@ -313,6 +313,29 @@ header p {
   from { box-shadow: 0 0 18px rgba(255, 46, 230, 0.4); }
   to { box-shadow: 0 0 34px rgba(0, 240, 255, 0.9); }
 }
+.hero-glitch-block {
+  display: block;
+  max-width: 920px;
+  margin: 28px auto 8px;
+  padding: 18px 14px;
+  overflow-x: auto;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  color: var(--fg);
+  text-align: left;
+  white-space: pre;
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  animation: hero-shake 5.5s infinite;
+}
+@keyframes hero-shake {
+  0%, 94%, 100% { transform: translate(0, 0); filter: none; }
+  95% { transform: translate(1px, -1px); filter: hue-rotate(8deg); }
+  96% { transform: translate(-1px, 1px); filter: hue-rotate(-8deg); }
+  97% { transform: translate(1px, 1px); filter: none; }
+}
+@media (max-width: 720px) {
+  .hero-glitch-block { font-size: 0.42rem; }
+}
 </style>
 </head>
 <body>

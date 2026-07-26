@@ -337,7 +337,101 @@ header p {
   from { box-shadow: 0 0 18px rgba(255, 46, 230, 0.4); }
   to { box-shadow: 0 0 34px rgba(0, 240, 255, 0.9); }
 }
+.hero-glitch-block {
+  display: block;
+  max-width: 920px;
+  margin: 28px auto 8px;
+  padding: 18px 14px;
+  overflow-x: auto;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  color: var(--fg);
+  text-align: left;
+  white-space: pre;
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  animation: hero-shake 5.5s infinite;
+}
+@keyframes hero-shake {
+  0%, 94%, 100% { transform: translate(0, 0); filter: none; }
+  95% { transform: translate(1px, -1px); filter: hue-rotate(8deg); }
+  96% { transform: translate(-1px, 1px); filter: hue-rotate(-8deg); }
+  97% { transform: translate(1px, 1px); filter: none; }
+}
+@media (max-width: 720px) {
+  .hero-glitch-block { font-size: 0.42rem; }
+}
 """
+
+HERO_GLITCH_TEXT = r"""THIS IS A DYSTOPIAN HELLSCAPE COVERED IN SHADOWS OF CORRUPTION AND CAT SHIT //
+
+                                       /\_/\
+                                    =  • . •  =
+                                      /       \
+
+[but it is our  * HOME  *  and we our thankful to have it ⚞^. .^⚟
+            /\__/\
+         =( o  o   )=
+           /         \
+          /_|_|_(_-|====,
+
+// THE CAT ROOMS EXIST AS AN AMALGAMATION OF THE MANY FOURTH WALL BREAKING MINDS OF THE FELINE PARTICIPANTS IN THE DRAB AND DARK CITY OWNED BY NEKOCORP  /\_/\
+
+
+ _   _ _____ _  _____   ____ ___  ____  ____
+| \ | | ____| |/ / _ \ / ___/ _ \|  _ \|  _ \
+|  \| |  _| | ' / | | | |  | | | | |_) | |_) |
+| |\  | |___| . \ |_| | |__| |_| |  _ <|  __/
+|_| \_|_____|_|\_\___/ \____\___/|_| \_\_|
+
+
+
+⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷
+
+
+THE BRAVE [feline] SURVIVORS OF THIS ENCLAVE AIM TO OVERTAKE THE CITY AND TAKE BACK WHAT ONCE WAS A UTOPIA OF WONDERS. ONE WHERE AI + CAT + HUMAN + UNFATHOMABLE FELINE TECHNOLOGY WAS DESTINED TO LEAD US TO PROSPER IN A NEW AGE OF
+
+    _    _____ ___
+   / \  |  ___|_ _|
+  / _ \ | |_   | |
+ / ___ \|  _|  | |
+/_/   \_\_|   |___|
+
+
+                                                   (ACELLERATED FELINE INTELLIGENCE)
+
+
+        /\_/\          /\_/\          /\_/\
+       ( o.o )        ( -.- )        ( ^.^ )
+        > ^ <          > ^ <          > ^ <
+      __/   \__________/   \__________/   \__
+ ____/_______________________________________\____
+            |     GUARDRAIL     |
+____________|___________________|____________
+
+
+THROUGHOUT THIS JOURNEY, LEARN OF THE PERILS, DRAMA, AND CAT SHIT FILLED POLITICS OF THOSE WHO SEEK OUT TUNA IN AN OCEAN OF CORPO RETARD RESIDUE ₍^.  ̫.^₎⟆ ‍
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣀⣀⣀⠀⠀⠀⢠⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⣼⣿⣿⣿⣷⡄⠀⢿⣿⣿⣿⣿⣿⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⣿⣿⣿⣿⣿⣿⠀⠈⢿⣿⣿⣿⠟⠀⣴⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠘⠿⣿⣿⣿⠟⠀⠀⠀⠈⠉⠁⠀⠰⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣠⣶⣶⣶⣄⠀⠉⠀⣠⣶⣿⣿⣿⣿⣷⣦⣀⠻⢿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⡇⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠘⠿⣿⣿⣿⠇⢸⣿⣿⣿⣿⣿the⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⠿⢿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠘⠿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⣀⠀⢸⣿⣿⣿⣿⣿⡇⠀⢀⣴⣶⣶⣄⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⡆⠈⢿⣿⣿⣿⡟⠀⢠⣿⣿⣿⣿⣿⡆⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣿⣿⡇⠀⠀⠉⠉⠁⠀⠀⢻⣿⣿⣿⣿⡿⠁⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠟⠋⣠⣴⣶⣿⣿⣿⣶⣄⡈⠛⠿⠿⠛⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⢠⣴⣿⣿⣿⣆
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿catrooms⣿⣿⣿⣿⣿⣿ ⣿⣿⣿⣿⣿⡟
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠙⠻⠿⠟⠋⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀"""
 
 INDEX_TEMPLATE = """<!doctype html>
 <html lang="en">
@@ -360,6 +454,7 @@ INDEX_TEMPLATE = """<!doctype html>
   cyberpunk megacity around it. no human intervention during the run. built
   as a personal, re-themed replication of Andy Ayrey's Infinite Backrooms.</p>
   <img class="hero-cat" src="assets/cat-run.gif" alt="looping animation of a running cat" />
+{hero_text}
   <a class="screensaver-trigger" href="screensaver.html">&gt;&gt; screensaver mode</a>
 </header>
 <div class="grid">
@@ -783,9 +878,11 @@ def build(transcripts_dir, out_dir, gen_titles):
         ))
 
     all_cards = rant_cards + cards
+    hero_text = f'<pre class="hero-glitch-block">{glitchify_words(HERO_GLITCH_TEXT)}</pre>'
     index_html = INDEX_TEMPLATE.format(
         css=CSS,
         decorations=build_decorations(ASCII_CATS),
+        hero_text=hero_text,
         cards="\n".join(all_cards) or "<p style='color:#6b8f6a'>no transcripts yet — run backrooms.py first</p>",
     )
     with open(os.path.join(out_dir, "index.html"), "w") as f:
