@@ -84,4 +84,83 @@ ASCII_CATS = [
                   \_(  o.o  )
                      > ^ < (watching the towers blink)
 """,
+    # user-provided — kaomoji, ears back
+    r"""
+へ  ♡  ╱|、
+         ૮  >  <)     (˚ˎ 。7
+          /  ⁻  ៸|       |、˜〵
+     乀(ˍ, ل ل      じしˍ,)ノ
+""",
+    # user-provided — cat in a data-frame border
+    r"""
+•.,¸,.•*`•.,¸¸,.•*¯.——————.
+•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
+•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
+•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ
+""",
+    # user-provided — kaomoji, mid-meow
+    r"""
+        /⸌ —⸍\
+     =(˶•ㅅ•˵)=      ᵐᵉᵒʷ
+　 l       ~乀   ╭
+    し しf_, )ノ
+""",
+    # user-provided — kaomoji under a starfield
+    r"""
+┊         ┊       ┊   ┊   ┊。 ┊
+┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆
+┊         ┊       ★⋆ ◦
+★⋆       ┊ .  ˚
+           ˚★
+☆ ∧,,,∧
+ପ(„• ༝ •„)ଓ
+┏━∪∪━━━━━━━━━━━
+""",
+    # user-provided — cat framed in a broken screen/monitor, stars scattered around
+    r"""
+                  ☆
+☆  --------------
+  /__________ \         ☆
+ |                       |
+ \___________ /                                  ☆
+   \.._______../
+    |   /\__/\   |
+    | ( •    •    ) |   ☆                     ☆
+    | / U  U  \  |
+    =========
+     \________/.
+                               ☆                           ☆
+
+   ☆                                         ☆
+                     ☆                               ☆
+""",
+    # user-provided — kaomoji, diagonal lean
+    r"""
+                              ╱|、
+                         =(˚˕ 。 7
+                             |、 ~〵
+                            じし   ˍ,)づ
+""",
+    # user-provided — cat + "we live in a society" box meme
+    r"""
+)     /\__/\
+( =/   • •   \=
+-------U-U-----------------
+|                                |
+|    we live in a society        |
+|                                |
+------------------------------
+""",
+    # user-provided — kaomoji, heart-eyed
+    r"""
+.      ∧,,,,∧,,,,,,,∧
+     (  _  _ )⩊^ )~♡
+     /      ⊂      \
+""",
+    # user-provided — kaomoji, small flower nose
+    r"""
+    /\,,,/\
+>(  • . •   )<
+  / >❀<  \
+""",
 ]
