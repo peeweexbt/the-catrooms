@@ -316,26 +316,40 @@ header p {
 .litterposting-btn {
   display: block;
   margin: 28px auto 8px;
-  background: linear-gradient(135deg, var(--accent2), var(--accent));
-  border: none;
-  color: #07040d;
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
   font-family: inherit;
   font-weight: bold;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   font-size: 1rem;
-  padding: 14px 28px;
-  border-radius: 4px;
+  padding: 12px 26px;
+  border-radius: 2px;
   cursor: pointer;
   text-transform: uppercase;
-  box-shadow: 0 0 18px rgba(255, 46, 230, 0.4);
-  transition: transform 0.1s ease, box-shadow 0.15s ease;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 22px rgba(255, 46, 230, 0.6);
+  box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
 }
-.litterposting-btn:hover { transform: scale(1.04); box-shadow: 0 0 28px rgba(0, 240, 255, 0.5); }
+.litterposting-btn::before { content: "[ "; }
+.litterposting-btn::after { content: " ]"; }
+.litterposting-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent), 0 0 28px rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.45), inset 0 0 10px rgba(0, 240, 255, 0.18);
+}
 .litterposting-btn:active { transform: scale(0.97); }
-.litterposting-btn.playing { animation: btn-pulse 0.5s infinite alternate; }
-@keyframes btn-pulse {
-  from { box-shadow: 0 0 18px rgba(255, 46, 230, 0.4); }
-  to { box-shadow: 0 0 34px rgba(0, 240, 255, 0.9); }
+.litterposting-btn.playing { animation: btn-glow-pulse 0.6s infinite alternate; }
+@keyframes btn-glow-pulse {
+  from {
+    text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 20px rgba(255, 46, 230, 0.6);
+    box-shadow: 0 0 8px rgba(255, 46, 230, 0.3), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  }
+  to {
+    text-shadow: 0 0 8px var(--accent2), 0 0 20px var(--accent2), 0 0 40px rgba(255, 46, 230, 0.95);
+    box-shadow: 0 0 22px rgba(255, 46, 230, 0.7), inset 0 0 14px rgba(255, 46, 230, 0.3);
+  }
 }
 .hero-glitch-block {
   display: block;
