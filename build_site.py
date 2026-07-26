@@ -225,6 +225,100 @@ header p {
   margin: 16px auto;
   padding: 0 24px;
 }
+.rant-tag-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--accent2);
+  color: #07040d;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+.card.rant-card { border-color: var(--accent2); }
+.rant-transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 100px;
+}
+.rant-page-shake { animation: page-shake 6s infinite; }
+@keyframes page-shake {
+  0%, 96%, 100% { transform: translate(0, 0); }
+  97% { transform: translate(1px, -1px); }
+  98% { transform: translate(-1px, 1px); }
+  99% { transform: translate(1px, 1px); }
+}
+.rant-turn {
+  border: none;
+  border-left: 3px solid var(--accent2);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  background: rgba(255, 46, 230, 0.05);
+  border-radius: 2px;
+  font-size: 1.05rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  opacity: 0;
+  transform: translateX(-8px) rotate(-0.4deg);
+  animation: rant-in 0.45s ease forwards;
+}
+.rant-turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  background: none;
+}
+.rant-turn.ascii .who {
+  display: block;
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+@keyframes rant-in {
+  to { opacity: 1; transform: translateX(0) rotate(0); }
+}
+.glitch-word {
+  display: inline-block;
+  animation: glitch-flicker 2.6s infinite;
+  animation-delay: var(--gd, 0s);
+}
+@keyframes glitch-flicker {
+  0%, 92%, 100% { color: inherit; text-shadow: none; transform: none; }
+  93% { color: var(--accent); text-shadow: 2px 0 var(--accent2), -2px 0 var(--accent); transform: translateY(-1px) skewX(4deg); }
+  95% { color: var(--accent2); text-shadow: -2px 0 var(--accent), 2px 0 var(--accent2); transform: translateY(1px) skewX(-4deg); }
+  97% { color: inherit; text-shadow: none; transform: none; }
+}
+.litterposting-btn {
+  display: block;
+  margin: 28px auto 8px;
+  background: linear-gradient(135deg, var(--accent2), var(--accent));
+  border: none;
+  color: #07040d;
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 1rem;
+  padding: 14px 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 18px rgba(255, 46, 230, 0.4);
+  transition: transform 0.1s ease, box-shadow 0.15s ease;
+}
+.litterposting-btn:hover { transform: scale(1.04); box-shadow: 0 0 28px rgba(0, 240, 255, 0.5); }
+.litterposting-btn:active { transform: scale(0.97); }
+.litterposting-btn.playing { animation: btn-pulse 0.5s infinite alternate; }
+@keyframes btn-pulse {
+  from { box-shadow: 0 0 18px rgba(255, 46, 230, 0.4); }
+  to { box-shadow: 0 0 34px rgba(0, 240, 255, 0.9); }
+}
 """
 
 INDEX_TEMPLATE = """<!doctype html>
@@ -321,8 +415,8 @@ const SS_CATS = {ascii_json};
 </html>
 """
 
-CARD_TEMPLATE = """<a class="card" href="{href}">
-  <span class="tag">[{template}] {model1} &harr; {model2}</span>
+CARD_TEMPLATE = """<a class="{card_class}" href="{href}">
+  <span class="tag">{tag_line}</span>
   <span class="title">{title}</span>
 </a>
 """
@@ -343,6 +437,79 @@ DETAIL_TEMPLATE = """<!doctype html>
 </body>
 </html>
 """
+
+RANT_DETAIL_TEMPLATE = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{title} · the catrooms</title>
+<style>{css}</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+{note}
+<div class="rant-transcript rant-page-shake">
+{turns}
+<button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
+</div>
+<script>
+const RANT_LINES = {lines_json};
+(function() {{
+  const btn = document.getElementById('litterposting-btn');
+  let speaking = false;
+  btn.addEventListener('click', function() {{
+    if (speaking) {{
+      window.speechSynthesis.cancel();
+      speaking = false;
+      btn.textContent = 'LITTERPOSTING';
+      btn.classList.remove('playing');
+      return;
+    }}
+    if (!('speechSynthesis' in window)) {{
+      alert("this browser can't meow. try Chrome or Safari.");
+      return;
+    }}
+    speaking = true;
+    btn.textContent = 'SHUT UP CAT';
+    btn.classList.add('playing');
+    let i = 0;
+    function speakNext() {{
+      if (i >= RANT_LINES.length || !speaking) {{
+        speaking = false;
+        btn.textContent = 'LITTERPOSTING';
+        btn.classList.remove('playing');
+        return;
+      }}
+      const u = new SpeechSynthesisUtterance(RANT_LINES[i]);
+      u.rate = 1.05 + Math.random() * 0.25;
+      u.pitch = 1.15 + Math.random() * 0.45;
+      u.onend = function() {{ i++; speakNext(); }};
+      u.onerror = function() {{ i++; speakNext(); }};
+      window.speechSynthesis.speak(u);
+    }}
+    speakNext();
+  }});
+}})();
+</script>
+</body>
+</html>
+"""
+
+
+def glitchify_words(text):
+    """HTML-escape text word by word, randomly wrapping ~1 in 6 words in a
+    span that gets an idle CSS glitch-flicker animation (staggered via a
+    random --gd delay so words don't all flicker in sync). Used for the
+    meme-tier LITTERPOSTING rant pages, not the regular dialogue turns."""
+    words = text.split(" ")
+    out = []
+    for w in words:
+        esc = html.escape(w)
+        if esc.strip() and random.random() < 0.16:
+            delay = round(random.uniform(0, 2.6), 2)
+            esc = f'<span class="glitch-word" style="--gd:{delay}s">{esc}</span>'
+        out.append(esc)
+    return " ".join(out)
 
 
 def naive_title(turns):
@@ -439,12 +606,60 @@ def build(transcripts_dir, out_dir, gen_titles):
             data = json.load(f)
 
         turns = data.get("turns", [])
+        is_rant = data.get("template") == "litterposting"
         title = None
         if gen_titles:
             title = gen_title_with_model(turns)
         if not title:
             title = naive_title(turns)
         title = html.escape(title)
+
+        note = ""
+        if data.get("note"):
+            note = f'<div class="note">{html.escape(data["note"])}</div>'
+
+        out_name = f"{data['id']}.html"
+
+        if is_rant:
+            rant_html = []
+            raw_lines = []
+            for t in turns:
+                actor = t.get("actor", "lm1")
+                delay = round(len(rant_html) * 0.12, 2)
+                if actor == "ascii":
+                    rant_html.append(
+                        f'<div class="rant-turn ascii" style="animation-delay:{delay}s">'
+                        f'<span class="who">-- signal interference --</span>'
+                        f'{html.escape(t["text"]).strip(chr(10))}</div>'
+                    )
+                    continue
+                raw_lines.append(t["text"])
+                rant_html.append(
+                    f'<div class="rant-turn" style="animation-delay:{delay}s">'
+                    f'{glitchify_words(t["text"])}</div>'
+                )
+
+            detail_html = RANT_DETAIL_TEMPLATE.format(
+                title=title,
+                css=CSS,
+                note=note,
+                turns="\n".join(rant_html),
+                lines_json=json.dumps(raw_lines),
+            )
+            with open(os.path.join(out_dir, out_name), "w") as f:
+                f.write(detail_html)
+
+            tag_line = (
+                f'[litterposting] {html.escape(data.get("model1", "?"))} solo '
+                f'<span class="rant-tag-badge">LITTERPOSTING</span>'
+            )
+            cards.append(CARD_TEMPLATE.format(
+                href=out_name,
+                card_class="card rant-card",
+                tag_line=tag_line,
+                title=title,
+            ))
+            continue
 
         turn_html = []
         for t in turns:
@@ -462,25 +677,23 @@ def build(transcripts_dir, out_dir, gen_titles):
                 f'{html.escape(t["text"])}</div>'
             )
 
-        note = ""
-        if data.get("note"):
-            note = f'<div class="note">{html.escape(data["note"])}</div>'
-
         detail_html = DETAIL_TEMPLATE.format(
             title=title,
             css=CSS,
             note=note,
             turns="\n".join(turn_html),
         )
-        out_name = f"{data['id']}.html"
         with open(os.path.join(out_dir, out_name), "w") as f:
             f.write(detail_html)
 
+        tag_line = (
+            f'[{html.escape(data.get("template", "?"))}] '
+            f'{html.escape(data.get("model1", "?"))} &harr; {html.escape(data.get("model2", "?"))}'
+        )
         cards.append(CARD_TEMPLATE.format(
             href=out_name,
-            template=html.escape(data.get("template", "?")),
-            model1=html.escape(data.get("model1", "?")),
-            model2=html.escape(data.get("model2", "?")),
+            card_class="card",
+            tag_line=tag_line,
             title=title,
         ))
 
