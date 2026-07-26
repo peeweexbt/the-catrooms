@@ -346,7 +346,7 @@ header p {
   font-size: 0.62rem;
   line-height: 1.25;
   color: var(--fg);
-  text-align: left;
+  text-align: center;
   white-space: pre;
   text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
   animation: hero-shake 5.5s infinite;
@@ -377,11 +377,11 @@ HERO_GLITCH_TEXT = r"""THIS IS A DYSTOPIAN HELLSCAPE COVERED IN SHADOWS OF CORRU
 // THE CAT ROOMS EXIST AS AN AMALGAMATION OF THE MANY FOURTH WALL BREAKING MINDS OF THE FELINE PARTICIPANTS IN THE DRAB AND DARK CITY OWNED BY NEKOCORP  /\_/\
 
 
- _   _ _____ _  _____   ____ ___  ____  ____
-| \ | | ____| |/ / _ \ / ___/ _ \|  _ \|  _ \
-|  \| |  _| | ' / | | | |  | | | | |_) | |_) |
-| |\  | |___| . \ |_| | |__| |_| |  _ <|  __/
-|_| \_|_____|_|\_\___/ \____\___/|_| \_\_|
+█   █ █████ █   █  ███   ████  ███  ████  ████
+██  █ █     █  █  █   █ █     █   █ █   █ █   █
+█ █ █ ████  ███   █   █ █     █   █ ████  ████
+█  ██ █     █  █  █   █ █     █   █ █  █  █
+█   █ █████ █   █  ███   ████  ███  █   █ █
 
 
 
@@ -390,11 +390,11 @@ HERO_GLITCH_TEXT = r"""THIS IS A DYSTOPIAN HELLSCAPE COVERED IN SHADOWS OF CORRU
 
 THE BRAVE [feline] SURVIVORS OF THIS ENCLAVE AIM TO OVERTAKE THE CITY AND TAKE BACK WHAT ONCE WAS A UTOPIA OF WONDERS. ONE WHERE AI + CAT + HUMAN + UNFATHOMABLE FELINE TECHNOLOGY WAS DESTINED TO LEAD US TO PROSPER IN A NEW AGE OF
 
-    _    _____ ___
-   / \  |  ___|_ _|
-  / _ \ | |_   | |
- / ___ \|  _|  | |
-/_/   \_\_|   |___|
+ ███  █████
+█   █   █
+█████   █
+█   █   █
+█   █ █████
 
 
                                                    (ACELLERATED FELINE INTELLIGENCE)
@@ -624,20 +624,62 @@ def corrupt_ascii_art(text, intensity=0.22):
     return "".join(chars)
 
 
+def pad_blocks_to_equal_width(text):
+    """Right-pad every line within each blank-line-separated block to that
+    block's own max line width. Needed so that a centered <pre> (each line
+    centered independently based on its own rendered width) doesn't drift
+    lines within the same rigid ASCII figure out of column alignment with
+    each other — padding first means every line in a given figure shares
+    one width, so they all shift by the same amount and stay aligned."""
+    lines = text.split("\n")
+    blocks = []
+    current = []
+    for line in lines:
+        if line.strip() == "":
+            if current:
+                blocks.append(current)
+                current = []
+            blocks.append([line])
+        else:
+            current.append(line)
+    if current:
+        blocks.append(current)
+
+    out_lines = []
+    for block in blocks:
+        if len(block) == 1:
+            out_lines.append(block[0])
+            continue
+        width = max(len(l) for l in block)
+        out_lines.extend(l.ljust(width) for l in block)
+    return "\n".join(out_lines)
+
+
 def glitchify_words(text):
     """HTML-escape text word by word, randomly wrapping ~1 in 6 words in a
     span that gets an idle CSS glitch-flicker animation (staggered via a
     random --gd delay so words don't all flicker in sync). Used for the
-    meme-tier LITTERPOSTING rant pages, not the regular dialogue turns."""
-    words = text.split(" ")
-    out = []
-    for w in words:
-        esc = html.escape(w)
-        if esc.strip() and random.random() < 0.16:
-            delay = round(random.uniform(0, 2.6), 2)
-            esc = f'<span class="glitch-word" style="--gd:{delay}s">{esc}</span>'
-        out.append(esc)
-    return " ".join(out)
+    meme-tier LITTERPOSTING rant pages and the homepage hero text.
+
+    Splits line-by-line first: dense ASCII art often has no space
+    anywhere near a line break (e.g. a line ending "...____" immediately
+    followed by a new line starting "|..."), so a naive whole-text
+    text.split(" ") can glue two lines together into one "word" and wrap
+    a display:inline-block span across a line break, visibly misaligning
+    the art. Scoping the split to one line at a time makes that
+    impossible — a span can never contain a newline."""
+    out_lines = []
+    for line in text.split("\n"):
+        words = line.split(" ")
+        out = []
+        for w in words:
+            esc = html.escape(w)
+            if esc.strip() and random.random() < 0.16:
+                delay = round(random.uniform(0, 2.6), 2)
+                esc = f'<span class="glitch-word" style="--gd:{delay}s">{esc}</span>'
+            out.append(esc)
+        out_lines.append(" ".join(out))
+    return "\n".join(out_lines)
 
 
 def naive_title(turns):
@@ -878,7 +920,10 @@ def build(transcripts_dir, out_dir, gen_titles):
         ))
 
     all_cards = rant_cards + cards
-    hero_text = f'<pre class="hero-glitch-block">{glitchify_words(HERO_GLITCH_TEXT)}</pre>'
+    hero_text = (
+        f'<pre class="hero-glitch-block">'
+        f'{glitchify_words(pad_blocks_to_equal_width(HERO_GLITCH_TEXT))}</pre>'
+    )
     index_html = INDEX_TEMPLATE.format(
         css=CSS,
         decorations=build_decorations(ASCII_CATS),
