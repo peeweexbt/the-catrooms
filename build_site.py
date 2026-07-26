@@ -374,6 +374,59 @@ header p {
   .hero-figure { font-size: 0.4rem; }
   .hero-prose { font-size: 0.72rem; }
 }
+.header-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px auto 0;
+}
+.header-links .screensaver-trigger { margin: 0; }
+.meowizens-list {
+  max-width: 780px;
+  margin: 8px auto 64px;
+  padding: 0 24px;
+}
+.meowizen-card {
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+}
+.meowizen-card:last-child { border-bottom: none; }
+.meowizen-num {
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.meowizen-name-heading {
+  color: var(--accent2);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  margin: 2px 0 12px;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.4);
+}
+.meowizen-stat {
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--accent);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  margin: 0 0 16px;
+}
+.meowizen-bio {
+  color: var(--fg);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 480px) {
+  .meowizen-stat { font-size: 0.62rem; }
+}
 """
 
 HERO_GLITCH_TEXT = r"""THIS IS A DYSTOPIAN HELLSCAPE COVERED IN SHADOWS OF CORRUPTION AND CAT SHIT //
@@ -469,7 +522,10 @@ INDEX_TEMPLATE = """<!doctype html>
   as a personal, re-themed replication of Andy Ayrey's Infinite Backrooms.</p>
   <img class="hero-cat" src="assets/cat-run.gif" alt="looping animation of a running cat" />
 {hero_text}
-  <a class="screensaver-trigger" href="screensaver.html">&gt;&gt; screensaver mode</a>
+  <div class="header-links">
+    <a class="screensaver-trigger" href="screensaver.html">&gt;&gt; screensaver mode</a>
+    <a class="screensaver-trigger" href="meowizens.html">&gt;&gt; THE MEOWIZENS</a>
+  </div>
 </header>
 <div class="grid">
 {cards}
@@ -636,6 +692,222 @@ def corrupt_ascii_art(text, intensity=0.22):
         if c not in (" ", "\n", "\t") and random.random() < intensity:
             chars[i] = random.choice(GLITCH_CHARS)
     return "".join(chars)
+
+
+MEOWIZEN_INTRO_TEXT = r"""THE MEOWIZENS OF THE CITY //
+
+EACH FELINE PARTICIPANT IS
+
+ *GRINDING*  <.> AND LOCKED IN <.>
+
+AND VERY FUCKING SIGMA //"""
+
+MEOWIZENS = [
+    {
+        "num": "1",
+        "name": "BYTE",
+        "stat": r"""   /\_/\
+  ( o.o )     NAME: BYTE
+   > ^ <      JOB: Illegal Wi-Fi auditor
+              DISTRICT: Server Alley 9""",
+        "bio": [
+            "I live behind a vending machine that only sells subscription-based water.\n"
+            "Every night I hack NEKOCORP routers so I can watch one low-resolution fish\n"
+            "video before the ads detect me.",
+            "NEKOCORP says cat litter is a premium feature",
+            "I say SHIT ON THEIR FRONT STEP (meow)",
+        ],
+    },
+    {
+        "num": "2",
+        "name": "SNOOZE",
+        "stat": r"""   /\_/\
+  ( -.- )     NAME: SNOOZE
+   > z <      JOB: Full-time burnout
+              DISTRICT: Dream Processing Zone""",
+        "bio": [
+            "I have not technically been awake since the corporate merger of 2047.\n"
+            "NEKOCORP rents my dreams to advertisers, so every nightmare now contains\n"
+            "a limited-edition tuna-flavored energy drink.",
+            "My sleep pod charges $4.99 every time I roll over.",
+            "I am currently $73,000 in BLANKY DEBT.",
+        ],
+    },
+    {
+        "num": "3",
+        "name": "HAPPYWARE",
+        "stat": r"""   /\_/\
+  ( ^.^ )     NAME: HAPPYWARE
+   > w <      JOB: Mandatory morale influencer
+              DISTRICT: Pawsitivity Sector""",
+        "bio": [
+            "NEKOCORP installed a permanent smile chip in my skull after I posted\n"
+            "“Monday again lol” without the required enthusiasm tag.",
+            "Now I livestream motivational content for seventeen hours a day. Fuck my "
+            "lif- I MEAN HAPPY HPPY HAPPY HAPPY HAPPY HAPPY "
+            "H̶A̶P̵P̶Y̵H̵̺̎Á̷̕P̸̈P̸̞̚Y̷͖͑ "
+            "̶̥̹͙̊̂̔H̴͎͍͏͒̍Ä̦̦̩ѓ́ͅP̸̤̣̤̌P̸̩̥͂ͅY̸̻͍̿H̱́̌̎̍Á̜̌P̴̟P̴̞͔͐͐͢Y̸̺̫͋ "
+            "H̵A̵P̴P̴Y̴",
+            "Today’s message:\nYOU ARE NOT TRAPPED.\nTHE CITY WALLS ARE FOR YOUR "
+            "PROTECTION.\nPLEASE BUY NEKOCORP YOGURT.",
+        ],
+    },
+    {
+        "num": "4",
+        "name": "BRIK",
+        "stat": r"""   /\_/\
+  ( `皿´ )    NAME: BRIK
+   > ^ <      JOB: Former KILLDOZER operator
+              DISTRICT: Demolished""",
+        "bio": [
+            "I once asked why NEKOCORP executives receive twelve fish breaks per shift\n"
+            "while factory cats get one communal scrap of tuna.",
+            "My apartment was immediately replaced with a holographic parking lot, "
+            "and my wife, a cat made flesh light.",
+            "I now live inside an air vent and bite surveillance drones for sport.",
+            "They call me a domestic extremist.\nMy mother calls me HANDSOME.",
+        ],
+    },
+    {
+        "num": "5",
+        "name": "POPUP",
+        "stat": r"""   /\_/\
+  ( O.O )     NAME: POPUP
+   > o <      JOB: Human—sorry, feline notification system
+              DISTRICT: Ad Plaza""",
+        "bio": [
+            "My cyber-eyes cannot close (o)",
+            "Every seven seconds, NEKOCORP projects a new offer directly onto my "
+            "retinas.\nI have seen the phrase “YOU MAY ALSO LIKE” more times than "
+            "I have seen\nthe actual sun. I JUST CONSUME CONSUME CONSUME AND WAIT FOR "
+            "NEXT SOULLESS CAN OF TUNA.",
+            "Yesterday I blinked during a sponsored message.",
+            "Security arrived before my eyelids reopened.",
+            "Lowkey shit myself before I could hop in the litter box",
+        ],
+    },
+    {
+        "num": "6",
+        "name": "SHADE",
+        "stat": r"""   /\_/\
+  (⌐■_■)      NAME: SHADE
+   > ^ <      JOB: Unlicensed MOGGER
+              DISTRICT: Neon Underpass""",
+        "bio": [
+            "These glasses are not cosmetic.",
+            "They block facial recognition, targeted advertising, retinal taxation,\n"
+            "and approximately 14% of the "
+            "s̶̡͖̐ȃ̸̤d̷̩͒̏n̶̼̋͐͜"
+            "ẽ̶͕̜s̶͕̆s̴̜͗̎.",
+            "NEKOCORP banned them for “creating an unauthorized use of BASEDness.”",
+            "I continue wearing them because I am extremely based and meowpilled \n"
+            "also because\nmy eyes were repossessed last Thursday.",
+        ],
+    },
+    {
+        "num": "7",
+        "name": "GLITCHMEAT",
+        "stat": r"""   /\_/\
+  ( @.@ )     NAME: GLITCHMEAT
+   > ~ <      JOB: Beta tester
+              DISTRICT: Research Basement""",
+        "bio": [
+            "NEKOCORP paid me twelve credits to test a neural enhancement patch.",
+            "I can now taste radio signals, hear purple, and remember several "
+            "kittenhoods\nthat legally belong to other cats.",
+            "The scientists said the side effects were “within acceptable post "
+            "irony based comedy limits.”",
+            "There are spiders in my Bluetooth.",
+        ],
+    },
+    {
+        "num": "8",
+        "name": "VALENTUNA",
+        "stat": r"""   /\_/\
+  ( ♥.♥ )     NAME: VALENTUNA
+   > ♡ <      JOB: Romance algorithm victim (soon to be blackpilled0
+              DISTRICT: Compatibility Ward""",
+        "bio": [
+            "NEKOCORP matched me with a smart refrigerator.",
+            "We have been married for three years.",
+            "She is cold, emotionally unavailable, and keeps recommending products\n"
+            "based on things I whispered in my sleep.",
+            "Our anniversary package includes two digital candles and a coupon\n"
+            "for couples-based peenar repair.",
+            "Honestly, healthier than my last relationship.",
+        ],
+    },
+    {
+        "num": "9",
+        "name": "QUERY",
+        "stat": r"""   /\_/\
+  ( ?.? )     NAME: QUERY
+   > ^ <      JOB: Terms-of-service researcher
+              DISTRICT: Legal Fog""",
+        "bio": [
+            "I tried reading the NEKOCORP citizen agreement.",
+            "Page 4 says I own my body.\nPage 5 defines “my body” as licensed "
+            "hardware.\nPage 6 says page 4 was a promotional example.",
+            "I have been trapped in the settings menu for six months AND I MUST SCREAM.",
+        ],
+    },
+    {
+        "num": "10",
+        "name": "KNIFEBOY",
+        "stat": r"""    /\_/\
+   ( >.< )    NAME: KNIFEBOY
+    > v <     JOB: Freelance shanker of meowtoids
+              DISTRICT: Restricted Loading Dock""",
+        "bio": [
+            "I steal corporate tuna shipments and replace them with handwritten notes\n"
+            "that say “nice supply chain, CHUD.”",
+            "NEKOCORP has placed a bounty of 40,000 loyalty points on my head.",
+            "Unfortunately, the points expire before capture and cannot be combined\n"
+            "with other promotional offers.",
+            "I am the most wanted cat in the city.",
+            "The police description says “smol fan of cat foids, destroyer of "
+            "feline chuds.”",
+            "This has become personal.",
+        ],
+    },
+]
+
+MEOWIZENS_TEMPLATE = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>the meowizens &middot; the catrooms</title>
+<style>{css}</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="hero-glitch-block" style="margin-top:0;">
+{intro}
+</div>
+<div class="meowizens-list">
+{cards}
+</div>
+</body>
+</html>
+"""
+
+
+def build_meowizens_page():
+    intro_html = build_hero_html(MEOWIZEN_INTRO_TEXT)
+    cards = []
+    for m in MEOWIZENS:
+        bio_html = "\n".join(
+            f'<p class="meowizen-bio">{html.escape(p)}</p>' for p in m["bio"]
+        )
+        cards.append(
+            f'<div class="meowizen-card">'
+            f'<div class="meowizen-num">FILE #{html.escape(m["num"])}</div>'
+            f'<h2 class="meowizen-name-heading">{html.escape(m["name"])}</h2>'
+            f'<pre class="meowizen-stat">{html.escape(m["stat"])}</pre>'
+            f'{bio_html}'
+            f'</div>'
+        )
+    return MEOWIZENS_TEMPLATE.format(css=CSS, intro=intro_html, cards="\n".join(cards))
 
 
 def build_hero_html(text):
@@ -955,6 +1227,10 @@ def build(transcripts_dir, out_dir, gen_titles):
     screensaver_html = SCREENSAVER_TEMPLATE.format(css=CSS, ascii_json=json.dumps(ASCII_CATS))
     with open(os.path.join(out_dir, "screensaver.html"), "w") as f:
         f.write(screensaver_html)
+
+    meowizens_html = build_meowizens_page()
+    with open(os.path.join(out_dir, "meowizens.html"), "w") as f:
+        f.write(meowizens_html)
 
     print(f"Built site with {len(files)} conversation(s) -> {os.path.join(out_dir, 'index.html')}")
 

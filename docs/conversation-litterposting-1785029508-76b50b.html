@@ -350,38 +350,91 @@ header p {
   .hero-figure { font-size: 0.4rem; }
   .hero-prose { font-size: 0.72rem; }
 }
+.header-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px auto 0;
+}
+.header-links .screensaver-trigger { margin: 0; }
+.meowizens-list {
+  max-width: 780px;
+  margin: 8px auto 64px;
+  padding: 0 24px;
+}
+.meowizen-card {
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+}
+.meowizen-card:last-child { border-bottom: none; }
+.meowizen-num {
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.meowizen-name-heading {
+  color: var(--accent2);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  margin: 2px 0 12px;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.4);
+}
+.meowizen-stat {
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--accent);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  margin: 0 0 16px;
+}
+.meowizen-bio {
+  color: var(--fg);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 480px) {
+  .meowizen-stat { font-size: 0.62rem; }
+}
 </style>
 </head>
 <body>
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">@EVERYONE. @EVERYONE. WAFFLES <span class="glitch-word" style="--gd:2.1s">FROM</span> <span class="glitch-word" style="--gd:1.77s">THE</span> FIRE ESCAPE annexed the <span class="glitch-word" style="--gd:0.38s">laundry</span> vent. THE WARM ONE. <span class="glitch-word" style="--gd:0.33s">THE</span> ONE THAT SMELLS <span class="glitch-word" style="--gd:2.55s">LIKE</span> FABRIC SOFTENER AND <span class="glitch-word" style="--gd:0.95s">FREEDOM.</span> this is not diplomacy anymore this is WAR and <span class="glitch-word" style="--gd:0.35s">I</span> did not start it, I <span class="glitch-word" style="--gd:1.62s">am</span> simply going to finish it</div>
-<div class="rant-turn" style="animation-delay:0.12s">NekoCorp dropped &#x27;GroomBot 3000&#x27; <span class="glitch-word" style="--gd:0.76s">this</span> week, a <span class="glitch-word" style="--gd:0.55s">subscription</span> brush-bot that &#x27;de-mats your <span class="glitch-word" style="--gd:0.47s">fur</span> for optimal drone-scan <span class="glitch-word" style="--gd:0.6s">compliance.&#x27;</span> sir. SIR. I <span class="glitch-word" style="--gd:2.22s">am</span> a <span class="glitch-word" style="--gd:0.91s">FERAL</span> <span class="glitch-word" style="--gd:2.3s">ANIMAL.</span> my mats have HISTORY. my mats have LORE. do not <span class="glitch-word" style="--gd:1.31s">touch</span> the <span class="glitch-word" style="--gd:2.01s">lore</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-=====-.
-     ( &lt;0]  .? )
-      &#x27;6^*Y==-&#x27;
-       |  %  |
-   ...picking thro8gh t#e n&gt;on rain.^.</div>
-<div class="rant-turn" style="animation-delay:0.36s">update <span class="glitch-word" style="--gd:2.33s">from</span> <span class="glitch-word" style="--gd:1.18s">the</span> vent front: <span class="glitch-word" style="--gd:0.21s">relocated</span> <span class="glitch-word" style="--gd:2.02s">Waffles&#x27;</span> <span class="glitch-word" style="--gd:0.5s">bedding</span> (a flattened pizza box, truly a hovel) six inches to the left. <span class="glitch-word" style="--gd:1.46s">he</span> hasn&#x27;t noticed. I am inside his <span class="glitch-word" style="--gd:0.02s">walls</span> now. I live there rent <span class="glitch-word" style="--gd:1.75s">free,</span> in his HEAD</div>
-<div class="rant-turn" style="animation-delay:0.48s">curfew drones are <span class="glitch-word" style="--gd:1.98s">out</span> again doing &#x27;warmth zone compliance <span class="glitch-word" style="--gd:1.53s">checks,&#x27;</span> scanning anyone caught <span class="glitch-word" style="--gd:1.23s">loitering</span> near <span class="glitch-word" style="--gd:0.02s">a</span> heat source after dark. my heat source is a MANHOLE. <span class="glitch-word" style="--gd:1.02s">my</span> heat source is PUBLIC <span class="glitch-word" style="--gd:1.94s">INFRASTRUCTURE.</span> try me</div>
+<div class="rant-turn" style="animation-delay:0.0s">@EVERYONE. @EVERYONE. WAFFLES <span class="glitch-word" style="--gd:1.3s">FROM</span> THE FIRE <span class="glitch-word" style="--gd:2.6s">ESCAPE</span> <span class="glitch-word" style="--gd:0.9s">annexed</span> the laundry vent. THE WARM <span class="glitch-word" style="--gd:0.03s">ONE.</span> THE ONE THAT SMELLS <span class="glitch-word" style="--gd:1.67s">LIKE</span> FABRIC SOFTENER AND FREEDOM. this is not diplomacy anymore this is WAR and I did not start it, I <span class="glitch-word" style="--gd:2.25s">am</span> simply going to finish it</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:1.19s">NekoCorp</span> dropped <span class="glitch-word" style="--gd:0.88s">&#x27;GroomBot</span> 3000&#x27; this week, <span class="glitch-word" style="--gd:1.31s">a</span> subscription brush-bot <span class="glitch-word" style="--gd:2.2s">that</span> &#x27;de-mats your fur for optimal drone-scan compliance.&#x27; sir. SIR. I am a FERAL <span class="glitch-word" style="--gd:1.65s">ANIMAL.</span> <span class="glitch-word" style="--gd:1.71s">my</span> mats have HISTORY. my mats have <span class="glitch-word" style="--gd:0.11s">LORE.</span> <span class="glitch-word" style="--gd:1.18s">do</span> not touch the lore</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>      .1=====-.
+     ( [0]  .&lt; ░
+      &#x27;-==Y=&lt;-&#x27;
+       |  |  |
+   ...picking throu■h the neo█ rain...</div>
+<div class="rant-turn" style="animation-delay:0.36s">update from <span class="glitch-word" style="--gd:2.04s">the</span> vent front: relocated <span class="glitch-word" style="--gd:1.2s">Waffles&#x27;</span> bedding (a <span class="glitch-word" style="--gd:2.29s">flattened</span> pizza box, truly <span class="glitch-word" style="--gd:2.55s">a</span> hovel) six inches to the left. he hasn&#x27;t noticed. <span class="glitch-word" style="--gd:1.8s">I</span> <span class="glitch-word" style="--gd:2.35s">am</span> inside his walls now. I live there rent <span class="glitch-word" style="--gd:0.13s">free,</span> in his HEAD</div>
+<div class="rant-turn" style="animation-delay:0.48s">curfew drones <span class="glitch-word" style="--gd:2.02s">are</span> out again doing &#x27;warmth <span class="glitch-word" style="--gd:1.33s">zone</span> compliance checks,&#x27; scanning <span class="glitch-word" style="--gd:0.07s">anyone</span> caught loitering near a heat source after dark. my heat source <span class="glitch-word" style="--gd:1.08s">is</span> a MANHOLE. my heat source <span class="glitch-word" style="--gd:2.12s">is</span> PUBLIC INFRASTRUCTURE. try me</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.72s">overheard two <span class="glitch-word" style="--gd:0.94s">pigeons</span> say Waffles is &#x27;building alliances&#x27; with the <span class="glitch-word" style="--gd:1.89s">parking</span> garage crew. cool. CUTE. let <span class="glitch-word" style="--gd:0.47s">him.</span> an alliance of guys who eat out of a garage <span class="glitch-word" style="--gd:2.27s">is</span> not <span class="glitch-word" style="--gd:2.27s">scaring</span> anybody, I have eaten out of THREE dumpsters this week ALONE</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:0.88s">diplomatic</span> <span class="glitch-word" style="--gd:2.18s">incident:</span> coughed a hairball directly into the GroomBot&#x27;s intake slot. it jammed. it is MAKING A NOISE. this is not <span class="glitch-word" style="--gd:2.22s">vandalism</span> this is ARMS CONTROL, I am DISARMING it, I am <span class="glitch-word" style="--gd:2.51s">a</span> PEACEKEEPER</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\▓1? ▓▒░
-  ░▒@( o█o )▓▒░   -- s▓&lt;&amp;6l interferenc▌ --
-  5▒▓ &gt; % 5 ▓▒░</div>
-<div class="rant-turn" style="animation-delay:1.08s">black market <span class="glitch-word" style="--gd:0.31s">update:</span> <span class="glitch-word" style="--gd:1.21s">traded</span> half a sardine for a SEALED bag of the good catnip, the stuff that&#x27;s <span class="glitch-word" style="--gd:2.07s">basically</span> NekoCorp evidence tampering. <span class="glitch-word" style="--gd:2.32s">do</span> not <span class="glitch-word" style="--gd:1.84s">ask</span> where it&#x27;s from. the answer <span class="glitch-word" style="--gd:1.55s">is</span> &#x27;a van.&#x27; <span class="glitch-word" style="--gd:1.61s">there</span> <span class="glitch-word" style="--gd:1.22s">is</span> always a van</div>
+<div class="rant-turn" style="animation-delay:0.72s">overheard two pigeons say Waffles is &#x27;building alliances&#x27; with the parking <span class="glitch-word" style="--gd:0.13s">garage</span> <span class="glitch-word" style="--gd:1.83s">crew.</span> cool. CUTE. let him. an alliance of guys who eat <span class="glitch-word" style="--gd:1.75s">out</span> <span class="glitch-word" style="--gd:1.49s">of</span> <span class="glitch-word" style="--gd:2.36s">a</span> garage is not <span class="glitch-word" style="--gd:2.13s">scaring</span> anybody, I have eaten <span class="glitch-word" style="--gd:0.86s">out</span> of <span class="glitch-word" style="--gd:1.56s">THREE</span> dumpsters this week <span class="glitch-word" style="--gd:2.26s">ALONE</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">diplomatic incident: coughed a hairball directly into the GroomBot&#x27;s intake slot. it jammed. it <span class="glitch-word" style="--gd:0.03s">is</span> MAKING A NOISE. this is not vandalism this <span class="glitch-word" style="--gd:0.32s">is</span> ARMS CONTROL, I am DISARMING it, <span class="glitch-word" style="--gd:0.74s">I</span> am a <span class="glitch-word" style="--gd:1.13s">PEACEKEEPER</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
+  ▐▒▓! o█░ ▐▓▒░   -- &amp;ignal i6terf&gt;rence --
+  ░▒▓ 6 ▓ ░ ▓◇!</div>
+<div class="rant-turn" style="animation-delay:1.08s">black market <span class="glitch-word" style="--gd:0.85s">update:</span> traded <span class="glitch-word" style="--gd:1.84s">half</span> a sardine <span class="glitch-word" style="--gd:0.66s">for</span> a SEALED bag of the good catnip, the stuff that&#x27;s basically NekoCorp evidence tampering. do not ask where <span class="glitch-word" style="--gd:0.83s">it&#x27;s</span> from. the answer is &#x27;a van.&#x27; there is <span class="glitch-word" style="--gd:2.34s">always</span> a van</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>        ,--.
        ( o.o)__
         &#x27;--&#x27;   \___
                  \  \__/\_/\
                   \_(  o.o  )
                      &gt; ^ &lt; (watching the towers blink)</div>
-<div class="rant-turn" style="animation-delay:1.32s">in closing: the vent is MINE, Waffles can rebuild his little pizza box empire from the <span class="glitch-word" style="--gd:2.03s">ash,</span> GroomBot is down <span class="glitch-word" style="--gd:1.51s">for</span> maintenance because of ME, and if <span class="glitch-word" style="--gd:1.5s">a</span> drone asks <span class="glitch-word" style="--gd:0.91s">about</span> your &#x27;warmth zone <span class="glitch-word" style="--gd:0.69s">compliance&#x27;</span> you tell it warmth is a <span class="glitch-word" style="--gd:2.46s">HUMAN</span> RIGHTS <span class="glitch-word" style="--gd:0.68s">issue</span> <span class="glitch-word" style="--gd:0.69s">for</span> cats <span class="glitch-word" style="--gd:0.47s">too.</span> <span class="glitch-word" style="--gd:0.0s">goodnight</span> <span class="glitch-word" style="--gd:1.39s">fire</span> escape sector, <span class="glitch-word" style="--gd:2.45s">you&#x27;re</span> <span class="glitch-word" style="--gd:0.19s">already</span> lost, go home</div>
+<div class="rant-turn" style="animation-delay:1.32s">in <span class="glitch-word" style="--gd:0.18s">closing:</span> the vent is MINE, Waffles can rebuild his little pizza box empire from <span class="glitch-word" style="--gd:0.56s">the</span> ash, GroomBot is down for maintenance because of <span class="glitch-word" style="--gd:2.11s">ME,</span> <span class="glitch-word" style="--gd:0.0s">and</span> if a drone asks about your &#x27;warmth zone compliance&#x27; you <span class="glitch-word" style="--gd:0.93s">tell</span> it warmth is a HUMAN RIGHTS <span class="glitch-word" style="--gd:0.72s">issue</span> for cats <span class="glitch-word" style="--gd:1.06s">too.</span> goodnight <span class="glitch-word" style="--gd:2.55s">fire</span> escape sector, you&#x27;re already lost, go home</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>
