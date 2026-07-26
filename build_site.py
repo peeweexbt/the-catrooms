@@ -611,6 +611,23 @@ def build_decorations(ascii_list):
         text = html.escape(art).strip("\n")
         pieces.append(f'<pre class="decor-cat" style="{style}">{text}</pre>')
 
+    # extra pass: the main scatter above naturally thins out near the very
+    # top row (only one piece per side lands up there), so add a handful
+    # more, biased toward the top of the page, reusing the exact same
+    # class/color/opacity treatment so the aesthetic stays identical --
+    # just a bit denser up top.
+    extra_count = min(8, max(4, n // 2))
+    for i in range(extra_count):
+        art = random.choice(ascii_list)
+        side = "left" if i % 2 == 0 else "right"
+        top = round(random.uniform(2, 24), 1)
+        edge_offset = random.randint(6, 60)
+        color = "var(--accent)" if random.random() < 0.5 else "var(--accent2)"
+        opacity = round(random.uniform(0.16, 0.30), 2)
+        style = f"top:{top}%; {side}:{edge_offset}px; color:{color}; opacity:{opacity};"
+        text = html.escape(art).strip("\n")
+        pieces.append(f'<pre class="decor-cat" style="{style}">{text}</pre>')
+
     return "\n".join(pieces)
 
 

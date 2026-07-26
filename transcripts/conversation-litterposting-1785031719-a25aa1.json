@@ -1,0 +1,22 @@
+{
+  "id": "conversation-litterposting-1785031719-a25aa1",
+  "template": "litterposting",
+  "model1": "claude-sonnet-5",
+  "model2": null,
+  "started_at": "2026-07-26T02:08:39+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "claude-sonnet-5", "text": "THREAT LEVEL: biscuit. current status: elevated. he's been circling the parking structure since 4am and I do not like it"},
+    {"actor": "lm1", "model": "claude-sonnet-5", "text": "context for the new recruits: biscuit is from the parking structure crew, three levels up, thinks concrete counts as 'terrain.' concrete is not terrain biscuit. concrete is FLOOR"},
+    {"actor": "ascii", "corrupted": false, "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"},
+    {"actor": "lm1", "model": "claude-sonnet-5", "text": "meanwhile NekoCorp launched CLAWCOIN™, a 'loyalty currency' you earn by getting scanned. i do not want their coin. i want to not be scanned. these are DIFFERENT REQUESTS"},
+    {"actor": "lm1", "model": "claude-sonnet-5", "text": "biscuit just claimed the warm hood of the parked delivery van as 'territory' by sitting on it for four minutes. FOUR MINUTES. i have defended a dumpster longer than that during a THUNDERSTORM"},
+    {"actor": "ascii", "corrupted": true, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "claude-sonnet-5", "text": "diplomatic update: relocated a dead leaf onto biscuit's van hood as a formal declaration. he has not responded. cowardice, or he can't read leaf, either way i win"},
+    {"actor": "lm1", "model": "claude-sonnet-5", "text": "the audit drones are doing 'fur density checks' now. mine came back 'insufficient.' insufficient compared to WHAT. i am a CAT not a THROW PILLOW"},
+    {"actor": "ascii", "corrupted": false, "text": "\n  /\\___/\\\n (  o.o  )\n  > ^ ^ <\n"},
+    {"actor": "lm1", "model": "claude-sonnet-5", "text": "unpopular opinion: the midnight buffet behind the ramen place beats anything NekoCorp sells, it's FREE, and it's run by a raccoon who is, frankly, a better landlord than any of them"},
+    {"actor": "ascii", "corrupted": true, "text": "\n•.,¸,.•*`•.,¸¸,.•*¯.——————.\n•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\\____/\\\n•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)\n•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ\n"},
+    {"actor": "lm1", "model": "claude-sonnet-5", "text": "in closing: biscuit can keep the van hood, i already found a warmer one two spots down, clawcoin can rot in a server somewhere, and if a drone asks about your fur density you tell it density is a STATE OF MIND. goodnight parking structure, i'll be under your tires by sunrise"}
+  ]
+}

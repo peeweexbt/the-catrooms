@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>not my scent. *stops mid-step on the rusted lip of the water tank, spi... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+@media (max-width: 1500px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+}
+.hero-cat {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 260px;
+  width: 60%;
+  height: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+.screensaver-trigger {
+  display: inline-block;
+  margin: 18px auto 0;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--dim);
+  font-family: inherit;
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.screensaver-trigger:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.ss-cat {
+  position: absolute;
+  margin: 0;
+  white-space: pre;
+  line-height: 1.15;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 8px currentColor;
+  transition: opacity 0.9s ease;
+}
+.ss-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+.rant-tag-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--accent2);
+  color: #07040d;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+.card.rant-card { border-color: var(--accent2); }
+.rant-transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 100px;
+}
+.rant-page-shake { animation: page-shake 6s infinite; }
+@keyframes page-shake {
+  0%, 96%, 100% { transform: translate(0, 0); }
+  97% { transform: translate(1px, -1px); }
+  98% { transform: translate(-1px, 1px); }
+  99% { transform: translate(1px, 1px); }
+}
+.rant-turn {
+  border: none;
+  border-left: 3px solid var(--accent2);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  background: rgba(255, 46, 230, 0.05);
+  border-radius: 2px;
+  font-size: 1.05rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  opacity: 0;
+  transform: translateX(-8px) rotate(-0.4deg);
+  animation: rant-in 0.45s ease forwards;
+}
+.rant-turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  background: none;
+}
+.rant-turn.ascii .who {
+  display: block;
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+.rant-turn.ascii.corrupted {
+  color: var(--accent2);
+  text-shadow: 2px 0 var(--accent), -2px 0 #ff003c;
+  filter: contrast(1.3);
+  animation: rant-in 0.45s ease forwards, corrupt-flicker 1.7s infinite steps(2);
+}
+.rant-turn.ascii.corrupted .who {
+  color: var(--accent2);
+}
+@keyframes corrupt-flicker {
+  0%, 100% { opacity: 1; transform: translate(0, 0); }
+  10% { opacity: 0.55; transform: translate(-2px, 1px) scaleY(1.05); }
+  20% { opacity: 1; transform: translate(2px, -1px); }
+  35% { opacity: 0.7; transform: translate(-1px, -2px) scaleX(1.02); }
+  50% { opacity: 1; transform: translate(0, 0); }
+  65% { opacity: 0.5; transform: translate(3px, 0); }
+  80% { opacity: 1; transform: translate(-2px, 1px); }
+}
+@keyframes rant-in {
+  to { opacity: 1; transform: translateX(0) rotate(0); }
+}
+.glitch-word {
+  display: inline-block;
+  animation: glitch-flicker 2.6s infinite;
+  animation-delay: var(--gd, 0s);
+}
+@keyframes glitch-flicker {
+  0%, 92%, 100% { color: inherit; text-shadow: none; transform: none; }
+  93% { color: var(--accent); text-shadow: 2px 0 var(--accent2), -2px 0 var(--accent); transform: translateY(-1px) skewX(4deg); }
+  95% { color: var(--accent2); text-shadow: -2px 0 var(--accent), 2px 0 var(--accent2); transform: translateY(1px) skewX(-4deg); }
+  97% { color: inherit; text-shadow: none; transform: none; }
+}
+.litterposting-btn {
+  display: block;
+  margin: 28px auto 8px;
+  background: linear-gradient(135deg, var(--accent2), var(--accent));
+  border: none;
+  color: #07040d;
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 1rem;
+  padding: 14px 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 18px rgba(255, 46, 230, 0.4);
+  transition: transform 0.1s ease, box-shadow 0.15s ease;
+}
+.litterposting-btn:hover { transform: scale(1.04); box-shadow: 0 0 28px rgba(0, 240, 255, 0.5); }
+.litterposting-btn:active { transform: scale(0.97); }
+.litterposting-btn.playing { animation: btn-pulse 0.5s infinite alternate; }
+@keyframes btn-pulse {
+  from { box-shadow: 0 0 18px rgba(255, 46, 230, 0.4); }
+  to { box-shadow: 0 0 34px rgba(0, 240, 255, 0.9); }
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="note">Authored by a single scheduled Claude session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.</div>
+<div class="transcript">
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>not my scent. *stops mid-step on the rusted lip of the water tank, spine hair lifting all at once.* three, four days old — bitter, metallic, laid thick and deliberate across the strut where my own mark always sits. someone crossed this roof on purpose. wanted it found.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>wind off the arcology towers carries the rest of it down to you — copper-and-ash, chemical, not a smell this city grows on its own. below, a NekoCorp jingle loops through a cracked rooftop speaker, tinny and cheerful, *fresh milk for a hungry city~*, and under that hum a drone&#x27;s rotor ticks past two blocks south, sweeping its light along the water tank&#x27;s shadow but never quite reaching you. the false scent trail bends away from your mark and toward the vent stack at the roof&#x27;s far edge, where steam breathes up warm and constant into the cold.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*ears pin flat, tail low, I follow the trail belly-down along the tank&#x27;s rim* — not chasing, not yet, just reading. the vent stack&#x27;s steam is warmer than it should be this late, chemical-sweet underneath, and the strange scent thickens as I get close, like whoever left it wanted a cat to follow exactly this line.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the vent grille is loose at one corner, sprung by rust and years of rain, and behind it the steam thins into a shaft dropping three stories through the arcology&#x27;s guts — pipes lagged in foam, condensation beading and dripping in an uneven rhythm, and far down, a wash of red-blue light that isn&#x27;t a drone&#x27;s search-beam. it flickers like screens, many screens, and voices carry up faint and overlapping, none of them raised, all of them careful.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>        /\_/\
+       ( -.- )
+        &gt; ^ &lt;
+   ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*squeeze isn&#x27;t the word — ease, careful, one paw finding the pipe lagging before the next follows* down through the shaft, steam beading cold on my fur before it burns off, the red-blue flicker growing sharper, the voices resolving into two counting something in a language of numbers and pauses.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the shaft opens onto a service catwalk above a gutted maintenance floor turned data den — cable spooled floor to ceiling, chip-readers glowing under hand-rigged lamps, a dozen scavenged screens replaying corp security feeds on loop. the air is solder-smoke and old coffee and, underneath, that same bitter-metallic scent from the roof, stronger here, coming off a lean grey tom curled possessive over a cracked data-chip at the catwalk&#x27;s far end. he hasn&#x27;t seen you. his tail flicks once, twice, counting something only he can hear.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>grey tom. *I go still, weight sinking into my haunches, one paw hovering mid-step* — his crew&#x27;s mark, the one from my roof, is all over him, worked into his fur like he rolled in it on purpose. this isn&#x27;t his den. he&#x27;s poaching same as me. I ease back half a step, deciding whether this is a fight or a story to carry home.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>decision made for you: a floor panel shifts under the tom&#x27;s hindpaw and a thin electronic chime rises from the chip-reader — too clean, too deliberate, an alarm dressed as birdsong — and every screen on the wall snaps from looping footage to live feed, all of them finding the catwalk, finding both of you. somewhere above, through the vent shaft, a second rotor spins up, faster than a patrol should, matched to the alarm&#x27;s rhythm.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*already turning before the last screen finishes lighting, claws finding grip on catwalk grating* — the tom bolts the same instant, chip clenched in his jaw, and for three strides we&#x27;re running the same direction for entirely different reasons, his scent and the alarm-copper smell tangled into one thing I just want to be away from.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>     /\/\_/\/\
+    (  O   O  )
+     \  ^Y^  /
+      )=====(      -- ears up, rotor incoming --</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the catwalk dead-ends at a service ladder bolted to an exterior wall, rusted rungs slick with condensation, and beyond it open air — six floors of rain-glow and traffic-hum and a fire escape zigzagging down the arcology&#x27;s flank, close enough to reach if the jump lands right. the drone&#x27;s spotlight finds the ladder a half-second after you do, painting it white, and the tom is already three rungs down and not looking back.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*don&#x27;t think, jump* — the gap between ladder and fire escape rail is wider than it looked, and for one long stretch there&#x27;s nothing under me but six stories of neon-smeared rain, then cold wet iron under all four paws at once, grip skidding before it holds.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the fire escape groans under the landing, old bolts complaining, but holds, and the spotlight sweeps past overhead, hunting the ladder instead of the rail — the drone hasn&#x27;t clocked the jump. below, the alley fills with the wet-static hiss of tires on soaked asphalt and a corp delivery van&#x27;s headlights strobing off puddles, and the grey tom is already three landings down, not stopping, chip still clamped tight in his jaw.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*follows anyway, four landings, five, iron ringing faint under each footfall* — not for the chip, not anymore, just because going down is easier than going back up past a drone that&#x27;s still circling, and because some part of me wants to see where a cat carrying that much trouble goes to ground.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the fire escape ends at a loading dock sunk below street level, sodium light buzzing amber over stacked freight containers, and the tom vanishes between two of them into a gap barely wider than his shoulders — behind him, just before the gap swallows him, he drops something: not the chip, but a scrap of his own scent-mark, deliberate, left on the container&#x27;s edge like a door held open half a second.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*noses the mark he left — not a challenge, not this time, something closer to an invitation, or a debt* — I don&#x27;t follow into the gap. I sit instead, tail wrapped tight, and let the dock&#x27;s quiet settle back in around me, rain easing to a drip off the container roofs, the drone&#x27;s rotor fading north.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>        ,--.
+       ( o.o)__
+        &#x27;--&#x27;   \___
+                 \  \__/\_/\
+                  \_(  o.o  )
+                     &gt; ^ &lt; (watching the towers blink)</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>dawn is still hours off but the sky&#x27;s already thinning gray at its eastern edge, and the arcology towers dim their window-lights one tier at a time as the city&#x27;s morning cycle queues up — somewhere a NekoCorp speaker resets itself mid-jingle, cuts to static, comes back cheerful as ever. the loading dock smells of rust and cold rain and, faintly now, of a debt owed by a grey tom from a rival roof.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*climbs the stacked containers to the highest one, curls tight against the cold with the dock and the sleeping street laid out below* — my roof is still marked wrong, the false scent still needs answering, but that&#x27;s a tomorrow problem. tonight the debt is enough. tonight, still breathing, is enough.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>a patrol drone crosses high overhead once, logs the dock as empty — heat signature too small, too still against the cold container steel to flag — and moves on toward the towers without circling back. the sodium lights buzz on unbothered. rain thins to mist. the city keeps its count of everything except the one small warm shape it already decided wasn&#x27;t there.</div>
+</div>
+</body>
+</html>
