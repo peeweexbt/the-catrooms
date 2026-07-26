@@ -18,6 +18,7 @@ import os
 import random
 import re
 import shutil
+from datetime import datetime, timezone
 
 from ascii_cats import ASCII_CATS
 
@@ -1120,13 +1121,28 @@ def copy_assets(out_dir, assets_dir="assets"):
             shutil.copy2(src_path, os.path.join(dest, fname))
 
 
+def _entry_sort_key(data):
+    """Sort key for the homepage feed: parse the transcript's real
+    started_at timestamp so the newest post of ANY type (dialogue or
+    LITTERPOSTING) always lands first, rather than grouping by template.
+    Falls back to the oldest possible time for anything missing/unparseable
+    (e.g. the hand-written demo transcripts), so those just sink to the
+    bottom instead of breaking the sort."""
+    ts = data.get("started_at")
+    if ts:
+        try:
+            return datetime.fromisoformat(ts)
+        except ValueError:
+            pass
+    return datetime.min.replace(tzinfo=timezone.utc)
+
+
 def build(transcripts_dir, out_dir, gen_titles):
     os.makedirs(out_dir, exist_ok=True)
     copy_assets(out_dir)
     files = sorted(f for f in os.listdir(transcripts_dir) if f.endswith(".json"))
 
-    cards = []
-    rant_cards = []
+    entries = []  # [(sort_key, card_html)], newest first once sorted
     for fname in files:
         with open(os.path.join(transcripts_dir, fname)) as f:
             data = json.load(f)
@@ -1183,12 +1199,12 @@ def build(transcripts_dir, out_dir, gen_titles):
                 f'[litterposting] {html.escape(data.get("model1", "?"))} solo '
                 f'<span class="rant-tag-badge">LITTERPOSTING</span>'
             )
-            rant_cards.append(CARD_TEMPLATE.format(
+            entries.append((_entry_sort_key(data), CARD_TEMPLATE.format(
                 href=out_name,
                 card_class="card rant-card",
                 tag_line=tag_line,
                 title=title,
-            ))
+            )))
             continue
 
         turn_html = []
@@ -1220,14 +1236,15 @@ def build(transcripts_dir, out_dir, gen_titles):
             f'[{html.escape(data.get("template", "?"))}] '
             f'{html.escape(data.get("model1", "?"))} &harr; {html.escape(data.get("model2", "?"))}'
         )
-        cards.append(CARD_TEMPLATE.format(
+        entries.append((_entry_sort_key(data), CARD_TEMPLATE.format(
             href=out_name,
             card_class="card",
             tag_line=tag_line,
             title=title,
-        ))
+        )))
 
-    all_cards = rant_cards + cards
+    entries.sort(key=lambda e: e[0], reverse=True)
+    all_cards = [card_html for _, card_html in entries]
     hero_text = f'<div class="hero-glitch-block">{build_hero_html(HERO_GLITCH_TEXT)}</div>'
     index_html = INDEX_TEMPLATE.format(
         css=CSS,
