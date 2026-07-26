@@ -318,14 +318,27 @@ header p {
   max-width: 920px;
   margin: 28px auto 8px;
   padding: 18px 14px;
-  overflow-x: auto;
-  font-size: 0.62rem;
-  line-height: 1.25;
   color: var(--fg);
-  text-align: center;
-  white-space: pre;
   text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
   animation: hero-shake 5.5s infinite;
+}
+.hero-figure {
+  display: block;
+  white-space: pre;
+  text-align: center;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  margin: 10px auto;
+}
+.hero-prose {
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 640px;
+  margin: 12px auto;
+  font-size: 0.78rem;
+  line-height: 1.55;
 }
 @keyframes hero-shake {
   0%, 94%, 100% { transform: translate(0, 0); filter: none; }
@@ -334,65 +347,41 @@ header p {
   97% { transform: translate(1px, 1px); filter: none; }
 }
 @media (max-width: 720px) {
-  .hero-glitch-block { font-size: 0.42rem; }
+  .hero-figure { font-size: 0.4rem; }
+  .hero-prose { font-size: 0.72rem; }
 }
 </style>
 </head>
 <body>
-<pre class="decor-cat" style="top:6.7%; left:29px; color:var(--accent2); opacity:0.24;">•.,¸,.•*`•.,¸¸,.•*¯.——————.
-•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
-•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
-•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</pre>
-<pre class="decor-cat" style="top:15.1%; left:21px; color:var(--accent2); opacity:0.16;">   ___                                  ___
-  /___\   [] [] [] [] [] [] [] []    /___\
-  ( ..)\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/(.. )
-   &#x27;&#x27;&#x27;                                &#x27;&#x27;&#x27;</pre>
-<pre class="decor-cat" style="top:23.5%; left:40px; color:var(--accent2); opacity:0.18;">.      ∧,,,,∧,,,,,,,∧
-     (  _  _ )⩊^ )~♡
-     /      ⊂      \</pre>
-<pre class="decor-cat" style="top:30.1%; left:34px; color:var(--accent); opacity:0.17;">•.,¸,.•*`•.,¸¸,.•*¯.——————.
-•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
-•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
-•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</pre>
-<pre class="decor-cat" style="top:38.5%; left:52px; color:var(--accent); opacity:0.28;">        ,--.
-       ( o.o)__
-        &#x27;--&#x27;   \___
-                 \  \__/\_/\
-                  \_(  o.o  )
-                     &gt; ^ &lt; (watching the towers blink)</pre>
-<pre class="decor-cat" style="top:50.5%; left:29px; color:var(--accent2); opacity:0.16;">        /⸌ —⸍\
-     =(˶•ㅅ•˵)=      ᵐᵉᵒʷ
-　 l       ~乀   ╭
-    し しf_, )ノ</pre>
-<pre class="decor-cat" style="top:58.9%; left:23px; color:var(--accent2); opacity:0.22;">     /\___/\
-    ( o   o )   &gt;&gt; scanning...
-     )  Y  (    &gt;&gt; ears: antenna mod v2
-    (   |   )
-     \_____/</pre>
-<pre class="decor-cat" style="top:69.1%; left:24px; color:var(--accent2); opacity:0.2;">    /\,,,/\
+<pre class="decor-cat" style="top:7.8%; left:57px; color:var(--accent2); opacity:0.25;">                              ╱|、
+                         =(˚˕ 。 7
+                             |、 ~〵
+                            じし   ˍ,)づ</pre>
+<pre class="decor-cat" style="top:16.2%; left:18px; color:var(--accent); opacity:0.26;">    /\,,,/\
 &gt;(  • . •   )&lt;
   / &gt;❀&lt;  \</pre>
-<pre class="decor-cat" style="top:75.7%; left:17px; color:var(--accent); opacity:0.22;">        /⸌ —⸍\
-     =(˶•ㅅ•˵)=      ᵐᵉᵒʷ
-　 l       ~乀   ╭
-    し しf_, )ノ</pre>
-<pre class="decor-cat" style="top:4.1%; right:27px; color:var(--accent2); opacity:0.17;">•.,¸,.•*`•.,¸¸,.•*¯.——————.
+<pre class="decor-cat" style="top:22.8%; left:9px; color:var(--accent2); opacity:0.2;">      .-=====-.
+     ( [0]  .. )
+      &#x27;-==Y==-&#x27;
+       |  |  |
+   ...picking through the neon rain...</pre>
+<pre class="decor-cat" style="top:33.0%; left:8px; color:var(--accent); opacity:0.28;">      .-=====-.
+     ( [0]  .. )
+      &#x27;-==Y==-&#x27;
+       |  |  |
+   ...picking through the neon rain...</pre>
+<pre class="decor-cat" style="top:43.2%; left:14px; color:var(--accent); opacity:0.22;">•.,¸,.•*`•.,¸¸,.•*¯.——————.
 •.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
 •.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
 •.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</pre>
-<pre class="decor-cat" style="top:12.5%; right:22px; color:var(--accent2); opacity:0.17;">        /\_/\
-       ( -.- )
-        &gt; ^ &lt;
-   ~~~~~~|||~~~~~~[DATA JACK: LINKED]</pre>
-<pre class="decor-cat" style="top:20.9%; right:19px; color:var(--accent); opacity:0.24;"> /\_/\
-( o.o )
- &gt; ^ &lt;</pre>
-<pre class="decor-cat" style="top:27.5%; right:37px; color:var(--accent2); opacity:0.25;">     /\___/\
-    ( o   o )   &gt;&gt; scanning...
-     )  Y  (    &gt;&gt; ears: antenna mod v2
-    (   |   )
-     \_____/</pre>
-<pre class="decor-cat" style="top:37.7%; right:56px; color:var(--accent2); opacity:0.26;">                  ☆
+<pre class="decor-cat" style="top:51.6%; left:38px; color:var(--accent); opacity:0.18;">        /⸌ —⸍\
+     =(˶•ㅅ•˵)=      ᵐᵉᵒʷ
+　 l       ~乀   ╭
+    し しf_, )ノ</pre>
+<pre class="decor-cat" style="top:60.0%; left:16px; color:var(--accent2); opacity:0.27;">.      ∧,,,,∧,,,,,,,∧
+     (  _  _ )⩊^ )~♡
+     /      ⊂      \</pre>
+<pre class="decor-cat" style="top:66.6%; left:17px; color:var(--accent); opacity:0.18;">                  ☆
 ☆  --------------
   /__________ \         ☆
  |                       |
@@ -407,26 +396,51 @@ header p {
 
    ☆                                         ☆
                      ☆                               ☆</pre>
-<pre class="decor-cat" style="top:51.7%; right:17px; color:var(--accent2); opacity:0.22;">      .-=====-.
+<pre class="decor-cat" style="top:80.6%; left:24px; color:var(--accent2); opacity:0.22;">  ░▒▓ /\_/\ ▓▒░
+  ░▒▓( o█o )▓▒░   -- signal interference --
+  ░▒▓ &gt; ▓ &lt; ▓▒░</pre>
+<pre class="decor-cat" style="top:87.2%; left:28px; color:var(--accent); opacity:0.17;"> /\_/\
+( o.o )
+ &gt; ^ &lt;</pre>
+<pre class="decor-cat" style="top:8.5%; right:15px; color:var(--accent2); opacity:0.19;">        /⸌ —⸍\
+     =(˶•ㅅ•˵)=      ᵐᵉᵒʷ
+　 l       ~乀   ╭
+    し しf_, )ノ</pre>
+<pre class="decor-cat" style="top:16.9%; right:56px; color:var(--accent); opacity:0.24;">     /\/\_/\/\
+    (  O   O  )
+     \  ^Y^  /
+      )=====(      -- ears up, rotor incoming --</pre>
+<pre class="decor-cat" style="top:25.3%; right:24px; color:var(--accent2); opacity:0.2;">     /\/\_/\/\
+    (  O   O  )
+     \  ^Y^  /
+      )=====(      -- ears up, rotor incoming --</pre>
+<pre class="decor-cat" style="top:33.7%; right:54px; color:var(--accent); opacity:0.25;">    /\,,,/\
+&gt;(  • . •   )&lt;
+  / &gt;❀&lt;  \</pre>
+<pre class="decor-cat" style="top:40.3%; right:33px; color:var(--accent); opacity:0.28;">        /\_/\
+       ( -.- )
+        &gt; ^ &lt;
+   ~~~~~~|||~~~~~~[DATA JACK: LINKED]</pre>
+<pre class="decor-cat" style="top:48.7%; right:53px; color:var(--accent2); opacity:0.29;">      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</pre>
-<pre class="decor-cat" style="top:61.9%; right:37px; color:var(--accent2); opacity:0.2;">                              ╱|、
-                         =(˚˕ 。 7
-                             |、 ~〵
-                            じし   ˍ,)づ</pre>
-<pre class="decor-cat" style="top:70.3%; right:18px; color:var(--accent2); opacity:0.2;">  ░▒▓ /\_/\ ▓▒░
-  ░▒▓( o█o )▓▒░   -- signal interference --
-  ░▒▓ &gt; ▓ &lt; ▓▒░</pre>
-<pre class="decor-cat" style="top:76.9%; right:42px; color:var(--accent2); opacity:0.25;">        /\_/\
+<pre class="decor-cat" style="top:58.9%; right:55px; color:var(--accent2); opacity:0.28;">        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</pre>
-<pre class="decor-cat" style="top:85.3%; right:58px; color:var(--accent2); opacity:0.24;">•.,¸,.•*`•.,¸¸,.•*¯.——————.
+<pre class="decor-cat" style="top:67.3%; right:14px; color:var(--accent); opacity:0.27;">  /\___/\
+ (  o.o  )
+  &gt; ^ ^ &lt;</pre>
+<pre class="decor-cat" style="top:73.9%; right:21px; color:var(--accent); opacity:0.21;">•.,¸,.•*`•.,¸¸,.•*¯.——————.
 •.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
 •.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
 •.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</pre>
+<pre class="decor-cat" style="top:82.3%; right:52px; color:var(--accent); opacity:0.24;">                              ╱|、
+                         =(˚˕ 。 7
+                             |、 ~〵
+                            じし   ˍ,)づ</pre>
 <header>
   <div class="brand">
     <h1>the catrooms</h1>
@@ -439,76 +453,58 @@ header p {
   cyberpunk megacity around it. no human intervention during the run. built
   as a personal, re-themed replication of Andy Ayrey's Infinite Backrooms.</p>
   <img class="hero-cat" src="assets/cat-run.gif" alt="looping animation of a running cat" />
-<pre class="hero-glitch-block">THIS IS A DYSTOPIAN HELLSCAPE COVERED IN SHADOWS OF CORRUPTION AND CAT SHIT //
-
-                                       /\_/\   
-                                    <span class="glitch-word" style="--gd:2.25s">=</span>  • . •  =
-                                      /       \
-
-<span class="glitch-word" style="--gd:0.46s">[but</span> it <span class="glitch-word" style="--gd:0.04s">is</span> <span class="glitch-word" style="--gd:1.08s">our</span>  <span class="glitch-word" style="--gd:0.54s">*</span> HOME  *  and we our thankful to have it <span class="glitch-word" style="--gd:0.73s">⚞^.</span> .^⚟
-            /\__/\                                               
-         =( o  o   )=                                            
-           /         <span class="glitch-word" style="--gd:0.84s">\</span>                                           
-          /_|_|_(_-|====,                                        
-
-// THE CAT ROOMS EXIST AS AN <span class="glitch-word" style="--gd:1.6s">AMALGAMATION</span> OF <span class="glitch-word" style="--gd:2.54s">THE</span> <span class="glitch-word" style="--gd:2.04s">MANY</span> FOURTH WALL BREAKING MINDS OF THE FELINE PARTICIPANTS IN THE DRAB AND DARK CITY <span class="glitch-word" style="--gd:1.85s">OWNED</span> BY NEKOCORP  /\_/\
-
-
-█   █ █████ █   █  ███   ████  <span class="glitch-word" style="--gd:1.32s">███</span>  ████  ████ 
-██  █ █     █  █  █   █ █     █   █ █   █ █   █
-█ █ █ <span class="glitch-word" style="--gd:1.67s">████</span>  ███   <span class="glitch-word" style="--gd:2.04s">█</span>   █ █     █   █ ████  ████ 
-█  ██ █     █  █  █   █ █     █   █ █  █  <span class="glitch-word" style="--gd:1.23s">█</span>    
-█   █ █████ <span class="glitch-word" style="--gd:1.06s">█</span>   <span class="glitch-word" style="--gd:1.06s">█</span>  <span class="glitch-word" style="--gd:2.12s">███</span>   ████  ███  █   █ █    
-
-
-
-⡞⠳⣄⣀⣠⠞⢷ <span class="glitch-word" style="--gd:1.04s">ֹ۪⡞⠳⣄⣀⣠⠞⢷</span> ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷
-
-
-THE BRAVE [feline] SURVIVORS OF THIS ENCLAVE AIM TO OVERTAKE THE CITY AND TAKE BACK WHAT ONCE <span class="glitch-word" style="--gd:1.55s">WAS</span> A UTOPIA <span class="glitch-word" style="--gd:0.42s">OF</span> <span class="glitch-word" style="--gd:1.04s">WONDERS.</span> ONE <span class="glitch-word" style="--gd:0.93s">WHERE</span> AI + CAT + HUMAN + UNFATHOMABLE FELINE TECHNOLOGY WAS DESTINED TO LEAD US TO PROSPER IN A NEW AGE OF
-
- ███  █████
-█   █   <span class="glitch-word" style="--gd:2.52s">█</span>  
-█████   █  
-█   █   █  
-<span class="glitch-word" style="--gd:1.63s">█</span>   █ █████
-
-
-                                                   (ACELLERATED FELINE INTELLIGENCE)
-
-
-        /\_/\          /\_/\          /\_/\       
-       ( o.o )        ( -.- )        <span class="glitch-word" style="--gd:0.77s">(</span> ^.^ <span class="glitch-word" style="--gd:2.49s">)</span>      
-        &gt; ^ &lt;          &gt; <span class="glitch-word" style="--gd:1.04s">^</span> &lt;          &gt; ^ &lt;       
+<div class="hero-glitch-block"><div class="hero-prose">THIS IS <span class="glitch-word" style="--gd:2.58s">A</span> DYSTOPIAN <span class="glitch-word" style="--gd:0.77s">HELLSCAPE</span> COVERED IN SHADOWS OF CORRUPTION AND CAT SHIT //</div>
+<pre class="hero-figure">                                       <span class="glitch-word" style="--gd:1.35s">/\_/\</span>   
+                                    =  • . •  =
+                                      /       \</pre>
+<pre class="hero-figure">[but it <span class="glitch-word" style="--gd:0.86s">is</span> <span class="glitch-word" style="--gd:1.35s">our</span>  * HOME  *  and <span class="glitch-word" style="--gd:0.14s">we</span> our thankful to <span class="glitch-word" style="--gd:2.39s">have</span> it ⚞^. .^⚟
+            <span class="glitch-word" style="--gd:1.85s">/\__/\</span>                                               
+         <span class="glitch-word" style="--gd:1.47s">=(</span> o  o   )=                                            
+           /         <span class="glitch-word" style="--gd:1.29s">\</span>                                           
+          /_|_|_(_-|====,                                        </pre>
+<div class="hero-prose">// THE CAT ROOMS EXIST <span class="glitch-word" style="--gd:0.27s">AS</span> AN <span class="glitch-word" style="--gd:1.18s">AMALGAMATION</span> OF THE <span class="glitch-word" style="--gd:0.93s">MANY</span> FOURTH WALL BREAKING MINDS OF <span class="glitch-word" style="--gd:0.12s">THE</span> FELINE PARTICIPANTS <span class="glitch-word" style="--gd:1.05s">IN</span> THE DRAB AND DARK CITY OWNED BY NEKOCORP  <span class="glitch-word" style="--gd:2.1s">/\_/\</span></div>
+<pre class="hero-figure">█   █ █████ <span class="glitch-word" style="--gd:0.82s">█</span>   █  ███   ████  ███  ████  ████ 
+██  █ █     █  █  █   <span class="glitch-word" style="--gd:2.51s">█</span> <span class="glitch-word" style="--gd:2.48s">█</span>     █   <span class="glitch-word" style="--gd:0.23s">█</span> █   █ █   █
+█ █ █ ████  ███   █   █ █     █   █ ████  ████ 
+█  ██ <span class="glitch-word" style="--gd:2.04s">█</span>     █  █  <span class="glitch-word" style="--gd:0.36s">█</span>   █ <span class="glitch-word" style="--gd:0.76s">█</span>     █   █ █  █  █    
+█   █ █████ █   █  ███   ████  ███  █   █ █    </pre>
+<div class="hero-prose"><span class="glitch-word" style="--gd:0.61s">⡞⠳⣄⣀⣠⠞⢷</span> ֹ۪⡞⠳⣄⣀⣠⠞⢷ <span class="glitch-word" style="--gd:1.24s">ֹ۪⡞⠳⣄⣀⣠⠞⢷</span> ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷ ֹ۪⡞⠳⣄⣀⣠⠞⢷</div>
+<div class="hero-prose">THE BRAVE [feline] SURVIVORS OF THIS ENCLAVE AIM TO OVERTAKE THE CITY AND TAKE BACK <span class="glitch-word" style="--gd:1.84s">WHAT</span> ONCE WAS A UTOPIA OF WONDERS. ONE WHERE AI + CAT + HUMAN + UNFATHOMABLE FELINE TECHNOLOGY WAS DESTINED TO LEAD <span class="glitch-word" style="--gd:1.73s">US</span> TO PROSPER <span class="glitch-word" style="--gd:0.43s">IN</span> A NEW AGE OF</div>
+<pre class="hero-figure"> ███  <span class="glitch-word" style="--gd:1.7s">█████</span> <span class="glitch-word" style="--gd:0.4s">█████</span>
+<span class="glitch-word" style="--gd:0.08s">█</span>   █ █       █  
+█████ ███     █  
+█   █ █       █  
+█   █ █     █████</pre>
+<div class="hero-prose">(ACELLERATED FELINE INTELLIGENCE)</div>
+<pre class="hero-figure">        /\_/\          /\_/\          /\_/\       
+       ( <span class="glitch-word" style="--gd:1.26s">o.o</span> )        ( -.- )        ( ^.^ )      
+        <span class="glitch-word" style="--gd:1.86s">&gt;</span> ^ &lt;          &gt; ^ &lt;          &gt; ^ <span class="glitch-word" style="--gd:1.21s">&lt;</span>       
       __/   \__________/   \__________/   \__     
  ____/_______________________________________\____
-            |     GUARDRAIL     <span class="glitch-word" style="--gd:2.44s">|</span>                 
-____________|___________________|____________     
-
-
-THROUGHOUT THIS JOURNEY, LEARN OF THE PERILS, DRAMA, AND CAT SHIT FILLED <span class="glitch-word" style="--gd:1.24s">POLITICS</span> OF <span class="glitch-word" style="--gd:0.5s">THOSE</span> <span class="glitch-word" style="--gd:1.53s">WHO</span> SEEK OUT <span class="glitch-word" style="--gd:1.63s">TUNA</span> IN AN OCEAN OF CORPO RETARD <span class="glitch-word" style="--gd:1.17s">RESIDUE</span> ₍^.  <span class="glitch-word" style="--gd:0.84s">̫.^₎⟆</span> ‍
-
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
-⠀⠀⠀⠀⣀⣀⣀⠀⠀⠀⢠⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
+            |     GUARDRAIL     |                 
+____________|___________________|____________     </pre>
+<div class="hero-prose"><span class="glitch-word" style="--gd:0.98s">THROUGHOUT</span> THIS JOURNEY, LEARN <span class="glitch-word" style="--gd:1.71s">OF</span> <span class="glitch-word" style="--gd:0.04s">THE</span> PERILS, <span class="glitch-word" style="--gd:2.3s">DRAMA,</span> <span class="glitch-word" style="--gd:0.07s">AND</span> CAT SHIT FILLED <span class="glitch-word" style="--gd:0.79s">POLITICS</span> OF THOSE WHO SEEK OUT <span class="glitch-word" style="--gd:2.32s">TUNA</span> IN AN OCEAN <span class="glitch-word" style="--gd:2.44s">OF</span> CORPO RETARD RESIDUE ₍^.  ̫.^₎⟆ <span class="glitch-word" style="--gd:1.54s">‍</span></div>
+<pre class="hero-figure">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
+<span class="glitch-word" style="--gd:0.54s">⠀⠀⠀⠀⣀⣀⣀⠀⠀⠀⢠⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>  
 ⠀⠀⠀⣼⣿⣿⣿⣷⡄⠀⢿⣿⣿⣿⣿⣿⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
-⠀⠀⠀⣿⣿⣿⣿⣿⣿⠀⠈⢿⣿⣿⣿⠟⠀⣴⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
+<span class="glitch-word" style="--gd:0.26s">⠀⠀⠀⣿⣿⣿⣿⣿⣿⠀⠈⢿⣿⣿⣿⠟⠀⣴⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>  
 ⠀⠀⠀⠘⠿⣿⣿⣿⠟⠀⠀⠀⠈⠉⠁⠀⠰⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
-⣠⣶⣶⣶⣄⠀⠉⠀⣠⣶⣿⣿⣿⣿⣷⣦⣀⠻⢿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
+<span class="glitch-word" style="--gd:2.26s">⣠⣶⣶⣶⣄⠀⠉⠀⣠⣶⣿⣿⣿⣿⣷⣦⣀⠻⢿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>  
 ⣿⣿⣿⣿⣿⡇⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
 ⠘⠿⣿⣿⣿⠇⢸⣿⣿⣿⣿⣿the⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
-<span class="glitch-word" style="--gd:0.91s">⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>  
+⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
 ⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⠿⢿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
 ⠀⠀⠀⠀⠀⠀⠘⠿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⣀⠀⢸⣿⣿⣿⣿⣿⡇⠀⢀⣴⣶⣶⣄⠀⠀⠀  
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⡆⠈⢿⣿⣿⣿⡟⠀⢠⣿⣿⣿⣿⣿⡆⠀⠀  
+<span class="glitch-word" style="--gd:1.74s">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⡆⠈⢿⣿⣿⣿⡟⠀⢠⣿⣿⣿⣿⣿⡆⠀⠀</span>  
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣿⣿⡇⠀⠀⠉⠉⠁⠀⠀⢻⣿⣿⣿⣿⡿⠁⠀⠀  
-<span class="glitch-word" style="--gd:1.78s">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠟⠋⣠⣴⣶⣿⣿⣿⣶⣄⡈⠛⠿⠿⠛⠁⠀⠀⠀</span>  
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠟⠋⣠⣴⣶⣿⣿⣿⣶⣄⡈⠛⠿⠿⠛⠁⠀⠀⠀  
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⢠⣴⣿⣿⣿⣆  
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿catrooms⣿⣿⣿⣿⣿⣿ ⣿⣿⣿⣿⣿⡟
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠙⠻⠿⠟⠋⠀  
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀  
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀  
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀  </pre>
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀  </pre></div>
   <a class="screensaver-trigger" href="screensaver.html">&gt;&gt; screensaver mode</a>
 </header>
 <div class="grid">

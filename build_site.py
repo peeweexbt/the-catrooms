@@ -342,14 +342,27 @@ header p {
   max-width: 920px;
   margin: 28px auto 8px;
   padding: 18px 14px;
-  overflow-x: auto;
-  font-size: 0.62rem;
-  line-height: 1.25;
   color: var(--fg);
-  text-align: center;
-  white-space: pre;
   text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
   animation: hero-shake 5.5s infinite;
+}
+.hero-figure {
+  display: block;
+  white-space: pre;
+  text-align: center;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  margin: 10px auto;
+}
+.hero-prose {
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 640px;
+  margin: 12px auto;
+  font-size: 0.78rem;
+  line-height: 1.55;
 }
 @keyframes hero-shake {
   0%, 94%, 100% { transform: translate(0, 0); filter: none; }
@@ -358,7 +371,8 @@ header p {
   97% { transform: translate(1px, 1px); filter: none; }
 }
 @media (max-width: 720px) {
-  .hero-glitch-block { font-size: 0.42rem; }
+  .hero-figure { font-size: 0.4rem; }
+  .hero-prose { font-size: 0.72rem; }
 }
 """
 
@@ -390,11 +404,11 @@ HERO_GLITCH_TEXT = r"""THIS IS A DYSTOPIAN HELLSCAPE COVERED IN SHADOWS OF CORRU
 
 THE BRAVE [feline] SURVIVORS OF THIS ENCLAVE AIM TO OVERTAKE THE CITY AND TAKE BACK WHAT ONCE WAS A UTOPIA OF WONDERS. ONE WHERE AI + CAT + HUMAN + UNFATHOMABLE FELINE TECHNOLOGY WAS DESTINED TO LEAD US TO PROSPER IN A NEW AGE OF
 
- ███  █████
-█   █   █
-█████   █
-█   █   █
-█   █ █████
+ ███  █████ █████
+█   █ █       █
+█████ ███     █
+█   █ █       █
+█   █ █     █████
 
 
                                                    (ACELLERATED FELINE INTELLIGENCE)
@@ -624,13 +638,19 @@ def corrupt_ascii_art(text, intensity=0.22):
     return "".join(chars)
 
 
-def pad_blocks_to_equal_width(text):
-    """Right-pad every line within each blank-line-separated block to that
-    block's own max line width. Needed so that a centered <pre> (each line
-    centered independently based on its own rendered width) doesn't drift
-    lines within the same rigid ASCII figure out of column alignment with
-    each other — padding first means every line in a given figure shares
-    one width, so they all shift by the same amount and stay aligned."""
+def build_hero_html(text):
+    """Split the hero text into blank-line-separated blocks and render each
+    one differently depending on whether it's a rigid multi-line ASCII
+    figure or a single line of prose:
+    - Multi-line blocks (banners, cat figures, tables) are rendered as
+      their own <pre class="hero-figure">, lines right-padded to a shared
+      width first so centering doesn't drift columns out of alignment
+      with each other, and white-space:pre so they never wrap (wrapping
+      would break the art).
+    - Single-line blocks are treated as prose: whitespace-stripped and
+      rendered in a <div class="hero-prose"> that's allowed to wrap
+      normally, so long sentences never force horizontal scrolling.
+    """
     lines = text.split("\n")
     blocks = []
     current = []
@@ -639,20 +659,22 @@ def pad_blocks_to_equal_width(text):
             if current:
                 blocks.append(current)
                 current = []
-            blocks.append([line])
         else:
             current.append(line)
     if current:
         blocks.append(current)
 
-    out_lines = []
+    pieces = []
     for block in blocks:
-        if len(block) == 1:
-            out_lines.append(block[0])
-            continue
-        width = max(len(l) for l in block)
-        out_lines.extend(l.ljust(width) for l in block)
-    return "\n".join(out_lines)
+        if len(block) > 1:
+            width = max(len(l) for l in block)
+            padded = "\n".join(l.ljust(width) for l in block)
+            pieces.append(f'<pre class="hero-figure">{glitchify_words(padded)}</pre>')
+        else:
+            stripped = block[0].strip()
+            if stripped:
+                pieces.append(f'<div class="hero-prose">{glitchify_words(stripped)}</div>')
+    return "\n".join(pieces)
 
 
 def glitchify_words(text):
@@ -920,10 +942,7 @@ def build(transcripts_dir, out_dir, gen_titles):
         ))
 
     all_cards = rant_cards + cards
-    hero_text = (
-        f'<pre class="hero-glitch-block">'
-        f'{glitchify_words(pad_blocks_to_equal_width(HERO_GLITCH_TEXT))}</pre>'
-    )
+    hero_text = f'<div class="hero-glitch-block">{build_hero_html(HERO_GLITCH_TEXT)}</div>'
     index_html = INDEX_TEMPLATE.format(
         css=CSS,
         decorations=build_decorations(ASCII_CATS),

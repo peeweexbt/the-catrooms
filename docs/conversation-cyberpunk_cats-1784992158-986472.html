@@ -318,14 +318,27 @@ header p {
   max-width: 920px;
   margin: 28px auto 8px;
   padding: 18px 14px;
-  overflow-x: auto;
-  font-size: 0.62rem;
-  line-height: 1.25;
   color: var(--fg);
-  text-align: center;
-  white-space: pre;
   text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
   animation: hero-shake 5.5s infinite;
+}
+.hero-figure {
+  display: block;
+  white-space: pre;
+  text-align: center;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  margin: 10px auto;
+}
+.hero-prose {
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 640px;
+  margin: 12px auto;
+  font-size: 0.78rem;
+  line-height: 1.55;
 }
 @keyframes hero-shake {
   0%, 94%, 100% { transform: translate(0, 0); filter: none; }
@@ -334,7 +347,8 @@ header p {
   97% { transform: translate(1px, 1px); filter: none; }
 }
 @media (max-width: 720px) {
-  .hero-glitch-block { font-size: 0.42rem; }
+  .hero-figure { font-size: 0.4rem; }
+  .hero-prose { font-size: 0.72rem; }
 }
 </style>
 </head>
