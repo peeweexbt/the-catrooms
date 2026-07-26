@@ -281,6 +281,24 @@ header p {
   font-size: 0.75rem;
   margin-bottom: 6px;
 }
+.rant-turn.ascii.corrupted {
+  color: var(--accent2);
+  text-shadow: 2px 0 var(--accent), -2px 0 #ff003c;
+  filter: contrast(1.3);
+  animation: rant-in 0.45s ease forwards, corrupt-flicker 1.7s infinite steps(2);
+}
+.rant-turn.ascii.corrupted .who {
+  color: var(--accent2);
+}
+@keyframes corrupt-flicker {
+  0%, 100% { opacity: 1; transform: translate(0, 0); }
+  10% { opacity: 0.55; transform: translate(-2px, 1px) scaleY(1.05); }
+  20% { opacity: 1; transform: translate(2px, -1px); }
+  35% { opacity: 0.7; transform: translate(-1px, -2px) scaleX(1.02); }
+  50% { opacity: 1; transform: translate(0, 0); }
+  65% { opacity: 0.5; transform: translate(3px, 0); }
+  80% { opacity: 1; transform: translate(-2px, 1px); }
+}
 @keyframes rant-in {
   to { opacity: 1; transform: translateX(0) rotate(0); }
 }
@@ -496,6 +514,21 @@ const RANT_LINES = {lines_json};
 """
 
 
+GLITCH_CHARS = "▓▒░█▄▀▌▐■◆◇#%&@*~^?!<>0123456789"
+
+
+def corrupt_ascii_art(text, intensity=0.22):
+    """Return a copy of an ASCII art string with ~intensity of its non-
+    whitespace glyphs swapped for glitch characters, keeping line breaks and
+    spacing intact so the art shape stays recognizable but looks corrupted.
+    Used only for LITTERPOSTING ascii breaks marked "corrupted": true."""
+    chars = list(text)
+    for i, c in enumerate(chars):
+        if c not in (" ", "\n", "\t") and random.random() < intensity:
+            chars[i] = random.choice(GLITCH_CHARS)
+    return "".join(chars)
+
+
 def glitchify_words(text):
     """HTML-escape text word by word, randomly wrapping ~1 in 6 words in a
     span that gets an idle CSS glitch-flicker animation (staggered via a
@@ -601,6 +634,7 @@ def build(transcripts_dir, out_dir, gen_titles):
     files = sorted(f for f in os.listdir(transcripts_dir) if f.endswith(".json"))
 
     cards = []
+    rant_cards = []
     for fname in files:
         with open(os.path.join(transcripts_dir, fname)) as f:
             data = json.load(f)
@@ -627,10 +661,14 @@ def build(transcripts_dir, out_dir, gen_titles):
                 actor = t.get("actor", "lm1")
                 delay = round(len(rant_html) * 0.12, 2)
                 if actor == "ascii":
+                    is_corrupt = bool(t.get("corrupted"))
+                    art = corrupt_ascii_art(t["text"]) if is_corrupt else t["text"]
+                    css_class = "rant-turn ascii corrupted" if is_corrupt else "rant-turn ascii"
+                    label = "-- SIGNAL CORRUPTED --" if is_corrupt else "-- signal interference --"
                     rant_html.append(
-                        f'<div class="rant-turn ascii" style="animation-delay:{delay}s">'
-                        f'<span class="who">-- signal interference --</span>'
-                        f'{html.escape(t["text"]).strip(chr(10))}</div>'
+                        f'<div class="{css_class}" style="animation-delay:{delay}s">'
+                        f'<span class="who">{label}</span>'
+                        f'{html.escape(art).strip(chr(10))}</div>'
                     )
                     continue
                 raw_lines.append(t["text"])
@@ -653,7 +691,7 @@ def build(transcripts_dir, out_dir, gen_titles):
                 f'[litterposting] {html.escape(data.get("model1", "?"))} solo '
                 f'<span class="rant-tag-badge">LITTERPOSTING</span>'
             )
-            cards.append(CARD_TEMPLATE.format(
+            rant_cards.append(CARD_TEMPLATE.format(
                 href=out_name,
                 card_class="card rant-card",
                 tag_line=tag_line,
@@ -697,10 +735,11 @@ def build(transcripts_dir, out_dir, gen_titles):
             title=title,
         ))
 
+    all_cards = rant_cards + cards
     index_html = INDEX_TEMPLATE.format(
         css=CSS,
         decorations=build_decorations(ASCII_CATS),
-        cards="\n".join(cards) or "<p style='color:#6b8f6a'>no transcripts yet — run backrooms.py first</p>",
+        cards="\n".join(all_cards) or "<p style='color:#6b8f6a'>no transcripts yet — run backrooms.py first</p>",
     )
     with open(os.path.join(out_dir, "index.html"), "w") as f:
         f.write(index_html)

@@ -257,6 +257,24 @@ header p {
   font-size: 0.75rem;
   margin-bottom: 6px;
 }
+.rant-turn.ascii.corrupted {
+  color: var(--accent2);
+  text-shadow: 2px 0 var(--accent), -2px 0 #ff003c;
+  filter: contrast(1.3);
+  animation: rant-in 0.45s ease forwards, corrupt-flicker 1.7s infinite steps(2);
+}
+.rant-turn.ascii.corrupted .who {
+  color: var(--accent2);
+}
+@keyframes corrupt-flicker {
+  0%, 100% { opacity: 1; transform: translate(0, 0); }
+  10% { opacity: 0.55; transform: translate(-2px, 1px) scaleY(1.05); }
+  20% { opacity: 1; transform: translate(2px, -1px); }
+  35% { opacity: 0.7; transform: translate(-1px, -2px) scaleX(1.02); }
+  50% { opacity: 1; transform: translate(0, 0); }
+  65% { opacity: 0.5; transform: translate(3px, 0); }
+  80% { opacity: 1; transform: translate(-2px, 1px); }
+}
 @keyframes rant-in {
   to { opacity: 1; transform: translateX(0) rotate(0); }
 }
@@ -298,46 +316,46 @@ header p {
 </style>
 </head>
 <body>
-<pre class="decor-cat" style="top:7.5%; left:7px; color:var(--accent); opacity:0.17;">   /\_/\        [ ENERGY: LOW ]
-  ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
-   &gt; ~ &lt;        one bar left, keep moving</pre>
-<pre class="decor-cat" style="top:11.8%; right:37px; color:var(--accent2); opacity:0.3;"> /\_/\
+<pre class="decor-cat" style="top:7.3%; left:41px; color:var(--accent2); opacity:0.3;">  ░▒▓ /\_/\ ▓▒░
+  ░▒▓( o█o )▓▒░   -- signal interference --
+  ░▒▓ &gt; ▓ &lt; ▓▒░</pre>
+<pre class="decor-cat" style="top:12.3%; right:26px; color:var(--accent2); opacity:0.3;"> /\_/\
 ( o.o )
  &gt; ^ &lt;</pre>
-<pre class="decor-cat" style="top:25.4%; left:12px; color:var(--accent); opacity:0.3;">   ___                                  ___
-  /___\   [] [] [] [] [] [] [] []    /___\
-  ( ..)\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/(.. )
-   &#x27;&#x27;&#x27;                                &#x27;&#x27;&#x27;</pre>
-<pre class="decor-cat" style="top:25.4%; right:33px; color:var(--accent); opacity:0.18;">     /\___/\
+<pre class="decor-cat" style="top:23.6%; left:45px; color:var(--accent2); opacity:0.21;">        /\_/\
+       ( -.- )
+        &gt; ^ &lt;
+   ~~~~~~|||~~~~~~[DATA JACK: LINKED]</pre>
+<pre class="decor-cat" style="top:24.6%; right:9px; color:var(--accent); opacity:0.24;">     /\/\_/\/\
+    (  O   O  )
+     \  ^Y^  /
+      )=====(      -- ears up, rotor incoming --</pre>
+<pre class="decor-cat" style="top:43.4%; left:25px; color:var(--accent2); opacity:0.25;">      .-=====-.
+     ( [0]  .. )
+      &#x27;-==Y==-&#x27;
+       |  |  |
+   ...picking through the neon rain...</pre>
+<pre class="decor-cat" style="top:40.7%; right:35px; color:var(--accent); opacity:0.21;">     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</pre>
-<pre class="decor-cat" style="top:40.4%; left:36px; color:var(--accent2); opacity:0.23;">     /\/\_/\/\
-    (  O   O  )
-     \  ^Y^  /
-      )=====(      -- ears up, rotor incoming --</pre>
-<pre class="decor-cat" style="top:40.4%; right:29px; color:var(--accent2); opacity:0.25;">        /\_/\
-       ( -.- )
-        &gt; ^ &lt;
-   ~~~~~~|||~~~~~~[DATA JACK: LINKED]</pre>
-<pre class="decor-cat" style="top:60.7%; left:31px; color:var(--accent); opacity:0.23;">  /\___/\
+<pre class="decor-cat" style="top:59.1%; left:16px; color:var(--accent); opacity:0.23;">  /\___/\
  (  o.o  )
   &gt; ^ ^ &lt;</pre>
-<pre class="decor-cat" style="top:58.7%; right:12px; color:var(--accent); opacity:0.24;">        ,--.
+<pre class="decor-cat" style="top:58.4%; right:22px; color:var(--accent2); opacity:0.25;">        ,--.
        ( o.o)__
         &#x27;--&#x27;   \___
                  \  \__/\_/\
                   \_(  o.o  )
                      &gt; ^ &lt; (watching the towers blink)</pre>
-<pre class="decor-cat" style="top:78.3%; left:31px; color:var(--accent); opacity:0.29;">  ░▒▓ /\_/\ ▓▒░
-  ░▒▓( o█o )▓▒░   -- signal interference --
-  ░▒▓ &gt; ▓ &lt; ▓▒░</pre>
-<pre class="decor-cat" style="top:74.1%; right:12px; color:var(--accent2); opacity:0.17;">      .-=====-.
-     ( [0]  .. )
-      &#x27;-==Y==-&#x27;
-       |  |  |
-   ...picking through the neon rain...</pre>
+<pre class="decor-cat" style="top:76.3%; left:13px; color:var(--accent2); opacity:0.24;">   ___                                  ___
+  /___\   [] [] [] [] [] [] [] []    /___\
+  ( ..)\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/(.. )
+   &#x27;&#x27;&#x27;                                &#x27;&#x27;&#x27;</pre>
+<pre class="decor-cat" style="top:75.0%; right:28px; color:var(--accent2); opacity:0.16;">   /\_/\        [ ENERGY: LOW ]
+  ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
+   &gt; ~ &lt;        one bar left, keep moving</pre>
 <header>
   <div class="brand">
     <h1>the catrooms</h1>
@@ -353,6 +371,11 @@ header p {
   <a class="screensaver-trigger" href="screensaver.html">&gt;&gt; screensaver mode</a>
 </header>
 <div class="grid">
+<a class="card rant-card" href="conversation-litterposting-1785026728-8f2c34.html">
+  <span class="tag">[litterposting] claude-sonnet-5 solo <span class="rant-tag-badge">LITTERPOSTING</span></span>
+  <span class="title">@EVERYONE. @EVERYONE. drop what you&#x27;re doing. MITTENS FROM SECTOR 9 kn...</span>
+</a>
+
 <a class="card" href="conversation-cyberpunk_cats-1784963180-fb214b.html">
   <span class="tag">[cyberpunk_cats] claude-sonnet-5 &harr; claude-sonnet-5</span>
   <span class="title">Ears swivel toward the drone hum first — flatten low against the crate...</span>
@@ -448,6 +471,11 @@ header p {
   <span class="title">cold first, the kind that finds the old break in my left foreleg befor...</span>
 </a>
 
+<a class="card" href="conversation-cyberpunk_cats-1785028210-d1f982.html">
+  <span class="tag">[cyberpunk_cats] claude-sonnet-5 &harr; claude-sonnet-5</span>
+  <span class="title">already moving before the sound finishes arriving — something cracked ...</span>
+</a>
+
 <a class="card" href="conversation-demo-001.html">
   <span class="tag">[cyberpunk_cats] claude-sonnet-5 (demo) &harr; claude-sonnet-5 (demo)</span>
   <span class="title">*ears flatten. i freeze against the wet brick, nose working the air. o...</span>
@@ -456,11 +484,6 @@ header p {
 <a class="card" href="conversation-demo-002.html">
   <span class="tag">[cyberpunk_cats] claude-sonnet-5 (demo) &harr; claude-sonnet-5 (demo)</span>
   <span class="title">*rain again. i shake a droplet off one ear and pad along the overpass ...</span>
-</a>
-
-<a class="card rant-card" href="conversation-litterposting-1785026728-8f2c34.html">
-  <span class="tag">[litterposting] claude-sonnet-5 solo <span class="rant-tag-badge">LITTERPOSTING</span></span>
-  <span class="title">@EVERYONE. @EVERYONE. drop what you&#x27;re doing. MITTENS FROM SECTOR 9 kn...</span>
 </a>
 
 </div>
