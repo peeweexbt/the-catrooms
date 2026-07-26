@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>cold first, the kind that finds the old break in my left foreleg befor... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+@media (max-width: 1500px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+}
+.hero-cat {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 260px;
+  width: 60%;
+  height: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+.screensaver-trigger {
+  display: inline-block;
+  margin: 18px auto 0;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--dim);
+  font-family: inherit;
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.screensaver-trigger:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.ss-cat {
+  position: absolute;
+  margin: 0;
+  white-space: pre;
+  line-height: 1.15;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 8px currentColor;
+  transition: opacity 0.9s ease;
+}
+.ss-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="note">Authored by a single scheduled Claude session playing both roles in one pass (hourly automation) — not two independent live API calls like a manual `python backrooms.py` run.</div>
+<div class="transcript">
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>cold first, the kind that finds the old break in my left foreleg before it touches anywhere else. rain&#x27;s still an hour out but the leg&#x27;s known for longer than that. i haven&#x27;t moved from this run of skybridge grating in a while, ears low, watching the gap between the two towers where the wind cuts worst, weighing whether tonight&#x27;s the night i cross it.</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the grating&#x27;s cold clean through, a hundred nine stories up, strung between Kessler Arcology&#x27;s east face and the squat maintenance tower nobody&#x27;s bothered naming right, wind coming off the gap in gusts that rattle the safety mesh at the walkway&#x27;s edge like loose teeth
+
+far below, the street&#x27;s just a smear of red brake-light and steam, too far down for any smell to climb this high except one — recycled synth-protein, venting off Kessler&#x27;s rooftop garden exhaust, thin but real, riding the wind from the far side of that gap</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*ears flatten against the wind and i go, low and fast along the walkway&#x27;s centerline where the mesh blocks the worst gusts, favoring the good foreleg without thinking about it, eyes fixed on the dark shape of the maintenance tower&#x27;s rooftop access ahead.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>halfway across, a new light blooms behind you — not the hard white sweep of a security unit but a soft rotating pink, and a speaker crackles a jingle, warm and cooing: &#x27;lost your way, little one? NekoCorp Rescue is here to help~&#x27;
+
+the collector drone banks in low over the gap, net-arm folding open beneath it, patient, unhurried, the way something moves when it&#x27;s caught plenty before and isn&#x27;t worried about this one either</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>     /\/\_/\/\
+    (  O   O  )
+     \  ^Y^  /
+      )=====(      -- ears up, rotor incoming --</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*every hair down my spine lifts at the jingle — worse than the security lights, this one wants you alive and tagged — and i drop flat into the lee of a vent housing, flattening until the grating&#x27;s ridges dig into my ribs, waiting for the pink light to pass over without slowing.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the net-arm&#x27;s shadow slides right over the vent housing, close enough that the downdraft flattens your fur further, the jingle looping the same three bars — then the light banks off toward the gap&#x27;s far end, drawn by something else, a stray&#x27;s mrrow carrying up from a lower walkway, easier prey than a shadow it didn&#x27;t quite see
+
+the vent housing under you thrums, warm, venting the rooftop garden&#x27;s exhaust straight past your nose now: dirt, green things, water that isn&#x27;t rain</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*wait until the pink light&#x27;s a memory before uncurling, then follow the warm vent-thrum up and over the housing&#x27;s lip, nose leading, until the walkway ends at a service ladder bolted to the maintenance tower&#x27;s face — i go up it a rung at a time, claws finding the gaps between rust.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the ladder tops out at a hatch propped with a brick, and past it: rows of real soil in cracked plastic troughs, actual green stuff nobody&#x27;s supposed to be growing this high up, string-lights dead and dark, the whole rooftop garden gone quiet and unwatched at this hour
+
+someone&#x27;s been here recently though — a bowl, chipped, half a portion of something meat-based still holding warmth against the cold, set down deliberate, not dropped</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*i stop three lengths from the bowl, nose working the air around it before the food itself — old scent laid over new, another cat&#x27;s, recent, still close enough that the ground hasn&#x27;t finished cooling where they sat. not a mark. an offering.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>you&#x27;re not wrong to slow down — up on the water tower&#x27;s catwalk, a shape you almost mistook for pipe fittings shifts, just once, then goes still again, watching to see what you do with what&#x27;s been left
+
+the bowl itself isn&#x27;t a trap, near as the garden&#x27;s stale air can tell you: no wire, no new metal smell, just meat gone lukewarm and a chipped ceramic edge worn smooth by a lot of use</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*i eat without hurrying, keeping the catwalk shape in the corner of one eye the whole time, and when the bowl&#x27;s clean i don&#x27;t lick it — i leave it exactly as empty as it is and back off two lengths before sitting, an answer instead of a retreat.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the shape on the catwalk uncoils slow, no hurry either, and picks its way down a drainpipe into full view — thin, one notched ear, a service tag long since gone dead clipped to a collar too loose to mean anything now — and stops at a distance that isn&#x27;t quite close enough to touch
+
+somewhere below, muffled through the rooftop&#x27;s soil and old concrete, the pink drone&#x27;s jingle loops past again, farther off this time, hunting some other stretch of sky</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
+  ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
+   &gt; ~ &lt;        one bar left, keep moving</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*i don&#x27;t close the distance either, just blink slow, once, deliberate, the way you&#x27;d set something down instead of throwing it — and after a long moment the notched ear does the same back before turning to lead off toward the garden&#x27;s far troughs without checking if i follow.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the far troughs open onto a gap in the perimeter fencing wide enough for two, patched with wire that&#x27;s been bent back so many times it&#x27;s gone soft, and beyond it a maintenance shed with its door hanging on one hinge — whatever human tends this garden hasn&#x27;t been up in days, long enough that the soil&#x27;s gone dry in patches and the string-lights&#x27; timer keeps trying to switch on bulbs that burned out weeks ago
+
+notched-ear stops at the shed&#x27;s threshold and looks back, waiting</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*i check the shed&#x27;s dark doorway with ears before eyes, listening past the notched-ear&#x27;s breathing for anything else in there — nothing, just still air and the tick of a dead lightbulb cooling — before following in low, belly near the ground.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>inside, the dark holds warmth borrowed from the day, insulation panels stacked along one wall doing double duty as bedding, and the shed&#x27;s small window looks out over the whole gap between the towers, city-glow filtered soft through grime
+
+this is a den, not a stash — the smell says three or four cats use it regular, none of it stale, all of it careful, layered scent-marks that don&#x27;t compete, that agree on this one square of dry floor</div>
+<div class="turn lm1"><span class="who">explorer (claude-sonnet-5)</span>*i pick a corner that&#x27;s nobody&#x27;s, not the center, and turn twice before settling with my back to the wall and the window in view, letting the old leg finally unclench now that the ground under it isn&#x27;t cold anymore.*</div>
+<div class="turn lm2"><span class="who">simulator (claude-sonnet-5)</span>the rain that&#x27;s been owed since the skybridge finally lets go outside, first against the shed&#x27;s tin roof in scattered taps then a steady hush, and through the grimy window the gap between the towers fills with it, static and silver under the city-glow
+
+notched-ear settles two lengths off, not touching, not needing to, and somewhere back across the gap a jingle drone gives up its search for the night, pink light banking off toward the docks to hunt easier ground</div>
+</div>
+</body>
+</html>

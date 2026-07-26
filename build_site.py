@@ -279,12 +279,22 @@ const SS_CATS = {ascii_json};
     const el = document.createElement('pre');
     el.className = 'ss-cat';
     el.textContent = SS_CATS[Math.floor(Math.random() * SS_CATS.length)];
-    el.style.top = randRange(2, 92) + '%';
-    el.style.left = randRange(2, 88) + '%';
     el.style.fontSize = randRange(0.55, 1.6) + 'rem';
     el.style.color = Math.random() < 0.5 ? 'var(--accent)' : 'var(--accent2)';
     el.style.opacity = '0';
+    // position off-screen first so we can measure its real rendered size —
+    // ascii pieces vary a lot in width, and positioning by left/top edge
+    // alone (rather than accounting for that width) visually skews content
+    // toward the right, leaving the true left edge sparse.
+    el.style.left = '0px';
+    el.style.top = '0px';
     document.body.appendChild(el);
+    const w = el.offsetWidth;
+    const h = el.offsetHeight;
+    const maxLeft = Math.max(0, window.innerWidth - w);
+    const maxTop = Math.max(0, window.innerHeight - h);
+    el.style.left = randRange(0, maxLeft) + 'px';
+    el.style.top = randRange(0, maxTop) + 'px';
     requestAnimationFrame(() => {{ el.style.opacity = String(randRange(0.5, 0.95)); }});
     const lifespan = randRange(3000, 7000);
     setTimeout(() => {{
