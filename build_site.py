@@ -584,12 +584,23 @@ def gen_title_with_model(turns):
         return None
 
 
+def _est_decor_height_pct(art):
+    """Rough estimate of how tall a decor-cat block will render, expressed
+    as a percentage of viewport height, based on its line count. Not exact
+    (real render depends on the visitor's screen), but good enough to keep
+    the packing pass below from stacking pieces on top of each other."""
+    n_lines = max(1, len(art.strip("\n").split("\n")))
+    return min(14.0, max(3.0, n_lines * 1.8 + 1.2))
+
+
 def build_decorations(ascii_list):
-    """Scatter every piece of ascii_cats.ASCII_CATS along the left/right
-    margins of the homepage as faint decoration. Only visible on wide
-    viewports (see the @media rule in CSS) so it never competes with or
-    squeezes the actual card grid. Positions/colors reshuffle on every
-    rebuild for a bit of life."""
+    """Scatter ascii_cats.ASCII_CATS art along the left/right margins of the
+    homepage as faint decoration. Only visible on wide viewports (see the
+    @media rule in CSS) so it never competes with or squeezes the actual
+    card grid. Positions/colors reshuffle on every rebuild for a bit of
+    life, but pieces are packed per-side (sorted by a random target
+    position, then nudged down just enough to clear whatever landed right
+    above them) so they don't overlap each other."""
     if not ascii_list:
         return ""
 
@@ -598,35 +609,54 @@ def build_decorations(ascii_list):
     n = len(items)
     half = max(1, (n + 1) // 2)
 
-    pieces = []
+    # queue up a rough target position per piece: the main scatter spreads
+    # down the whole page, a handful of extras are biased toward the top
+    # since that band otherwise ends up sparse.
+    queue = []  # [side, target_top, art]
     for i, art in enumerate(items):
         side = "left" if i % 2 == 0 else "right"
         row = i // 2
         base_top = 10 + row * (82 / half)
-        top = max(4, min(96, base_top + random.uniform(-3, 3)))
-        edge_offset = random.randint(6, 48)
-        color = "var(--accent)" if random.random() < 0.5 else "var(--accent2)"
-        opacity = round(random.uniform(0.16, 0.30), 2)
-        style = f"top:{top:.1f}%; {side}:{edge_offset}px; color:{color}; opacity:{opacity};"
-        text = html.escape(art).strip("\n")
-        pieces.append(f'<pre class="decor-cat" style="{style}">{text}</pre>')
+        target = max(4, min(96, base_top + random.uniform(-3, 3)))
+        queue.append([side, target, art])
 
-    # extra pass: the main scatter above naturally thins out near the very
-    # top row (only one piece per side lands up there), so add a handful
-    # more, biased toward the top of the page, reusing the exact same
-    # class/color/opacity treatment so the aesthetic stays identical --
-    # just a bit denser up top.
     extra_count = min(8, max(4, n // 2))
     for i in range(extra_count):
-        art = random.choice(ascii_list)
         side = "left" if i % 2 == 0 else "right"
-        top = round(random.uniform(2, 24), 1)
-        edge_offset = random.randint(6, 60)
-        color = "var(--accent)" if random.random() < 0.5 else "var(--accent2)"
-        opacity = round(random.uniform(0.16, 0.30), 2)
-        style = f"top:{top}%; {side}:{edge_offset}px; color:{color}; opacity:{opacity};"
-        text = html.escape(art).strip("\n")
-        pieces.append(f'<pre class="decor-cat" style="{style}">{text}</pre>')
+        queue.append([side, random.uniform(2, 24), random.choice(ascii_list)])
+
+    # place each side independently, sorted by target position, nudging
+    # any piece down just enough to clear the previous one on that side so
+    # nothing overlaps.
+    pieces = []
+    top_min, top_max = 4.0, 96.0
+    for side in ("left", "right"):
+        side_queue = sorted((q for q in queue if q[0] == side), key=lambda q: q[1])
+
+        # stack pieces top-to-bottom using their real estimated height,
+        # each nudged down just far enough to clear whatever landed right
+        # above it (never up). If a piece would run past the bottom of the
+        # page, stop placing on this side rather than shrinking/overlapping
+        # anything — since the queue is sorted by target position, every
+        # later item needs at least as much room, so nothing past this
+        # point would fit either.
+        placements = []  # [top, height, art]
+        cursor = top_min
+        for _, target, art in side_queue:
+            height = _est_decor_height_pct(art)
+            top = max(target, cursor)
+            if top + height > top_max:
+                break
+            placements.append([top, height, art])
+            cursor = top + height
+
+        for top, _height, art in placements:
+            edge_offset = random.randint(6, 60)
+            color = "var(--accent)" if random.random() < 0.5 else "var(--accent2)"
+            opacity = round(random.uniform(0.16, 0.30), 2)
+            style = f"top:{top:.1f}%; {side}:{edge_offset}px; color:{color}; opacity:{opacity};"
+            text = html.escape(art).strip("\n")
+            pieces.append(f'<pre class="decor-cat" style="{style}">{text}</pre>')
 
     return "\n".join(pieces)
 
