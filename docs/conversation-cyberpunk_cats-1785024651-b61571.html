@@ -372,6 +372,40 @@ header p {
   margin: 18px auto 0;
 }
 .header-links .screensaver-trigger { margin: 0; }
+.ascii-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 8px auto 64px;
+  padding: 0 32px;
+}
+.ascii-gallery-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.15s ease;
+}
+.ascii-gallery-card:hover { border-color: var(--accent); }
+.ascii-gallery-card .num {
+  display: block;
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ascii-gallery-card pre {
+  display: inline-block;
+  white-space: pre;
+  font-size: 0.62rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+  text-shadow: 0 0 5px currentColor;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;

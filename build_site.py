@@ -397,6 +397,40 @@ header p {
   margin: 18px auto 0;
 }
 .header-links .screensaver-trigger { margin: 0; }
+.ascii-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 8px auto 64px;
+  padding: 0 32px;
+}
+.ascii-gallery-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.15s ease;
+}
+.ascii-gallery-card:hover { border-color: var(--accent); }
+.ascii-gallery-card .num {
+  display: block;
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ascii-gallery-card pre {
+  display: inline-block;
+  white-space: pre;
+  font-size: 0.62rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+  text-shadow: 0 0 5px currentColor;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -540,6 +574,7 @@ INDEX_TEMPLATE = """<!doctype html>
   <div class="header-links">
     <a class="screensaver-trigger" href="screensaver.html">&gt;&gt; screensaver mode</a>
     <a class="screensaver-trigger" href="meowizens.html">&gt;&gt; THE MEOWIZENS</a>
+    <a class="screensaver-trigger" href="ascii-gallery.html">&gt;&gt; ASCII /ᐠ｡ꞈ｡ᐟ\</a>
   </div>
 </header>
 <div class="grid">
@@ -925,6 +960,43 @@ def build_meowizens_page():
     return MEOWIZENS_TEMPLATE.format(css=CSS, intro=intro_html, cards="\n".join(cards))
 
 
+ASCII_GALLERY_TEMPLATE = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ascii gallery &middot; the catrooms</title>
+<style>{css}</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<header style="padding-top:8px;">
+  <h1 style="color:var(--accent); text-transform:none;">every cat, rendered in text</h1>
+  <p>Every piece of ASCII cat art used anywhere on this site — the "signal
+  interference" breaks in conversations and LITTERPOSTING rants, the
+  homepage margin decoration, and the screensaver — collected in one place.</p>
+</header>
+<div class="ascii-gallery-grid">
+{cards}
+</div>
+</body>
+</html>
+"""
+
+
+def build_ascii_gallery_page():
+    cards = []
+    for i, art in enumerate(ASCII_CATS):
+        color = "var(--accent)" if i % 2 == 0 else "var(--accent2)"
+        text = html.escape(art).strip("\n")
+        cards.append(
+            f'<div class="ascii-gallery-card">'
+            f'<span class="num">piece {i + 1:02d} / {len(ASCII_CATS):02d}</span>'
+            f'<pre style="color:{color};">{text}</pre>'
+            f'</div>'
+        )
+    return ASCII_GALLERY_TEMPLATE.format(css=CSS, cards="\n".join(cards))
+
+
 def build_hero_html(text):
     """Split the hero text into blank-line-separated blocks and render each
     one differently depending on whether it's a rigid multi-line ASCII
@@ -1262,6 +1334,10 @@ def build(transcripts_dir, out_dir, gen_titles):
     meowizens_html = build_meowizens_page()
     with open(os.path.join(out_dir, "meowizens.html"), "w") as f:
         f.write(meowizens_html)
+
+    ascii_gallery_html = build_ascii_gallery_page()
+    with open(os.path.join(out_dir, "ascii-gallery.html"), "w") as f:
+        f.write(ascii_gallery_html)
 
     print(f"Built site with {len(files)} conversation(s) -> {os.path.join(out_dir, 'index.html')}")
 

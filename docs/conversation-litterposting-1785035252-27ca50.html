@@ -372,6 +372,40 @@ header p {
   margin: 18px auto 0;
 }
 .header-links .screensaver-trigger { margin: 0; }
+.ascii-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 8px auto 64px;
+  padding: 0 32px;
+}
+.ascii-gallery-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.15s ease;
+}
+.ascii-gallery-card:hover { border-color: var(--accent); }
+.ascii-gallery-card .num {
+  display: block;
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ascii-gallery-card pre {
+  display: inline-block;
+  white-space: pre;
+  font-size: 0.62rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+  text-shadow: 0 0 5px currentColor;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -423,14 +457,14 @@ header p {
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">incident report #212, rooftop HVAC <span class="glitch-word" style="--gd:0.32s">unit,</span> 04:12am: GREMLIN from the <span class="glitch-word" style="--gd:2.53s">loading</span> dock has <span class="glitch-word" style="--gd:0.06s">annexed</span> <span class="glitch-word" style="--gd:0.34s">the</span> vent grate because it&#x27;s &#x27;structurally superior,&#x27; his words, <span class="glitch-word" style="--gd:0.28s">he</span> does not know what that means, he <span class="glitch-word" style="--gd:2.51s">just</span> likes saying it</div>
-<div class="rant-turn" style="animation-delay:0.12s">NekoCorp&#x27;s newest thing is a kiosk at the plaza that iris-scans you before it&#x27;ll dispense a single <span class="glitch-word" style="--gd:0.63s">treat,</span> calls <span class="glitch-word" style="--gd:1.74s">it</span> <span class="glitch-word" style="--gd:1.22s">&#x27;PounceID.&#x27;</span> i don&#x27;t have irises i have EYES, buddy, and they are not for sale</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\▒\7/*/\
-    (  O   6  )
-     \  ^1^  /
-      )===^=(      ▄- ears up, roto! inc▐ming #-</div>
-<div class="rant-turn" style="animation-delay:0.36s">gremlin just <span class="glitch-word" style="--gd:1.14s">informed</span> the loading <span class="glitch-word" style="--gd:2.32s">dock</span> <span class="glitch-word" style="--gd:2.03s">crew</span> he&#x27;s <span class="glitch-word" style="--gd:0.68s">&#x27;expanding</span> <span class="glitch-word" style="--gd:0.34s">operations&#x27;</span> <span class="glitch-word" style="--gd:2.33s">into</span> the vent. <span class="glitch-word" style="--gd:1.44s">sir</span> it is a <span class="glitch-word" style="--gd:1.33s">VENT.</span> <span class="glitch-word" style="--gd:0.03s">it</span> is eight inches <span class="glitch-word" style="--gd:0.05s">wide.</span> there is no empire to expand, there is a draft</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.91s">so</span> i <span class="glitch-word" style="--gd:1.12s">did</span> what any reasonable animal would do: relocated three bottle caps into the vent as a formal counter-annexation. gremlin has not noticed. gremlin <span class="glitch-word" style="--gd:0.05s">never</span> notices. gremlin is, and <span class="glitch-word" style="--gd:0.99s">i</span> cannot stress this enough, <span class="glitch-word" style="--gd:1.4s">not</span> that <span class="glitch-word" style="--gd:1.31s">bright</span></div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:2.07s">incident</span> report #212, rooftop <span class="glitch-word" style="--gd:2.36s">HVAC</span> unit, 04:12am: GREMLIN from the loading dock has annexed the vent <span class="glitch-word" style="--gd:0.14s">grate</span> because it&#x27;s &#x27;structurally superior,&#x27; his words, he <span class="glitch-word" style="--gd:1.86s">does</span> not know what that <span class="glitch-word" style="--gd:2.02s">means,</span> he just likes saying it</div>
+<div class="rant-turn" style="animation-delay:0.12s">NekoCorp&#x27;s <span class="glitch-word" style="--gd:1.71s">newest</span> thing is a kiosk at the plaza that iris-scans you before <span class="glitch-word" style="--gd:2.3s">it&#x27;ll</span> <span class="glitch-word" style="--gd:2.46s">dispense</span> a single treat, calls it <span class="glitch-word" style="--gd:2.2s">&#x27;PounceID.&#x27;</span> i don&#x27;t have irises i have EYES, buddy, and they are not for sale</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_/\/\
+    (  ▐   ?  )
+     \  ▐Y4  ▒
+      )%==█=(      -- ears up, rotor incoming --</div>
+<div class="rant-turn" style="animation-delay:0.36s">gremlin just informed the loading <span class="glitch-word" style="--gd:0.27s">dock</span> crew he&#x27;s &#x27;expanding operations&#x27; into the vent. <span class="glitch-word" style="--gd:0.4s">sir</span> it is <span class="glitch-word" style="--gd:2.51s">a</span> VENT. it is eight <span class="glitch-word" style="--gd:1.31s">inches</span> wide. there is no empire to expand, there is a draft</div>
+<div class="rant-turn" style="animation-delay:0.48s">so i did what any reasonable animal would <span class="glitch-word" style="--gd:1.21s">do:</span> relocated <span class="glitch-word" style="--gd:2.5s">three</span> bottle caps into the vent as a formal counter-annexation. gremlin has not noticed. gremlin never notices. gremlin is, and i cannot stress this enough, <span class="glitch-word" style="--gd:1.79s">not</span> that <span class="glitch-word" style="--gd:1.6s">bright</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>                  ☆
 ☆  --------------
   /__________ \         ☆
@@ -446,17 +480,17 @@ header p {
 
    ☆                                         ☆
                      ☆                               ☆</div>
-<div class="rant-turn" style="animation-delay:0.72s">PounceID <span class="glitch-word" style="--gd:2.25s">kiosk</span> tried to <span class="glitch-word" style="--gd:0.25s">scan</span> me a second time and i just. sat there. blinking. slowly. it gave <span class="glitch-word" style="--gd:0.54s">up</span> first. i want that <span class="glitch-word" style="--gd:2.04s">on</span> my tombstone: <span class="glitch-word" style="--gd:2.34s">he</span> outlasted <span class="glitch-word" style="--gd:1.29s">the</span> machine</div>
-<div class="rant-turn" style="animation-delay:0.84s">black market check-in: swapped a <span class="glitch-word" style="--gd:2.33s">chewed</span> bottle cap for two (2) shrimp chips with the opossum who runs the dead-end by the noodle stall, he doesn&#x27;t speak, he just nods, i respect a professional</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>                              2&lt;、
-                         =(3˕ 。 7
-                             |、 ?〵
-                            じし   ˍ,)づ</div>
-<div class="rant-turn" style="animation-delay:1.08s">the arcology <span class="glitch-word" style="--gd:1.4s">tower&#x27;s</span> doing a new <span class="glitch-word" style="--gd:2.51s">jingle</span> now, something <span class="glitch-word" style="--gd:0.75s">about</span> &#x27;compliance is comfort,&#x27; and honestly the bassline slaps and i&#x27;m <span class="glitch-word" style="--gd:2.07s">furious</span> about it, i&#x27;m humming it against my will</div>
+<div class="rant-turn" style="animation-delay:0.72s">PounceID <span class="glitch-word" style="--gd:1.42s">kiosk</span> tried <span class="glitch-word" style="--gd:0.1s">to</span> scan me a second time <span class="glitch-word" style="--gd:0.48s">and</span> i just. <span class="glitch-word" style="--gd:1.68s">sat</span> there. blinking. slowly. it gave up first. i want that on <span class="glitch-word" style="--gd:2.09s">my</span> <span class="glitch-word" style="--gd:1.13s">tombstone:</span> he outlasted the <span class="glitch-word" style="--gd:0.8s">machine</span></div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:0.18s">black</span> market check-in: swapped <span class="glitch-word" style="--gd:2.06s">a</span> chewed bottle cap for two (2) <span class="glitch-word" style="--gd:1.87s">shrimp</span> chips with the opossum who runs the dead-end by the <span class="glitch-word" style="--gd:0.67s">noodle</span> stall, he doesn&#x27;t <span class="glitch-word" style="--gd:2.5s">speak,</span> he just nods, i respect a <span class="glitch-word" style="--gd:0.36s">professional</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>                              ╱|、
+                         =(▓˕ ◆ 7
+                             |、 ~〵
+                            じし   &gt;,)づ</div>
+<div class="rant-turn" style="animation-delay:1.08s">the arcology tower&#x27;s doing a new jingle <span class="glitch-word" style="--gd:2.39s">now,</span> something <span class="glitch-word" style="--gd:1.5s">about</span> &#x27;compliance is comfort,&#x27; <span class="glitch-word" style="--gd:0.23s">and</span> honestly the bassline slaps and i&#x27;m furious about it, i&#x27;m humming it against <span class="glitch-word" style="--gd:1.77s">my</span> will</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>    /\,,,/\
 &gt;(  • . •   )&lt;
   / &gt;❀&lt;  \</div>
-<div class="rant-turn" style="animation-delay:1.32s">in closing: the vent is contested but not lost, gremlin <span class="glitch-word" style="--gd:1.41s">can</span> keep calling it <span class="glitch-word" style="--gd:2.44s">an</span> <span class="glitch-word" style="--gd:1.57s">empire,</span> pounceid can <span class="glitch-word" style="--gd:1.82s">go</span> scan a toaster, and if a kiosk ever asks for <span class="glitch-word" style="--gd:0.96s">your</span> iris you just stare at it until <span class="glitch-word" style="--gd:2.17s">it</span> questions its whole design. goodnight loading dock, i&#x27;m sleeping <span class="glitch-word" style="--gd:1.83s">in</span> the <span class="glitch-word" style="--gd:1.97s">draft</span> on principle</div>
+<div class="rant-turn" style="animation-delay:1.32s">in closing: the <span class="glitch-word" style="--gd:0.24s">vent</span> <span class="glitch-word" style="--gd:2.23s">is</span> contested but not lost, gremlin can keep calling it an empire, pounceid can go <span class="glitch-word" style="--gd:0.08s">scan</span> a toaster, and if a kiosk <span class="glitch-word" style="--gd:1.94s">ever</span> asks for your iris you just stare at it until <span class="glitch-word" style="--gd:1.82s">it</span> <span class="glitch-word" style="--gd:1.61s">questions</span> <span class="glitch-word" style="--gd:2.08s">its</span> <span class="glitch-word" style="--gd:2.11s">whole</span> design. goodnight loading dock, i&#x27;m sleeping in the draft on <span class="glitch-word" style="--gd:2.22s">principle</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>
