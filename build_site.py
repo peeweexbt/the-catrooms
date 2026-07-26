@@ -711,7 +711,7 @@ def build(transcripts_dir, out_dir, gen_titles):
             who = "explorer" if actor == "lm1" else "simulator"
             turn_html.append(
                 f'<div class="turn {actor}"><span class="who">{who} '
-                f'({html.escape(t.get("model", ""))})</span>'
+                f'(DYSTOPIA)</span>'
                 f'{html.escape(t["text"])}</div>'
             )
 
