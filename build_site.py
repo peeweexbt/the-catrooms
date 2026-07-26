@@ -152,6 +152,13 @@ header p {
   max-width: 1200px;
   margin: 0 auto;
 }
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px 14px;
+    gap: 12px;
+  }
+}
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -423,13 +430,18 @@ header p {
   margin-bottom: 10px;
 }
 .ascii-gallery-card pre {
-  display: inline-block;
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
   white-space: pre;
   font-size: 0.62rem;
   line-height: 1.2;
   margin: 0;
   text-align: left;
   text-shadow: 0 0 5px currentColor;
+}
+@media (max-width: 480px) {
+  .ascii-gallery-card pre { font-size: 0.48rem; }
 }
 .meowizens-list {
   max-width: 780px;
@@ -553,6 +565,7 @@ INDEX_TEMPLATE = """<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>the catrooms</title>
 <style>{css}</style>
 </head>
@@ -588,6 +601,7 @@ SCREENSAVER_TEMPLATE = """<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>screensaver &middot; the catrooms</title>
 <style>{css}
 html, body {{ height: 100%; }}
@@ -658,6 +672,7 @@ DETAIL_TEMPLATE = """<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} · the catrooms</title>
 <style>{css}</style>
 </head>
@@ -675,6 +690,7 @@ RANT_DETAIL_TEMPLATE = """<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} · the catrooms</title>
 <style>{css}</style>
 </head>
@@ -926,6 +942,7 @@ MEOWIZENS_TEMPLATE = """<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>the meowizens &middot; the catrooms</title>
 <style>{css}</style>
 </head>
@@ -964,6 +981,7 @@ ASCII_GALLERY_TEMPLATE = """<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ascii gallery &middot; the catrooms</title>
 <style>{css}</style>
 </head>

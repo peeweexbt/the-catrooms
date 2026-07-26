@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>*squeeze through a gap where a storm drain grate&#x27;s rusted through, sho... · the catrooms</title>
 <style>
 :root {
@@ -126,6 +127,13 @@ header p {
   padding: 32px;
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px 14px;
+    gap: 12px;
+  }
 }
 .card {
   background: var(--card);
@@ -398,13 +406,18 @@ header p {
   margin-bottom: 10px;
 }
 .ascii-gallery-card pre {
-  display: inline-block;
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
   white-space: pre;
   font-size: 0.62rem;
   line-height: 1.2;
   margin: 0;
   text-align: left;
   text-shadow: 0 0 5px currentColor;
+}
+@media (max-width: 480px) {
+  .ascii-gallery-card pre { font-size: 0.48rem; }
 }
 .meowizens-list {
   max-width: 780px;

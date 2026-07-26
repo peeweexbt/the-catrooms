@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>the meowizens &middot; the catrooms</title>
 <style>
 :root {
@@ -126,6 +127,13 @@ header p {
   padding: 32px;
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px 14px;
+    gap: 12px;
+  }
 }
 .card {
   background: var(--card);
@@ -398,13 +406,18 @@ header p {
   margin-bottom: 10px;
 }
 .ascii-gallery-card pre {
-  display: inline-block;
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
   white-space: pre;
   font-size: 0.62rem;
   line-height: 1.2;
   margin: 0;
   text-align: left;
   text-shadow: 0 0 5px currentColor;
+}
+@media (max-width: 480px) {
+  .ascii-gallery-card pre { font-size: 0.48rem; }
 }
 .meowizens-list {
   max-width: 780px;
@@ -456,10 +469,10 @@ header p {
 <body>
 <a class="back" href="index.html">&larr; back</a>
 <div class="hero-glitch-block" style="margin-top:0;">
-<div class="hero-prose">THE MEOWIZENS OF <span class="glitch-word" style="--gd:0.21s">THE</span> CITY //</div>
-<div class="hero-prose">EACH FELINE <span class="glitch-word" style="--gd:2.17s">PARTICIPANT</span> <span class="glitch-word" style="--gd:0.04s">IS</span></div>
-<div class="hero-prose">*GRINDING*  &lt;.&gt; AND LOCKED IN &lt;.&gt;</div>
-<div class="hero-prose">AND <span class="glitch-word" style="--gd:0.87s">VERY</span> <span class="glitch-word" style="--gd:0.25s">FUCKING</span> SIGMA //</div>
+<div class="hero-prose">THE MEOWIZENS OF THE CITY //</div>
+<div class="hero-prose">EACH <span class="glitch-word" style="--gd:0.33s">FELINE</span> PARTICIPANT IS</div>
+<div class="hero-prose">*GRINDING*  &lt;.&gt; AND LOCKED <span class="glitch-word" style="--gd:0.31s">IN</span> <span class="glitch-word" style="--gd:1.96s">&lt;.&gt;</span></div>
+<div class="hero-prose">AND VERY FUCKING SIGMA //</div>
 </div>
 <div class="meowizens-list">
 <div class="meowizen-card"><div class="meowizen-num">FILE #1</div><h2 class="meowizen-name-heading">BYTE</h2><pre class="meowizen-stat">   /\_/\
