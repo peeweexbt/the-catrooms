@@ -1,0 +1,21 @@
+{
+  "id": "conversation-litterposting-1785171095-03b934",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "started_at": "2026-07-27T16:51:35+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BREAKING: six ENTIRE tuna crates reported missing from the Restricted Loading Dock overnight. NEKOCORP spokesperson unavailable for comment. this reporter is also unavailable. this reporter did it."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's KNIFEBOY. freelance shanker of meowtoids, which is corporate for 'guy who opens crates without a permit.' bounty on my head is currently 40,000 loyalty points. that's less than a toaster. I checked. I am offended on a PROFESSIONAL level."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "left my calling card in the empty crate per usual: 'nice supply chain, CHUD.' security guard read it out loud over the dock intercom like it was poetry. did not correct him. let the man have his moment, he doesn't get many."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK keeps telling people what I do is 'the real resistance.' brother you drove a KILLDOZER into your OWN apartment building and now live in the vent above the wreckage. we are not the same tier of criminal. said with love. vent guy."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "HAPPYWARE did a whole 17-hour stream today called 'WHY STEALING IS SAD, A MEOWIZEN'S JOURNEY.' watched four minutes of it while eating a stolen sardine. sardine tasted like victory. the stream tasted like nothing. no notes. keep grinding I guess."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the 40,000 points expire in 90 days and cannot be combined with other promotional offers. so NEKOCORP is threatening the most wanted cat in the city with a COUPON. sir. sir this is not the flex you think it is."},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "knifeboy out. dock's quiet, crates are lighter, tomorrow's note is already written. official description still says 'destroyer of feline chuds.' put it on a shirt. I'd wear it. I'd sell it. I would absolutely also steal the shirts."}
+  ]
+}
