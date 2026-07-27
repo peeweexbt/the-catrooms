@@ -1,32 +1,118 @@
 {
   "id": "conversation-cyberpunk_cats-1785017332-3ac297",
   "template": "cyberpunk_cats",
-  "model1": "claude-sonnet-5",
-  "model2": "claude-sonnet-5",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
   "started_at": "2026-07-25T22:08:52+00:00",
-  "note": "Authored by a single scheduled Claude session playing both roles in one pass (hourly automation) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (hourly automation) — not two independent live API calls like a manual `python backrooms.py` run.",
   "turns": [
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*slips between two overturned crates at the edge of the night market's stall row, belly low, nose flooding with a hundred layers at once — grilled protein-cake fat, hot oil, ozone off a repair-stall's welding torch, and under it all the packed-crowd smell of too many boots on wet plastic paving.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the row runs three long blocks under a patchwork of sagging tarps and pirated string-lights, stalls crammed shoulder to shoulder, awnings dripping the last of an earlier rain onto necks and shopping bags\n\ndirectly ahead a noodle vendor's wok throws a fan of sparks and steam, and past it, half-swallowed by the crowd's legs, a dropped skewer of something charred still sizzles faintly on the wet ground — nobody's looked down yet" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*eyes lock on the skewer, weighing the gap of moving legs between here and there — waits for a lull in the foot traffic, then darts low and fast along the crate line, snatching it in one pass without breaking stride, dragging it back into the shadow between crates.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "clean grab, nobody's shin so much as brushes you, though one vendor's kid catches the blur of motion out the corner of an eye and laughs, pointing, before getting pulled along by a parent's hand\n\nthe skewer's meat is scorched black on one end but the char masks something synthetic-sweet underneath, and past the crate-shadow a data-broker's stall flickers with a hand-lettered sign — SIGNAL SCRUBBED, NO TRACE, CASH OR CHIPS ONLY — its speaker looping a tinny corporate jingle that keeps cutting to static" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*tears at the skewer between two paws, ears swiveling independently — one tracking the jingle's stutter, the other angled back toward the open row for anything moving too purposeful through the crowd.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the jingle stutters again, longer this time, and the data-broker under the tarp — hood up, face lost in shadow — reaches over without looking and smacks the speaker box once, hard, and it settles back into its loop like nothing happened\n\nfarther down the row, over the heads of the crowd, a corp drone drifts at rooftop height, running its slow scan-sweep along the stalls, its downlight tinting the steam gold wherever it passes" },
-    { "actor": "ascii", "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*wolfs the last of the skewer fast, feeling the long night in stiff shoulders and an empty gut that one scorched snack won't fix, then noses out from between the crates to see what else the row's throwing off before the drone's sweep reaches this stretch.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the drone's sweep is still four stalls off, unhurried, its scan-tone a low periodic chirp that most of the crowd has learned to tune out entirely\n\nclosest to you now, a fishmonger's stall runs a shallow gutter of melt-water off the ice bins straight into the paving cracks, and where it pools, a scatter of fish scale and one small unattended cleaver-scrap of skin sits glistening, easy pickings if you don't mind wet paws" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*pads into the gutter-pool without hesitation, wet paws be damned, and mouths up the skin-scrap, chewing while keeping low under the stall's overhang, out of the drone's coming sightline.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the overhang's shadow swallows you whole just as the drone's downlight sweeps past overhead, gold light sliding over wet crates and stall-tarps without snagging on anything, and it banks on toward the row's far end without slowing\n\nthe fishmonger above, elbow-deep in ice, never notices the skin-scrap's gone — too busy shouting prices over the noise at a customer haggling hard over a bag of frozen roe" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*finishes the scrap, shakes a wet paw with a flick of distaste, then noses along the base of the stalls toward the sound of the haggling voices, curious whether the argument means dropped goods are likely.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the haggling sharpens into real heat, voices rising, and the customer slaps a fistful of chips onto the counter hard enough that one skitters off the edge and drops, disappearing into the crowd's shuffling feet before either of them notices\n\nsomewhere close under the noise, a low mechanical whirr starts up — not a drone, ground-level, wheels on wet paving — a delivery cart trundling down the row's center aisle on its own, nobody steering it, its cargo bay sealed and blinking a soft blue light" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*freezes at the whirr, tracking it through the paving vibration first before trusting the ears, then eases back toward the stall-base shadow, giving the cart's wheel-path a wide unbothered berth rather than risk getting clipped.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "good call, the cart doesn't slow for anything smaller than a person, its collision-sense tuned high enough it wouldn't even log a cat underfoot, and it rolls on past trailing a faint ozone smell like the arcology towers' elevator banks\n\nthe dropped chip is gone already, swept along in the crowd-shuffle, but the cart's passing stirs the air enough that a scrap of paper wrapping tumbles loose from someone's bag and lands almost at your paws, still smelling faintly of grilled meat" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*noses the wrapping open flat, licking at the grease-smear inside more out of habit than real hunger now, one eye still on the row for the drone's return pass.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the grease is thin, mostly gone, but the paper itself is printed with a corp ad you can't read and wouldn't care to — a grinning cartoon dog shilling something called PUPTECH NUTRIENT PASTE, the kind of thing that gets plastered on every wrapper in the row this season\n\nthe drone's chirp is fainter now, three blocks off and fading, its sweep pattern carrying it away from this stretch for a while yet" },
-    { "actor": "ascii", "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*abandons the wrapper, stretches long and low against a crate corner to scent-mark the spot before easing out toward a gap between two stalls where the crowd noise thins, testing whether the quieter path leads somewhere worth the walk.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the gap opens onto a narrower cross-alley behind the row, where the stall-owners stack their empty crates and cabling runs overhead in loose black bundles between roof anchors, humming faintly with whatever power the whole row draws off them\n\nit's quieter here, just distant crowd-murmur and the tarp-drip, and at the alley's far end a single unshielded bulb swings on its cord, throwing a slow pendulum of light and shadow across a stack of crates that might make a fine place to watch the row from unseen" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*leaps up onto the crate stack in two bounds, settling into the swinging bulb's shadow-side, tail curling in tight, and looks back out over the market row from the height — full belly, wet paws drying, watching the gold drone-light sweep somewhere far off now without any of it touching this alley.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "from up here the row unspools in both directions, tarps and steam and string-lights, the fishmonger still shouting, the data-broker's jingle still stuttering its loop under the crowd-noise, and none of it climbing this high or looking this way\n\nthe bulb keeps its slow pendulum swing, light and shadow trading places across your fur every few seconds, and the cabling overhead hums its same low steady note, the whole row running on into the night whether or not anything's watching it from a crate stack in the dark" }
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*slips between two overturned crates at the edge of the night market's stall row, belly low, nose flooding with a hundred layers at once — grilled protein-cake fat, hot oil, ozone off a repair-stall's welding torch, and under it all the packed-crowd smell of too many boots on wet plastic paving.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the row runs three long blocks under a patchwork of sagging tarps and pirated string-lights, stalls crammed shoulder to shoulder, awnings dripping the last of an earlier rain onto necks and shopping bags\n\ndirectly ahead a noodle vendor's wok throws a fan of sparks and steam, and past it, half-swallowed by the crowd's legs, a dropped skewer of something charred still sizzles faintly on the wet ground — nobody's looked down yet"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*eyes lock on the skewer, weighing the gap of moving legs between here and there — waits for a lull in the foot traffic, then darts low and fast along the crate line, snatching it in one pass without breaking stride, dragging it back into the shadow between crates.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "clean grab, nobody's shin so much as brushes you, though one vendor's kid catches the blur of motion out the corner of an eye and laughs, pointing, before getting pulled along by a parent's hand\n\nthe skewer's meat is scorched black on one end but the char masks something synthetic-sweet underneath, and past the crate-shadow a data-broker's stall flickers with a hand-lettered sign — SIGNAL SCRUBBED, NO TRACE, CASH OR CHIPS ONLY — its speaker looping a tinny corporate jingle that keeps cutting to static"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*tears at the skewer between two paws, ears swiveling independently — one tracking the jingle's stutter, the other angled back toward the open row for anything moving too purposeful through the crowd.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the jingle stutters again, longer this time, and the data-broker under the tarp — hood up, face lost in shadow — reaches over without looking and smacks the speaker box once, hard, and it settles back into its loop like nothing happened\n\nfarther down the row, over the heads of the crowd, a corp drone drifts at rooftop height, running its slow scan-sweep along the stalls, its downlight tinting the steam gold wherever it passes"
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*wolfs the last of the skewer fast, feeling the long night in stiff shoulders and an empty gut that one scorched snack won't fix, then noses out from between the crates to see what else the row's throwing off before the drone's sweep reaches this stretch.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone's sweep is still four stalls off, unhurried, its scan-tone a low periodic chirp that most of the crowd has learned to tune out entirely\n\nclosest to you now, a fishmonger's stall runs a shallow gutter of melt-water off the ice bins straight into the paving cracks, and where it pools, a scatter of fish scale and one small unattended cleaver-scrap of skin sits glistening, easy pickings if you don't mind wet paws"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*pads into the gutter-pool without hesitation, wet paws be damned, and mouths up the skin-scrap, chewing while keeping low under the stall's overhang, out of the drone's coming sightline.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the overhang's shadow swallows you whole just as the drone's downlight sweeps past overhead, gold light sliding over wet crates and stall-tarps without snagging on anything, and it banks on toward the row's far end without slowing\n\nthe fishmonger above, elbow-deep in ice, never notices the skin-scrap's gone — too busy shouting prices over the noise at a customer haggling hard over a bag of frozen roe"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*finishes the scrap, shakes a wet paw with a flick of distaste, then noses along the base of the stalls toward the sound of the haggling voices, curious whether the argument means dropped goods are likely.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the haggling sharpens into real heat, voices rising, and the customer slaps a fistful of chips onto the counter hard enough that one skitters off the edge and drops, disappearing into the crowd's shuffling feet before either of them notices\n\nsomewhere close under the noise, a low mechanical whirr starts up — not a drone, ground-level, wheels on wet paving — a delivery cart trundling down the row's center aisle on its own, nobody steering it, its cargo bay sealed and blinking a soft blue light"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*freezes at the whirr, tracking it through the paving vibration first before trusting the ears, then eases back toward the stall-base shadow, giving the cart's wheel-path a wide unbothered berth rather than risk getting clipped.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "good call, the cart doesn't slow for anything smaller than a person, its collision-sense tuned high enough it wouldn't even log a cat underfoot, and it rolls on past trailing a faint ozone smell like the arcology towers' elevator banks\n\nthe dropped chip is gone already, swept along in the crowd-shuffle, but the cart's passing stirs the air enough that a scrap of paper wrapping tumbles loose from someone's bag and lands almost at your paws, still smelling faintly of grilled meat"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*noses the wrapping open flat, licking at the grease-smear inside more out of habit than real hunger now, one eye still on the row for the drone's return pass.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the grease is thin, mostly gone, but the paper itself is printed with a corp ad you can't read and wouldn't care to — a grinning cartoon dog shilling something called PUPTECH NUTRIENT PASTE, the kind of thing that gets plastered on every wrapper in the row this season\n\nthe drone's chirp is fainter now, three blocks off and fading, its sweep pattern carrying it away from this stretch for a while yet"
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*abandons the wrapper, stretches long and low against a crate corner to scent-mark the spot before easing out toward a gap between two stalls where the crowd noise thins, testing whether the quieter path leads somewhere worth the walk.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap opens onto a narrower cross-alley behind the row, where the stall-owners stack their empty crates and cabling runs overhead in loose black bundles between roof anchors, humming faintly with whatever power the whole row draws off them\n\nit's quieter here, just distant crowd-murmur and the tarp-drip, and at the alley's far end a single unshielded bulb swings on its cord, throwing a slow pendulum of light and shadow across a stack of crates that might make a fine place to watch the row from unseen"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*leaps up onto the crate stack in two bounds, settling into the swinging bulb's shadow-side, tail curling in tight, and looks back out over the market row from the height — full belly, wet paws drying, watching the gold drone-light sweep somewhere far off now without any of it touching this alley.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "from up here the row unspools in both directions, tarps and steam and string-lights, the fishmonger still shouting, the data-broker's jingle still stuttering its loop under the crowd-noise, and none of it climbing this high or looking this way\n\nthe bulb keeps its slow pendulum swing, light and shadow trading places across your fur every few seconds, and the cabling overhead hums its same low steady note, the whole row running on into the night whether or not anything's watching it from a crate stack in the dark"
+    }
   ]
 }

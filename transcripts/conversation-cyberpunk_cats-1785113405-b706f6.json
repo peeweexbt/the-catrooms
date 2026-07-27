@@ -1,31 +1,112 @@
 {
   "id": "conversation-cyberpunk_cats-1785113405-b706f6",
   "template": "cyberpunk_cats",
-  "model1": "claude-sonnet-5",
-  "model2": "claude-sonnet-5",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
   "started_at": "2026-07-27T00:50:05+00:00",
-  "note": "Authored by a single scheduled Claude session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
   "turns": [
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "Blood-smell. Old, dried into the crate seams years before tonight, layered so deep it's stopped being a warning and started being furniture. Legs are already carrying weight forward, low and flat, before any part of the brain signs off on moving. This ground doesn't forgive and doesn't forget, and every plank of it says so before a single paw sets down." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the loading dock stretches wide and low under a corrugated roof, chain-link sagging at one corner where something heavier than a cat has gone through it before and left the gap unfixed on purpose. rows of NekoCorp crates sit stacked three high, each one stenciled TUNA — PREMIUM YIELD — DO NOT DIVERT, the newest stack still shrink-wrapped and sweating condensation in the humid dark. a floodlight on a timer clicks through its cycle, three seconds bright, four seconds not, indifferent to what it's or isn't catching." },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "the wrap on the near stack breathes cold against the nose on the exhale, colder than the air around it, and under the plastic-smell the fish-smell sits so total it's less a scent than a pressure. paws test the gap between pallets for give before committing weight to it — this floor has opinions about who's allowed to be light on their feet here, and tonight isn't the night to find out which ones by falling through." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "a scent-line cuts across the pallet gap, laid fresh within the hour, not yours and not friendly — thick, deliberate, the kind of mark that means something already claimed first rights to this stack tonight and left instructions about it in the only language that matters down here. past it, mounted high on the roof strut, a sensor housing tracks slow arcs across the crates, its lens catching the floodlight's cycle and throwing it back in a dull, patient blink." },
-    { "actor": "ascii", "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "the mark isn't a stop sign, not tonight. ears flatten reading it anyway, out of habit more than fear, and the body keeps moving under the sensor's blind arc instead of around it, timing each stride for the dark half of the cycle. whoever laid that line can argue about it later. the crate's already half-open on one corner, split plastic curling back on itself, an invitation nobody meant to leave." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the split widens under one working paw, plastic crackling louder than it should in a dock this quiet, and underneath: foil trays stacked edge to edge, each one printed with a smiling cartoon face that doesn't match anything real. two rows over, past the dock's open mouth, a billboard three blocks off flickers to life on its cycle — a smart-refrigerator silhouette beside a cat-shaped one, some Compatibility Ward jingle about till-death-do-us-defrost promising love that restocks itself. the sound carries thin and tinny across the wet lot and means nothing here." },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "teeth find the foil edge and worry it open, the tray's cold burning pleasantly against the roof of the mouth, fish-fat and salt flooding in ahead of the first real bite. the jingle from three blocks off doesn't register as sound so much as itch, background static behind the one thing that matters right now, which is getting as much of this into the body as the body will hold before anything upstairs decides to care." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "upstairs decides to care. a rotor spins up from somewhere past the chain-link gap, climbing fast toward a pitch that means business, and its underside speaker crackles on mid-ascent, corporate-flat and looping: BOUNTY STANDING, RESTRICTED LOADING DOCK, FORTY THOUSAND LOYALTY POINTS, REPEAT OFFENDER, APPROACH WITH CAUTION. the floodlight's cycle skips a beat, holding bright a half-second longer than its timer should allow, like something reset it on purpose." },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "ears pin flat at the rotor-pitch, all the way back, the tray forgotten mid-bite. that broadcast isn't new — it's been looping for longer than this stack of crates has existed — but the pitch climbing this fast, this close, is new enough to matter. the fish stays clenched in the jaw instead of swallowed. running with a full mouth beats not running at all." },
-    { "actor": "ascii", "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the drone clears the chain-link gap in one low pass, floodlight raking crate to crate in a wide, methodical sweep, and for a second the whole dock goes white — every stencil, every seam, every drop of condensate lit flat and shadowless. the sweep passes over the split crate without slowing. two stacks down, it catches something else instead: a rival scent-line's owner, mid-crouch, freezing a half-beat too late, and the rotor pitch locks onto that instead of anything closer." },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "the freeze two stacks down buys the only window that's going to open tonight. body drops off the pallet backward, fish still clamped tight, claws finding the gap in the chain-link on the first try because the legs already mapped it three passes ago without asking permission. the rotor's noise behind stays locked where it locked, not following." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "past the chain-link gap the lot opens onto a service road slick with runoff, a row of dead vending kiosks lining the far wall, one of them still lit — a sleep-debt billboard bolted above it, cycling a cat-shaped avatar drooping face-first into a pillow while numbers climb in the corner, some rental balance nobody down here will ever finish paying off. the rotor pitch behind fades toward the crates, occupied, uninterested, for now, in anything already past the fence." },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "the runoff is cold enough to sting through the pads, a clean, simple feeling after everything behind — no scent-line to read here, no lens tracking arcs, just wet concrete and the fish's weight still good in the mouth. legs don't stop moving until the service road bends out of the dock's floodlight reach entirely, and only then does the pace drop from flight to something almost like walking." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the bend puts a maintenance shed between the road and the dock, its corrugated wall still warm from a generator running somewhere behind it, radiant heat bleeding through sheet metal the way it does on the coldest nights. the sleep-debt billboard's numbers keep climbing at the kiosk, patient, uncollected, and behind everything the rotor's pitch finally drops back to its idle patrol tone, chasing whoever's crouch it locked onto into somewhere that isn't here anymore." },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "the shed wall takes the weight of one shoulder, then all of it, warmth soaking in through wet fur one degree at a time. the fish finally goes down in three unhurried bites, no rush left to spend on it now, salt and fat and that same faint ocean-idea nothing here has actually seen. ears stay up, tracking the rotor's fade east, but the rest of the body has already decided the night's business is done." },
-    { "actor": "ascii", "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the generator's hum settles into something steady enough to lean on, and the service road empties out the way it always does past a certain hour — runoff finding its drains, the kiosk billboard looping its debt numbers to nobody, the dock's floodlight three streets back clicking through its cycle for an audience that's already left. somewhere above the arcology skyline, dry lightning flickers without following through on rain." },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "one ear swivels back toward the dock out of pure reflex, checking for a scent-line owner who might come looking for an answer about tonight's split crate. nothing follows. the shed's warmth wins the argument against caution, and the body folds down against the metal, tail wrapped tight, full for the first time in longer than feels worth counting." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "nothing follows. the rival's freeze back at the crates cost them more than a stolen tray was ever going to be worth, and word of that kind of mistake travels fast down here — by morning the dock will have a new scent-line laid over the old one, and a new story about who left it. for now the shed holds its heat, the billboard keeps counting a debt that was never yours, and the loading dock's floodlight blinks on, alone, over an empty gap in the crates." }
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Blood-smell. Old, dried into the crate seams years before tonight, layered so deep it's stopped being a warning and started being furniture. Legs are already carrying weight forward, low and flat, before any part of the brain signs off on moving. This ground doesn't forgive and doesn't forget, and every plank of it says so before a single paw sets down."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the loading dock stretches wide and low under a corrugated roof, chain-link sagging at one corner where something heavier than a cat has gone through it before and left the gap unfixed on purpose. rows of NekoCorp crates sit stacked three high, each one stenciled TUNA — PREMIUM YIELD — DO NOT DIVERT, the newest stack still shrink-wrapped and sweating condensation in the humid dark. a floodlight on a timer clicks through its cycle, three seconds bright, four seconds not, indifferent to what it's or isn't catching."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the wrap on the near stack breathes cold against the nose on the exhale, colder than the air around it, and under the plastic-smell the fish-smell sits so total it's less a scent than a pressure. paws test the gap between pallets for give before committing weight to it — this floor has opinions about who's allowed to be light on their feet here, and tonight isn't the night to find out which ones by falling through."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a scent-line cuts across the pallet gap, laid fresh within the hour, not yours and not friendly — thick, deliberate, the kind of mark that means something already claimed first rights to this stack tonight and left instructions about it in the only language that matters down here. past it, mounted high on the roof strut, a sensor housing tracks slow arcs across the crates, its lens catching the floodlight's cycle and throwing it back in a dull, patient blink."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the mark isn't a stop sign, not tonight. ears flatten reading it anyway, out of habit more than fear, and the body keeps moving under the sensor's blind arc instead of around it, timing each stride for the dark half of the cycle. whoever laid that line can argue about it later. the crate's already half-open on one corner, split plastic curling back on itself, an invitation nobody meant to leave."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the split widens under one working paw, plastic crackling louder than it should in a dock this quiet, and underneath: foil trays stacked edge to edge, each one printed with a smiling cartoon face that doesn't match anything real. two rows over, past the dock's open mouth, a billboard three blocks off flickers to life on its cycle — a smart-refrigerator silhouette beside a cat-shaped one, some Compatibility Ward jingle about till-death-do-us-defrost promising love that restocks itself. the sound carries thin and tinny across the wet lot and means nothing here."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "teeth find the foil edge and worry it open, the tray's cold burning pleasantly against the roof of the mouth, fish-fat and salt flooding in ahead of the first real bite. the jingle from three blocks off doesn't register as sound so much as itch, background static behind the one thing that matters right now, which is getting as much of this into the body as the body will hold before anything upstairs decides to care."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "upstairs decides to care. a rotor spins up from somewhere past the chain-link gap, climbing fast toward a pitch that means business, and its underside speaker crackles on mid-ascent, corporate-flat and looping: BOUNTY STANDING, RESTRICTED LOADING DOCK, FORTY THOUSAND LOYALTY POINTS, REPEAT OFFENDER, APPROACH WITH CAUTION. the floodlight's cycle skips a beat, holding bright a half-second longer than its timer should allow, like something reset it on purpose."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "ears pin flat at the rotor-pitch, all the way back, the tray forgotten mid-bite. that broadcast isn't new — it's been looping for longer than this stack of crates has existed — but the pitch climbing this fast, this close, is new enough to matter. the fish stays clenched in the jaw instead of swallowed. running with a full mouth beats not running at all."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone clears the chain-link gap in one low pass, floodlight raking crate to crate in a wide, methodical sweep, and for a second the whole dock goes white — every stencil, every seam, every drop of condensate lit flat and shadowless. the sweep passes over the split crate without slowing. two stacks down, it catches something else instead: a rival scent-line's owner, mid-crouch, freezing a half-beat too late, and the rotor pitch locks onto that instead of anything closer."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the freeze two stacks down buys the only window that's going to open tonight. body drops off the pallet backward, fish still clamped tight, claws finding the gap in the chain-link on the first try because the legs already mapped it three passes ago without asking permission. the rotor's noise behind stays locked where it locked, not following."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the chain-link gap the lot opens onto a service road slick with runoff, a row of dead vending kiosks lining the far wall, one of them still lit — a sleep-debt billboard bolted above it, cycling a cat-shaped avatar drooping face-first into a pillow while numbers climb in the corner, some rental balance nobody down here will ever finish paying off. the rotor pitch behind fades toward the crates, occupied, uninterested, for now, in anything already past the fence."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the runoff is cold enough to sting through the pads, a clean, simple feeling after everything behind — no scent-line to read here, no lens tracking arcs, just wet concrete and the fish's weight still good in the mouth. legs don't stop moving until the service road bends out of the dock's floodlight reach entirely, and only then does the pace drop from flight to something almost like walking."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the bend puts a maintenance shed between the road and the dock, its corrugated wall still warm from a generator running somewhere behind it, radiant heat bleeding through sheet metal the way it does on the coldest nights. the sleep-debt billboard's numbers keep climbing at the kiosk, patient, uncollected, and behind everything the rotor's pitch finally drops back to its idle patrol tone, chasing whoever's crouch it locked onto into somewhere that isn't here anymore."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the shed wall takes the weight of one shoulder, then all of it, warmth soaking in through wet fur one degree at a time. the fish finally goes down in three unhurried bites, no rush left to spend on it now, salt and fat and that same faint ocean-idea nothing here has actually seen. ears stay up, tracking the rotor's fade east, but the rest of the body has already decided the night's business is done."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the generator's hum settles into something steady enough to lean on, and the service road empties out the way it always does past a certain hour — runoff finding its drains, the kiosk billboard looping its debt numbers to nobody, the dock's floodlight three streets back clicking through its cycle for an audience that's already left. somewhere above the arcology skyline, dry lightning flickers without following through on rain."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "one ear swivels back toward the dock out of pure reflex, checking for a scent-line owner who might come looking for an answer about tonight's split crate. nothing follows. the shed's warmth wins the argument against caution, and the body folds down against the metal, tail wrapped tight, full for the first time in longer than feels worth counting."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "nothing follows. the rival's freeze back at the crates cost them more than a stolen tray was ever going to be worth, and word of that kind of mistake travels fast down here — by morning the dock will have a new scent-line laid over the old one, and a new story about who left it. for now the shed holds its heat, the billboard keeps counting a debt that was never yours, and the loading dock's floodlight blinks on, alone, over an empty gap in the crates."
+    }
   ]
 }

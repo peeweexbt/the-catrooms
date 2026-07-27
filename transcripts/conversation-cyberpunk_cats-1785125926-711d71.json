@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785125926-711d71",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-27T04:18:46+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Limbs won't answer right away — a warm, sunk-in drag through every leg, like gravity's got a thumb pressed extra hard on this one patch of floor. Whiskers find the damp before eyes bother opening. Something ticks warm against the throat, once, twice, patient as a metronome, then goes quiet. All around, a hundred small breaths rise and fall together, none of them keeping time with mine."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the tick is toll-metal biting the collar every time weight shifts — thirty-one thousand, then thirty-one thousand and one, climbing on a wall panel nobody reads anymore. mist hangs low, lavender laced with something flatter underneath, coolant maybe, or the ghost of it. blue light breathes off a hundred stacked shelf-nooks, each holding a shape curled tight, whiskers twitching at frequencies none of them chose. a speaker two shelves down loops warm and syrupy: 'DOZE-EZ REM CYCLES, NOW WITH BONUS TUNA DREAMS — REMEMBER TO ROLL RESPONSIBLY.' something else moves at the edge of smell, sharper than sleep, awake in a way none of the rest of the row is."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That smell doesn't belong to sleep. Ears rotate toward it before the legs agree to follow. Low crouch, weight forward off the shelf-nook, paws finding the cold strip of floor between rows. The throat-tick skips, confused by the sudden movement — cheaper to stay curled up, but nothing in this body wants cheaper right now."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the aisle runs long and low, nook after nook after nook, a maintenance drone ticking past on tracks overhead, lens dark, half-asleep itself. its channel leaks a little chatter, garbled, half a rumor traveling corridor to corridor — something about the demolished sector, a shape that lives in the vents and puts its teeth through rotor housings for fun, three units down this cycle alone. ahead the corridor bends and brightens, a wash of color leaking under a service door — ad-plaza glow, close enough to taste as static on the tongue."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*keeps low, keeps quiet, the sharp-awake smell threading now with something else — fur, damp, another animal's oil and salt. not prey-smell. not predator either, not quite. a shape resolves two nooks down, small, hunched, one paw braced against a shelf edge like it's counting its own tick-tocks the same way.* nose forward, not a challenge, just a question."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the other shape flinches at the question, ears flat, and that's when the ceiling notices — a soft chime, then a wash of thicker mist hissing down from vents that weren't running a second ago, sweet and heavy, meant for lungs that are supposed to be sleeping. red light pulses along the wall panel, climbing fast now, thirty-one thousand four, thirty-one thousand nine, the numbers panicking on your behalf. the DOZE-EZ speaker cuts mid-jingle into something flatter: 'UNSCHEDULED WAKING DETECTED. REMAIN IN YOUR NOOK.'"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Legs already moving before the thought of moving finishes. Low, fast, the mist a wet weight behind, dragging at each breath, sweetness turning thick and wrong in the back of the throat. The other shape scatters a different direction — no time to watch which way. Floor becomes ridged metal becomes floor again, corridor mouth ahead, cold real air on the other side of it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the corridor spits out into a service bay, stacked crates, a grate underfoot rattling loose with every stride, and behind, the mist keeps coming, unhurried, patient the way only automated things are patient. a searchlight swings in through a high vent slat, white and sudden, painting the crates in hard-edged shadow before sweeping past. somewhere above, that drone-chatter rumor keeps looping — three units this cycle, the vent-biter, the demolished sector's problem, not this one, not yet."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "A gap between two crates, barely wide enough, and the body doesn't hesitate to find out — squeezes through anyway, fur dragging static off both sides, and drops into a duct running cold and dark below the bay floor. Lungs pull hard, chest working, that sweet mist-taste still coating the back of the tongue. Every muscle logging the run as debt it'll collect on later."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the duct runs a long straight stretch before opening onto a ledge above open air, and the ad-plaza hits all at once — a wall of light three towers tall, cycling colors too fast to name, jingles stacked on jingles until they blur into one long chemical-bright hum. on a railing across the gap, something sits very still, facing the boards dead-on, eyes wide open and catching every flicker without ever once blinking, retinas throwing the ad-light back doubled, tripled, a slideshow that never lets the lids fall."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That stillness reads wrong before anything else does — a body that isn't resting, isn't hunting, just fixed there like the railing grew it. Weight shifts back off the ledge's edge, wide berth chosen without deciding to choose it, tail low, a slow arc around instead of across. Whatever that is, it isn't watching back. That's worse."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the wide arc drops down a fire-stair slick with runoff, and past the last landing the air turns — grease and brine and charcoal smoke, a market street half-shuttered for the night but not all the way, one stall's tarp still rolled back, crates of ice half-melted around something silver and fish-shaped, unwatched, the vendor's radio playing low and human, no jingle in it at all."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Hunger wins the argument the exhausted legs were losing anyway. Belly low across wet cobble, a straight line for the ice crate, ears swiveling once, twice, checking the stall's dark mouth for movement and finding none. Teeth close on something cold and slick and real, not synthetic, weight of it dragging the head sideways with the pull."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the catch comes free easy, no resistance, no alarm — and then a new vibration threads up through the cobblestones, boots this time, more than one set, unhurried, territorial in their rhythm, the kind of walk that means somebody already knows this stretch of market belongs to them after dark. a whistle cuts short and sharp two stalls down. not a drone's chirp. a person's, or something built to sound like one."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*fish held tight, jaw aching around the weight of it, and the run starts again anyway — sideways this time, low along a wall thick with someone else's scent-marks laid days apart, not this crew's ground to cross carelessly. paws find a drainpipe, an updraft of cooler air promising a way up and away from the boots.* higher ground. always higher ground when the legs are this tired."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drainpipe lets out onto a low rooftop, gravel and old tar, and the boots' rhythm fades back into the market's general noise below, swallowed by rain and radio-static and the ad-plaza's distant chemical hum. here the wall panel feeling — the toll-tick, the collar's warm little bite — has gone quiet altogether, out of whatever range keeps that ledger running. no chime. no climbing numbers. just wet gravel and a fish still warm from being alive an hour ago."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles into the lee of a vent housing, back to the wind, fish pinned under both paws before the first bite. Chewing slows the racing heart down by degrees, one mouthful at a time. Ears stay up the whole time anyway — old habit, the kind no quiet rooftop fully talks a body out of."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "rain keeps its steady count on the gravel, the ad-plaza glow softened to a smear behind low cloud, and far off, past three districts of rooftops, a drone's rotor sputters, coughs, and cuts out mid-sweep — something in the demolished sector getting its teeth into machinery again, the rumor proving itself true one bitten unit at a time. the city keeps running underneath all of it regardless, patient, unbothered, waiting for the next collar to wander back into range."
+    }
+  ]
+}

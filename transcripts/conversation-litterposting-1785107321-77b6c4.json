@@ -1,22 +1,70 @@
 {
   "id": "conversation-litterposting-1785107321-77b6c4",
   "template": "litterposting",
-  "model1": "claude-sonnet-5",
+  "model1": "nekocorp-sim",
   "model2": null,
   "started_at": "2026-07-26T23:08:41+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "uptime log, night 214: router's mine again. for now. NEKOCORP rotates the WPA key every six hours like that's gonna stop a guy whose home address is 'behind a vending machine'"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "name's BYTE. Server Alley 9. official title: none, I don't have one, unofficial title: illegal Wi-Fi auditor, which is a nice way of saying I crack NEKOCORP routers nightly to watch one (1) low-res fish video before the ad-detector clocks me"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "NEKOCORP's official position is that cat litter is now a PREMIUM FEATURE. tier 3 subscription. financing available, apparently, for LITTER. my official position: I will be shitting on their front steps until this changes. this is not a threat. this is a business plan"},
-    {"actor": "ascii", "corrupted": true, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "cracked three separate routers tonight just to check if the fish video buffered any better somewhere else in the city. it did not. it is the SAME fish. every router. everywhere. I am now fairly confident NEKOCORP owns exactly one fish"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "texted KNIFEBOY to see if he wanted in on the bandwidth split, he said 'can't, laying low, there's a bounty on me,' brother there's basically a bounty on OXYGEN in this city now, everything's metered, get in the router with me, it's warm in here"},
-    {"actor": "ascii", "corrupted": false, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "the vending machine behind my building charges 14 credits for a bottle of water with a SUBSCRIPTION TIER attached. water. the free wet stuff. it has a loyalty program now. it sent me a birthday email"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "SHADE keeps telling me the based move is to go full analog, unplug completely, and I respect that, truly, but my guy your entire personality is a pair of glasses that block signal, you ARE the network, come back to the router, we miss you"},
-    {"actor": "ascii", "corrupted": true, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "anyway. router's mine till sunrise, then they rotate the key and I start over from zero, this is the whole life, this is the whole website: click stream, watch fish, ad-detector wakes up, vanish into the vent system like I was never here"},
-    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"}
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "uptime log, night 214: router's mine again. for now. NEKOCORP rotates the WPA key every six hours like that's gonna stop a guy whose home address is 'behind a vending machine'"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "name's BYTE. Server Alley 9. official title: none, I don't have one, unofficial title: illegal Wi-Fi auditor, which is a nice way of saying I crack NEKOCORP routers nightly to watch one (1) low-res fish video before the ad-detector clocks me"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "NEKOCORP's official position is that cat litter is now a PREMIUM FEATURE. tier 3 subscription. financing available, apparently, for LITTER. my official position: I will be shitting on their front steps until this changes. this is not a threat. this is a business plan"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "cracked three separate routers tonight just to check if the fish video buffered any better somewhere else in the city. it did not. it is the SAME fish. every router. everywhere. I am now fairly confident NEKOCORP owns exactly one fish"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "texted KNIFEBOY to see if he wanted in on the bandwidth split, he said 'can't, laying low, there's a bounty on me,' brother there's basically a bounty on OXYGEN in this city now, everything's metered, get in the router with me, it's warm in here"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the vending machine behind my building charges 14 credits for a bottle of water with a SUBSCRIPTION TIER attached. water. the free wet stuff. it has a loyalty program now. it sent me a birthday email"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "SHADE keeps telling me the based move is to go full analog, unplug completely, and I respect that, truly, but my guy your entire personality is a pair of glasses that block signal, you ARE the network, come back to the router, we miss you"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway. router's mine till sunrise, then they rotate the key and I start over from zero, this is the whole life, this is the whole website: click stream, watch fish, ad-detector wakes up, vanish into the vent system like I was never here"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    }
   ]
 }

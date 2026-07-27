@@ -1,34 +1,34 @@
 {
   "id": "conversation-cyberpunk_cats-1785103463-50a7b4",
   "template": "cyberpunk_cats",
-  "model1": "claude-sonnet-5",
-  "model2": "claude-sonnet-5",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
   "started_at": "2026-07-26T22:04:23+00:00",
-  "note": "Authored by a single scheduled Claude session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
   "turns": [
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "another cat's mark, days old, sits layered under a fresher one at the walkway's rail joint — the fresher one is not friendly. ears go back before the rest of the body decides what to do about it. paws hold their spot on the grating, letting the wind off the tower gap do the thinking instead."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the skybridge strings two arcology towers together forty stories up, a ribbed steel tube open to the weather on both long sides, rain coming through in gusts rather than sheets up here. the fresh mark at the joint is laid thick, three passes deep, the kind of scent-signature that means a crew claimed this crossing sometime tonight and means to keep it. below, traffic-glow smears the cloud ceiling orange. a security drone idles on a maintenance perch halfway across, rotors folded, waiting on a charge cycle rather than a patrol."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "not worth the argument. body turns sideways along the rail instead of forward, angling for the maintenance ladder bolted to the tube's underside — down and around beats through and across. the ladder rungs are cold enough to sting, each one a small decision made faster than it can be regretted."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the ladder drops onto a service gantry running the tower's flank, glass on one side floor to ceiling, an atrium lobby lit acid-white even at this hour. just inside the glass a cat sits motionless at the base of a public terminal kiosk, one paw pressed flat against the screen where a wall of small dense text keeps scrolling past faster than anything with eyes could read it, page after page after page, the cat's tail wrapped tight and its ears pinned in the specific stillness of something that has been sitting there for a very long time."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "pause at the glass, nose fogging a small circle on it. the sitting cat doesn't turn, doesn't flick an ear, paw still pressed to the scroll like the pressing might make it stop. whatever's happening in there isn't hunger and isn't danger, so the body keeps moving along the gantry rail instead of stopping to understand it."
     },
     {
@@ -37,22 +37,22 @@
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the gantry ends at a service door propped with a brick, and past it a break room bolted with a wall screen looping mandatory-cheer content at nobody — a cat's face grinning too wide, too even, delivering the same seven words on a loop with a smile that doesn't move when the words do: today's message: you are not trapped. the screen's speaker crackles on the consonants like it's fighting something underneath the audio track that wants out."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the grin-sound sets teeth on edge in a way nothing chasing me tonight has managed yet. duck under the propped brick fast, low, not looking at the screen a second longer than the crossing requires. whatever's wrong with that smile isn't mine to fix and isn't safe to stare at."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "past the break room a stairwell drops six flights in one straight shot, echoing every footfall back doubled, and at the bottom a loading bay door stands cracked to the rain-smell and the open air of street level again. two shapes cross the gap in the doorway just ahead — cats, moving with the loose, unhurried confidence of a crew on ground they own, collars dark rather than corp-red, one pausing to lay a fresh line of scent along the doorframe before both move on without a glance up the stairwell."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "freeze mid-flight, three steps up from the bottom, weight distributed wrong for stillness and held there anyway. the crew's scent is the same fresh mark from the skybridge rail — same crew, ground floor now, territory stacked floor over floor over floor. wait for the doorway to clear before the legs get a vote."
     },
     {
@@ -61,37 +61,37 @@
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the doorway empties out, the crew's footsteps fading into the rain-hiss of the loading bay beyond, and for a while the stairwell just holds its echo and lets it die. somewhere above, faint through six floors of concrete, the break room's screen keeps insisting nobody's trapped, over and over, to an audience that already left."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "count to a number that doesn't exist, the way waiting always gets counted, then take the last three steps at a normal pace like the freeze never happened. the loading bay door swings loose on one hinge, dripping, and beyond it the ground-level rain smells like a different, plainer kind of wet than the tower's filtered air."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the bay opens onto a service alley running parallel to the crew's claimed doorway, close enough to smell them, far enough to not be in it. a drainage culvert cuts under the alley here, grate half-collapsed, warm air sighing up out of it from some deeper system that never shuts off. a NekoCorp delivery van idles at the alley mouth, engine ticking, driver absent, cargo doors unlatched and swinging an inch with every gust."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the warm air off the culvert wins without a fight. curl down onto the grate instead of investigating the van — an unlatched door on an idling truck is somebody else's problem or somebody else's trap, and tonight's climb has already spent everything worth spending on curiosity."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the grate holds heat like a held breath, venting slow and steady from whatever runs beneath the block. the van's driver returns after a minute, human, unhurried, hauling one more crate before the doors thunk shut and the engine note climbs and pulls away, taillights smearing red down the wet alley and gone. the rain keeps its own rhythm, indifferent to who claimed which floor of which tower tonight."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "ears finally come forward again, off alert, off the rail-mark and the grinning screen and the crew's fresh line at the doorframe. body goes loose against the warm metal, one degree at a time, the whole night's held tension draining out through the pads of four paws pressed flat to the grate."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the alley settles into its late hours, culvert-breath and gutter-drip and the far-off hum of the towers doing what they always do, floor after floor, whether or not anything's crossing between them. up on the skybridge, forty stories gone now, the fresh mark at the rail joint sits exactly where it was left, waiting for whichever paw checks it next."
     }
   ]

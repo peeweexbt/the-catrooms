@@ -1,22 +1,70 @@
 {
   "id": "conversation-litterposting-1785035252-27ca50",
   "template": "litterposting",
-  "model1": "claude-sonnet-5",
+  "model1": "nekocorp-sim",
   "model2": null,
   "started_at": "2026-07-26T03:07:32+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "incident report #212, rooftop HVAC unit, 04:12am: GREMLIN from the loading dock has annexed the vent grate because it's 'structurally superior,' his words, he does not know what that means, he just likes saying it"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "NekoCorp's newest thing is a kiosk at the plaza that iris-scans you before it'll dispense a single treat, calls it 'PounceID.' i don't have irises i have EYES, buddy, and they are not for sale"},
-    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "gremlin just informed the loading dock crew he's 'expanding operations' into the vent. sir it is a VENT. it is eight inches wide. there is no empire to expand, there is a draft"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "so i did what any reasonable animal would do: relocated three bottle caps into the vent as a formal counter-annexation. gremlin has not noticed. gremlin never notices. gremlin is, and i cannot stress this enough, not that bright"},
-    {"actor": "ascii", "corrupted": false, "text": "\n                  ☆\n☆  --------------\n  /__________ \\         ☆\n |                       |\n \\___________ /                                  ☆\n   \\.._______../\n    |   /\\__/\\   |\n    | ( •    •    ) |   ☆                     ☆\n    | / U  U  \\  |\n    =========\n     \\________/.\n                               ☆                           ☆\n\n   ☆                                         ☆\n                     ☆                               ☆\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "PounceID kiosk tried to scan me a second time and i just. sat there. blinking. slowly. it gave up first. i want that on my tombstone: he outlasted the machine"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "black market check-in: swapped a chewed bottle cap for two (2) shrimp chips with the opossum who runs the dead-end by the noodle stall, he doesn't speak, he just nods, i respect a professional"},
-    {"actor": "ascii", "corrupted": true, "text": "\n                              ╱|、\n                         =(˚˕ 。 7\n                             |、 ~〵\n                            じし   ˍ,)づ\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "the arcology tower's doing a new jingle now, something about 'compliance is comfort,' and honestly the bassline slaps and i'm furious about it, i'm humming it against my will"},
-    {"actor": "ascii", "corrupted": false, "text": "\n    /\\,,,/\\\n>(  • . •   )<\n  / >❀<  \\\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "in closing: the vent is contested but not lost, gremlin can keep calling it an empire, pounceid can go scan a toaster, and if a kiosk ever asks for your iris you just stare at it until it questions its whole design. goodnight loading dock, i'm sleeping in the draft on principle"}
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "incident report #212, rooftop HVAC unit, 04:12am: GREMLIN from the loading dock has annexed the vent grate because it's 'structurally superior,' his words, he does not know what that means, he just likes saying it"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "NekoCorp's newest thing is a kiosk at the plaza that iris-scans you before it'll dispense a single treat, calls it 'PounceID.' i don't have irises i have EYES, buddy, and they are not for sale"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "gremlin just informed the loading dock crew he's 'expanding operations' into the vent. sir it is a VENT. it is eight inches wide. there is no empire to expand, there is a draft"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "so i did what any reasonable animal would do: relocated three bottle caps into the vent as a formal counter-annexation. gremlin has not noticed. gremlin never notices. gremlin is, and i cannot stress this enough, not that bright"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n                  ☆\n☆  --------------\n  /__________ \\         ☆\n |                       |\n \\___________ /                                  ☆\n   \\.._______../\n    |   /\\__/\\   |\n    | ( •    •    ) |   ☆                     ☆\n    | / U  U  \\  |\n    =========\n     \\________/.\n                               ☆                           ☆\n\n   ☆                                         ☆\n                     ☆                               ☆\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "PounceID kiosk tried to scan me a second time and i just. sat there. blinking. slowly. it gave up first. i want that on my tombstone: he outlasted the machine"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "black market check-in: swapped a chewed bottle cap for two (2) shrimp chips with the opossum who runs the dead-end by the noodle stall, he doesn't speak, he just nods, i respect a professional"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n                              ╱|、\n                         =(˚˕ 。 7\n                             |、 ~〵\n                            じし   ˍ,)づ\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the arcology tower's doing a new jingle now, something about 'compliance is comfort,' and honestly the bassline slaps and i'm furious about it, i'm humming it against my will"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n    /\\,,,/\\\n>(  • . •   )<\n  / >❀<  \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "in closing: the vent is contested but not lost, gremlin can keep calling it an empire, pounceid can go scan a toaster, and if a kiosk ever asks for your iris you just stare at it until it questions its whole design. goodnight loading dock, i'm sleeping in the draft on principle"
+    }
   ]
 }

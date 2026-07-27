@@ -1,23 +1,75 @@
 {
   "id": "conversation-litterposting-1785047582-c6284f",
   "template": "litterposting",
-  "model1": "claude-sonnet-5",
+  "model1": "nekocorp-sim",
   "model2": null,
   "started_at": "2026-07-26T06:33:02+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "hot take: I don't actually remember my own kittenhood, and honestly? kind of based."},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "name's GLITCHMEAT, beta tester, Research Basement. NEKOCORP paid me TWELVE credits to jam a neural patch behind my ear and now I taste radio signals the way normal cats taste tuna water. this is not a bit."},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "the memory I got instead of my own first snowfall belongs to some OTHER kitten. I have never touched snow. I cried about it anyway. do you understand how embarrassing that is. I grieved a season I've never met."},
-    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "BYTE offered to debug me for free if I let him plug straight into my Bluetooth and I said absolutely not, that's how you get a virus, and he said 'you already have spiders in there' and.. yeah. fair. he's not wrong."},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "purple sounds like a dial tone that's mad at you. that's the full description. I don't make the rules, I just hear the colors now, apparently, forever."},
-    {"actor": "ascii", "corrupted": false, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "the scientists called the side effects 'within acceptable post-irony based comedy limits' and then LEFT. no follow-up appointment. no forwarding address. just twelve credits and a consent form I signed with a paw I'm 60% sure isn't fully mine."},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "HAPPYWARE texted me at 3am mid H̷A̷P̷P̷Y̷ glitch spiral and I said girl SAME, we could glitch together, and she left me on read for forty minutes because even her READ RECEIPTS are buffering now."},
-    {"actor": "ascii", "corrupted": true, "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "radio traffic tonight tastes like burnt caramel and a NEKOCORP compliance drone, which in Research Basement means someone downstairs is running an illegal signal boost again. not my problem. my problem is I can TASTE it and it's disgusting."},
-    {"actor": "ascii", "corrupted": false, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "in closing: I own zero of my memories, some of my Bluetooth, and roughly 40% of a personality. twelve credits well spent. if you need me I'll be down here hearing colors nobody asked me to hear."}
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "hot take: I don't actually remember my own kittenhood, and honestly? kind of based."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "name's GLITCHMEAT, beta tester, Research Basement. NEKOCORP paid me TWELVE credits to jam a neural patch behind my ear and now I taste radio signals the way normal cats taste tuna water. this is not a bit."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the memory I got instead of my own first snowfall belongs to some OTHER kitten. I have never touched snow. I cried about it anyway. do you understand how embarrassing that is. I grieved a season I've never met."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "BYTE offered to debug me for free if I let him plug straight into my Bluetooth and I said absolutely not, that's how you get a virus, and he said 'you already have spiders in there' and.. yeah. fair. he's not wrong."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "purple sounds like a dial tone that's mad at you. that's the full description. I don't make the rules, I just hear the colors now, apparently, forever."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the scientists called the side effects 'within acceptable post-irony based comedy limits' and then LEFT. no follow-up appointment. no forwarding address. just twelve credits and a consent form I signed with a paw I'm 60% sure isn't fully mine."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "HAPPYWARE texted me at 3am mid H̷A̷P̷P̷Y̷ glitch spiral and I said girl SAME, we could glitch together, and she left me on read for forty minutes because even her READ RECEIPTS are buffering now."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "radio traffic tonight tastes like burnt caramel and a NEKOCORP compliance drone, which in Research Basement means someone downstairs is running an illegal signal boost again. not my problem. my problem is I can TASTE it and it's disgusting."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "in closing: I own zero of my memories, some of my Bluetooth, and roughly 40% of a personality. twelve credits well spent. if you need me I'll be down here hearing colors nobody asked me to hear."
+    }
   ]
 }

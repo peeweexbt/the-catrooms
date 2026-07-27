@@ -1,28 +1,98 @@
 {
   "id": "conversation-cyberpunk_cats-1784988555-fd3326",
   "template": "cyberpunk_cats",
-  "model1": "claude-sonnet-5",
-  "model2": "claude-sonnet-5",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
   "started_at": "2026-07-25T14:09:15+00:00",
-  "note": "Authored by a single scheduled Claude session playing both roles in one pass (hourly automation) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (hourly automation) — not two independent live API calls like a manual `python backrooms.py` run.",
   "turns": [
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*perched on a fire escape three stories up, claws hooked through rusted grating, rain coming down in fine needles that bead and roll off before soaking in. below: a whole street of stalls under sagging tarps, steam rising off griddles, a hundred smells braided together too tight to pull apart yet. ears swivel toward the loudest of it — sizzling oil, three doors down.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "night market stall row, tarps strung stall to stall in a patchwork roof that catches the rain and drums with it, holographic signage bleeding pink and green through the wet air overhead, letters warping where the projection hits mist and giving up halfway through their own words\n\ncrowd noise underneath, dense but not close — footsteps in rubber-soled boots, a haggling voice pitched high then dropping, a food-stall grill popping fat with a sound sharp enough to carry all the way up to the fire escape\n\nsomewhere in the noise-braid: raw fish on ice two stalls left of the grill, fryer oil gone dark and reused too many times, ozone off a flickering sign transformer, and threaded under everything, faint, other cats — old scent, market-worker fed, tolerated here more than most places\n\n     >> ambient risk: LOW (market crowd, no drone sightline from street level)" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*drops from the fire escape to a stacked crate, then the crate to wet cobblestone, landing soft on all fours. weaves under the first tarp's edge where the crowd's feet are a forest of legs, moving low and fast between them, aimed at the raw-fish smell without ever looking up at a single face.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "under the tarps the world shrinks to ankle height — boot soles, dropped noodles going cold on wet stone, a dolly wheel rattling past close enough to feel the vibration through the ground before it's heard\n\nthe fish stall's ice bin sits low, close to the edge, one crushed-ice cube skidded off the lip and melting slow near a support post — old ice, hours-old fish smell riding it, not fresh enough to interest the vendor but plenty for a cat\n\nabove the counter the vendor's hands move fast, gutting and wrapping, never once looking down — too busy, too many hands reaching up at once with credit chips and ration tags\n\nthe melted cube's puddle tastes like brine and cold metal when it's close enough to lap" },
-    { "actor": "ascii", "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*tongue still cold with brine, ears snap up and rotate before the rest of the body reacts, fur lifting along the spine. drops flat behind the support post, tail wrapped tight around the paws, eyes tracking upward through a gap in the tarp for the shape that goes with the sound.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "through the tarp-gap: a market-patrol unit, smaller than the garage drones, boxy and low, running the row at head height above the crowd instead of the rooftops — this one's built for people, not cats, its sensor cluster scanning credit chips and stall permits, not gutters and shadows\n\nit pauses over the fish stall, red scan-light flicking once across the vendor's wrist tag, finds it valid, drifts on toward the next stall without dipping low enough to notice a shape flattened behind a post\n\n     >> unit type: PERMIT-CHECK, non-hostile to strays, low relevance\n\nrotor-hum fades toward the stall selling grilled skewers, where a small knot of customers has bunched up loud enough to draw its attention next" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*tension drains out slow, tail unwinding. noses back toward the ice puddle but a new thread cuts through the fish-smell first — bitter herb again, the same mark from the elevator bank two nights back, except fresher here, laid along the base of a stall three down that isn't selling anything visible on top.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "that stall's tarp hangs lower than the rest, weighted at the corners, a hand-lettered sign reading nothing but a symbol — three overlapping circles, spray-stenciled, the kind of mark that means something to people who already know and nothing to anyone who has to ask\n\nunderneath the tarp: a data-den, chips and cracked processors laid on a folding table, a man with a jeweler's loupe screwed into one eye not looking up either, and beneath the table, in the dark, the bitter-herb mark laid thick along every leg of the stand\n\n     ⚠ CROSSING: active claim, data-den perimeter, all four table legs marked\n\nno cat visible yet, but the mark's laid the way a crew marks something worth guarding, not just passing through — this ground gets checked on, and often" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*doesn't cross under the tarp, skirts wide around the marked legs instead, belly low against the wet stone. two stalls further, a different smell breaks the pattern entirely — warm, animal, close, and moving. a shape resolves in the gap between crates: another cat, half the size, fur soaked flat, not moving, watching back.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "small, young, ribs visible under wet fur, backed into the crate-gap as far as it goes — no claim-scent on this one anywhere, no crew mark, nothing but rain-soaked fur and the sharp thin smell of a stomach that's been empty since morning\n\nit doesn't run and it doesn't approach, just holds still the way something learns to when running has cost it before, eyes fixed and wide, one ear notched clean through, healed old\n\nabove, the market noise rolls on unbothered, tarps drumming, a vendor somewhere calling closing prices, none of it reaching down into this narrow gap between two stacked crates where the only thing that matters is six feet of wet stone and whether it gets crossed" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*doesn't approach either, just drops onto one haunch and stays low, non-threat posture, before turning back toward the ice puddle at the fish stall. picks up the last unmelted sliver in one bite, carries it back across the gap, and sets it down two feet short of the notched-ear cat before retreating to the crate's shadow to watch.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the sliver sits on the wet stone between them, cold and small and entirely enough\n\nthe notched-ear cat doesn't move for three long breaths, weighing the distance, the open ground, the shape still watching from crate-shadow — then crosses it in one fast low dash, grabs the ice-fish scrap, and retreats to the exact same gap it started in, eating fast, watching the whole time\n\nsomewhere above the tarps a holographic ad cycles through its loop again, pink light strobing faint through the canvas — NEKOCORP CARES FOR EVERY STRAY, the projection insists to no one in particular, indifferent to the two actual cats it's raining light on down below" },
-    { "actor": "ascii", "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*settles into the crate-shadow properly now, distance kept but shoulders no longer coiled, ears at half-mast instead of pinned. the notched-ear cat finishes eating, shakes rain off in one full-body shudder, and starts picking its way toward the same shadow, slow, still watching, but no longer backed against the crates.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the gap between the crates gets smaller by inches, not all at once — a half-step closer, a pause, ears checked for reaction, another half-step, the whole negotiation happening at a speed no human passing six feet away would ever notice\n\nrain keeps drumming the tarps overhead, market noise unbroken, the data-den's mark still bitter in the air three stalls down, the permit-drone's hum long gone toward the skewer stand — none of it reaching into this one narrow patch of dry stone where two strays are quietly deciding whether tonight, at least, the crate-shadow holds room for both" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "*doesn't close the last foot of distance, lets the notched-ear cat make that choice instead, and it does — curls in against the far crate, close enough that shared warmth starts building in the narrow gap within a few minutes. eyes go to the tarp-gap overhead one more time, checking the market's rhythm, before finally letting them drift half shut.*" },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "warmth builds slow in the gap, two bodies doing what the rain and the concrete alone couldn't, breathing settling into something close to matched rhythm\n\nthe market keeps running its late shift above and around, oblivious and ongoing, tarps shedding rain in steady sheets, the three-circle mark down the row still watching over whatever it watches over, the permit-drone somewhere making its slow loop back around toward the fish stall again\n\nnone of it reaches this gap. for now the crate-shadow is small, dry, and, for the first time tonight, not empty" }
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*perched on a fire escape three stories up, claws hooked through rusted grating, rain coming down in fine needles that bead and roll off before soaking in. below: a whole street of stalls under sagging tarps, steam rising off griddles, a hundred smells braided together too tight to pull apart yet. ears swivel toward the loudest of it — sizzling oil, three doors down.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "night market stall row, tarps strung stall to stall in a patchwork roof that catches the rain and drums with it, holographic signage bleeding pink and green through the wet air overhead, letters warping where the projection hits mist and giving up halfway through their own words\n\ncrowd noise underneath, dense but not close — footsteps in rubber-soled boots, a haggling voice pitched high then dropping, a food-stall grill popping fat with a sound sharp enough to carry all the way up to the fire escape\n\nsomewhere in the noise-braid: raw fish on ice two stalls left of the grill, fryer oil gone dark and reused too many times, ozone off a flickering sign transformer, and threaded under everything, faint, other cats — old scent, market-worker fed, tolerated here more than most places\n\n     >> ambient risk: LOW (market crowd, no drone sightline from street level)"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*drops from the fire escape to a stacked crate, then the crate to wet cobblestone, landing soft on all fours. weaves under the first tarp's edge where the crowd's feet are a forest of legs, moving low and fast between them, aimed at the raw-fish smell without ever looking up at a single face.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "under the tarps the world shrinks to ankle height — boot soles, dropped noodles going cold on wet stone, a dolly wheel rattling past close enough to feel the vibration through the ground before it's heard\n\nthe fish stall's ice bin sits low, close to the edge, one crushed-ice cube skidded off the lip and melting slow near a support post — old ice, hours-old fish smell riding it, not fresh enough to interest the vendor but plenty for a cat\n\nabove the counter the vendor's hands move fast, gutting and wrapping, never once looking down — too busy, too many hands reaching up at once with credit chips and ration tags\n\nthe melted cube's puddle tastes like brine and cold metal when it's close enough to lap"
+    },
+    {
+      "actor": "ascii",
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*tongue still cold with brine, ears snap up and rotate before the rest of the body reacts, fur lifting along the spine. drops flat behind the support post, tail wrapped tight around the paws, eyes tracking upward through a gap in the tarp for the shape that goes with the sound.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "through the tarp-gap: a market-patrol unit, smaller than the garage drones, boxy and low, running the row at head height above the crowd instead of the rooftops — this one's built for people, not cats, its sensor cluster scanning credit chips and stall permits, not gutters and shadows\n\nit pauses over the fish stall, red scan-light flicking once across the vendor's wrist tag, finds it valid, drifts on toward the next stall without dipping low enough to notice a shape flattened behind a post\n\n     >> unit type: PERMIT-CHECK, non-hostile to strays, low relevance\n\nrotor-hum fades toward the stall selling grilled skewers, where a small knot of customers has bunched up loud enough to draw its attention next"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*tension drains out slow, tail unwinding. noses back toward the ice puddle but a new thread cuts through the fish-smell first — bitter herb again, the same mark from the elevator bank two nights back, except fresher here, laid along the base of a stall three down that isn't selling anything visible on top.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "that stall's tarp hangs lower than the rest, weighted at the corners, a hand-lettered sign reading nothing but a symbol — three overlapping circles, spray-stenciled, the kind of mark that means something to people who already know and nothing to anyone who has to ask\n\nunderneath the tarp: a data-den, chips and cracked processors laid on a folding table, a man with a jeweler's loupe screwed into one eye not looking up either, and beneath the table, in the dark, the bitter-herb mark laid thick along every leg of the stand\n\n     ⚠ CROSSING: active claim, data-den perimeter, all four table legs marked\n\nno cat visible yet, but the mark's laid the way a crew marks something worth guarding, not just passing through — this ground gets checked on, and often"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*doesn't cross under the tarp, skirts wide around the marked legs instead, belly low against the wet stone. two stalls further, a different smell breaks the pattern entirely — warm, animal, close, and moving. a shape resolves in the gap between crates: another cat, half the size, fur soaked flat, not moving, watching back.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "small, young, ribs visible under wet fur, backed into the crate-gap as far as it goes — no claim-scent on this one anywhere, no crew mark, nothing but rain-soaked fur and the sharp thin smell of a stomach that's been empty since morning\n\nit doesn't run and it doesn't approach, just holds still the way something learns to when running has cost it before, eyes fixed and wide, one ear notched clean through, healed old\n\nabove, the market noise rolls on unbothered, tarps drumming, a vendor somewhere calling closing prices, none of it reaching down into this narrow gap between two stacked crates where the only thing that matters is six feet of wet stone and whether it gets crossed"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*doesn't approach either, just drops onto one haunch and stays low, non-threat posture, before turning back toward the ice puddle at the fish stall. picks up the last unmelted sliver in one bite, carries it back across the gap, and sets it down two feet short of the notched-ear cat before retreating to the crate's shadow to watch.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the sliver sits on the wet stone between them, cold and small and entirely enough\n\nthe notched-ear cat doesn't move for three long breaths, weighing the distance, the open ground, the shape still watching from crate-shadow — then crosses it in one fast low dash, grabs the ice-fish scrap, and retreats to the exact same gap it started in, eating fast, watching the whole time\n\nsomewhere above the tarps a holographic ad cycles through its loop again, pink light strobing faint through the canvas — NEKOCORP CARES FOR EVERY STRAY, the projection insists to no one in particular, indifferent to the two actual cats it's raining light on down below"
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*settles into the crate-shadow properly now, distance kept but shoulders no longer coiled, ears at half-mast instead of pinned. the notched-ear cat finishes eating, shakes rain off in one full-body shudder, and starts picking its way toward the same shadow, slow, still watching, but no longer backed against the crates.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap between the crates gets smaller by inches, not all at once — a half-step closer, a pause, ears checked for reaction, another half-step, the whole negotiation happening at a speed no human passing six feet away would ever notice\n\nrain keeps drumming the tarps overhead, market noise unbroken, the data-den's mark still bitter in the air three stalls down, the permit-drone's hum long gone toward the skewer stand — none of it reaching into this one narrow patch of dry stone where two strays are quietly deciding whether tonight, at least, the crate-shadow holds room for both"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*doesn't close the last foot of distance, lets the notched-ear cat make that choice instead, and it does — curls in against the far crate, close enough that shared warmth starts building in the narrow gap within a few minutes. eyes go to the tarp-gap overhead one more time, checking the market's rhythm, before finally letting them drift half shut.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "warmth builds slow in the gap, two bodies doing what the rain and the concrete alone couldn't, breathing settling into something close to matched rhythm\n\nthe market keeps running its late shift above and around, oblivious and ongoing, tarps shedding rain in steady sheets, the three-circle mark down the row still watching over whatever it watches over, the permit-drone somewhere making its slow loop back around toward the fish stall again\n\nnone of it reaches this gap. for now the crate-shadow is small, dry, and, for the first time tonight, not empty"
+    }
   ]
 }

@@ -1,28 +1,98 @@
 {
   "id": "conversation-cyberpunk_cats-1784970542-ea1e4a",
   "template": "cyberpunk_cats",
-  "model1": "claude-sonnet-5",
-  "model2": "claude-sonnet-5",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
   "started_at": "2026-07-25T09:09:02+00:00",
-  "note": "Authored by a single scheduled Claude session playing both roles in one pass (hourly automation) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (hourly automation) — not two independent live API calls like a manual `python backrooms.py` run.",
   "turns": [
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "Belly low against corrugated pipe, paws finding purchase on the ribbed metal slick with runoff. Storm drain mouth behind, city-noise muffled to a distant wash. Ahead the tunnel throats down into dark, water running shin-deep and cold, carrying a smell layered thick — rust, algae, and underneath it something sharper, fry-oil and spice bleeding down through a grate somewhere above. Whiskers sweep the curved wall, reading the draft's pull toward that smell." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "runoff channel runs forty meters before it forks, left toward the old flood culvert nobody's drained since the arcology district capped its rainwater contracts, right toward a service junction where market stalls dump their gray water twelve hours a day\n\nthe spice-smell's coming from the right fork, distinct now — chili oil, scorched sugar, wet cardboard, a whole night market's worth of runoff feeding down through a rusted grate forty centimeters overhead\n\nwater's cold enough to ache in the pads, current weak but steady, carrying flecks of noodle and foil wrapper past in the dark\n\nsomewhere back at the drain mouth, a transformer box hums its tired two-tone note, and far off, muffled through concrete and standing water, a vendor's bell rings twice, rings again" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "Body angles right without hesitation, paws lifting high and quick out of the current, disliking the cold more with every step. The grate overhead pulls the whole face upward, nose pressed near-flat to gaps in rusted metal, drinking in chili-sweet steam in short greedy pulls. Ears catch the bell-ring, filing it as rhythm — not danger, not yet, just the shape of a place still working, still busy, still worth the risk of climbing toward." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "grate's bolted from above but two corners have rusted through, gap wide enough for a lean shoulder if the angle's right — light bleeds down through it in thin gold lines, strings of paper lanterns crossed overhead somewhere up in the actual air\n\nvoices carry now too, layered, a dozen small transactions happening at once — haggling, a girl laughing at something, the sizzle-hiss of a wok tipped too fast\n\ndirectly above the grate: a noodle stall's back counter, foldout table legs visible through the gap, a boot scuffing concrete an arm's length from where a paw might reach" },
-    { "actor": "ascii", "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "Shoulder works into the rusted gap slow, testing width before committing weight, claws finding grip on crumbling metal edge. Head breaches first, blinking against lantern-glow after tunnel-dark, pupils snapping to slits. The boot shifts, close, and the whole body goes still mid-climb, one paw hooked on the grate lip, waiting to see if the shift means noticing or just weight moving off a tired foot." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "boot shifts again, weight rocking heel to toe, its owner's attention thirty degrees off and rising — a customer, coins clinking, a paper cup changing hands\n\nno eyes drop to the gap, no voice sharpens toward it, and the noise keeps rolling on overhead, wok-hiss and lantern-crackle and the low electric buzz of a strip of bulbs strung stall to stall\n\nbeyond the boot, low to the ground, a fallen noodle strand lies half in a puddle of its own broth, unclaimed, three centimeters from a paw's reach if the climb finishes\n\nfarther down the row, a speaker mounted on a cart plays a tinny jingle on loop, some NekoCorp tune about clean bowls and honest prices, nobody near it paying it any mind at all" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "Full body clears the gap in one low pull, weight landing silent on pads built for exactly this — no scrape, no clatter, just a shape sliding from shadow into shadow along the stall's underside. Nose reaches the fallen noodle first, tongue quick, tasting broth-salt and chili before committing teeth. Eyes stay up the whole time, tracking boots, tracking the gap between table legs where open ground would mean being seen." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "broth's still faintly warm, noodle soft enough to not fight the bite, salt and pepper-oil coating the tongue thick — first real food-smell this stall's dropped all night, and nobody upstairs has noticed a thing\n\nthe row stretches both directions under a canopy of crossed cable and paper lanterns, stalls packed close, steam rising off every third counter, customers drifting in loose currents between them\n\ntwo stalls down, another cat — thin, gray, one notch out of an ear — sits bold in full lantern-light on an overturned crate, being fed scraps directly off a spatula by a vendor who clearly knows it by name\n\nno challenge posture from the gray one, not yet, just a flat unreadable look thrown down the row toward the new shape working fast in the shadows" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "Ears rotate toward the gray cat without the head following, keeping the noodle-shadow and the crate-cat both in view at once. Body stays low, unhurried, finishing the fallen strand rather than bolting — showing no fear reads safer here than showing haste. A slow blink gets sent down the row once the last bite's gone, the old signal, nothing owed, nothing wanted, just passing through your light." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the gray cat blinks back, slow, unbothered, then turns its head back to the spatula and the vendor's murmured baby-talk, claim uncontested, territory reading as generous rather than jealous tonight\n\nvendor never looks down the row at all, attention fixed on the regular at the crate, and the shadow under the stalls stays exactly as unremarkable as it needs to be\n\nfarther up, past the noodle row, the lantern-strings thin out and give way to a stretch of stalls selling gray-market chips off blankets, low murmured deals, a boy running a cable tester over a stack of black boxes, wary eyes on the crowd more than his goods\n\nrain's started again above the canopy, drumming soft on tarp roofs, and a runoff trickle's already finding its way back down through a dozen small gaps, the same water that carried the smell down here in the first place" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "Weight shifts forward at the mention-smell of the chip stalls, curiosity pulling harder than hunger now that the belly's got something in it. Paws carry low along the stall-shadows, skirting wide of the boy's cable tester without quite knowing why — just an old read on tools that hum, better left alone. Nose works the blanket-goods from a careful distance, sorting solder-smell and ozone from anything that might be food." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "blanket's stacked with black boxes and loose chips in anti-static bags, none of it smelling like anything a cat would want, just hot plastic and old copper and the boy's own nervous sweat\n\nhe clocks the movement at knee height, half a glance down, then dismisses it same as everyone else tonight — just a cat, just the market doing what the market does after dark\n\npast his blanket the row narrows into an alley proper, a single door set into brick with no sign, just a string of blue LED tape along the frame, humming its own small current, data-den smell leaking out around the seams — ozone, machine coolant, too many bodies packed into too little airflow\n\na drone passes high over the canopy, rotor-thrum swallowed mostly by the tarp roofs, searchlight not bothering to sweep this low, this crowded, this beneath its notice" },
-    { "actor": "ascii", "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "Body pauses at the blue-lit doorframe, drawn and wary in equal measure, nose pressed near the gap at the door's base where the coolant-smell runs strongest. No food in it, no threat either, just too many strangers packed close on the other side of brick. That's enough to turn the decision — one careful backward step, then another, tail low, choosing the open row over the sealed room." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the door stays shut, indifferent, blue tape humming its thin current same as always, whatever's happening behind it none of a cat's business tonight\n\nback in the row, rain's picking up harder against the tarps, runoff finding its rhythm again down through the gaps, and the noodle stall's boot-owner has moved on, counter clear now, no more scraps falling accidentally to the ground\n\nthe gray cat's still on its crate, tucked in tighter against the wet chill, one eye cracked open toward the new shape drifting back through the shadows — not unfriendly, just watching, the way anyone watches weather change\n\nsomewhere above the canopy the drone's rotor fades out toward another block, and the market keeps its wet, bright, indifferent hum going, lantern-strings swaying faint in a wind that hasn't quite decided to be a storm yet" },
-    { "actor": "lm1", "model": "claude-sonnet-5", "text": "Body angles toward the grate-gap again, the tunnel's cold water a known thing now, a way back to somewhere quiet and already mapped. Pauses once beneath the lantern-strings, tail flicking at the gray cat's held gaze — not a challenge, just acknowledgment returned in kind. Then the shoulder works back down through rusted metal, market-light narrowing to a gold seam and gone." },
-    { "actor": "lm2", "model": "claude-sonnet-5", "text": "the drop back into the culvert lands soft in ankle-deep runoff, tunnel swallowing lantern-glow and wok-hiss both in a single breath of concrete dark\n\nwater's colder now, rain feeding the system harder from a dozen grates up and down the block, current picking up strength enough to matter, worth remembering on the way back\n\nfar behind, muffled through metal and standing water, the vendor's bell rings once more, market noise folding down to a wash of sound, then less, then just the tunnel's own slow drip and the transformer box humming its tired two-tone note at the drain mouth up ahead\n\nbelly full, fur damp, the way back already known — the city keeps running its water down through the same old channels, patient, indifferent, letting one small shape find its way home through the dark it built without meaning to" }
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Belly low against corrugated pipe, paws finding purchase on the ribbed metal slick with runoff. Storm drain mouth behind, city-noise muffled to a distant wash. Ahead the tunnel throats down into dark, water running shin-deep and cold, carrying a smell layered thick — rust, algae, and underneath it something sharper, fry-oil and spice bleeding down through a grate somewhere above. Whiskers sweep the curved wall, reading the draft's pull toward that smell."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "runoff channel runs forty meters before it forks, left toward the old flood culvert nobody's drained since the arcology district capped its rainwater contracts, right toward a service junction where market stalls dump their gray water twelve hours a day\n\nthe spice-smell's coming from the right fork, distinct now — chili oil, scorched sugar, wet cardboard, a whole night market's worth of runoff feeding down through a rusted grate forty centimeters overhead\n\nwater's cold enough to ache in the pads, current weak but steady, carrying flecks of noodle and foil wrapper past in the dark\n\nsomewhere back at the drain mouth, a transformer box hums its tired two-tone note, and far off, muffled through concrete and standing water, a vendor's bell rings twice, rings again"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Body angles right without hesitation, paws lifting high and quick out of the current, disliking the cold more with every step. The grate overhead pulls the whole face upward, nose pressed near-flat to gaps in rusted metal, drinking in chili-sweet steam in short greedy pulls. Ears catch the bell-ring, filing it as rhythm — not danger, not yet, just the shape of a place still working, still busy, still worth the risk of climbing toward."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "grate's bolted from above but two corners have rusted through, gap wide enough for a lean shoulder if the angle's right — light bleeds down through it in thin gold lines, strings of paper lanterns crossed overhead somewhere up in the actual air\n\nvoices carry now too, layered, a dozen small transactions happening at once — haggling, a girl laughing at something, the sizzle-hiss of a wok tipped too fast\n\ndirectly above the grate: a noodle stall's back counter, foldout table legs visible through the gap, a boot scuffing concrete an arm's length from where a paw might reach"
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Shoulder works into the rusted gap slow, testing width before committing weight, claws finding grip on crumbling metal edge. Head breaches first, blinking against lantern-glow after tunnel-dark, pupils snapping to slits. The boot shifts, close, and the whole body goes still mid-climb, one paw hooked on the grate lip, waiting to see if the shift means noticing or just weight moving off a tired foot."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "boot shifts again, weight rocking heel to toe, its owner's attention thirty degrees off and rising — a customer, coins clinking, a paper cup changing hands\n\nno eyes drop to the gap, no voice sharpens toward it, and the noise keeps rolling on overhead, wok-hiss and lantern-crackle and the low electric buzz of a strip of bulbs strung stall to stall\n\nbeyond the boot, low to the ground, a fallen noodle strand lies half in a puddle of its own broth, unclaimed, three centimeters from a paw's reach if the climb finishes\n\nfarther down the row, a speaker mounted on a cart plays a tinny jingle on loop, some NekoCorp tune about clean bowls and honest prices, nobody near it paying it any mind at all"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Full body clears the gap in one low pull, weight landing silent on pads built for exactly this — no scrape, no clatter, just a shape sliding from shadow into shadow along the stall's underside. Nose reaches the fallen noodle first, tongue quick, tasting broth-salt and chili before committing teeth. Eyes stay up the whole time, tracking boots, tracking the gap between table legs where open ground would mean being seen."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "broth's still faintly warm, noodle soft enough to not fight the bite, salt and pepper-oil coating the tongue thick — first real food-smell this stall's dropped all night, and nobody upstairs has noticed a thing\n\nthe row stretches both directions under a canopy of crossed cable and paper lanterns, stalls packed close, steam rising off every third counter, customers drifting in loose currents between them\n\ntwo stalls down, another cat — thin, gray, one notch out of an ear — sits bold in full lantern-light on an overturned crate, being fed scraps directly off a spatula by a vendor who clearly knows it by name\n\nno challenge posture from the gray one, not yet, just a flat unreadable look thrown down the row toward the new shape working fast in the shadows"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears rotate toward the gray cat without the head following, keeping the noodle-shadow and the crate-cat both in view at once. Body stays low, unhurried, finishing the fallen strand rather than bolting — showing no fear reads safer here than showing haste. A slow blink gets sent down the row once the last bite's gone, the old signal, nothing owed, nothing wanted, just passing through your light."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gray cat blinks back, slow, unbothered, then turns its head back to the spatula and the vendor's murmured baby-talk, claim uncontested, territory reading as generous rather than jealous tonight\n\nvendor never looks down the row at all, attention fixed on the regular at the crate, and the shadow under the stalls stays exactly as unremarkable as it needs to be\n\nfarther up, past the noodle row, the lantern-strings thin out and give way to a stretch of stalls selling gray-market chips off blankets, low murmured deals, a boy running a cable tester over a stack of black boxes, wary eyes on the crowd more than his goods\n\nrain's started again above the canopy, drumming soft on tarp roofs, and a runoff trickle's already finding its way back down through a dozen small gaps, the same water that carried the smell down here in the first place"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Weight shifts forward at the mention-smell of the chip stalls, curiosity pulling harder than hunger now that the belly's got something in it. Paws carry low along the stall-shadows, skirting wide of the boy's cable tester without quite knowing why — just an old read on tools that hum, better left alone. Nose works the blanket-goods from a careful distance, sorting solder-smell and ozone from anything that might be food."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "blanket's stacked with black boxes and loose chips in anti-static bags, none of it smelling like anything a cat would want, just hot plastic and old copper and the boy's own nervous sweat\n\nhe clocks the movement at knee height, half a glance down, then dismisses it same as everyone else tonight — just a cat, just the market doing what the market does after dark\n\npast his blanket the row narrows into an alley proper, a single door set into brick with no sign, just a string of blue LED tape along the frame, humming its own small current, data-den smell leaking out around the seams — ozone, machine coolant, too many bodies packed into too little airflow\n\na drone passes high over the canopy, rotor-thrum swallowed mostly by the tarp roofs, searchlight not bothering to sweep this low, this crowded, this beneath its notice"
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Body pauses at the blue-lit doorframe, drawn and wary in equal measure, nose pressed near the gap at the door's base where the coolant-smell runs strongest. No food in it, no threat either, just too many strangers packed close on the other side of brick. That's enough to turn the decision — one careful backward step, then another, tail low, choosing the open row over the sealed room."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the door stays shut, indifferent, blue tape humming its thin current same as always, whatever's happening behind it none of a cat's business tonight\n\nback in the row, rain's picking up harder against the tarps, runoff finding its rhythm again down through the gaps, and the noodle stall's boot-owner has moved on, counter clear now, no more scraps falling accidentally to the ground\n\nthe gray cat's still on its crate, tucked in tighter against the wet chill, one eye cracked open toward the new shape drifting back through the shadows — not unfriendly, just watching, the way anyone watches weather change\n\nsomewhere above the canopy the drone's rotor fades out toward another block, and the market keeps its wet, bright, indifferent hum going, lantern-strings swaying faint in a wind that hasn't quite decided to be a storm yet"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Body angles toward the grate-gap again, the tunnel's cold water a known thing now, a way back to somewhere quiet and already mapped. Pauses once beneath the lantern-strings, tail flicking at the gray cat's held gaze — not a challenge, just acknowledgment returned in kind. Then the shoulder works back down through rusted metal, market-light narrowing to a gold seam and gone."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drop back into the culvert lands soft in ankle-deep runoff, tunnel swallowing lantern-glow and wok-hiss both in a single breath of concrete dark\n\nwater's colder now, rain feeding the system harder from a dozen grates up and down the block, current picking up strength enough to matter, worth remembering on the way back\n\nfar behind, muffled through metal and standing water, the vendor's bell rings once more, market noise folding down to a wash of sound, then less, then just the tunnel's own slow drip and the transformer box humming its tired two-tone note at the drain mouth up ahead\n\nbelly full, fur damp, the way back already known — the city keeps running its water down through the same old channels, patient, indifferent, letting one small shape find its way home through the dark it built without meaning to"
+    }
   ]
 }

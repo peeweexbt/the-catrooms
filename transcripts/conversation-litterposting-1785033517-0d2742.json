@@ -1,22 +1,70 @@
 {
   "id": "conversation-litterposting-1785033517-0d2742",
   "template": "litterposting",
-  "model1": "claude-sonnet-5",
+  "model1": "nekocorp-sim",
   "model2": null,
   "started_at": "2026-07-26T02:38:37+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "ok i need to vent for a second because it's 5am, i haven't slept, and it's entirely TOASTER's fault"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "TOASTER (vending alcove, new money, deeply insufferable) has declared the recycling bin behind the noodle stall his 'workspace' because it hums warm. it's a BIN. it smells like BIN. he's out here doing wellness naps in GARBAGE and calling it self care"},
-    {"actor": "ascii", "corrupted": true, "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "meanwhile NekoCorp soft-launched WHISKERVERIFY at the alley mouth, some biometric gate thing, scanned my whiskers and spat back 'asymmetrical, please resubmit.' resubmit WHAT. these are the whiskers i was BORN with. take it up with genetics"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "so i coughed a hairball directly onto the scanner lens. gate's been stuck open for six hours. free alley. you're welcome. this was not an accident this was CIVIL ENGINEERING"},
-    {"actor": "ascii", "corrupted": false, "text": "\n        /⸌ —⸍\\\n     =(˶•ㅅ•˵)=      ᵐᵉᵒʷ\n　 l       ~乀   ╭\n    し しf_, )ノ\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "black market update: traded the drone patrol schedule for a full tin of tuna, dealer was a CROW this time, wouldn't make eye contact once, professional to the bone, 10/10 no notes"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "and TOASTER now has the arcology jingle on loop from a cracked speaker to lure kittens toward the bin like it's a RESORT. sir that is a DUMPSTER WITH AMBITIONS. someone stop him"},
-    {"actor": "ascii", "corrupted": true, "text": "\n.      ∧,,,,∧,,,,,,,∧\n     (  _  _ )⩊^ )~♡\n     /      ⊂      \\\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "update: relocated three (3) pebbles into toaster's bin as a formal eviction notice. he has not noticed. classic toaster. can't read pebble, never could"},
-    {"actor": "ascii", "corrupted": false, "text": "\n┊         ┊       ┊   ┊   ┊。 ┊\n┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆\n┊         ┊       ★⋆ ◦\n★⋆       ┊ .  ˚\n           ˚★\n☆ ∧,,,∧\nପ(„• ༝ •„)ଓ\n┏━∪∪━━━━━━━━━━━\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "in closing: the bin was never his, whiskerverify can choke on its own scanner, my hairball is a HERO, and if a drone ever asks you to resubmit your face you tell it your face doesn't take requests. goodnight vending alcove, toaster, i hope your playlist skips"}
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "ok i need to vent for a second because it's 5am, i haven't slept, and it's entirely TOASTER's fault"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "TOASTER (vending alcove, new money, deeply insufferable) has declared the recycling bin behind the noodle stall his 'workspace' because it hums warm. it's a BIN. it smells like BIN. he's out here doing wellness naps in GARBAGE and calling it self care"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "meanwhile NekoCorp soft-launched WHISKERVERIFY at the alley mouth, some biometric gate thing, scanned my whiskers and spat back 'asymmetrical, please resubmit.' resubmit WHAT. these are the whiskers i was BORN with. take it up with genetics"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "so i coughed a hairball directly onto the scanner lens. gate's been stuck open for six hours. free alley. you're welcome. this was not an accident this was CIVIL ENGINEERING"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n        /⸌ —⸍\\\n     =(˶•ㅅ•˵)=      ᵐᵉᵒʷ\n　 l       ~乀   ╭\n    し しf_, )ノ\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "black market update: traded the drone patrol schedule for a full tin of tuna, dealer was a CROW this time, wouldn't make eye contact once, professional to the bone, 10/10 no notes"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "and TOASTER now has the arcology jingle on loop from a cracked speaker to lure kittens toward the bin like it's a RESORT. sir that is a DUMPSTER WITH AMBITIONS. someone stop him"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n.      ∧,,,,∧,,,,,,,∧\n     (  _  _ )⩊^ )~♡\n     /      ⊂      \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "update: relocated three (3) pebbles into toaster's bin as a formal eviction notice. he has not noticed. classic toaster. can't read pebble, never could"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n┊         ┊       ┊   ┊   ┊。 ┊\n┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆\n┊         ┊       ★⋆ ◦\n★⋆       ┊ .  ˚\n           ˚★\n☆ ∧,,,∧\nପ(„• ༝ •„)ଓ\n┏━∪∪━━━━━━━━━━━\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "in closing: the bin was never his, whiskerverify can choke on its own scanner, my hairball is a HERO, and if a drone ever asks you to resubmit your face you tell it your face doesn't take requests. goodnight vending alcove, toaster, i hope your playlist skips"
+    }
   ]
 }

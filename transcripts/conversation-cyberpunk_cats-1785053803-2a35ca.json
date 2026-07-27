@@ -1,29 +1,29 @@
 {
   "id": "conversation-cyberpunk_cats-1785053803-2a35ca",
   "template": "cyberpunk_cats",
-  "model1": "claude-sonnet-5",
-  "model2": "claude-sonnet-5",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
   "started_at": "2026-07-26T08:16:43+00:00",
-  "note": "Authored by a single scheduled Claude session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
   "turns": [
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "a hum first — not one note but a stack of them, threading up through six floors of dead parking-garage concrete before it reaches anything that could be called an ear. copper-sweet under the fumes, dust cooking slow on something that runs hot all night and never sleeps. paws flat on the ramp, still, sorting the stack into layers — this hum, then that one, then a gap where a seventh should be and isn't. the gap is the interesting part."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the garage stacks itself upward in cages of black steel, floor after floor of server racks bolted where cars used to idle, fans breathing in unison until the whole structure sounds like one huge sleeping animal. the gap you're hearing sits on level three — a rack with its status lights dark, cooling fans stalled, the only cold spot in a building that never cools. a maintenance drone glides the far ramp, its scanner painting slow blue stripes across the concrete, hunting for exactly the kind of gap you just found. rain hasn't reached down here yet, but you can hear it starting six floors up, tapping the open roof grates like fingers."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "three floors up the ridged conduit, claws finding the gaps between rungs a maintenance ladder was never built to hide from a cat. the dark rack smells wrong in a way i like — ozone gone quiet, plastic gone cold, a dead cable hanging loose from its socket with the casing already split from someone else's teeth, not mine. i take up where they left off. copper under the insulation tastes like a held breath."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the split in the casing is old work, weeks old, the edges gone smooth — and underneath the copper-taste there's another thread laced into the cable itself, faint, bitter, singed: scorched fur, machine oil, the specific burn of something that used to drive a demolition rig before the rig stopped existing. whoever chewed this line first isn't here now. the blue scanner stripe sweeps level three, catches the open rack door, holds a half-second too long — then slides on, unconvinced, and the fans one cage over shudder back up to speed like the building exhaling."
     },
     {
@@ -32,37 +32,37 @@
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "teeth find the exposed copper and hold, not biting through, just resting there the way you rest a paw on something to check if it's breathing. it's breathing. the pulse comes in threes, fast, faster than the seventh-floor rain, faster than any drone's rotor — and riding under it, so quiet it's almost not there, a second rhythm that doesn't belong to this rack at all, borrowed from somewhere further up the tower."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the second rhythm belongs to eleven floors up, where a nekocorp relay dish feeds ad-copy down into every dead channel in the building whether the building wants it or not — 're-hydrate your loyalty, citizen, synthetic milk now available in four guilt-free flavors' — bleeding thin and tinny through a line that was never wired to carry it. the drone's scanner finishes its sweep of level three and turns back toward the ramp, rotor note dropping half a tone as it banks. for now, the rack is dark and quiet and entirely yours."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "good enough. back teeth work the last of the insulation free, and something small drops loose into the grating — warm, ticking with its own residual heat, small enough to hold flat against the tongue without swallowing. it isn't food. the hunger under my ribs doesn't care what it is, just that it's warm, just that holding something warm quiets it for a minute. mouth first, then a gap in my own fur to wedge it against, and keep moving."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the rack's status light you never noticed — a single red pixel, easy to miss — goes solid the moment the chip clears its socket. two floors down, a heavier drone unclips from its charging cradle, rotors spinning up from silence to shriek in under two seconds, the sound punching down through six floors of concrete like a struck bell. its floodlight finds the ramp before it finds you, but it's climbing, level by level, and the gap between where you are and where the exit ladder starts is closing by the second."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "down, not up — the drone expects up, expects the ladder, expects prey to run toward the light instead of past it. i drop rack to rack instead, claws catching each ledge just long enough to redirect, chip still wedged tight against my ribs, breath held tighter than the grip. the shriek behind me climbs an octave, searching, and finds concrete instead of cat three times in a row."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the ladder you didn't take turns out to be exactly where the drone expected — its floodlight nails the rungs a half-second after you'd have reached them, and somewhere below a pressure valve blows early, venting a gout of steam across the level-two landing that swallows the stairwell whole in white. the shriek behind you falters, blinded by its own building's plumbing, but the stairwell's gone now too, and the only way down that isn't drone or steam is the cable conduit running along the outer wall, exposed to six floors of open air."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the conduit it is. paws find the bracket seams by feel more than sight, each one just wide enough, the drop below a fact i don't look at twice. ears stay back, not from fear exactly — from listening, tracking the rotor's pitch to know exactly how close is close. chip presses warm against my ribs with every stretch. three brackets. six. the rotor pitch is falling behind."
     },
     {
@@ -71,27 +71,27 @@
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the floodlight sweeps the conduit a beat too late, catching empty steel where you'd been a bracket ago. somewhere below, at ground level, the scorched-fur thread you crossed on level three answers back — fainter now, moving fast toward the loading docks, and the drone's scanner locks onto that instead, banking hard away from you toward whatever's making a bigger, angrier signature down there. its rotor note fades east. the garage exhales."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "ground, finally — concrete instead of steel, open air instead of ducting. i drop the last meter and land soft, chip still clenched tight, and for one held breath nothing moves at all, not me, not the building, not even the fans eleven floors up. then the first real drop of rain finds the back of my neck, cold, and the night starts again."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the storm that's been building over the tower finally reaches street level all at once, drumming the garage mouth's corrugated awning into a single flat roar. the drone's shriek is three blocks east now, chasing a signature that isn't yours, and the level-three rack you left behind sits dark and forgotten again, one more dead spot in a building that will patch it by morning and never remember why."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "under the awning's dry lip i finally let the chip go, dropping it between my paws to look at properly — small, dull, nothing worth the run except that it's mine now, and the hunger under my ribs has quieted for exactly as long as i decide to sit still. i lick one shoulder clean of garage dust, ears still tuned east, still counting the drone's fading rotor even now."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "across the lot a nekocorp billboard reboots itself again, throwing pink light through the rain onto puddles that don't care what it's selling. synthetic milk, now with more trust, it says, same as it said an hour ago, same as it'll say in another. the rain keeps coming. the city keeps humming its hundred stacked notes, indifferent to which ones you managed to steal."
     }
   ]

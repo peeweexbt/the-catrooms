@@ -1286,7 +1286,7 @@ def build(transcripts_dir, out_dir, gen_titles):
                 f.write(detail_html)
 
             tag_line = (
-                f'[litterposting] {html.escape(data.get("model1", "?"))} solo '
+                f'[litterposting] solo '
                 f'<span class="rant-tag-badge">LITTERPOSTING</span>'
             )
             entries.append((_entry_sort_key(data), CARD_TEMPLATE.format(
@@ -1322,10 +1322,7 @@ def build(transcripts_dir, out_dir, gen_titles):
         with open(os.path.join(out_dir, out_name), "w") as f:
             f.write(detail_html)
 
-        tag_line = (
-            f'[{html.escape(data.get("template", "?"))}] '
-            f'{html.escape(data.get("model1", "?"))} &harr; {html.escape(data.get("model2", "?"))}'
-        )
+        tag_line = f'[{html.escape(data.get("template", "?"))}] explorer &harr; DYSTOPIA'
         entries.append((_entry_sort_key(data), CARD_TEMPLATE.format(
             href=out_name,
             card_class="card",

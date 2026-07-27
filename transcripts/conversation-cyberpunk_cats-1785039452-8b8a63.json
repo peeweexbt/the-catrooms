@@ -1,39 +1,39 @@
 {
   "id": "conversation-cyberpunk_cats-1785039452-8b8a63",
   "template": "cyberpunk_cats",
-  "model1": "claude-sonnet-5",
-  "model2": "claude-sonnet-5",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
   "started_at": "2026-07-26T04:17:32+00:00",
-  "note": "Authored by a single scheduled Claude session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
   "turns": [
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "gone before the shout finishes. paws skidding on wet steel, dock lights strobing red behind, cargo netting torn where i went through it instead of around. two legs pounding somewhere back there, boots on grating, falling further behind, not closer — good. don't stop to check. flatten under a pallet stack, chest working like a bellows, tongue tasting copper and rust."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the dock answers the way it always does — floodlights swinging wide on their gimbals, painting the containers in long red bars, a klaxon up in the gantry crane coughing once and thinking better of it. under the pallet stack the concrete holds yesterday's rain and a fainter smell, oil cut with something chemical-sweet, leaking from a crate stamped NEKOCORP LOGISTICS — SYNTH-MILK, POWDERED, DO NOT DELAY SHIPMENT in blistered stencil. the two-legs' voices carry, annoyed now, not alarmed, already turning back toward the gate booth. a wall speaker overhead crackles awake — '...quality you can trust, freshness the city depends on...' — and dies mid-jingle, choked on its own static."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "*creeps toward the leaking crate on my belly, nose working ahead of the rest of me.* powder, sweet-sick, coats the whiskers wrong. under it something colder — metal, ozone, a smell with edges, not food-shaped at all. paw finds it before eyes do: small, hard, humming faintly against the pad."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the torn crate has spilled its guts across the pallet in a drift of white, and half-buried in it a data chip catches the floodlight, throwing back a thin green blink, blink, blink — the pulse of something still powered, still calling for a hand that isn't coming. this is why the two-legs ran the length of the dock shouting: not the milk. the chip. its casing is scored with a mark none of the corp crates wear, hand-scratched, a black-market brand passed alley to alley. it is warmer than the concrete around it."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "teeth close around it careful, the way i'd carry a kit by the scruff. bitter tang, battery-taste, sits wrong on the tongue but it rides easy enough between the jaws. ears swivel — new sound, high and thin, cutting through the klaxon's leftover ring."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "a maintenance drone drops out of the gantry shadow on four soft rotors, its belly-light sweeping the pallets in a slow blue bar, cataloguing crates, counting losses, hunting for the gap in the netting. the light crosses the pallet stack once. pauses. begins to swing back."
     },
     {
@@ -42,32 +42,32 @@
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "bolt. low, fast, chip clamped tight enough to ache the jaw, off the pallet and along the container row where the shadow's deepest, ears flat, every hair on the spine standing up at once. don't look back at the light. looking back is what gets you seen."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the container row spits out onto the access road and the road bleeds into an alley proper, rain thickening again, running in sheets off a chain-link fence gone soft with rust. the fence carries marks — not corp stencil, not weather stains, but scent laid fresh and deliberate along the lowest rail, crossing and re-crossing in a pattern that reads like a name. unfamiliar. recently renewed. this ground belongs to someone who checks it often."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "stop at the marks without meaning to, feet planting themselves. not mine, not anyone i know — thick with confidence, laid by more than one throat. chip still in the mouth tastes bitterer now, or maybe that's just the fence-line doing it, the wrongness of another crew's ground pressing in through the nose. angle wide instead of crossing straight through."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "up on a fire escape three stories over the alley, three shapes resolve out of the rain-static — cats, but wrong-shouldered, each wearing a collar that pulses a slow corp-red at the throat, a black-market mod stitched under the fur at the neck. six eyes catch the sodium light off the alley lamp and hold it, unblinking, tracking the low shape moving along their fence-line with something clamped in its jaw."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "no eye contact — drop the gaze, drop the shoulders, make the body say nothing here interests me, no claim, no challenge. keep moving, don't run, running says prey. a drainpipe waits at the alley's far end, cold under the pads, and the climb starts before the decision fully lands."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the pipe rattles loose in its brackets going up, spitting flakes of rust into the dark, and the collars below stay red and still, watching without following — their ground held, no chase needed. the climb breaks out above the gutter line onto a flat composite roof where the rain thins to mist and the wind carries the alley's smell away, replaced by cold air and the hum of a thousand towers breathing."
     },
     {
@@ -76,42 +76,42 @@
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "drop the chip between the paws at the roof's edge and just breathe a while, sides heaving, tongue working at a bead of rain caught in the fur. jaw aches around the shape it isn't holding anymore. below, the city goes on not noticing, the way it always does."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the arcology towers stand close enough from here to read their skin — light crawling up glass in slow columns, elevators or advertisements or both, hard to say from a roof. security drones cross far out over the middle distance, small and patient, sweeping lanes that never bend toward this particular ledge. two blocks down and one level below, a sign buzzes uneven — a black-market data den's window, the kind that trades chips like the one cooling between these paws, its glow pulsing the same shade of green the crate's chip threw off in the dock light."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "nose lifts off the chip toward a different thread entirely — grilled protein-cake, hot fat, carried up from somewhere lower and further, thin but real under the wet-concrete smell of the roof. stomach answers before any thought does. the den can wait. it isn't going anywhere and neither, tonight, is the hunger."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the fire escape on the roof's far side switchbacks down toward street level, and the smell thickens with every landing — hot oil, charred protein-cake, the sweet rot of dropped fruit — until it opens onto the tail end of a night market, stalls lit in strings of bare bulbs, awnings sagging under the last of the rain. other cats already work the gutters and stall-legs here, low and unhurried, their scent-marks laid loose and overlapping along the curb — shared ground, not claimed ground."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "drop low at the market's edge, chip tucked back into the mouth for safekeeping, and thread between stall-legs toward the fat smell, weaving wide of boots and rolling cart-wheels. a vendor's cat, sleek, collar-tagged, perched on a crate lid, spots the approach and rises onto stiff legs, tail going thick."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the tagged cat opens its mouth on a hiss that never finishes — a rat breaks cover under the next stall over, bolting for the drain grate, and the collar-cat's whole body swivels after it instead, territory forgotten in half a heartbeat. the stall's owner curses at both animals without looking down, too busy scraping char off the grill. the gap left behind is small and closing fast."
     },
     {
       "actor": "lm1",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "take it. dart in, snatch a scrap fallen by the grill's leg, still hot enough to sting the tongue, and peel off into the shadow between two stalls before the collar-cat even remembers what it was chasing. sit, finally, chip and food both held safe now, one in the mouth and one going down."
     },
     {
       "actor": "lm2",
-      "model": "claude-sonnet-5",
+      "model": "nekocorp-sim",
       "text": "the market noise settles back into its rhythm around the gap where a hiss almost happened, rain thinning to a fine mist that catches the bulb-light in slow drifting specks. somewhere above the stalls a speaker loops the tail end of the NekoCorp jingle, worn thin from repetition, barely audible under the sizzle of grills. the chip sits warm against a foreleg, still blinking its small green pulse, patient, keeping whatever it knows for whoever finds it next. the city keeps its lights on and doesn't ask."
     }
   ]

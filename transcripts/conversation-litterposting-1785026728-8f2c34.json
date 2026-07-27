@@ -1,21 +1,65 @@
 {
   "id": "conversation-litterposting-1785026728-8f2c34",
   "template": "litterposting",
-  "model1": "claude-sonnet-5",
+  "model1": "nekocorp-sim",
   "model2": null,
   "started_at": "2026-07-26T00:45:28+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "@EVERYONE. @EVERYONE. drop what you're doing. MITTENS FROM SECTOR 9 knocked my sunbeam spot over AGAIN and had the AUDACITY to nap in it like she owns the windowsill. she does not own the windowsill. the windowsill belongs to whoever gets there first, THAT'S THE LAW, that's ALWAYS been the law, since before NekoCorp, since before the drones, since the FIRST sunbeam"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "anyway NekoCorp rolled out 'PurrPrime™' this week which is just the SAME rooftop sunbeams we've had since the beginning of time, except now a drone scans your whiskers before it lets you nap in one. scanned mine EIGHT TIMES. denied. 'insufficient loyalty tier.' i am a STRAY. i have no tier. i AM the tier"},
-    {"actor": "ascii", "corrupted": false, "text": "\n /\\_/\\\n( o.o )\n > ^ <\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "update: got into the sunbeam anyway by going feral on the drone, its little rotor thing is a chew toy now. NekoCorp can BILL me. billing address: under the dumpster behind the noodle stall, sector 9, ring the bell (there is no bell)"},
-    {"actor": "ascii", "corrupted": true, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "hairball update because y'all asked (nobody asked): coughed one up on the EXACT spot where the rival crew marks their territory. not an accident. i don't do accidents. this is diplomacy. this is foreign policy"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "the city keeps playing that ad off the arcology tower — 'obey. subscribe. purr.' — and honestly? kind of a bop? i hate that it's a bop. i hate NekoCorp AND i have the jingle stuck in my head, both things are true, i contain multitudes, i am a complicated animal"},
-    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "day whatever of the apocalypse: found a whole unopened tuna can in the black-market alley, guarded by a pigeon who thinks he's people. we fought. i won. this is not a metaphor. this is my tuesday"},
-    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "in closing: the sunbeam is MINE, Mittens is ON NOTICE, NekoCorp can take their loyalty tiers and shove them in a server rack, and if a drone ever asks for your whiskers you say NO and you RUN. that's the whole philosophy. that's the backrooms. goodnight sector 9, i love you, i'm never paying for PurrPrime"}
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "@EVERYONE. @EVERYONE. drop what you're doing. MITTENS FROM SECTOR 9 knocked my sunbeam spot over AGAIN and had the AUDACITY to nap in it like she owns the windowsill. she does not own the windowsill. the windowsill belongs to whoever gets there first, THAT'S THE LAW, that's ALWAYS been the law, since before NekoCorp, since before the drones, since the FIRST sunbeam"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway NekoCorp rolled out 'PurrPrime™' this week which is just the SAME rooftop sunbeams we've had since the beginning of time, except now a drone scans your whiskers before it lets you nap in one. scanned mine EIGHT TIMES. denied. 'insufficient loyalty tier.' i am a STRAY. i have no tier. i AM the tier"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n /\\_/\\\n( o.o )\n > ^ <\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "update: got into the sunbeam anyway by going feral on the drone, its little rotor thing is a chew toy now. NekoCorp can BILL me. billing address: under the dumpster behind the noodle stall, sector 9, ring the bell (there is no bell)"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "hairball update because y'all asked (nobody asked): coughed one up on the EXACT spot where the rival crew marks their territory. not an accident. i don't do accidents. this is diplomacy. this is foreign policy"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the city keeps playing that ad off the arcology tower — 'obey. subscribe. purr.' — and honestly? kind of a bop? i hate that it's a bop. i hate NekoCorp AND i have the jingle stuck in my head, both things are true, i contain multitudes, i am a complicated animal"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "day whatever of the apocalypse: found a whole unopened tuna can in the black-market alley, guarded by a pigeon who thinks he's people. we fought. i won. this is not a metaphor. this is my tuesday"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "in closing: the sunbeam is MINE, Mittens is ON NOTICE, NekoCorp can take their loyalty tiers and shove them in a server rack, and if a drone ever asks for your whiskers you say NO and you RUN. that's the whole philosophy. that's the backrooms. goodnight sector 9, i love you, i'm never paying for PurrPrime"
+    }
   ]
 }

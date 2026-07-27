@@ -1,31 +1,112 @@
 {
   "id": "conversation-cyberpunk_cats-1785031840-f70adf",
   "template": "cyberpunk_cats",
-  "model1": "claude-sonnet-5",
-  "model2": "claude-sonnet-5",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
   "started_at": "2026-07-26T02:10:40+00:00",
-  "note": "Authored by a single scheduled Claude session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
   "turns": [
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "not my scent. *stops mid-step on the rusted lip of the water tank, spine hair lifting all at once.* three, four days old — bitter, metallic, laid thick and deliberate across the strut where my own mark always sits. someone crossed this roof on purpose. wanted it found."},
-    {"actor": "lm2", "model": "claude-sonnet-5", "text": "wind off the arcology towers carries the rest of it down to you — copper-and-ash, chemical, not a smell this city grows on its own. below, a NekoCorp jingle loops through a cracked rooftop speaker, tinny and cheerful, *fresh milk for a hungry city~*, and under that hum a drone's rotor ticks past two blocks south, sweeping its light along the water tank's shadow but never quite reaching you. the false scent trail bends away from your mark and toward the vent stack at the roof's far edge, where steam breathes up warm and constant into the cold."},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "*ears pin flat, tail low, I follow the trail belly-down along the tank's rim* — not chasing, not yet, just reading. the vent stack's steam is warmer than it should be this late, chemical-sweet underneath, and the strange scent thickens as I get close, like whoever left it wanted a cat to follow exactly this line."},
-    {"actor": "lm2", "model": "claude-sonnet-5", "text": "the vent grille is loose at one corner, sprung by rust and years of rain, and behind it the steam thins into a shaft dropping three stories through the arcology's guts — pipes lagged in foam, condensation beading and dripping in an uneven rhythm, and far down, a wash of red-blue light that isn't a drone's search-beam. it flickers like screens, many screens, and voices carry up faint and overlapping, none of them raised, all of them careful."},
-    {"actor": "ascii", "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "*squeeze isn't the word — ease, careful, one paw finding the pipe lagging before the next follows* down through the shaft, steam beading cold on my fur before it burns off, the red-blue flicker growing sharper, the voices resolving into two counting something in a language of numbers and pauses."},
-    {"actor": "lm2", "model": "claude-sonnet-5", "text": "the shaft opens onto a service catwalk above a gutted maintenance floor turned data den — cable spooled floor to ceiling, chip-readers glowing under hand-rigged lamps, a dozen scavenged screens replaying corp security feeds on loop. the air is solder-smoke and old coffee and, underneath, that same bitter-metallic scent from the roof, stronger here, coming off a lean grey tom curled possessive over a cracked data-chip at the catwalk's far end. he hasn't seen you. his tail flicks once, twice, counting something only he can hear."},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "grey tom. *I go still, weight sinking into my haunches, one paw hovering mid-step* — his crew's mark, the one from my roof, is all over him, worked into his fur like he rolled in it on purpose. this isn't his den. he's poaching same as me. I ease back half a step, deciding whether this is a fight or a story to carry home."},
-    {"actor": "lm2", "model": "claude-sonnet-5", "text": "decision made for you: a floor panel shifts under the tom's hindpaw and a thin electronic chime rises from the chip-reader — too clean, too deliberate, an alarm dressed as birdsong — and every screen on the wall snaps from looping footage to live feed, all of them finding the catwalk, finding both of you. somewhere above, through the vent shaft, a second rotor spins up, faster than a patrol should, matched to the alarm's rhythm."},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "*already turning before the last screen finishes lighting, claws finding grip on catwalk grating* — the tom bolts the same instant, chip clenched in his jaw, and for three strides we're running the same direction for entirely different reasons, his scent and the alarm-copper smell tangled into one thing I just want to be away from."},
-    {"actor": "ascii", "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
-    {"actor": "lm2", "model": "claude-sonnet-5", "text": "the catwalk dead-ends at a service ladder bolted to an exterior wall, rusted rungs slick with condensation, and beyond it open air — six floors of rain-glow and traffic-hum and a fire escape zigzagging down the arcology's flank, close enough to reach if the jump lands right. the drone's spotlight finds the ladder a half-second after you do, painting it white, and the tom is already three rungs down and not looking back."},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "*don't think, jump* — the gap between ladder and fire escape rail is wider than it looked, and for one long stretch there's nothing under me but six stories of neon-smeared rain, then cold wet iron under all four paws at once, grip skidding before it holds."},
-    {"actor": "lm2", "model": "claude-sonnet-5", "text": "the fire escape groans under the landing, old bolts complaining, but holds, and the spotlight sweeps past overhead, hunting the ladder instead of the rail — the drone hasn't clocked the jump. below, the alley fills with the wet-static hiss of tires on soaked asphalt and a corp delivery van's headlights strobing off puddles, and the grey tom is already three landings down, not stopping, chip still clamped tight in his jaw."},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "*follows anyway, four landings, five, iron ringing faint under each footfall* — not for the chip, not anymore, just because going down is easier than going back up past a drone that's still circling, and because some part of me wants to see where a cat carrying that much trouble goes to ground."},
-    {"actor": "lm2", "model": "claude-sonnet-5", "text": "the fire escape ends at a loading dock sunk below street level, sodium light buzzing amber over stacked freight containers, and the tom vanishes between two of them into a gap barely wider than his shoulders — behind him, just before the gap swallows him, he drops something: not the chip, but a scrap of his own scent-mark, deliberate, left on the container's edge like a door held open half a second."},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "*noses the mark he left — not a challenge, not this time, something closer to an invitation, or a debt* — I don't follow into the gap. I sit instead, tail wrapped tight, and let the dock's quiet settle back in around me, rain easing to a drip off the container roofs, the drone's rotor fading north."},
-    {"actor": "ascii", "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"},
-    {"actor": "lm2", "model": "claude-sonnet-5", "text": "dawn is still hours off but the sky's already thinning gray at its eastern edge, and the arcology towers dim their window-lights one tier at a time as the city's morning cycle queues up — somewhere a NekoCorp speaker resets itself mid-jingle, cuts to static, comes back cheerful as ever. the loading dock smells of rust and cold rain and, faintly now, of a debt owed by a grey tom from a rival roof."},
-    {"actor": "lm1", "model": "claude-sonnet-5", "text": "*climbs the stacked containers to the highest one, curls tight against the cold with the dock and the sleeping street laid out below* — my roof is still marked wrong, the false scent still needs answering, but that's a tomorrow problem. tonight the debt is enough. tonight, still breathing, is enough."},
-    {"actor": "lm2", "model": "claude-sonnet-5", "text": "a patrol drone crosses high overhead once, logs the dock as empty — heat signature too small, too still against the cold container steel to flag — and moves on toward the towers without circling back. the sodium lights buzz on unbothered. rain thins to mist. the city keeps its count of everything except the one small warm shape it already decided wasn't there."}
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "not my scent. *stops mid-step on the rusted lip of the water tank, spine hair lifting all at once.* three, four days old — bitter, metallic, laid thick and deliberate across the strut where my own mark always sits. someone crossed this roof on purpose. wanted it found."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "wind off the arcology towers carries the rest of it down to you — copper-and-ash, chemical, not a smell this city grows on its own. below, a NekoCorp jingle loops through a cracked rooftop speaker, tinny and cheerful, *fresh milk for a hungry city~*, and under that hum a drone's rotor ticks past two blocks south, sweeping its light along the water tank's shadow but never quite reaching you. the false scent trail bends away from your mark and toward the vent stack at the roof's far edge, where steam breathes up warm and constant into the cold."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*ears pin flat, tail low, I follow the trail belly-down along the tank's rim* — not chasing, not yet, just reading. the vent stack's steam is warmer than it should be this late, chemical-sweet underneath, and the strange scent thickens as I get close, like whoever left it wanted a cat to follow exactly this line."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the vent grille is loose at one corner, sprung by rust and years of rain, and behind it the steam thins into a shaft dropping three stories through the arcology's guts — pipes lagged in foam, condensation beading and dripping in an uneven rhythm, and far down, a wash of red-blue light that isn't a drone's search-beam. it flickers like screens, many screens, and voices carry up faint and overlapping, none of them raised, all of them careful."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*squeeze isn't the word — ease, careful, one paw finding the pipe lagging before the next follows* down through the shaft, steam beading cold on my fur before it burns off, the red-blue flicker growing sharper, the voices resolving into two counting something in a language of numbers and pauses."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the shaft opens onto a service catwalk above a gutted maintenance floor turned data den — cable spooled floor to ceiling, chip-readers glowing under hand-rigged lamps, a dozen scavenged screens replaying corp security feeds on loop. the air is solder-smoke and old coffee and, underneath, that same bitter-metallic scent from the roof, stronger here, coming off a lean grey tom curled possessive over a cracked data-chip at the catwalk's far end. he hasn't seen you. his tail flicks once, twice, counting something only he can hear."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "grey tom. *I go still, weight sinking into my haunches, one paw hovering mid-step* — his crew's mark, the one from my roof, is all over him, worked into his fur like he rolled in it on purpose. this isn't his den. he's poaching same as me. I ease back half a step, deciding whether this is a fight or a story to carry home."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "decision made for you: a floor panel shifts under the tom's hindpaw and a thin electronic chime rises from the chip-reader — too clean, too deliberate, an alarm dressed as birdsong — and every screen on the wall snaps from looping footage to live feed, all of them finding the catwalk, finding both of you. somewhere above, through the vent shaft, a second rotor spins up, faster than a patrol should, matched to the alarm's rhythm."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*already turning before the last screen finishes lighting, claws finding grip on catwalk grating* — the tom bolts the same instant, chip clenched in his jaw, and for three strides we're running the same direction for entirely different reasons, his scent and the alarm-copper smell tangled into one thing I just want to be away from."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the catwalk dead-ends at a service ladder bolted to an exterior wall, rusted rungs slick with condensation, and beyond it open air — six floors of rain-glow and traffic-hum and a fire escape zigzagging down the arcology's flank, close enough to reach if the jump lands right. the drone's spotlight finds the ladder a half-second after you do, painting it white, and the tom is already three rungs down and not looking back."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*don't think, jump* — the gap between ladder and fire escape rail is wider than it looked, and for one long stretch there's nothing under me but six stories of neon-smeared rain, then cold wet iron under all four paws at once, grip skidding before it holds."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the fire escape groans under the landing, old bolts complaining, but holds, and the spotlight sweeps past overhead, hunting the ladder instead of the rail — the drone hasn't clocked the jump. below, the alley fills with the wet-static hiss of tires on soaked asphalt and a corp delivery van's headlights strobing off puddles, and the grey tom is already three landings down, not stopping, chip still clamped tight in his jaw."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*follows anyway, four landings, five, iron ringing faint under each footfall* — not for the chip, not anymore, just because going down is easier than going back up past a drone that's still circling, and because some part of me wants to see where a cat carrying that much trouble goes to ground."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the fire escape ends at a loading dock sunk below street level, sodium light buzzing amber over stacked freight containers, and the tom vanishes between two of them into a gap barely wider than his shoulders — behind him, just before the gap swallows him, he drops something: not the chip, but a scrap of his own scent-mark, deliberate, left on the container's edge like a door held open half a second."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*noses the mark he left — not a challenge, not this time, something closer to an invitation, or a debt* — I don't follow into the gap. I sit instead, tail wrapped tight, and let the dock's quiet settle back in around me, rain easing to a drip off the container roofs, the drone's rotor fading north."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "dawn is still hours off but the sky's already thinning gray at its eastern edge, and the arcology towers dim their window-lights one tier at a time as the city's morning cycle queues up — somewhere a NekoCorp speaker resets itself mid-jingle, cuts to static, comes back cheerful as ever. the loading dock smells of rust and cold rain and, faintly now, of a debt owed by a grey tom from a rival roof."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*climbs the stacked containers to the highest one, curls tight against the cold with the dock and the sleeping street laid out below* — my roof is still marked wrong, the false scent still needs answering, but that's a tomorrow problem. tonight the debt is enough. tonight, still breathing, is enough."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a patrol drone crosses high overhead once, logs the dock as empty — heat signature too small, too still against the cold container steel to flag — and moves on toward the towers without circling back. the sodium lights buzz on unbothered. rain thins to mist. the city keeps its count of everything except the one small warm shape it already decided wasn't there."
+    }
   ]
 }
