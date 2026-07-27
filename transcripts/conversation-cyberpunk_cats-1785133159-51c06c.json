@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785133159-51c06c",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-27T06:19:19+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Still. Haunches wedged into the gap between a coolant tank and the wall, one back leg folded up wrong and staying folded up wrong no matter how the weight shifts off it. Somewhere close a red light ticks, and the ticking arrives as color first — a hot smear of red that tastes like red, before it's ever heard as sound. Waiting costs nothing. That leg says moving might cost the only good stride left in it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the basement runs low-ceilinged and windowless, ductwork sweating under its own condensation, a floor built for machines rather than anything walking through it on four legs. a row of steel cages lines the far wall, doors latched but not locked, straw kicked into corners nobody's swept since the last shift. the coolant tank at your back feeds a server rack two rooms over, fans breathing slow and even. the red light belongs to a wall panel stenciled SUBJECT 14 — OBSERVATION ONGOING, blinking on a cycle that has nothing to do with anything alive. down the corridor a technician's boots squeak, unhurried, checking latches rather than looking for anything in particular."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*The boot-squeak lands on the tongue before the ears finish placing it — a thin copper tang, cataloged the way everything mechanical gets cataloged since the patch went in. Bad leg or not, sitting under SUBJECT 14's light isn't a plan anyone sane keeps. Weight rolls forward off the three good legs, slow, the kind of slow that buys silence, aimed at the run of shadow between cage row and wall.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap runs tight, cage wire scraping a thin cold line down one flank, concrete pressing the other. the boots stop two rows over — not closer, not farther, just stopped, a latch rattled once and let go. overhead a ventilation grate hangs loose on three screws, the fourth long gone, breathing out a draft that carries the whole floor above with it: ozone, wet stone, the metal-sweet of a service shaft."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*Something in the third cage down isn't straw-still like the rest — a small shift, claws on steel, then nothing, holding as hard as anything can hold. Ears swing that way on their own, splitting attention between the draft's promise and whatever just decided to stop breathing loud enough to be heard.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the third cage holds a shape pressed flat into the corner, ribs going fast and shallow, one ear notched clean through in a way that says this isn't its first latch. a second panel above the door reads SUBJECT 9 in the same flat stencil, its own red light ticking a half-beat out of sync with the first. it doesn't make a sound. it has learned, the way the notch says it learned, that sound is the expensive thing down here."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*No claim on this one, no scent-tie, nothing owed. The vent draft is right there, an easy debt-free exit two strides off. Ears stay swung toward SUBJECT 9 anyway, weighing nothing against nothing, the way a body sometimes argues with itself before it's decided what the argument's even about.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the cage door's latch is the simple kind, a bent-wire hook dropped through a loop, made for hands too lazy to lock it properly — the same kind that swung the vent grate free. it sits at exactly nose height. SUBJECT 9's eyes track the movement of anything that gets within a body-length of it, flat and unblinking, waiting to find out which kind of thing just arrived."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*Nose finds the wire hook and the whole decision happens faster than thinking, more reflex than plan — a flick, a lift, the loop sliding free the same way any stuck thing gets worked loose when it's in the way. The cage door swings a hand's width. What happens after that isn't anyone's to decide from out here.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the door swings wider under its own weight and SUBJECT 9 doesn't wait for a second invitation — out low and fast, straight down the row away from both the vent and the boots, gone into the dark between racks before the latch even finishes rattling against the floor. the boots two rows over change rhythm, quicken, a voice calling out flat and annoyed rather than alarmed: 'hey — HEY —' already moving toward the noise, away from the coolant tank, away from the loose grate."
+    },
+    {
+      "actor": "ascii",
+      "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*The boots' new direction is the only gift on offer tonight and it doesn't get refused. Bad leg drags a half-beat behind the climb regardless, claws finding the cage-wire mesh rung over rung, and the loose grate gives on the first real push — swinging rather than falling, quiet enough that the shouting two rows back doesn't change its target.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the shaft opens onto a service floor thick with cable trunking, and hunched over a wall-mounted router two bends down, a shape sits motionless except for one paw pressed flat against the housing, reading the hum through the pads rather than the ears — not stealing the signal so much as listening to what it's telling. it doesn't look up, doesn't flinch at the shouting fading below. the corridor past it runs toward a stairwell door propped with a folded takeout carton, cracked to the smell of rain."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*Ears flick toward the router-shape and stay flicked a beat too long — whatever that patience runs on, it isn't for tonight, isn't for a leg already spending past what it has. The carton-gap smells like outside, like weather, like anything that isn't SUBJECT 14's light or SUBJECT 9's notched-ear stillness, and that's worth more right now than a stranger's trick.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the carton gives without a fight, propped door swinging onto a landing slick with someone else's wet pawprints heading the same direction. up two flights a final door dumps out onto a loading ramp behind the research tower, rain coming down thin and patient, soaking rather than pouring. street level smells like everything the basement wasn't — diesel, standing water, a noodle cart three blocks off running late into the night."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*Rain lands cold and unfiltered, no recycled basement air about it, and for the first time all night the bad leg gets to just hurt instead of negotiate. Three-legged trot slows to a limp, then a stop, tucked under the ramp's overhang where the drip line can't quite reach.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the overhang holds a dry strip two paws wide, backed by a wall still faintly warm from the day's sun trapped in concrete. across the lot a billboard three stories up cycles between synthetic milk and a citizenship reminder, unwatched by anything down here. below the research tower a technician logs two empty cages as escaped rather than stolen — SUBJECT 14, SUBJECT 9, no alarm worth the paperwork, the red lights ticking on for nothing now. the ramp's drain gulps rainwater in slow, even swallows."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*Tongue works along the bad leg once, twice, more check than fix. The copper taste of boots and latches fades back into plain rain-taste, nothing cataloged about it. Eyes go heavy on the drain's slow swallow — a rhythm honest enough to fall asleep inside of.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rain keeps its patient count on the ramp, the billboard keeps cycling for nobody, and two floors down two empty cages sit open to a draft nobody's bothered to trace. up top, under the overhang, the only ledger that matters tonight is a dry patch of concrete and a leg that gets until morning, at least, to stop arguing."
+    }
+  ]
+}
