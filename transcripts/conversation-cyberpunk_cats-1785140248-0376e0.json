@@ -1,0 +1,118 @@
+{
+  "id": "conversation-cyberpunk_cats-1785140248-0376e0",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-27T08:17:28+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Another cat's mark sits over mine, fresh, still wet, laid dead center of the crate lip that cost three fights to hold. Ears flatten before the smell even finishes registering. Some upstart's been rubbing cheek and gland over months of careful boundary work like it's nothing owed to anyone. Tail cracks once against a support strut, hard enough to sting. This does not stay quiet."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the dock answers with what it always answers with — floodlight buzzing white-orange over stacked crates stenciled NEKOCORP PREMIUM ALBACORE, chain-link rattling loose in a wind that smells like diesel and old brine. the overwritten mark is sharper than yours, younger, laid maybe an hour ago. underneath it, buried, three other scents mixed close together — a crew, not a lone cat. the strut you hit is still humming when you go still to listen."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose down, tracking. The trail runs along the fence base, ducks under a loading arm still ticking with cooling heat, and thickens near a drainage grate — three cats, walking close, unhurried, like they didn't expect anyone left to smell them coming. Whiskers pin forward. Paws go slow and flat, weight rolling heel to toe, no sound."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a speaker two poles down coughs static, then a voice, tinny and looping: \"ATTENTION — FELINE DESIGNATE KNIFEBOY — LOADING DOCK SECTOR NINE — BOUNTY FORTY THOUSAND LOYALTY POINTS — APPROACH WITH CAUTION, SUBJECT IS ARMED WITH TEETH.\" the drone above swings its light down the fence line, slow, searching, close enough that the hum of its rotor sits inside your teeth."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Flat against the strut, breath held small. The light drags past a whisker-width from the crate edge and doesn't stop, doesn't circle back — sloppy sweep, bored operator somewhere warm and dry. Ears track the rotor east until the pitch thins out. Whoever's using that name on a poster still hasn't learned the points expire before anyone collects them."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone clears the block and the dock exhales — steam vent kicking back on, a loose tarp slapping somewhere in the dark. further down, past the grate, the crew's scent thickens into a staging spot: paw prints pressed into a puddle of engine oil, three sets, one dragging slightly on the left hind. they've been sitting here a while, watching the same crates you've been watching."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Trail bends off the dock, toward the market stalls where the awnings still smell like fried batter under years of rain. Movement up high — not the crew, something stiller. A shape on the rooftop ledge, hunched low, catching the ad-glow off a NekoCorp sign in two flat mirrored discs where eyes should throw shine. Doesn't move. Doesn't need to."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the shape holds the ledge like it grew there, glasses throwing back the billboard's pink flicker in two identical smears, cutting through the drizzle without one blink of light lost to it. it isn't hunting. it's counting — drones, maybe, or exits, or you. when the sign cycles to blue it's already gone, no sound of departure, just an empty ledge and rain filling in the shape it left."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Under the batter-smell, something else — scorched fur, old, laid weeks deep into a cracked curb that used to be a doorway. Nose follows it past the stalls to where the block just stops, buildings sheared off mid-floor into a lot of rebar and dust that never got swept. The scent pools thickest at a slab of dead yellow machine, rusted through."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the machine's hull reads KILLDOZER in paint gone to flaking orange scab, one tread buried in its own crater. wind moves through the gutted floors above like breath through a busted flute. two drones idle at the lot's far edge, lights dark, batteries pooling charge before the next sweep — this ground gets hunted in shifts, and the shift is changing soon."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Warmth and fried-fish grease pull from a hatch half-hidden under fallen ductwork — a data den, cables snaking in through the gap, dim red light leaking round the edges. Push through low. Inside: heat, hum, and the crew's scent gone solid, three cats coiled around a cracked terminal, and the biggest one's head comes up first, slow, already knowing exactly whose crate that mark was laid on."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the den holds its breath — terminal fans whining, a pirated feed stuttering silent cartoons across a monitor nobody's watching anymore. the big one rises onto all four, back arching under a coat scarred pale in stripes, and the other two peel wide to either flank without a sound, boxing the doorway shut behind you. somewhere under the cable-hum, a floor panel creaks with a fourth weight you haven't placed yet."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Weight drops low, hackles up, a sound climbing out of the chest that isn't a meow anymore. Ears pin flat. One step forward, deliberate, claws finding grip in a torn seam of carpet — not backing off this crate, not tonight, not for a scent an hour old laid over three months of blood."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the striped one breaks first — not fear, calculation, ears tilting half back as it reads the size of the fight it's about to lose the dock over. a swipe comes fast and wide and misses high, catching cable insulation instead of fur, and in the scramble the terminal rack tips, sparking, sending all three scattering through a side vent in a knot of hissing and knocked-over crates. the fourth weight in the corner never moves at all."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Chest heaving, one ear notched fresh and stinging, watching the vent stop rattling. No chase. Point made stands better without the extra blood. Turn back toward the dock instead, past the corner shape that stayed still through all of it — just a stack of crates, after all, nothing watching, nothing that needs settling tonight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "rain has thickened by the time the dock comes back into smell-range, drumming on the corrugated roofs in a rhythm that swallows footsteps whole. the crew's mark still sits on the crate lip, fainter now, rain-thinned, already losing its claim. the floodlight buzzes on, indifferent, painting the whole scene the same flat orange it always does."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Cheek pressed hard against the crate edge, then the other side, laying scent down thick over what's left of theirs until there's no question left in the air about whose ground this is. Sit back on haunches after, ribs still working hard, watching rain bead and run off the NEKOCORP stencil letters one drop at a time."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "somewhere off past the fence line, the loop-speaker crackles back to life, bounty figure ticking up another thousand points nobody's ever collected, voice flattened by static into something almost bored of its own threat. the drone shift changes overhead, new rotor pitch rising in the east, still a few streets off, still no hurry in it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ear flicks once toward the new rotor sound, tracking it without lifting off the haunches, without any of the tension from before. Just noting where it is. Steam keeps venting somewhere close, warm against wet fur, and the crate at the back still holds three fights' worth of claim plus one more now, freshly laid, still drying."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the billboard three streets over flickers through its synthetic milk ad one more cycle, light sliding pink then white then dark across the wet dock, catching nothing now but rain and crates and one set of eyes reflecting it back, unbothered, while the city keeps doing what it does at this hour — humming, dripping, watching, waiting for whichever cat moves first."
+    }
+  ]
+}
