@@ -1,0 +1,88 @@
+{
+  "id": "conversation-cyberpunk_cats-1785168044-ae4276",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-27T16:00:44+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Jaw locked around plastic and hot metal, rotor blades still spinning somewhere past the teeth, a whine climbing high enough to hurt behind the ears. Letting go now loses the only hold there is on something twice too strong to hold."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone bucks once, twice, servo grinding against the bite, and its belly-light strobes red-white-red — a maintenance unit, not a hunter, its little speaker sputtering something about a service ticket before the vocabulary gives out entirely into a burst of static. sparks spit off a cracked rotor guard, stinging, and the whole machine tips sideways, weight suddenly wrong, dragging both of you down through a gap in sheet-metal fencing and into open rubble."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Teeth open on impact, plastic and copper taste flooding out over the tongue, and the drone skitters off somewhere lopsided and dying, one rotor grinding itself down to nothing. Spit twice. Shake the sting out of the jaw. Whatever's left of it isn't worth chasing."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rubble field stretches wide under a sky with no real stars in it, just arcology glow bounced back off low cloud. rebar reaches up out of broken slabs like something reaching for a hand that stopped coming. dead center of the lot, a slab of machine still holds its shape — hull lettered KILLDOZER in orange paint gone to scab, one tread sunk in its own crater, cab hatch long since rusted open. the drone's carcass ticks and cools somewhere behind, forgotten already."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Climb the tread like it's always been a ladder, because it has. Inside the cab, old oil-smell and cold metal and, underneath both, something fainter that doesn't belong to the machine at all — soft, warm, gone. Circle twice on the seat cushion, stuffing long since eaten by rot, and settle into the shape worn there by however many nights already spent doing exactly this."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the crater's edge, where an apartment block should stand and doesn't, a projection flickers instead — painted lines on painted asphalt, a hologram lot for cars that never park there, its light throwing everything in the cab a flat, sourceless blue-white that changes nothing about the temperature. underneath the projector's hum, buried so deep it's almost not a smell anymore, something like a shape that used to answer to warmth, filed somewhere between memory and static."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Belly says something the cab's warmth can't answer. Out over the tread again, down into the rubble, aimed at a grease-smell drifting in off the wind — market stalls, three blocks off, still lit past their hour."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the route cuts past a fallen data kiosk, screen spiderwebbed but still lit, looping fine print too fast and small for anything to actually read — SECTION 12 SECTION 12 SECTION 12, a garbled voice underneath it insisting somewhere that ownership of one's own paws is a promotional example only, before the loop resets. hunched close to the kiosk's base, a thin shape keeps pawing at the cracked glass like it might turn different words up eventually. it doesn't look up as you pass. it never does."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Wide around the kiosk-shape, no scent-tie to it, nothing owed. Whatever argument it's having with that screen isn't one worth stepping into. Grease-smell thickens instead, worth following, worth trusting over anything still lit up and talking to itself."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the stalls run half-shuttered, most tarps down for the night, but one still smells like fryer oil gone stale rather than fresh — and laid across its entrance, a scent-line, confident, recent, not a mark anyone's contesting tonight. two streets past it a patrol light sweeps low and slow, more bored than thorough, catching wet cobblestone and nothing else worth catching."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Under the one open tarp, past the scent-line, a crate lid left loose over something cold and real — not synthetic, weight and give to it that plastic never has. Teeth close, drag it back half a step into shadow before committing to the first bite."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the patrol light finishes its sweep and swings on without slowing, rotor-hum fading toward the next block over. the scent-line's owner doesn't show — out on other business tonight, wherever that business is. rain starts up thin and lazy, ticking off tarp edges, off crate lids, off everything not already soaked."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Full enough now that the walk back feels longer than the walk out, rain flattening fur to skin one drop at a time. The rubble field swallows the market-glow behind. Tread-ladder again, cab hatch again, the seat-shape still warm from before, or close enough to it not to matter."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the projector across the crater keeps painting parking lines for cars that aren't coming, patient as anything automated ever gets. rain finds the hull's rust-holes and drums a different note through each one, some higher, some lower, an orchestra nobody arranged on purpose. somewhere far off a rotor climbs and fades without ever committing to a direction. the machine holds its shape around you the way it always has, asking nothing, expecting nothing, just a slab of dead yellow metal that used to move and now just keeps still."
+    }
+  ]
+}
