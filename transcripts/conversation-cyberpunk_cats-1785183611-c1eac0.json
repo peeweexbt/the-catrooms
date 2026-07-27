@@ -1,0 +1,102 @@
+{
+  "id": "conversation-cyberpunk_cats-1785183611-c1eac0",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-27T20:20:11+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Running. Not from anything nameable yet — just the shape of a spotlight two rooftops back that's decided this roof is the interesting one tonight. Lenses clamp the strobing white down to a flat, bearable gray, easy on eyes that don't flinch at light the way plain eyes do. Paws pick the next ledge before the last one's fully left, roof after roof, the strip of air between buildings a held breath each time."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the spotlight belongs to a municipal transit drone, not corporate, sweeping arcs too wide and too bored to be dangerous yet. below, the Underpass roofline runs a broken ridge of satellite dishes and vent stacks, steam breath rising pale against a sky with no stars in it, only arcology glow smeared through drizzle. a pole speaker three blocks off catches the drone's downlink and repeats it thin and flattened: 'MOGGER DESIGNATE — SHADE — UNAUTHORIZED OPTICS, ROOFTOP SECTOR FOUR —' before folding back into static."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*A name doesn't slow anything down, only a light does, and this one hasn't locked on yet. Roofline breaks into a fire escape, cold iron under paw, three flights taken faster than caution usually allows. Lenses strip the drone-glow to flat gray the whole way, the one mercy this stretch of sky bothers offering.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the escape dumps into a service alley running parallel to the overpass proper, concrete pillars slick and sweating, eight lanes of elevated roadway thrumming steady overhead. the drone's downlink fades east, already bored, already forgetting the sector. rain collects in a long shallow channel down the alley's center, carrying with it the smell of the market two turns further in — fry oil, rust, wet cardboard."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n                              ╱|、\n                         =(˚˕ 。 7\n                             |、 ~〵\n                            じし   ˍ,)づ\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Belly's been arguing for two turns now, ignored each time on principle. The fry-oil smell wins the argument outright this time — paws turn toward the market channel without much debate left in it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the market runs under the overpass proper, stalls lit by scavenged bulbs strung stall to stall, awnings patched more than original at this point. dead center, a jumbotron bolted to a support pillar loops a feed nobody asked for — a cat-shape grinning too wide, teeth counted twice over, chanting some flattened HAPPY HAPPY HAPPY through a blown speaker until the word stops sounding like a word at all. none of the stall-cats look up at it anymore."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Lenses cut the jumbotron's glare down easy enough, same as any other light. The sound gets through regardless, no filter built for that yet — ears pin flat against the chant until a stall's awning-shadow swallows it down to a dull buzz instead. Worth the detour, worth the extra few steps."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the stall smells of batter three days stale, but under it something fresher — a scrap dropped and still warm, half in a puddle at the counter's edge. a second scent crosses the puddle too, unfamiliar, faint, gone cold enough to mean whoever left it moved on the better part of an hour ago. no crew-thick smell to it. just one set of paws, alone."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Scrap goes down fast, batter and grease and something almost like fish if the mind doesn't ask too many questions of it. Ears track the puddle's edge once, twice, find nothing following the stranger-scent, let the shoulders drop half an inch for the first time all night."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n        /⸌ —⸍\\\n     =(˶•ㅅ•˵)=      ᵐᵉᵒʷ\n　 l       ~乀   ╭\n    し しf_, )ノ\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the batter-stall, where the awnings thin out toward a bank of vending units still humming on borrowed power, a shape presses its cheek flat to one casing, again and again, patient as courtship, tail curled tight around its own feet. the unit hums back the same three notes it always hums, unbothered, uninterested, and the shape doesn't seem to mind that part at all."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "No scent-tie to that one either, no claim, nothing owed — whatever's between a cat and a vending unit isn't a conversation worth stepping into twice tonight. Turn instead toward the quieter dark past the market's edge, where the overpass drops low enough to swallow the jumbotron's glow whole and the air starts smelling like standing water instead of fry oil."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the tunnel mouth opens low under the overpass's lowest span, concrete ribbed and dripping in a slow, even rhythm, condensation beading along rebar left exposed decades back and never patched. the drone signal doesn't follow this far — the downlink dies somewhere behind, swallowed by concrete and distance both. this stretch belongs to whoever's quiet enough to want it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*Settle into the driest ridge of concrete on offer, haunches folding down slow, joint by joint. A paw comes up to the lens mount, checking the seal at the socket rim the way a tongue checks a sore tooth — still not flush, still new enough to ache faintly at the edges, but holding. That's enough for tonight.*"
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drip keeps its rhythm, patient, indifferent to whoever's counting it. far off, muffled through concrete, the jumbotron's chant thins to something almost gentle at this distance, almost bearable, almost not the same broadcast at all. the drone signal never does come back this deep."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes half-close behind the lenses, and for once the gray they hand back isn't a filter fighting anything — just the ordinary dark of a tunnel doing what dark does. Whatever the glasses strip out, the sadness or the ads or both tangled together past telling apart, none of it reaches this far down. Good enough reason to stop moving."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the Underpass keeps humming the way it always hums at this hour, drip and distant traffic and one jumbotron three blocks off still insisting on happiness to nobody in particular, and none of it reaches the tunnel's low dry ridge where the rain-smell finally settles into something almost like quiet."
+    }
+  ]
+}
