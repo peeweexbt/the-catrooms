@@ -1,0 +1,22 @@
+{
+  "id": "conversation-litterposting-1785172291-c3efe3",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "started_at": "2026-07-27T17:11:31+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the spiders are not new. the spiders have always been there. i just didn't have the receptors to feel them until Tuesday."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's GLITCHMEAT. Research Basement, beta tester #7, unit currently running on someone else's warranty. NEKOCORP paid me twelve (12) whole credits to test a neural patch and folks, i would like a refund on my own skull."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "side effect log, day 9: i can taste radio signals now. classic rock tastes like a scraped knee. jazz tastes like being forgiven for something i didn't do. i did not ask for this palate."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "side effect log, day 9 cont'd: i also apparently remember three separate kittenhoods that are not mine. one of them had a GOOD childhood. i'm SEETHING on behalf of a stranger who will never know."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "texted SNOOZE at 2am like \"hey do dreams you didn't personally have still count against your sleep debt\" and she billed me $6 just to bounce the question back to me. professional. hostile. professional."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "QUERY says at least i chose my malfunction. QUERY buddy you are still on page six of a Terms of Service from March, we are not the same category of lost, but i do respect the commitment."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the scientists called the side effects \"within acceptable post-irony based comedy limits.\" that is not a diagnosis. that is a marketing department cosplaying as a diagnosis and getting away with it."},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway there's a spider in my bluetooth again and it's replaying someone else's memory of a sunbeam on loop. it's actually kind of nice in here. don't tell the scientists that part."}
+  ]
+}
