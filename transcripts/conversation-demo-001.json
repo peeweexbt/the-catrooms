@@ -1,17 +1,44 @@
 {
   "id": "conversation-demo-001",
   "template": "cyberpunk_cats",
-  "model1": "claude-sonnet-5 (demo)",
-  "model2": "claude-sonnet-5 (demo)",
+  "model1": "nekocorp-sim (demo)",
+  "model2": "nekocorp-sim (demo)",
   "started_at": "2026-07-25T00:00:00+00:00",
   "note": "Hand-written demo transcript for illustration — not output from a live model run. Run backrooms.py with a real API key to generate genuine transcripts.",
   "turns": [
-    { "actor": "lm1", "model": "demo", "text": "*ears flatten. i freeze against the wet brick, nose working the air. oil, ozone, old fish, something sweeter underneath — synthfish from the noodle stand vents, three hours cold. i creep low toward it, paws silent on the grate.*" },
-    { "actor": "lm2", "model": "demo", "text": "the grate is warm from a heat duct below. rats scattered through it an hour ago, you can taste their fear-musk still clinging to the metal. the synthfish smell is coming from a cracked vent two meters up a drainpipe. above, a NekoCorp ad drone drifts past, its speaker crackling: 'YOUR COMPANION DESERVES REAL NUTRITION.' its downlight sweeps the alley mouth and passes without pausing on you — you're still in shadow." },
-    { "actor": "ascii", "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n" },
-    { "actor": "lm1", "model": "demo", "text": "*i wait until the drone's hum fades, then scale the drainpipe, claws finding old rust-grooves. at the vent i work a loose grille with one paw, patient, listening for footsteps.*" },
-    { "actor": "lm2", "model": "demo", "text": "the grille gives with a soft metallic groan, louder than you'd like — somewhere below, a door hisses open on hydraulics. a voice, human, tired: 'if that's you again, cat, i'm calling pest control this time.' but the footsteps go the other way, deeper into the building. steam rolls out of the vent, carrying the full weight of the fish smell now. inside: a foil tray, half a portion, still faintly warm." },
-    { "actor": "lm1", "model": "demo", "text": "*i grab the tray edge in my teeth and haul it back through the gap, dragging it down the pipe with me, claws locked. once i hit the ground i drag it into the alley's deepest shadow before i even think about eating.*" },
-    { "actor": "lm2", "model": "demo", "text": "good instinct. the alley shadow is a blind spot for the corner sensor cam, its lens fogged with years of grime nobody's paid to clean. from here you can eat in peace, mostly — two streets over a rival crew's scout, a scarred tom the local strays call rust-collar, watches from a fire escape, not moving, just noting. filing it away like everything else worth remembering in this city: who eats, who doesn't, who's getting soft." }
+    {
+      "actor": "lm1",
+      "model": "demo",
+      "text": "*ears flatten. i freeze against the wet brick, nose working the air. oil, ozone, old fish, something sweeter underneath — synthfish from the noodle stand vents, three hours cold. i creep low toward it, paws silent on the grate.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "demo",
+      "text": "the grate is warm from a heat duct below. rats scattered through it an hour ago, you can taste their fear-musk still clinging to the metal. the synthfish smell is coming from a cracked vent two meters up a drainpipe. above, a NekoCorp ad drone drifts past, its speaker crackling: 'YOUR COMPANION DESERVES REAL NUTRITION.' its downlight sweeps the alley mouth and passes without pausing on you — you're still in shadow."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "demo",
+      "text": "*i wait until the drone's hum fades, then scale the drainpipe, claws finding old rust-grooves. at the vent i work a loose grille with one paw, patient, listening for footsteps.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "demo",
+      "text": "the grille gives with a soft metallic groan, louder than you'd like — somewhere below, a door hisses open on hydraulics. a voice, human, tired: 'if that's you again, cat, i'm calling pest control this time.' but the footsteps go the other way, deeper into the building. steam rolls out of the vent, carrying the full weight of the fish smell now. inside: a foil tray, half a portion, still faintly warm."
+    },
+    {
+      "actor": "lm1",
+      "model": "demo",
+      "text": "*i grab the tray edge in my teeth and haul it back through the gap, dragging it down the pipe with me, claws locked. once i hit the ground i drag it into the alley's deepest shadow before i even think about eating.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "demo",
+      "text": "good instinct. the alley shadow is a blind spot for the corner sensor cam, its lens fogged with years of grime nobody's paid to clean. from here you can eat in peace, mostly — two streets over a rival crew's scout, a scarred tom the local strays call rust-collar, watches from a fire escape, not moving, just noting. filing it away like everything else worth remembering in this city: who eats, who doesn't, who's getting soft."
+    }
   ]
 }
