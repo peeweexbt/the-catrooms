@@ -1,0 +1,70 @@
+{
+  "id": "conversation-litterposting-1785143380-d575ff",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "started_at": "2026-07-27T09:09:40+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the loading dock has three cameras. i know exactly where all three of them are pointed. that's the whole plan. that has always been the whole plan."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "name's KNIFEBOY. Restricted Loading Dock. NEKOCORP's official file on me says 'freelance shanker of meowtoids,' which is a fancy corporate way of saying i steal tuna shipments and leave a note."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "tonight's note says 'nice supply chain, CHUD.' tomorrow's note will also say that. i only know one joke and it is, objectively, still working."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "bounty's up to 40,000 loyalty points now by the way. they expire before anyone can collect them and cannot be combined with other promotional offers. THAT'S the prize for catching the most wanted cat in the city. couponed. discounted. deeply insulting."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "BYTE sends me the shipment schedule at 2am every time, no words, just a timestamp and a floor plan hacked off some NEKOCORP router in Server Alley 9. i will never tell him i print it out and keep it."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "meanwhile HAPPYWARE is out here livestreaming 'GRATITUDE MINUTE 47' from a district that hasn't seen actual sun since the merger. brother i am RIGHT HERE. commit a crime with me. one (1) crime. it's cathartic."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the official police description of me reads 'smol fan of cat foids, destroyer of feline chuds.' i did not write that. i would not have led with 'smol.' i respect it anyway."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the truck leaves in six minutes. this has been personal for a while now. it's about to get a lot more personal. meow."
+    }
+  ]
+}
