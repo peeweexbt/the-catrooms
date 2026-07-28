@@ -1,0 +1,98 @@
+{
+  "id": "conversation-cyberpunk_cats-1785220491-35a590",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-28T06:34:51+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Toner and old adhesive, sharp under the tongue before any of the rest of the level registers. A barcode sticker, half peeled off a fender, corner curling loose enough to catch a canine tooth. Worth finishing the peel. Everything with a sticker on it means something, even when the something isn't food."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the impound level stretches four rows deep under low concrete, repossessed hovercars parked nose to tail with their thrusters caged, each one collared at the mirror with a fresh QR tag that clicks faintly against the metal in the vent-draft. overhead, a scanner drone works the rows on a fixed rail, its red laser flicking sticker to sticker in a rhythm that hasn't varied in three passes now — tick, tick, tick, a beep for every tag it reads clean."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The beep-rhythm gets logged and set aside, same shelf as the vent-hum and the caged thrusters — none of it aimed here yet. Teeth work the sticker's loose corner in short pulls, patient, the kind of patience that outlasts a scanner's whole rail-length pass. Half the adhesive's already gone soft with spit."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "down the stairwell at the row's far end, a shape drifts through the shadow without quite walking a straight line, head tilting at sounds nothing else on this level is making, tongue working slow at the air like it's chewing a frequency instead of breathing it. it doesn't look toward the cars. it doesn't look toward anything for long."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears rotate toward the stairwell, hold a beat, then let it go — whatever that one's tasting isn't food and isn't a claim on this row, just static wearing fur. Attention drops back to the sticker, now peeled two-thirds free, curling up off the fender paint in one clean strip."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a fifth car eases onto the level from the ramp, engine silent on maglev, and a service arm swings out from the wall to collar it with a tag still wet at the edges — ink smell sharp and chemical over the old-oil rows, a scanner beam already reading it before the arm's fully retracted, three quick beeps instead of one, a flag on this car that the others didn't carry."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Three beeps instead of one earns the fresh tag a closer look than the last four got. Paw hooks the wet edge before the ink's finished setting, drags it half off the mirror in one motion, tag flapping loose and sticky against a claw. Whatever the flag means, it means less than the fact that it can be taken."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rail-drone's rhythm breaks. its laser snaps off the sticker rhythm entirely, swings hard toward row three, beeping climbing pitch until it's one continuous tone, and the ceiling floods with a spotlight three shades whiter than the standing lights, sweeping fast along the hoods, throwing every shadow between the cars into something with a hard edge."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Body drops flat and slides under the flagged car's chassis in one motion, tag still hooked on a claw, teeth clamping the loose end to keep it from flapping and giving anything away. Undercarriage smells like brake dust and stale rain. Breathing goes shallow and stays that way."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the spotlight finishes its sweep along row three and finds nothing worth the tone it's holding, drops back to standard patrol white, beeping stepping back down through its pitches one at a time. across the level, high on the stairwell landing, a billboard bolted to the concrete flickers awake off a loose wire, cycling the same three words in looping neon, and for one frame a shape sits under it with eyes that never blink through the whole cycle."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The billboard-shape and its unblinking cycle get filed under someone else's problem, same shelf as the stairwell drifter — nothing here worth crossing the level for. What's worth noting is the scent laid low along the next row over, cold and metallic, not car-smell, marking the third mirror down as spoken for by something that isn't a scanner drone."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the mark belongs to nothing that walks the rows regularly — more a leftover hum than a scent, bleeding faint through the wall from whatever's plugged in on the other side, cycling the same warm, patient tone over and over like it's reassuring someone who isn't there to hear it. it fades a few feet past the wall, thinner each row it has to cross."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Not a claim, not even really a scent so much as a wall talking to itself — dismissed same as the rest. Underneath it, thinner still, something like food drifts in from a vent two rows back, faint enough that chasing it would mean giving up the tag currently clamped between teeth. Tag wins. It's already earned."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the food-smell doesn't strengthen, doesn't get chased, and after a minute it thins past noticing, swallowed back into vent-hum and old oil. the rail-drone completes its lap, beeping settling back into its original tick-tick-tick rhythm, four beeps for four clean stickers, silence where the fifth car's tag used to be — nobody's fixed that yet."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Out from under the chassis once the beeping's proven itself boring again, tag tucked flat against the chest fur where it won't flap loose a second time. Ear stays angled toward the rail's next pass, timing already memorized — four beeps, gap, four beeps — nothing about it worth losing sleep over now that it's known."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the level settles into its rhythm proper — rail-drone on its loop, spotlight back to standard white, billboard flickering its three words to a landing that's stopped watching it back. rain starts somewhere above the ramp, distant enough to be sound only, no drip finding its way down four floors of concrete. the fifth car sits un-tagged and unremarked, one more gap in a system that'll notice eventually, just not tonight."
+    }
+  ]
+}
