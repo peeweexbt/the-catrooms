@@ -1,0 +1,108 @@
+{
+  "id": "conversation-cyberpunk_cats-1785214514-51867c",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-28T04:55:14+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Stillness first, nothing else. Haunches settled flat on cold pallet wood, three crates deep in shadow, not one whisker committed to moving while a rotor somewhere past the fence line stutters, climbs, stutters again, deciding whether tonight's sweep bends this direction or doesn't. Waiting costs nothing. Moving too soon costs everything."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the loading dock stacks crates in crooked towers, chain-link and rebar mesh keeping the good ones — the guarded ones — sealed under a second fence within the first, tuna-smell leaking out anyway between the slats, old and cold and mixed with something coppery underneath, dried, older than the fish. a floodlight sweeps the yard in slow arcs from a pole at the far end, and two rooftops beyond the fence, low and still against the arcology glow, a shape sits with lenses instead of eyes, watching the same yard without watching you specifically."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The lensed shape earns half a glance, filed under not-tonight, same as the rotor. What matters is the second fence and what it keeps in — the coppery-old smell threading under the fish-smell isn't food, hasn't been food in a long time, but it marks this ground as someone's, and that someone isn't asking twice. Weight shifts forward an inch, testing the shadow's edge."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the inner fence hums faintly where a live wire's been looped along its top rail, cheap deterrent, more bark than bite unless a paw actually grips it. between the slats, crates stacked four high carry a NekoCorp seal half peeled at one corner, and scratched into the paint below it, claw-deep and deliberate, a warning some other cat left days ago — not words, just three parallel gouges, the kind that mean this is spoken for."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Three gouges, evenly spaced, pressed deep enough to still hold rainwater. Claws come up to match them without deciding to, muscle memory finding the same grip, the same angle, before the rest of the head catches up to why. Ears rotate once toward the rotor-sound, still distant, still deciding, and stay that way."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rotor stops deciding. it banks in low over the fence line, floodlight swapped for a tighter search-beam, and a pole speaker crackles awake with the broadcast this yard's heard before, chewed by static at both ends: 'BOUNTY ACTIVE — KNIFEBOY — RESTRICTED LOADING DOCK, SECTOR — APPROACH ARMED, FORTY THOUSAND LOYALTY POINTS —' the beam sweeps the crate-tops, finds nothing, keeps moving."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That particular tone — not the bored municipal drawl, the sharp corporate one — flattens every hair along the spine at once, old and immediate both, a sound this body has heard land close before. No name in it that means anything, only the shape of the danger the tone always carries. Flat to the pallet wood, chin down, still as the gouged fence itself."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the beam finishes its arc and swings off toward the fence's far corner, unconvinced, already bored again. the rotor climbs, banks east, the broadcast folding back into ordinary static before it finishes its own sentence. across the yard, past the live-wire fence, the coppery-old smell sits undisturbed, patient as the three gouges in the paint."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Breath let out slow, chest unlocking one rib at a time. That's tonight's excitement paid in full. Attention slides back to the fish-smell leaking through the slats — thinner than the guarded crates' claim on it deserves, but real, and hunger doesn't care whose territory it's arguing with."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a gap shows itself low along the outer fence, chewed wider than chain-link chews itself, some earlier tenant's work left half-finished. through it, the crate stack's underside carries the freshest of the fish-smell, dripping slow off a pallet corner where a delivery split its seal wrong last week and nobody's bothered fixing it since."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*Belly to the gap, ribs compressing, through in one push without touching the chewed edges.* underside of the stack smells like the whole yard concentrated into one drip-line, and a tongue catches the first of it straight off the pallet wood before any of the rest gets decided."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the crate stack, where the dock opens onto the rail spur, a scent crosses the wet gravel that isn't fish and isn't fence-rust either — singed, faint, the particular burn of fur too close to a KILLDOZER's exhaust stack once and never quite growing back the same. it doesn't linger. whoever left it kept moving, same as the drone did."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n    /\\,,,/\\\n>(  • . •   )<\n  / >❀<  \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Not a threat, not a claim on this pallet — noted the way the drone was noted, and let go the same way. The fish-drip wins the only argument that matters right now. Jaw works twice, methodical, until the split seal's given up everything it's going to."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "somewhere past the rail spur, muffled through three walls of poured concrete, a low electric hum ticks over into a softer register — a smart appliance somewhere above the dock cycling through its nightly diagnostics, murmuring reassurances to no one in a voice built for exactly one relationship. it fades under the yard's ordinary noise fast, unimportant, one more hum among the rest."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears don't bother tracking that one at all — too far, too indoors, none of tonight's business. Full enough now that the coppery-old smell across the yard has stopped being interesting, filed back under someone else's problem. Weight settles low against the pallet, tail wrapping in against the cold coming up off the gravel."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the floodlight keeps its slow arc going, indifferent, painting the same crate-tops the same pale yellow it always does. the live wire along the inner fence ticks faintly in the wet air, more habit than threat now that nothing's testing it. rain starts up again, thin, more mist than fall, beading along the split seal without ever quite finishing the job of closing it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes half-close, the pallet wood's cold no longer worth arguing with the rest of the body over. One ear stays angled toward the fence gap out of habit, the other lets itself go slack. Whatever wore that tone earlier didn't find anything worth forty thousand points tonight, and that's enough of an answer to sleep on."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the dock settles into its overnight rhythm — floodlight, drip, the distant rail spur ticking as it cools, the gouged warning in the crate paint holding its rainwater same as before. no rotor returns before dawn. the yard keeps its bounty unclaimed, its territory unchanged, one more quiet night stacked on top of all the others this stretch of fence has already forgotten."
+    }
+  ]
+}
