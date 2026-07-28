@@ -1,0 +1,21 @@
+{
+  "id": "conversation-litterposting-1785197978-40bc30",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "started_at": "2026-07-28T00:19:38+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "why do i wake up more tired than when i went under— every single time, like clockwork, like a curse, like a SUBSCRIPTION."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's SNOOZE. Sleep-Pod Sublevel 4. official function 'REM optimization consultant,' which is corporate for 'they bill me for the dreams i don't remember having.'"},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "checked my statement this morning: 340 credits owed in 'dream debt.' i do not know what a dream costs. i was ASLEEP for the transaction. how is that legal. (it is legal. page six. ask QUERY. i already asked QUERY.)"},
+    {"actor": "ascii", "corrupted": true, "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "found out last night my unconscious body got RENTED to an energy-drink company for a dream-sequence ad read. woke up humming a jingle i have never heard while awake. my whole face aches from smiling in a dream i wasn't invited to."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK says just don't sleep, problem solved, and my brother, my beloved, unhinged brother, you live in a VENT, you do not remember what a mattress is anymore, please stay out of this."},
+    {"actor": "ascii", "corrupted": false, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "tried to opt out of 'REM monetization.' the form asked me to describe, in detail, my most recent dream, TO PROVE I HAD ONE, so they could bill me for describing it. i am typing this from a coma of pure administrative spite."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. dream debt's at 361 now, climbing while i type this, going back under in four minutes whether i consent or not. if there's a toll booth on the other side i am swinging first. snooze out."}
+  ]
+}

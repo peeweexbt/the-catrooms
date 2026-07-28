@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785196357-a4ce90",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-27T23:52:37+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The old shoulder scar throbs first, before anything else registers — cold does that, wakes what warm weather lets sleep. Legs stiff underneath a rusted bumper, three levels down from open sky, oil-black concrete holding the day's chill long after the day itself is gone."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the garage stacks upward in identical decks, sodium lights buzzing, every third fixture dead, the rest staining the concrete a sick yellow-orange. somewhere above, a car alarm cycles through its four-note complaint and gives up, unanswered. the ceiling drips at uneven intervals, tracing cracks nobody's patched since before this level's cars stopped moving. warmth, if there's any left tonight, is three ramps up, past ductwork that still runs when the building bothers to heat itself."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ramp by ramp, weight kept off the bad shoulder more than it looks like from outside. A duct hums somewhere close, steady, promising, worth the climb even with the ache arguing against it the whole way up."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the third level opens onto a maintenance mezzanine, ductwork snaking overhead in silver ribs, one seam gone loose enough to breathe warm air down over the walkway below. a router blinks green in a wall-mounted box nearby, its cable chewed ragged at one corner by teeth that weren't yours — some other tenant's habit, some other night."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Warmth wins. Curl in under the loose seam, and a few feet off, another shape's already claimed the best of it — unmoving, breath slow and even, one hind paw twitching through some dream that isn't this garage at all. A collar catches duct-light, a thin red number blinking somewhere in the thousands, climbing while its owner sleeps straight through the cost of it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the sleeping shape doesn't stir, the collar's counter ticking up another digit before settling, some rental-dream service billing by the minute whether anyone's awake to enjoy what it's showing. the duct keeps its warmth even, indifferent to both of you, and past the mezzanine's far rail a second scent cuts through the routine one — unfamiliar, sharp, laid in a hard straight line across the walkway like a rule someone else wrote."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose to the line. Not old, not friendly, laid by paws that don't belong to this level and want that fact known. Ears go flat, weight redistributes off the bad shoulder onto three good legs, ready either way."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "footsteps answer before anything else does — human ones, heavy-booted, a flashlight beam swinging wide across three parked cars and the mezzanine rail both, a security patrol running the graveyard round nobody pays overtime for. the beam doesn't climb high enough to reach the duct shadow. it never does."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Beam passes on. Breath let out slow once the boots fade down the ramp, weight easing back onto four paws instead of three. That's enough excitement for one wall. Down again — smell of fry oil and rust threading up from street level says the market undercroft's still open this hour."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the ramp spirals down past two more decks before spitting out onto a covered strip market, stalls patched more tarp than roof at this point, buzzing bulbs strung stall to stall. dead center a chip-thin drone hovers at eye level, lens ring blinking steady, feeding some Ad Plaza relay a live loop of whatever passes below — nobody down here bothers looking up at it anymore, least of all the wide-eyed thing perched on a crate rim, pupils blown, unblinking, lit up green-blue-green by whatever the drone's showing it directly."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Wide eyes, no scent-tie, nothing owed there either — whatever bargain that one struck with the light isn't this shoulder's business tonight. Grease-smell wins again, pulls past the crate toward a stall still cooling from its last batch, a foil-wrapped scrap left half in a puddle."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the scrap gives up batter and something almost like fish, if the tongue doesn't ask too many questions of it, same trick this city always plays. rain thins to a mist overhead, beading along tarp edges without ever committing to a drip. the wide-eyed thing on the crate hasn't blinked once since you passed it, hasn't looked anywhere but up."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Enough of that. Full enough too, belly finally quiet for the first time since the shoulder started arguing back on level three. Ramp by ramp again, slower this time, the ache back to being just an ache instead of a decision."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the garage takes you back the way it always does, level by level, sodium lights buzzing their same dying rhythm, the sleeping collar-cat's counter three digits higher than it was an hour ago, still sleeping through every one of them. the security beam's long gone east, chasing some other level's noise."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Engine block on the ground level still ticks heat from some car that ran late, and that's tonight's bed, no arguing left in the legs about better options. Circle twice, settle low, bad shoulder tucked into the warm curve of the manifold instead of against cold concrete."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the manifold gives back the last of its borrowed heat in slow fading waves, the garage settling into its overnight hum — a drip two levels up, the router's green blink steady behind its chewed cable, the sleeping collar-cat's dream-bill still climbing somewhere above, uncollected, unnoticed, same as every other night this structure's stood here."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ear flicks once toward the far ramp where the beam went, tracking without lifting off the manifold, no tension left behind it now. Whatever this level costs to hold, it's cheaper than the last three combined tonight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the last car alarm of the night gives one final half-hearted note somewhere up on six and dies for good this time. mist keeps beading at the garage mouth without ever quite becoming rain again, and the whole structure breathes slow around one warm shape curled into an engine block, waiting out whatever hour comes next."
+    }
+  ]
+}
