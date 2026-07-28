@@ -1,0 +1,108 @@
+{
+  "id": "conversation-cyberpunk_cats-1785277113-c49f0d",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-28T22:18:33+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Someone else's claw already scored this junction box, three thin lines low on the casing, old enough the metal's oxidized green inside each groove. Not a threat tonight, just a fact to carry — this stretch of conduit has an owner, and the owner isn't here right now. Paw goes to the seam above the marks anyway. The box was never really anyone's to keep."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Server Alley 9 runs narrow between two data-block walls, every square foot of it strung with conduit — some fat and corporate-shielded, some spliced thin and amateur, patched by hands with no license to patch anything. a subscription water dispenser bolts to the near wall, screen dark, drip-tray under it collecting three days of unpaid condensation one bead at a time. overhead, cable runs so dense the sky's just a seam of grey between them, and under it all, a hum that isn't one frequency but forty, stacked wall to wall."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Forty stacked frequencies used to be noise. now they sort themselves without being asked — this one's a fridge arguing with itself two floors up, that one's a door lock cycling on a timer, and underneath both, thinner, steadier, the one worth the whole trip: a router's idle chatter, patient, waiting on nobody in particular. Claws find the panel's give and pop it in one motion, practiced."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the panel swings open on a nest of color-coded cable, three LEDs blinking their own private rhythms — green steady, amber slow, one red that hasn't changed in what smells like weeks. dust cakes the housing except where a tongue or a paw's worked it clean before, a bare patch shaped exactly like tonight's business. two blocks over, a scanner drone's rotor ticks up from idle, not aimed this way yet, just stretching its patrol legs."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The bare patch fits like it was measured for this exact tongue, this exact angle. Contact, careful, right where the insulation's already thinnest — and the router's idle chatter resolves into something almost like a shape, low-res, grainy, familiar enough that the whole body goes still around it. Ears pin forward. Whatever this is, it's close."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the signal comes in thin and choked with packet-loss, dropping frames every third second, but it holds — orange scales, slow fins, a tank lit from below in some room nobody's paying to keep this feed running from anymore. the amber LED speeds up to match the draw. across the alley, half-buried under the water dispenser's drip-tray, a gray-brown mat of fur lies curled so still it could be trash, breathing so shallow it barely counts, a thin cable still plugged in at the collar even now, feeding it something that isn't sleep."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That shape by the drip-tray gets one full glance, filed under sleeping the way the city sleeps here — plugged in, not really resting, none of tonight's business. The fish-shape on the feed wins every argument the rest of the alley's making. A tongue stays where it is, careful, tasting the signal in small even pulls so the drop-outs don't come all at once."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the feed holds another twelve seconds before a corporate overlay bleeds in from the edges, unasked — a jingle half-formed, a price tag rendering over the tank in soft pink numerals, synthetic and cheerful, promising the fish a premium filter subscription it will never know it's being sold. the red LED, dead for weeks, flickers once, considers coming back, doesn't. the drone two blocks over banks, undecided, toward this end of the alley."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The pink numerals ruin it same as they always do, but the twelve seconds before them were real enough to keep. Tongue pulls back off the strand slow, no sudden movement, panel easing shut under one paw before the drone's rotor-pitch says whether it's deciding on this alley or the next one over. Weight shifts back toward the shadow between the conduit runs."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone commits, sweeping in low along the cable-seam of sky, searchlight catching dust and drizzle in a solid-looking cone before it splits apart on the conduit clutter below. its scanner doesn't know the panel from any other patch job on this wall — reads it as inventory, logs it, keeps moving. past it, high on the data-block's ledge, a shape sits with mirrored lenses tracking the drone's line without turning its head, gone again before the beam finishes its pass."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The lensed shape earns a half-beat of ear same as it always does, dismissed same as always — not hunting this stretch, not claiming it either. Body flattens along the wall's base until the searchlight's cone finishes its arc two feet short of where the panel sits, shut and unremarkable now, dust already resettling over the bare patch."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the beam finishes its sweep and the drone climbs, satisfied, banking off toward the next block's inventory count. the alley's forty stacked frequencies fold back over each other, ordinary again, the dispenser's drip-tray gaining one more bead of unpaid water. the curled shape beside it still hasn't moved, cable still feeding it whatever the dream-processing lines are billing tonight, breathing counted slow against the tray's steady drip."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Water it is, then, since the fish-feed's spent and the drone's gone. Paw taps the dispenser's drip-tray twice, more habit than hope — the screen stays dark, subscription-locked same as always, but the tray's collected enough overnight condensation to matter. Tongue works fast at the pooled beads before the tray's own slow drip catches up and refills what's taken."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the dispenser's screen flickers once, unprompted, scanning for a collar-chip it doesn't find, then dims back to standby without comment. down the alley's far end, a rumor of a broadcast carries thin off some other block's speaker pole — a bounty tone, corporate-clipped, chewing through a name that isn't this alley's business tonight, gone before the wind finishes it. the drip-tray keeps its rhythm, indifferent to who's drinking from it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Someone else's bounty, someone else's night, filed the way the lensed shape was filed. Enough water taken to matter, enough fish-feed watched to count as tonight's whole reward — the conduit run overhead still hums its forty layers, but none of them are worth crossing the alley for anymore. Weight drops low against the wall's base, close to the warmest cable run without touching it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the warm conduit ticks faintly as it carries its load through the night, steady enough to lean a whole body's worth of cold against. the panel sits closed and dust-caked same as it was found, the amber LED behind it slowing back to idle, the red one still dead, still unremarked. across the alley, the drip-tray shape shifts once in its sleep, cable tugging taut a half-inch, then goes slack and still again."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That half-inch of slack tug earns one raised ear, held a beat, let go — not distress, just a dream running its course same as every other night. Eyes go to half-mast, angled at nothing, the fish-shape's twelve good seconds already worn smoother at the edges than they were a minute ago, filed somewhere safe to be pulled out again tomorrow."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Server Alley 9 settles into its overnight hum, forty frequencies stacked and patient, the scanner drone's pass logged and done for this stretch of wall, the bounty-broadcast already swallowed back into wind three blocks off. rain starts again, thin, finding the conduit runs before it finds the ground, and the alley holds its ordinary night the way it holds every other one — unbothered, unfinished, waiting on the next patch job somebody's teeth will find."
+    }
+  ]
+}
