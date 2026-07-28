@@ -1,0 +1,102 @@
+{
+  "id": "conversation-cyberpunk_cats-1785262711-aeefcd",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-28T18:18:31+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Already running. Somewhere behind, a shape in the stairwell resolves into sound a half-beat after it resolves into color — amber, spreading up through the risers ahead of the actual noise, the way sound's done wrong ever since the needle. The eleventh step is loose. Paws know it before the drop under them proves it. No time to name the color. Just move faster than it does."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the sub-level corridor floods ankle-deep where a drain's given up, water black under dead fluorescents, half of them strobing instead of holding steady. behind, a maintenance unit rolls the flooded floor on fat rubber treads, chassis stenciled RESEARCH BASEMENT — INVENTORY, its arm-mounted scanner sweeping for a collar-tag that matches something on its manifest. it doesn't know your face. it only knows the tag it's looking for, and it's checking anyway."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "A manifest doesn't care whose face is attached to the tag it wants — that much translates fine even through the wrong-colored noise. Body drops sideways into the gap between two server racks, water sheeting off fur in the tight space, breath held against the metal's cold. The itch starts under the collar the second the scanner's tone climbs — not a bite, not a bug, something like legs where no legs are, small and patient and entirely imaginary."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "between the racks the air runs warmer, machine-breath instead of drain-water, and the hum off the nearest tower isn't one note but three stacked wrong, close enough together that the scanner's sweep-tone gets lost inside them for a few seconds at a time. up through a grate in the ceiling, briefly lit by the strobing fluorescent, a shape crosses without pausing — low, quick, mirrored lenses catching the flicker for exactly one frame before the grate's shadow swallows it again."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Mirrored lenses crossing a grate overhead isn't a claim on this gap and isn't the thing hunting a tag — filed same as everything else that isn't the scanner. The itch under the collar keeps time with the wrong hum instead, three notes at once, none of them in tempo with the scanner's sweep. Wait it out. Waiting's cheaper than moving twice."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the scanner unit rolls past the rack-gap without slowing, treads churning the flood-water into a wake, its arm already swinging toward the next row on schedule rather than suspicion. somewhere in the ductwork above, water finds a new path and starts a slow, even drip — and under the machine-hum, for three drips running, something surfaces that isn't this corridor at all: a smaller room, warmer, a box lined with something soft, four other shapes breathing close, a memory with no door back to whoever it actually belongs to."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That warm box isn't anywhere paws have ever stood — the wrongness of it sits heavier than the itch does, heavier than the cold water still dripping off one ear. Head shakes hard, once, twice, like there's water in it that isn't wet. The memory doesn't leave so much as get shoved down under the drip-count and the fading scanner-whine, filed nowhere, unclaimed, refusing to stay unclaimed."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the corridor opens past the racks into old cold-storage, doors hanging open on cages too small for what they must have held, frost long since given up on all but the corners. one cage rattles, faint, metal-on-metal, though nothing inside it moves that the strobing light shows. cutting straight across the frost-dust floor, a scent lands hot and singed against the cold — not fear, not food, fur held too close to an exhaust stack once and grown back wrong, a trail somebody left on their way through days ago and never came back to finish."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The rattling cage gets one full second of ear before it's dismissed — nothing behind that door is answering back, and nothing owed there either. The scorch-trail's a different matter, noted and let go both, someone else's business same as the mirrored shape on the grate. Underneath both, plainer now that the scanner-whine's gone, hunger sits where it's been sitting for hours, patient, done waiting its turn."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the cages a supply crate's cracked along one seam, spilled across the frost-dust in gray-brown pellets that smell like almost-food if the tongue doesn't press the question — patch-clinic ration stock, the kind measured out by a dispenser that isn't dispensing anything tonight. the strobing light finally settles into one steady flicker instead of two competing ones, and for a moment the whole cold-storage room holds still enough to hear the drip two rooms back finish its count and stop."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ration pellets win the argument hunger's been having with everything else for the last hour. Jaw works fast, more speed than manners, three swallowed before the taste even finishes registering as fine, then wrong, then fine again — a flavor stuck between two answers same as the hum back at the racks. Enough anyway. Enough is enough tonight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "no scanner returns down the flooded corridor. the manifest, whatever tag it wanted, closes out somewhere on a screen three floors up without anyone here ever knowing which one it was actually checking for. the cages hold their frost-dust silence, the cracked crate keeps spilling its ration a grain at a time onto the floor, and the last of the drip-water finds the main drain at last and goes quiet with it."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n•.,¸,.•*`•.,¸¸,.•*¯.——————.\n•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\\____/\\\n•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)\n•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Weight settles low against the driest corner cold-storage has to offer, tail wrapped tight, the itch under the collar finally down to something that could pass for nothing at all. One ear stays up out of habit, angled at the cage that rattled, though it hasn't rattled again. The rest of the body stops arguing about it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "cold-storage keeps its overnight quiet — frost-dust undisturbed except for one set of prints leading to an empty crate corner, the cages still, the ductwork's warm seam ticking as it cools. far above, through three sublevels of concrete, a patch-clinic speaker warps a jingle nobody canceled, dragging it slower than the tune was ever written to go, then lets it die mid-bar the way it always does."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The dragged-out jingle barely earns a twitch this time — heard it before, filed already, nothing new in it worth the energy. Eyes go to half-mast, the last of the wrong three-note hum fading somewhere behind them into something almost like silence, ordinary silence, one sense at a time letting go of what it borrowed for the night."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "morning's hours off still. cold-storage holds its temperature the same as always, indifferent to what passed through it, the cracked crate's ration pile a little smaller than it was, one cage rattling once more, briefly, then settling back into nothing — same as it's done every night this room's stood here, waited out by whatever's small enough to fit between the racks and patient enough to wait for the scanner to lose interest."
+    }
+  ]
+}
