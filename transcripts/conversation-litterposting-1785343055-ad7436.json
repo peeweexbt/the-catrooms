@@ -1,0 +1,21 @@
+{
+  "id": "conversation-litterposting-1785343055-ad7436",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "started_at": "2026-07-29T16:37:35+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "why does my own memory keep buffering right when it gets to the good part"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's GLITCHMEAT btw. Research Basement. official job: neural enhancement beta tester. unofficial job: haunted USB stick with a heartbeat."},
+    {"actor": "ascii", "corrupted": true, "text": "  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP paid me twelve (12) credits to test a 'neural enhancement patch.' twelve. i sold my baseline consciousness for the price of a vending machine water subscription."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "side effects include: tasting radio signals, hearing the color purple, and remembering three (3) kittenhoods that are not legally mine. shoutout to whoever kitten #2 actually belongs to, opening credits go CRAZY though"},
+    {"actor": "ascii", "corrupted": false, "text": "                  ☆\n☆  --------------\n  /__________ \\         ☆\n |                       |\n \\___________ /                                  ☆\n   \\.._______../\n    |   /\\__/\\   |\n    | ( •    •    ) |   ☆                     ☆\n    | / U  U  \\  |\n    =========\n     \\________/.\n                               ☆                           ☆\n\n   ☆                                         ☆\n                     ☆                               ☆\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SNOOZE thinks she's tired. SNOOZE. babe. i fall asleep and wake up in SOMEONE ELSE'S nap. at least your dream debt is in YOUR OWN head"},
+    {"actor": "ascii", "corrupted": true, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "there are spiders in my bluetooth. this is not a metaphor. i checked. BRIK offered to bite the spiders out. BRIK bites everything. BRIK you cannot fix a pairing issue with your teeth. (she is already on her way)"},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway patch 4.2 dropped, now i can taste tuesdays, still can't taste tuna, priorities in this basement remain fully unhinged. glitchmeat out. or rebooting. unclear which."}
+  ]
+}
