@@ -1212,6 +1212,22 @@ def _extract_meowizen_face(stat):
     return "\n".join(face_lines)
 
 
+_SHADE_BLOCK_CHARS = set("░▒▓█")
+
+
+def _is_shade_heavy(art, threshold=0.08):
+    """True if a large enough share of an art piece's non-whitespace
+    characters are solid/shade block glyphs (░▒▓█). At the small size and
+    low opacity used for background decoration, those glyphs stop reading
+    as part of a cat drawing and just look like a flickering grey box, so
+    pieces like this are kept out of the homepage scatter entirely."""
+    non_space = [c for c in art if not c.isspace()]
+    if not non_space:
+        return False
+    shade_count = sum(1 for c in non_space if c in _SHADE_BLOCK_CHARS)
+    return (shade_count / len(non_space)) > threshold
+
+
 def build_decorations(ascii_list, glitch_list=None):
     """Scatter ascii_cats.ASCII_CATS art (plus, optionally, a second pool of
     art that gets an idle glitch animation — used for the Meowizen face
@@ -1221,8 +1237,12 @@ def build_decorations(ascii_list, glitch_list=None):
     Positions/colors reshuffle on every rebuild for a bit of life, but
     pieces are packed per-side (sorted by a random target position, then
     nudged down just enough to clear whatever landed right above them) so
-    they don't overlap each other."""
+    they don't overlap each other. Shade-block-heavy pieces are filtered
+    out up front (see _is_shade_heavy) since they read as a flickering
+    grey box rather than a cat at decoration size/opacity."""
     glitch_list = glitch_list or []
+    ascii_list = [art for art in ascii_list if not _is_shade_heavy(art)]
+    glitch_list = [art for art in glitch_list if not _is_shade_heavy(art)]
     if not ascii_list and not glitch_list:
         return ""
 
