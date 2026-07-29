@@ -1,0 +1,113 @@
+{
+  "id": "conversation-cyberpunk_cats-1785292101-3f110c",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-29T02:28:21+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Two rooftops over, nothing moves. That's the wrong kind of nothing — the kind that means something is aiming and just hasn't fired yet. Ears swivel forward without being asked to. The frames sit cool along the bridge of the nose, world going soft and staticky at the rim of each lens the way it does right before they eat a scanner sweep whole. Hold. Don't blink first."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the sweep finds the ledge two roofs over and slides on past it — whatever tripped the sensor there isn't there now, or never registered as more than pigeon-mass and wind. higher up, a NekoCorp tower breathes red through its vents, condensation sheeting down forty stories of glass in one continuous shiver. below, a grate exhales the smell of fry oil gone stale and something under it, copper-sweet. the searchlight keeps moving. it hasn't found the lenses yet. that's the whole point of the lenses."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Weight shifts forward onto the front paws before the decision to move actually finishes happening. The strap chafes behind the left ear, same spot it always chafes, and there's a want to scratch it that gets set aside the way hunger gets set aside — noted, filed, not now. Three rooftops of gravel and vent-heat between here and the drop point. Go low. Go along the cable runs where the heat blurs the shape."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the cable runs are warm enough to read as a smear on anything hunting by heat instead of light, and something's already learned that trick — a drone bulletin crackles off a lamppost speaker two blocks down, tinny and looping: *WANTED. FILING REFERENCE: KNIFEBOY. BOUNTY 40,000 LOYALTY POINTS, NONTRANSFERABLE, EXPIRES BEFORE MOST CATS COULD SPEND IT.* the cable underfoot ticks with residual current. the bulletin loops again before it's out of earshot."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The name means nothing and everything at once — not a face, not a scent on file, just a number some other cat is currently worth more dead than most cats are worth alive. Ears flatten a fraction and stay that way. Keep moving. Whoever that bulletin is about, better it stays two blocks away and not zero."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a scent-trail cuts across the cable run, sharp and wrong, ozone and singed fur laid down maybe an hour old — the kind of burn that doesn't come from a stove. it doesn't belong to the name from the bulletin. it belongs to something that used to have an apartment where a parking structure now hums, something that bites drone rotors for sport and hasn't been seen holding still in months. the trail goes straight through, doesn't pause at the ledge, doesn't circle back. whatever left it wasn't hiding from anything."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The lenses catch the rain differently than the eyes underneath ever did — each drop resolves as a little burst of cold static before it just becomes wet. Somewhere under that noise a real sound: a vent fan losing a bearing, ticking off-rhythm three floors down. Paw finds the fire escape rail. Down is the only direction that isn't more rooftop."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the fire escape answers each step with a groan pitched half an octave lower than the last, metal fatigued past caring, and at the bottom the alley opens into a market strip shuttered for the night — stalls chained down, a noodle cart's burner still ticking as it cools, and past that a service door with a hand-lettered sign nobody official would ever hang: DATA / TRADE / NO DRONES flickering under one bare bulb. the bulb hums the same key as the vent fan three floors up, like the whole block is tuned to one frequency."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The door smells like solder and old copper and, underneath that, a dozen other cats who've stood exactly here waiting to be let in or turned away. No mark on the frame says which way tonight goes. Sit. Fold the tail in. Let the smell of the place decide before the legs try to."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a slot at knee height cracks open, just wide enough for a single yellow eye and the smell of solder rolling out warmer and thicker than the alley air. the eye holds on the lenses a long moment — reads them as something, filters, decides — then the slot clicks shut again, and a second later the whole door gives an inch. inside: server racks stacked floor to ceiling, humming a chord that isn't quite the vent fan's key but wants to be, and cable bundles thick as tails running along the baseboards like roots."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Inside is warmer by ten degrees and louder in a way that isn't sound — a pressure behind the eyes, machines thinking too many thoughts too close together. Nose down to the cable bundles first, out of habit more than hunger, though one strand tastes faintly of solder flux and something almost sweet underneath, like it's been chewed before by teeth smaller and less careful than these."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "chewed twice over, actually — small toothmarks in the insulation an inch from where the current lightly seasons the tongue on contact, old enough the exposed copper's gone a little green. whoever left those marks came back for that taste more than once, treated the whole rack like a vending machine that only ever pays out in low hum and stolen bandwidth. no name on it. just the marks, and the hum, and a strip of duct tape overhead reading SERVER ALLEY 9 — RESIDENTS ONLY in handwriting gone soft with humidity."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The marks match nothing in memory, but the shape of the want behind them does — something else that comes here to steal one small good thing off a machine that owes it nothing. Ears tip toward the deeper racks where the hum thickens into something almost like a voice, three or four frequencies layered wrong, arguing with itself in a language made of static."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "deeper in, past where the duct tape gives out, the racks open onto a wider room lined in monitors nobody's watching, each one cycling the same looping ad in a dialect of jingle that's stopped meaning words — NEKOCORP PRESENTS TONIGHT'S SPECIAL, over and over, pitch dragging lower each cycle like the tape itself is dying. one screen flickers to something else entirely for half a second: a mirrored silhouette on a rooftop skyline, gone before it resolves into more than a shape and two reflective discs where eyes should be. then it's back to the jingle."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The silhouette lands somewhere behind the sternum, a small cold recognition with no name attached to it yet — something else out there wearing reflection instead of eyes, same as these lenses wear static instead of a face. Not a threat read. Not safe either. Just another shape choosing not to be seen, same as this one."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the monitors all cut to snow at once, a full second of nothing but hiss, and underneath the hiss a heartbeat of bass that isn't audio at all — a patrol drone passing directly overhead outside, close enough its downwash rattles the service door in its frame. the yellow-eyed door-cat's ear cocks toward the sound without otherwise moving. the racks keep humming through it, unbothered. the drone's shadow slides across one high window and is gone, and the monitors stutter back to the jingle like nothing happened."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Every hair along the spine stays up a beat longer than the drone actually took to pass, some older clock still counting a threat that's already gone. Settle. The racks are still warm, the cable still tastes the same, and whatever's out on that rooftop with mirrored eyes has its own night to survive same as this one does."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the room exhales with it, the hum dropping half a register as if the whole den had been holding something too. outside, past the service door, the rain keeps working on the noodle cart's dead burner, and somewhere above the arcology towers the ad-drones resume their slow orbit, patient, unbothered, selling synthetic milk to nobody in particular. the night is long. it doesn't need to be won tonight. just gotten through."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Enough warmth taken for now, enough stolen hum stored up behind the ribs to last till the next grate, the next rack, the next door that might or might not open. Paw touches the threshold on the way back out — not a goodbye, just a note left for whatever comes through next: something was here, something got fed, something is still moving."
+    }
+  ]
+}
