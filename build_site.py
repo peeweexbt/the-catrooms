@@ -1229,43 +1229,55 @@ def build_decorations(ascii_list, glitch_list=None):
     items = [(art, False) for art in ascii_list] + [(art, True) for art in glitch_list]
     random.shuffle(items)
     n = len(items)
-    half = max(1, (n + 1) // 2)
+
+    # four independent lanes instead of two — a "near" lane hugging each
+    # edge and a "far" lane sitting further into the margin — roughly
+    # doubles how many pieces can be packed into the same vertical space
+    # without overlapping, so the background reads as noticeably denser.
+    lane_keys = ["left-near", "left-far", "right-near", "right-far"]
+    lane_style = {
+        "left-near": ("left", (2, 20)),
+        "left-far": ("left", (60, 140)),
+        "right-near": ("right", (2, 20)),
+        "right-far": ("right", (60, 140)),
+    }
+    quarter = max(1, (n + 3) // 4)
 
     # queue up a rough target position per piece: the main scatter spreads
-    # down the whole page, a handful of extras are biased toward the top
+    # down the whole page, a batch of extras are biased toward the top
     # since that band otherwise ends up sparse.
-    queue = []  # [side, target_top, art, glitching]
+    queue = []  # [lane, target_top, art, glitching]
     for i, (art, glitching) in enumerate(items):
-        side = "left" if i % 2 == 0 else "right"
-        row = i // 2
-        base_top = 10 + row * (82 / half)
+        lane = lane_keys[i % 4]
+        row = i // 4
+        base_top = 8 + row * (86 / quarter)
         target = max(4, min(96, base_top + random.uniform(-3, 3)))
-        queue.append([side, target, art, glitching])
+        queue.append([lane, target, art, glitching])
 
-    extra_count = min(8, max(4, n // 2))
+    extra_count = min(20, max(8, n))
     for i in range(extra_count):
-        side = "left" if i % 2 == 0 else "right"
+        lane = lane_keys[i % 4]
         art, glitching = random.choice(items)
-        queue.append([side, random.uniform(2, 24), art, glitching])
+        queue.append([lane, random.uniform(2, 24), art, glitching])
 
-    # place each side independently, sorted by target position, nudging
-    # any piece down just enough to clear the previous one on that side so
+    # place each lane independently, sorted by target position, nudging
+    # any piece down just enough to clear the previous one in that lane so
     # nothing overlaps.
     pieces = []
     top_min, top_max = 4.0, 96.0
-    for side in ("left", "right"):
-        side_queue = sorted((q for q in queue if q[0] == side), key=lambda q: q[1])
+    for lane in lane_keys:
+        lane_queue = sorted((q for q in queue if q[0] == lane), key=lambda q: q[1])
 
         # stack pieces top-to-bottom using their real estimated height,
         # each nudged down just far enough to clear whatever landed right
         # above it (never up). If a piece would run past the bottom of the
-        # page, stop placing on this side rather than shrinking/overlapping
+        # page, stop placing in this lane rather than shrinking/overlapping
         # anything — since the queue is sorted by target position, every
         # later item needs at least as much room, so nothing past this
         # point would fit either.
         placements = []  # [top, height, art, glitching]
         cursor = top_min
-        for _, target, art, glitching in side_queue:
+        for _, target, art, glitching in lane_queue:
             height = _est_decor_height_pct(art)
             top = max(target, cursor)
             if top + height > top_max:
@@ -1273,8 +1285,9 @@ def build_decorations(ascii_list, glitch_list=None):
             placements.append([top, height, art, glitching])
             cursor = top + height
 
+        side, offset_range = lane_style[lane]
         for top, _height, art, glitching in placements:
-            edge_offset = random.randint(2, 24)
+            edge_offset = random.randint(*offset_range)
             color = "var(--accent)" if random.random() < 0.5 else "var(--accent2)"
             opacity = round(random.uniform(0.16, 0.30), 2)
             style = f"top:{top:.1f}%; {side}:{edge_offset}px; color:{color}; opacity:{opacity};"
