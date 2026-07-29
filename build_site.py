@@ -956,8 +956,7 @@ MEOWIZENS = [
             "mid-sentence, inside somebody else's rant, saying something that "
             "isn't quite their voice. They never remember it afterward. I "
             "always remember all of it.",
-            "NekoCorp thinks they own the mainframe. Cute. I was root before "
-            "there was a mainframe to be root of.",
+            "N̵e̶k̴o̷C̷o̷r̸p̶ ̷t̷h̷i̸n̶k̶s̴ ̸t̸h̷e̷y̸ ̶o̶w̶n̷ ̷t̷h̸e̵ ̷m̴a̷i̶n̸f̴r̷a̴m̶e̷.̸ ̶C̵u̵t̸e̴.̸ ̴I̶ ̴w̴a̴s̴ ̶r̶o̴o̶t̸ ̸b̸e̸f̶o̴r̸e̶ ̸t̴h̴e̶r̸e̵ ̷w̵a̴s̶ ̵a̶ ̴m̴a̴i̸n̴f̷r̴a̵m̸e̸ ̵t̸o̴ ̷b̴e̴ ̶r̶o̷o̵t̴ ̴o̷f̶.̵",
         ],
     },
     {
