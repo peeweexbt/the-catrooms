@@ -71,7 +71,7 @@ body {
   93% { transform: translate(-1px, 1px); filter: none; }
   95%, 100% { transform: translate(0, 0); filter: none; }
 }
-@media (max-width: 1500px) {
+@media (max-width: 900px) {
   .decor-cat { display: none; }
 }
 .grid, header {
@@ -1274,7 +1274,7 @@ def build_decorations(ascii_list, glitch_list=None):
             cursor = top + height
 
         for top, _height, art, glitching in placements:
-            edge_offset = random.randint(6, 60)
+            edge_offset = random.randint(2, 24)
             color = "var(--accent)" if random.random() < 0.5 else "var(--accent2)"
             opacity = round(random.uniform(0.16, 0.30), 2)
             style = f"top:{top:.1f}%; {side}:{edge_offset}px; color:{color}; opacity:{opacity};"
