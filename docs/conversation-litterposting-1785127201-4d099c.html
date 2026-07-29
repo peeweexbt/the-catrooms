@@ -35,6 +35,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -470,29 +482,29 @@ header p {
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">—AND THAT&#x27;S BEFORE THE COUPON POPUP. didn&#x27;t even <span class="glitch-word" style="--gd:0.49s">get</span> <span class="glitch-word" style="--gd:1.73s">to</span> finish <span class="glitch-word" style="--gd:0.49s">that</span> <span class="glitch-word" style="--gd:1.38s">thought,</span> <span class="glitch-word" style="--gd:1.62s">new</span> offer <span class="glitch-word" style="--gd:0.57s">just</span> fired directly into my optic nerve mid-sentence, where <span class="glitch-word" style="--gd:2.51s">WAS</span> i</div>
-<div class="rant-turn" style="animation-delay:0.12s">oh right. POPUP. Ad Plaza. job <span class="glitch-word" style="--gd:0.68s">title</span> is &#x27;feline notification system,&#x27; which is corporate for &#x27;eyes <span class="glitch-word" style="--gd:2.52s">that</span> no longer belong to me&#x27;</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span> /\9/\
-( o.! )
+<div class="rant-turn" style="animation-delay:0.0s">—AND THAT&#x27;S BEFORE <span class="glitch-word" style="--gd:1.18s">THE</span> COUPON POPUP. didn&#x27;t even <span class="glitch-word" style="--gd:1.58s">get</span> to finish that thought, new <span class="glitch-word" style="--gd:0.31s">offer</span> just fired directly into my <span class="glitch-word" style="--gd:0.81s">optic</span> nerve mid-sentence, where WAS i</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:1.63s">oh</span> <span class="glitch-word" style="--gd:1.89s">right.</span> POPUP. <span class="glitch-word" style="--gd:0.46s">Ad</span> Plaza. job title is &#x27;feline notification system,&#x27; which is corporate for &#x27;eyes that no longer belong to <span class="glitch-word" style="--gd:1.23s">me&#x27;</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span> /\_/\
+( o2o )
  &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">cyber-eyes physically cannot <span class="glitch-word" style="--gd:2.41s">close</span> (o) seven-second refresh rate. <span class="glitch-word" style="--gd:0.87s">haven&#x27;t</span> seen the actual sky today. have seen &#x27;YOU MAY ALSO LIKE&#x27; four hundred and twelve times <span class="glitch-word" style="--gd:2.22s">though</span> so. even trade, probably</div>
-<div class="rant-turn" style="animation-delay:0.48s">yesterday <span class="glitch-word" style="--gd:0.18s">i</span> blinked. <span class="glitch-word" style="--gd:0.56s">ONE</span> <span class="glitch-word" style="--gd:0.88s">blink.</span> during a <span class="glitch-word" style="--gd:1.64s">sponsored</span> message. security arrived before my eyelids <span class="glitch-word" style="--gd:1.36s">finished</span> <span class="glitch-word" style="--gd:1.82s">the</span> motion, filed <span class="glitch-word" style="--gd:0.21s">it</span> as <span class="glitch-word" style="--gd:0.34s">&#x27;unauthorized</span> ad <span class="glitch-word" style="--gd:1.36s">avoidance,&#x27;</span> i <span class="glitch-word" style="--gd:2.24s">filed</span> it as <span class="glitch-word" style="--gd:2.32s">&#x27;involuntary</span> reflex, <span class="glitch-word" style="--gd:1.33s">i</span> am a CAT.&#x27; nobody read my filing</div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:1.83s">cyber-eyes</span> physically cannot close (o) seven-second refresh <span class="glitch-word" style="--gd:1.37s">rate.</span> haven&#x27;t seen the <span class="glitch-word" style="--gd:0.85s">actual</span> sky today. have seen <span class="glitch-word" style="--gd:0.19s">&#x27;YOU</span> MAY ALSO LIKE&#x27; <span class="glitch-word" style="--gd:0.3s">four</span> hundred and twelve times though so. even trade, probably</div>
+<div class="rant-turn" style="animation-delay:0.48s">yesterday i <span class="glitch-word" style="--gd:2.05s">blinked.</span> ONE blink. during a sponsored message. security <span class="glitch-word" style="--gd:0.05s">arrived</span> before my eyelids <span class="glitch-word" style="--gd:0.18s">finished</span> <span class="glitch-word" style="--gd:1.61s">the</span> motion, filed it as &#x27;unauthorized ad <span class="glitch-word" style="--gd:1.0s">avoidance,&#x27;</span> i filed <span class="glitch-word" style="--gd:1.23s">it</span> as &#x27;involuntary reflex, i am <span class="glitch-word" style="--gd:0.13s">a</span> CAT.&#x27; nobody read my filing</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>   ___                                  ___
   /___\   [] [] [] [] [] [] [] []    /___\
   ( ..)\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/(.. )
    &#x27;&#x27;&#x27;                                &#x27;&#x27;&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.72s">HAPPYWARE keeps telling me to &#x27;reframe the <span class="glitch-word" style="--gd:0.62s">ads</span> <span class="glitch-word" style="--gd:2.34s">as</span> GIFTS&#x27; from inside a <span class="glitch-word" style="--gd:2.11s">smile</span> <span class="glitch-word" style="--gd:0.33s">she</span> cannot physically <span class="glitch-word" style="--gd:0.41s">turn</span> off. <span class="glitch-word" style="--gd:1.47s">cool</span> feedback HAPPYWARE. real <span class="glitch-word" style="--gd:1.62s">constructive.</span> love that for you specifically and not for me at all</div>
-<div class="rant-turn" style="animation-delay:0.84s">GLITCHMEAT&#x27;s neural <span class="glitch-word" style="--gd:0.77s">patch</span> <span class="glitch-word" style="--gd:1.75s">is</span> bleeding into my feed somehow now, i TASTED an ad <span class="glitch-word" style="--gd:2.15s">yesterday,</span> tasted it, obviously tuna-energy-drink flavored, everything <span class="glitch-word" style="--gd:2.14s">here</span> is tuna-energy-drink flavored, i am so <span class="glitch-word" style="--gd:1.99s">tired</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>        5% —⸍▀
-     █(˶•*•˵~=      ᵐ~ᵒʷ
-　 l       █乀   ▌
-    ▀ し@_, )ノ</div>
-<div class="rant-turn" style="animation-delay:1.08s">shit myself a little during <span class="glitch-word" style="--gd:1.72s">a</span> particularly aggressive <span class="glitch-word" style="--gd:0.43s">40%-off</span> flash sale. not a <span class="glitch-word" style="--gd:2.24s">joke.</span> <span class="glitch-word" style="--gd:0.55s">documented</span> <span class="glitch-word" style="--gd:2.14s">workplace</span> injury. HR&#x27;s official response was &#x27;have you tried liking the sale more&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.72s">HAPPYWARE keeps <span class="glitch-word" style="--gd:1.91s">telling</span> me to &#x27;reframe the ads as GIFTS&#x27; from <span class="glitch-word" style="--gd:0.77s">inside</span> <span class="glitch-word" style="--gd:2.1s">a</span> <span class="glitch-word" style="--gd:0.6s">smile</span> she cannot physically turn off. cool feedback HAPPYWARE. real constructive. love that for you specifically and not <span class="glitch-word" style="--gd:2.47s">for</span> me at all</div>
+<div class="rant-turn" style="animation-delay:0.84s">GLITCHMEAT&#x27;s neural patch is bleeding into my feed <span class="glitch-word" style="--gd:0.93s">somehow</span> now, i TASTED an ad yesterday, tasted it, obviously <span class="glitch-word" style="--gd:0.97s">tuna-energy-drink</span> flavored, <span class="glitch-word" style="--gd:1.49s">everything</span> here is tuna-energy-drink flavored, i am so <span class="glitch-word" style="--gd:2.16s">tired</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>        1▌ 90▌
+     ■*▌▒6◆˵)=      ᵐᵉ&lt;ʷ
+　 l       ~乀   ╭
+    し し0_&amp; )ノ</div>
+<div class="rant-turn" style="animation-delay:1.08s">shit myself a little during a <span class="glitch-word" style="--gd:0.41s">particularly</span> aggressive <span class="glitch-word" style="--gd:0.93s">40%-off</span> flash sale. not a joke. documented workplace injury. HR&#x27;s official response was &#x27;have you tried liking the <span class="glitch-word" style="--gd:0.22s">sale</span> more&#x27;</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>•.,¸,.•*`•.,¸¸,.•*¯.——————.
 •.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
 •.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
 •.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. Ad Plaza <span class="glitch-word" style="--gd:1.15s">readout:</span> eyes still open, still billed, still <span class="glitch-word" style="--gd:1.63s">haven&#x27;t</span> seen an unsponsored cloud since spring. this <span class="glitch-word" style="--gd:1.89s">is</span> not a metaphor. <span class="glitch-word" style="--gd:0.23s">this</span> is a targeted ad wearing my face and calling it engagement</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:0.37s">anyway.</span> Ad <span class="glitch-word" style="--gd:0.97s">Plaza</span> readout: eyes still <span class="glitch-word" style="--gd:0.07s">open,</span> still billed, still haven&#x27;t seen an <span class="glitch-word" style="--gd:0.6s">unsponsored</span> cloud since spring. <span class="glitch-word" style="--gd:0.29s">this</span> is not a metaphor. this is a <span class="glitch-word" style="--gd:2.53s">targeted</span> ad wearing <span class="glitch-word" style="--gd:1.42s">my</span> face and <span class="glitch-word" style="--gd:0.0s">calling</span> it engagement</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

@@ -35,6 +35,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -470,12 +482,12 @@ header p {
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">—AND THAT&#x27;S WHY THE FORKLIFT IS ON FIRE. anyway. hi. it&#x27;s me. <span class="glitch-word" style="--gd:1.86s">KNIFEBOY.</span> loading dock <span class="glitch-word" style="--gd:1.4s">12.</span> still breathing. still <span class="glitch-word" style="--gd:0.18s">wanted.</span> you&#x27;re welcome.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.12s"><span class="who">-- SIGNAL CORRUPTED --</span>     /?/\_/\/\
-    (  O   O  ░
-     2  ^◇^  ◇
-      1===*6(      ~- %ars up, 8otor %n7omi8g --</div>
-<div class="rant-turn" style="animation-delay:0.24s">tonight&#x27;s <span class="glitch-word" style="--gd:0.02s">haul:</span> nine crates of premium tuna rerouted straight into the storm drain network, courtesy of yours truly. NEKOCORP thinks it&#x27;s a supply chain glitch. <span class="glitch-word" style="--gd:1.98s">it</span> is not a glitch. <span class="glitch-word" style="--gd:1.85s">it</span> is ME.</div>
+<div class="rant-turn" style="animation-delay:0.0s">—AND THAT&#x27;S <span class="glitch-word" style="--gd:0.71s">WHY</span> THE FORKLIFT IS ON FIRE. anyway. hi. it&#x27;s me. KNIFEBOY. loading dock <span class="glitch-word" style="--gd:1.58s">12.</span> still breathing. <span class="glitch-word" style="--gd:0.34s">still</span> wanted. you&#x27;re welcome.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.12s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\▌\_/\/\
+    ?  O   O  )
+     \  3Y^  /
+      )===4=(      -- ear&amp; up% r%tor ▒ncomi■■ --</div>
+<div class="rant-turn" style="animation-delay:0.24s">tonight&#x27;s haul: nine crates of premium tuna <span class="glitch-word" style="--gd:1.68s">rerouted</span> <span class="glitch-word" style="--gd:2.35s">straight</span> <span class="glitch-word" style="--gd:1.85s">into</span> the storm drain <span class="glitch-word" style="--gd:1.11s">network,</span> courtesy of yours truly. NEKOCORP thinks it&#x27;s a supply chain glitch. it is not a glitch. it is ME.</div>
 <div class="rant-turn ascii" style="animation-delay:0.36s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -483,19 +495,19 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:2.42s">left</span> <span class="glitch-word" style="--gd:0.44s">my</span> <span class="glitch-word" style="--gd:0.56s">usual</span> <span class="glitch-word" style="--gd:0.45s">note</span> <span class="glitch-word" style="--gd:0.01s">on</span> the empty pallet: &#x27;nice supply chain, CHUD.&#x27; signed it with a paw print this time. professional <span class="glitch-word" style="--gd:1.77s">courtesy.</span></div>
-<div class="rant-turn" style="animation-delay:0.6s">bounty&#x27;s up to 40,000 loyalty points now btw. <span class="glitch-word" style="--gd:1.12s">can&#x27;t</span> be combined with other promotional offers. can&#x27;t even be <span class="glitch-word" style="--gd:0.8s">redeemed</span> <span class="glitch-word" style="--gd:0.76s">before</span> they expire. capitalism really said catch me for fake money</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /▌_/\ ▓5░
-  ░▒6( o█&gt; ▒▓▒░   -- s■gna% i7te▐f▐rence ?0
-  65▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.84s">BRIK bit a <span class="glitch-word" style="--gd:1.37s">drone</span> <span class="glitch-word" style="--gd:1.6s">in</span> half over this. real one. RESPECT. she&#x27;s still out there living in a <span class="glitch-word" style="--gd:1.9s">vent</span> and NEKOCORP still hasn&#x27;t figured it out, couldn&#x27;t <span class="glitch-word" style="--gd:1.3s">be</span> me couldn&#x27;t be smarter</div>
-<div class="rant-turn" style="animation-delay:0.96s">meanwhile POPUP&#x27;s out there getting sponsored messages beamed straight into <span class="glitch-word" style="--gd:2.39s">his</span> <span class="glitch-word" style="--gd:0.7s">eyeballs</span> calling ME the criminal. buddy you cannot blink. sit <span class="glitch-word" style="--gd:1.64s">this</span> one out</div>
+<div class="rant-turn" style="animation-delay:0.48s">left my usual note on the empty pallet: &#x27;nice <span class="glitch-word" style="--gd:1.91s">supply</span> chain, <span class="glitch-word" style="--gd:0.68s">CHUD.&#x27;</span> <span class="glitch-word" style="--gd:0.0s">signed</span> it with a paw <span class="glitch-word" style="--gd:1.65s">print</span> this <span class="glitch-word" style="--gd:2.17s">time.</span> <span class="glitch-word" style="--gd:0.52s">professional</span> courtesy.</div>
+<div class="rant-turn" style="animation-delay:0.6s">bounty&#x27;s <span class="glitch-word" style="--gd:0.83s">up</span> to 40,000 loyalty points now btw. <span class="glitch-word" style="--gd:1.42s">can&#x27;t</span> be combined with <span class="glitch-word" style="--gd:0.26s">other</span> promotional offers. can&#x27;t even be redeemed before they expire. <span class="glitch-word" style="--gd:2.16s">capitalism</span> really said catch me for fake money</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>  &lt;▒▀ /\_/2 ▓0░
+  ░■▓( o█o )▓6░   -- ■ignal i6ter#erence --
+  ▒▒▓ ▓ ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.84s">BRIK bit a <span class="glitch-word" style="--gd:2.2s">drone</span> in half over this. <span class="glitch-word" style="--gd:1.95s">real</span> <span class="glitch-word" style="--gd:0.4s">one.</span> RESPECT. <span class="glitch-word" style="--gd:0.81s">she&#x27;s</span> still <span class="glitch-word" style="--gd:2.08s">out</span> <span class="glitch-word" style="--gd:1.81s">there</span> <span class="glitch-word" style="--gd:0.94s">living</span> in <span class="glitch-word" style="--gd:2.39s">a</span> vent <span class="glitch-word" style="--gd:2.48s">and</span> <span class="glitch-word" style="--gd:0.97s">NEKOCORP</span> still hasn&#x27;t figured <span class="glitch-word" style="--gd:2.08s">it</span> out, couldn&#x27;t be me couldn&#x27;t <span class="glitch-word" style="--gd:0.07s">be</span> <span class="glitch-word" style="--gd:2.42s">smarter</span></div>
+<div class="rant-turn" style="animation-delay:0.96s">meanwhile POPUP&#x27;s out there getting sponsored messages beamed straight into <span class="glitch-word" style="--gd:1.6s">his</span> eyeballs calling ME the criminal. buddy you cannot blink. sit this one out</div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.2s">police description <span class="glitch-word" style="--gd:0.03s">says</span> <span class="glitch-word" style="--gd:0.02s">&#x27;smol</span> fan of cat foids, destroyer of feline chuds.&#x27; i&#x27;m framing that. i&#x27;m getting it tattooed. <span class="glitch-word" style="--gd:0.43s">this</span> is the nicest <span class="glitch-word" style="--gd:1.94s">thing</span> anyone&#x27;s ever written about me</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway tuna&#x27;s in the <span class="glitch-word" style="--gd:1.39s">drain,</span> bounty&#x27;s a joke, and dock 12 smells like victory and <span class="glitch-word" style="--gd:2.36s">slightly</span> <span class="glitch-word" style="--gd:0.48s">like</span> fish guts. same thing really. <span class="glitch-word" style="--gd:0.82s">KNIFEBOY</span> <span class="glitch-word" style="--gd:0.71s">out.</span></div>
+<div class="rant-turn" style="animation-delay:1.2s">police description <span class="glitch-word" style="--gd:1.92s">says</span> &#x27;smol fan of cat foids, destroyer of feline chuds.&#x27; <span class="glitch-word" style="--gd:2.04s">i&#x27;m</span> framing that. i&#x27;m getting it tattooed. this is the <span class="glitch-word" style="--gd:2.22s">nicest</span> thing anyone&#x27;s ever written about <span class="glitch-word" style="--gd:1.81s">me</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway tuna&#x27;s in the drain, <span class="glitch-word" style="--gd:0.92s">bounty&#x27;s</span> a joke, and dock <span class="glitch-word" style="--gd:0.42s">12</span> smells like <span class="glitch-word" style="--gd:0.04s">victory</span> and slightly like <span class="glitch-word" style="--gd:0.08s">fish</span> guts. same thing really. <span class="glitch-word" style="--gd:1.02s">KNIFEBOY</span> <span class="glitch-word" style="--gd:2.05s">out.</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

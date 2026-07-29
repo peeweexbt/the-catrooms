@@ -35,6 +35,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -470,31 +482,31 @@ header p {
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SHADE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">unpopular <span class="glitch-word" style="--gd:1.02s">opinion:</span> sunglasses are <span class="glitch-word" style="--gd:1.48s">not</span> an <span class="glitch-word" style="--gd:0.06s">accessory</span> anymore, they&#x27;re a firewall, and if yours don&#x27;t at least dodge one federal ad <span class="glitch-word" style="--gd:1.51s">mandate</span> you&#x27;re basically NUDE</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s <span class="glitch-word" style="--gd:1.19s">SHADE.</span> Neon Underpass. <span class="glitch-word" style="--gd:0.88s">official</span> crime: &#x27;unauthorized <span class="glitch-word" style="--gd:0.81s">use</span> of <span class="glitch-word" style="--gd:1.55s">BASEDness.&#x27;</span> that&#x27;s a real citation. it&#x27;s laminated. i keep it in my wallet next to a photo of my <span class="glitch-word" style="--gd:1.01s">old</span> <span class="glitch-word" style="--gd:0.84s">eyes</span></div>
+<div class="rant-turn" style="animation-delay:0.0s">unpopular opinion: sunglasses are not an accessory anymore, they&#x27;re a <span class="glitch-word" style="--gd:2.04s">firewall,</span> and if yours don&#x27;t at <span class="glitch-word" style="--gd:0.03s">least</span> dodge one federal ad mandate you&#x27;re basically NUDE</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s SHADE. Neon Underpass. official crime: <span class="glitch-word" style="--gd:1.83s">&#x27;unauthorized</span> <span class="glitch-word" style="--gd:1.21s">use</span> of BASEDness.&#x27; that&#x27;s a <span class="glitch-word" style="--gd:1.12s">real</span> citation. it&#x27;s laminated. i keep it in my <span class="glitch-word" style="--gd:0.2s">wallet</span> next to a photo of my old eyes</div>
 <div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>        ,--.
-       ( o.o)▄░
-        &#x27;5-&#x27;   \__◇
-                 ~  \__/^_*\
-                  \_(  7◆!  )
-                     &gt; ^ &lt; (wat5hi▌g the ~o▒ers bl█n?)</div>
-<div class="rant-turn" style="animation-delay:0.36s">these glasses block facial recognition, targeted advertising, retinal taxation, and <span class="glitch-word" style="--gd:1.13s">about</span> <span class="glitch-word" style="--gd:1.75s">14%</span> of <span class="glitch-word" style="--gd:0.42s">a</span> sadness i haven&#x27;t fully diagnosed yet. NEKOCORP calls that &#x27;unauthorized.&#x27; i call it &#x27;load-bearing&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:2.59s">my</span> actual <span class="glitch-word" style="--gd:1.12s">eyes</span> <span class="glitch-word" style="--gd:1.06s">got</span> repossessed last Thursday for &#x27;non-payment of visual data royalties.&#x27; i wear these now because they&#x27;re <span class="glitch-word" style="--gd:1.93s">the</span> only pair of <span class="glitch-word" style="--gd:1.2s">eyes</span> in this city <span class="glitch-word" style="--gd:0.1s">NEKOCORP</span> doesn&#x27;t own a controlling stake in</div>
+       ( o^o)&amp;_
+        ▓--&#x27;   #15_
+                 \  \&lt;_/\_/\
+                  \_(  o&gt;o  @
+                     &gt; ^ &lt; ▒w▐8◇hing the to^e▌s bl?nk4</div>
+<div class="rant-turn" style="animation-delay:0.36s">these glasses block <span class="glitch-word" style="--gd:2.59s">facial</span> recognition, targeted advertising, retinal taxation, and about <span class="glitch-word" style="--gd:0.27s">14%</span> of a sadness i haven&#x27;t fully <span class="glitch-word" style="--gd:2.28s">diagnosed</span> yet. NEKOCORP calls <span class="glitch-word" style="--gd:0.13s">that</span> &#x27;unauthorized.&#x27; i call it &#x27;load-bearing&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.48s">my actual eyes <span class="glitch-word" style="--gd:2.59s">got</span> <span class="glitch-word" style="--gd:0.06s">repossessed</span> last Thursday for &#x27;non-payment of visual data royalties.&#x27; i <span class="glitch-word" style="--gd:1.68s">wear</span> these <span class="glitch-word" style="--gd:0.66s">now</span> <span class="glitch-word" style="--gd:1.72s">because</span> they&#x27;re the only pair <span class="glitch-word" style="--gd:1.25s">of</span> eyes in this city NEKOCORP <span class="glitch-word" style="--gd:1.53s">doesn&#x27;t</span> <span class="glitch-word" style="--gd:0.72s">own</span> a controlling stake in</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>•.,¸,.•*`•.,¸¸,.•*¯.——————.
 •.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
 •.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
 •.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</div>
-<div class="rant-turn" style="animation-delay:0.72s">HAPPYWARE hit <span class="glitch-word" style="--gd:2.06s">my</span> line with &#x27;have you tried just BEING GRATEFUL for the surveillance :)&#x27; brother i <span class="glitch-word" style="--gd:1.83s">would</span> rather bite a transformer. gratitude is how <span class="glitch-word" style="--gd:1.58s">they</span> <span class="glitch-word" style="--gd:1.27s">get</span> you. <span class="glitch-word" style="--gd:0.36s">gratitude</span> has a subscription tier now</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:1.19s">BYTE</span> offered to route my glasses <span class="glitch-word" style="--gd:0.4s">through</span> his <span class="glitch-word" style="--gd:2.47s">stolen</span> bandwidth <span class="glitch-word" style="--gd:0.29s">so</span> <span class="glitch-word" style="--gd:2.43s">NEKOCORP</span> can&#x27;t ping the lenses. <span class="glitch-word" style="--gd:2.25s">said</span> yes before he finished the sentence. that <span class="glitch-word" style="--gd:1.44s">man</span> has never once asked me to <span class="glitch-word" style="--gd:1.59s">be</span> grateful for anything, which is why he&#x27;s the only friend i <span class="glitch-word" style="--gd:1.21s">have</span> with a pulse</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>┊         ◇       ┊   ┊   ┊。 ┊
-3         &gt;       ┊   ⋆   99▓7˚  @
-┊         ┊       ★⋆ ◦
-3⋆       0 .  0
-           ˚★
-☆ 5,6,∧
-ପ?„• ༝ 9&lt;)▒
-┏━▀∪━━━▀━━━━━━━</div>
-<div class="rant-turn" style="animation-delay:1.08s">KNIFEBOY says the bounty on being &#x27;based&#x27; is worse than the bounty on stealing tuna. he&#x27;d know. at least his crime comes <span class="glitch-word" style="--gd:1.87s">with</span> snacks. mine just comes <span class="glitch-word" style="--gd:0.19s">with</span> a citation and a <span class="glitch-word" style="--gd:0.76s">permanent</span> squint</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.3s">HAPPYWARE</span> <span class="glitch-word" style="--gd:0.6s">hit</span> my line <span class="glitch-word" style="--gd:2.35s">with</span> &#x27;have you tried <span class="glitch-word" style="--gd:0.81s">just</span> BEING GRATEFUL for <span class="glitch-word" style="--gd:1.55s">the</span> surveillance :)&#x27; brother i would rather bite a transformer. gratitude is how they <span class="glitch-word" style="--gd:2.01s">get</span> you. gratitude <span class="glitch-word" style="--gd:1.61s">has</span> a <span class="glitch-word" style="--gd:0.91s">subscription</span> tier now</div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:2.44s">BYTE</span> offered to route my glasses through his stolen bandwidth <span class="glitch-word" style="--gd:1.27s">so</span> NEKOCORP can&#x27;t ping the lenses. said yes before he finished the sentence. that man has never once asked me to be grateful for anything, which is why <span class="glitch-word" style="--gd:2.53s">he&#x27;s</span> the only friend i have with <span class="glitch-word" style="--gd:0.48s">a</span> pulse</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>┊         ┊       ┊   ┊   ┊。 ┊
+┊         *       ┊   ⋆   ˚&amp;▀｡˚  ⋆
+┊         █       ★⋆ ◦
+★⋆       ■ .  ▓
+           0★
+☆ ∧,6,&amp;
+◆(„? ■ •7)ଓ
+┏━∪∪7━▀▐━━━5━━━</div>
+<div class="rant-turn" style="animation-delay:1.08s">KNIFEBOY says <span class="glitch-word" style="--gd:1.69s">the</span> <span class="glitch-word" style="--gd:0.8s">bounty</span> on <span class="glitch-word" style="--gd:1.19s">being</span> <span class="glitch-word" style="--gd:0.16s">&#x27;based&#x27;</span> is worse than the bounty on stealing tuna. he&#x27;d know. at least his crime comes with snacks. mine just comes <span class="glitch-word" style="--gd:2.15s">with</span> a citation and a <span class="glitch-word" style="--gd:0.8s">permanent</span> <span class="glitch-word" style="--gd:2.08s">squint</span></div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>                  ☆
 ☆  --------------
   /__________ \         ☆
@@ -510,7 +522,7 @@ header p {
 
    ☆                                         ☆
                      ☆                               ☆</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. eyes: <span class="glitch-word" style="--gd:2.22s">repossessed.</span> <span class="glitch-word" style="--gd:0.98s">glasses:</span> illegal. worldview: unchanged. if you <span class="glitch-word" style="--gd:1.13s">see</span> a cat in mirrored shades <span class="glitch-word" style="--gd:0.76s">not</span> blinking at a drone, that&#x27;s me, filing zero reports, feeling nothing, extremely based</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. eyes: repossessed. glasses: illegal. worldview: unchanged. if you see a cat in mirrored shades not blinking at a drone, that&#x27;s me, <span class="glitch-word" style="--gd:2.15s">filing</span> zero <span class="glitch-word" style="--gd:1.93s">reports,</span> feeling nothing, extremely based</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

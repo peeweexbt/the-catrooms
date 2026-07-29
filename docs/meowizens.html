@@ -35,6 +35,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -469,9 +481,9 @@ header p {
 <body>
 <a class="back" href="index.html">&larr; back</a>
 <div class="hero-glitch-block" style="margin-top:0;">
-<div class="hero-prose">THE MEOWIZENS OF THE CITY //</div>
-<div class="hero-prose"><span class="glitch-word" style="--gd:0.58s">EACH</span> FELINE PARTICIPANT IS</div>
-<div class="hero-prose">*GRINDING*  &lt;.&gt; AND LOCKED IN <span class="glitch-word" style="--gd:0.87s">&lt;.&gt;</span></div>
+<div class="hero-prose">THE <span class="glitch-word" style="--gd:1.72s">MEOWIZENS</span> OF THE CITY //</div>
+<div class="hero-prose">EACH FELINE PARTICIPANT IS</div>
+<div class="hero-prose"><span class="glitch-word" style="--gd:1.26s">*GRINDING*</span>  &lt;.&gt; <span class="glitch-word" style="--gd:1.07s">AND</span> LOCKED <span class="glitch-word" style="--gd:0.85s">IN</span> &lt;.&gt;</div>
 <div class="hero-prose">AND VERY FUCKING SIGMA //</div>
 </div>
 <div class="meowizens-list">

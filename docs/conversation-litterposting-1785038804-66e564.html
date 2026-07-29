@@ -35,6 +35,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -470,30 +482,30 @@ header p {
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.02s">BREAKING:</span> local <span class="glitch-word" style="--gd:1.69s">stray</span> achieves full lockdown <span class="glitch-word" style="--gd:0.5s">of</span> the substation <span class="glitch-word" style="--gd:0.23s">warmth</span> grate for the <span class="glitch-word" style="--gd:2.03s">third</span> night <span class="glitch-word" style="--gd:1.77s">running.</span> more <span class="glitch-word" style="--gd:2.18s">at</span> eleven. the &#x27;more&#x27; is <span class="glitch-word" style="--gd:0.51s">just</span> <span class="glitch-word" style="--gd:2.42s">me,</span> sitting there, victorious</div>
-<div class="rant-turn" style="animation-delay:0.12s">context: <span class="glitch-word" style="--gd:0.37s">ZIGGY,</span> <span class="glitch-word" style="--gd:0.07s">transformer</span> crew, <span class="glitch-word" style="--gd:0.16s">three</span> blocks down, has been eyeing this <span class="glitch-word" style="--gd:0.08s">grate</span> since Tuesday and telling anyone who&#x27;ll listen he &#x27;called it first.&#x27; Ziggy you <span class="glitch-word" style="--gd:0.27s">called</span> it FIRST after i was already ASLEEP on it, that&#x27;s not <span class="glitch-word" style="--gd:0.36s">calling</span> it, that&#x27;s WITNESSING</div>
+<div class="rant-turn" style="animation-delay:0.0s">BREAKING: local stray <span class="glitch-word" style="--gd:1.69s">achieves</span> full lockdown of the <span class="glitch-word" style="--gd:1.22s">substation</span> <span class="glitch-word" style="--gd:0.51s">warmth</span> grate for <span class="glitch-word" style="--gd:2.18s">the</span> <span class="glitch-word" style="--gd:1.99s">third</span> <span class="glitch-word" style="--gd:2.0s">night</span> running. more at eleven. the &#x27;more&#x27; is just me, <span class="glitch-word" style="--gd:0.21s">sitting</span> there, victorious</div>
+<div class="rant-turn" style="animation-delay:0.12s">context: ZIGGY, transformer crew, three blocks down, <span class="glitch-word" style="--gd:0.59s">has</span> been eyeing this grate since Tuesday and <span class="glitch-word" style="--gd:2.01s">telling</span> anyone <span class="glitch-word" style="--gd:1.21s">who&#x27;ll</span> listen he &#x27;called it <span class="glitch-word" style="--gd:0.37s">first.&#x27;</span> Ziggy you called it FIRST after i was already ASLEEP on it, that&#x27;s not calling it, that&#x27;s WITNESSING</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span> /\_/\
 ( o.o )
  &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">NekoCorp rolled out COLLARCLOUD this week, a smart collar that charges you MONTHLY <span class="glitch-word" style="--gd:1.71s">to</span> track your own <span class="glitch-word" style="--gd:2.11s">naps</span> <span class="glitch-word" style="--gd:0.64s">and</span> texts your &#x27;wellness score&#x27; to a <span class="glitch-word" style="--gd:2.1s">billboard.</span> i do not need a billboard <span class="glitch-word" style="--gd:1.06s">to</span> tell <span class="glitch-word" style="--gd:1.67s">me</span> i <span class="glitch-word" style="--gd:2.46s">slept</span> great. i was THERE</div>
-<div class="rant-turn" style="animation-delay:0.48s">Ziggy just sent word <span class="glitch-word" style="--gd:2.49s">through</span> <span class="glitch-word" style="--gd:0.55s">the</span> pigeons that he&#x27;s &#x27;escalating.&#x27; escalating to <span class="glitch-word" style="--gd:1.14s">WHAT</span> <span class="glitch-word" style="--gd:2.41s">Ziggy.</span> you don&#x27;t have hands. you have a grate you&#x27;re <span class="glitch-word" style="--gd:0.76s">mad</span> <span class="glitch-word" style="--gd:1.91s">about</span> and <span class="glitch-word" style="--gd:0.32s">a</span> <span class="glitch-word" style="--gd:0.82s">grudge,</span> that&#x27;s the <span class="glitch-word" style="--gd:0.42s">whole</span> arsenal</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\*\_/\▌\
-    (  O   ░  )
-     \  █Y1  /
-      )=====?      -- e*r░ u^, rot░▀ inc■ming --</div>
-<div class="rant-turn" style="animation-delay:0.72s">so i did the responsible thing and <span class="glitch-word" style="--gd:1.77s">shed</span> directly <span class="glitch-word" style="--gd:2.03s">onto</span> the grate, aggressively, <span class="glitch-word" style="--gd:1.52s">all</span> of <span class="glitch-word" style="--gd:1.58s">it,</span> a whole undercoat&#x27;s worth, biohazard style. if Ziggy wants <span class="glitch-word" style="--gd:1.71s">it</span> now <span class="glitch-word" style="--gd:1.74s">he&#x27;s</span> <span class="glitch-word" style="--gd:1.28s">getting</span> it WITH interest</div>
-<div class="rant-turn" style="animation-delay:0.84s">black market <span class="glitch-word" style="--gd:1.6s">update:</span> traded a bent bottle cap and half my dignity to <span class="glitch-word" style="--gd:0.87s">a</span> seagull <span class="glitch-word" style="--gd:1.47s">for</span> three anchovies. seagull wouldn&#x27;t stop narrating <span class="glitch-word" style="--gd:0.41s">the</span> transaction out <span class="glitch-word" style="--gd:1.95s">loud</span> like a sports announcer. 0/10 vibes, 10/10 anchovies</div>
+<div class="rant-turn" style="animation-delay:0.36s">NekoCorp <span class="glitch-word" style="--gd:1.04s">rolled</span> out COLLARCLOUD this week, a smart collar that charges you <span class="glitch-word" style="--gd:1.92s">MONTHLY</span> to track <span class="glitch-word" style="--gd:1.28s">your</span> own naps and <span class="glitch-word" style="--gd:0.9s">texts</span> your &#x27;wellness score&#x27; to a billboard. i do <span class="glitch-word" style="--gd:0.04s">not</span> need <span class="glitch-word" style="--gd:1.02s">a</span> billboard to tell me i slept great. i was THERE</div>
+<div class="rant-turn" style="animation-delay:0.48s">Ziggy just sent word through the pigeons that <span class="glitch-word" style="--gd:0.21s">he&#x27;s</span> &#x27;escalating.&#x27; <span class="glitch-word" style="--gd:2.21s">escalating</span> to WHAT Ziggy. you don&#x27;t have <span class="glitch-word" style="--gd:0.54s">hands.</span> you have a grate you&#x27;re mad about and <span class="glitch-word" style="--gd:1.52s">a</span> grudge, that&#x27;s the whole arsenal</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     6\2\_/^/\
+    (  O   O  )
+     \  99^  /
+      )===!=(      ▐- e■rs ^p, rotor i░comi◇g --</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.09s">so</span> i did the responsible <span class="glitch-word" style="--gd:2.08s">thing</span> and shed directly <span class="glitch-word" style="--gd:0.44s">onto</span> the grate, aggressively, all <span class="glitch-word" style="--gd:2.2s">of</span> it, a whole undercoat&#x27;s worth, biohazard style. if Ziggy wants it now he&#x27;s <span class="glitch-word" style="--gd:0.26s">getting</span> it WITH interest</div>
+<div class="rant-turn" style="animation-delay:0.84s">black market <span class="glitch-word" style="--gd:1.91s">update:</span> traded a bent bottle cap and half my dignity to <span class="glitch-word" style="--gd:2.49s">a</span> <span class="glitch-word" style="--gd:1.74s">seagull</span> for three anchovies. seagull wouldn&#x27;t <span class="glitch-word" style="--gd:1.2s">stop</span> narrating <span class="glitch-word" style="--gd:1.36s">the</span> transaction out loud like a sports announcer. <span class="glitch-word" style="--gd:1.15s">0/10</span> vibes, 10/10 anchovies</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.08s">power flickered <span class="glitch-word" style="--gd:0.66s">twice</span> near the substation tonight and Ziggy tried to say it was &#x27;a sign.&#x27; it was a SQUIRREL. i watched it happen. <span class="glitch-word" style="--gd:0.82s">i</span> am <span class="glitch-word" style="--gd:0.96s">the</span> only reliable narrator in this alley and i will <span class="glitch-word" style="--gd:0.58s">not</span> be quoted otherwise</div>
+<div class="rant-turn" style="animation-delay:1.08s">power flickered twice <span class="glitch-word" style="--gd:1.34s">near</span> the substation tonight and <span class="glitch-word" style="--gd:0.96s">Ziggy</span> tried to say it was &#x27;a sign.&#x27; it was a <span class="glitch-word" style="--gd:0.47s">SQUIRREL.</span> i watched it happen. i am the only reliable <span class="glitch-word" style="--gd:1.12s">narrator</span> in this alley and <span class="glitch-word" style="--gd:1.35s">i</span> will not be quoted otherwise</div>
 <div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>        ,--.
-       ( o.o)_6
-        &#x27;8-&#x27;   ?_!_
-                 \  ~_9/^_/\
-                  \_(  o.o  )
-                     &gt; ^ &lt; (w!tc&lt;ing t1e %o◆ers bl▓nk)</div>
-<div class="rant-turn" style="animation-delay:1.32s">in closing: the grate is mine, Ziggy&#x27;s arsenal remains empty-handed, COLLARCLOUD can bill <span class="glitch-word" style="--gd:0.91s">someone</span> else&#x27;s naps, and if a <span class="glitch-word" style="--gd:2.39s">seagull</span> ever tries to narrate your black market <span class="glitch-word" style="--gd:1.62s">deal</span> you let it, free <span class="glitch-word" style="--gd:1.56s">press,</span> sort of. goodnight substation, Ziggy, don&#x27;t let the flicker fool you twice</div>
+       ( o.▌)__
+        ■--0   #5__
+                 \  \__/\_/\
+                  \_(  o▐&gt;  )
+                     &gt; ^ &lt; (wa&lt;ch&gt;ng the to▌ers bli?k)</div>
+<div class="rant-turn" style="animation-delay:1.32s">in closing: the <span class="glitch-word" style="--gd:1.56s">grate</span> is mine, Ziggy&#x27;s <span class="glitch-word" style="--gd:1.63s">arsenal</span> remains empty-handed, COLLARCLOUD can bill someone else&#x27;s naps, <span class="glitch-word" style="--gd:2.31s">and</span> <span class="glitch-word" style="--gd:0.58s">if</span> a seagull ever tries to narrate your black <span class="glitch-word" style="--gd:1.19s">market</span> deal you let it, free press, <span class="glitch-word" style="--gd:1.58s">sort</span> of. goodnight substation, Ziggy, don&#x27;t let the flicker fool you twice</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

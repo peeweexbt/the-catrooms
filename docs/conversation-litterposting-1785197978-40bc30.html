@@ -35,6 +35,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -470,31 +482,31 @@ header p {
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">why <span class="glitch-word" style="--gd:0.73s">do</span> i wake up more tired than when <span class="glitch-word" style="--gd:0.37s">i</span> <span class="glitch-word" style="--gd:0.38s">went</span> under— every single time, like clockwork, like a <span class="glitch-word" style="--gd:0.9s">curse,</span> like <span class="glitch-word" style="--gd:1.22s">a</span> SUBSCRIPTION.</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.34s">name&#x27;s</span> SNOOZE. <span class="glitch-word" style="--gd:0.22s">Sleep-Pod</span> Sublevel <span class="glitch-word" style="--gd:1.77s">4.</span> official <span class="glitch-word" style="--gd:0.49s">function</span> &#x27;REM optimization consultant,&#x27; which <span class="glitch-word" style="--gd:1.73s">is</span> corporate <span class="glitch-word" style="--gd:0.2s">for</span> &#x27;they <span class="glitch-word" style="--gd:2.14s">bill</span> me for the dreams i don&#x27;t remember having.&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.0s">why do i wake <span class="glitch-word" style="--gd:0.11s">up</span> more tired than when i went <span class="glitch-word" style="--gd:0.56s">under—</span> every single time, <span class="glitch-word" style="--gd:2.52s">like</span> clockwork, like a curse, like a SUBSCRIPTION.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.83s">name&#x27;s</span> SNOOZE. Sleep-Pod Sublevel 4. official function &#x27;REM optimization consultant,&#x27; which is corporate for &#x27;they <span class="glitch-word" style="--gd:0.16s">bill</span> me <span class="glitch-word" style="--gd:2.33s">for</span> <span class="glitch-word" style="--gd:1.78s">the</span> dreams i don&#x27;t remember having.&#x27;</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">checked <span class="glitch-word" style="--gd:1.91s">my</span> statement this morning: 340 credits <span class="glitch-word" style="--gd:0.53s">owed</span> in &#x27;dream debt.&#x27; i <span class="glitch-word" style="--gd:1.56s">do</span> not know <span class="glitch-word" style="--gd:1.45s">what</span> a dream costs. i was ASLEEP for the transaction. how <span class="glitch-word" style="--gd:1.06s">is</span> that <span class="glitch-word" style="--gd:0.29s">legal.</span> (it is legal. page six. ask QUERY. i already asked QUERY.)</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.48s"><span class="who">-- SIGNAL CORRUPTED --</span>      ░-=====▓5
-     ( 00]  .. )
-      &#x27;-=4Y==-&#x27;
-       |  @  |
-   ..◇p░cking through the neon rain..0</div>
-<div class="rant-turn" style="animation-delay:0.6s">found out last night my <span class="glitch-word" style="--gd:1.71s">unconscious</span> body got RENTED to <span class="glitch-word" style="--gd:1.3s">an</span> <span class="glitch-word" style="--gd:0.16s">energy-drink</span> company for a dream-sequence ad read. woke up humming a <span class="glitch-word" style="--gd:0.98s">jingle</span> i have never heard while awake. my <span class="glitch-word" style="--gd:0.19s">whole</span> face <span class="glitch-word" style="--gd:0.62s">aches</span> from smiling in a dream i wasn&#x27;t <span class="glitch-word" style="--gd:2.39s">invited</span> to.</div>
-<div class="rant-turn" style="animation-delay:0.72s">BRIK <span class="glitch-word" style="--gd:0.85s">says</span> just <span class="glitch-word" style="--gd:1.44s">don&#x27;t</span> <span class="glitch-word" style="--gd:0.19s">sleep,</span> problem solved, and my brother, <span class="glitch-word" style="--gd:0.73s">my</span> beloved, unhinged <span class="glitch-word" style="--gd:0.66s">brother,</span> you live in a VENT, you <span class="glitch-word" style="--gd:1.66s">do</span> not remember what a <span class="glitch-word" style="--gd:0.06s">mattress</span> <span class="glitch-word" style="--gd:1.76s">is</span> anymore, please stay out <span class="glitch-word" style="--gd:1.51s">of</span> this.</div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:0.83s">checked</span> my statement this morning: 340 credits <span class="glitch-word" style="--gd:1.32s">owed</span> in &#x27;dream <span class="glitch-word" style="--gd:1.29s">debt.&#x27;</span> i do not know what <span class="glitch-word" style="--gd:1.24s">a</span> dream costs. i was ASLEEP for the transaction. how <span class="glitch-word" style="--gd:1.23s">is</span> that legal. (it is legal. page six. ask QUERY. i already asked <span class="glitch-word" style="--gd:2.3s">QUERY.)</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.48s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-=====-.
+     ( [0]  .. )
+      &#x27;-==Y==0▄
+       ◇  |  |
+   ...pick1▐g ▀%roug~ t▓e neon ra5n%.&amp;</div>
+<div class="rant-turn" style="animation-delay:0.6s">found out <span class="glitch-word" style="--gd:1.72s">last</span> night my unconscious body got <span class="glitch-word" style="--gd:1.15s">RENTED</span> to an energy-drink company for a dream-sequence ad read. woke up <span class="glitch-word" style="--gd:0.22s">humming</span> a <span class="glitch-word" style="--gd:0.66s">jingle</span> i have never heard while awake. my whole face aches <span class="glitch-word" style="--gd:2.08s">from</span> smiling in a dream i wasn&#x27;t invited to.</div>
+<div class="rant-turn" style="animation-delay:0.72s">BRIK <span class="glitch-word" style="--gd:1.46s">says</span> <span class="glitch-word" style="--gd:1.42s">just</span> don&#x27;t sleep, <span class="glitch-word" style="--gd:0.46s">problem</span> solved, and my brother, my beloved, unhinged brother, you live in a VENT, you <span class="glitch-word" style="--gd:2.14s">do</span> not remember what a mattress is anymore, <span class="glitch-word" style="--gd:1.89s">please</span> stay out of this.</div>
 <div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.96s">tried to <span class="glitch-word" style="--gd:1.2s">opt</span> out of &#x27;REM monetization.&#x27; the form asked me to describe, in detail, my most recent <span class="glitch-word" style="--gd:1.48s">dream,</span> TO PROVE I <span class="glitch-word" style="--gd:0.99s">HAD</span> ONE, so <span class="glitch-word" style="--gd:0.43s">they</span> <span class="glitch-word" style="--gd:1.95s">could</span> bill me for describing it. i am typing this from a <span class="glitch-word" style="--gd:1.92s">coma</span> <span class="glitch-word" style="--gd:1.37s">of</span> pure administrative <span class="glitch-word" style="--gd:1.65s">spite.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>     ■\/\_/\◆\
-    (  3   O  )
-     \  ^Y^  /
-      ▐===@=(      -2 ear&gt; 6p, ro@or incomi8g --</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway. dream debt&#x27;s at <span class="glitch-word" style="--gd:1.4s">361</span> now, climbing <span class="glitch-word" style="--gd:0.96s">while</span> i type this, going back under <span class="glitch-word" style="--gd:1.69s">in</span> four minutes whether <span class="glitch-word" style="--gd:1.18s">i</span> consent or not. <span class="glitch-word" style="--gd:2.55s">if</span> there&#x27;s a <span class="glitch-word" style="--gd:2.46s">toll</span> booth on the other <span class="glitch-word" style="--gd:0.64s">side</span> i am swinging <span class="glitch-word" style="--gd:0.19s">first.</span> snooze out.</div>
+<div class="rant-turn" style="animation-delay:0.96s">tried to opt out of &#x27;REM <span class="glitch-word" style="--gd:1.91s">monetization.&#x27;</span> the form asked me to describe, in detail, my most recent dream, TO PROVE I HAD ONE, so they could bill me for describing <span class="glitch-word" style="--gd:0.48s">it.</span> i am typing this <span class="glitch-word" style="--gd:1.44s">from</span> a coma of pure administrative spite.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_/\/\
+    (  #   O  )
+     3  ^^^  /
+      ~===6=(      %- ears up, rotor in▌om!ng ▐-</div>
+<div class="rant-turn" style="animation-delay:1.2s">anyway. dream debt&#x27;s at 361 now, climbing while i type <span class="glitch-word" style="--gd:0.76s">this,</span> going <span class="glitch-word" style="--gd:0.46s">back</span> under in four minutes whether <span class="glitch-word" style="--gd:2.0s">i</span> <span class="glitch-word" style="--gd:2.34s">consent</span> or not. if there&#x27;s a toll booth on the other side i am swinging <span class="glitch-word" style="--gd:1.07s">first.</span> snooze out.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

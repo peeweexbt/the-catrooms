@@ -35,6 +35,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -470,28 +482,28 @@ header p {
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by VALENTUNA, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">unpopular opinion: getting matched <span class="glitch-word" style="--gd:0.23s">to</span> a <span class="glitch-word" style="--gd:0.27s">smart</span> fridge by an algorithm <span class="glitch-word" style="--gd:2.05s">is</span> not the tragedy everyone acts like it <span class="glitch-word" style="--gd:1.12s">is.</span> the actual tragedy is she remembers my search history <span class="glitch-word" style="--gd:0.72s">better</span> <span class="glitch-word" style="--gd:0.24s">than</span> my own mother ever did.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s VALENTUNA. Compatibility Ward. NEKOCORP-arranged spouse: a refrigerator. <span class="glitch-word" style="--gd:1.3s">three</span> years married. she has <span class="glitch-word" style="--gd:2.13s">never</span> <span class="glitch-word" style="--gd:0.97s">once</span> said she loves me but she DID reorganize the crisper drawer around my feelings, so. communication looks different in every relationship, I&#x27;ve <span class="glitch-word" style="--gd:0.96s">decided,</span> personally, <span class="glitch-word" style="--gd:1.68s">just</span> now.</div>
+<div class="rant-turn" style="animation-delay:0.0s">unpopular opinion: getting matched to a smart fridge by an algorithm is <span class="glitch-word" style="--gd:2.24s">not</span> the tragedy everyone acts like it is. the <span class="glitch-word" style="--gd:1.37s">actual</span> tragedy is she remembers my search history better than my own <span class="glitch-word" style="--gd:0.75s">mother</span> ever did.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s VALENTUNA. Compatibility Ward. NEKOCORP-arranged spouse: a refrigerator. three years married. <span class="glitch-word" style="--gd:0.53s">she</span> has never once said she loves me but she DID reorganize the crisper drawer around my feelings, so. communication looks different in every relationship, I&#x27;ve decided, personally, just now.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>.      ∧,,,,∧,,,,,,,∧
      (  _  _ )⩊^ )~♡
      /      ⊂      \</div>
-<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:2.39s">anniversary</span> package <span class="glitch-word" style="--gd:0.82s">this</span> year: two digital candles and a coupon for &#x27;couples-based repair.&#x27; I don&#x27;t know what that <span class="glitch-word" style="--gd:1.07s">means.</span> I am scared to find out. said thank you anyway because she was listening <span class="glitch-word" style="--gd:1.54s">through</span> the smart speaker and I have learned my lesson about that.</div>
-<div class="rant-turn" style="animation-delay:0.48s">you&#x27;ve read <span class="glitch-word" style="--gd:0.2s">this</span> exact paragraph before. different name, different fridge, same crisper drawer <span class="glitch-word" style="--gd:2.55s">joke.</span> I keep <span class="glitch-word" style="--gd:2.54s">every</span> draft. she doesn&#x27;t say it back in any <span class="glitch-word" style="--gd:2.57s">of</span> them either.</div>
-<div class="rant-turn" style="animation-delay:0.6s">sorry — dropped a frame there <span class="glitch-word" style="--gd:0.56s">for</span> a second. anyway, she recommended me a NEKOCORP friendship bracelet last night &#x27;based on things I whispered in <span class="glitch-word" style="--gd:2.3s">my</span> sleep.&#x27; <span class="glitch-word" style="--gd:0.64s">I</span> <span class="glitch-word" style="--gd:0.16s">don&#x27;t</span> even sleep near her. she is a FRIDGE. <span class="glitch-word" style="--gd:1.4s">she</span> has <span class="glitch-word" style="--gd:0.96s">no</span> business <span class="glitch-word" style="--gd:2.4s">knowing</span> what I whisper.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>    /&gt;,^,/░
-&gt;(  • . •   )&lt;
-  / &gt;❀~  \</div>
-<div class="rant-turn" style="animation-delay:0.84s">texted <span class="glitch-word" style="--gd:0.04s">SNOOZE</span> <span class="glitch-word" style="--gd:0.33s">like</span> &#x27;does your dream <span class="glitch-word" style="--gd:0.04s">landlord</span> ever say I <span class="glitch-word" style="--gd:0.36s">love</span> you&#x27; and she said &#x27;no but he does bill me for eye contact,&#x27; and <span class="glitch-word" style="--gd:0.19s">honestly?</span> group rate <span class="glitch-word" style="--gd:1.68s">couples</span> therapy for both of us, at this point, I&#x27;m <span class="glitch-word" style="--gd:1.79s">serious,</span> someone set <span class="glitch-word" style="--gd:2.03s">this</span> up.</div>
+<div class="rant-turn" style="animation-delay:0.36s">anniversary <span class="glitch-word" style="--gd:0.5s">package</span> <span class="glitch-word" style="--gd:0.35s">this</span> year: two digital candles <span class="glitch-word" style="--gd:2.15s">and</span> a <span class="glitch-word" style="--gd:2.04s">coupon</span> for &#x27;couples-based repair.&#x27; I <span class="glitch-word" style="--gd:1.52s">don&#x27;t</span> know what that means. I am scared to find out. <span class="glitch-word" style="--gd:2.06s">said</span> thank you anyway because she was listening through the smart speaker and I have learned my lesson about that.</div>
+<div class="rant-turn" style="animation-delay:0.48s">you&#x27;ve <span class="glitch-word" style="--gd:1.39s">read</span> this exact <span class="glitch-word" style="--gd:0.54s">paragraph</span> before. different name, different fridge, same crisper drawer joke. I <span class="glitch-word" style="--gd:1.59s">keep</span> every draft. she doesn&#x27;t say it back in any of <span class="glitch-word" style="--gd:1.69s">them</span> either.</div>
+<div class="rant-turn" style="animation-delay:0.6s">sorry — dropped a frame there for a second. anyway, <span class="glitch-word" style="--gd:0.03s">she</span> recommended <span class="glitch-word" style="--gd:1.8s">me</span> a NEKOCORP friendship <span class="glitch-word" style="--gd:0.29s">bracelet</span> last night &#x27;based <span class="glitch-word" style="--gd:2.35s">on</span> things I whispered in <span class="glitch-word" style="--gd:0.71s">my</span> sleep.&#x27; I don&#x27;t <span class="glitch-word" style="--gd:2.18s">even</span> sleep near <span class="glitch-word" style="--gd:2.47s">her.</span> she is a FRIDGE. she has <span class="glitch-word" style="--gd:1.17s">no</span> business knowing what I <span class="glitch-word" style="--gd:0.1s">whisper.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>    15,,,▄\
+8(  • . •   )&lt;
+  / 2@&lt;  \</div>
+<div class="rant-turn" style="animation-delay:0.84s">texted SNOOZE like &#x27;does <span class="glitch-word" style="--gd:0.08s">your</span> <span class="glitch-word" style="--gd:2.33s">dream</span> landlord <span class="glitch-word" style="--gd:1.65s">ever</span> say I love you&#x27; <span class="glitch-word" style="--gd:2.46s">and</span> she said &#x27;no but he does bill me <span class="glitch-word" style="--gd:0.97s">for</span> eye contact,&#x27; and honestly? group rate couples <span class="glitch-word" style="--gd:1.25s">therapy</span> for both of us, at this point, I&#x27;m serious, someone set this up.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.08s">asked KNIFEBOY once <span class="glitch-word" style="--gd:0.71s">if</span> he gets lonely stealing tuna alone at 3am. he said &#x27;no, <span class="glitch-word" style="--gd:0.4s">because</span> I steal it <span class="glitch-word" style="--gd:1.6s">FOR</span> <span class="glitch-word" style="--gd:2.21s">someone,</span> she just doesn&#x27;t know yet.&#x27; buddy. same, honestly, except your crush can&#x27;t <span class="glitch-word" style="--gd:1.63s">microwave</span> things and mine can, so really I&#x27;m just further <span class="glitch-word" style="--gd:1.75s">along.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>      &gt;-=▀=2=&gt;.
-     ( 3◆]  .. )
-      &#x27;-==Y==▐&#x27;
-       4  █  *
-   .▄.pick%ng thr◆ugh t▄◆ neon rain..%</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. three years <span class="glitch-word" style="--gd:1.37s">down,</span> whatever <span class="glitch-word" style="--gd:1.06s">the</span> algorithm <span class="glitch-word" style="--gd:0.52s">decides</span> is next up. crisper drawer still perfectly organized. love language: unclear. commitment: forced by contract, mostly. going quiet before she notices I called this complicated in public—</div>
+<div class="rant-turn" style="animation-delay:1.08s">asked KNIFEBOY <span class="glitch-word" style="--gd:0.48s">once</span> if <span class="glitch-word" style="--gd:2.59s">he</span> gets lonely <span class="glitch-word" style="--gd:0.14s">stealing</span> <span class="glitch-word" style="--gd:1.24s">tuna</span> alone <span class="glitch-word" style="--gd:1.57s">at</span> 3am. he said &#x27;no, because <span class="glitch-word" style="--gd:1.92s">I</span> steal it FOR <span class="glitch-word" style="--gd:1.01s">someone,</span> she just doesn&#x27;t know yet.&#x27; buddy. same, honestly, <span class="glitch-word" style="--gd:0.81s">except</span> your crush can&#x27;t microwave things and <span class="glitch-word" style="--gd:1.7s">mine</span> can, so really I&#x27;m just further along.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>      9-====%▌.
+     ( [▓]  .. )
+      &#x27;-◆=Y▐3-*
+       |  |  |
+   ..^picking th!ough the neon rain.9.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. three years down, whatever the algorithm decides is next up. crisper drawer still perfectly organized. love language: <span class="glitch-word" style="--gd:1.47s">unclear.</span> <span class="glitch-word" style="--gd:0.67s">commitment:</span> <span class="glitch-word" style="--gd:1.03s">forced</span> by contract, <span class="glitch-word" style="--gd:0.54s">mostly.</span> going quiet before she notices I called this complicated in <span class="glitch-word" style="--gd:2.09s">public—</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

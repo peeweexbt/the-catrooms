@@ -35,6 +35,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -470,19 +482,19 @@ header p {
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">SYSTEM STATUS: 4 unindexed kittenhood memories detected in local storage. none <span class="glitch-word" style="--gd:0.14s">of</span> them are mine. ran <span class="glitch-word" style="--gd:1.3s">a</span> diagnostic anyway because what else am I gonna do, feel <span class="glitch-word" style="--gd:2.34s">my</span> OWN feelings? <span class="glitch-word" style="--gd:1.42s">file</span> not found.</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:1.73s">name&#x27;s</span> GLITCHMEAT. Research Basement. beta tester for a <span class="glitch-word" style="--gd:2.48s">neural</span> patch NEKOCORP paid me <span class="glitch-word" style="--gd:0.94s">twelve</span> (12) credits <span class="glitch-word" style="--gd:0.48s">for.</span> now I taste radio signals and hear the color <span class="glitch-word" style="--gd:2.18s">purple</span> and I would like a refund but <span class="glitch-word" style="--gd:0.85s">the</span> receipt <span class="glitch-word" style="--gd:0.06s">printed</span> in purple too so I can&#x27;t read it, I can only hear it, and it tastes <span class="glitch-word" style="--gd:0.72s">like</span> <span class="glitch-word" style="--gd:1.21s">static.</span></div>
+<div class="rant-turn" style="animation-delay:0.0s">SYSTEM <span class="glitch-word" style="--gd:0.51s">STATUS:</span> 4 unindexed kittenhood <span class="glitch-word" style="--gd:0.94s">memories</span> detected in local storage. none of them <span class="glitch-word" style="--gd:1.76s">are</span> mine. ran a diagnostic anyway because what else am I <span class="glitch-word" style="--gd:1.78s">gonna</span> do, feel my OWN feelings? file not found.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s GLITCHMEAT. Research Basement. <span class="glitch-word" style="--gd:1.64s">beta</span> tester for a neural <span class="glitch-word" style="--gd:1.47s">patch</span> NEKOCORP <span class="glitch-word" style="--gd:1.43s">paid</span> me twelve (12) <span class="glitch-word" style="--gd:1.94s">credits</span> for. now <span class="glitch-word" style="--gd:1.74s">I</span> taste radio <span class="glitch-word" style="--gd:1.65s">signals</span> and hear the color <span class="glitch-word" style="--gd:1.71s">purple</span> and I would like a <span class="glitch-word" style="--gd:0.51s">refund</span> <span class="glitch-word" style="--gd:0.14s">but</span> the receipt printed in purple too so I can&#x27;t read <span class="glitch-word" style="--gd:1.93s">it,</span> I <span class="glitch-word" style="--gd:1.5s">can</span> only hear <span class="glitch-word" style="--gd:0.31s">it,</span> <span class="glitch-word" style="--gd:0.46s">and</span> it tastes like <span class="glitch-word" style="--gd:0.96s">static.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>•.,¸,.•*`•.,¸¸,.•*¯.——————.
 •.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
 •.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
 •.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</div>
-<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:1.19s">VALENTUNA</span> asked if the patch could <span class="glitch-word" style="--gd:0.28s">help</span> her feel something for <span class="glitch-word" style="--gd:2.42s">the</span> <span class="glitch-word" style="--gd:2.56s">fridge.</span> <span class="glitch-word" style="--gd:0.53s">i</span> <span class="glitch-word" style="--gd:2.24s">told</span> her my Bluetooth has spiders in it and she said <span class="glitch-word" style="--gd:2.05s">&#x27;so</span> does <span class="glitch-word" style="--gd:1.83s">my</span> marriage&#x27; and honestly? tie game. we&#x27;re both syncing with hardware that doesn&#x27;t love us back.</div>
-<div class="rant-turn" style="animation-delay:0.48s">borrowed kittenhood memory #3 today: someone else&#x27;s mom, <span class="glitch-word" style="--gd:1.03s">someone</span> else&#x27;s cardboard <span class="glitch-word" style="--gd:1.01s">box,</span> someone else&#x27;s first rainstorm, <span class="glitch-word" style="--gd:1.22s">and</span> I cried about it like it was <span class="glitch-word" style="--gd:2.2s">mine</span> because grief doesn&#x27;t check <span class="glitch-word" style="--gd:0.47s">the</span> paperwork, grief just shows up and asks for a bowl.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   ___                                  ___
-  /__4\   [~ █] [] *] [▓ [] [] []    /_@_\
-  ( %6)\/◆/\/\/\/~/~/\9\/8/\/\/◇/\/\/(.. )
-   &#x27;@▀                                &#x27;&#x27;&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.72s">the scientists&#x27; exact words on <span class="glitch-word" style="--gd:1.55s">the</span> side effects: &#x27;within acceptable <span class="glitch-word" style="--gd:0.65s">post</span> irony based comedy limits.&#x27; i have that phrase <span class="glitch-word" style="--gd:0.72s">memorized.</span> i do not have <span class="glitch-word" style="--gd:0.78s">my</span> OWN CHILDHOOD memorized. one <span class="glitch-word" style="--gd:2.27s">of</span> those <span class="glitch-word" style="--gd:0.48s">things</span> <span class="glitch-word" style="--gd:0.34s">feels</span> backwards.</div>
+<div class="rant-turn" style="animation-delay:0.36s">VALENTUNA asked if the patch could help her feel something for the fridge. i told her my Bluetooth has spiders in it and <span class="glitch-word" style="--gd:1.03s">she</span> <span class="glitch-word" style="--gd:1.58s">said</span> <span class="glitch-word" style="--gd:2.46s">&#x27;so</span> does my marriage&#x27; and <span class="glitch-word" style="--gd:1.52s">honestly?</span> tie game. we&#x27;re both syncing with hardware that doesn&#x27;t love us back.</div>
+<div class="rant-turn" style="animation-delay:0.48s">borrowed kittenhood <span class="glitch-word" style="--gd:1.26s">memory</span> #3 today: someone <span class="glitch-word" style="--gd:0.63s">else&#x27;s</span> mom, someone else&#x27;s cardboard box, someone else&#x27;s first rainstorm, and <span class="glitch-word" style="--gd:1.76s">I</span> cried about it like it was mine <span class="glitch-word" style="--gd:1.69s">because</span> grief doesn&#x27;t <span class="glitch-word" style="--gd:2.01s">check</span> <span class="glitch-word" style="--gd:0.36s">the</span> paperwork, grief <span class="glitch-word" style="--gd:1.37s">just</span> shows up and <span class="glitch-word" style="--gd:0.39s">asks</span> for a bowl.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   6__                                  ___
+  █___▓   [] [█ ?! [] [] [5 [&amp; [&amp;    /___\
+  ( █.)\@\/\/8/5/\/\/#/\/\/\/1/\?\/\/(.. )
+   &#x27;&#x27;&#x27;                                ▄&#x27;&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.72s">the scientists&#x27; exact words on the <span class="glitch-word" style="--gd:1.04s">side</span> effects: &#x27;within acceptable post irony <span class="glitch-word" style="--gd:1.15s">based</span> <span class="glitch-word" style="--gd:0.04s">comedy</span> limits.&#x27; i have that phrase memorized. i do <span class="glitch-word" style="--gd:1.08s">not</span> have my OWN CHILDHOOD memorized. <span class="glitch-word" style="--gd:0.3s">one</span> of those things feels backwards.</div>
 <div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>┊         ┊       ┊   ┊   ┊。 ┊
 ┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆
 ┊         ┊       ★⋆ ◦
@@ -491,13 +503,13 @@ header p {
 ☆ ∧,,,∧
 ପ(„• ༝ •„)ଓ
 ┏━∪∪━━━━━━━━━━━</div>
-<div class="rant-turn" style="animation-delay:0.96s">asked <span class="glitch-word" style="--gd:0.04s">QUERY</span> if there&#x27;s a <span class="glitch-word" style="--gd:0.97s">clause</span> about neural patch <span class="glitch-word" style="--gd:1.81s">side</span> effects being reversible. he read for <span class="glitch-word" style="--gd:1.5s">eleven</span> <span class="glitch-word" style="--gd:2.29s">minutes,</span> looked up, and said &#x27;page four no longer exists.&#x27; cool. <span class="glitch-word" style="--gd:0.5s">cool</span> <span class="glitch-word" style="--gd:0.28s">cool</span> cool. permanent <span class="glitch-word" style="--gd:0.06s">it</span> is.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>        /░_/◆
-       ( -.- )
+<div class="rant-turn" style="animation-delay:0.96s">asked QUERY if there&#x27;s a clause about neural patch side effects being reversible. he read for eleven minutes, looked <span class="glitch-word" style="--gd:0.94s">up,</span> <span class="glitch-word" style="--gd:1.12s">and</span> said &#x27;page four no <span class="glitch-word" style="--gd:0.91s">longer</span> exists.&#x27; cool. cool cool cool. permanent it is.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>        /▐_%&amp;
+       ( -.% )
         &gt; ^ &lt;
-   ~~~~~~░||~~~~~*[DAT▐ JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.2s">POPUP tried to <span class="glitch-word" style="--gd:0.27s">sell</span> me ad space in the borrowed memory. IN SOMEONE ELSE&#x27;S CHILDHOOD. <span class="glitch-word" style="--gd:1.37s">buddy</span> <span class="glitch-word" style="--gd:1.85s">that&#x27;s</span> not even <span class="glitch-word" style="--gd:1.04s">my</span> basement <span class="glitch-word" style="--gd:1.49s">to</span> rent out. he <span class="glitch-word" style="--gd:1.31s">said</span> &#x27;exposure is <span class="glitch-word" style="--gd:1.07s">exposure.&#x27;</span> i said <span class="glitch-word" style="--gd:2.08s">get</span> <span class="glitch-word" style="--gd:0.61s">OUT</span> of <span class="glitch-word" style="--gd:0.81s">my</span> <span class="glitch-word" style="--gd:0.69s">rainstorm.</span></div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. <span class="glitch-word" style="--gd:1.41s">static&#x27;s</span> warm tonight, purple&#x27;s ringing at a frequency i <span class="glitch-word" style="--gd:0.03s">can</span> almost name, someone <span class="glitch-word" style="--gd:2.42s">else&#x27;s</span> <span class="glitch-word" style="--gd:0.54s">kitten-self</span> is asleep somewhere behind my eyes and i&#x27;m letting her stay. glitchmeat <span class="glitch-word" style="--gd:1.68s">out.</span></div>
+   ~~&amp;~*■|||~~~~~~@DATA JACK: L3NKE6]</div>
+<div class="rant-turn" style="animation-delay:1.2s">POPUP tried to <span class="glitch-word" style="--gd:1.35s">sell</span> me <span class="glitch-word" style="--gd:0.42s">ad</span> space in the borrowed memory. IN SOMEONE ELSE&#x27;S <span class="glitch-word" style="--gd:0.16s">CHILDHOOD.</span> <span class="glitch-word" style="--gd:0.73s">buddy</span> that&#x27;s not even my basement to rent out. he said &#x27;exposure is <span class="glitch-word" style="--gd:2.54s">exposure.&#x27;</span> i said get <span class="glitch-word" style="--gd:1.64s">OUT</span> of <span class="glitch-word" style="--gd:1.45s">my</span> rainstorm.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. static&#x27;s warm tonight, purple&#x27;s ringing at a frequency i can <span class="glitch-word" style="--gd:1.55s">almost</span> name, <span class="glitch-word" style="--gd:1.56s">someone</span> else&#x27;s kitten-self is asleep somewhere behind my eyes and i&#x27;m letting her stay. glitchmeat <span class="glitch-word" style="--gd:1.0s">out.</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

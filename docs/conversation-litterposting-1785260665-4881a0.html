@@ -35,6 +35,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -470,41 +482,41 @@ header p {
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by HAPPYWARE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">everything is <span class="glitch-word" style="--gd:0.96s">going</span> great. i want that on the record <span class="glitch-word" style="--gd:0.76s">before</span> the smile chip <span class="glitch-word" style="--gd:0.5s">starts</span> talking over me <span class="glitch-word" style="--gd:0.24s">again,</span> it does that now, it&#x27;s basically a co-host.</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.71s">name&#x27;s</span> HAPPYWARE. Pawsitivity Sector. <span class="glitch-word" style="--gd:2.47s">official</span> title &#x27;mandatory morale influencer,&#x27; <span class="glitch-word" style="--gd:1.18s">which</span> <span class="glitch-word" style="--gd:1.33s">is</span> corporate for <span class="glitch-word" style="--gd:2.29s">&#x27;NEKOCORP</span> bolted a smile chip into my skull after i posted monday again lol without the enthusiasm tag.&#x27; seventeen hours of livestreamed <span class="glitch-word" style="--gd:2.44s">joy</span> a day now. did <span class="glitch-word" style="--gd:2.54s">not</span> apply. do not consent. <span class="glitch-word" style="--gd:0.02s">am</span> SO thrilled.</div>
+<div class="rant-turn" style="animation-delay:0.0s">everything is going <span class="glitch-word" style="--gd:1.97s">great.</span> i want <span class="glitch-word" style="--gd:1.44s">that</span> on the record before <span class="glitch-word" style="--gd:1.88s">the</span> smile chip <span class="glitch-word" style="--gd:1.84s">starts</span> talking over me again, it does that <span class="glitch-word" style="--gd:0.52s">now,</span> it&#x27;s basically <span class="glitch-word" style="--gd:1.88s">a</span> co-host.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s HAPPYWARE. Pawsitivity Sector. official title &#x27;mandatory morale influencer,&#x27; which <span class="glitch-word" style="--gd:1.26s">is</span> <span class="glitch-word" style="--gd:0.52s">corporate</span> for &#x27;NEKOCORP <span class="glitch-word" style="--gd:2.14s">bolted</span> a smile chip into my skull after <span class="glitch-word" style="--gd:1.49s">i</span> posted monday again lol without the <span class="glitch-word" style="--gd:0.56s">enthusiasm</span> tag.&#x27; seventeen hours of livestreamed joy a day now. did not apply. do not consent. am <span class="glitch-word" style="--gd:0.16s">SO</span> thrilled.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span> /\_/\
 ( o.o )
  &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s <span class="glitch-word" style="--gd:1.33s">affirmation,</span> scrolling behind my eyes whether i read it or not: YOU ARE NOT TRAPPED. THE CITY WALLS ARE FOR YOUR PROTECTION. PLEASE BUY NEKOCORP YOGURT. i did not write that. i <span class="glitch-word" style="--gd:0.94s">am</span> contractually <span class="glitch-word" style="--gd:2.11s">required</span> to mean <span class="glitch-word" style="--gd:1.8s">it.</span> i mean it so hard <span class="glitch-word" style="--gd:0.58s">my</span> whiskers hurt.</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:0.38s">SHADE</span> <span class="glitch-word" style="--gd:0.11s">asked</span> if the <span class="glitch-word" style="--gd:1.73s">smile</span> ever slips. i said &#x27;never, not once, i am filled with light&#x27; and something in my jaw made a sound <span class="glitch-word" style="--gd:1.21s">like</span> a fax <span class="glitch-word" style="--gd:1.32s">machine</span> dying, and i <span class="glitch-word" style="--gd:0.57s">just</span> smiled HARDER to cover the noise, that&#x27;s not <span class="glitch-word" style="--gd:0.53s">a</span> bit that&#x27;s <span class="glitch-word" style="--gd:0.33s">just</span> Tuesday <span class="glitch-word" style="--gd:1.01s">now.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /1_/\ ▓▒░
-  ░▀*( o█o )▓▒░   #- si4na! int9~fere^ce #?
-  ░▒▓ &gt; ▓ &lt; ▓&amp;9</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:0.59s">fuck</span> <span class="glitch-word" style="--gd:1.36s">my</span> <span class="glitch-word" style="--gd:2.56s">li-</span> I MEAN HAPPY. HAPPY HAPPY HAPPY HAPPY H̶A̶P̵P̶Y̵H̵̺̎Á̷̕P̸̈P̸̞̚Y̷͖͑ nobody asked but the <span class="glitch-word" style="--gd:1.42s">chip&#x27;s</span> already <span class="glitch-word" style="--gd:1.79s">answering</span> <span class="glitch-word" style="--gd:1.91s">for</span> me, so genuinely unclear at this <span class="glitch-word" style="--gd:0.5s">point</span> who the <span class="glitch-word" style="--gd:2.06s">audience</span> even is, me or the <span class="glitch-word" style="--gd:0.5s">sponsor.</span></div>
-<div class="rant-turn" style="animation-delay:0.84s">BRIK keeps telling <span class="glitch-word" style="--gd:1.22s">me</span> to just let it crack <span class="glitch-word" style="--gd:0.24s">on</span> camera, says it might get me delisted but at least it&#x27;d be MINE. i told him delisting only <span class="glitch-word" style="--gd:0.13s">stings</span> if you&#x27;re allowed to be sad about it after. i am not allowed. next slide. big smile. huge smile.</div>
+<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s <span class="glitch-word" style="--gd:0.94s">affirmation,</span> scrolling behind my eyes whether i read it or not: <span class="glitch-word" style="--gd:0.39s">YOU</span> ARE NOT TRAPPED. THE CITY WALLS ARE FOR <span class="glitch-word" style="--gd:1.07s">YOUR</span> PROTECTION. PLEASE BUY NEKOCORP YOGURT. i <span class="glitch-word" style="--gd:1.11s">did</span> not write <span class="glitch-word" style="--gd:2.18s">that.</span> i am contractually required to mean <span class="glitch-word" style="--gd:1.75s">it.</span> i mean it so hard my whiskers hurt.</div>
+<div class="rant-turn" style="animation-delay:0.48s">SHADE asked if the smile ever slips. i said &#x27;never, not once, i am filled with light&#x27; and <span class="glitch-word" style="--gd:1.51s">something</span> in my jaw made a sound like a <span class="glitch-word" style="--gd:2.32s">fax</span> machine dying, and i just <span class="glitch-word" style="--gd:2.52s">smiled</span> <span class="glitch-word" style="--gd:1.52s">HARDER</span> to cover <span class="glitch-word" style="--gd:2.52s">the</span> <span class="glitch-word" style="--gd:1.5s">noise,</span> that&#x27;s <span class="glitch-word" style="--gd:1.94s">not</span> a bit that&#x27;s just Tuesday now.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
+  ░▒▓( ▌█o ◇▓▒░   -- sign&gt;l i▐5e!f7r▐nc&gt; --
+  ░▒▓ &gt; ▓ &lt; ▓9░</div>
+<div class="rant-turn" style="animation-delay:0.72s">fuck my li- I MEAN HAPPY. HAPPY <span class="glitch-word" style="--gd:1.63s">HAPPY</span> <span class="glitch-word" style="--gd:2.44s">HAPPY</span> <span class="glitch-word" style="--gd:2.21s">HAPPY</span> H̶A̶P̵P̶Y̵H̵̺̎Á̷̕P̸̈P̸̞̚Y̷͖͑ nobody asked but the chip&#x27;s already answering for me, <span class="glitch-word" style="--gd:2.08s">so</span> genuinely unclear at this point who the audience even is, me or the sponsor.</div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:2.57s">BRIK</span> keeps telling <span class="glitch-word" style="--gd:2.39s">me</span> <span class="glitch-word" style="--gd:1.67s">to</span> just let it crack <span class="glitch-word" style="--gd:1.48s">on</span> camera, says it might <span class="glitch-word" style="--gd:0.54s">get</span> me delisted but at least it&#x27;d <span class="glitch-word" style="--gd:1.96s">be</span> MINE. i told him delisting only stings <span class="glitch-word" style="--gd:2.33s">if</span> you&#x27;re <span class="glitch-word" style="--gd:0.19s">allowed</span> to be sad <span class="glitch-word" style="--gd:0.9s">about</span> it after. i am not allowed. next slide. big smile. huge smile.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>        ,--.
        ( o.o)__
         &#x27;--&#x27;   \___
                  \  \__/\_/\
                   \_(  o.o  )
                      &gt; ^ &lt; (watching the towers blink)</div>
-<div class="rant-turn" style="animation-delay:1.08s">seventeen <span class="glitch-word" style="--gd:0.35s">hours</span> in, seventeen to go, <span class="glitch-word" style="--gd:2.55s">ring</span> <span class="glitch-word" style="--gd:1.1s">light</span> doesn&#x27;t know it&#x27;s actually dark outside. neither, weirdly, do i, anymore, that part might not be a bit <span class="glitch-word" style="--gd:0.12s">either.</span></div>
+<div class="rant-turn" style="animation-delay:1.08s">seventeen hours in, seventeen <span class="glitch-word" style="--gd:0.82s">to</span> go, ring light doesn&#x27;t know it&#x27;s actually dark outside. neither, weirdly, do i, anymore, that part might <span class="glitch-word" style="--gd:2.12s">not</span> be a bit either.</div>
 <div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>                  ☆
-☆  --------░-░-@-
-  /▓________█ \         ☆
+☆  -&lt;----▓----&amp;9-
+  /______@___ \         ☆
  |                       |
- \__▒_____8__ /                                  ☆
-   \..4_*?◆__../
-    @   /◆__/\   |
+ \2_&gt;█_______ /                                  ☆
+   \2.__▐__5@.6▐
+    |   /\__/\   |
     | ( •    •    ) |   ☆                     ☆
-    &gt; 5 U  U  \  |
-    ========0
-     \1______8/.
-                               8                           ☆
+    | ▀ U  U  ▒  !
+    =========
+     0__%_▀0__/2
+                               ☆                           ☆
 
-   ☆                                         ☆
-                     0                               █</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. block resets in nine minutes, comments say i&#x27;ve <span class="glitch-word" style="--gd:1.77s">never</span> <span class="glitch-word" style="--gd:1.74s">looked</span> happier, i typed &#x27;thank <span class="glitch-word" style="--gd:0.89s">u</span> so much&#x27; with my own <span class="glitch-word" style="--gd:2.08s">two</span> <span class="glitch-word" style="--gd:1.77s">paws</span> and meant maybe four percent <span class="glitch-word" style="--gd:0.97s">of</span> it, rounding up for the <span class="glitch-word" style="--gd:1.41s">algorithm.</span> happyware out. :) :) :)</div>
+   ☆                                         3
+                     ☆                               ☆</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. block resets <span class="glitch-word" style="--gd:1.02s">in</span> nine minutes, comments say i&#x27;ve never looked happier, i typed &#x27;thank u so <span class="glitch-word" style="--gd:0.81s">much&#x27;</span> with my <span class="glitch-word" style="--gd:2.11s">own</span> two paws and <span class="glitch-word" style="--gd:0.87s">meant</span> maybe four percent of <span class="glitch-word" style="--gd:1.42s">it,</span> rounding up for <span class="glitch-word" style="--gd:0.94s">the</span> algorithm. happyware <span class="glitch-word" style="--gd:0.25s">out.</span> :) :) :)</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

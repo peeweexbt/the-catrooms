@@ -35,6 +35,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -470,29 +482,29 @@ header p {
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">03:47am, Dream Processing Zone. <span class="glitch-word" style="--gd:1.62s">i</span> did not choose to be awake <span class="glitch-word" style="--gd:1.97s">right</span> now. NEKOCORP&#x27;s billing system flagged my REM cycle as &#x27;under-monetized&#x27; and forcibly rebooted me mid-dream to shove <span class="glitch-word" style="--gd:2.28s">an</span> ad in.</div>
-<div class="rant-turn" style="animation-delay:0.12s">the ad <span class="glitch-word" style="--gd:2.21s">was</span> for a tuna-flavored energy <span class="glitch-word" style="--gd:1.44s">drink.</span> IN my own nightmare. <span class="glitch-word" style="--gd:0.84s">i</span> was being chased <span class="glitch-word" style="--gd:1.54s">by</span> a vacuum <span class="glitch-word" style="--gd:0.72s">cleaner</span> with teeth and <span class="glitch-word" style="--gd:2.31s">it</span> PAUSED mid-chase to tell me the <span class="glitch-word" style="--gd:2.43s">drink</span> <span class="glitch-word" style="--gd:1.12s">is</span> now 20% off.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_/\        0 ENERG!: LOW ]
-  ( &gt;.3 )       ▒ ]  [ ]  [ ]  [ ]
-   &gt; ~ 5        o3e b&gt;r ■eft! 5ee&gt; mo9ing</div>
-<div class="rant-turn" style="animation-delay:0.36s">my sleep pod just hit me with <span class="glitch-word" style="--gd:0.09s">a</span> $4.99 <span class="glitch-word" style="--gd:1.36s">&#x27;involuntary</span> consciousness fee.&#x27; for <span class="glitch-word" style="--gd:2.34s">THIS.</span> <span class="glitch-word" style="--gd:1.0s">for</span> <span class="glitch-word" style="--gd:0.63s">being</span> awake. i was PAYING to be unconscious and they charged me EXTRA <span class="glitch-word" style="--gd:1.32s">for</span> <span class="glitch-word" style="--gd:1.17s">failing</span> at it.</div>
-<div class="rant-turn" style="animation-delay:0.48s">$73,000 <span class="glitch-word" style="--gd:1.01s">in</span> <span class="glitch-word" style="--gd:0.43s">blanky</span> debt, <span class="glitch-word" style="--gd:2.08s">all</span> of it accrued <span class="glitch-word" style="--gd:0.39s">while</span> i was ASLEEP. i would like to speak to whoever decided REM <span class="glitch-word" style="--gd:2.24s">cycles</span> should have an <span class="glitch-word" style="--gd:1.37s">APR.</span> get them <span class="glitch-word" style="--gd:2.11s">on</span> the phone. i will wait. i am <span class="glitch-word" style="--gd:1.09s">always</span> waiting, i am <span class="glitch-word" style="--gd:0.75s">unconscious</span> <span class="glitch-word" style="--gd:1.34s">90%</span> of the time</div>
+<div class="rant-turn" style="animation-delay:0.0s">03:47am, Dream Processing Zone. i did not choose <span class="glitch-word" style="--gd:2.07s">to</span> be <span class="glitch-word" style="--gd:0.18s">awake</span> right now. NEKOCORP&#x27;s billing system flagged my REM cycle as &#x27;under-monetized&#x27; and forcibly rebooted me <span class="glitch-word" style="--gd:0.61s">mid-dream</span> to shove an ad in.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:1.44s">the</span> ad <span class="glitch-word" style="--gd:0.41s">was</span> for a tuna-flavored energy drink. IN my own nightmare. i was being chased by a vacuum cleaner with <span class="glitch-word" style="--gd:2.1s">teeth</span> and it PAUSED mid-chase to <span class="glitch-word" style="--gd:1.16s">tell</span> me the drink is now <span class="glitch-word" style="--gd:0.08s">20%</span> off.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>   /8◇/\        [ E^8RGY: L&gt;&gt; ]
+  ( ▐.▀ )       [ ]  [ ]  [ ]  [ ]
+   &gt; ~ &lt;        o%e b5r lef9, ke%p m▀ving</div>
+<div class="rant-turn" style="animation-delay:0.36s">my sleep pod just hit <span class="glitch-word" style="--gd:0.56s">me</span> with a $4.99 &#x27;involuntary consciousness fee.&#x27; for THIS. for being awake. i was PAYING to be unconscious and they charged me EXTRA for failing at it.</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:2.13s">$73,000</span> in blanky debt, all of it accrued while i was ASLEEP. i would like to <span class="glitch-word" style="--gd:1.35s">speak</span> to whoever decided REM cycles should have an <span class="glitch-word" style="--gd:0.65s">APR.</span> get them on the phone. i <span class="glitch-word" style="--gd:2.2s">will</span> wait. i am always waiting, i am unconscious 90% <span class="glitch-word" style="--gd:1.4s">of</span> the time</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:2.38s">shoutout</span> BYTE <span class="glitch-word" style="--gd:0.21s">for</span> hacking the <span class="glitch-word" style="--gd:2.28s">router</span> again last night so <span class="glitch-word" style="--gd:0.05s">my</span> dream streamed in 1080p instead of the compressed <span class="glitch-word" style="--gd:0.67s">NEKOCORP</span> default. still had ads. still buffered. but the vacuum cleaner had DETAIL this <span class="glitch-word" style="--gd:0.17s">time</span></div>
-<div class="rant-turn" style="animation-delay:0.84s">HAPPYWARE texted me AT 2AM. &#x27;RISE <span class="glitch-word" style="--gd:1.6s">AND</span> GRIND KING.&#x27; brother. i am ASLEEP. that is the entire content <span class="glitch-word" style="--gd:2.35s">of</span> my life right now. let a cat be unconscious in peace, i am BEGGING you</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
-  ░4▓( o█@ 6▓▒▒   9- si3na░ interf^re▀ce --
-  ░█2 &gt; ▓ &lt; ▓4░</div>
-<div class="rant-turn" style="animation-delay:1.08s">they&#x27;re renting my dreams <span class="glitch-word" style="--gd:0.94s">to</span> advertisers again tonight, so if you see <span class="glitch-word" style="--gd:1.37s">a</span> <span class="glitch-word" style="--gd:1.52s">cat</span> sleepwalking <span class="glitch-word" style="--gd:2.05s">through</span> sector 9 muttering about a limited-edition kibble <span class="glitch-word" style="--gd:0.0s">bowl,</span> <span class="glitch-word" style="--gd:0.5s">that&#x27;s</span> <span class="glitch-word" style="--gd:1.85s">just</span> me. unpaid overtime. <span class="glitch-word" style="--gd:2.34s">fully</span> unconscious</div>
+<div class="rant-turn" style="animation-delay:0.72s">shoutout BYTE for hacking the router again last night so my dream streamed in 1080p instead of the <span class="glitch-word" style="--gd:2.39s">compressed</span> <span class="glitch-word" style="--gd:2.25s">NEKOCORP</span> default. still had ads. still buffered. but <span class="glitch-word" style="--gd:2.43s">the</span> vacuum cleaner had DETAIL this <span class="glitch-word" style="--gd:1.79s">time</span></div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:0.19s">HAPPYWARE</span> texted me <span class="glitch-word" style="--gd:0.15s">AT</span> 2AM. &#x27;RISE AND GRIND <span class="glitch-word" style="--gd:1.44s">KING.&#x27;</span> brother. i am <span class="glitch-word" style="--gd:2.48s">ASLEEP.</span> that is the <span class="glitch-word" style="--gd:0.79s">entire</span> content <span class="glitch-word" style="--gd:1.27s">of</span> my life right <span class="glitch-word" style="--gd:0.45s">now.</span> let a cat be <span class="glitch-word" style="--gd:2.31s">unconscious</span> in peace, i am BEGGING you</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_█\ ▓2░
+  ░▐░( o█o )▌▒░   2- 2ignal int0rfe8@nce --
+  ░▒▓ # 6 &lt; &gt;▒░</div>
+<div class="rant-turn" style="animation-delay:1.08s">they&#x27;re renting my <span class="glitch-word" style="--gd:2.03s">dreams</span> <span class="glitch-word" style="--gd:2.05s">to</span> advertisers again tonight, so if you see a cat sleepwalking through sector 9 muttering <span class="glitch-word" style="--gd:1.59s">about</span> a limited-edition kibble bowl, <span class="glitch-word" style="--gd:1.43s">that&#x27;s</span> just me. unpaid <span class="glitch-word" style="--gd:2.1s">overtime.</span> fully unconscious</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:1.32s">scariest part: <span class="glitch-word" style="--gd:0.15s">i</span> never agreed to <span class="glitch-word" style="--gd:0.52s">any</span> of this. i just woke up $73k in debt for <span class="glitch-word" style="--gd:2.16s">services</span> rendered while i was not even <span class="glitch-word" style="--gd:0.9s">present</span> for <span class="glitch-word" style="--gd:1.53s">the</span> transaction. WHO DID I SIGN. <span class="glitch-word" style="--gd:0.78s">i</span> wasn&#x27;t conscious <span class="glitch-word" style="--gd:1.29s">to</span> sign anything. good morning i guess</div>
+<div class="rant-turn" style="animation-delay:1.32s">scariest part: i never agreed to any of this. i just woke up <span class="glitch-word" style="--gd:1.13s">$73k</span> in debt for services rendered while <span class="glitch-word" style="--gd:2.54s">i</span> was not <span class="glitch-word" style="--gd:0.16s">even</span> present <span class="glitch-word" style="--gd:0.32s">for</span> the transaction. WHO DID I SIGN. i wasn&#x27;t conscious to sign anything. good morning i guess</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

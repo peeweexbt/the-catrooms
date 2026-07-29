@@ -35,6 +35,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -470,30 +482,30 @@ header p {
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">ok <span class="glitch-word" style="--gd:0.95s">i</span> need to vent for <span class="glitch-word" style="--gd:0.88s">a</span> <span class="glitch-word" style="--gd:1.87s">second</span> and this <span class="glitch-word" style="--gd:1.38s">stays</span> between us, whoever&#x27;s reading this <span class="glitch-word" style="--gd:0.46s">off</span> a stolen transcript at 2am</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BYTE. Server Alley 9. official job: illegal wifi auditor. unofficial job: personally holding the entire district&#x27;s black market bandwidth together with duct tape and <span class="glitch-word" style="--gd:1.92s">spite</span></div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.89s">ok</span> <span class="glitch-word" style="--gd:2.47s">i</span> need to <span class="glitch-word" style="--gd:1.86s">vent</span> <span class="glitch-word" style="--gd:2.13s">for</span> a second and this stays between us, whoever&#x27;s reading this off a <span class="glitch-word" style="--gd:2.16s">stolen</span> transcript <span class="glitch-word" style="--gd:0.87s">at</span> <span class="glitch-word" style="--gd:0.02s">2am</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BYTE. Server Alley 9. <span class="glitch-word" style="--gd:2.02s">official</span> job: illegal wifi auditor. unofficial <span class="glitch-word" style="--gd:1.66s">job:</span> personally <span class="glitch-word" style="--gd:1.12s">holding</span> <span class="glitch-word" style="--gd:0.19s">the</span> entire district&#x27;s black market bandwidth together with duct tape and spite</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">cracked router #6 <span class="glitch-word" style="--gd:0.13s">tonight</span> for <span class="glitch-word" style="--gd:0.35s">the</span> <span class="glitch-word" style="--gd:0.02s">eleventh</span> time this month. NEKOCORP changes the password every 48 hours. i <span class="glitch-word" style="--gd:0.47s">change</span> <span class="glitch-word" style="--gd:2.28s">my</span> whole personality every 47. we are in an arms <span class="glitch-word" style="--gd:0.29s">race</span> and only one of <span class="glitch-word" style="--gd:0.5s">us</span> has a pension</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:0.26s">the</span> reward for <span class="glitch-word" style="--gd:1.57s">all</span> this labor? one (1) low-res fish video. buffers at the good part. <span class="glitch-word" style="--gd:0.07s">EVERY</span> TIME. the fish just freezes mid-jump like it too got flagged for premium content</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
-  ░▒▓( o█o )%6░   -- s▐gna▒ i▌3e@fere?c3 --
-  ░▒▓ &gt; ▓ &lt; 4&amp;3</div>
-<div class="rant-turn" style="animation-delay:0.72s">shoutout SNOOZE, i <span class="glitch-word" style="--gd:0.42s">hacked</span> <span class="glitch-word" style="--gd:0.91s">her</span> sleep <span class="glitch-word" style="--gd:2.59s">pod&#x27;s</span> router last week so the <span class="glitch-word" style="--gd:1.89s">ads</span> in her <span class="glitch-word" style="--gd:0.42s">nightmare</span> streamed in 1080p, she said thank you, then fell back asleep before finishing the <span class="glitch-word" style="--gd:2.15s">sentence,</span> that&#x27;s the whole friendship honestly</div>
-<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY keeps offering me a cut of stolen <span class="glitch-word" style="--gd:1.41s">tuna</span> to scrub his face <span class="glitch-word" style="--gd:2.18s">off</span> every camera in the alley. tempting. but if i start deleting HIS face i gotta start deleting MY face <span class="glitch-word" style="--gd:0.85s">and</span> then what am <span class="glitch-word" style="--gd:0.45s">i</span> even <span class="glitch-word" style="--gd:2.21s">doing</span> <span class="glitch-word" style="--gd:2.02s">here.</span> principles. i have several</div>
+<div class="rant-turn" style="animation-delay:0.36s">cracked <span class="glitch-word" style="--gd:1.21s">router</span> #6 tonight for the eleventh time this month. NEKOCORP changes the password every 48 hours. i change my whole <span class="glitch-word" style="--gd:1.25s">personality</span> every 47. we are <span class="glitch-word" style="--gd:2.18s">in</span> an arms race and <span class="glitch-word" style="--gd:2.22s">only</span> <span class="glitch-word" style="--gd:0.89s">one</span> of us has a pension</div>
+<div class="rant-turn" style="animation-delay:0.48s">the reward for all this <span class="glitch-word" style="--gd:1.29s">labor?</span> one <span class="glitch-word" style="--gd:1.26s">(1)</span> low-res <span class="glitch-word" style="--gd:0.66s">fish</span> video. buffers <span class="glitch-word" style="--gd:0.35s">at</span> the good part. <span class="glitch-word" style="--gd:1.58s">EVERY</span> TIME. the fish just freezes mid-jump like it <span class="glitch-word" style="--gd:0.22s">too</span> got flagged for premium content</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /?_/\ ▓▒░
+  !▒▓( o█~ )▓▒░   -- signal ▌nterference --
+  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">shoutout <span class="glitch-word" style="--gd:0.47s">SNOOZE,</span> i hacked her sleep pod&#x27;s router last week so <span class="glitch-word" style="--gd:0.52s">the</span> ads <span class="glitch-word" style="--gd:1.81s">in</span> <span class="glitch-word" style="--gd:1.68s">her</span> nightmare <span class="glitch-word" style="--gd:0.41s">streamed</span> in 1080p, she said thank you, then fell back asleep before finishing the <span class="glitch-word" style="--gd:0.84s">sentence,</span> that&#x27;s the whole friendship <span class="glitch-word" style="--gd:1.53s">honestly</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY keeps offering me a cut of stolen tuna <span class="glitch-word" style="--gd:0.81s">to</span> scrub <span class="glitch-word" style="--gd:0.46s">his</span> face off every camera in the <span class="glitch-word" style="--gd:1.02s">alley.</span> tempting. but <span class="glitch-word" style="--gd:1.81s">if</span> i start deleting HIS face i gotta start <span class="glitch-word" style="--gd:1.46s">deleting</span> MY face and then what am i even doing here. principles. i have several</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:1.08s">every night <span class="glitch-word" style="--gd:0.55s">i</span> wait for the knock. <span class="glitch-word" style="--gd:1.96s">it</span> doesn&#x27;t come. i wait anyway. THREAT LEVEL: <span class="glitch-word" style="--gd:0.77s">doormat.</span> STATUS: still connected. PING: 4ms and <span class="glitch-word" style="--gd:1.59s">dropping</span></div>
+<div class="rant-turn" style="animation-delay:1.08s">every night i wait for the knock. it doesn&#x27;t come. <span class="glitch-word" style="--gd:1.28s">i</span> wait <span class="glitch-word" style="--gd:0.92s">anyway.</span> THREAT LEVEL: doormat. <span class="glitch-word" style="--gd:0.24s">STATUS:</span> still connected. PING: 4ms and dropping</div>
 <div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_/\
-       ( -.2 )
+       % -.- )
         &gt; &gt; &lt;
-   ~◇~8~~|||~2~◆█~[DA6A JA9K&gt; L▐NKED]</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway router&#x27;s back <span class="glitch-word" style="--gd:0.41s">up,</span> stream&#x27;s live, fish is still frozen mid-jump, and if this transcript disappears by morning you&#x27;ll know why. byte out. keep your bandwidth close and your <span class="glitch-word" style="--gd:0.33s">enemies</span> closer <span class="glitch-word" style="--gd:0.52s">to</span> the router</div>
+   ◇~~~9~|||~~5~~~[▀A6A *▓C&amp;: L@NKED]</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway router&#x27;s <span class="glitch-word" style="--gd:2.45s">back</span> up, stream&#x27;s live, fish is still frozen mid-jump, and if <span class="glitch-word" style="--gd:1.52s">this</span> transcript disappears by <span class="glitch-word" style="--gd:1.63s">morning</span> you&#x27;ll know why. byte out. keep your <span class="glitch-word" style="--gd:1.66s">bandwidth</span> <span class="glitch-word" style="--gd:0.12s">close</span> and your enemies closer to the router</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

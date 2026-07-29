@@ -59,6 +59,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -1174,18 +1186,47 @@ def _est_decor_height_pct(art):
     return min(14.0, max(3.0, n_lines * 1.8 + 1.2))
 
 
-def build_decorations(ascii_list):
-    """Scatter ascii_cats.ASCII_CATS art along the left/right margins of the
-    homepage as faint decoration. Only visible on wide viewports (see the
-    @media rule in CSS) so it never competes with or squeezes the actual
-    card grid. Positions/colors reshuffle on every rebuild for a bit of
-    life, but pieces are packed per-side (sorted by a random target
-    position, then nudged down just enough to clear whatever landed right
-    above them) so they don't overlap each other."""
-    if not ascii_list:
+def _extract_meowizen_face(stat):
+    """Pull just the cat-face glyph out of a MEOWIZENS "stat" block, dropping
+    the NAME/JOB/DISTRICT text next to/below it. The face art always lives
+    in the first 3 lines (the 4th is always a DISTRICT-only line with no
+    glyph); within those 3 lines, the face ends at the first run of 2+
+    spaces that appears *after* the line's leading indentation (that gap is
+    what separates the glyph column from the "NAME: ..."/"JOB: ..." text)."""
+    face_lines = []
+    for line in stat.split("\n")[:3]:
+        idx = 0
+        n = len(line)
+        while idx < n and line[idx] == " ":
+            idx += 1
+        cut = n
+        i = idx
+        while i < n - 1:
+            if line[i] == " " and line[i + 1] == " ":
+                cut = i
+                break
+            i += 1
+        face_lines.append(line[:cut])
+    while face_lines and not face_lines[-1].strip():
+        face_lines.pop()
+    return "\n".join(face_lines)
+
+
+def build_decorations(ascii_list, glitch_list=None):
+    """Scatter ascii_cats.ASCII_CATS art (plus, optionally, a second pool of
+    art that gets an idle glitch animation — used for the Meowizen face
+    cameos) along the left/right margins of the homepage as faint
+    decoration. Only visible on wide viewports (see the @media rule in CSS)
+    so it never competes with or squeezes the actual card grid.
+    Positions/colors reshuffle on every rebuild for a bit of life, but
+    pieces are packed per-side (sorted by a random target position, then
+    nudged down just enough to clear whatever landed right above them) so
+    they don't overlap each other."""
+    glitch_list = glitch_list or []
+    if not ascii_list and not glitch_list:
         return ""
 
-    items = list(ascii_list)
+    items = [(art, False) for art in ascii_list] + [(art, True) for art in glitch_list]
     random.shuffle(items)
     n = len(items)
     half = max(1, (n + 1) // 2)
@@ -1193,18 +1234,19 @@ def build_decorations(ascii_list):
     # queue up a rough target position per piece: the main scatter spreads
     # down the whole page, a handful of extras are biased toward the top
     # since that band otherwise ends up sparse.
-    queue = []  # [side, target_top, art]
-    for i, art in enumerate(items):
+    queue = []  # [side, target_top, art, glitching]
+    for i, (art, glitching) in enumerate(items):
         side = "left" if i % 2 == 0 else "right"
         row = i // 2
         base_top = 10 + row * (82 / half)
         target = max(4, min(96, base_top + random.uniform(-3, 3)))
-        queue.append([side, target, art])
+        queue.append([side, target, art, glitching])
 
     extra_count = min(8, max(4, n // 2))
     for i in range(extra_count):
         side = "left" if i % 2 == 0 else "right"
-        queue.append([side, random.uniform(2, 24), random.choice(ascii_list)])
+        art, glitching = random.choice(items)
+        queue.append([side, random.uniform(2, 24), art, glitching])
 
     # place each side independently, sorted by target position, nudging
     # any piece down just enough to clear the previous one on that side so
@@ -1221,23 +1263,26 @@ def build_decorations(ascii_list):
         # anything — since the queue is sorted by target position, every
         # later item needs at least as much room, so nothing past this
         # point would fit either.
-        placements = []  # [top, height, art]
+        placements = []  # [top, height, art, glitching]
         cursor = top_min
-        for _, target, art in side_queue:
+        for _, target, art, glitching in side_queue:
             height = _est_decor_height_pct(art)
             top = max(target, cursor)
             if top + height > top_max:
                 break
-            placements.append([top, height, art])
+            placements.append([top, height, art, glitching])
             cursor = top + height
 
-        for top, _height, art in placements:
+        for top, _height, art, glitching in placements:
             edge_offset = random.randint(6, 60)
             color = "var(--accent)" if random.random() < 0.5 else "var(--accent2)"
             opacity = round(random.uniform(0.16, 0.30), 2)
             style = f"top:{top:.1f}%; {side}:{edge_offset}px; color:{color}; opacity:{opacity};"
+            if glitching:
+                style += f" animation-delay:{round(random.uniform(0, 3.4), 2)}s;"
+            css_class = "decor-cat glitching" if glitching else "decor-cat"
             text = html.escape(art).strip("\n")
-            pieces.append(f'<pre class="decor-cat" style="{style}">{text}</pre>')
+            pieces.append(f'<pre class="{css_class}" style="{style}">{text}</pre>')
 
     return "\n".join(pieces)
 
@@ -1380,7 +1425,10 @@ def build(transcripts_dir, out_dir, gen_titles):
     hero_text = f'<div class="hero-glitch-block">{build_hero_html(HERO_GLITCH_TEXT)}</div>'
     index_html = INDEX_TEMPLATE.format(
         css=CSS,
-        decorations=build_decorations(ASCII_CATS),
+        decorations=build_decorations(
+            ASCII_CATS,
+            [_extract_meowizen_face(m["stat"]) for m in MEOWIZENS],
+        ),
         hero_text=hero_text,
         cards="\n".join(all_cards) or "<p style='color:#6b8f6a'>no transcripts yet — run backrooms.py first</p>",
     )

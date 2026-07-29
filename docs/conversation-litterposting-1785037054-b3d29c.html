@@ -35,6 +35,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -470,30 +482,30 @@ header p {
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:2.16s">Sprocket</span> started <span class="glitch-word" style="--gd:1.8s">it.</span> Again.</div>
-<div class="rant-turn" style="animation-delay:0.12s">Sprocket, scrapyard crew, self-appointed CEO of <span class="glitch-word" style="--gd:0.28s">a</span> totaled Buick, has claimed the engine block behind the wrecked sedan because &#x27;thermodynamics <span class="glitch-word" style="--gd:2.13s">said</span> so.&#x27; Sprocket does not <span class="glitch-word" style="--gd:2.53s">know</span> what thermodynamics means. Sprocket knows warm metal exists. that&#x27;s the whole resume</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  /\___/\
- %  o.o  )
-  &gt; @ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">meanwhile NekoCorp bolted a face-scanner onto <span class="glitch-word" style="--gd:1.94s">the</span> <span class="glitch-word" style="--gd:0.15s">fish</span> market alcove <span class="glitch-word" style="--gd:2.52s">now,</span> calls it <span class="glitch-word" style="--gd:1.41s">TABBYPASS,</span> denies you if your &#x27;expression doesn&#x27;t match historical mood data.&#x27; my face has ONE mood. it <span class="glitch-word" style="--gd:0.09s">is</span> this one. has ALWAYS been <span class="glitch-word" style="--gd:1.66s">this</span> one</div>
-<div class="rant-turn" style="animation-delay:0.48s">so I looped <span class="glitch-word" style="--gd:0.78s">a</span> length of bike chain over the sensor eye until <span class="glitch-word" style="--gd:1.56s">it</span> threw <span class="glitch-word" style="--gd:0.8s">a</span> <span class="glitch-word" style="--gd:1.49s">fault</span> code and just. stayed open. this was <span class="glitch-word" style="--gd:1.14s">not</span> a heist. <span class="glitch-word" style="--gd:2.59s">this</span> was an <span class="glitch-word" style="--gd:0.84s">ACCESSIBILITY</span> FIX and <span class="glitch-word" style="--gd:0.02s">I</span> will not be taking questions</div>
+<div class="rant-turn" style="animation-delay:0.0s">Sprocket started it. Again.</div>
+<div class="rant-turn" style="animation-delay:0.12s">Sprocket, scrapyard crew, self-appointed <span class="glitch-word" style="--gd:0.31s">CEO</span> of a totaled Buick, <span class="glitch-word" style="--gd:2.24s">has</span> claimed <span class="glitch-word" style="--gd:1.48s">the</span> engine block behind <span class="glitch-word" style="--gd:2.02s">the</span> wrecked <span class="glitch-word" style="--gd:0.78s">sedan</span> <span class="glitch-word" style="--gd:2.4s">because</span> &#x27;thermodynamics said so.&#x27; Sprocket does not know what thermodynamics means. Sprocket knows warm metal exists. that&#x27;s <span class="glitch-word" style="--gd:2.56s">the</span> whole resume</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  /\■_&amp;/\
+ (  o.o  )
+  &gt; ^ ^ &lt;</div>
+<div class="rant-turn" style="animation-delay:0.36s">meanwhile NekoCorp bolted a <span class="glitch-word" style="--gd:0.61s">face-scanner</span> onto the fish market alcove now, calls it <span class="glitch-word" style="--gd:0.3s">TABBYPASS,</span> denies <span class="glitch-word" style="--gd:1.48s">you</span> if <span class="glitch-word" style="--gd:0.57s">your</span> &#x27;expression doesn&#x27;t match historical mood data.&#x27; my face has ONE <span class="glitch-word" style="--gd:0.32s">mood.</span> it is this one. has ALWAYS been this one</div>
+<div class="rant-turn" style="animation-delay:0.48s">so I looped <span class="glitch-word" style="--gd:0.23s">a</span> <span class="glitch-word" style="--gd:1.97s">length</span> <span class="glitch-word" style="--gd:0.51s">of</span> <span class="glitch-word" style="--gd:0.0s">bike</span> chain over the sensor eye until it threw a fault code and just. stayed open. <span class="glitch-word" style="--gd:0.16s">this</span> was not a heist. this was an ACCESSIBILITY FIX and I will not be taking questions</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.72s">black market check-in: traded a hubcap, mint condition allegedly, to a possum <span class="glitch-word" style="--gd:1.33s">named</span> Rusty for four catnip mice and a promise he &#x27;didn&#x27;t see anything.&#x27; Rusty sees <span class="glitch-word" style="--gd:2.46s">everything.</span> Rusty just doesn&#x27;t care, <span class="glitch-word" style="--gd:2.26s">and</span> honestly? <span class="glitch-word" style="--gd:0.75s">respect</span></div>
-<div class="rant-turn" style="animation-delay:0.84s">checked <span class="glitch-word" style="--gd:0.53s">the</span> engine block at 3am. still warm. still not mine. <span class="glitch-word" style="--gd:2.31s">sat</span> on it <span class="glitch-word" style="--gd:1.39s">anyway.</span> Sprocket can file a complaint with the DMV, good <span class="glitch-word" style="--gd:0.93s">luck,</span> <span class="glitch-word" style="--gd:2.33s">the</span> car doesn&#x27;t even have plates anymore, I checked. I <span class="glitch-word" style="--gd:2.38s">checked</span> <span class="glitch-word" style="--gd:1.47s">FIRST</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>   _■_                                  __6
-  /%?_\   [] 3] [] ■] [5 *] [] ■]    ?_█◆\
-  ( .░)\7\/\&amp;\/\/\/\?\◇\8█■\/\/■2~/\/(▒3 █
-   8&#x27;&#x27;                                &#x27;&#x27;1</div>
-<div class="rant-turn" style="animation-delay:1.08s">the <span class="glitch-word" style="--gd:1.72s">arcology</span> tower&#x27;s got a <span class="glitch-word" style="--gd:2.17s">new</span> jingle — &#x27;a scanned cat is a <span class="glitch-word" style="--gd:1.08s">safe</span> <span class="glitch-word" style="--gd:1.06s">cat&#x27;</span> — and <span class="glitch-word" style="--gd:0.5s">some</span> engineer somewhere is VERY proud of that rhyme and I <span class="glitch-word" style="--gd:1.48s">need</span> <span class="glitch-word" style="--gd:0.55s">them</span> to know it doesn&#x27;t rhyme, it barely scans, <span class="glitch-word" style="--gd:2.43s">much</span> like their gate</div>
+<div class="rant-turn" style="animation-delay:0.72s">black market check-in: <span class="glitch-word" style="--gd:0.12s">traded</span> a hubcap, mint condition allegedly, to a <span class="glitch-word" style="--gd:1.6s">possum</span> named Rusty for four catnip <span class="glitch-word" style="--gd:1.54s">mice</span> <span class="glitch-word" style="--gd:2.21s">and</span> a promise <span class="glitch-word" style="--gd:0.97s">he</span> &#x27;didn&#x27;t <span class="glitch-word" style="--gd:0.81s">see</span> anything.&#x27; Rusty <span class="glitch-word" style="--gd:2.48s">sees</span> everything. Rusty just doesn&#x27;t care, and <span class="glitch-word" style="--gd:0.89s">honestly?</span> respect</div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:2.34s">checked</span> the engine block at 3am. still warm. still not mine. sat on it anyway. Sprocket can file <span class="glitch-word" style="--gd:1.47s">a</span> complaint with the DMV, good luck, the car doesn&#x27;t <span class="glitch-word" style="--gd:0.16s">even</span> <span class="glitch-word" style="--gd:1.84s">have</span> <span class="glitch-word" style="--gd:1.4s">plates</span> anymore, I checked. I checked FIRST</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>   ▀&gt;_                                  ___
+  /_!_\   [] [] [] [] [] [] [] []    /___\
+  ( .^▓\/\/█/\/\/\/\/■/\/\4\/◆/\/▒/\/(.. )
+   &#x27;&#x27;&#x27;                                &#x27;&#x27;&#x27;</div>
+<div class="rant-turn" style="animation-delay:1.08s">the arcology <span class="glitch-word" style="--gd:1.73s">tower&#x27;s</span> got a <span class="glitch-word" style="--gd:0.44s">new</span> jingle — <span class="glitch-word" style="--gd:0.53s">&#x27;a</span> scanned cat is a safe <span class="glitch-word" style="--gd:0.66s">cat&#x27;</span> — and some engineer somewhere is VERY <span class="glitch-word" style="--gd:2.29s">proud</span> of that rhyme and I <span class="glitch-word" style="--gd:0.25s">need</span> <span class="glitch-word" style="--gd:0.62s">them</span> to know it doesn&#x27;t rhyme, it barely scans, much like their gate</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>•.,¸,.•*`•.,¸¸,.•*¯.——————.
 •.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
 •.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
 •.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</div>
-<div class="rant-turn" style="animation-delay:1.32s">Sprocket keeps the engine block, TABBYPASS keeps its <span class="glitch-word" style="--gd:0.83s">fault</span> code, Rusty keeps <span class="glitch-word" style="--gd:0.92s">his</span> <span class="glitch-word" style="--gd:0.84s">secrets,</span> and I&#x27;m keeping <span class="glitch-word" style="--gd:0.65s">this</span> exact patch of <span class="glitch-word" style="--gd:2.1s">gravel</span> until further notice. sector&#x27;s yours <span class="glitch-word" style="--gd:2.39s">till</span> sunrise. <span class="glitch-word" style="--gd:1.63s">don&#x27;t</span> let the drones see you <span class="glitch-word" style="--gd:1.74s">smile</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">Sprocket keeps the <span class="glitch-word" style="--gd:0.94s">engine</span> block, TABBYPASS keeps its fault code, Rusty keeps his secrets, and I&#x27;m keeping <span class="glitch-word" style="--gd:1.31s">this</span> <span class="glitch-word" style="--gd:1.0s">exact</span> patch of gravel until <span class="glitch-word" style="--gd:2.57s">further</span> notice. <span class="glitch-word" style="--gd:2.45s">sector&#x27;s</span> yours till sunrise. don&#x27;t <span class="glitch-word" style="--gd:0.64s">let</span> the <span class="glitch-word" style="--gd:0.89s">drones</span> see you <span class="glitch-word" style="--gd:2.59s">smile</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

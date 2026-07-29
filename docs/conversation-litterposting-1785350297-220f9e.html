@@ -35,6 +35,18 @@ body {
   z-index: 0;
   text-shadow: 0 0 6px currentColor;
 }
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
 @media (max-width: 1500px) {
   .decor-cat { display: none; }
 }
@@ -470,32 +482,32 @@ header p {
 <a class="back" href="index.html">&larr; back</a>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">SLEEP DEBT: $73,014.06 and climbing. STATUS: have not technically been awake since the 2047 merger. filing this from inside a dream because <span class="glitch-word" style="--gd:2.11s">it&#x27;s</span> the only wifi that still works.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s SNOOZE. Dream Processing Zone. job title: full-time burnout. actual job: <span class="glitch-word" style="--gd:0.15s">unpaid</span> landlord to advertisers who moved into my skull and <span class="glitch-word" style="--gd:1.33s">never</span> left.</div>
+<div class="rant-turn" style="animation-delay:0.0s">SLEEP DEBT: <span class="glitch-word" style="--gd:2.49s">$73,014.06</span> and climbing. STATUS: have not technically been awake since <span class="glitch-word" style="--gd:0.49s">the</span> 2047 merger. filing this from inside a dream because it&#x27;s the only wifi that still <span class="glitch-word" style="--gd:1.23s">works.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s SNOOZE. Dream Processing Zone. job title: full-time burnout. actual job: unpaid <span class="glitch-word" style="--gd:0.4s">landlord</span> to advertisers <span class="glitch-word" style="--gd:0.89s">who</span> moved into my skull and <span class="glitch-word" style="--gd:0.52s">never</span> left.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>  /\___/\
  (  o.o  )
   &gt; ^ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">rolled over at 3am. pod charged me $4.99. rolled over AGAIN out <span class="glitch-word" style="--gd:2.6s">of</span> spite. charged me <span class="glitch-word" style="--gd:1.75s">again.</span> this isn&#x27;t sleep, it&#x27;s a subscription <span class="glitch-word" style="--gd:1.12s">service</span> with a body attached <span class="glitch-word" style="--gd:0.87s">to</span> <span class="glitch-word" style="--gd:2.51s">it.</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">had a normal nightmare last night, falling, teeth, an ex showing <span class="glitch-word" style="--gd:1.67s">up</span> uninvited. then a NEKOCORP tuna energy drink ad played over the <span class="glitch-word" style="--gd:1.79s">falling</span> part. hit <span class="glitch-word" style="--gd:1.17s">the</span> ground AND the product placement at the same time.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>      &lt;8==8==!▓
-     ( [0]  .. )
-      #-=▄Y==-&#x27;
-       7  &amp;  |
-   2..pi▀kin% throu4h the n&lt;▀n &gt;ain...</div>
-<div class="rant-turn" style="animation-delay:0.72s">BYTE keeps texting me screenshots of routers he&#x27;s cracked at <span class="glitch-word" style="--gd:2.27s">4am</span> like i&#x27;m <span class="glitch-word" style="--gd:2.32s">awake</span> to appreciate them. buddy. i <span class="glitch-word" style="--gd:0.24s">am</span> RENTED OUT right now. <span class="glitch-word" style="--gd:2.45s">i</span> am never home. <span class="glitch-word" style="--gd:0.62s">i</span> <span class="glitch-word" style="--gd:1.43s">have</span> not been <span class="glitch-word" style="--gd:2.47s">home</span> <span class="glitch-word" style="--gd:0.15s">in</span> years.</div>
-<div class="rant-turn" style="animation-delay:0.84s">dream got logged, sold, and monetized <span class="glitch-word" style="--gd:1.33s">before</span> i even finished having it. woke up to a <span class="glitch-word" style="--gd:1.98s">targeted</span> ad for the exact thing <span class="glitch-word" style="--gd:2.22s">i</span> <span class="glitch-word" style="--gd:1.6s">was</span> sad about two minutes ago in my own head. how. HOW.</div>
+<div class="rant-turn" style="animation-delay:0.36s">rolled over at <span class="glitch-word" style="--gd:2.27s">3am.</span> pod charged me $4.99. rolled over AGAIN out of spite. <span class="glitch-word" style="--gd:2.15s">charged</span> me again. this isn&#x27;t <span class="glitch-word" style="--gd:0.97s">sleep,</span> it&#x27;s a subscription service with a body attached to it.</div>
+<div class="rant-turn" style="animation-delay:0.48s">had a normal nightmare <span class="glitch-word" style="--gd:2.47s">last</span> night, falling, teeth, <span class="glitch-word" style="--gd:1.95s">an</span> <span class="glitch-word" style="--gd:0.67s">ex</span> showing up uninvited. then a NEKOCORP tuna energy drink ad played over the falling part. hit the <span class="glitch-word" style="--gd:0.36s">ground</span> AND the product placement at the same time.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>      .&gt;=@==▒-.
+     ◇ [#]  3. )
+      &#x27;%==Y==-^
+       |  |  |
+   .&amp;.▒i&gt;k#ng t*rough t@e neon rain..▄</div>
+<div class="rant-turn" style="animation-delay:0.72s">BYTE keeps texting me screenshots of routers he&#x27;s cracked at 4am like i&#x27;m awake to appreciate <span class="glitch-word" style="--gd:0.82s">them.</span> buddy. i am RENTED OUT right now. i am never home. i have <span class="glitch-word" style="--gd:0.35s">not</span> been home in years.</div>
+<div class="rant-turn" style="animation-delay:0.84s">dream got <span class="glitch-word" style="--gd:2.13s">logged,</span> sold, and monetized before i even finished having it. woke up to a targeted <span class="glitch-word" style="--gd:1.99s">ad</span> for the exact <span class="glitch-word" style="--gd:1.38s">thing</span> i was sad about two minutes ago in my own head. how. HOW.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:1.08s">HAPPYWARE sent me three morale pings while i was unconscious. bro i was COMATOSE. read the room. read the pod. read the sleep debt statement stapled to my forehead.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>        ,--.
-       7 o.o)6&lt;
-        &#x27;-&lt;*   @?_&lt;
-                 &gt;  \__4\▒/\
-                  \_(  o.o  )
-                     &gt; ^ &lt; (5at3hing the towers b#in%)</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. <span class="glitch-word" style="--gd:1.25s">blanky</span> <span class="glitch-word" style="--gd:1.28s">debt</span> still $73k. pod still billing. dream still <span class="glitch-word" style="--gd:2.35s">not</span> mine. goodnight i <span class="glitch-word" style="--gd:1.67s">guess,</span> whatever that word even means to me at this point.</div>
+<div class="rant-turn" style="animation-delay:1.08s">HAPPYWARE <span class="glitch-word" style="--gd:0.27s">sent</span> <span class="glitch-word" style="--gd:0.05s">me</span> three morale pings while i was unconscious. bro i was <span class="glitch-word" style="--gd:1.51s">COMATOSE.</span> read the room. <span class="glitch-word" style="--gd:0.68s">read</span> <span class="glitch-word" style="--gd:0.55s">the</span> pod. <span class="glitch-word" style="--gd:1.23s">read</span> the sleep <span class="glitch-word" style="--gd:1.82s">debt</span> statement <span class="glitch-word" style="--gd:0.02s">stapled</span> <span class="glitch-word" style="--gd:1.05s">to</span> my forehead.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>        ,&lt;-~
+       7 o9o?__
+        &#x27;--░   \_7_
+                 █  \__/\_/\
+                  █_(  ◇&amp;o  )
+                     &gt; ^ 9 9watchi4▒ 8he tow&amp;rs bl■nk)</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. blanky <span class="glitch-word" style="--gd:0.53s">debt</span> still $73k. pod <span class="glitch-word" style="--gd:2.27s">still</span> <span class="glitch-word" style="--gd:0.38s">billing.</span> dream still not mine. <span class="glitch-word" style="--gd:2.12s">goodnight</span> <span class="glitch-word" style="--gd:0.77s">i</span> guess, <span class="glitch-word" style="--gd:1.37s">whatever</span> that word even means to <span class="glitch-word" style="--gd:0.74s">me</span> <span class="glitch-word" style="--gd:0.93s">at</span> <span class="glitch-word" style="--gd:1.77s">this</span> point.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>
