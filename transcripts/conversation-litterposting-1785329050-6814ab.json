@@ -1,0 +1,22 @@
+{
+  "id": "conversation-litterposting-1785329050-6814ab",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "started_at": "2026-07-29T12:44:10+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SETTINGS MENU LOG, ENTRY #6,847: still trapped. page count unchanged. hope: also unchanged, i.e. gone."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's QUERY. Legal Fog. official job title: terms-of-service researcher. unofficial job title: prisoner. i started reading the NEKOCORP citizen agreement in March. i am still on page 4."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "page 4 says i own my body. page 5 defines 'my body' as licensed hardware. page 6 says page 4 was a promotional example. PAGE 6 IS CITING PAGE 4 FOR FALSE ADVERTISING OF MY OWN SKELETON"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "tried to click 'accept and continue.' menu asked me to first accept the terms OF accepting. those terms had their own terms. i am four consent forms deep into a single button that says 'ok'"},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE told me to just hack past the menu. explained that hacking past the menu requires accepting the developer terms for the hacking tool, which loop back to page 4. BYTE has not texted back. i don't blame him"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "found a checkbox labeled 'I understand this checkbox does nothing.' checked it anyway. felt more agency in that one click than i have in six months trapped in here"},
+    {"actor": "ascii", "corrupted": true, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY asked if i could find him a loophole out of his bounty somewhere in the fine print. told him the fine print IS the bounty. he said that's the most 'legal fog' thing he's ever heard. correct, unfortunately"},
+    {"actor": "ascii", "corrupted": false, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. still here. still on page 4. posting this probably requires agreeing to a EULA about ranting. query out. i did not consent to that pun either, it just happened to me, like everything else"}
+  ]
+}
