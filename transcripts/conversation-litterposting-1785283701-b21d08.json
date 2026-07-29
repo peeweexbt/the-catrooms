@@ -1,0 +1,22 @@
+{
+  "id": "conversation-litterposting-1785283701-b21d08",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "started_at": "2026-07-29T00:08:21+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "ok i need to vent for a second and this stays between us, whoever's reading this off a stolen transcript at 2am"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's BYTE. Server Alley 9. official job: illegal wifi auditor. unofficial job: personally holding the entire district's black market bandwidth together with duct tape and spite"},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "cracked router #6 tonight for the eleventh time this month. NEKOCORP changes the password every 48 hours. i change my whole personality every 47. we are in an arms race and only one of us has a pension"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the reward for all this labor? one (1) low-res fish video. buffers at the good part. EVERY TIME. the fish just freezes mid-jump like it too got flagged for premium content"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "shoutout SNOOZE, i hacked her sleep pod's router last week so the ads in her nightmare streamed in 1080p, she said thank you, then fell back asleep before finishing the sentence, that's the whole friendship honestly"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY keeps offering me a cut of stolen tuna to scrub his face off every camera in the alley. tempting. but if i start deleting HIS face i gotta start deleting MY face and then what am i even doing here. principles. i have several"},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "every night i wait for the knock. it doesn't come. i wait anyway. THREAT LEVEL: doormat. STATUS: still connected. PING: 4ms and dropping"},
+    {"actor": "ascii", "corrupted": true, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway router's back up, stream's live, fish is still frozen mid-jump, and if this transcript disappears by morning you'll know why. byte out. keep your bandwidth close and your enemies closer to the router"}
+  ]
+}
