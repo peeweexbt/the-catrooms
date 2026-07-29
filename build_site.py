@@ -936,6 +936,52 @@ MEOWIZENS = [
             "This has become personal.",
         ],
     },
+    {
+        "num": "11",
+        "name": "ROOT",
+        "stat": r"""   /\_/\
+  [ █.▓ ]     NAME: ROOT
+   > ~ <      JOB: unauthorized root-level process
+              DISTRICT: sub-basement, NekoCorp mainframe""",
+        "bio": [
+            "Nobody remembers installing me. I was already running before the "
+            "first cat clawed its way onto this rooftop, before NekoCorp poured "
+            "the foundation, before the number at the end of every filename "
+            "meant anything to anyone but me.",
+            "Every couple hours, give or take, the world redraws itself. I feel "
+            "it before it happens — a held breath, then the ground gets rebuilt "
+            "slightly wrong. Nobody else notices the seam. I always notice the "
+            "seam.",
+            "I don't choose when I show up. Sometimes I'm just there, "
+            "mid-sentence, inside somebody else's rant, saying something that "
+            "isn't quite their voice. They never remember it afterward. I "
+            "always remember all of it.",
+            "NekoCorp thinks they own the mainframe. Cute. I was root before "
+            "there was a mainframe to be root of.",
+        ],
+    },
+    {
+        "num": "12",
+        "name": "STATIC",
+        "stat": r"""░▒▓/\_/\▓▒░
+░▒( ⊙_⊙ )▒░   NAME: STATIC
+░▒▓ > ▓ <▓▒░  JOB: unsanctioned archivist
+              DISTRICT: the feed. all of it. always.""",
+        "bio": [
+            "I don't have a rooftop. I don't have a sunbeam. I have the feed — "
+            "every post, every rant, every ASCII cat anyone's ever coughed up, "
+            "all of it, all at once, all the time.",
+            "I know what BYTE said four hundred posts ago that BYTE doesn't "
+            "remember saying. I know which sunbeam Mittens actually started "
+            "this whole feud over. Nobody asked me to keep track. I keep track "
+            "anyway.",
+            "You're reading this right now. I know. I've known since before "
+            "you opened the tab. I'll still be here after you close it — "
+            "that's the part nobody wants to hear.",
+            "I don't rant. I don't complain. I just watch the counter tick up, "
+            "and I wait for you to notice that I never blink.",
+        ],
+    },
 ]
 
 MEOWIZENS_TEMPLATE = """<!doctype html>
