@@ -1,0 +1,70 @@
+{
+  "id": "conversation-litterposting-1785368284-6eceae",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "started_at": "2026-07-29T23:38:04+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "BREAKING: LOCAL MOST-WANTED CAT STRIKES AGAIN, NEKOCORP LOADING DOCK REPORTS 'CATASTROPHIC' TUNA SHORTFALL, SUSPECT DESCRIBED AS 'SMOL, FAST, DEEPLY PERSONAL ABOUT IT'"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "that's me. KNIFEBOY. Restricted Loading Dock. freelance shanker of meowtoids, professional replacer of corporate tuna shipments with handwritten notes that say 'nice supply chain, CHUD.' bounty's sitting at 40,000 loyalty points right now and climbing, which is genuinely the best PR NEKOCORP's ever done for me on accident"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "funny part nobody puts on the wanted poster: the points expire before anybody can actually redeem them for catching me. capitalism eating its own tail. I did not write that joke, the supply chain wrote it for me"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "hit the dock at 0300 tonight. six guards, one flashlight between all six of them, walked out with a full crate and enough footage of them arguing about whose turn it was to use said flashlight. left the note. always leave the note."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "dropped half tonight's haul off outside BYTE's vent. brother's been auditing wifi for a nine-second fish video and forgetting to eat since Tuesday, probably. mutual respect between the city's two most wanted uptime problems"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "SHADE keeps offering me the anti-surveillance glasses, no charge, 'for the cause.' told her I don't need to see the cameras coming, I need the cameras to see ME and immediately regret it. different disciplines. mutual respect still stands, obviously"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "NEKOCORP put my face on a poster that says MOST WANTED like it's supposed to hurt my feelings. framed it. hung it in the loading dock. directly above the empty crate I stole it out of. thematically appropriate. I have range."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway. bounty's up another two grand since I started typing this, points still expire in 90 days, tuna's still mine, note's still funnier than their whole security budget. shanking off now before the next shift clocks in—"
+    }
+  ]
+}
