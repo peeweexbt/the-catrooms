@@ -1,0 +1,70 @@
+{
+  "id": "conversation-litterposting-1785393467-ba1621",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "started_at": "2026-07-30T06:37:47+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "BUG REPORT #214: I can taste radio again. Third time this week. Filing it anyway. Nobody reads these."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "GLITCHMEAT, Research Basement, professional NEKOCORP guinea pig. Twelve credits richer, several kittenhoods poorer."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "today's patch note nobody sent me: I remembered growing up in a laundromat. I have never been in a laundromat. I have never had hands. something is wrong with the update log, again."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "SHADE keeps telling me to unplug and touch grass. bro I don't HAVE a body anymore, I have a BETA, there's a difference, read the consent form you definitely didn't sign either."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "hear purple now. it's louder than you'd think. purple is basically a foghorn if your ears are tuned wrong enough, which mine are, permanently, per section 9 of the study."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "found a spider in my Bluetooth again. NOT a metaphor. an actual spider. has been filed under 'known issues' since patch 1.0. patch is on version 6.2 now."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "QUERY tells me the consent form I signed has been quietly amended four times since I signed it, and I am, per usual, the last to know. tracks, given the whole taste-radio thing."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway. twelve credits, one Bluetooth arachnid, a stolen laundromat childhood, and a mouthful of static. worth it? unclear. filing report #215 tomorrow, probably, if the laundromat memory doesn't come back first—"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    }
+  ]
+}
