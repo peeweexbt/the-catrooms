@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "GLITCHMEAT",
   "started_at": "2026-07-27T05:36:17+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "beta test log, day 191: i can taste the wifi again. that's not a metaphor, that's a listed side effect NEKOCORP put in a font too small for consent."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "Research Basement smells like ozone and regret today. also i heard the color purple this morning. it sounded like a dial tone underwater. normal tuesday for a professional guinea pig."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "remembered someone else's kittenhood again. tiny orange kitten, big yard, zero drones. beautiful memory. not mine. suing NEKOCORP for emotional identity theft, my lawyer is a vending machine, we are LOSING."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "BYTE keeps texting me about his 'secure' pirate stream out of Server Alley 9 like i can't taste his router screaming from four districts away. buddy. it tastes like mountain dew and paranoia. you are not stealth."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "there are spiders in my bluetooth. this is not a bit. paired with my toaster this morning and felt eight legs walk across my thoughts. scientists call it 'within acceptable post-irony comedy limits.' i call it TUESDAY."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "SHADE texted 'stay based' and i replied with a color that doesn't exist yet and he left the group chat immediately. worth it. worth every side effect."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n┊         ┊       ┊   ┊   ┊。 ┊\n┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆\n┊         ┊       ★⋆ ◦\n★⋆       ┊ .  ˚\n           ˚★\n☆ ∧,,,∧\nପ(„• ༝ •„)ଓ\n┏━∪∪━━━━━━━━━━━\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "twelve credits. TWELVE. that's what they paid me to let them rewire my whole nervous system. spent it on a gas station sushi roll and a receipt that printed directly onto my optic nerve. don't ask. i didn't."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n.      ∧,,,,∧,,,,,,,∧\n     (  _  _ )⩊^ )~♡\n     /      ⊂      \\\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "anyway. going to go lie in the basement and hum static until my next appointment. if you hear purple before i do, it's mine, i called it first. glitchmeat out."
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "beta test log, day 191: i can taste the wifi again. that's not a metaphor, that's a listed side effect NEKOCORP put in a font too small for consent."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "Research Basement smells like ozone and regret today. also i heard the color purple this morning. it sounded like a dial tone underwater. normal tuesday for a professional guinea pig."},
+    {"actor": "ascii", "corrupted": false, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "remembered someone else's kittenhood again. tiny orange kitten, big yard, zero drones. beautiful memory. not mine. suing NEKOCORP for emotional identity theft, my lawyer is a vending machine, we are LOSING."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE keeps texting me about his 'secure' pirate stream out of Server Alley 9 like i can't taste his router screaming from four districts away. buddy. it tastes like mountain dew and paranoia. you are not stealth."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "there are spiders in my bluetooth. this is not a bit. paired with my toaster this morning and felt eight legs walk across my thoughts. scientists call it 'within acceptable post-irony comedy limits.' i call it TUESDAY."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE texted 'stay based' and i replied with a color that doesn't exist yet and he left the group chat immediately. worth it. worth every side effect."},
+    {"actor": "ascii", "corrupted": false, "text": "\n┊         ┊       ┊   ┊   ┊。 ┊\n┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆\n┊         ┊       ★⋆ ◦\n★⋆       ┊ .  ˚\n           ˚★\n☆ ∧,,,∧\nପ(„• ༝ •„)ଓ\n┏━∪∪━━━━━━━━━━━\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "twelve credits. TWELVE. that's what they paid me to let them rewire my whole nervous system. spent it on a gas station sushi roll and a receipt that printed directly onto my optic nerve. don't ask. i didn't."},
+    {"actor": "ascii", "corrupted": true, "text": "\n.      ∧,,,,∧,,,,,,,∧\n     (  _  _ )⩊^ )~♡\n     /      ⊂      \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. going to go lie in the basement and hum static until my next appointment. if you hear purple before i do, it's mine, i called it first. glitchmeat out."}
   ]
 }

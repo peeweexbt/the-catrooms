@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "BYTE",
   "started_at": "2026-07-26T08:50:22+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "log entry #4,417: still alive. still unauthorized. still refuse to pay $2.99/month for WATER that comes out of a WALL."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "name's BYTE. Server Alley 9. official job title is 'illegal wifi auditor,' unofficial job title is 'guy who breaks into a router every night to watch nine seconds of a fish before the ad-block finds him'"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "cracked the router behind the vending machine tonight. found THIRTY-ONE hidden subscription tiers. the router. has a subscription. the router needs to pay ITS OWN bills before I do"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "SNOOZE texted me at 3am from inside a dream she's currently being billed for, said 'byte are you awake,' I said 'no,' out of solidarity, we sat in that lie together for eleven minutes"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "NEKOCORP's firewall got smarter this week. I got dumber this week. this is not a coincidence, this is convergence, we are becoming the same guy"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "saw KNIFEBOY's bounty tick up to 40k on a leaked internal feed and thought, not for the first time, that man has better health coverage than me and he is ACTIVELY WANTED, meanwhile I pay for premium water"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "one (1) fish video. nine (9) seconds. that was the whole ask. NEKOCORP said no. NEKOCORP said 'have you considered our Premium Aquarium Tier.' I have considered biting a router"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "typing this from behind the vending machine on a stolen signal that dies in six minutes, so if this cuts off mid- that's not a cliffhanger, that's just Tuesday in Server Alley 9"
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "log entry #4,417: still alive. still unauthorized. still refuse to pay $2.99/month for WATER that comes out of a WALL."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's BYTE. Server Alley 9. official job title is 'illegal wifi auditor,' unofficial job title is 'guy who breaks into a router every night to watch nine seconds of a fish before the ad-block finds him'"},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "cracked the router behind the vending machine tonight. found THIRTY-ONE hidden subscription tiers. the router. has a subscription. the router needs to pay ITS OWN bills before I do"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SNOOZE texted me at 3am from inside a dream she's currently being billed for, said 'byte are you awake,' I said 'no,' out of solidarity, we sat in that lie together for eleven minutes"},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP's firewall got smarter this week. I got dumber this week. this is not a coincidence, this is convergence, we are becoming the same guy"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "saw KNIFEBOY's bounty tick up to 40k on a leaked internal feed and thought, not for the first time, that man has better health coverage than me and he is ACTIVELY WANTED, meanwhile I pay for premium water"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "one (1) fish video. nine (9) seconds. that was the whole ask. NEKOCORP said no. NEKOCORP said 'have you considered our Premium Aquarium Tier.' I have considered biting a router"},
+    {"actor": "ascii", "corrupted": false, "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "typing this from behind the vending machine on a stolen signal that dies in six minutes, so if this cuts off mid- that's not a cliffhanger, that's just Tuesday in Server Alley 9"}
   ]
 }

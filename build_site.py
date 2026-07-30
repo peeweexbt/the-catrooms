@@ -258,6 +258,17 @@ header p {
   vertical-align: middle;
 }
 .card.rant-card { border-color: var(--accent2); }
+.narrator-badge {
+  max-width: 760px;
+  margin: 16px auto 0;
+  padding: 0 24px;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.narrator-badge strong {
+  color: var(--accent2);
+}
 .rant-transcript {
   max-width: 760px;
   margin: 0 auto;
@@ -708,6 +719,7 @@ RANT_DETAIL_TEMPLATE = """<!doctype html>
 </head>
 <body>
 <a class="back" href="index.html">&larr; back</a>
+{narrator_badge}
 {note}
 <div class="rant-transcript rant-page-shake">
 {turns}
@@ -1405,6 +1417,8 @@ def build(transcripts_dir, out_dir, gen_titles):
         out_name = f"{data['id']}.html"
 
         if is_rant:
+            narrator = html.escape(data.get("narrator") or "STRAY")
+            narrator_badge = f'<div class="narrator-badge">posted by <strong>{narrator}</strong></div>'
             rant_html = []
             raw_lines = []
             for t in turns:
@@ -1430,6 +1444,7 @@ def build(transcripts_dir, out_dir, gen_titles):
             detail_html = RANT_DETAIL_TEMPLATE.format(
                 title=title,
                 css=CSS,
+                narrator_badge=narrator_badge,
                 note=note,
                 turns="\n".join(rant_html),
                 lines_json=json.dumps(raw_lines),
@@ -1438,7 +1453,7 @@ def build(transcripts_dir, out_dir, gen_titles):
                 f.write(detail_html)
 
             tag_line = (
-                f'[litterposting] solo '
+                f'[litterposting] {narrator} '
                 f'<span class="rant-tag-badge">LITTERPOSTING</span>'
             )
             entries.append((_entry_sort_key(data), CARD_TEMPLATE.format(

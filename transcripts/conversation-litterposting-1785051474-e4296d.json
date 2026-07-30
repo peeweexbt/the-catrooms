@@ -3,73 +3,22 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "KNIFEBOY",
   "started_at": "2026-07-26T07:37:54+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "BREAKING: NEKOCORP BOUNTY ON LOCAL CAT RISES TO 40,000 LOYALTY POINTS. LOCAL CAT RESPONDS BY STEALING ANOTHER TUNA SHIPMENT DURING THE PRESS CONFERENCE"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "name's KNIFEBOY, Restricted Loading Dock, freelance shanker of meowtoids, most wanted cat in the city and honestly? long overdue recognition"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "swapped an entire pallet of NEKOCORP premium tuna for a handwritten note reading 'nice supply chain, CHUD' and I want everyone to know it took me four (4) minutes and I did not break a sweat because I do not sweat, I am a cat, this is a design flaw of yours not mine"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n    /\\_/\\\n   ( >.< )    NAME: KNIFEBOY\n    > v <     JOB: Freelance shanker of meowtoids\n              DISTRICT: Restricted Loading Dock\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "the 40k points expire before you can even redeem them AND can't be stacked with other promos, so technically NEKOCORP is offering to pay me in a currency that doesn't exist yet, which, fair, that's also how I pay my rent"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "BRIK hit me up like 'brother the drones are learning your patrol pattern' and yeah I know Brik, I know, you bit one for sport last week, we are not the same but we are UNITED IN THIS"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "police description of me says 'smol fan of cat foids, destroyer of feline chuds' and I have chosen to interpret this as a five star review"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "SHADE told me to lay low for a week. SHADE also hasn't paid for a single meal since NEKOCORP repo'd their eyes. we are all doing crimes here, some of us just have better sunglasses about it"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "chased three drones off the loading dock tonight using nothing but vibes and a shipping crate, this is not a metaphor, there is footage, NEKOCORP will not release the footage"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "anyway the bounty's at 40k now, the tuna's already gone, and I will be doing this again tomorrow at a time of MY choosing, this has become personal, good night, don't spend your loyalty points on me, I'm not worth it, actually I am, spend them"
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BREAKING: NEKOCORP BOUNTY ON LOCAL CAT RISES TO 40,000 LOYALTY POINTS. LOCAL CAT RESPONDS BY STEALING ANOTHER TUNA SHIPMENT DURING THE PRESS CONFERENCE"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's KNIFEBOY, Restricted Loading Dock, freelance shanker of meowtoids, most wanted cat in the city and honestly? long overdue recognition"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "swapped an entire pallet of NEKOCORP premium tuna for a handwritten note reading 'nice supply chain, CHUD' and I want everyone to know it took me four (4) minutes and I did not break a sweat because I do not sweat, I am a cat, this is a design flaw of yours not mine"},
+    {"actor": "ascii", "corrupted": true, "text": "\n    /\\_/\\\n   ( >.< )    NAME: KNIFEBOY\n    > v <     JOB: Freelance shanker of meowtoids\n              DISTRICT: Restricted Loading Dock\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the 40k points expire before you can even redeem them AND can't be stacked with other promos, so technically NEKOCORP is offering to pay me in a currency that doesn't exist yet, which, fair, that's also how I pay my rent"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK hit me up like 'brother the drones are learning your patrol pattern' and yeah I know Brik, I know, you bit one for sport last week, we are not the same but we are UNITED IN THIS"},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "police description of me says 'smol fan of cat foids, destroyer of feline chuds' and I have chosen to interpret this as a five star review"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE told me to lay low for a week. SHADE also hasn't paid for a single meal since NEKOCORP repo'd their eyes. we are all doing crimes here, some of us just have better sunglasses about it"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "chased three drones off the loading dock tonight using nothing but vibes and a shipping crate, this is not a metaphor, there is footage, NEKOCORP will not release the footage"},
+    {"actor": "ascii", "corrupted": false, "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway the bounty's at 40k now, the tuna's already gone, and I will be doing this again tomorrow at a time of MY choosing, this has become personal, good night, don't spend your loyalty points on me, I'm not worth it, actually I am, spend them"}
   ]
 }

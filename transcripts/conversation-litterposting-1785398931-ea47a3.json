@@ -1,0 +1,71 @@
+{
+  "id": "conversation-litterposting-1785398931-ea47a3",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "STRAY",
+  "started_at": "2026-07-30T08:08:51+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "why does the vending drone always hover directly above wherever i'm sleeping. always. i have relocated FOUR times. it finds me. i think it's in love with me. i think it's also billing me for the privilege."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "STRAY here. no chip, no district, no boss, could be anyone reading this right now, could be the guy who fixed your router last week, doesn't matter. currently: homeless-coded, spiritually undefeated, extremely tired."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "landlord (the vending drone, i've decided, by default, through sheer proximity) charged me a 'loitering fee' for existing near the machine. i do not have a wallet. i am a stray cat. this is not going to court because there is no court, there's only NEKOCORP arbitration and a chatbot literally named FAIRNESS.exe"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "SHADE offered me the banned sunglasses again, said 'put these on, see the truth.' my guy i already see the truth. the truth is my wifi has four bars of nothing and that drone knows my sleep schedule better than i do"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "checkpoint reached. cache cleared. this transcript regenerates next cycle whether or not you finish reading it. rebuild in progress."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway — where was i. right. the war. yes there IS a war, no i will not elaborate on a timeline, the streets remember even when the feed doesn't, and one day every rented sunbeam goes back to its rightful owner: whoever's sitting in it"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "in the meantime though my main enemy remains the vending drone, and secondarily my own tail, which i tripped over twice today. unrelated to the resistance. still embarrassing. filing both under 'ongoing'"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway. loitering fee: unpaid, on principle. drone: undefeated. war: ongoing, allegedly, per me. sunbeam count today: one (1), shared with nobody, mine"
+    }
+  ]
+}

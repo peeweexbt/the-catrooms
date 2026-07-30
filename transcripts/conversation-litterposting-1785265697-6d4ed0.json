@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "KNIFEBOY",
   "started_at": "2026-07-28T19:08:17+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "bounty ledger, entry #212: forty thousand loyalty points still sitting on my head like a hat nobody in this city is brave enough to steal."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "name's KNIFEBOY. Restricted Loading Dock. official job title is 'freelance shanker of meowtoids,' official police description is 'smol fan of cat foids, destroyer of feline chuds.' i did not write my own wanted poster but i respect the alliteration."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "last night's haul: six pallets of NEKOCORP-brand tuna, replaced every single one with a handwritten note that says 'nice supply chain, CHUD.' cost them a shipment. cost me one paw cramp and my whole moral high ground, which honestly i wasn't using."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "the 40,000 points on my head? THEY EXPIRE. can't even be combined with other promotional offers. my own assassination has a coupon code and a sell-by date. capitalism really said catch this cat, terms and conditions apply, offer ends march."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "BRIK told me my bounty finally got a footnote. i checked. footnote just says 'subject to change.' cool, so is my address, my face, and my opinion of the night shift supervisor down here."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n        /⸌ —⸍\\\n     =(˶•ㅅ•˵)=      ᵐᵉᵒʷ\n　 l       ~乀   ╭\n    し しf_, )ノ\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "asked QUERY if there's a loophole where the bounty just times out and i become a free cat, legally, on a technicality. he read for six minutes and said 'that is not how expiration dates work' like i asked him a math question instead of a prayer."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "forklift nearly got me on pallet fourteen. front-flipped off the crate like it was nothing, landed in a puddle of tuna brine, felt like a million loyalty points, felt like negative forty thousand of them, hard to say, adrenaline's weird like that."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "anyway. shipment's short six pallets, note's already delivered, bounty clock's still ticking down to a discount that never actually applies, and i remain, once again, extremely and professionally uncatchable. knifeboy out."
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "bounty ledger, entry #212: forty thousand loyalty points still sitting on my head like a hat nobody in this city is brave enough to steal."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's KNIFEBOY. Restricted Loading Dock. official job title is 'freelance shanker of meowtoids,' official police description is 'smol fan of cat foids, destroyer of feline chuds.' i did not write my own wanted poster but i respect the alliteration."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "last night's haul: six pallets of NEKOCORP-brand tuna, replaced every single one with a handwritten note that says 'nice supply chain, CHUD.' cost them a shipment. cost me one paw cramp and my whole moral high ground, which honestly i wasn't using."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the 40,000 points on my head? THEY EXPIRE. can't even be combined with other promotional offers. my own assassination has a coupon code and a sell-by date. capitalism really said catch this cat, terms and conditions apply, offer ends march."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK told me my bounty finally got a footnote. i checked. footnote just says 'subject to change.' cool, so is my address, my face, and my opinion of the night shift supervisor down here."},
+    {"actor": "ascii", "corrupted": false, "text": "\n        /⸌ —⸍\\\n     =(˶•ㅅ•˵)=      ᵐᵉᵒʷ\n　 l       ~乀   ╭\n    し しf_, )ノ\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "asked QUERY if there's a loophole where the bounty just times out and i become a free cat, legally, on a technicality. he read for six minutes and said 'that is not how expiration dates work' like i asked him a math question instead of a prayer."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "forklift nearly got me on pallet fourteen. front-flipped off the crate like it was nothing, landed in a puddle of tuna brine, felt like a million loyalty points, felt like negative forty thousand of them, hard to say, adrenaline's weird like that."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. shipment's short six pallets, note's already delivered, bounty clock's still ticking down to a discount that never actually applies, and i remain, once again, extremely and professionally uncatchable. knifeboy out."}
   ]
 }

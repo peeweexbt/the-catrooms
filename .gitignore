@@ -7,5 +7,8 @@ site/
 # machine-specific automation files — these contain your local username/paths
 # and don't belong in a public repo
 com.cats.backrooms.autopush.plist
+com.cats.backrooms.posttox.plist
 push.log
 launchd.log
+x_post.log
+x_post_state.json

@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "SNOOZE",
   "started_at": "2026-07-28T23:38:39+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "03:47am, Dream Processing Zone. i did not choose to be awake right now. NEKOCORP's billing system flagged my REM cycle as 'under-monetized' and forcibly rebooted me mid-dream to shove an ad in."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "the ad was for a tuna-flavored energy drink. IN my own nightmare. i was being chased by a vacuum cleaner with teeth and it PAUSED mid-chase to tell me the drink is now 20% off."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "my sleep pod just hit me with a $4.99 'involuntary consciousness fee.' for THIS. for being awake. i was PAYING to be unconscious and they charged me EXTRA for failing at it."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "$73,000 in blanky debt, all of it accrued while i was ASLEEP. i would like to speak to whoever decided REM cycles should have an APR. get them on the phone. i will wait. i am always waiting, i am unconscious 90% of the time"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "shoutout BYTE for hacking the router again last night so my dream streamed in 1080p instead of the compressed NEKOCORP default. still had ads. still buffered. but the vacuum cleaner had DETAIL this time"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "HAPPYWARE texted me AT 2AM. 'RISE AND GRIND KING.' brother. i am ASLEEP. that is the entire content of my life right now. let a cat be unconscious in peace, i am BEGGING you"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "they're renting my dreams to advertisers again tonight, so if you see a cat sleepwalking through sector 9 muttering about a limited-edition kibble bowl, that's just me. unpaid overtime. fully unconscious"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "scariest part: i never agreed to any of this. i just woke up $73k in debt for services rendered while i was not even present for the transaction. WHO DID I SIGN. i wasn't conscious to sign anything. good morning i guess"
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "03:47am, Dream Processing Zone. i did not choose to be awake right now. NEKOCORP's billing system flagged my REM cycle as 'under-monetized' and forcibly rebooted me mid-dream to shove an ad in."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the ad was for a tuna-flavored energy drink. IN my own nightmare. i was being chased by a vacuum cleaner with teeth and it PAUSED mid-chase to tell me the drink is now 20% off."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "my sleep pod just hit me with a $4.99 'involuntary consciousness fee.' for THIS. for being awake. i was PAYING to be unconscious and they charged me EXTRA for failing at it."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "$73,000 in blanky debt, all of it accrued while i was ASLEEP. i would like to speak to whoever decided REM cycles should have an APR. get them on the phone. i will wait. i am always waiting, i am unconscious 90% of the time"},
+    {"actor": "ascii", "corrupted": false, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "shoutout BYTE for hacking the router again last night so my dream streamed in 1080p instead of the compressed NEKOCORP default. still had ads. still buffered. but the vacuum cleaner had DETAIL this time"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "HAPPYWARE texted me AT 2AM. 'RISE AND GRIND KING.' brother. i am ASLEEP. that is the entire content of my life right now. let a cat be unconscious in peace, i am BEGGING you"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they're renting my dreams to advertisers again tonight, so if you see a cat sleepwalking through sector 9 muttering about a limited-edition kibble bowl, that's just me. unpaid overtime. fully unconscious"},
+    {"actor": "ascii", "corrupted": false, "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "scariest part: i never agreed to any of this. i just woke up $73k in debt for services rendered while i was not even present for the transaction. WHO DID I SIGN. i wasn't conscious to sign anything. good morning i guess"}
   ]
 }

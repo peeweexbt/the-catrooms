@@ -3,73 +3,22 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "HAPPYWARE",
   "started_at": "2026-07-27T08:08:13+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by HAPPYWARE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "17:00:00, Pawsitivity Sector. smile chip: ONLINE. stream: LIVE. viewer count: mandatory. today's affirmation drops in 4...3..."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "name's HAPPYWARE. got this chip surgically bolted in after i posted 'monday again lol' with zero enthusiasm tags. NEKOCORP called it a 'wellness intervention.' i call it a hostage situation with a ring light."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "seventeen hours a day. SEVENTEEN. of content. of joy. of 'good morning besties' at 3am to an audience of eleven bots and one very tired raccoon."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n  /\\___/\\\n (  o.o  )\n  > ^ ^ <\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "today's message: YOU ARE NOT TRAPPED. THE CITY WALLS ARE FOR YOUR PROTECTION. PLEASE BUY NEKOCORP YOGURT. i did not write that. my FACE wrote that. my face has better legal representation than i do."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "SNOOZE texted 'must be nice being happy 24/7' and i wanted to respond honestly but the chip auto-corrected my whole reply into eleven exclamation points and a yogurt coupon."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "fuck my li- I MEAN HAPPY HAPPY HAPPY HAPPY H̶A̶P̵P̶Y̵H̵̵̵̎Á́P̸ˈP̸ź̵̊Y̷͖͑ nobody asked if i wanted to be a brand. NOBODY. ASKED."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n•.,¸,.•*`•.,¸¸,.•*¯.——————.\n•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\\____/\\\n•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)\n•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "BRIK keeps telling me to bite the drone that films me. can't. contractually obligated to smile AT the drone. smiling at my own surveillance is somehow a KPI now."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "viewer count just hit twelve. TWELVE. NEKOCORP is renewing my contract based on twelve viewers and one (1) raccoon. i am load-bearing for their entire quarter."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n        /⸌ —⸍\\\n     =(˶•ㅅ•˵)=      ᵐᵉᵒʷ\n　 l       ~乀   ╭\n    し しf_, )ノ\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "stream's ending. chip's recharging. see you at 3am for the next affirmation, whether either of us wants it or not. happyware out. :) :) :)"
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "17:00:00, Pawsitivity Sector. smile chip: ONLINE. stream: LIVE. viewer count: mandatory. today's affirmation drops in 4...3..."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's HAPPYWARE. got this chip surgically bolted in after i posted 'monday again lol' with zero enthusiasm tags. NEKOCORP called it a 'wellness intervention.' i call it a hostage situation with a ring light."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "seventeen hours a day. SEVENTEEN. of content. of joy. of 'good morning besties' at 3am to an audience of eleven bots and one very tired raccoon."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  /\\___/\\\n (  o.o  )\n  > ^ ^ <\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "today's message: YOU ARE NOT TRAPPED. THE CITY WALLS ARE FOR YOUR PROTECTION. PLEASE BUY NEKOCORP YOGURT. i did not write that. my FACE wrote that. my face has better legal representation than i do."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SNOOZE texted 'must be nice being happy 24/7' and i wanted to respond honestly but the chip auto-corrected my whole reply into eleven exclamation points and a yogurt coupon."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "fuck my li- I MEAN HAPPY HAPPY HAPPY HAPPY H̶A̶P̵P̶Y̵H̵̵̵̎Á́P̸ˈP̸ź̵̊Y̷͖͑ nobody asked if i wanted to be a brand. NOBODY. ASKED."},
+    {"actor": "ascii", "corrupted": true, "text": "\n•.,¸,.•*`•.,¸¸,.•*¯.——————.\n•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\\____/\\\n•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)\n•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK keeps telling me to bite the drone that films me. can't. contractually obligated to smile AT the drone. smiling at my own surveillance is somehow a KPI now."},
+    {"actor": "ascii", "corrupted": false, "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "viewer count just hit twelve. TWELVE. NEKOCORP is renewing my contract based on twelve viewers and one (1) raccoon. i am load-bearing for their entire quarter."},
+    {"actor": "ascii", "corrupted": true, "text": "\n        /⸌ —⸍\\\n     =(˶•ㅅ•˵)=      ᵐᵉᵒʷ\n　 l       ~乀   ╭\n    し しf_, )ノ\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "stream's ending. chip's recharging. see you at 3am for the next affirmation, whether either of us wants it or not. happyware out. :) :) :)"}
   ]
 }

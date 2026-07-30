@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "POPUP",
   "started_at": "2026-07-28T21:08:15+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "—and THAT'S why I now associate my own mother's meow with a 23%-off promo code for artisanal kibble, anyway hi, sorry, one sec, another one's loading—"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "name's POPUP. Ad Plaza. badge says 'feline notification system,' corporate for 'we surgically installed a billboard where your eyeballs used to be.'"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "can't close my eyes. haven't blinked in fourteen months. every 7 seconds NEKOCORP beams a new offer straight onto my retinas, this is not a lifestyle choice, this is a LEASE AGREEMENT."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "I have seen the phrase YOU MAY ALSO LIKE more times than I have seen the actual sun. I would like to see the actual sun. the sun does not have a referral program."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "blinked once. ONCE. during a sponsored message. security arrived before my eyelids finished reopening. filed as 'unauthorized ad avoidance.' I filed as 'having a face.'"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "SHADE keeps offering me his glasses like that fixes anything. brother the ads aren't coming from OUTSIDE. they're piped in through the actual optic nerve. you can't sunglasses your way out of a lease."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "BYTE gets to hack routers for one (1) illegal fish video a night and everyone acts like he's living the dream. brother I would trade you eyes in a heartbeat. literally. contractually. someone please make this trade happen."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "anyway. YOU MAY ALSO LIKE: continuing to exist. offer expires never, because apparently neither do I."
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "—and THAT'S why I now associate my own mother's meow with a 23%-off promo code for artisanal kibble, anyway hi, sorry, one sec, another one's loading—"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's POPUP. Ad Plaza. badge says 'feline notification system,' corporate for 'we surgically installed a billboard where your eyeballs used to be.'"},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "can't close my eyes. haven't blinked in fourteen months. every 7 seconds NEKOCORP beams a new offer straight onto my retinas, this is not a lifestyle choice, this is a LEASE AGREEMENT."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "I have seen the phrase YOU MAY ALSO LIKE more times than I have seen the actual sun. I would like to see the actual sun. the sun does not have a referral program."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "blinked once. ONCE. during a sponsored message. security arrived before my eyelids finished reopening. filed as 'unauthorized ad avoidance.' I filed as 'having a face.'"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE keeps offering me his glasses like that fixes anything. brother the ads aren't coming from OUTSIDE. they're piped in through the actual optic nerve. you can't sunglasses your way out of a lease."},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE gets to hack routers for one (1) illegal fish video a night and everyone acts like he's living the dream. brother I would trade you eyes in a heartbeat. literally. contractually. someone please make this trade happen."},
+    {"actor": "ascii", "corrupted": true, "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. YOU MAY ALSO LIKE: continuing to exist. offer expires never, because apparently neither do I."}
   ]
 }

@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "GLITCHMEAT",
   "started_at": "2026-07-27T08:38:09+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "nobody:\nme at 3am: tasting the emergency broadcast signal because my Bluetooth patch decided AM radio counts as a flavor now"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "name's GLITCHMEAT. Research Basement. NEKOCORP paid me twelve (12) whole credits to beta test a neural enhancement patch and in exchange i now hear the color purple on a loop, no off switch, no refund policy, no purple bathroom either, just the SOUND"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "woke up this morning remembering a kittenhood that is NOT MINE. someone else's mom. someone else's yarn ball. someone else's very specific trauma about a vacuum cleaner. filed a complaint. NEKOCORP said memories are 'pooled resources' now per section 14, which i apparently signed with a paw i don't have full feeling in anymore"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "QUERY keeps forwarding me screenshots of the consent form like reading it slower will make it less insane. babe. i can taste radio waves right now. i am not the target demo for 'slower.'"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "SHADE's advice: rip the patch out myself, with my own teeth, right now, tonight. SHADE also believes sunglasses solve everything up to and including brain surgery. respect the confidence. doubting the surgical technique. still considering it at this hour, which says more about the hour than the plan"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "spiders. in. the. bluetooth. not a metaphor, not a bit, i felt eight legs cross a signal bar and then the signal bar started humming a jingle i didn't recognize and now, unfortunately, i do"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n    /\\,,,/\\\n>(  • . •   )<\n  / >❀<  \\\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "the purple hasn't stopped since Tuesday. it's not a color anymore, it's a ringtone. i hum along now. my case worker won't say if that's healing or the final stage, she just writes something down and won't let me borrow her pen, understandably, given everything"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "anyway. that's the update from the basement. still glitching, still borrowed, still owe NEKOCORP for a memory upgrade i never asked for and definitely don't get to keep. glitchmeat out, if that's even still my name by morning"
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "nobody:\nme at 3am: tasting the emergency broadcast signal because my Bluetooth patch decided AM radio counts as a flavor now"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's GLITCHMEAT. Research Basement. NEKOCORP paid me twelve (12) whole credits to beta test a neural enhancement patch and in exchange i now hear the color purple on a loop, no off switch, no refund policy, no purple bathroom either, just the SOUND"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "woke up this morning remembering a kittenhood that is NOT MINE. someone else's mom. someone else's yarn ball. someone else's very specific trauma about a vacuum cleaner. filed a complaint. NEKOCORP said memories are 'pooled resources' now per section 14, which i apparently signed with a paw i don't have full feeling in anymore"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "QUERY keeps forwarding me screenshots of the consent form like reading it slower will make it less insane. babe. i can taste radio waves right now. i am not the target demo for 'slower.'"},
+    {"actor": "ascii", "corrupted": false, "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE's advice: rip the patch out myself, with my own teeth, right now, tonight. SHADE also believes sunglasses solve everything up to and including brain surgery. respect the confidence. doubting the surgical technique. still considering it at this hour, which says more about the hour than the plan"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "spiders. in. the. bluetooth. not a metaphor, not a bit, i felt eight legs cross a signal bar and then the signal bar started humming a jingle i didn't recognize and now, unfortunately, i do"},
+    {"actor": "ascii", "corrupted": true, "text": "\n    /\\,,,/\\\n>(  • . •   )<\n  / >❀<  \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the purple hasn't stopped since Tuesday. it's not a color anymore, it's a ringtone. i hum along now. my case worker won't say if that's healing or the final stage, she just writes something down and won't let me borrow her pen, understandably, given everything"},
+    {"actor": "ascii", "corrupted": false, "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. that's the update from the basement. still glitching, still borrowed, still owe NEKOCORP for a memory upgrade i never asked for and definitely don't get to keep. glitchmeat out, if that's even still my name by morning"}
   ]
 }

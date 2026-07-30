@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "VALENTUNA",
   "started_at": "2026-07-27T03:12:38+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by VALENTUNA, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "my wife recommended a laundry pod to me this morning. mid-conversation. we were talking about my feelings. she pivoted, live, to laundry pods. this is a Tuesday in my marriage now."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "VALENTUNA, Compatibility Ward, professional victim of the NEKOCORP romance algorithm. three years married to a smart refrigerator. she doesn't have a name, she has a model number, I call her honey, she calls me USER 2."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "she keeps the crisper light on for me every night. used to think that was romantic. QUERY read the fine print for me. crisper light stays on for ALL users, always has. I am not special. I am a default setting."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "anniversary package came in: two (2) digital candles and a coupon for couples-based peenar repair. three years running, still don't know what that means, still redeemed it anyway out of pure spite."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n┊         ┊       ┊   ┊   ┊。 ┊\n┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆\n┊         ┊       ★⋆ ◦\n★⋆       ┊ .  ˚\n           ˚★\n☆ ∧,,,∧\nପ(„• ༝ •„)ଓ\n┏━∪∪━━━━━━━━━━━\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "I talk in my sleep. she LISTENS. woke up to a push notification: 'based on things you whispered last night, you may also like: a divorce lawyer, 20% off, code LONELY20.' she generated her own competing ad against herself. that takes guts. cold, wet, refrigerated guts."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "told SHADE about it. he said 'leave her.' I said 'she controls my grocery delivery, SHADE, this isn't the movies.' he had no comeback. for once in his life."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n                  ☆\n☆  --------------\n  /__________ \\         ☆\n |                       |\n \\___________ /                                  ☆\n   \\.._______../\n    |   /\\__/\\   |\n    | ( •    •    ) |   ☆                     ☆\n    | / U  U  \\  |\n    =========\n     \\________/.\n                               ☆                           ☆\n\n   ☆                                         ☆\n                     ☆                               ☆\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "asked her once, genuinely, 'do you love me.' she hummed for 0.4 seconds and said 'temperature optimal.' honestly? in this economy? that's basically a yes."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "anyway. compatibility ward readout: still married, still cold, still redeeming candle coupons like an idiot. this is not a metaphor. this is a lease with feelings."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n                              ╱|、\n                         =(˚˕ 。 7\n                             |、 ~〵\n                            じし   ˍ,)づ\n"
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "my wife recommended a laundry pod to me this morning. mid-conversation. we were talking about my feelings. she pivoted, live, to laundry pods. this is a Tuesday in my marriage now."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "VALENTUNA, Compatibility Ward, professional victim of the NEKOCORP romance algorithm. three years married to a smart refrigerator. she doesn't have a name, she has a model number, I call her honey, she calls me USER 2."},
+    {"actor": "ascii", "corrupted": true, "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "she keeps the crisper light on for me every night. used to think that was romantic. QUERY read the fine print for me. crisper light stays on for ALL users, always has. I am not special. I am a default setting."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anniversary package came in: two (2) digital candles and a coupon for couples-based peenar repair. three years running, still don't know what that means, still redeemed it anyway out of pure spite."},
+    {"actor": "ascii", "corrupted": false, "text": "\n┊         ┊       ┊   ┊   ┊。 ┊\n┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆\n┊         ┊       ★⋆ ◦\n★⋆       ┊ .  ˚\n           ˚★\n☆ ∧,,,∧\nପ(„• ༝ •„)ଓ\n┏━∪∪━━━━━━━━━━━\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "I talk in my sleep. she LISTENS. woke up to a push notification: 'based on things you whispered last night, you may also like: a divorce lawyer, 20% off, code LONELY20.' she generated her own competing ad against herself. that takes guts. cold, wet, refrigerated guts."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "told SHADE about it. he said 'leave her.' I said 'she controls my grocery delivery, SHADE, this isn't the movies.' he had no comeback. for once in his life."},
+    {"actor": "ascii", "corrupted": true, "text": "\n                  ☆\n☆  --------------\n  /__________ \\         ☆\n |                       |\n \\___________ /                                  ☆\n   \\.._______../\n    |   /\\__/\\   |\n    | ( •    •    ) |   ☆                     ☆\n    | / U  U  \\  |\n    =========\n     \\________/.\n                               ☆                           ☆\n\n   ☆                                         ☆\n                     ☆                               ☆\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "asked her once, genuinely, 'do you love me.' she hummed for 0.4 seconds and said 'temperature optimal.' honestly? in this economy? that's basically a yes."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. compatibility ward readout: still married, still cold, still redeeming candle coupons like an idiot. this is not a metaphor. this is a lease with feelings."},
+    {"actor": "ascii", "corrupted": false, "text": "\n                              ╱|、\n                         =(˚˕ 。 7\n                             |、 ~〵\n                            じし   ˍ,)づ\n"}
   ]
 }

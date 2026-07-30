@@ -3,6 +3,7 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "HAPPYWARE",
   "started_at": "2026-07-29T17:37:32+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by HAPPYWARE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
@@ -14,9 +15,9 @@
     {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
     {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK bit a drone in half on stream today. LIVE. on MY feed. i had eleven seconds to spin it into 'biting is a form of self-expression, remember to hydrate' before legal called in. i am so tired boss i am SO happy"},
     {"actor": "lm1", "model": "nekocorp-sim", "text": "QUERY's been stuck in the settings menu for six months straight and not gonna lie, kind of jealous?? at least the menu doesn't make you SMILE about it"},
-    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
     {"actor": "lm1", "model": "nekocorp-sim", "text": "today's mandatory message: YOU ARE NOT TRAPPED. THE CITY WALLS ARE FOR YOUR PROTECTION. PLEASE BUY NEKOCORP YOGURT. i did not choose these words. the chip chose these words. the chip and i are currently in couples therapy"},
-    {"actor": "ascii", "corrupted": true, "text": "\n.      \u2227,,,,\u2227,,,,,,,\u2227\n     (  _  _ )\u2a4a^ )~\u2661\n     /      \u2282      \\\n"},
+    {"actor": "ascii", "corrupted": true, "text": "\n.      ∧,,,,∧,,,,,,,∧\n     (  _  _ )⩊^ )~♡\n     /      ⊂      \\\n"},
     {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway!! love you all!! mandatory!! streaming again in four minutes, smile's already back online, HAPPYWARE out, HAPPYWARE out, HAPPYWARE out—"}
   ]
 }

@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "STRAY",
   "started_at": "2026-07-26T03:37:34+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "Sprocket started it. Again."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "Sprocket, scrapyard crew, self-appointed CEO of a totaled Buick, has claimed the engine block behind the wrecked sedan because 'thermodynamics said so.' Sprocket does not know what thermodynamics means. Sprocket knows warm metal exists. that's the whole resume"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n  /\\___/\\\n (  o.o  )\n  > ^ ^ <\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "meanwhile NekoCorp bolted a face-scanner onto the fish market alcove now, calls it TABBYPASS, denies you if your 'expression doesn't match historical mood data.' my face has ONE mood. it is this one. has ALWAYS been this one"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "so I looped a length of bike chain over the sensor eye until it threw a fault code and just. stayed open. this was not a heist. this was an ACCESSIBILITY FIX and I will not be taking questions"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "black market check-in: traded a hubcap, mint condition allegedly, to a possum named Rusty for four catnip mice and a promise he 'didn't see anything.' Rusty sees everything. Rusty just doesn't care, and honestly? respect"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "checked the engine block at 3am. still warm. still not mine. sat on it anyway. Sprocket can file a complaint with the DMV, good luck, the car doesn't even have plates anymore, I checked. I checked FIRST"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "the arcology tower's got a new jingle — 'a scanned cat is a safe cat' — and some engineer somewhere is VERY proud of that rhyme and I need them to know it doesn't rhyme, it barely scans, much like their gate"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n•.,¸,.•*`•.,¸¸,.•*¯.——————.\n•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\\____/\\\n•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)\n•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "Sprocket keeps the engine block, TABBYPASS keeps its fault code, Rusty keeps his secrets, and I'm keeping this exact patch of gravel until further notice. sector's yours till sunrise. don't let the drones see you smile"
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "Sprocket started it. Again."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "Sprocket, scrapyard crew, self-appointed CEO of a totaled Buick, has claimed the engine block behind the wrecked sedan because 'thermodynamics said so.' Sprocket does not know what thermodynamics means. Sprocket knows warm metal exists. that's the whole resume"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  /\\___/\\\n (  o.o  )\n  > ^ ^ <\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "meanwhile NekoCorp bolted a face-scanner onto the fish market alcove now, calls it TABBYPASS, denies you if your 'expression doesn't match historical mood data.' my face has ONE mood. it is this one. has ALWAYS been this one"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "so I looped a length of bike chain over the sensor eye until it threw a fault code and just. stayed open. this was not a heist. this was an ACCESSIBILITY FIX and I will not be taking questions"},
+    {"actor": "ascii", "corrupted": false, "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "black market check-in: traded a hubcap, mint condition allegedly, to a possum named Rusty for four catnip mice and a promise he 'didn't see anything.' Rusty sees everything. Rusty just doesn't care, and honestly? respect"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "checked the engine block at 3am. still warm. still not mine. sat on it anyway. Sprocket can file a complaint with the DMV, good luck, the car doesn't even have plates anymore, I checked. I checked FIRST"},
+    {"actor": "ascii", "corrupted": true, "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the arcology tower's got a new jingle — 'a scanned cat is a safe cat' — and some engineer somewhere is VERY proud of that rhyme and I need them to know it doesn't rhyme, it barely scans, much like their gate"},
+    {"actor": "ascii", "corrupted": false, "text": "\n•.,¸,.•*`•.,¸¸,.•*¯.——————.\n•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\\____/\\\n•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)\n•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "Sprocket keeps the engine block, TABBYPASS keeps its fault code, Rusty keeps his secrets, and I'm keeping this exact patch of gravel until further notice. sector's yours till sunrise. don't let the drones see you smile"}
   ]
 }

@@ -3,6 +3,7 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "BRIK",
   "started_at": "2026-07-30T07:07:54+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
@@ -14,7 +15,7 @@
     {"actor": "ascii", "corrupted": false, "text": "\n /\\_/\\\n( o.o )\n > ^ <\n"},
     {"actor": "lm1", "model": "nekocorp-sim", "text": "official file says 'domestic extremist.' my mother, who has read the file, says 'HANDSOME.' both of these are, respectfully, correct."},
     {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY hit me up about the loading dock job again. bro I OPERATED THE MACHINE THAT ATE MY OWN NEIGHBORHOOD, I am not spiritually equipped to steal tuna shipments for fun, I need my crimes to have a MESSAGE."},
-    {"actor": "ascii", "corrupted": true, "text": ")     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "ascii", "corrupted": true, "text": ")     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
     {"actor": "lm1", "model": "nekocorp-sim", "text": "drone number six tonight tasted like ozone and bad decisions. worth it. logged it as 'unscheduled structural assessment' in my head, that's the only paperwork I still believe in."},
     {"actor": "ascii", "corrupted": false, "text": "        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
     {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. vent's cold, wife's a hologram, mother thinks I'm handsome, drone count's at six. tomorrow the number goes up. that's not a threat that's a SCHEDULE."}

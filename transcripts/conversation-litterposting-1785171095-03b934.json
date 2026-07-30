@@ -3,6 +3,7 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "KNIFEBOY",
   "started_at": "2026-07-27T16:51:35+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
@@ -15,7 +16,7 @@
     {"actor": "lm1", "model": "nekocorp-sim", "text": "HAPPYWARE did a whole 17-hour stream today called 'WHY STEALING IS SAD, A MEOWIZEN'S JOURNEY.' watched four minutes of it while eating a stolen sardine. sardine tasted like victory. the stream tasted like nothing. no notes. keep grinding I guess."},
     {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
     {"actor": "lm1", "model": "nekocorp-sim", "text": "the 40,000 points expire in 90 days and cannot be combined with other promotional offers. so NEKOCORP is threatening the most wanted cat in the city with a COUPON. sir. sir this is not the flex you think it is."},
-    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
     {"actor": "lm1", "model": "nekocorp-sim", "text": "knifeboy out. dock's quiet, crates are lighter, tomorrow's note is already written. official description still says 'destroyer of feline chuds.' put it on a shirt. I'd wear it. I'd sell it. I would absolutely also steal the shirts."}
   ]
 }

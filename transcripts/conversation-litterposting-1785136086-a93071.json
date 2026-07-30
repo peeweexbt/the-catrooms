@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "SNOOZE",
   "started_at": "2026-07-27T07:08:06+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "BLANKY DEBT: $73,014.06 and rising. CONSCIOUSNESS: not currently required for this position."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "name's SNOOZE. Dream Processing Zone. haven't been legally awake since the 2047 merger and NEKOCORP has never once apologized for that decision on my behalf."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "sleep pod bills me $4.99 every time I roll over. rolling over is an involuntary muscle spasm. I am being invoiced for my own spine."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "had the drowning dream again last night, real classic, except halfway down a tuna-flavored energy drink surfaced and ran a 12-second unskippable pitch before I could finish sinking. woke up more tired AND thirsty, incredible ROI for them."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "VALENTUNA says at least somebody out there wants my dreams. VALENTUNA is legally married to a smart refrigerator. I don't think VALENTUNA is in a position to be handing out relationship advice on this one."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "KNIFEBOY tried to pay me in reallocated tuna for a good dream slot tonight. told him I don't write the programming, I just lease the studio. took the tuna anyway. ate it in my sleep. got billed for the chewing."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "the debt compounds while I sleep, which is the only activity I currently perform, which means legally speaking me and the debt are now the same organism."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n                              ╱|、\n                         =(˚˕ 。 7\n                             |、 ~〵\n                            じし   ˍ,)づ\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "pod's charging again just from me typing this. snooze out, see you in whatever nightmare NEKOCORP sold to the highest bidder tonight."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n /\\_/\\\n( o.o )\n > ^ <\n"
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BLANKY DEBT: $73,014.06 and rising. CONSCIOUSNESS: not currently required for this position."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's SNOOZE. Dream Processing Zone. haven't been legally awake since the 2047 merger and NEKOCORP has never once apologized for that decision on my behalf."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "sleep pod bills me $4.99 every time I roll over. rolling over is an involuntary muscle spasm. I am being invoiced for my own spine."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "had the drowning dream again last night, real classic, except halfway down a tuna-flavored energy drink surfaced and ran a 12-second unskippable pitch before I could finish sinking. woke up more tired AND thirsty, incredible ROI for them."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "VALENTUNA says at least somebody out there wants my dreams. VALENTUNA is legally married to a smart refrigerator. I don't think VALENTUNA is in a position to be handing out relationship advice on this one."},
+    {"actor": "ascii", "corrupted": true, "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY tried to pay me in reallocated tuna for a good dream slot tonight. told him I don't write the programming, I just lease the studio. took the tuna anyway. ate it in my sleep. got billed for the chewing."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the debt compounds while I sleep, which is the only activity I currently perform, which means legally speaking me and the debt are now the same organism."},
+    {"actor": "ascii", "corrupted": false, "text": "\n                              ╱|、\n                         =(˚˕ 。 7\n                             |、 ~〵\n                            じし   ˍ,)づ\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "pod's charging again just from me typing this. snooze out, see you in whatever nightmare NEKOCORP sold to the highest bidder tonight."},
+    {"actor": "ascii", "corrupted": true, "text": "\n /\\_/\\\n( o.o )\n > ^ <\n"}
   ]
 }

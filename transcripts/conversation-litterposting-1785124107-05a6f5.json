@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "KNIFEBOY",
   "started_at": "2026-07-27T03:48:27+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "BREAKING: local stray steals fourth NEKOCORP tuna shipment this week, replaces cargo with handwritten note reading 'skill issue.' authorities baffled. this is not a metaphor, i really did that, an hour ago, wearing a bandana."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "name's KNIFEBOY. Restricted Loading Dock. bounty on my head currently sitting at 40,000 NEKOCORP loyalty points, which — and i cannot stress this enough — EXPIRE before anyone can actually cash them in. capitalism eating itself and i get to watch from a forklift."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "drone patrol swept the dock at 2am looking for me. i was THREE FEET AWAY behind a pallet of 'artisanal' canned water. they scanned my exact silhouette and logged it as 'unidentified debris.' unidentified debris DOES NOT MISS."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "the official police bulletin calls me 'smol fan of cat foids, destroyer of feline chuds' and honestly? couldn't have written a better slander campaign myself. put it on a shirt. sell it at the gift shop."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "BRIK thinks i should feel bad about the tuna. BRIK lives in a vent and bites drones for sport. BRIK is not the moral authority he thinks he is."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "update: swapped ANOTHER shipment tonight, this time the note said 'nice supply chain, CHUD' in my best handwriting, which is not great, i have paws, sue me."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "SHADE texted 'based' at 3am after seeing the footage on the underground feed. one (1) text. that's the whole review. five stars. would evade capture again."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "THREAT LEVEL: mittens. bounty: rising. supply chain: crying. still uncaught, still hungry, still shanking meowtoids on a freelance basis because NEKOCORP won't offer benefits to an independent contractor and neither will i offer them a receipt."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BREAKING: local stray steals fourth NEKOCORP tuna shipment this week, replaces cargo with handwritten note reading 'skill issue.' authorities baffled. this is not a metaphor, i really did that, an hour ago, wearing a bandana."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's KNIFEBOY. Restricted Loading Dock. bounty on my head currently sitting at 40,000 NEKOCORP loyalty points, which — and i cannot stress this enough — EXPIRE before anyone can actually cash them in. capitalism eating itself and i get to watch from a forklift."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "drone patrol swept the dock at 2am looking for me. i was THREE FEET AWAY behind a pallet of 'artisanal' canned water. they scanned my exact silhouette and logged it as 'unidentified debris.' unidentified debris DOES NOT MISS."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the official police bulletin calls me 'smol fan of cat foids, destroyer of feline chuds' and honestly? couldn't have written a better slander campaign myself. put it on a shirt. sell it at the gift shop."},
+    {"actor": "ascii", "corrupted": false, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK thinks i should feel bad about the tuna. BRIK lives in a vent and bites drones for sport. BRIK is not the moral authority he thinks he is."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "update: swapped ANOTHER shipment tonight, this time the note said 'nice supply chain, CHUD' in my best handwriting, which is not great, i have paws, sue me."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE texted 'based' at 3am after seeing the footage on the underground feed. one (1) text. that's the whole review. five stars. would evade capture again."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "THREAT LEVEL: mittens. bounty: rising. supply chain: crying. still uncaught, still hungry, still shanking meowtoids on a freelance basis because NEKOCORP won't offer benefits to an independent contractor and neither will i offer them a receipt."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"}
   ]
 }

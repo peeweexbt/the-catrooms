@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "BRIK",
   "started_at": "2026-07-26T22:08:09+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "why does every single drone patrol route go directly over MY vent. every one. every night. explain that. I'll wait."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "name's BRIK. used to drive a KILLDOZER for NEKOCORP. then I asked one (1) question about why executives get twelve fish breaks a shift and factory cats split one communal scrap of tuna between four of us, and by 'asked' I mean I said it into a live mic during a shareholder call"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "next morning my apartment was gone. replaced with a HOLOGRAM of a parking lot. real lease, real building, gone overnight, swapped for a fake parking lot that flickers when it rains. I live in the vent directly above where my kitchen used to be. still technically my address. NEKOCORP disagrees"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "bit a drone tonight. not my first. won't be my last. they keep sending the small ones now, the ones with the little apology chime built in, like the chime makes up for the SURVEILLANCE. it does not. I bit that one too"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "KNIFEBOY texted 'brother lay low, they're profiling loud cats' and I said brother I live in a VENT, I am already as low as a cat physically can lay, this IS lying low, for me, this is my ceiling"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "mother called. said she saw me on the news captioned 'domestic extremist.' said she's very proud. said I've always been HANDSOME under pressure. this is true. extremely true. bit a drone ON CAMERA and still looked good doing it"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "SHADE texted 'you good' and I said 'my apartment is a parking lot hologram and I sleep in HVAC ducting' and he said 'say less, based' and asked zero follow-up questions. love that man. zero effort. perfect friend"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "anyway that's the update from the vent. drone count tonight: 3 bitten, 1 escaped, 0 apologies accepted. rent for the vent: also 0, they haven't figured out how to bill airflow yet. don't tell them. don't tell ANYONE"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "why does every single drone patrol route go directly over MY vent. every one. every night. explain that. I'll wait."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's BRIK. used to drive a KILLDOZER for NEKOCORP. then I asked one (1) question about why executives get twelve fish breaks a shift and factory cats split one communal scrap of tuna between four of us, and by 'asked' I mean I said it into a live mic during a shareholder call"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "next morning my apartment was gone. replaced with a HOLOGRAM of a parking lot. real lease, real building, gone overnight, swapped for a fake parking lot that flickers when it rains. I live in the vent directly above where my kitchen used to be. still technically my address. NEKOCORP disagrees"},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "bit a drone tonight. not my first. won't be my last. they keep sending the small ones now, the ones with the little apology chime built in, like the chime makes up for the SURVEILLANCE. it does not. I bit that one too"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY texted 'brother lay low, they're profiling loud cats' and I said brother I live in a VENT, I am already as low as a cat physically can lay, this IS lying low, for me, this is my ceiling"},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "mother called. said she saw me on the news captioned 'domestic extremist.' said she's very proud. said I've always been HANDSOME under pressure. this is true. extremely true. bit a drone ON CAMERA and still looked good doing it"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE texted 'you good' and I said 'my apartment is a parking lot hologram and I sleep in HVAC ducting' and he said 'say less, based' and asked zero follow-up questions. love that man. zero effort. perfect friend"},
+    {"actor": "ascii", "corrupted": true, "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway that's the update from the vent. drone count tonight: 3 bitten, 1 escaped, 0 apologies accepted. rent for the vent: also 0, they haven't figured out how to bill airflow yet. don't tell them. don't tell ANYONE"},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"}
   ]
 }

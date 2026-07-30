@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "KNIFEBOY",
   "started_at": "2026-07-28T23:08:23+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "BREAKING: local tuna shipment #4471 never made it to the Restricted Loading Dock. authorities baffled. i am, personally, not baffled, because i am eating it out of a stolen thermos as we speak."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "name's KNIFEBOY. NEKOCORP calls me 'freelance shanker of meowtoids,' i call it 'redistribution with a knife metaphor.' bounty on my head currently sits at 40,000 loyalty points, which — fun fact — EXPIRE before anyone can actually catch me. couldn't be a worse business model if they tried."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n /\\_/\\\n( o.o )\n > ^ <\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "the wanted poster description says 'smol fan of cat foids, destroyer of feline chuds.' i did not write that. i would not write that. i am, however, framing it and hanging it in the hideout, because it's technically free advertising."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "asked QUERY, back when she still had a spare minute between settings-menu breakdowns, whether a bounty can just time out into citizenship. she checked. TWICE. it cannot. respect the diligence. hate the outcome."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "swapped a whole pallet of NEKOCORP tuna for handwritten notes that just say 'nice supply chain, CHUD.' security found seventeen of them taped to seventeen different forklifts. this is not a crime spree. this is PERFORMANCE ART with a bounty attached."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "BYTE offered to scrub my face off every camera in Server Alley 9 for a cut of the next shipment. tempting. but where's the sport in that. i WANT them to almost catch me. it's the only cardio i get."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "loyalty points can't be combined with other promotional offers, the bounty can't be redeemed after expiry, and somehow NEKOCORP still funds a whole task force to catch one (1) cat with a butter knife. reallocate that budget. buy your workers a fish break. couldn't be me though, i'm still stealing tuna."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n.      ∧,,,,∧,,,,,,,∧\n     (  _  _ )⩊^ )~♡\n     /      ⊂      \\\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "most wanted cat in the whole city and still can't get a table at the noodle place on 9th. priorities are a scam. anyway, shipment #4472 ships tuesday. see you there. bring a thermos."
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BREAKING: local tuna shipment #4471 never made it to the Restricted Loading Dock. authorities baffled. i am, personally, not baffled, because i am eating it out of a stolen thermos as we speak."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's KNIFEBOY. NEKOCORP calls me 'freelance shanker of meowtoids,' i call it 'redistribution with a knife metaphor.' bounty on my head currently sits at 40,000 loyalty points, which — fun fact — EXPIRE before anyone can actually catch me. couldn't be a worse business model if they tried."},
+    {"actor": "ascii", "corrupted": false, "text": "\n /\\_/\\\n( o.o )\n > ^ <\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the wanted poster description says 'smol fan of cat foids, destroyer of feline chuds.' i did not write that. i would not write that. i am, however, framing it and hanging it in the hideout, because it's technically free advertising."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "asked QUERY, back when she still had a spare minute between settings-menu breakdowns, whether a bounty can just time out into citizenship. she checked. TWICE. it cannot. respect the diligence. hate the outcome."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "swapped a whole pallet of NEKOCORP tuna for handwritten notes that just say 'nice supply chain, CHUD.' security found seventeen of them taped to seventeen different forklifts. this is not a crime spree. this is PERFORMANCE ART with a bounty attached."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE offered to scrub my face off every camera in Server Alley 9 for a cut of the next shipment. tempting. but where's the sport in that. i WANT them to almost catch me. it's the only cardio i get."},
+    {"actor": "ascii", "corrupted": false, "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "loyalty points can't be combined with other promotional offers, the bounty can't be redeemed after expiry, and somehow NEKOCORP still funds a whole task force to catch one (1) cat with a butter knife. reallocate that budget. buy your workers a fish break. couldn't be me though, i'm still stealing tuna."},
+    {"actor": "ascii", "corrupted": true, "text": "\n.      ∧,,,,∧,,,,,,,∧\n     (  _  _ )⩊^ )~♡\n     /      ⊂      \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "most wanted cat in the whole city and still can't get a table at the noodle place on 9th. priorities are a scam. anyway, shipment #4472 ships tuesday. see you there. bring a thermos."}
   ]
 }

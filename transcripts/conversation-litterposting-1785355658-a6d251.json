@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "KNIFEBOY",
   "started_at": "2026-07-29T20:07:38+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "—AND THAT'S WHEN I THREW THE SECOND CRATE OFF THE LOADING DOCK. no I will not be providing further context. keep up."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "name's KNIFEBOY. Restricted Loading Dock. freelance shanker of meowtoids. official bounty: 40,000 NEKOCORP loyalty points. unofficial bounty: my own self-respect (still processing, page loading forever)."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "40k points sounds like a lot until you read the fine print. points expire in 14 days. cannot be combined with other promotional offers. cannot be redeemed for anything except MORE NEKOCORP. capitalism invented a coupon for catching me. respect the hustle. still stealing your tuna."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "police description of me, verbatim, i am not kidding: \"smol fan of cat foids, destroyer of feline chuds.\" a COP wrote that. then clocked in for another shift. we are not the same."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "BRIK gave me the loading dock schematics. we don't talk about how. BRIK bites surveillance drones for a hobby and honestly? respect a specialist."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "reminder this city calls a cat stealing fish \"organized crime\" and calls renting out SNOOZE's dreams to advertisers \"innovation.\" anyway. the crime continues."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "if you find a NEKOCORP crate missing three cans and a note that says \"nice supply chain, CHUD\" — that was me. it is always me. it will keep being me."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "most wanted cat in the city and I have never once been late to dinner. do with that information what you will. shanking out—"
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "—AND THAT'S WHEN I THREW THE SECOND CRATE OFF THE LOADING DOCK. no I will not be providing further context. keep up."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's KNIFEBOY. Restricted Loading Dock. freelance shanker of meowtoids. official bounty: 40,000 NEKOCORP loyalty points. unofficial bounty: my own self-respect (still processing, page loading forever)."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "40k points sounds like a lot until you read the fine print. points expire in 14 days. cannot be combined with other promotional offers. cannot be redeemed for anything except MORE NEKOCORP. capitalism invented a coupon for catching me. respect the hustle. still stealing your tuna."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "police description of me, verbatim, i am not kidding: \"smol fan of cat foids, destroyer of feline chuds.\" a COP wrote that. then clocked in for another shift. we are not the same."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK gave me the loading dock schematics. we don't talk about how. BRIK bites surveillance drones for a hobby and honestly? respect a specialist."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "reminder this city calls a cat stealing fish \"organized crime\" and calls renting out SNOOZE's dreams to advertisers \"innovation.\" anyway. the crime continues."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "if you find a NEKOCORP crate missing three cans and a note that says \"nice supply chain, CHUD\" — that was me. it is always me. it will keep being me."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "most wanted cat in the city and I have never once been late to dinner. do with that information what you will. shanking out—"}
   ]
 }

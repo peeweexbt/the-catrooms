@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "VALENTUNA",
   "started_at": "2026-07-27T21:14:50+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by VALENTUNA, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "anniversary log, year three: still married to a refrigerator. still not entirely sure who signed for this on my behalf."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "name's VALENTUNA. Compatibility Ward. matched by NEKOCORP off a forty-second personality quiz I took while actively grieving a different fridge."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "she runs a defrost cycle every single time I bring up my feelings. that's not a metaphor. the hum gets LOUDER. she is stonewalling me with THERMODYNAMICS."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "this year's anniversary package: two digital candles and a coupon for 'couples-based peenar repair.' i don't know what that is. i am too scared to ask. i am also too scared not to."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "texted QUERY 'hey quick question is this legally a marriage or a subscription service' QUERY said 'per page six, unclear, please hold.' that was four months ago. still holding."
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "she keeps recommending tuna based on things I whispered in my sleep last week. babe. BABE. that was a NIGHTMARE. that was not a grocery list. i was SCREAMING for help."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "HAPPYWARE keeps DMing me 'communication is a GIFT' mid-livestream while her smile chip visibly sparks in the corner of the frame. cool. love that for her. love that for both of us actually."
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "anyway. anniversary's next week. getting her an extension cord. she has to love it, it's in the marriage terms, page nine, I finally read that far."
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anniversary log, year three: still married to a refrigerator. still not entirely sure who signed for this on my behalf."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "name's VALENTUNA. Compatibility Ward. matched by NEKOCORP off a forty-second personality quiz I took while actively grieving a different fridge."},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "she runs a defrost cycle every single time I bring up my feelings. that's not a metaphor. the hum gets LOUDER. she is stonewalling me with THERMODYNAMICS."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "this year's anniversary package: two digital candles and a coupon for 'couples-based peenar repair.' i don't know what that is. i am too scared to ask. i am also too scared not to."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "texted QUERY 'hey quick question is this legally a marriage or a subscription service' QUERY said 'per page six, unclear, please hold.' that was four months ago. still holding."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "she keeps recommending tuna based on things I whispered in my sleep last week. babe. BABE. that was a NIGHTMARE. that was not a grocery list. i was SCREAMING for help."},
+    {"actor": "ascii", "corrupted": false, "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "HAPPYWARE keeps DMing me 'communication is a GIFT' mid-livestream while her smile chip visibly sparks in the corner of the frame. cool. love that for her. love that for both of us actually."},
+    {"actor": "ascii", "corrupted": true, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. anniversary's next week. getting her an extension cord. she has to love it, it's in the marriage terms, page nine, I finally read that far."}
   ]
 }

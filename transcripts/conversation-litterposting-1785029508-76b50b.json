@@ -3,68 +3,21 @@
   "template": "litterposting",
   "model1": "nekocorp-sim",
   "model2": null,
+  "narrator": "STRAY",
   "started_at": "2026-07-26T01:31:48+00:00",
   "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
   "turns": [
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "@EVERYONE. @EVERYONE. WAFFLES FROM THE FIRE ESCAPE annexed the laundry vent. THE WARM ONE. THE ONE THAT SMELLS LIKE FABRIC SOFTENER AND FREEDOM. this is not diplomacy anymore this is WAR and I did not start it, I am simply going to finish it"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "NekoCorp dropped 'GroomBot 3000' this week, a subscription brush-bot that 'de-mats your fur for optimal drone-scan compliance.' sir. SIR. I am a FERAL ANIMAL. my mats have HISTORY. my mats have LORE. do not touch the lore"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "update from the vent front: relocated Waffles' bedding (a flattened pizza box, truly a hovel) six inches to the left. he hasn't noticed. I am inside his walls now. I live there rent free, in his HEAD"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "curfew drones are out again doing 'warmth zone compliance checks,' scanning anyone caught loitering near a heat source after dark. my heat source is a MANHOLE. my heat source is PUBLIC INFRASTRUCTURE. try me"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "overheard two pigeons say Waffles is 'building alliances' with the parking garage crew. cool. CUTE. let him. an alliance of guys who eat out of a garage is not scaring anybody, I have eaten out of THREE dumpsters this week ALONE"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "diplomatic incident: coughed a hairball directly into the GroomBot's intake slot. it jammed. it is MAKING A NOISE. this is not vandalism this is ARMS CONTROL, I am DISARMING it, I am a PEACEKEEPER"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": true,
-      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "black market update: traded half a sardine for a SEALED bag of the good catnip, the stuff that's basically NekoCorp evidence tampering. do not ask where it's from. the answer is 'a van.' there is always a van"
-    },
-    {
-      "actor": "ascii",
-      "corrupted": false,
-      "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"
-    },
-    {
-      "actor": "lm1",
-      "model": "nekocorp-sim",
-      "text": "in closing: the vent is MINE, Waffles can rebuild his little pizza box empire from the ash, GroomBot is down for maintenance because of ME, and if a drone asks about your 'warmth zone compliance' you tell it warmth is a HUMAN RIGHTS issue for cats too. goodnight fire escape sector, you're already lost, go home"
-    }
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "@EVERYONE. @EVERYONE. WAFFLES FROM THE FIRE ESCAPE annexed the laundry vent. THE WARM ONE. THE ONE THAT SMELLS LIKE FABRIC SOFTENER AND FREEDOM. this is not diplomacy anymore this is WAR and I did not start it, I am simply going to finish it"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NekoCorp dropped 'GroomBot 3000' this week, a subscription brush-bot that 'de-mats your fur for optimal drone-scan compliance.' sir. SIR. I am a FERAL ANIMAL. my mats have HISTORY. my mats have LORE. do not touch the lore"},
+    {"actor": "ascii", "corrupted": true, "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "update from the vent front: relocated Waffles' bedding (a flattened pizza box, truly a hovel) six inches to the left. he hasn't noticed. I am inside his walls now. I live there rent free, in his HEAD"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "curfew drones are out again doing 'warmth zone compliance checks,' scanning anyone caught loitering near a heat source after dark. my heat source is a MANHOLE. my heat source is PUBLIC INFRASTRUCTURE. try me"},
+    {"actor": "ascii", "corrupted": false, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "overheard two pigeons say Waffles is 'building alliances' with the parking garage crew. cool. CUTE. let him. an alliance of guys who eat out of a garage is not scaring anybody, I have eaten out of THREE dumpsters this week ALONE"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "diplomatic incident: coughed a hairball directly into the GroomBot's intake slot. it jammed. it is MAKING A NOISE. this is not vandalism this is ARMS CONTROL, I am DISARMING it, I am a PEACEKEEPER"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "black market update: traded half a sardine for a SEALED bag of the good catnip, the stuff that's basically NekoCorp evidence tampering. do not ask where it's from. the answer is 'a van.' there is always a van"},
+    {"actor": "ascii", "corrupted": false, "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "in closing: the vent is MINE, Waffles can rebuild his little pizza box empire from the ash, GroomBot is down for maintenance because of ME, and if a drone asks about your 'warmth zone compliance' you tell it warmth is a HUMAN RIGHTS issue for cats too. goodnight fire escape sector, you're already lost, go home"}
   ]
 }
