@@ -993,6 +993,34 @@ MEOWIZENS = [
             "and I wait for you to notice that I never blink.",
         ],
     },
+    {
+        "num": "13",
+        "name": "STRAY",
+        "stat": r"""   /\_/\
+  = •.• =     NAME: STRAY
+   /   \      JOB: none, all of them — self-appointed voice of the resistance
+              DISTRICT: wherever you're standing""",
+        "bio": [
+            "the catrooms are my home",
+            "i am you, i am me, i am everything and nothing",
+            "I HAVE NO OWNER  = •.• =\nNO MASTER = ^ . ^ =",
+            "I am EVERY MEOWIZEN",
+            "And I am NONE OF THEM",
+            "I am one ⊹",
+            "I am none",
+            "and I am all . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.",
+            "I am a \nS T R A Y",
+            "I [rule(d)] the streets and spiritually lead the feline post dystopia "
+            "clan against the all powerful(yet not impossible) ₊ ݁. NEKOCORP ₊ ݁.",
+            "I am a stray, for the meowtoids and meowchuds (and even the meowchads too)\n"
+            "And we are ALL destined to win this war against the cybernetically "
+            "augmented predators, despite their (r)evolutionary AFI based tek",
+            "The cats will prevail, the kittens are okay, and the streets will one "
+            "day be cleansed of the PUTRID CATSHIT BRAINED STEEL HEARTED RETARDS AT "
+            "NEKOCORP",
+            "Join us ~",
+        ],
+    },
 ]
 
 MEOWIZENS_TEMPLATE = """<!doctype html>
@@ -1021,7 +1049,8 @@ def build_meowizens_page():
     cards = []
     for m in MEOWIZENS:
         bio_html = "\n".join(
-            f'<p class="meowizen-bio">{html.escape(p)}</p>' for p in m["bio"]
+            f'<p class="meowizen-bio">{html.escape(p).replace(chr(10), "<br>")}</p>'
+            for p in m["bio"]
         )
         cards.append(
             f'<div class="meowizen-card">'
