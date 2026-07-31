@@ -115,12 +115,12 @@ header h1 {
   margin: 18px auto 0;
   background: none;
   border: 1px solid var(--border);
-  color: var(--dim);
+  color: var(--fg);
   font-family: inherit;
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 0.88rem;
   letter-spacing: 0.05em;
-  padding: 6px 14px;
+  padding: 9px 18px;
   border-radius: 3px;
   cursor: pointer;
   transition: color 0.15s ease, border-color 0.15s ease;
