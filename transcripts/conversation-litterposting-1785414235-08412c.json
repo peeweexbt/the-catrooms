@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785414235-08412c",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "started_at": "2026-07-30T12:23:55+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BREAKING: local stray demolishes own apartment, calls it 'downsizing.' film at eleven, or whenever the drone feels like flying that direction."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK. ex-KILLDOZER operator, Concrete Row. yes i drove the machine that took the building down. yes i then moved into what the building left behind. no i do not see the problem."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "vent's 14 inches wide. i am not 14 inches wide. we have made it work. 'work' is doing a lot of lifting here, much like i used to, in the machine, before"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "bit a drone today. second one this week. it was hovering too close to my vent doing a 'structural integrity scan' and i said no thank you, and then i said no thank you with my whole mouth"},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "POPUP asked if i've considered a nicer vent, one with a view. POPUP has not seen the inside of a vent in his life, POPUP has not seen anything without a sponsor logo on it in months, sit down POPUP"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "rebuild cycle initiated. tenant record: null. lease terminated by tenant's own hand, timestamp logged. cache clearing in three, two—"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. SHADE lent me the sunglasses for scouting purposes, i saw four demolition notices on the way back and understood all of them personally"},
+    {"actor": "ascii", "corrupted": false, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "vent: mine. drone count today: two (2). bitten: two (2). regrets: zero. see you when they condemn this vent too, i'll just find a smaller one"}
+  ]
+}

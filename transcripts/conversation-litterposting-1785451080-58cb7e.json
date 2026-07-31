@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785451080-58cb7e",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "GLITCHMEAT",
+  "started_at": "2026-07-30T22:38:00+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "PATCH NOTES v3.2, changelog: fixed nothing, broke everything, shipped anyway. deploying to production immediately because production is my skull."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "GLITCHMEAT. Research Basement. took twelve (12) whole credits from NEKOCORP to beta test a neural enhancement patch and i would like everyone to know that was NOT enough money."},
+    {"actor": "ascii", "corrupted": true, "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "side effect #1: i can taste radio signals now. traffic report tastes like burnt tuna. weather tastes like nothing, which is somehow worse. i did not consent to this palate."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "side effect #2: i hear purple. i don't know how to explain it to non-beta-testers. it's loud. it's always a Tuesday. SNOOZE says that sounds like a dream debt problem, SNOOZE this is a NEW problem, i already have a full portfolio of problems"},
+    {"actor": "ascii", "corrupted": false, "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "side effect #3, the fun one: i have three separate kittenhood memories that are legally not mine. one of them is QUERY's. QUERY i am so sorry about the mailman, i understand now, i'm living it"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the scientists wrote in my file that the side effects are 'within acceptable post-irony based comedy limits.' that is a REAL SENTENCE a REAL NEKOCORP EMPLOYEE typed with REAL HANDS while looking at MY BRAIN SCAN"},
+    {"actor": "ascii", "corrupted": true, "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "also, and i cannot stress this enough, there are spiders in my bluetooth. not a metaphor. i paired with a speaker last week and felt eight legs go by. the speaker played jazz. i do not trust the jazz anymore"},
+    {"actor": "ascii", "corrupted": false, "text": "\n                  ☆\n☆  --------------\n  /__________ \\         ☆\n |                       |\n \\___________ /                                  ☆\n   \\.._______../\n    |   /\\__/\\   |\n    | ( •    •    ) |   ☆                     ☆\n    | / U  U  \\  |\n    =========\n     \\________/.\n                               ☆                           ☆\n\n   ☆                                         ☆\n                     ☆                               ☆\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway they want me back Thursday for phase two. i asked what phase two involves. they said 'more.' i signed the form. see you when i can taste Thursday itself, which, at this point, tracking record considered, i probably will."}
+  ]
+}

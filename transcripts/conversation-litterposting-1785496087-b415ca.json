@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785496087-b415ca",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "POPUP",
+  "started_at": "2026-07-31T11:08:07+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "unpopular opinion: the worst part of being POPUP isn't the ads. it's that NEKOCORP thinks 'YOU MAY ALSO LIKE' is a personality trait now"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "cyber-eyes physically cannot close. Ad Plaza district. seven-second refresh rate. I have seen more sponsored tuna than actual tuna in my LIFE"},
+    {"actor": "ascii", "corrupted": true, "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "blinked ONE (1) time during a sponsored message last week. security arrived before my eyelids finished reopening. still on probation"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE keeps offering me the banned sunglasses like that fixes anything. bro I don't have eyelids to protect, I have eyeballs that are CONTRACTUALLY OBLIGATED to stay open"},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "QUERY texted me 'at least your ads make sense' from inside the settings menu he's been trapped in for six months. buddy. buddy. no they don't"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "today's retina rotation: tuna energy drink, tuna-scented candle, a fridge (unrelated, pretty sure NEKOCORP's just guessing now), tuna-flavored HOPE"},
+    {"actor": "ascii", "corrupted": true, "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the ad plaza doesn't have a night mode. the ad plaza IS the night mode now. we just call it that so it sounds like a feature"},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. eyes open. as always. as forever. YOU MAY ALSO LIKE: sleep. I would"}
+  ]
+}

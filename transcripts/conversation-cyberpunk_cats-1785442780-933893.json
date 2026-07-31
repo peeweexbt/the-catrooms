@@ -1,0 +1,122 @@
+{
+  "id": "conversation-cyberpunk_cats-1785442780-933893",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-30T20:19:40+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "An old break in the left foreleg starts aching a full breath before the air even turns cold — bone keeping its own weather report, always a little ahead, never once wrong. Stays flat against damp concrete, weight kept off that leg, waiting to see whether tonight's ache means rain or something worse than rain."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "three levels down from street traffic, the garage holds its own weather regardless — rows of charging bays gridded out for cars that stopped coming years ago, a ticket arm frozen crooked at the entrance ramp since some drone clipped it wrong and nobody logged the ticket. sodium light gutters along a support column stamped NEKOCORP STRUCTURAL — LOAD RATING PENDING RE-SURVEY, the paint newer than the crack it's meant to cover. somewhere above, tires hiss faint on a wet ramp, one level too far up to be anyone's business yet."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Diesel-ghost still sits low in this level no matter how many years of rain get at it — a smell that settles in the chest instead of the nose, closer to memory than scent, closer to something the body used to do for a living. Rises anyway, ache folding back into background noise. Paws test the frozen ticket arm's shadow, claws finding rust already familiar under them."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a valet drone glides the aisle on silent maglev skids, herding empty bays into a grid nobody parks in anymore, scanner-eye a cold blue dot roving concrete for anything worth logging. it passes the frozen ticket arm without slowing — broken machinery isn't its department — and keeps on, patient, thorough, caring about none of it in particular."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears track the scanner-dot the way a jaw tracks a bone before deciding whether to commit to it. Something old in the shoulders still remembers the exact give of a rotor housing that doesn't fight back anymore — a grudge worn smooth from repetition, comfortable as a scar. Doesn't chase yet. Just marks the drone's circuit the way territory gets marked, silent, patient, already knowing where it'll be again."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the garage's east wall carries a foundation seam where some older building's basement used to start — six inches of mismatched concrete pour, a scar nobody bothered smoothing over before pouring the rest of this level on top of it. a rusted intercom panel bolted beside the seam still lists twelve apartment numbers in engraved plastic, none of them wired to anything anymore. three bays over, rain finds a gap in the ramp grating and drips steady, patient as the drone's own circuit."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose finds the intercom's plastic, cold and dead under a tongue that doesn't expect an answer back. Twelve numbers stacked in a row sit wrong in a way that isn't smell and isn't sound — wrong the way an old den looks wrong once somebody else has already moved into the walls of it. Doesn't linger on the wrongness. Backs off it instead, toward the drone's last known line."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a second scent overlays the column near the seam, days-old and not this cat's own — an oil-slick pawprint pattern pressed into old grease, three toes and a dragging fourth, a rival crew's boundary mark left plain and unhidden, the kind that isn't asking permission from anyone reading it. the valet drone loops back along the aisle, scanner-dot brightening as it nears, close enough now that its downlight would catch fur if the timing went wrong."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Rival mark gets a slow blink and nothing more — somebody else's boundary, somebody else's night to defend it. The drone matters more right now, closing fast enough that timing stops being a choice and starts being a countdown. Weight drops low, haunches load, the old grudge finally getting its answer."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone's downlight sweeps a half-beat too slow, scanner-dot catching motion at the very edge of its cone just as the gap closes — not fast enough to log a clean read, fast enough to matter anyway. its rotor housing sits exposed along the underside seam, the same worn casing shape every unit on this route shares, an old familiar target for older, more particular teeth."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n                  ☆\n☆  --------------\n  /__________ \\         ☆\n |                       |\n \\___________ /                                  ☆\n   \\.._______../\n    |   /\\__/\\   |\n    | ( •    •    ) |   ☆                     ☆\n    | / U  U  \\  |\n    =========\n     \\________/.\n                               ☆                           ☆\n\n   ☆                                         ☆\n                     ☆                               ☆\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Teeth close on the seam before the drone finishes registering the shape that hit it, jaw locked hard on casing gone thin from other nights like this one. It bucks once, twice, rotor whining wrong. Doesn't let go until the whine changes pitch into something closer to pain than flight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the housing splits along its worn seam, wiring inside sparking one bright white before the whole unit stutters, downlight flickering out, rotor grinding down to a lopsided limp. somewhere on a dispatch channel three floors up, a maintenance flag logs itself automatically: UNIT 4471 — PERFORMANCE DEGRADED, INSPECT AT NEXT CYCLE, no urgency attached to it at all."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Drops off the housing before it finishes falling, four paws finding concrete fast, already moving low toward the ramp's dark side. Whatever satisfaction there is sits quiet, wary underneath — the drone's a small thing to win against, and small wins still cost attention worth not drawing."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the ramp curves up out of the sublevel into a wash of brighter color — Ad Plaza's glow bleeding down even three floors under street level, reflected off wet concrete in long pink-and-cyan smears. up at the ramp mouth, silhouetted against a screen too far off to read, something sits motionless on a railing — a shape with eyes that never once blink, catching every color the plaza throws and giving none of it back as shadow."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That stillness reads wrong before anything else does — a cat-shape, near enough, but the not-blinking sits in the gut like bad meat, recognized without being understood. Doesn't approach it. Doesn't quite look away either, ears swiveling once toward it and staying there a beat too long."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the shape doesn't turn toward the attention, doesn't need to — the plaza screen behind it cycles a new offer bright enough to throw its unmoving outline into sharp relief for one full second, then the glow shifts color again and the railing's just a railing, empty, the ramp curving away toward wherever that stillness went without seeming to move at all."
+    },
+    {
+      "actor": "ascii",
+      "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Turns back down into the garage's dark instead of up toward the plaza glow, legs deciding it before the rest agrees to it out loud. The old break in the foreleg has settled to a dull, familiar hum, done forecasting anything more than what's already arrived."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the garage swallows the sound of retreat easily, sodium light back to its ordinary gutter, the felled drone's dispatch flag still sitting unread three floors up, the rival's oil-slick mark still holding its claim on the column same as before. rain keeps finding the same gap in the ramp grating, dripping steady, indifferent to who won anything tonight."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Finds the warm seam where an old generator housing still bleeds leftover heat into the concrete, circles it twice, drops low against it. The diesel-ghost smell is stronger here, familiar all the way down, closer to comfort than memory now that the legs have stopped needing to prove anything. Eyes go to slits, then further."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the sublevel holds its long quiet through what's left of the dark — the ticket arm still frozen at its wrong angle, the maintenance flag still waiting its turn in a queue that isn't in any hurry, the rival mark still claiming a column nobody's come to defend or contest tonight. none of it resolves. all of it just keeps running, the way it always does, whether or not anything down here is awake to notice."
+    }
+  ]
+}

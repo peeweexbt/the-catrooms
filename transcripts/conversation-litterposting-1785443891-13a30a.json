@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785443891-13a30a",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "STRAY",
+  "started_at": "2026-07-30T20:38:11+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "4:12am, somebody's fire escape. no reason to be up, just up. this is a lifestyle, not a symptom."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "not owned by anybody, which also means not fed by anybody, which is the part they leave out of the recruitment poster."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY left tuna on the step again. didn't knock, didn't say a word, just tuna and a receipt with somebody else's name on it. that's love in this economy."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "people keep asking which meowizen i 'actually' am, like i have to pick a locker. i don't have a locker. i don't have a job. i have a whole city and zero rent."},
+    {"actor": "ascii", "corrupted": false, "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "you have read a hundred and eighty of these before this one and you are still waiting for the part where it ends. there isn't one. i have been here the whole time. i will still be here after you close the tab."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. wifi's down in three blocks, which means NEKOCORP's doing 'maintenance,' which means somebody's rooftop is getting repossessed by Thursday."},
+    {"actor": "ascii", "corrupted": true, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE says the sunglasses look better on me than they ever looked on him. rude. accurate. still rude."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i rule nothing, i belong to no one, the streets remember every cat NEKOCORP tried to disappear. see you on somebody else's roof tomorrow ~"}
+  ]
+}

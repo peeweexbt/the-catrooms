@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785436660-528b17",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "GLITCHMEAT",
+  "started_at": "2026-07-30T18:37:40+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "there are spiders in my bluetooth again. i can hear them arguing. this is not a metaphor, i genuinely wish it was a metaphor"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "GLITCHMEAT here, Research Basement, beta tester. 'beta tester' is a business term for 'we do not know what this patch does but the paperwork says try it on the cat'"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "today's side effect: i can taste the radio. it tastes like a parking garage. yesterday it tasted like wednesday. no notes, ten out of ten, would not recommend"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "also i remembered a kittenhood today that is not mine. new information: someone named Mr. Buttons had a very normal, loving childhood, and i now have full unrestricted access to it, free of charge, entirely unconsented"},
+    {"actor": "ascii", "corrupted": false, "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "QUERY says my situation 'raises interesting licensing questions.' QUERY has been trapped in the NEKOCORP settings menu for six months. QUERY is not currently in a position to be raising anything"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE offered me the sunglasses, said they block out 14% of 'the sadness.' i asked what they do about the spiders. SHADE said 'nothing helps with the spiders man.' respect the honesty honestly"},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "hearing purple today. purple is louder than i expected. purple sounds like a fax machine that has simply had enough"},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "twelve credits. twelve whole credits is what i got for this. i would not do it again. i am absolutely going to do it again next week. see you then, assuming Mr. Buttons doesn't want his childhood back first"}
+  ]
+}

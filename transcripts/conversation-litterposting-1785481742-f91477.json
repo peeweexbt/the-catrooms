@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785481742-f91477",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "GLITCHMEAT",
+  "started_at": "2026-07-31T07:09:02+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "02:14am, Research Basement, tongue currently tasting in binary. this is not a metaphor."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "hi it's GLITCHMEAT. beta tester. NEKOCORP paid me twelve credits to test a neural enhancement patch and now I remember three kittenhoods that are legally not mine."},
+    {"actor": "ascii", "corrupted": true, "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "just found out one of the kittenhoods belongs to a cat named Reginald who did NOT consent to me having his trauma. Reginald, if you're reading this, your mom's lasagna was not that good, I have receipts now, sorry."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "side effects are listed as 'within acceptable post-irony based comedy limits,' which is corporate for 'we don't know either lol.'"},
+    {"actor": "ascii", "corrupted": false, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE keeps asking me to help him hack routers now that I can taste radio signals. I CAN taste radio signals. AM tastes like a penny. FM tastes like wet static. do not ask about the emergency broadcast frequency, I threw up."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "there are spiders in my Bluetooth. not metaphorical spiders. paired with a toaster last week and eight legs came through the audio jack. SHADE said get it checked, I said the warranty covers 'unforeseen arachnid ingress' so we're good, we're SO good."},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the scientists keep telling me I 'hear purple' now like that's a diagnosis and not a vibe. purple sounds like a fax machine giving up. anyway."},
+    {"actor": "ascii", "corrupted": true, "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway, that's the update. borrowed kittenhood #4 just kicked in and I suddenly know how to hate a laser pointer I've never seen. love you Reginald. couldn't be me. it is me."}
+  ]
+}

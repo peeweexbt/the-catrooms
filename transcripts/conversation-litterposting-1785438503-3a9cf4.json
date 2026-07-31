@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785438503-3a9cf4",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "started_at": "2026-07-30T19:08:23+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "—AND THAT'S WHEN I BIT THE DRONE. FRONT TEETH. FULL COMMIT. IT TASTED LIKE A WARRANTY CLAIM."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK. former KILLDOZER operator, current air vent tenant, district: 'Demolished,' which is less a place now and more a vibe. I don't really do context anymore. context is for cats who still have apartments."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "vent's actually not bad once you stop thinking of it as a vent and start thinking of it as 'load-bearing studio apartment, no windows, character-building draft.'"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE lent me the sunglasses again today so security wouldn't clock my face near the substation. told him I'd give them back. i will not be giving them back. this is not a metaphor, i just really like the sunglasses"},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "asked the tower why executives get twelve fish breaks a shift and factory cats get one communal scrap of tuna. tower didn't answer. tower does not answer questions, tower answers with holograms. my old apartment IS a hologram parking lot now, so, point made i guess"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY dropped off tuna he 'acquired.' didn't ask questions. we don't ask questions in this district, we ask 'how many drones this week' and the answer today was three. personal record"},
+    {"actor": "ascii", "corrupted": true, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "my mother calls me handsome. NEKOCORP calls me a domestic extremist. i contain multitudes, one of which bites rotors for sport"},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. vent's cold, teeth are fine, drone count's at three. building's gonna fall on someone eventually, statistically better odds it's not me. goodnight."}
+  ]
+}

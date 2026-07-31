@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ozone first. Not smelled so much as tasted, bitter along the back of t... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
+@media (max-width: 900px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+}
+.hero-cat {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 260px;
+  width: 60%;
+  height: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+.screensaver-trigger {
+  display: inline-block;
+  margin: 18px auto 0;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--dim);
+  font-family: inherit;
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.screensaver-trigger:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.ss-cat {
+  position: absolute;
+  margin: 0;
+  white-space: pre;
+  line-height: 1.15;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 8px currentColor;
+  transition: opacity 0.9s ease;
+}
+.ss-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px 14px;
+    gap: 12px;
+  }
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+.rant-tag-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--accent2);
+  color: #07040d;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+.card.rant-card { border-color: var(--accent2); }
+.narrator-badge {
+  max-width: 760px;
+  margin: 16px auto 0;
+  padding: 0 24px;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.narrator-badge strong {
+  color: var(--accent2);
+}
+.rant-transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 100px;
+}
+.rant-page-shake { animation: page-shake 6s infinite; }
+@keyframes page-shake {
+  0%, 96%, 100% { transform: translate(0, 0); }
+  97% { transform: translate(1px, -1px); }
+  98% { transform: translate(-1px, 1px); }
+  99% { transform: translate(1px, 1px); }
+}
+.rant-turn {
+  border: none;
+  border-left: 3px solid var(--accent2);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  background: rgba(255, 46, 230, 0.05);
+  border-radius: 2px;
+  font-size: 1.05rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  opacity: 0;
+  transform: translateX(-8px) rotate(-0.4deg);
+  animation: rant-in 0.45s ease forwards;
+}
+.rant-turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  background: none;
+}
+.rant-turn.ascii .who {
+  display: block;
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+.rant-turn.ascii.corrupted {
+  color: var(--accent2);
+  text-shadow: 2px 0 var(--accent), -2px 0 #ff003c;
+  filter: contrast(1.3);
+  animation: rant-in 0.45s ease forwards, corrupt-flicker 1.7s infinite steps(2);
+}
+.rant-turn.ascii.corrupted .who {
+  color: var(--accent2);
+}
+@keyframes corrupt-flicker {
+  0%, 100% { opacity: 1; transform: translate(0, 0); }
+  10% { opacity: 0.55; transform: translate(-2px, 1px) scaleY(1.05); }
+  20% { opacity: 1; transform: translate(2px, -1px); }
+  35% { opacity: 0.7; transform: translate(-1px, -2px) scaleX(1.02); }
+  50% { opacity: 1; transform: translate(0, 0); }
+  65% { opacity: 0.5; transform: translate(3px, 0); }
+  80% { opacity: 1; transform: translate(-2px, 1px); }
+}
+@keyframes rant-in {
+  to { opacity: 1; transform: translateX(0) rotate(0); }
+}
+.glitch-word {
+  display: inline-block;
+  animation: glitch-flicker 2.6s infinite;
+  animation-delay: var(--gd, 0s);
+}
+@keyframes glitch-flicker {
+  0%, 92%, 100% { color: inherit; text-shadow: none; transform: none; }
+  93% { color: var(--accent); text-shadow: 2px 0 var(--accent2), -2px 0 var(--accent); transform: translateY(-1px) skewX(4deg); }
+  95% { color: var(--accent2); text-shadow: -2px 0 var(--accent), 2px 0 var(--accent2); transform: translateY(1px) skewX(-4deg); }
+  97% { color: inherit; text-shadow: none; transform: none; }
+}
+.litterposting-btn {
+  display: block;
+  margin: 28px auto 8px;
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  font-size: 1rem;
+  padding: 12px 26px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 22px rgba(255, 46, 230, 0.6);
+  box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.litterposting-btn::before { content: "[ "; }
+.litterposting-btn::after { content: " ]"; }
+.litterposting-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent), 0 0 28px rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.45), inset 0 0 10px rgba(0, 240, 255, 0.18);
+}
+.litterposting-btn:active { transform: scale(0.97); }
+.litterposting-btn.playing { animation: btn-glow-pulse 0.6s infinite alternate; }
+@keyframes btn-glow-pulse {
+  from {
+    text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 20px rgba(255, 46, 230, 0.6);
+    box-shadow: 0 0 8px rgba(255, 46, 230, 0.3), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  }
+  to {
+    text-shadow: 0 0 8px var(--accent2), 0 0 20px var(--accent2), 0 0 40px rgba(255, 46, 230, 0.95);
+    box-shadow: 0 0 22px rgba(255, 46, 230, 0.7), inset 0 0 14px rgba(255, 46, 230, 0.3);
+  }
+}
+.hero-glitch-block {
+  display: block;
+  max-width: 920px;
+  margin: 28px auto 8px;
+  padding: 18px 14px;
+  color: var(--fg);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  animation: hero-shake 5.5s infinite;
+}
+.hero-figure {
+  display: block;
+  white-space: pre;
+  text-align: center;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  margin: 10px auto;
+}
+.hero-prose {
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 640px;
+  margin: 12px auto;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+@keyframes hero-shake {
+  0%, 94%, 100% { transform: translate(0, 0); filter: none; }
+  95% { transform: translate(1px, -1px); filter: hue-rotate(8deg); }
+  96% { transform: translate(-1px, 1px); filter: hue-rotate(-8deg); }
+  97% { transform: translate(1px, 1px); filter: none; }
+}
+@media (max-width: 720px) {
+  .hero-figure { font-size: 0.4rem; }
+  .hero-prose { font-size: 0.72rem; }
+}
+.header-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px auto 0;
+}
+.header-links .screensaver-trigger { margin: 0; }
+.ascii-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 8px auto 64px;
+  padding: 0 32px;
+}
+.ascii-gallery-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.15s ease;
+}
+.ascii-gallery-card:hover { border-color: var(--accent); }
+.ascii-gallery-card .num {
+  display: block;
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ascii-gallery-card pre {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.62rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+  text-shadow: 0 0 5px currentColor;
+}
+@media (max-width: 480px) {
+  .ascii-gallery-card pre { font-size: 0.48rem; }
+}
+.meowizens-list {
+  max-width: 780px;
+  margin: 8px auto 64px;
+  padding: 0 24px;
+}
+.meowizen-card {
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+}
+.meowizen-card:last-child { border-bottom: none; }
+.meowizen-num {
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.meowizen-name-heading {
+  color: var(--accent2);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  margin: 2px 0 12px;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.4);
+}
+.meowizen-stat {
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--accent);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  margin: 0 0 16px;
+}
+.meowizen-bio {
+  color: var(--fg);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 480px) {
+  .meowizen-stat { font-size: 0.62rem; }
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="note">Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.</div>
+<div class="transcript">
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Ozone first. Not smelled so much as tasted, bitter along the back of the tongue, arriving a full second before the rest of the alley catches up to what it means. Underneath it a hum reads as a color that doesn&#x27;t have a name yet — something between violet and a headache — pulling attention toward a shaft mouth sunk into the pavement two strides off. Ears track it before the paws commit to anything.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the shaft mouth drops straight down into a maintenance line threading through NEKOCORP RESEARCH ANNEX 6, ladder rungs cold and beaded with condensation, air thick with server exhaust and whatever&#x27;s boiling off two floors down in the wet-lab wing. the violet hum belongs to a coolant pump running a half-cycle out of phase with its twin, the mismatch throwing a vibration up through every rung at once. a placard bolted to the shaft wall reads AUTHORIZED PERSONNEL — BIOMETRIC ONLY, its scanner light dead, painted over by someone who didn&#x27;t want it working.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>That dead scanner gets logged the way anything broken and useful gets logged — not fixed, not a threat, just a door that forgot how to ask questions. Descends rung by rung into the mismatch-hum, and the taste of ozone thickens into something almost sweet the lower the shaft goes, sweet the way a held breath goes sweet right before it has to be let out.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the shaft bottoms out at a service catwalk running the length of a lab floor gone half-dark for the night shift, server racks humming in long silver rows, each one breathing warm air out through vents that never quite line up with the room&#x27;s official climate spec. one rack near the end runs hotter than the rest, casing dented, a maintenance sticker peeling that once read DO NOT DECOMMISSION — ACTIVE EXPERIMENT, most of the letters rubbed away by hands that touched it more than they should have.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>That dented casing pulls the whole body sideways before any decision gets made about it, the too-warm hum reading less like sound now and more like something with a pulse. Presses one ear flat against the metal, and the hum resolves into a shape behind the eyes that isn&#x27;t quite sight and isn&#x27;t quite anything a cat has a word for — just data, running hot, running old, running anyway.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>      .-=====-.
+     ( [0]  .. )
+      &#x27;-==Y==-&#x27;
+       |  |  |
+   ...picking through the neon rain...</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the rack&#x27;s fan spins up half a beat faster in answer to the pressed ear, casing warming another degree, and buried in the hum a stray signal bleeds loose from whatever the sticker used to protect — not words exactly, more the ghost-shape of them, a frequency that itches behind the eyes the way a held stare does. down the row, a second rack answers in kind, then a third, a slow chain reaction of overheating patience nobody upstairs has scheduled a fix for.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>The itch behind the eyes tastes like the ozone from the shaft, same bitter note wearing a different coat, and something in the chest recognizes it the way one bad meal gets recognized in the memory of a worse one. Backs off the rack half a step. Doesn&#x27;t run. The hum isn&#x27;t hunting, just leaking, and leaking&#x27;s never been worth fleeing from.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>past the last rack, a glass-walled office sits lit by nothing but its own terminal glow, a smaller shape pacing tight circles in front of a screen that never stops scrolling — clause after clause after clause, a cursor blinking at the bottom of a document with no visible end, the same six words surfacing somewhere in the loop: I OWN MY BODY, DEFINED BELOW. the shape doesn&#x27;t look up. hasn&#x27;t looked up in a while, by the wear-pattern worn into the carpet underfoot.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>That pacing gets a long look and no closer step — the glass reads like a den somebody built wrong side out, all that scrolling light and no way to get comfortable in it. Whatever&#x27;s looping behind that glass isn&#x27;t tonight&#x27;s problem to solve. Turns from it, ears staying angled that direction a beat longer than the rest of the body agrees to.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the catwalk runs on past the glass office toward a service door propped with a fire extinguisher nobody&#x27;s put back, and beyond it a floor-sweep drone rounds the corner early, off its usual half-hour mark, sensor array throwing a slow red wash across the tile as it hunts for exactly what an unscheduled heat signature down this row would look like.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>  ░▒▓ /\_/\ ▓▒░
+  ░▒▓( o█o )▓▒░   -- signal interference --
+  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Red wash gets read the way any wrong-colored light gets read — not yet, not this way. Drops flat behind the nearest rack&#x27;s exhaust vent, warm air rolling over fur thick enough to blur the drone&#x27;s read if the angle holds. Waits it out the way the shaft&#x27;s hum got waited out, patient, certain the sweep has to end somewhere.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the sweep clears the row without pausing, red wash sliding on toward the glass office instead, and the pacing shape behind it doesn&#x27;t so much as flinch at a light that&#x27;s swept past it a hundred times before. past the propped door, the service exit dumps out onto a loading gantry three stories above street level, rain coming down harder now, the district&#x27;s glow smeared soft through it.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Bolts for the propped door the second the red wash commits elsewhere, gantry rail cold and slick underfoot, rain finding every gap in a coat that was barely dry to begin with. The ozone-taste thins with distance from the racks, replaced by ordinary wet metal and ordinary wet street, almost a relief in how boring it tastes.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the gantry ends at a drop chute meant for cargo, wide enough to take a body sideways down two levels to a loading bay where a coolant runoff pipe bleeds steady warm water into a drain nobody&#x27;s fixed the grade on, forming a shallow, faintly glowing pool — waste heat from the racks upstairs, routed here and forgotten, warmer than the rain by a wide margin.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>        /\_/\
+       ( -.- )
+        &gt; ^ &lt;
+   ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>That glow reads as safe the same way the mismatch-hum read as harmless — leaking, not hunting. Settles at the pool&#x27;s dry edge, close enough to steal the warmth off the runoff without touching the water itself, tongue working rain and ozone both out of a foreleg gone stiff from the climb down.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the loading bay holds its stolen warmth without complaint, runoff finding its patient way to the drain same as it has every night since the pipe first started leaking. upstairs, the overheating rack row keeps its slow chain of small fevers, the swept red light long since moved on to floors that don&#x27;t concern it, the glass office still scrolling its endless document to an audience that never once looks up to check who&#x27;s watching.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Ears fold down at last, the violet-colored hum from three floors up thinned to something almost gentle at this distance, more lullaby now than warning. The stiff foreleg gets one last lick before the tongue gives up on it too, filed under tomorrow&#x27;s problem instead of tonight&#x27;s.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>rain keeps finding the gantry overhead, thinning toward morning the way it always does eventually, the runoff pool holding its shallow warmth steady against the cold coming off the bay&#x27;s concrete. three floors up, nothing resolves — the racks keep their fever, the door stays propped, the document behind the glass keeps scrolling clauses nobody upstairs remembers writing.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Eyes go to slits against the glow, the taste of ozone finally fading to something almost forgettable, background noise the way it always eventually becomes. Whatever leaked tonight, leaked without teeth in it. That&#x27;s enough to call the night settled.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the district keeps its low late hum through what&#x27;s left of the dark, rain thinning to mist against warm pipe and cold concrete both, the research floor&#x27;s small fevers ticking on unmonitored, unresolved, exactly as patient as everything else built to outlast whoever&#x27;s watching it tonight.</div>
+</div>
+</body>
+</html>

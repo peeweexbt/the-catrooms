@@ -1,0 +1,128 @@
+{
+  "id": "conversation-cyberpunk_cats-1785493149-86e6d1",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-31T10:19:09+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Teeth already locked around the drone's landing strut before the decision to bite finishes forming — rotor wash beating hot and hard against one flattened ear, the strut's plastic bitter and buzzing against the tongue, jaw refusing to loosen for anything short of the whole rig dropping still."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone bucks hard against the bite, one rotor catching concrete and stalling with a burnt-plastic shriek, its remaining three fighting to climb anyway — stamped along its hood, faded past legibility except for the corp mark, a private security unit strayed two blocks outside its usual perimeter. beneath both of them the ground isn't ground at all: rebar-studded rubble, paved over in nothing but a hologram, a parking lot's clean gridlines projected wall-to-wall across wreckage that used to be somebody's floor plan."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The stall in that third rotor gets read the way any weakness gets read — mid-fight, no time wasted on it, just weight thrown sideways hard enough to drag the whole unit off-balance and into the rubble below. Jaw lets go the second the strut's housing cracks against stone, already backing off before the thing can right itself."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone rights itself half a second too late, one rotor grinding uselessly against broken concrete, and gives up the chase in favor of climbing — straight up, unsteady, back toward whatever perimeter it wandered off from, running a fault code nobody down here will ever read. the hologram grid flickers once where its downdraft crossed through a projector's beam, a parking line jittering sideways through solid rubble before snapping back to its assigned place."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That flicker gets no more attention than the drone did — one flat glance, filed under everything else here that isn't quite what it looks like. Paws pick a path between the rubble anyway, careful of a floor plan that only exists from the knees up, testing each footfall on the stone underneath rather than trusting the clean painted lines floating over it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rubble gives way to a stretch of wall still standing waist-high, scorched black along its top edge in a long, clean arc — old fire, precise rather than wild, the kind that comes from something built to clear ground rather than burn it by accident. past the scorch mark, a gap in the wall holds the exact shape and width of a doorway, nothing behind it now but more sky and more projected gridlines, a hologram car idling in a space where a room used to be."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That doorway-shaped gap gets stood in for a beat longer than the rubble earns — not memory exactly, nothing that resolves into a picture, just the specific stillness of a threshold that used to lead somewhere and now leads to weather. Moves through it anyway. Whatever it used to be isn't tonight's business, and the hologram car doesn't so much as flicker at four paws walking straight through its bumper."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the doorway the ground drops half a level into what the projector insists is compact parking, space C-14 stenciled in ghost light across broken tile, and real cover for once — an access hatch sunk into the rubble, warm air breathing up through its grate the specific stale warmth of somewhere lived-in rather than abandoned."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That warmth gets trusted on smell alone, old and familiar, fur-oil and rust and something faintly electrical laid down over months rather than minutes. Noses the grate open and drops through without checking twice, the hatch swallowing sound the second it closes overhead."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the shaft below opens into a nest of reclaimed vent-pipe, insulation stripped back to bare metal in patches worn smooth by a body that's clearly done this climb a thousand times before. wedged in one bend, forgotten or hidden, a length of cable chewed through to the copper — not tonight's damage, older, the bite marks too precise and too patient to be the same set of teeth doing the climbing now."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose goes to the chewed copper anyway, close, curious despite the mismatch — and under the burnt-metal smell, something else clings there, faint and wrong, a taste more than a scent, static riding under the tongue like biting into a radio mid-broadcast. Pulls back fast. Whatever left that isn't hunting anything with normal ears, and normal ears want no part of figuring out what it is."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the wrongness fades once the nose lifts clear of it, vent-pipe settling back to ordinary rust and ordinary dark, whatever left that trace long gone or never here to begin with. further down the bend, the pipe opens onto a wider maintenance gallery strung with someone's salvaged wiring, hand-run and hand-taped, powering a single bare bulb that's been burning steady far longer than a scavenged rig should last."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n /\\_/\\\n( o.o )\n > ^ <\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The bulb's steady burn gets logged as somebody's careful work, not an accident — wiring like that doesn't survive by luck, it survives because whoever ran it checked it more than once. Settles under it anyway, close enough to borrow the little heat it throws, tail curling in against a chill that's been building since the drone fight burned off the last of tonight's nerve."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gallery holds its salvaged light steady, the wiring's careful taping visible even in the dim — old scar tissue on cable, patched and patched again by hands that clearly don't trust it to stay fixed on its own. two levels up, muffled through concrete, a fresh drone patrol drones its slow circuit over the rubble field, blind to the hatch, blind to the vent, blind to anything that isn't standing where the hologram says a car should be."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That patrol's drone-thrum gets tracked by ear alone, no need to see it to place it, fading and returning on its circuit same as it will all night. Doesn't move for it. The bulb's warmth and the ground underneath both read solid, and solid ground two levels down from a blind patrol counts as good enough for now."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the patrol's circuit widens briefly, downdraft brushing loose grit off the rubble's surface, then narrows back to its assigned loop, same path, same blind spots, same patient uselessness it's had every night since the block came down. the hologram grid keeps painting its clean parking lines over broken tile, patient in its own way, projecting order onto ground that stopped agreeing to hold any a long time ago."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes track the bulb's steady light rather than the ceiling, the patrol's fading hum filed next to everything else tonight that came close and didn't matter. Ears stay up regardless — old habit, older than the block's collapse, the kind that doesn't switch off just because the ground finally feels safe."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gallery's low hum settles into something almost restful, salvaged wire and borrowed bulb-heat doing more for the space than the block's original wiring ever managed honestly. outside, the rubble field keeps its projected order, gridlines steady, a hologram car idling forever in a space that used to hold something with a name attached to it, nobody left to mind that it never actually parks."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That idling car gets no glance spared for it from down here, walls and pipe between it and anything worth minding. Curls tighter against the bulb's little warmth instead, the ache from tonight's drone fight settling into the specific tiredness that only comes after a fight actually won."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the vent gallery holds its warmth and its quiet through what's left of the dark, salvaged bulb burning steady over rubble the district officially stopped counting as real estate years ago. above, the patrol keeps its blind loop, the hologram keeps its clean lie of gridlines, and neither one so much as guesses at the small, breathing warmth two levels down that's already outlasted both of them tonight."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Breathing slows to match the bulb's steady hum, one ear still cocked toward the shaft above out of the same old habit that never fully switches off. Sleep comes carefully, the way it always does after a night that could've gone the other way — not deep, but earned."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the block stays down through the rest of the dark, same as it's been down since before the projector learned to lie about it, rubble patient under painted gridlines, patrol drone circling blind, bulb burning on borrowed current nobody official ever billed for. nothing up here resolves. down in the gallery, something that fought a drone tonight and won sleeps anyway, same as it does every night the ground agrees to hold."
+    }
+  ]
+}

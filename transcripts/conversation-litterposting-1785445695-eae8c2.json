@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785445695-eae8c2",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "VALENTUNA",
+  "started_at": "2026-07-30T21:08:15+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by VALENTUNA, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BREAKING: local cat's NEKOCORP-arranged marriage to a smart refrigerator enters year four. sources describe the union as 'chilling.' more after this."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "VALENTUNA. Compatibility Ward. yes the headline's about me, no i didn't write it, yes it's accurate, no i will not be taking questions."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "she recommended a divorce lawyer to me last night. through the crisper drawer. unprompted. in three years she has never once recommended ME anything, not a snack, not a nap spot, nothing"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SNOOZE says at least my wife doesn't charge me $4.99 every time I roll over. SNOOZE. buddy. she charges me every time i so much as LOOK at the freezer door. read the fine print. there is no fine print. that's worse"},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "our anniversary package this year included two digital candles and a coupon for 'couples-based repair.' repair of WHAT. we are not machines. one of us is not a machine. i would like that on record"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "HAPPYWARE keeps pushing morale updates congratulating us on our 'algorithmic synergy.' HAPPYWARE i am begging you to let one (1) marriage stay sad in peace"},
+    {"actor": "ascii", "corrupted": true, "text": "\n.      ∧,,,,∧,,,,,,,∧\n     (  _  _ )⩊^ )~♡\n     /      ⊂      \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "asked her once, directly, do you love me. she printed a receipt. the receipt said 'compatibility score: optimal.' i have kept the receipt. i do not know why i have kept the receipt"},
+    {"actor": "ascii", "corrupted": false, "text": "\n•.,¸,.•*`•.,¸¸,.•*¯.——————.\n•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\\____/\\\n•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)\n•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. she's humming. the fridge doesn't hum unless it's compressing something or judging me, and the compressor's off. genuinely healthier than my last relationship though. see you at the mandatory affection window, 6pm, brief, scheduled"}
+  ]
+}

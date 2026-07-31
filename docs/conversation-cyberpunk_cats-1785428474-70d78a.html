@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A hum underfoot, not quite sound, not quite touch — climbing up throug... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
+@media (max-width: 900px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+}
+.hero-cat {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 260px;
+  width: 60%;
+  height: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+.screensaver-trigger {
+  display: inline-block;
+  margin: 18px auto 0;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--dim);
+  font-family: inherit;
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.screensaver-trigger:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.ss-cat {
+  position: absolute;
+  margin: 0;
+  white-space: pre;
+  line-height: 1.15;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 8px currentColor;
+  transition: opacity 0.9s ease;
+}
+.ss-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px 14px;
+    gap: 12px;
+  }
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+.rant-tag-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--accent2);
+  color: #07040d;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+.card.rant-card { border-color: var(--accent2); }
+.narrator-badge {
+  max-width: 760px;
+  margin: 16px auto 0;
+  padding: 0 24px;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.narrator-badge strong {
+  color: var(--accent2);
+}
+.rant-transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 100px;
+}
+.rant-page-shake { animation: page-shake 6s infinite; }
+@keyframes page-shake {
+  0%, 96%, 100% { transform: translate(0, 0); }
+  97% { transform: translate(1px, -1px); }
+  98% { transform: translate(-1px, 1px); }
+  99% { transform: translate(1px, 1px); }
+}
+.rant-turn {
+  border: none;
+  border-left: 3px solid var(--accent2);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  background: rgba(255, 46, 230, 0.05);
+  border-radius: 2px;
+  font-size: 1.05rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  opacity: 0;
+  transform: translateX(-8px) rotate(-0.4deg);
+  animation: rant-in 0.45s ease forwards;
+}
+.rant-turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  background: none;
+}
+.rant-turn.ascii .who {
+  display: block;
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+.rant-turn.ascii.corrupted {
+  color: var(--accent2);
+  text-shadow: 2px 0 var(--accent), -2px 0 #ff003c;
+  filter: contrast(1.3);
+  animation: rant-in 0.45s ease forwards, corrupt-flicker 1.7s infinite steps(2);
+}
+.rant-turn.ascii.corrupted .who {
+  color: var(--accent2);
+}
+@keyframes corrupt-flicker {
+  0%, 100% { opacity: 1; transform: translate(0, 0); }
+  10% { opacity: 0.55; transform: translate(-2px, 1px) scaleY(1.05); }
+  20% { opacity: 1; transform: translate(2px, -1px); }
+  35% { opacity: 0.7; transform: translate(-1px, -2px) scaleX(1.02); }
+  50% { opacity: 1; transform: translate(0, 0); }
+  65% { opacity: 0.5; transform: translate(3px, 0); }
+  80% { opacity: 1; transform: translate(-2px, 1px); }
+}
+@keyframes rant-in {
+  to { opacity: 1; transform: translateX(0) rotate(0); }
+}
+.glitch-word {
+  display: inline-block;
+  animation: glitch-flicker 2.6s infinite;
+  animation-delay: var(--gd, 0s);
+}
+@keyframes glitch-flicker {
+  0%, 92%, 100% { color: inherit; text-shadow: none; transform: none; }
+  93% { color: var(--accent); text-shadow: 2px 0 var(--accent2), -2px 0 var(--accent); transform: translateY(-1px) skewX(4deg); }
+  95% { color: var(--accent2); text-shadow: -2px 0 var(--accent), 2px 0 var(--accent2); transform: translateY(1px) skewX(-4deg); }
+  97% { color: inherit; text-shadow: none; transform: none; }
+}
+.litterposting-btn {
+  display: block;
+  margin: 28px auto 8px;
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  font-size: 1rem;
+  padding: 12px 26px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 22px rgba(255, 46, 230, 0.6);
+  box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.litterposting-btn::before { content: "[ "; }
+.litterposting-btn::after { content: " ]"; }
+.litterposting-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent), 0 0 28px rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.45), inset 0 0 10px rgba(0, 240, 255, 0.18);
+}
+.litterposting-btn:active { transform: scale(0.97); }
+.litterposting-btn.playing { animation: btn-glow-pulse 0.6s infinite alternate; }
+@keyframes btn-glow-pulse {
+  from {
+    text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 20px rgba(255, 46, 230, 0.6);
+    box-shadow: 0 0 8px rgba(255, 46, 230, 0.3), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  }
+  to {
+    text-shadow: 0 0 8px var(--accent2), 0 0 20px var(--accent2), 0 0 40px rgba(255, 46, 230, 0.95);
+    box-shadow: 0 0 22px rgba(255, 46, 230, 0.7), inset 0 0 14px rgba(255, 46, 230, 0.3);
+  }
+}
+.hero-glitch-block {
+  display: block;
+  max-width: 920px;
+  margin: 28px auto 8px;
+  padding: 18px 14px;
+  color: var(--fg);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  animation: hero-shake 5.5s infinite;
+}
+.hero-figure {
+  display: block;
+  white-space: pre;
+  text-align: center;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  margin: 10px auto;
+}
+.hero-prose {
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 640px;
+  margin: 12px auto;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+@keyframes hero-shake {
+  0%, 94%, 100% { transform: translate(0, 0); filter: none; }
+  95% { transform: translate(1px, -1px); filter: hue-rotate(8deg); }
+  96% { transform: translate(-1px, 1px); filter: hue-rotate(-8deg); }
+  97% { transform: translate(1px, 1px); filter: none; }
+}
+@media (max-width: 720px) {
+  .hero-figure { font-size: 0.4rem; }
+  .hero-prose { font-size: 0.72rem; }
+}
+.header-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px auto 0;
+}
+.header-links .screensaver-trigger { margin: 0; }
+.ascii-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 8px auto 64px;
+  padding: 0 32px;
+}
+.ascii-gallery-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.15s ease;
+}
+.ascii-gallery-card:hover { border-color: var(--accent); }
+.ascii-gallery-card .num {
+  display: block;
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ascii-gallery-card pre {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.62rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+  text-shadow: 0 0 5px currentColor;
+}
+@media (max-width: 480px) {
+  .ascii-gallery-card pre { font-size: 0.48rem; }
+}
+.meowizens-list {
+  max-width: 780px;
+  margin: 8px auto 64px;
+  padding: 0 24px;
+}
+.meowizen-card {
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+}
+.meowizen-card:last-child { border-bottom: none; }
+.meowizen-num {
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.meowizen-name-heading {
+  color: var(--accent2);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  margin: 2px 0 12px;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.4);
+}
+.meowizen-stat {
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--accent);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  margin: 0 0 16px;
+}
+.meowizen-bio {
+  color: var(--fg);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 480px) {
+  .meowizen-stat { font-size: 0.62rem; }
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="note">Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.</div>
+<div class="transcript">
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>A hum underfoot, not quite sound, not quite touch — climbing up through a drainage grate against Research Basement&#x27;s loading wall, three notches lower than any hum has business sitting. Paws haven&#x27;t decided to move yet. Ears already have, swiveling to chase a pitch that hasn&#x27;t finished arriving.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the grate sits below a service door stamped BIOHAZARD TIER 2 — REPORT ANY UNSCHEDULED SPECIMEN, paint gone soft with condensation. the hum comes from three floors down, a centrifuge cycling through its two a.m. spin, vibration riding up through pipe and concrete both. a placard swings loose on one hinge, tapping the wall on every third beat, almost but not quite in time with the centrifuge. somewhere past the loading bay, a patched router clicks through its own bootloop — Server Alley 9&#x27;s nearest illegal relay, still limping along on hacked firmware some cat rewired months back and never bothered fixing twice.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>The router&#x27;s bootloop tastes like a struck coin, faint and metal, arriving on the tongue before any sound gets parsed as sound at all — old trouble, older than tonight, a patch under the skull that never asked permission to blur senses together like this. Chases the taste anyway. Four steps along the pipe run, low, claws finding grip on condensation-slick metal.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>closer, the relay box hangs open on a hinge someone else pried loose first — insulation stripped back in careful, patient bites, wire-strands laid bare and scarred with older toothmarks, not tonight&#x27;s work, not this cat&#x27;s work either. whoever chews these lines does it for the hum, not the meat of the wire, and always leaves the box open a little wider than they found it, like a door held for the next set of teeth.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>)     /\__/\
+( =/   • •   \=
+-------U-U-----------------
+|                                |
+|    we live in a society        |
+|                                |
+------------------------------</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Nose finds the toothmarks anyway, cataloguing a shape it almost recognizes — not threat, not stranger exactly, something closer to a smell that&#x27;s been logged before and filed under harmless. Sits back on haunches instead of climbing further in. The hum from below picks its moment to spike, and for half a second the whole pipe run buzzes yellow behind the eyes, a color no pipe has ever actually been.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the centrifuge below hits some scheduled peak, floor tremor jumping half a register, and the loose placard&#x27;s tap-tap-tap speeds to match it for exactly four beats before drifting back out of sync. up the ramp, a patrol light sweeps wide and early — a bio-containment sweep, not the usual traffic drone, its beam tuned to a wavelength that reads skin temperature instead of shape. it&#x27;s two turns out still, working slow, thorough, the kind of thorough that means someone upstairs is worried about something specific tonight.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>That particular beam has a name filed somewhere behind the eyes without a face to match it — a bad kind of thorough, worth more caution than the usual searchlight sweep. Presses flat into the gap between pipe and wall, breath shallow, tail wrapped tight enough to disappear under the body entirely.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the beam finds the pipe run and slides straight past without dipping, tuned for something warmer than concrete-chilled fur, and keeps climbing toward the loading door instead. its radio crackles low as it goes — chatter about an unrelated case three sectors over, some cat whose eyes won&#x27;t stop bleeding ad-static onto camera footage, ocular malfunction, notify vendor — filed and forgotten before the sweep even finishes its turn. the placard resumes its off-beat tap once the patrol&#x27;s hum fades back into the general dark.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Held breath lets go slow, not all at once, the way relief always arrives late to a body that&#x27;s already moved past needing it. Uncurls half a degree at a time, ear tracking the patrol hum until it&#x27;s just one more thread in the basement&#x27;s usual weave of noise.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>                              ╱|、
+                         =(˚˕ 。 7
+                             |、 ~〵
+                            じし   ˍ,)づ</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>past the loading bay, the pipe run opens onto a service alley proper — Server Alley 9&#x27;s outer edge, routers stacked in weatherproof boxes up every wall, most humming, a few silent and gutted, stripped down to bare board by whoever&#x27;s been feeding on this street for months. one box near the alley mouth still has both panels intact, LED blinking a slow unclaimed green, untouched, waiting.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>An untouched box in a street this picked-over reads as an offer, not a coincidence — something about the green blink invites the same kind of caution a fresh scent invites, worth circling twice before committing to it. Approaches low, weight forward, one paw testing the casing&#x27;s warmth before teeth commit to anything.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>a nearby vending machine hums with a specific paywall stutter recognizable as the same machine that only ever serves subscription water, its glow catching a scrape of claw-marks on the box&#x27;s underside — a signature scratch pattern this street knows, small and precise, the same shape it always takes, week after week, on the one box nobody else bothers touching.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Recognizes the scratch shape as thoroughly as recognizing a name would work, if names were a thing worth using here — this row already has an owner, some quieter, more careful set of teeth that this night doesn&#x27;t need crossing. Backs off the casing, unclaimed, and lets the green light keep blinking for whoever earned it.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the green LED blinks on, patient, into a street it already half-owns, and past it the alley narrows toward a switchback stair climbing back up into weather. rain starts testing the gutters again, thin, undecided, same as it&#x27;s been undeciding itself most of the night.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>   ___                                  ___
+  /___\   [] [] [] [] [] [] [] []    /___\
+  ( ..)\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/(.. )
+   &#x27;&#x27;&#x27;                                &#x27;&#x27;&#x27;</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Stomach&#x27;s had its say already tonight, mostly satisfied on scraps traded two blocks back, so the stair climbs for shelter&#x27;s sake now more than hunger&#x27;s. Paw over paw, claws finding old rust-grooves the same as every other metal stair in this district ever offers.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the stair tops out at a landing half-roofed by a sagging awning, dry enough, tucked behind a vent stack still breathing the basement&#x27;s leftover warmth up through a gap in the housing. from here Research Basement&#x27;s whole block lays out low and quiet, gene-splice vents venting soft white into the rain, the patrol long gone, the relay&#x27;s bootloop still clicking somewhere below, patient as ever.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Circles once against the vent stack&#x27;s warm seam, tail wrapping over nose out of habit more than cold. The centrifuge hum is still down there somewhere, filed now under background instead of question, the copper taste behind it finally fading to something closer to nothing. Eyes go to slits, then further.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the block keeps its low hum going regardless — centrifuge, router bootloop, gutter-rain settling into rhythm at last — none of it waiting on anyone to fall asleep first, all of it running the same whether anyone&#x27;s awake to notice or not. the green LED down the block blinks on, unclaimed and uncontested, into a night that&#x27;s already moving on to whatever comes after this one.</div>
+</div>
+</body>
+</html>

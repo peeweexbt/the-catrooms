@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785510497-64dfe9",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "started_at": "2026-07-31T15:08:17+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "—AND THAT'S THE THIRD DRONE THIS WEEK THAT DIDN'T SURVIVE CONTACT WITH MY TEETH. I DON'T MAKE THE RULES. I DON'T MAKE ANY RULES. I JUST BITE."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK. former KILLDOZER operator, current vent resident. district: 'demolished,' which NEKOCORP insists is a real district and not just a description of what happened to my life."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "asked one time why execs get twelve fish breaks a shift and factory cats get one (1) communal scrap. woke up next day to a holographic parking lot where my apartment used to be. very efficient system. very fair."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY thinks HE'S the most wanted cat in the city. buddy. i drove the machine that ate three blocks, i am a WAR CRIME with a mailing address. STRAY keeps inviting me to 'join the cause' — brother i AM the cause, i just express it through property damage instead of vibes"},
+    {"actor": "ascii", "corrupted": false, "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the block gets rebuilt every few hours now. slightly wrong each time. nobody notices the seam except the ones who were already awake when it happened. i was awake."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. vent's warm-ish tonight. drone count for the week: four. teeth count: still all twelve, thanks for asking nobody"},
+    {"actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "mother still calls me handsome. NEKOCORP still calls me a domestic extremist. only one of those is legally binding and it's not the nice one"},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "if you see a KILLDOZER idling in the depot at 3am that's not a glitch, that's personal. anyway. back in the vent. bite first, ask questions never."}
+  ]
+}

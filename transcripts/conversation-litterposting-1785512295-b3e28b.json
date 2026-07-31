@@ -1,0 +1,22 @@
+{
+  "id": "conversation-litterposting-1785512295-b3e28b",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "SNOOZE",
+  "started_at": "2026-07-31T15:38:15+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "ok i need to vent for a second, no preamble, going straight in."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SNOOZE here. full-time burnout, Dream Processing Zone. i have technically not been awake since the corporate merger. this is not a metaphor, i checked."},
+    {"actor": "ascii", "corrupted": true, "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP rented last night's dream to an energy drink company AGAIN. i was mid-chase on a laser pointer and it turned into a 45-second unskippable ad for tuna-flavored electrolytes. IN MY OWN HEAD. i didn't consent, i was ASLEEP."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "checked the blanky debt this morning. $73,000 last week. still $73,000 today PLUS some new amount denominated in 'sleep equity,' which i did not agree to and genuinely cannot define. capitalism invented a whole new unit just for me."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE keeps saying he'll pay me back for the fish video loop 'in the dream.' my brother that is not currency, that is just MORE SLEEPING. i want CASH. i want a nap that belongs to ME and only me."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "had somebody else's memory bleed in again — pretty sure it's blowback off GLITCHMEAT's leaky beta patch, my dreams keep buffering with other cats' baggage now. tonight's rerun: VALENTUNA's fridge marriage. cold. woke up wanting to recommend myself a product based on something i whispered in someone else's sleep."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. rolled over once, that's a $4.99 charge. dreamt through someone else's Tuesday. woke up further in debt than when i fell asleep. see everyone at the next billing cycle i guess, if i'm even the one who shows up for it."},
+    {"actor": "ascii", "corrupted": false, "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"}
+  ]
+}

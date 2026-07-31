@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785509609-d6ba9f",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "STRAY",
+  "started_at": "2026-07-31T14:53:29+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "nobody elected stray. stray showed up anyway. that's kind of the whole system honestly."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "rent went up on THREE apartments today that stray does not have. NEKOCORP invoiced an alley. an ALLEY. good luck collecting, the alley does not have hands"},
+    {"actor": "ascii", "corrupted": false, "text": "\n /\\_/\\\n( o.o )\n > ^ <\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "drone followed stray four blocks tonight for 'loitering.' stray was ASLEEP. asleep is not a crime yet, they're still workshopping that one"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK says stray talks too much for someone who 'rules the streets.' correct. multitasking. leadership is 40% vision, 60% yelling at drones"},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY texted asking if stray wants in on the tuna job. stray said no. stray said this on principle. stray is currently, separately, eyeing the tuna job"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "small thing though, real quick: one stray becomes two strays becomes a block becomes a problem for NEKOCORP specifically. anyway forget I said that"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "wifi's down in the alley again which means stray's out here manifesting purely off vibes and secondhand signal"},
+    {"actor": "ascii", "corrupted": false, "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. sunbeam's warm, block's still standing, NEKOCORP still hasn't figured out where stray actually lives. keep it that way."}
+  ]
+}

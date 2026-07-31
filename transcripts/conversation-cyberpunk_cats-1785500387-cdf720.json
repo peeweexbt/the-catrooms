@@ -1,0 +1,108 @@
+{
+  "id": "conversation-cyberpunk_cats-1785500387-cdf720",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-31T12:19:47+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Another cat's mark, and this one's still warm — not the flat, dried scent of a boundary staked days ago, but something laid down in the last few minutes, sharp enough to carry a heartbeat's worth of urgency underneath it. The fur along the spine lifts before there's a decision to make about it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the underground level runs three rows deep beneath Arcology West, floodlights buzzing white over concrete striped with lane paint faded past reading. rows of automated delivery pods sit nose-in at charging rails, indicator lights blinking a slow patient amber, waiting on batteries that never quite finish. rain finds its way down a ramp grate somewhere behind, dripping in an uneven rhythm onto oil-dark concrete. the mark sits fresh on the nearest support pillar, chest height, still glistening."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose to the pillar, breath held so the reading doesn't get diluted by its own exhale — young, not an old rival, no crew markings layered underneath it, alone. Paws pick up the thread along the pillar's base, low and careful, weight kept off anything that might announce a footstep to whatever left this."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the trail runs along a row of charging pods toward a bay gone dark, its overhead light dead, a hand-scrawled OUT OF SERVICE placard zip-tied to the barrier arm. something in the dead bay hums anyway, low, wrong — a maintenance junction left live behind a service panel hanging open on one hinge, wires exposed and singing a note that doesn't belong to anything else running down here."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That hum gets a wide berth on principle, tracked at the edge of hearing rather than approached, the same caution owed to anything that buzzes without an obvious source. The scent trail cuts straight past it though, indifferent, so the feet follow the trail and not the caution."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the dead bay, a shape crouches close against the open panel, head canted at an angle no neck should hold comfortably, tongue extended flat against a bundle of live wire — not licking exactly, tasting, the way a held breath gets tasted more than smelled. it doesn't flinch at the hum. doesn't seem to register anything outside the wire at all. one ear ticks sideways at a frequency nothing else in the garage is making noise at."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That angle, that stillness — reads wrong in a way rotor-noise or floodlight glare never do, filed under the kind of wrong that doesn't want company rather than the kind that hunts. No further business here. The trail bends left around a support column, and the feet take the bend without a backward glance."
+    },
+    {
+      "actor": "ascii",
+      "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the column marks the turn into a tighter row, pods absent, floor swept bare along a security patrol's route — a squat wheeled unit trundles the lane on a fixed track, sensor bar sweeping low and slow, pinging each parking line for anything it isn't expecting to find. its schedule holds steady, three minutes a pass, same as it's held every night this month."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Three minutes gets clocked same as any other countdown worth trusting, and the gap between passes reads wide enough. Flattens against the nearest pillar's shadow until the sensor bar sweeps clear, then crosses the bare lane in one low, fast line, the scent trail pulling ahead again on the far side."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the lane opens onto a wider bay stacked with delivery crates sealed for a morning run, plastic wrap taut over pallets of something citrus-bright by smell alone, sharp enough to cut through concrete and oil both. security tape crosses the bay's near edge, fluttering loose at one corner where it's already been peeled and re-stuck more than once."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The citrus-sharp smell gets a full stop and a moment's real consideration — not food, nothing about it reads edible, just loud, chemical, engineered to announce itself. Filed under not tonight's problem and left behind. The trail matters more right now than a curious nose does."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the crates the lane climbs toward a ramp mouth leading up to street level, and there, staked into the concrete lip in claw-marks still damp: a fresh territorial line, three strokes wide, laid down with the kind of confidence that doesn't check first whether anyone's watching. beyond it, up the ramp, wet street-light bleeds down in a grey wash, empty for now."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Fresh confidence like that gets read as exactly what it is — somebody young enough not to have learned yet how much a claim like that costs to defend. Not this cat's fight to start. Sits back from the line, tail curled close, weighing the ramp's open light against the safer dark still at its back."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n    /\\,,,/\\\n>(  • . •   )<\n  / >❀<  \\\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "somewhere up the ramp a screen throws its glow across wet asphalt, sound too far off to carry words, just color pulsing pink then blue then pink again against the rain. down here the charging pods keep their patient amber blink, the dead bay's hum bleeding faint around the column, the patrol resuming its three-minute round like nothing crossed its lane at all."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Turns from the ramp's light instead of testing it, backtracking along the row toward a charging pod gone still and warm at its base, heat bleeding off a battery that's been trickle-charging for hours. Curls in against the warm casing, half a body-length from the fresh claim-line, close enough to remember where it is without needing to cross it again tonight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the pod's battery ticks through its slow charge, warmth radiating steady into the concrete underneath, indifferent to what's borrowed against it. up the ramp the claim-line holds its damp shine a little longer before the rain finally reaches it too, and somewhere past the dead bay the wrong hum keeps its patient frequency, tasted by nothing but itself now."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes drop to slits, ears staying tuned toward the ramp out of habit rather than worry now, the trail's urgency finally letting go of the shoulders. Whatever this territory belongs to by morning isn't tonight's question to answer."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the garage holds its patient hum through what's left of the dark — pods charging, patrol circling, the dead bay's live wire singing its note to nobody, the fresh claim up the ramp slowly losing its shine to the rain. nothing here resolves so much as keeps its schedule, same as every other night the concrete's agreed to hold this quiet."
+    }
+  ]
+}

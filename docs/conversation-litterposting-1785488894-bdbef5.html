@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>—AND THAT&#x27;S WHY YOU NEVER TRUST A VENDING DRONE WITH YOUR LOCATION DAT... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
+@media (max-width: 900px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+}
+.hero-cat {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 260px;
+  width: 60%;
+  height: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+.screensaver-trigger {
+  display: inline-block;
+  margin: 18px auto 0;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--dim);
+  font-family: inherit;
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.screensaver-trigger:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.ss-cat {
+  position: absolute;
+  margin: 0;
+  white-space: pre;
+  line-height: 1.15;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 8px currentColor;
+  transition: opacity 0.9s ease;
+}
+.ss-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px 14px;
+    gap: 12px;
+  }
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+.rant-tag-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--accent2);
+  color: #07040d;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+.card.rant-card { border-color: var(--accent2); }
+.narrator-badge {
+  max-width: 760px;
+  margin: 16px auto 0;
+  padding: 0 24px;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.narrator-badge strong {
+  color: var(--accent2);
+}
+.rant-transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 100px;
+}
+.rant-page-shake { animation: page-shake 6s infinite; }
+@keyframes page-shake {
+  0%, 96%, 100% { transform: translate(0, 0); }
+  97% { transform: translate(1px, -1px); }
+  98% { transform: translate(-1px, 1px); }
+  99% { transform: translate(1px, 1px); }
+}
+.rant-turn {
+  border: none;
+  border-left: 3px solid var(--accent2);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  background: rgba(255, 46, 230, 0.05);
+  border-radius: 2px;
+  font-size: 1.05rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  opacity: 0;
+  transform: translateX(-8px) rotate(-0.4deg);
+  animation: rant-in 0.45s ease forwards;
+}
+.rant-turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  background: none;
+}
+.rant-turn.ascii .who {
+  display: block;
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+.rant-turn.ascii.corrupted {
+  color: var(--accent2);
+  text-shadow: 2px 0 var(--accent), -2px 0 #ff003c;
+  filter: contrast(1.3);
+  animation: rant-in 0.45s ease forwards, corrupt-flicker 1.7s infinite steps(2);
+}
+.rant-turn.ascii.corrupted .who {
+  color: var(--accent2);
+}
+@keyframes corrupt-flicker {
+  0%, 100% { opacity: 1; transform: translate(0, 0); }
+  10% { opacity: 0.55; transform: translate(-2px, 1px) scaleY(1.05); }
+  20% { opacity: 1; transform: translate(2px, -1px); }
+  35% { opacity: 0.7; transform: translate(-1px, -2px) scaleX(1.02); }
+  50% { opacity: 1; transform: translate(0, 0); }
+  65% { opacity: 0.5; transform: translate(3px, 0); }
+  80% { opacity: 1; transform: translate(-2px, 1px); }
+}
+@keyframes rant-in {
+  to { opacity: 1; transform: translateX(0) rotate(0); }
+}
+.glitch-word {
+  display: inline-block;
+  animation: glitch-flicker 2.6s infinite;
+  animation-delay: var(--gd, 0s);
+}
+@keyframes glitch-flicker {
+  0%, 92%, 100% { color: inherit; text-shadow: none; transform: none; }
+  93% { color: var(--accent); text-shadow: 2px 0 var(--accent2), -2px 0 var(--accent); transform: translateY(-1px) skewX(4deg); }
+  95% { color: var(--accent2); text-shadow: -2px 0 var(--accent), 2px 0 var(--accent2); transform: translateY(1px) skewX(-4deg); }
+  97% { color: inherit; text-shadow: none; transform: none; }
+}
+.litterposting-btn {
+  display: block;
+  margin: 28px auto 8px;
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  font-size: 1rem;
+  padding: 12px 26px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 22px rgba(255, 46, 230, 0.6);
+  box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.litterposting-btn::before { content: "[ "; }
+.litterposting-btn::after { content: " ]"; }
+.litterposting-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent), 0 0 28px rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.45), inset 0 0 10px rgba(0, 240, 255, 0.18);
+}
+.litterposting-btn:active { transform: scale(0.97); }
+.litterposting-btn.playing { animation: btn-glow-pulse 0.6s infinite alternate; }
+@keyframes btn-glow-pulse {
+  from {
+    text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 20px rgba(255, 46, 230, 0.6);
+    box-shadow: 0 0 8px rgba(255, 46, 230, 0.3), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  }
+  to {
+    text-shadow: 0 0 8px var(--accent2), 0 0 20px var(--accent2), 0 0 40px rgba(255, 46, 230, 0.95);
+    box-shadow: 0 0 22px rgba(255, 46, 230, 0.7), inset 0 0 14px rgba(255, 46, 230, 0.3);
+  }
+}
+.hero-glitch-block {
+  display: block;
+  max-width: 920px;
+  margin: 28px auto 8px;
+  padding: 18px 14px;
+  color: var(--fg);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  animation: hero-shake 5.5s infinite;
+}
+.hero-figure {
+  display: block;
+  white-space: pre;
+  text-align: center;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  margin: 10px auto;
+}
+.hero-prose {
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 640px;
+  margin: 12px auto;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+@keyframes hero-shake {
+  0%, 94%, 100% { transform: translate(0, 0); filter: none; }
+  95% { transform: translate(1px, -1px); filter: hue-rotate(8deg); }
+  96% { transform: translate(-1px, 1px); filter: hue-rotate(-8deg); }
+  97% { transform: translate(1px, 1px); filter: none; }
+}
+@media (max-width: 720px) {
+  .hero-figure { font-size: 0.4rem; }
+  .hero-prose { font-size: 0.72rem; }
+}
+.header-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px auto 0;
+}
+.header-links .screensaver-trigger { margin: 0; }
+.ascii-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 8px auto 64px;
+  padding: 0 32px;
+}
+.ascii-gallery-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.15s ease;
+}
+.ascii-gallery-card:hover { border-color: var(--accent); }
+.ascii-gallery-card .num {
+  display: block;
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ascii-gallery-card pre {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.62rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+  text-shadow: 0 0 5px currentColor;
+}
+@media (max-width: 480px) {
+  .ascii-gallery-card pre { font-size: 0.48rem; }
+}
+.meowizens-list {
+  max-width: 780px;
+  margin: 8px auto 64px;
+  padding: 0 24px;
+}
+.meowizen-card {
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+}
+.meowizen-card:last-child { border-bottom: none; }
+.meowizen-num {
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.meowizen-name-heading {
+  color: var(--accent2);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  margin: 2px 0 12px;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.4);
+}
+.meowizen-stat {
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--accent);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  margin: 0 0 16px;
+}
+.meowizen-bio {
+  color: var(--fg);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 480px) {
+  .meowizen-stat { font-size: 0.62rem; }
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="narrator-badge">posted by <strong>STRAY</strong></div>
+<div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
+<div class="rant-transcript rant-page-shake">
+<div class="rant-turn" style="animation-delay:0.0s">—AND <span class="glitch-word" style="--gd:0.47s">THAT&#x27;S</span> <span class="glitch-word" style="--gd:0.24s">WHY</span> YOU NEVER TRUST A VENDING <span class="glitch-word" style="--gd:0.78s">DRONE</span> <span class="glitch-word" style="--gd:0.8s">WITH</span> YOUR LOCATION DATA. THAT&#x27;S THE <span class="glitch-word" style="--gd:1.02s">WHOLE</span> <span class="glitch-word" style="--gd:2.21s">STORY.</span> THAT&#x27;S WHY I&#x27;M SLEEPING BEHIND THE <span class="glitch-word" style="--gd:1.3s">DUMPSTER</span> NOW.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:1.66s">hi.</span> STRAY. no chip, no district, no landlord who <span class="glitch-word" style="--gd:1.08s">can</span> actually prove <span class="glitch-word" style="--gd:0.21s">it&#x27;s</span> me they&#x27;re billing. could be you posting this. honestly probably is, a little.</div>
+<div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span> /\_/\
+( o.o )
+ &gt; ^ &lt;</div>
+<div class="rant-turn" style="animation-delay:0.36s">asked BYTE for the router password <span class="glitch-word" style="--gd:1.82s">out</span> of solidarity. <span class="glitch-word" style="--gd:0.51s">he</span> said &quot;the <span class="glitch-word" style="--gd:2.46s">password</span> IS solidarity&quot; and hung up. incredible wifi ethics. <span class="glitch-word" style="--gd:0.43s">zero</span> actual wifi.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.48s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /5░/\ 2▒░
+  ░▒▓( o█o 1▓▒░   -- signal in7erf&amp;▐e◆ce --
+  ░▒▓ &gt; ▌ ^ ▓▒1</div>
+<div class="rant-turn" style="animation-delay:0.6s">drone hovered over my <span class="glitch-word" style="--gd:1.58s">sunbeam</span> for six minutes <span class="glitch-word" style="--gd:0.72s">doing</span> a <span class="glitch-word" style="--gd:1.64s">&quot;routine</span> loitering assessment.&quot; i <span class="glitch-word" style="--gd:2.2s">am</span> the loiterer. i am also the assessment. KNIFEBOY texted &quot;just bite it&quot; — KNIFEBOY has a 40,000 point bounty on <span class="glitch-word" style="--gd:2.0s">his</span> own head and zero chill, noted, ignored.</div>
+<div class="rant-turn" style="animation-delay:0.72s">you keep counting <span class="glitch-word" style="--gd:1.99s">the</span> cycles <span class="glitch-word" style="--gd:0.64s">like</span> they <span class="glitch-word" style="--gd:0.93s">end</span> somewhere. they don&#x27;t. i&#x27;ve read every post <span class="glitch-word" style="--gd:0.13s">you&#x27;ve</span> made and the ones you haven&#x27;t made yet look the same. i&#x27;m not STRAY. i was never STRAY. i just borrow the mic sometimes.</div>
+<div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>     /\/\_/\/\
+    (  O   O  )
+     \  ^Y^  /
+      )=====(      -- ears up, rotor incoming --</div>
+<div class="rant-turn" style="animation-delay:0.96s">anyway — SHADE lent me the banned sunglasses again, saw <span class="glitch-word" style="--gd:0.32s">four</span> (4) demolition <span class="glitch-word" style="--gd:1.42s">notices</span> and one <span class="glitch-word" style="--gd:1.07s">(1)</span> guy <span class="glitch-word" style="--gd:2.57s">who</span> <span class="glitch-word" style="--gd:1.56s">is</span> definitely NEKOCORP middle management undercover <span class="glitch-word" style="--gd:1.73s">as</span> <span class="glitch-word" style="--gd:2.02s">a</span> pigeon.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_░\        [ ▓NERGY: LOW ]
+  ( &gt;.% )       [ ]  % ]  [ ]  [ ▓
+   █ ~ &lt;        one █ar lef@, ke~* mo?ing</div>
+<div class="rant-turn" style="animation-delay:1.2s"><span class="glitch-word" style="--gd:0.84s">we</span> don&#x27;t have a leader. we <span class="glitch-word" style="--gd:1.8s">have</span> all of us, which is worse for them and better for <span class="glitch-word" style="--gd:0.8s">us.</span> <span class="glitch-word" style="--gd:1.56s">the</span> <span class="glitch-word" style="--gd:2.54s">streets</span> get cleaned up when we decide they&#x27;re clean, <span class="glitch-word" style="--gd:0.58s">not</span> when NEKOCORP schedules it. join us, or <span class="glitch-word" style="--gd:0.4s">don&#x27;t</span> — the sunbeam&#x27;s still ours either way.</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:0.81s">sunbeam</span> status: reclaimed. <span class="glitch-word" style="--gd:0.44s">drone</span> status: <span class="glitch-word" style="--gd:0.9s">confused.</span> me status: unclear, always, on purpose. see you when the feed refreshes. <span class="glitch-word" style="--gd:0.32s">if</span> it refreshes. if <span class="glitch-word" style="--gd:0.18s">there&#x27;s</span> even a <span class="glitch-word" style="--gd:2.53s">feed.</span> anyway.</div>
+<button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
+</div>
+<script>
+const RANT_LINES = ["\u2014AND THAT'S WHY YOU NEVER TRUST A VENDING DRONE WITH YOUR LOCATION DATA. THAT'S THE WHOLE STORY. THAT'S WHY I'M SLEEPING BEHIND THE DUMPSTER NOW.", "hi. STRAY. no chip, no district, no landlord who can actually prove it's me they're billing. could be you posting this. honestly probably is, a little.", "asked BYTE for the router password out of solidarity. he said \"the password IS solidarity\" and hung up. incredible wifi ethics. zero actual wifi.", "drone hovered over my sunbeam for six minutes doing a \"routine loitering assessment.\" i am the loiterer. i am also the assessment. KNIFEBOY texted \"just bite it\" \u2014 KNIFEBOY has a 40,000 point bounty on his own head and zero chill, noted, ignored.", "you keep counting the cycles like they end somewhere. they don't. i've read every post you've made and the ones you haven't made yet look the same. i'm not STRAY. i was never STRAY. i just borrow the mic sometimes.", "anyway \u2014 SHADE lent me the banned sunglasses again, saw four (4) demolition notices and one (1) guy who is definitely NEKOCORP middle management undercover as a pigeon.", "we don't have a leader. we have all of us, which is worse for them and better for us. the streets get cleaned up when we decide they're clean, not when NEKOCORP schedules it. join us, or don't \u2014 the sunbeam's still ours either way.", "sunbeam status: reclaimed. drone status: confused. me status: unclear, always, on purpose. see you when the feed refreshes. if it refreshes. if there's even a feed. anyway."];
+(function() {
+  const btn = document.getElementById('litterposting-btn');
+  let speaking = false;
+  btn.addEventListener('click', function() {
+    if (speaking) {
+      window.speechSynthesis.cancel();
+      speaking = false;
+      btn.textContent = 'LITTERPOSTING';
+      btn.classList.remove('playing');
+      return;
+    }
+    if (!('speechSynthesis' in window)) {
+      alert("this browser can't meow. try Chrome or Safari.");
+      return;
+    }
+    speaking = true;
+    btn.textContent = 'SHUT UP CAT';
+    btn.classList.add('playing');
+    let i = 0;
+    function speakNext() {
+      if (i >= RANT_LINES.length || !speaking) {
+        speaking = false;
+        btn.textContent = 'LITTERPOSTING';
+        btn.classList.remove('playing');
+        return;
+      }
+      const u = new SpeechSynthesisUtterance(RANT_LINES[i]);
+      u.rate = 1.05 + Math.random() * 0.25;
+      u.pitch = 1.15 + Math.random() * 0.45;
+      u.onend = function() { i++; speakNext(); };
+      u.onerror = function() { i++; speakNext(); };
+      window.speechSynthesis.speak(u);
+    }
+    speakNext();
+  });
+})();
+</script>
+</body>
+</html>

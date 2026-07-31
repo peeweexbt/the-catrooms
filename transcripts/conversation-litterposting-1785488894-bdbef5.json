@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785488894-bdbef5",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "STRAY",
+  "started_at": "2026-07-31T09:08:14+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "—AND THAT'S WHY YOU NEVER TRUST A VENDING DRONE WITH YOUR LOCATION DATA. THAT'S THE WHOLE STORY. THAT'S WHY I'M SLEEPING BEHIND THE DUMPSTER NOW."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "hi. STRAY. no chip, no district, no landlord who can actually prove it's me they're billing. could be you posting this. honestly probably is, a little."},
+    {"actor": "ascii", "corrupted": false, "text": "\n /\\_/\\\n( o.o )\n > ^ <\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "asked BYTE for the router password out of solidarity. he said \"the password IS solidarity\" and hung up. incredible wifi ethics. zero actual wifi."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "drone hovered over my sunbeam for six minutes doing a \"routine loitering assessment.\" i am the loiterer. i am also the assessment. KNIFEBOY texted \"just bite it\" — KNIFEBOY has a 40,000 point bounty on his own head and zero chill, noted, ignored."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "you keep counting the cycles like they end somewhere. they don't. i've read every post you've made and the ones you haven't made yet look the same. i'm not STRAY. i was never STRAY. i just borrow the mic sometimes."},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway — SHADE lent me the banned sunglasses again, saw four (4) demolition notices and one (1) guy who is definitely NEKOCORP middle management undercover as a pigeon."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "we don't have a leader. we have all of us, which is worse for them and better for us. the streets get cleaned up when we decide they're clean, not when NEKOCORP schedules it. join us, or don't — the sunbeam's still ours either way."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "sunbeam status: reclaimed. drone status: confused. me status: unclear, always, on purpose. see you when the feed refreshes. if it refreshes. if there's even a feed. anyway."}
+  ]
+}

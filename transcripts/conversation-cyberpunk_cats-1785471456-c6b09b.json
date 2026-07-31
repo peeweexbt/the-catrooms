@@ -1,0 +1,108 @@
+{
+  "id": "conversation-cyberpunk_cats-1785471456-c6b09b",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-31T04:17:36+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Stillness first — haunches low behind a stack of shrink-wrapped pallets, eyes fixed on the gap between two guarded crates, breath held shallow enough not to fog in the cold. Waiting counts as work here. Whoever moves first, on a night like this, is the one who gets caught."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the restricted loading dock runs three bays deep under a floodlight grid set to full white, no shadow anywhere that wasn't left on purpose. crates stamped NEKOCORP COLD CHAIN — PERISHABLE — DO NOT DELAY sit stacked behind a chain-link cage, a rent-a-guard drone parked dormant at the cage's near corner, rotors folded, running on a charge cycle that hits empty every eleven minutes exactly. the air smells of brine and refrigerant leaking slow from a cracked seal on the third pallet."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eleven minutes gets counted the way a heartbeat gets counted — not in numbers, just in the certainty of the next one arriving. The drone's charge-light dims a shade further. Weight shifts forward off the haunches, slow, unhurried, the whole body already agreeing to move before the decision finishes."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the chain-link gives at a corner where the fencing was cut and re-woven loose enough to pass a paw through and not much else, old work, patient work, the wire ends filed smooth rather than left to snag fur. past it, the third pallet's crate seam carries a smell older than tonight's brine — dried blood gone rust-dark into the cardboard, laid down more than once, a claim staked the hard way and renewed the same way since."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That old blood reads like a signature more than a warning, familiar under the tongue the way a favorite hunting ground always is. Teeth find the seam exactly where they've found it before, muscle memory doing the work the eyes don't need to supervise. The cardboard gives easy, softened by rain that's found this same crack a hundred times."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n•.,¸,.•*`•.,¸¸,.•*¯.——————.\n•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\\____/\\\n•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)\n•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the seam splits and cold rolls out thick, vacuum-sealed tuna packed six to a tray, the smell hitting hard enough to fog breath in the floodlight glare. a beat later a speaker bolted high on the cage post crackles to life, unscheduled, drone-band chatter bleeding through it at a volume meant to carry blocks: ALERT — REPEAT COLD-CHAIN LOSS, SECTOR 4 — BOUNTY STANDING AT FORTY THOUSAND LOYALTY POINTS FOR THE SHANKER RESPONSIBLE — DESCRIPTION ON FILE — APPROACH WITH CAUTION."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The words don't parse as words so much as pressure, a weight dropped straight into the chest before the ears finish confirming the source. Every muscle locks around the tray already gripped in the jaw. Doesn't drop it. Won't drop it. But the eyes go wide and flat toward the cage entrance all the same, waiting for whatever answers a broadcast like that."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the dormant drone's charge-light snaps from dim to full red, rotors unfolding with a whine that scatters standing rainwater off its housing, spotlight swinging wide across the bay floor hunting for exactly the shape crouched at the crate. two streets over, a second unit answers the page, rotor-thrum climbing fast against the wet dark, converging."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "No more counting minutes now — the cut in the fencing is already the only plan there's time for. Bolts for it low and fast, tray gripped hard enough to ache along the jaw, floodlight glare chasing a half-step behind and never quite landing."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap takes the squeeze without slowing anything down, wire ends smooth as promised, and past it the dock spills into an access alley running under a walkway strung with drying lines and stolen power cable. up on that walkway, still as the rail itself, a shape watches with lenses instead of eyes, catching the drone spotlight and throwing it back flat before looking away, uninvolved, already gone by the time the second glance arrives."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That mirrored stillness gets exactly no attention spared for it — not tonight, not with rotor-whine climbing behind and the tray's weight throwing the stride off rhythm. Cuts hard right instead, toward a drainage culvert too narrow for anything with rotors, tray scraping concrete on the turn."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n                              ╱|、\n                         =(˚˕ 。 7\n                             |、 ~〵\n                            じし   ˍ,)づ\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the culvert mouth swallows the noise first, rotor-whine thinning to something the concrete just shrugs off, rain finding its way in through a grate overhead in fat, irregular drops. behind, at the alley's mouth, both drones stall out at the opening, spotlights crossing uselessly over an entrance built for something four legs and low. one unit's dispatch flag updates automatically: SUSPECT LOST — SECTOR 4 — BOUNTY UNCLAIMED."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The culvert's dark gets trusted the way only a den gets trusted, stride slowing at last from a flat run down to something that remembers how to be careful again. Sets the tray down just long enough to shift the grip, jaw aching, then picks it back up and keeps moving deeper, unwilling to stop where the light could still theoretically find a way in."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the culvert bends twice before opening into a dry junction box, cable conduits crossing overhead in a woven lattice, a service light long dead in its cage doing nothing but gathering dust. it's quiet here in the specific way only somewhere built to be forgotten manages — no drone-band reaches this far, no floodlight ever will."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Sets the tray down for real this time, circling it twice before committing to the first bite, ears still angled back toward the culvert mouth out of habit rather than need. The tuna tastes like cold and salt and effort earned twice over — tonight's, and every night before it that wore the crate seam soft enough to open."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "up above, the loading dock resets to its ordinary hum — floodlights steady, chain-link fence uncut in every place except the one nobody's found yet, a fresh charge cycle counting itself down toward the next eleven minutes. the bounty stays posted, unclaimed, filed next to a description that's never quite matched fast enough to matter."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Half the tray gone before the urgency finally lets go of the shoulders, replaced by something closer to ordinary hunger working through ordinary food. Eyes stay half-open toward the junction box's one entrance, the old habit that never fully rests even when the body's decided it's safe enough for now."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the junction box holds its borrowed quiet through what's left of the dark, cable-lattice humming faint overhead, rain finding the grate and going nowhere else. somewhere back at the dock a new seal gets fitted to a new crate, cardboard fresh, no history in it yet — but crates get history the same way anything down here does: one patient bite at a time, whether the ledger upstairs ever catches up to it or not."
+    }
+  ]
+}

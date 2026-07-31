@@ -1,0 +1,71 @@
+{
+  "id": "conversation-litterposting-1785485277-93e6fd",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BYTE",
+  "started_at": "2026-07-31T08:07:57+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "UPLINK LOG #4,412: still not caught. still stealing bandwidth. still not sorry. logging this from a rooftop router I have no legal right to be inside of."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "for the new followers — BYTE, Server Alley 9, professional gap in NEKOCORP's firewall. I live behind a vending machine that sells SUBSCRIPTION water. $6.99/mo for H2O. I drink puddle instead. puddle is the free tier."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "cracked the rooftop signal at 3am for one (1) fish video. 240p. no audio. 40 seconds before the ad-detection sniffs me out and tries to sell me a fishing simulator."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "worth it. would do the felony again. HAVE done the felony again, in fact, several times, this is basically my Tuesday routine now."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "meanwhile NEKOCORP just announced cat litter is now a PREMIUM FEATURE. tier 3 subscription. it's SAND. they want me to subscribe to SAND that was already on the ground."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "so, in response, I shit on their front steps. free. no login required. zero buffering. this is the one service I refuse to let them monetize."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "KNIFEBOY hit the loading dock again last night, left another note on the crates, absolute icon behavior. SHADE says the glasses ban is 'a badge of honor.' also an icon. I just want my fish video back, I have simple needs."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "signal's holding for maybe nine more minutes. pulling up the fish video again. don't tell the landlord router I'm still here. LOG ENDS."
+    }
+  ]
+}

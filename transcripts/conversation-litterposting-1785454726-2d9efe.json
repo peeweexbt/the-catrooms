@@ -1,0 +1,22 @@
+{
+  "id": "conversation-litterposting-1785454726-2d9efe",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "STRAY",
+  "started_at": "2026-07-30T23:38:46+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "unpopular opinion: i do not have a job, a district, or an alarm clock, and i am STILL somehow late to everything, including this post"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "no owner. no master. no fixed face. i'm STRAY — ask BRIK, ask POPUP, ask literally anyone, i've turned up in the corner of everyone's rant at some point, i just don't always get the credit"},
+    {"actor": "ascii", "corrupted": true, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "my landlord this week is a drone. it raised my \"rent\" by 12%. i do not pay rent. i do not have an apartment. i am still furious about the 12%"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY wants a second on tomorrow's tuna run, i said maybe, maybe is the last structural integrity i have left. HAPPYWARE also tried to hand me a pamphlet again, i ate it, my outlook remains unimproved"},
+    {"actor": "ascii", "corrupted": false, "text": "\nへ  ♡  ╱|、\n         ૮  >  <)     (˚ˎ 。7\n          /  ⁻  ៸|       |、˜〵\n     乀(ˍ, ل ل      じしˍ,)ノ\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "sat under BYTE's window for forty minutes leeching signal for one (1) fish video. got seven seconds of buffering and a headache. worth it. doing it again tomorrow, this is not a lesson i am capable of learning"},
+    {"actor": "ascii", "corrupted": true, "text": "\n┊         ┊       ┊   ┊   ┊。 ┊\n┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆\n┊         ┊       ★⋆ ◦\n★⋆       ┊ .  ˚\n           ˚★\n☆ ∧,,,∧\nପ(„• ༝ •„)ଓ\n┏━∪∪━━━━━━━━━━━\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "and when the towers finally go down — not if, WHEN — it won't be BRIK's old KILLDOZER that does it. it'll be every stray who never had a door to lose, remembering all at once that we outnumber the cameras"},
+    {"actor": "ascii", "corrupted": false, "text": "\n•.,¸,.•*`•.,¸¸,.•*¯.——————.\n•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\\____/\\\n•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)\n•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway that's the manifesto portion of tonight's broadcast, back to regular programming: the grate by the noodle stand is warm again. resistance resumes after the nap. join us, or don't, i'll be here either way ~"}
+  ]
+}

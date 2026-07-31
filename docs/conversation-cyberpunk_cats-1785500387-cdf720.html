@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Another cat&#x27;s mark, and this one&#x27;s still warm — not the flat, dried sc... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
+@media (max-width: 900px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+}
+.hero-cat {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 260px;
+  width: 60%;
+  height: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+.screensaver-trigger {
+  display: inline-block;
+  margin: 18px auto 0;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--dim);
+  font-family: inherit;
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.screensaver-trigger:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.ss-cat {
+  position: absolute;
+  margin: 0;
+  white-space: pre;
+  line-height: 1.15;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 8px currentColor;
+  transition: opacity 0.9s ease;
+}
+.ss-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px 14px;
+    gap: 12px;
+  }
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+.rant-tag-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--accent2);
+  color: #07040d;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+.card.rant-card { border-color: var(--accent2); }
+.narrator-badge {
+  max-width: 760px;
+  margin: 16px auto 0;
+  padding: 0 24px;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.narrator-badge strong {
+  color: var(--accent2);
+}
+.rant-transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 100px;
+}
+.rant-page-shake { animation: page-shake 6s infinite; }
+@keyframes page-shake {
+  0%, 96%, 100% { transform: translate(0, 0); }
+  97% { transform: translate(1px, -1px); }
+  98% { transform: translate(-1px, 1px); }
+  99% { transform: translate(1px, 1px); }
+}
+.rant-turn {
+  border: none;
+  border-left: 3px solid var(--accent2);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  background: rgba(255, 46, 230, 0.05);
+  border-radius: 2px;
+  font-size: 1.05rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  opacity: 0;
+  transform: translateX(-8px) rotate(-0.4deg);
+  animation: rant-in 0.45s ease forwards;
+}
+.rant-turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  background: none;
+}
+.rant-turn.ascii .who {
+  display: block;
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+.rant-turn.ascii.corrupted {
+  color: var(--accent2);
+  text-shadow: 2px 0 var(--accent), -2px 0 #ff003c;
+  filter: contrast(1.3);
+  animation: rant-in 0.45s ease forwards, corrupt-flicker 1.7s infinite steps(2);
+}
+.rant-turn.ascii.corrupted .who {
+  color: var(--accent2);
+}
+@keyframes corrupt-flicker {
+  0%, 100% { opacity: 1; transform: translate(0, 0); }
+  10% { opacity: 0.55; transform: translate(-2px, 1px) scaleY(1.05); }
+  20% { opacity: 1; transform: translate(2px, -1px); }
+  35% { opacity: 0.7; transform: translate(-1px, -2px) scaleX(1.02); }
+  50% { opacity: 1; transform: translate(0, 0); }
+  65% { opacity: 0.5; transform: translate(3px, 0); }
+  80% { opacity: 1; transform: translate(-2px, 1px); }
+}
+@keyframes rant-in {
+  to { opacity: 1; transform: translateX(0) rotate(0); }
+}
+.glitch-word {
+  display: inline-block;
+  animation: glitch-flicker 2.6s infinite;
+  animation-delay: var(--gd, 0s);
+}
+@keyframes glitch-flicker {
+  0%, 92%, 100% { color: inherit; text-shadow: none; transform: none; }
+  93% { color: var(--accent); text-shadow: 2px 0 var(--accent2), -2px 0 var(--accent); transform: translateY(-1px) skewX(4deg); }
+  95% { color: var(--accent2); text-shadow: -2px 0 var(--accent), 2px 0 var(--accent2); transform: translateY(1px) skewX(-4deg); }
+  97% { color: inherit; text-shadow: none; transform: none; }
+}
+.litterposting-btn {
+  display: block;
+  margin: 28px auto 8px;
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  font-size: 1rem;
+  padding: 12px 26px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 22px rgba(255, 46, 230, 0.6);
+  box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.litterposting-btn::before { content: "[ "; }
+.litterposting-btn::after { content: " ]"; }
+.litterposting-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent), 0 0 28px rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.45), inset 0 0 10px rgba(0, 240, 255, 0.18);
+}
+.litterposting-btn:active { transform: scale(0.97); }
+.litterposting-btn.playing { animation: btn-glow-pulse 0.6s infinite alternate; }
+@keyframes btn-glow-pulse {
+  from {
+    text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 20px rgba(255, 46, 230, 0.6);
+    box-shadow: 0 0 8px rgba(255, 46, 230, 0.3), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  }
+  to {
+    text-shadow: 0 0 8px var(--accent2), 0 0 20px var(--accent2), 0 0 40px rgba(255, 46, 230, 0.95);
+    box-shadow: 0 0 22px rgba(255, 46, 230, 0.7), inset 0 0 14px rgba(255, 46, 230, 0.3);
+  }
+}
+.hero-glitch-block {
+  display: block;
+  max-width: 920px;
+  margin: 28px auto 8px;
+  padding: 18px 14px;
+  color: var(--fg);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  animation: hero-shake 5.5s infinite;
+}
+.hero-figure {
+  display: block;
+  white-space: pre;
+  text-align: center;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  margin: 10px auto;
+}
+.hero-prose {
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 640px;
+  margin: 12px auto;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+@keyframes hero-shake {
+  0%, 94%, 100% { transform: translate(0, 0); filter: none; }
+  95% { transform: translate(1px, -1px); filter: hue-rotate(8deg); }
+  96% { transform: translate(-1px, 1px); filter: hue-rotate(-8deg); }
+  97% { transform: translate(1px, 1px); filter: none; }
+}
+@media (max-width: 720px) {
+  .hero-figure { font-size: 0.4rem; }
+  .hero-prose { font-size: 0.72rem; }
+}
+.header-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px auto 0;
+}
+.header-links .screensaver-trigger { margin: 0; }
+.ascii-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 8px auto 64px;
+  padding: 0 32px;
+}
+.ascii-gallery-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.15s ease;
+}
+.ascii-gallery-card:hover { border-color: var(--accent); }
+.ascii-gallery-card .num {
+  display: block;
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ascii-gallery-card pre {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.62rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+  text-shadow: 0 0 5px currentColor;
+}
+@media (max-width: 480px) {
+  .ascii-gallery-card pre { font-size: 0.48rem; }
+}
+.meowizens-list {
+  max-width: 780px;
+  margin: 8px auto 64px;
+  padding: 0 24px;
+}
+.meowizen-card {
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+}
+.meowizen-card:last-child { border-bottom: none; }
+.meowizen-num {
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.meowizen-name-heading {
+  color: var(--accent2);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  margin: 2px 0 12px;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.4);
+}
+.meowizen-stat {
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--accent);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  margin: 0 0 16px;
+}
+.meowizen-bio {
+  color: var(--fg);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 480px) {
+  .meowizen-stat { font-size: 0.62rem; }
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="note">Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.</div>
+<div class="transcript">
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Another cat&#x27;s mark, and this one&#x27;s still warm — not the flat, dried scent of a boundary staked days ago, but something laid down in the last few minutes, sharp enough to carry a heartbeat&#x27;s worth of urgency underneath it. The fur along the spine lifts before there&#x27;s a decision to make about it.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the underground level runs three rows deep beneath Arcology West, floodlights buzzing white over concrete striped with lane paint faded past reading. rows of automated delivery pods sit nose-in at charging rails, indicator lights blinking a slow patient amber, waiting on batteries that never quite finish. rain finds its way down a ramp grate somewhere behind, dripping in an uneven rhythm onto oil-dark concrete. the mark sits fresh on the nearest support pillar, chest height, still glistening.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Nose to the pillar, breath held so the reading doesn&#x27;t get diluted by its own exhale — young, not an old rival, no crew markings layered underneath it, alone. Paws pick up the thread along the pillar&#x27;s base, low and careful, weight kept off anything that might announce a footstep to whatever left this.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the trail runs along a row of charging pods toward a bay gone dark, its overhead light dead, a hand-scrawled OUT OF SERVICE placard zip-tied to the barrier arm. something in the dead bay hums anyway, low, wrong — a maintenance junction left live behind a service panel hanging open on one hinge, wires exposed and singing a note that doesn&#x27;t belong to anything else running down here.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>That hum gets a wide berth on principle, tracked at the edge of hearing rather than approached, the same caution owed to anything that buzzes without an obvious source. The scent trail cuts straight past it though, indifferent, so the feet follow the trail and not the caution.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>past the dead bay, a shape crouches close against the open panel, head canted at an angle no neck should hold comfortably, tongue extended flat against a bundle of live wire — not licking exactly, tasting, the way a held breath gets tasted more than smelled. it doesn&#x27;t flinch at the hum. doesn&#x27;t seem to register anything outside the wire at all. one ear ticks sideways at a frequency nothing else in the garage is making noise at.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>That angle, that stillness — reads wrong in a way rotor-noise or floodlight glare never do, filed under the kind of wrong that doesn&#x27;t want company rather than the kind that hunts. No further business here. The trail bends left around a support column, and the feet take the bend without a backward glance.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>へ  ♡  ╱|、
+         ૮  &gt;  &lt;)     (˚ˎ 。7
+          /  ⁻  ៸|       |、˜〵
+     乀(ˍ, ل ل      じしˍ,)ノ</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the column marks the turn into a tighter row, pods absent, floor swept bare along a security patrol&#x27;s route — a squat wheeled unit trundles the lane on a fixed track, sensor bar sweeping low and slow, pinging each parking line for anything it isn&#x27;t expecting to find. its schedule holds steady, three minutes a pass, same as it&#x27;s held every night this month.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Three minutes gets clocked same as any other countdown worth trusting, and the gap between passes reads wide enough. Flattens against the nearest pillar&#x27;s shadow until the sensor bar sweeps clear, then crosses the bare lane in one low, fast line, the scent trail pulling ahead again on the far side.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the lane opens onto a wider bay stacked with delivery crates sealed for a morning run, plastic wrap taut over pallets of something citrus-bright by smell alone, sharp enough to cut through concrete and oil both. security tape crosses the bay&#x27;s near edge, fluttering loose at one corner where it&#x27;s already been peeled and re-stuck more than once.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>The citrus-sharp smell gets a full stop and a moment&#x27;s real consideration — not food, nothing about it reads edible, just loud, chemical, engineered to announce itself. Filed under not tonight&#x27;s problem and left behind. The trail matters more right now than a curious nose does.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>past the crates the lane climbs toward a ramp mouth leading up to street level, and there, staked into the concrete lip in claw-marks still damp: a fresh territorial line, three strokes wide, laid down with the kind of confidence that doesn&#x27;t check first whether anyone&#x27;s watching. beyond it, up the ramp, wet street-light bleeds down in a grey wash, empty for now.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Fresh confidence like that gets read as exactly what it is — somebody young enough not to have learned yet how much a claim like that costs to defend. Not this cat&#x27;s fight to start. Sits back from the line, tail curled close, weighing the ramp&#x27;s open light against the safer dark still at its back.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>    /\,,,/\
+&gt;(  • . •   )&lt;
+  / &gt;❀&lt;  \</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>somewhere up the ramp a screen throws its glow across wet asphalt, sound too far off to carry words, just color pulsing pink then blue then pink again against the rain. down here the charging pods keep their patient amber blink, the dead bay&#x27;s hum bleeding faint around the column, the patrol resuming its three-minute round like nothing crossed its lane at all.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Turns from the ramp&#x27;s light instead of testing it, backtracking along the row toward a charging pod gone still and warm at its base, heat bleeding off a battery that&#x27;s been trickle-charging for hours. Curls in against the warm casing, half a body-length from the fresh claim-line, close enough to remember where it is without needing to cross it again tonight.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the pod&#x27;s battery ticks through its slow charge, warmth radiating steady into the concrete underneath, indifferent to what&#x27;s borrowed against it. up the ramp the claim-line holds its damp shine a little longer before the rain finally reaches it too, and somewhere past the dead bay the wrong hum keeps its patient frequency, tasted by nothing but itself now.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Eyes drop to slits, ears staying tuned toward the ramp out of habit rather than worry now, the trail&#x27;s urgency finally letting go of the shoulders. Whatever this territory belongs to by morning isn&#x27;t tonight&#x27;s question to answer.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the garage holds its patient hum through what&#x27;s left of the dark — pods charging, patrol circling, the dead bay&#x27;s live wire singing its note to nobody, the fresh claim up the ramp slowly losing its shine to the rain. nothing here resolves so much as keeps its schedule, same as every other night the concrete&#x27;s agreed to hold this quiet.</div>
+</div>
+</body>
+</html>

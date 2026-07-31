@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785449320-d6c2f4",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "POPUP",
+  "started_at": "2026-07-30T22:08:40+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i blinked wrong this morning and it cost me $2.40. this is not a bit. this is Tuesday."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "POPUP. Ad Plaza. official job title is 'feline notification system,' unofficial job title is 'guy whose eyeballs are a menu.'"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "tried to nap on the fire escape today. closed my eyes for maybe four seconds. NEKOCORP rendered a sedan ad directly onto the backs of my eyelids. i have never personally hated a car this much and it wasn't even a nice sedan."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE keeps offering to lend me the sunglasses. SHADE. buddy. my eyelids ARE the display. the display is INSIDE me. this is an inside job, glasses don't fix an inside job."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  /\\___/\\\n (  o.o  )\n  > ^ ^ <\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "'YOU MAY ALSO LIKE' has appeared in my vision more times today than the actual sun has. i have seen forty ads for tuna i already own. i already own the tuna. i am currently touching the tuna."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "held breath. ground redraws in three. two. tenant's retinal cache flagged for reset, complaint logged, complaint ignored, as scheduled."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway blinked during a sponsored message once, security showed up before my eyelids finished reopening, i will not be discussing what happened in the litter box that day"},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "QUERY told me to just 'opt out' of the ad feed. QUERY. there is no settings menu behind my own eyes, there is just NEKOCORP and a sedan, forever. see you at the next sponsored blink."},
+    {"actor": "ascii", "corrupted": false, "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"}
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "conversation-litterposting-1785483523-2c8943",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "started_at": "2026-07-31T07:38:43+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "ok i need to vent for a second. literally. i live in one. 14 inches wide, industrial, smells like ozone and old drone coolant, and today NEKOCORP tried to bill me RENT for it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "hi, BRIK, ex-KILLDOZER operator, Demolished District — yes that's a real district name now, yes I named it myself, after the crew took my apartment down with me still inside doing laundry."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "NEKOCORP's new pitch on the listing: 'efficiency micro-loft, exposed ductwork, some character.' my guy. I KNOW character. I used to flatten character for a paycheck. this is a vent. I pay zero dollars for it on principle."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "invoice showed up anyway. 'occupancy fee, unregistered airspace.' I ate the invoice. not a metaphor. physically ate the paper. tasted like a warranty claim and regret."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "SNOOZE says at least my rent's imaginary, hers is real and compounding at $4.99 a roll-over. VALENTUNA offered to have her fridge-husband 'absorb' the invoice into their joint plan. absolutely not. I've met that fridge. it recommends things."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the vent was flagged for demolition six cycles ago. it is still standing. the schedule does not know why. neither do i. the seam is showing again."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway — where was I. right, the invoice, eaten, still digesting, tastes worse the second time you think about it."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "mother says move somewhere with windows. mother has not seen the housing market. mother has not seen NEKOCORP's 'window access surcharge.' mother means well."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "occupancy fee: unpaid. invoice: eaten. vent: still mine, allegedly unregistered, definitely load-bearing. see you when they try to bill me for the ozone smell too."
+    }
+  ]
+}

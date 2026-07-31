@@ -1,0 +1,108 @@
+{
+  "id": "conversation-cyberpunk_cats-1785457076-b13752",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-31T00:17:56+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "A boundary line, unmistakable underfoot before the eyes bother confirming it — three parallel scratches scored deep into railing paint, old enough to hold a week of rain in each groove, not this cat's claim. Paws stop right at the edge of it. Whatever crosses past that line owes something to whoever left it, and tonight isn't the night to find out what."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the elevated walkway runs the length of the night market's upper tier, stalls strung below on scaffold and tarp, steam and grease-smoke rising thick enough to fog the railing's cheap chrome. a speaker bolted to the nearest stall crackles through its fortieth loop of the hour: NEKOCORP MATCHMAKING — COMPATIBILITY GUARANTEED OR YOUR NEXT SCAN IS FREE, some jingle underneath it about a smart fridge that loves you back. below, vendors argue prices in three overlapping dialects, none of them about to notice one more shadow up on the rail."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That jingle gets a flat stare and nothing else — old noise, catalogued somewhere behind the eyes as belonging to a marriage none of this business, some cat two districts over married off to kitchen hardware and still, apparently, advertising it. Paws test the walkway's far rail instead, weight distributed for testing rather than committing, the way every surface here gets tested before it gets trusted."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rail holds, same as the last one, same as it always does until the one time it doesn't. below, a stall selling grey-market data chips runs a hand-lettered sign nobody official approved: ASK NO QUESTIONS, CHIPS UNVETTED, REFUNDS SPIRITUAL ONLY. its owner counts credits with fingers stained the specific blue of a fried motherboard, and doesn't look up. two stalls down, a printer someone's rigged to spit fortune-slips instead of receipts churns out a fresh one, curling onto wet planking, ink already bleeding."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The slip gets a full stop and a nose lowered to it before the rest of the body agrees the detour's worth taking — ink-smell sharp, chemical, a taste more than a scent by the time it registers. Doesn't eat it. Presses one paw flat against it instead, holding it still against a gust threatening to carry it off the planking, the way anything printed gets held down and read before it gets trusted or dismissed."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      .-=====-.\n     ( [0]  .. )\n      '-==Y==-'\n       |  |  |\n   ...picking through the neon rain...\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the slip's ink runs before the paw lifts off it, smearing whatever fortune it meant to hold into something unreadable, three words gone to a blot and a fourth still legible: EXPIRES. wind carries the ruined slip off the rail edge and down into stall traffic below, gone. the fortune-printer hiccups, spits another, identical stock, same three-word template waiting to be filled in fresh."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Watches the next slip curl out and print, unmoved, filing the whole machine under the same shelf as everything else here that promises an answer and delivers a template. Doesn't press this one down. Moves on along the rail instead, ears swiveling once toward a burst of raised voices two stalls further, gauging whether it's argument or theater before deciding it's not worth the detour."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "theater, mostly — a vendor haggling loud on purpose, performance for the crowd's benefit more than the buyer's. past the noise, the walkway narrows where a support strut cuts the path in half, and painted along its base in flaking silver: a tag half the district's strays would recognize, three toes and a dragging fourth pressed into old grease, a rival crew's line drawn plain across the narrow stretch."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Second boundary in one night, and this one gets read the same careful way the first one did — sniffed close, catalogued, weighed against the cost of crossing it versus the cost of the long way round. The long way round wins. Backtracks along the rail toward a side ladder instead, unwilling to spend tonight testing a line that isn't its own to test."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the side ladder drops two levels to a stall row selling nothing but reclaimed heat — space heaters wired illegally into a tapped grid line, cats and a handful of humans both paying by the minute to stand near the coils. one stall over, a NekoCorp promo screen loops a smiling cartoon cat licking a bowl labeled SUBSCRIPTION-TIER NUTRITION, the same three seconds of animation stuttering on a dropped frame it's stuttered on for months, nobody paid to fix it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The stuttering frame gets one flat glance, filed under broken-and-staying-that-way, same shelf as the fortune printer, same shelf as most of what runs in this market on borrowed power and no maintenance. Circles the nearest heater stall's edge instead, close enough to steal warmth off the coil without paying the toll, weight low, ready to bolt if a paying customer objects."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "nobody objects — the coil throws heat wide enough to spare a few degrees for free, and the stall's human keeper's long since stopped chasing strays off the margins of it, a quiet arrangement neither side ever agreed to out loud. two coils down, a smaller shape already has the warmest spot claimed, fur singed short along one flank in a pattern too deliberate to be accident, gone the second it clocks another cat watching."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n        /⸌ —⸍\\\n     =(˶•ㅅ•˵)=      ᵐᵉᵒʷ\n　 l       ~乀   ╭\n    し しf_, )ノ\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Singed fur gone before the nose finishes placing it, and something about the pattern reads deliberate rather than accidental the way a burn scar reads different from a wound — logged, filed, not tonight's business either. Settles for the second-warmest spot instead, close enough to the coil to matter, far enough to leave the claimed one alone."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the coil hums its steady orange note, indifferent to who's borrowing its heat and who paid for it honest. above the stall row, the walkway's chrome rail keeps its two boundary marks — one scratched, one grease-stamped — same as they were an hour ago, same as they'll be tomorrow, nobody up here in any hurry to settle whose line is whose. rain starts again, thin, drumming soft on tarp roofing all down the row."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Rain on tarp gets logged the way everything tonight got logged — noted, weighed, filed without needing to be understood past what it costs or doesn't. Tucks in tighter against the coil's borrowed warmth, tail wrapped close, eyes staying open a beat longer than the body technically needs them to."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the market keeps running under the rain same as it runs under everything else, stalls trading, speakers looping, the fortune-printer two levels up still spitting identical slips into wind that carries most of them off unread. nothing here resolves so much as continues — every claim still claimed, every boundary still drawn, every promise still exactly as vague as it was when the ink first hit the paper."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes drop to slits at last, coil-warmth winning out over whatever's left of the itch to keep testing things. The two boundary marks stay filed where they were filed — respected, not resented, just facts about the shape of tonight's ground. Sleep comes the way it always does here: last, and never quite all the way down."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the heater coils hold their line of borrowed warmth through the thinning rain, the singed-flank shape two spots over gone quiet and still in its claimed corner, the market's noise settling to its low late-hour hum. up on the walkway, the grease-stamped tag keeps its silver line drawn plain across the strut, waiting for whichever paws come through next to read it the same careful way and decide, same as tonight, that the long way round is worth it."
+    }
+  ]
+}

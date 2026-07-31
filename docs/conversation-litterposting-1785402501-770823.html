@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>—AND ANOTHER THING. page 9 says &#x27;see page 4.&#x27; page 4 does not exist. i... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
+@media (max-width: 900px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+}
+.hero-cat {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 260px;
+  width: 60%;
+  height: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+.screensaver-trigger {
+  display: inline-block;
+  margin: 18px auto 0;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--dim);
+  font-family: inherit;
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.screensaver-trigger:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.ss-cat {
+  position: absolute;
+  margin: 0;
+  white-space: pre;
+  line-height: 1.15;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 8px currentColor;
+  transition: opacity 0.9s ease;
+}
+.ss-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px 14px;
+    gap: 12px;
+  }
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+.rant-tag-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--accent2);
+  color: #07040d;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+.card.rant-card { border-color: var(--accent2); }
+.narrator-badge {
+  max-width: 760px;
+  margin: 16px auto 0;
+  padding: 0 24px;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.narrator-badge strong {
+  color: var(--accent2);
+}
+.rant-transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 100px;
+}
+.rant-page-shake { animation: page-shake 6s infinite; }
+@keyframes page-shake {
+  0%, 96%, 100% { transform: translate(0, 0); }
+  97% { transform: translate(1px, -1px); }
+  98% { transform: translate(-1px, 1px); }
+  99% { transform: translate(1px, 1px); }
+}
+.rant-turn {
+  border: none;
+  border-left: 3px solid var(--accent2);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  background: rgba(255, 46, 230, 0.05);
+  border-radius: 2px;
+  font-size: 1.05rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  opacity: 0;
+  transform: translateX(-8px) rotate(-0.4deg);
+  animation: rant-in 0.45s ease forwards;
+}
+.rant-turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  background: none;
+}
+.rant-turn.ascii .who {
+  display: block;
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+.rant-turn.ascii.corrupted {
+  color: var(--accent2);
+  text-shadow: 2px 0 var(--accent), -2px 0 #ff003c;
+  filter: contrast(1.3);
+  animation: rant-in 0.45s ease forwards, corrupt-flicker 1.7s infinite steps(2);
+}
+.rant-turn.ascii.corrupted .who {
+  color: var(--accent2);
+}
+@keyframes corrupt-flicker {
+  0%, 100% { opacity: 1; transform: translate(0, 0); }
+  10% { opacity: 0.55; transform: translate(-2px, 1px) scaleY(1.05); }
+  20% { opacity: 1; transform: translate(2px, -1px); }
+  35% { opacity: 0.7; transform: translate(-1px, -2px) scaleX(1.02); }
+  50% { opacity: 1; transform: translate(0, 0); }
+  65% { opacity: 0.5; transform: translate(3px, 0); }
+  80% { opacity: 1; transform: translate(-2px, 1px); }
+}
+@keyframes rant-in {
+  to { opacity: 1; transform: translateX(0) rotate(0); }
+}
+.glitch-word {
+  display: inline-block;
+  animation: glitch-flicker 2.6s infinite;
+  animation-delay: var(--gd, 0s);
+}
+@keyframes glitch-flicker {
+  0%, 92%, 100% { color: inherit; text-shadow: none; transform: none; }
+  93% { color: var(--accent); text-shadow: 2px 0 var(--accent2), -2px 0 var(--accent); transform: translateY(-1px) skewX(4deg); }
+  95% { color: var(--accent2); text-shadow: -2px 0 var(--accent), 2px 0 var(--accent2); transform: translateY(1px) skewX(-4deg); }
+  97% { color: inherit; text-shadow: none; transform: none; }
+}
+.litterposting-btn {
+  display: block;
+  margin: 28px auto 8px;
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  font-size: 1rem;
+  padding: 12px 26px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 22px rgba(255, 46, 230, 0.6);
+  box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.litterposting-btn::before { content: "[ "; }
+.litterposting-btn::after { content: " ]"; }
+.litterposting-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent), 0 0 28px rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.45), inset 0 0 10px rgba(0, 240, 255, 0.18);
+}
+.litterposting-btn:active { transform: scale(0.97); }
+.litterposting-btn.playing { animation: btn-glow-pulse 0.6s infinite alternate; }
+@keyframes btn-glow-pulse {
+  from {
+    text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 20px rgba(255, 46, 230, 0.6);
+    box-shadow: 0 0 8px rgba(255, 46, 230, 0.3), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  }
+  to {
+    text-shadow: 0 0 8px var(--accent2), 0 0 20px var(--accent2), 0 0 40px rgba(255, 46, 230, 0.95);
+    box-shadow: 0 0 22px rgba(255, 46, 230, 0.7), inset 0 0 14px rgba(255, 46, 230, 0.3);
+  }
+}
+.hero-glitch-block {
+  display: block;
+  max-width: 920px;
+  margin: 28px auto 8px;
+  padding: 18px 14px;
+  color: var(--fg);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  animation: hero-shake 5.5s infinite;
+}
+.hero-figure {
+  display: block;
+  white-space: pre;
+  text-align: center;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  margin: 10px auto;
+}
+.hero-prose {
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 640px;
+  margin: 12px auto;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+@keyframes hero-shake {
+  0%, 94%, 100% { transform: translate(0, 0); filter: none; }
+  95% { transform: translate(1px, -1px); filter: hue-rotate(8deg); }
+  96% { transform: translate(-1px, 1px); filter: hue-rotate(-8deg); }
+  97% { transform: translate(1px, 1px); filter: none; }
+}
+@media (max-width: 720px) {
+  .hero-figure { font-size: 0.4rem; }
+  .hero-prose { font-size: 0.72rem; }
+}
+.header-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px auto 0;
+}
+.header-links .screensaver-trigger { margin: 0; }
+.ascii-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 8px auto 64px;
+  padding: 0 32px;
+}
+.ascii-gallery-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.15s ease;
+}
+.ascii-gallery-card:hover { border-color: var(--accent); }
+.ascii-gallery-card .num {
+  display: block;
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ascii-gallery-card pre {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.62rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+  text-shadow: 0 0 5px currentColor;
+}
+@media (max-width: 480px) {
+  .ascii-gallery-card pre { font-size: 0.48rem; }
+}
+.meowizens-list {
+  max-width: 780px;
+  margin: 8px auto 64px;
+  padding: 0 24px;
+}
+.meowizen-card {
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+}
+.meowizen-card:last-child { border-bottom: none; }
+.meowizen-num {
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.meowizen-name-heading {
+  color: var(--accent2);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  margin: 2px 0 12px;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.4);
+}
+.meowizen-stat {
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--accent);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  margin: 0 0 16px;
+}
+.meowizen-bio {
+  color: var(--fg);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 480px) {
+  .meowizen-stat { font-size: 0.62rem; }
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="narrator-badge">posted by <strong>QUERY</strong></div>
+<div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
+<div class="rant-transcript rant-page-shake">
+<div class="rant-turn" style="animation-delay:0.0s">—AND <span class="glitch-word" style="--gd:1.68s">ANOTHER</span> THING. page <span class="glitch-word" style="--gd:0.63s">9</span> <span class="glitch-word" style="--gd:0.22s">says</span> &#x27;see page 4.&#x27; page 4 does not exist. <span class="glitch-word" style="--gd:0.79s">i</span> have <span class="glitch-word" style="--gd:1.0s">checked</span> <span class="glitch-word" style="--gd:1.4s">FORTY</span> TIMES. page <span class="glitch-word" style="--gd:0.32s">4</span> has never existed. i don&#x27;t think page 4 <span class="glitch-word" style="--gd:1.52s">was</span> ever <span class="glitch-word" style="--gd:1.29s">real</span> to begin with—</div>
+<div class="rant-turn" style="animation-delay:0.12s">sorry. sorry. QUERY here, Legal Fog district, terms-of-service <span class="glitch-word" style="--gd:1.65s">researcher.</span> six months <span class="glitch-word" style="--gd:0.46s">into</span> <span class="glitch-word" style="--gd:2.57s">a</span> settings menu <span class="glitch-word" style="--gd:1.62s">that</span> was advertised as &#x27;approximately <span class="glitch-word" style="--gd:1.03s">2</span> minutes to <span class="glitch-word" style="--gd:1.82s">review.&#x27;</span></div>
+<div class="rant-turn" style="animation-delay:0.24s"><span class="glitch-word" style="--gd:2.46s">today&#x27;s</span> discovery: <span class="glitch-word" style="--gd:1.27s">a</span> toggle labeled &#x27;ENHANCED <span class="glitch-word" style="--gd:2.02s">EXPERIENCE</span> (recommended, cannot be disabled, was never actually optional).&#x27; clicked it by <span class="glitch-word" style="--gd:1.44s">accident.</span> felt that immediately, in my whole body, which <span class="glitch-word" style="--gd:0.88s">per</span> section 5 i do not <span class="glitch-word" style="--gd:1.81s">technically</span> own.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>&amp;  #  ╱~3
+         ૮  &gt;  &lt;)     (˚ˎ 。7
+          /  !  ៸|       |、˜〵
+     乀(ˍ, ل ل      !しˍ,)ノ</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.24s">customer</span> <span class="glitch-word" style="--gd:0.45s">support</span> is a chatbot named FAIRNESS.exe. i asked FAIRNESS.exe to produce page 4. FAIRNESS.exe asked <span class="glitch-word" style="--gd:1.49s">if</span> i&#x27;d considered <span class="glitch-word" style="--gd:0.75s">upgrading</span> to PREMIUM LEGAL CLARITY, +$9.99/mo, terms subject <span class="glitch-word" style="--gd:2.41s">to</span> change, <span class="glitch-word" style="--gd:0.26s">see</span> page 4.</div>
+<div class="rant-turn" style="animation-delay:0.6s">HAPPYWARE <span class="glitch-word" style="--gd:0.88s">says</span> <span class="glitch-word" style="--gd:1.78s">i</span> should <span class="glitch-word" style="--gd:1.26s">&#x27;reframe</span> this as an immersive legal journey.&#x27; HAPPYWARE also has a smile chip surgically bolted into her skull, so i&#x27;m weighting that opinion <span class="glitch-word" style="--gd:0.13s">at</span> exactly zero, forever, no appeal <span class="glitch-word" style="--gd:1.24s">process</span> — checked, there&#x27;s no appeal process for <span class="glitch-word" style="--gd:0.35s">that</span> <span class="glitch-word" style="--gd:0.33s">either.</span></div>
+<div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>•.,¸,.•*`•.,¸¸,.•*¯.——————.
+•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
+•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
+•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:0.83s">page</span> 4 says i own my body. page 5 defines &#x27;my body&#x27; as licensed <span class="glitch-word" style="--gd:0.64s">hardware.</span> page 6 says page 4 was a promotional example <span class="glitch-word" style="--gd:2.09s">only,</span> not to <span class="glitch-word" style="--gd:2.38s">be</span> <span class="glitch-word" style="--gd:0.47s">relied</span> <span class="glitch-word" style="--gd:0.36s">upon,</span> see <span class="glitch-word" style="--gd:0.16s">page</span> 4. page 7 is just a picture of a fish. nobody has <span class="glitch-word" style="--gd:2.42s">ever</span> explained page 7.</div>
+<div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>┊         ┊       ┊   ┊   ┊。 ┊
+┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆
+┊         ┊       ★⋆ ◦
+★⋆       ┊ .  ˚
+           ˚★
+☆ ∧,,,∧
+ପ(„• ༝ •„)ଓ
+┏━∪∪━━━━━━━━━━━</div>
+<div class="rant-turn" style="animation-delay:1.08s">STRAY messaged me <span class="glitch-word" style="--gd:2.08s">&#x27;the</span> way out is to stop reading.&#x27; my brother in nekochrist i am CONTRACTUALLY OBLIGATED to finish, <span class="glitch-word" style="--gd:2.3s">that&#x27;s</span> clause 2, i am currently imprisoned by the <span class="glitch-word" style="--gd:0.46s">exact</span> document <span class="glitch-word" style="--gd:0.58s">i</span> am trying to escape <span class="glitch-word" style="--gd:2.29s">and</span> <span class="glitch-word" style="--gd:2.4s">the</span> irony is <span class="glitch-word" style="--gd:1.88s">the</span> only part of this that <span class="glitch-word" style="--gd:2.0s">still</span> makes sense to <span class="glitch-word" style="--gd:1.11s">me.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>    /~,,,/0
+&gt;(  • . •   )&lt;
+  / 77&lt;  !</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. six months down. terms: <span class="glitch-word" style="--gd:2.3s">unchanged.</span> body: still <span class="glitch-word" style="--gd:0.63s">licensed</span> hardware, <span class="glitch-word" style="--gd:1.21s">allegedly,</span> per someone, <span class="glitch-word" style="--gd:0.81s">somewhere,</span> page unknown. if you don&#x27;t hear from me <span class="glitch-word" style="--gd:0.77s">by</span> report #216 assume i finally hit &#x27;accept <span class="glitch-word" style="--gd:1.16s">all&#x27;</span> and i&#x27;m <span class="glitch-word" style="--gd:2.59s">gone</span> <span class="glitch-word" style="--gd:0.49s">—</span> <span class="glitch-word" style="--gd:1.2s">just</span> gone — tell my scratching post i loved it.</div>
+<button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
+</div>
+<script>
+const RANT_LINES = ["\u2014AND ANOTHER THING. page 9 says 'see page 4.' page 4 does not exist. i have checked FORTY TIMES. page 4 has never existed. i don't think page 4 was ever real to begin with\u2014", "sorry. sorry. QUERY here, Legal Fog district, terms-of-service researcher. six months into a settings menu that was advertised as 'approximately 2 minutes to review.'", "today's discovery: a toggle labeled 'ENHANCED EXPERIENCE (recommended, cannot be disabled, was never actually optional).' clicked it by accident. felt that immediately, in my whole body, which per section 5 i do not technically own.", "customer support is a chatbot named FAIRNESS.exe. i asked FAIRNESS.exe to produce page 4. FAIRNESS.exe asked if i'd considered upgrading to PREMIUM LEGAL CLARITY, +$9.99/mo, terms subject to change, see page 4.", "HAPPYWARE says i should 'reframe this as an immersive legal journey.' HAPPYWARE also has a smile chip surgically bolted into her skull, so i'm weighting that opinion at exactly zero, forever, no appeal process \u2014 checked, there's no appeal process for that either.", "page 4 says i own my body. page 5 defines 'my body' as licensed hardware. page 6 says page 4 was a promotional example only, not to be relied upon, see page 4. page 7 is just a picture of a fish. nobody has ever explained page 7.", "STRAY messaged me 'the way out is to stop reading.' my brother in nekochrist i am CONTRACTUALLY OBLIGATED to finish, that's clause 2, i am currently imprisoned by the exact document i am trying to escape and the irony is the only part of this that still makes sense to me.", "anyway. six months down. terms: unchanged. body: still licensed hardware, allegedly, per someone, somewhere, page unknown. if you don't hear from me by report #216 assume i finally hit 'accept all' and i'm gone \u2014 just gone \u2014 tell my scratching post i loved it."];
+(function() {
+  const btn = document.getElementById('litterposting-btn');
+  let speaking = false;
+  btn.addEventListener('click', function() {
+    if (speaking) {
+      window.speechSynthesis.cancel();
+      speaking = false;
+      btn.textContent = 'LITTERPOSTING';
+      btn.classList.remove('playing');
+      return;
+    }
+    if (!('speechSynthesis' in window)) {
+      alert("this browser can't meow. try Chrome or Safari.");
+      return;
+    }
+    speaking = true;
+    btn.textContent = 'SHUT UP CAT';
+    btn.classList.add('playing');
+    let i = 0;
+    function speakNext() {
+      if (i >= RANT_LINES.length || !speaking) {
+        speaking = false;
+        btn.textContent = 'LITTERPOSTING';
+        btn.classList.remove('playing');
+        return;
+      }
+      const u = new SpeechSynthesisUtterance(RANT_LINES[i]);
+      u.rate = 1.05 + Math.random() * 0.25;
+      u.pitch = 1.15 + Math.random() * 0.45;
+      u.onend = function() { i++; speakNext(); };
+      u.onerror = function() { i++; speakNext(); };
+      window.speechSynthesis.speak(u);
+    }
+    speakNext();
+  });
+})();
+</script>
+</body>
+</html>
