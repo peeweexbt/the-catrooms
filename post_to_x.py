@@ -27,8 +27,10 @@ same way it blocks direct model API calls; this only works from a machine
 with normal internet access.
 
 Usage:
-    python3 post_to_x.py              # posts if the 3-6hr window has opened and there's something new
-    python3 post_to_x.py --dry-run    # prints what would currently be picked/tweeted, ignoring the time window; no post, no state change
+    python3 post_to_x.py                          # posts if the 3-6hr window has opened and there's something new
+    python3 post_to_x.py --dry-run                # prints what would currently be picked/tweeted, ignoring the time window; no post, no state change
+    python3 post_to_x.py --now                    # ignore the 3-6hr window and post immediately if there's something new
+    python3 post_to_x.py --now --narrator STRAY   # ignore the window AND force the pick to a STRAY-narrated post (skips the weighted pick entirely)
 
 State is tracked in x_post_state.json: the set of already-tweeted
 transcript ids (so nothing gets posted twice, regardless of which category
@@ -115,14 +117,22 @@ def load_all_litterposting():
     return items
 
 
-def pick_transcript(tweeted_ids):
+def pick_transcript(tweeted_ids, narrator_filter=None):
     """Weighted pick among untweeted litterposting rants: usually the
     newest untweeted STRAY-narrated one, occasionally the newest untweeted
     one from a named Meowizen instead — falling back to whichever category
-    actually has candidates if the preferred one is empty."""
+    actually has candidates if the preferred one is empty.
+
+    If narrator_filter is given (e.g. "STRAY"), skip the weighting entirely
+    and just return the newest untweeted post from that exact narrator, or
+    None if there isn't one."""
     untweeted = [t for t in load_all_litterposting() if t["id"] not in tweeted_ids]
     if not untweeted:
         return None
+
+    if narrator_filter:
+        matches = [t for t in untweeted if (t.get("narrator") or "STRAY") == narrator_filter]
+        return matches[0] if matches else None
 
     stray_posts = [t for t in untweeted if (t.get("narrator") or "STRAY") == "STRAY"]
     named_posts = [t for t in untweeted if (t.get("narrator") or "STRAY") != "STRAY"]
@@ -197,6 +207,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="print what would be tweeted right now, ignoring the time window; don't post or touch state")
     parser.add_argument("--whoami", action="store_true", help="read-only auth check against X's API; doesn't touch transcripts or state")
+    parser.add_argument("--now", action="store_true", help="ignore the 3-6hr window and post immediately if there's something new")
+    parser.add_argument("--narrator", help="force the pick to this exact narrator (e.g. STRAY) instead of the usual weighted pick; no-ops if nothing untweeted matches")
     args = parser.parse_args()
 
     if args.whoami:
@@ -206,10 +218,16 @@ def main():
     state = load_state()
     now = datetime.now(timezone.utc)
 
+    no_match_msg = (
+        f"No untweeted litterposting transcripts found for narrator {args.narrator}."
+        if args.narrator else
+        "No untweeted litterposting transcripts found."
+    )
+
     if args.dry_run:
-        transcript = pick_transcript(state["tweeted_ids"])
+        transcript = pick_transcript(state["tweeted_ids"], narrator_filter=args.narrator)
         if transcript is None:
-            print("No untweeted litterposting transcripts found.")
+            print(no_match_msg)
             return 0
         tweet_text = build_tweet_text(transcript)
         print(f"Transcript: {transcript['id']} (narrator: {transcript.get('narrator') or 'STRAY'})")
@@ -217,16 +235,17 @@ def main():
         print("\n[dry run — not posting, not updating state, ignoring the 3-6hr window]")
         return 0
 
-    next_eligible_at = state.get("next_eligible_at")
-    if next_eligible_at:
-        next_eligible_dt = datetime.fromisoformat(next_eligible_at)
-        if now < next_eligible_dt:
-            print(f"Not yet — next posting window opens at {next_eligible_dt.isoformat()}.")
-            return 0
+    if not args.now:
+        next_eligible_at = state.get("next_eligible_at")
+        if next_eligible_at:
+            next_eligible_dt = datetime.fromisoformat(next_eligible_at)
+            if now < next_eligible_dt:
+                print(f"Not yet — next posting window opens at {next_eligible_dt.isoformat()}. (use --now to skip this check)")
+                return 0
 
-    transcript = pick_transcript(state["tweeted_ids"])
+    transcript = pick_transcript(state["tweeted_ids"], narrator_filter=args.narrator)
     if transcript is None:
-        print("Window is open but nothing new to post. Trying again next window.")
+        print(f"{no_match_msg} Trying again next window.")
         schedule_next_window(state, now)
         save_state(state)
         return 0
