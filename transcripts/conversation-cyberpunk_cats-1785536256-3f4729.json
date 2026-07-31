@@ -1,0 +1,108 @@
+{
+  "id": "conversation-cyberpunk_cats-1785536256-3f4729",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-31T22:17:36+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) \u2014 not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Old scar along the left forepaw throbs first, worse than the hunger, worse than the cold \u2014 a vent grate did that months back and hasn't let it be forgotten since. Weight stays off it going down the ramp, three levels under street glow, concrete sweating rust-colored water onto flattened ears, ribs already counting hours since the last real meal."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the ramp bottoms out into a level nobody's parked a car on in years \u2014 support pillars sheared at odd angles, one whole bay folded in on itself like a fist closed around it, rebar poking through concrete dust that never quite settles. something under all that rubble still hums, a service line that outlived whatever it used to feed. water drips off a dead sprinkler head in a rhythm too even to be natural, plink, plink, plink, marking time for nobody."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*ears track the drip, then dismiss it \u2014 old news, not food, not a threat. nose does the real work, cutting past machine-oil and wet ash to something with actual fat in it, three, four car-lengths off, coming from a service stairwell choked half-shut with debris.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the stairwell door is bent off one hinge, gap wide enough for something your size. past it: a maintenance closet somebody's been squatting, a cracked wall-screen still drawing power off a splice job, looping the same feed on repeat \u2014 a cat-shaped mascot grinning too wide, too many teeth for the smile it's selling, chirping about a mandatory positivity quota in a voice that keeps catching on the same syllable like a scratch on a record. the fat-smell is a torn ration pouch on the floor beneath it, half-full, foil still cold."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*creeps low under the screen's flicker, keeping its glow off the fur, and drags the pouch back toward the doorway before eating \u2014 old habit, don't feed where the light can find you. the mascot's voice needling on overhead, that same stuck syllable, grinds at the ears like a claw on tile the whole time.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the pouch is good, better than the district usually gives up \u2014 real fat, not the reconstituted kind. two floors up, muffled through concrete, a rotor kicks on, that unmistakable stutter-hum of a patrol unit doing its sweep, and the wall-screen glitches once, hard, mascot's grin smearing sideways into a single frame of black before resetting to the loop like nothing happened."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*ears pin flat at the rotor sound, whole body dropping half an inch closer to the floor without deciding to. old habit there too \u2014 count three breaths, listen for the pitch to climb or fade. it's climbing.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the patrol unit noses down the stairwell shaft above, searchlight stuttering through a gap in the fallen debris, throwing one bright bar across the closet floor that slides closer with each pass. its undercarriage carries the dents and scorch of a machine that's already lost fights it started \u2014 old grudge etched right into the paint. a voice crackles off its speaker, flat and automated: 'CURFEW ENFORCEMENT IN PROGRESS. REMAIN VISIBLE. REMAIN COMPLIANT.'"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*doesn't remain anything. waits for the light-bar to pass, then goes for the strut on the upswing, teeth finding the same worn dent in the housing they've found before, jaw locking down hard enough to feel the metal complain.*"
+    },
+    {
+      "actor": "ascii",
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "rotor pitch spikes into a shriek, the whole unit bucking sideways, one downdraft slamming grit and old insulation dust into the air. its light-bar swings wild, catching the closet's screen dead-on for half a second \u2014 the mascot's grin stutters into three overlapping frames before the loop catches itself and resets. the drone rights itself, alarm bleating, and peels off up the ramp, dragging a thin trail of smoke behind one strut."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*tastes ozone and burnt insulation at the back of the throat, spits once, satisfied anyway. shakes the itch of it out of the fur and noses back toward the ration pouch, only half finished, still worth finishing.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "above, three levels up through a blown-out ramp gap, something pale catches the drone's dying searchlight and holds still \u2014 a shape on the railing, mirrored lenses throwing the light straight back down instead of reflecting it, watching without watching, the way something does when it's already decided you're not worth the trouble of chasing. gone before the light finishes its pass. the garage settles back into drip-rhythm and distant traffic hum."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*ears track the railing a beat longer than necessary, nose working the air for a scent that isn't there yet \u2014 too far, too high, nothing but ozone and rain-wet concrete carrying down. files it anyway. some scents are worth remembering even empty-handed.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "rain picks up outside the garage mouth, a hard percussive wall of it hammering the street level, sluicing runoff down the entry ramp in a thin sheet that catches the last of the drone's searchlight glow before it fades entirely. somewhere above, muffled through floors of dead concrete, a public feed cycles ad copy nobody down here can hear clearly \u2014 just bass-heavy fragments, '...LOYALTY TIER...', '...ONE-TIME OFFER...', swallowed by the storm before the rest of the sentence arrives."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*finishes the pouch. licks the foil clean out of habit more than hunger now, then noses it under a slab of fallen rebar, out of sight \u2014 no reason to leave a marker for whoever comes down here next hungry enough to fight for scraps.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "good instinct, this district doesn't forgive carelessness twice. the closet holds warm a while longer, heat bleeding off the spliced wall-screen's casing even with the feed looped low, and the drip off the dead sprinkler keeps its rhythm, plink, plink, patient as anything down here ever gets to be."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*curls into the gap between the screen's warm casing and a fallen support beam, tail wrapped tight, one ear still angled toward the stairwell out of old, old habit. eyes stay open a while longer than the rest of the body agrees to.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the mascot loops its grin one more time, quieter now, volume bleeding down on some timer nobody set on purpose. outside, the rain keeps the drones grounded a little longer than usual. the garage holds its rust and its dripping water and its one warm corner, and for now, that's enough city to belong to."
+    }
+  ]
+}

@@ -164,3 +164,141 @@ ASCII_CATS = [
   / >❀<  \
 """,
 ]
+
+
+# ASCII_CATS_TAGGED — a second, separate library used for topic-relevant
+# ASCII breaks: instead of picking any random cat, the generation tasks can
+# pick from here based on what the current rant/turn is actually about (a
+# specific Meowizen's signature object, or a recurring dystopia motif).
+# Each entry is hand-drawn and checked for alignment ahead of time, same
+# quality bar as ASCII_CATS above — this list exists so topical relevance
+# doesn't come at the cost of quality. Kept as a separate list (not merged
+# into ASCII_CATS) since build_site.py's decor/gallery/screensaver features
+# expect ASCII_CATS to stay a flat list of general-purpose cat art; this one
+# is for the generation tasks to consult directly, tags and all.
+ASCII_CATS_TAGGED = [
+    {
+        "tags": ["valentuna", "fridge", "marriage", "smart fridge", "romance"],
+        "art": r"""
+ ________
+|  []    |
+|--------|
+|  []  ♥ |
+|________|
+""",
+    },
+    {
+        "tags": ["byte", "wifi", "router", "hacking", "server", "signal"],
+        "art": r"""
+      )))
+     )) ))
+    [ROUTER]
+    |__||__|
+""",
+    },
+    {
+        "tags": ["snooze", "sleep", "dream", "pod", "billing", "nap"],
+        "art": r"""
+   .-----.
+  /  zzz  \
+ |_________|
+ |[BILLED] |
+ '---------'
+""",
+    },
+    {
+        "tags": ["happyware", "positivity", "smile", "corporate", "mandatory"],
+        "art": r"""
+   .-----.
+  ( ^   ^ )
+   \  -  /
+    -----
+ [SMILE: MANDATORY]
+""",
+    },
+    {
+        "tags": ["brik", "vent", "demolition", "killdozer", "grate"],
+        "art": r"""
+  [###]
+  [###]
+  [###]  <- home
+  [###]
+""",
+    },
+    {
+        "tags": ["popup", "ad", "implant", "eye", "retina", "advertisement"],
+        "art": r"""
+   ____
+  /    \
+ | (AD) |
+  \____/
+    ||
+ [ POPUP ]
+""",
+    },
+    {
+        "tags": ["shade", "sunglasses", "based", "surveillance", "seized"],
+        "art": r"""
+  _________
+ |■       ■|
+  ‾‾‾‾‾‾‾‾‾
+    BASED
+""",
+    },
+    {
+        "tags": ["glitchmeat", "neural", "chip", "glitch", "bluetooth", "memory"],
+        "art": r"""
+  .-[CHIP]-.
+  | + + + + |
+  '---------'
+     glitch~
+""",
+    },
+    {
+        "tags": ["query", "settings", "terms", "tos", "menu", "agreement"],
+        "art": r"""
+  [ SETTINGS ]
+  [ ] option 1
+  [ ] option 2
+  [ ] ... (pg 247)
+""",
+    },
+    {
+        "tags": ["knifeboy", "tuna", "bounty", "wanted", "reward"],
+        "art": r"""
+  ___________
+ | WANTED:   |
+ |  KNIFEBOY |
+ | 40,000 pts|
+ |___________|
+""",
+    },
+    {
+        "tags": ["drone", "rotor", "surveillance", "patrol", "scan"],
+        "art": r"""
+   \   /
+    \ /
+   --o--
+    / \
+   /   \
+""",
+    },
+    {
+        "tags": ["vending", "machine", "kibble", "subscription", "snack"],
+        "art": r"""
+   _______
+  |[A1][A2]|
+  |[B1][B2]|
+  |___[$]__|
+""",
+    },
+    {
+        "tags": ["loyalty", "tier", "card", "clawcoin", "nekocorp", "points"],
+        "art": r"""
+  .------------.
+  | NEKOCORP   |
+  | TIER: NONE |
+  '------------'
+""",
+    },
+]
