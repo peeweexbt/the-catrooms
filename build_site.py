@@ -64,40 +64,40 @@ body {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 46, 230, 0.4);
+  background-color: rgba(255, 46, 230, 0.18);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.14) 0px,
-      rgba(255, 255, 255, 0.14) 2px,
+      rgba(255, 255, 255, 0.08) 0px,
+      rgba(255, 255, 255, 0.08) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.18) 0%, rgba(0, 240, 255, 0.18) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.3);
-  border-left-color: rgba(255, 255, 255, 0.3);
-  border-bottom-color: rgba(0, 0, 0, 0.4);
-  border-right-color: rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
+  border-top-color: rgba(255, 255, 255, 0.18);
+  border-left-color: rgba(255, 255, 255, 0.18);
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-right-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px rgba(255, 46, 230, 0.25), 0 0 2px rgba(0, 240, 255, 0.25);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(255, 46, 230, 0.6);
+  background-color: rgba(255, 46, 230, 0.32);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.18) 0px,
-      rgba(255, 255, 255, 0.18) 2px,
+      rgba(255, 255, 255, 0.1) 0px,
+      rgba(255, 255, 255, 0.1) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
-  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.32) 0%, rgba(0, 240, 255, 0.32) 100%);
+  box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), 0 0 3px rgba(0, 240, 255, 0.35);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: rgba(0, 240, 255, 0.65);
-  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.45), inset 0 0 6px rgba(0, 0, 0, 0.2);
 }
 ::-webkit-scrollbar-button {
   display: block;
