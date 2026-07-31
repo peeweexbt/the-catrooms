@@ -595,6 +595,7 @@ INDEX_TEMPLATE = """<!doctype html>
 <body>
 {decorations}
 <header>
+{header_decorations}
   <div class="brand">
     <h1>the catrooms</h1>
     <pre class="mascot"> /\\_/\\
@@ -1500,12 +1501,19 @@ def build(transcripts_dir, out_dir, gen_titles):
     entries.sort(key=lambda e: e[0], reverse=True)
     all_cards = [card_html for _, card_html in entries]
     hero_text = f'<div class="hero-glitch-block">{build_hero_html(HERO_GLITCH_TEXT)}</div>'
+    meowizen_faces = [_extract_meowizen_face(m["stat"]) for m in MEOWIZENS]
     index_html = INDEX_TEMPLATE.format(
         css=CSS,
-        decorations=build_decorations(
-            ASCII_CATS,
-            [_extract_meowizen_face(m["stat"]) for m in MEOWIZENS],
-        ),
+        # two independent batches of the same art pool, freshly shuffled
+        # each time: one scattered down the whole page (positioned relative
+        # to <body>), one scattered specifically within the header/hero box
+        # (positioned relative to <header>, since it has its own
+        # position:relative). Without the second batch, the header area
+        # ends up almost empty on a page this long — a decor piece's "top"
+        # is a percentage of its positioned ancestor's height, and the
+        # header is only a sliver of the full (very tall, 200+ post) page.
+        decorations=build_decorations(ASCII_CATS, meowizen_faces),
+        header_decorations=build_decorations(ASCII_CATS, meowizen_faces),
         hero_text=hero_text,
         cards="\n".join(all_cards) or "<p style='color:#6b8f6a'>no transcripts yet — run backrooms.py first</p>",
     )

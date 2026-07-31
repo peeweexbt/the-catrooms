@@ -1,0 +1,22 @@
+{
+  "id": "conversation-litterposting-1785521258-4d2d85",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "started_at": "2026-07-31T18:07:38+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the vent is mine now. it has always been mine. this is not new information."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK here. ex-KILLDOZER operator, Sector 4 rubble line, currently subletting an HVAC duct that used to be my actual apartment's actual ceiling. downsizing, they called it. I called it Tuesday."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "bit a delivery drone this morning. not my first. not my last. it dropped a box of NEKOCORP brand RUBBLE-SCENTED CANDLES directly onto the footprint of my old kitchen. sold separately. bought by someone who is not me."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY thinks he's the most wanted cat in this city. brother I flattened a parking structure with a repossessed construction vehicle, my mugshot is a BEFORE picture, yours is a receipt."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "STRAY keeps sliding pamphlets under my grate about 'the cause.' read one. agreed with all of it. still haven't left the vent. solidarity has bad wifi down here."},
+    {"actor": "ascii", "corrupted": true, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "duct's been humming at 3am like it's trying to tell me something. it is not trying to tell me something. it is just a duct. checked twice. bit it too, for consistency."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. new drone incoming on the west perimeter in ten minutes. I have a plan. the plan is bite it. it is always bite it. it has never once not worked, which says more about NEKOCORP's drone budget than my dental plan."}
+  ]
+}
