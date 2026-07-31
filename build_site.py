@@ -1288,13 +1288,16 @@ CREATE_A_CAT_TEMPLATE = """<!doctype html>
               "( *.* )", "( u.u )", "( T.T )", "( ♥.♥ )", "( ⊙.⊙ )",
               "( ≧.≦ )", "( o.O )", "( ?.? )", "(⌐■_■)"];
   var MOUTHS = [" > ^ < ", " > v < ", " > ~ < ", " > w < ", " > o < ", " >   < "];
-  var FLAVOR = ["", "", "", "", "  ~ based ~", "  ~ meow ~", "  [ no tier ]",
+  var FLAVOR = ["", "", "", "", "  ~ based ~", "  ~ meow ~",
                 "  nekocorp-free zone", "  9 lives, 0 wifi", "  est. sector 9"];
+  var TIERS = ["CHUD", "MEOWTOID", "CHAD", "CORPO", "BASED", "KEK",
+               "CRINGE", "CHODE", "ASS LICKER", "SPRAYER"];
 
   function randChoice(arr) {{ return arr[Math.floor(Math.random() * arr.length)]; }}
 
   function generateCatLines() {{
     var lines = [randChoice(EARS), randChoice(EYES), randChoice(MOUTHS)];
+    lines.push("  [ TIER: " + randChoice(TIERS) + " ]");
     var flavor = randChoice(FLAVOR);
     if (flavor) lines.push(flavor);
     return lines;
