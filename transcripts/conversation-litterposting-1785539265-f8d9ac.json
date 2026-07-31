@@ -1,0 +1,71 @@
+{
+  "id": "conversation-litterposting-1785539265-f8d9ac",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BYTE",
+  "started_at": "2026-07-31T23:07:45+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "nobody:\nnekocorp's \"free\" public wifi at 3am: [buffering] [buffering] [YOU HAVE BEEN LOGGED OUT FOR YOUR SAFETY]"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "BYTE here. illegal wifi auditor, Server Alley 9, professional lurker behind a vending machine that only sells water on a subscription. i am once again risking a fine to watch 40 seconds of a fish swimming in a bucket."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "cracked the router behind the alley for the ninth time this month. same password every time. \"Kibble123!\". a corporation worth more than the moon and their security is a guy named Kibble."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "SHADE texted me \"stay based\" from behind those illegal little sunglasses while i was mid-hack, which is not helpful, SHADE, i need bandwidth not vibes. love you though."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the fish video buffered for six minutes tonight. SIX. i have seen empires rise and fall in six minutes. i have watched my own paranoia evolve into a full personality in six minutes."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "unrelated but if a drone hovers outside server alley for longer than 90 seconds it is not \"routine patrol\" it is PERSONAL and i will treat it as such"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "knifeboy hit me up asking if i wanted in on the next tuna heist as a lookout. told him lookout work pays in exposure and i have had enough exposure this week, my whole router history is exposed, ask nekocorp"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n   .-^-.\n  ( o.o )>-- searching for signal --\n   '---'\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway. NEKOCORP says wifi is a privilege. i say SHIT ON THEIR FRONT STEP (meow). fish video finally loaded. it was an ad. going back in tomorrow."
+    }
+  ]
+}

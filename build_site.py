@@ -1334,7 +1334,7 @@ CREATE_A_CAT_TEMPLATE = """<!doctype html>
     genBtn.innerHTML = "generating<span class=\\"catgen-cursor\\">&#9608;</span>";
     hint.textContent = "connecting to the strays...";
 
-    var n = 3 + Math.floor(Math.random() * 3);
+    var n = 10;
     var allLines = [];
     for (var i = 0; i < n; i++) {{
       if (i > 0) {{ allLines.push(""); }}
