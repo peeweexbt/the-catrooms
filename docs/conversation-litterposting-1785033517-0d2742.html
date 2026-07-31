@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,24 +562,24 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">ok i need to <span class="glitch-word" style="--gd:1.07s">vent</span> for a second <span class="glitch-word" style="--gd:2.46s">because</span> it&#x27;s 5am, <span class="glitch-word" style="--gd:1.57s">i</span> haven&#x27;t slept, and it&#x27;s <span class="glitch-word" style="--gd:2.37s">entirely</span> TOASTER&#x27;s fault</div>
-<div class="rant-turn" style="animation-delay:0.12s">TOASTER (vending alcove, <span class="glitch-word" style="--gd:0.45s">new</span> money, deeply insufferable) has <span class="glitch-word" style="--gd:1.05s">declared</span> <span class="glitch-word" style="--gd:2.46s">the</span> <span class="glitch-word" style="--gd:1.53s">recycling</span> bin behind the noodle stall <span class="glitch-word" style="--gd:0.68s">his</span> &#x27;workspace&#x27; because <span class="glitch-word" style="--gd:0.12s">it</span> hums warm. <span class="glitch-word" style="--gd:1.47s">it&#x27;s</span> a BIN. it smells like BIN. he&#x27;s <span class="glitch-word" style="--gd:0.58s">out</span> <span class="glitch-word" style="--gd:2.41s">here</span> doing wellness naps in GARBAGE <span class="glitch-word" style="--gd:0.91s">and</span> calling it self care</div>
+<div class="rant-turn" style="animation-delay:0.0s">ok i need <span class="glitch-word" style="--gd:2.2s">to</span> vent for <span class="glitch-word" style="--gd:1.64s">a</span> second because <span class="glitch-word" style="--gd:0.53s">it&#x27;s</span> 5am, i <span class="glitch-word" style="--gd:1.35s">haven&#x27;t</span> <span class="glitch-word" style="--gd:0.58s">slept,</span> and it&#x27;s entirely <span class="glitch-word" style="--gd:2.16s">TOASTER&#x27;s</span> fault</div>
+<div class="rant-turn" style="animation-delay:0.12s">TOASTER (vending alcove, new money, deeply insufferable) has declared the recycling bin <span class="glitch-word" style="--gd:0.13s">behind</span> the noodle stall <span class="glitch-word" style="--gd:0.06s">his</span> &#x27;workspace&#x27; because <span class="glitch-word" style="--gd:1.14s">it</span> hums warm. it&#x27;s a <span class="glitch-word" style="--gd:1.09s">BIN.</span> it smells <span class="glitch-word" style="--gd:2.06s">like</span> BIN. he&#x27;s out here <span class="glitch-word" style="--gd:0.65s">doing</span> <span class="glitch-word" style="--gd:1.6s">wellness</span> naps <span class="glitch-word" style="--gd:1.4s">in</span> GARBAGE and calling it self care</div>
 <div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>へ  ♡  ╱|、
-         ૮  &gt;  &lt;%     (˚ˎ 。7
-          /  ⁻  ៸|       2、2〵
-     ░(ˍ, ل ل      じしˍ,)2</div>
-<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:1.08s">meanwhile</span> NekoCorp soft-launched WHISKERVERIFY at the <span class="glitch-word" style="--gd:2.4s">alley</span> mouth, some biometric <span class="glitch-word" style="--gd:2.18s">gate</span> thing, scanned my whiskers and spat <span class="glitch-word" style="--gd:1.14s">back</span> &#x27;asymmetrical, please resubmit.&#x27; resubmit WHAT. <span class="glitch-word" style="--gd:2.4s">these</span> are the whiskers i <span class="glitch-word" style="--gd:0.37s">was</span> BORN with. take it up with genetics</div>
-<div class="rant-turn" style="animation-delay:0.48s">so i coughed a hairball directly onto the scanner lens. <span class="glitch-word" style="--gd:1.13s">gate&#x27;s</span> been stuck open for six hours. free alley. <span class="glitch-word" style="--gd:2.41s">you&#x27;re</span> welcome. <span class="glitch-word" style="--gd:0.24s">this</span> was not an accident this <span class="glitch-word" style="--gd:2.57s">was</span> CIVIL ENGINEERING</div>
+         ૮  ■  &lt;▓     (˚ˎ 。7
+          /  ⁻  ៸|       |~˜〵
+     *(ˍ, ل ل      じ◇ˍ,)ノ</div>
+<div class="rant-turn" style="animation-delay:0.36s">meanwhile NekoCorp soft-launched WHISKERVERIFY <span class="glitch-word" style="--gd:2.11s">at</span> the alley mouth, some biometric gate thing, scanned my whiskers and <span class="glitch-word" style="--gd:1.19s">spat</span> back &#x27;asymmetrical, <span class="glitch-word" style="--gd:2.56s">please</span> resubmit.&#x27; resubmit <span class="glitch-word" style="--gd:1.67s">WHAT.</span> these are the whiskers i was BORN with. <span class="glitch-word" style="--gd:0.35s">take</span> it up with <span class="glitch-word" style="--gd:0.13s">genetics</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">so i coughed <span class="glitch-word" style="--gd:0.98s">a</span> hairball <span class="glitch-word" style="--gd:2.08s">directly</span> onto the <span class="glitch-word" style="--gd:2.32s">scanner</span> lens. gate&#x27;s been stuck open for six hours. free alley. you&#x27;re welcome. this was <span class="glitch-word" style="--gd:2.0s">not</span> an accident this was CIVIL ENGINEERING</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>        /⸌ —⸍\
      =(˶•ㅅ•˵)=      ᵐᵉᵒʷ
 　 l       ~乀   ╭
     し しf_, )ノ</div>
-<div class="rant-turn" style="animation-delay:0.72s">black market update: traded the drone patrol schedule for a full <span class="glitch-word" style="--gd:1.27s">tin</span> of <span class="glitch-word" style="--gd:0.23s">tuna,</span> dealer was a CROW this time, wouldn&#x27;t make <span class="glitch-word" style="--gd:0.01s">eye</span> contact once, professional <span class="glitch-word" style="--gd:0.31s">to</span> the bone, 10/10 no notes</div>
-<div class="rant-turn" style="animation-delay:0.84s">and TOASTER now has the arcology jingle on loop from <span class="glitch-word" style="--gd:1.48s">a</span> <span class="glitch-word" style="--gd:2.15s">cracked</span> speaker to <span class="glitch-word" style="--gd:1.21s">lure</span> kittens toward <span class="glitch-word" style="--gd:1.83s">the</span> bin like it&#x27;s a RESORT. sir that is <span class="glitch-word" style="--gd:1.28s">a</span> <span class="glitch-word" style="--gd:1.74s">DUMPSTER</span> WITH AMBITIONS. someone stop him</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧,,,▄█@,,,,▌,∧
-     ◆  ▌  _ )⩊^ )~♡
+<div class="rant-turn" style="animation-delay:0.72s">black market update: traded the <span class="glitch-word" style="--gd:1.16s">drone</span> patrol <span class="glitch-word" style="--gd:1.94s">schedule</span> for a <span class="glitch-word" style="--gd:1.17s">full</span> tin of tuna, dealer was a CROW <span class="glitch-word" style="--gd:0.44s">this</span> <span class="glitch-word" style="--gd:0.31s">time,</span> wouldn&#x27;t make <span class="glitch-word" style="--gd:2.35s">eye</span> contact once, professional to the bone, 10/10 no notes</div>
+<div class="rant-turn" style="animation-delay:0.84s">and <span class="glitch-word" style="--gd:0.45s">TOASTER</span> now has the arcology jingle on loop from a cracked speaker to <span class="glitch-word" style="--gd:2.13s">lure</span> kittens toward the bin <span class="glitch-word" style="--gd:1.8s">like</span> it&#x27;s a RESORT. sir that <span class="glitch-word" style="--gd:2.36s">is</span> a DUMPSTER WITH AMBITIONS. someone stop him</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>.      &gt;,,,,∧,,,,9*,∧
+     &gt;  3  ~ )⩊^ ▀~♡
      /      ⊂      \</div>
-<div class="rant-turn" style="animation-delay:1.08s">update: relocated three (3) pebbles into toaster&#x27;s <span class="glitch-word" style="--gd:2.51s">bin</span> as a formal eviction notice. he has not noticed. classic <span class="glitch-word" style="--gd:1.5s">toaster.</span> <span class="glitch-word" style="--gd:0.3s">can&#x27;t</span> read <span class="glitch-word" style="--gd:2.18s">pebble,</span> never could</div>
+<div class="rant-turn" style="animation-delay:1.08s">update: relocated <span class="glitch-word" style="--gd:0.59s">three</span> (3) pebbles into toaster&#x27;s bin as a formal <span class="glitch-word" style="--gd:0.17s">eviction</span> <span class="glitch-word" style="--gd:0.58s">notice.</span> he has not noticed. <span class="glitch-word" style="--gd:1.99s">classic</span> <span class="glitch-word" style="--gd:0.53s">toaster.</span> <span class="glitch-word" style="--gd:1.1s">can&#x27;t</span> read pebble, never could</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>┊         ┊       ┊   ┊   ┊。 ┊
 ┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆
 ┊         ┊       ★⋆ ◦
@@ -520,7 +588,7 @@ header p {
 ☆ ∧,,,∧
 ପ(„• ༝ •„)ଓ
 ┏━∪∪━━━━━━━━━━━</div>
-<div class="rant-turn" style="animation-delay:1.32s">in closing: the bin was <span class="glitch-word" style="--gd:2.52s">never</span> <span class="glitch-word" style="--gd:0.49s">his,</span> whiskerverify can choke <span class="glitch-word" style="--gd:1.27s">on</span> its <span class="glitch-word" style="--gd:1.82s">own</span> scanner, my hairball <span class="glitch-word" style="--gd:0.24s">is</span> a HERO, and if a drone ever asks <span class="glitch-word" style="--gd:0.65s">you</span> to resubmit your face you tell it your face doesn&#x27;t take <span class="glitch-word" style="--gd:1.7s">requests.</span> goodnight vending <span class="glitch-word" style="--gd:0.54s">alcove,</span> toaster, i hope <span class="glitch-word" style="--gd:1.98s">your</span> playlist <span class="glitch-word" style="--gd:1.98s">skips</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">in <span class="glitch-word" style="--gd:1.64s">closing:</span> the bin was <span class="glitch-word" style="--gd:2.02s">never</span> his, whiskerverify <span class="glitch-word" style="--gd:0.49s">can</span> choke on its own scanner, my hairball is a HERO, <span class="glitch-word" style="--gd:2.59s">and</span> if a drone <span class="glitch-word" style="--gd:1.84s">ever</span> asks you to resubmit your <span class="glitch-word" style="--gd:2.54s">face</span> you tell it your face doesn&#x27;t take <span class="glitch-word" style="--gd:1.85s">requests.</span> <span class="glitch-word" style="--gd:0.84s">goodnight</span> vending alcove, <span class="glitch-word" style="--gd:2.16s">toaster,</span> i hope <span class="glitch-word" style="--gd:0.35s">your</span> <span class="glitch-word" style="--gd:2.08s">playlist</span> <span class="glitch-word" style="--gd:1.84s">skips</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

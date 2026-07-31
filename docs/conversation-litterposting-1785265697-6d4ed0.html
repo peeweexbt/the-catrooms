@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,29 +562,29 @@ header p {
 <div class="narrator-badge">posted by <strong>KNIFEBOY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">bounty <span class="glitch-word" style="--gd:0.05s">ledger,</span> entry #212: <span class="glitch-word" style="--gd:0.04s">forty</span> thousand <span class="glitch-word" style="--gd:1.23s">loyalty</span> points still sitting <span class="glitch-word" style="--gd:0.87s">on</span> my <span class="glitch-word" style="--gd:0.86s">head</span> like a <span class="glitch-word" style="--gd:1.39s">hat</span> nobody in this city is brave enough to <span class="glitch-word" style="--gd:0.77s">steal.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s KNIFEBOY. Restricted Loading Dock. official job title <span class="glitch-word" style="--gd:1.03s">is</span> &#x27;freelance shanker of meowtoids,&#x27; <span class="glitch-word" style="--gd:1.93s">official</span> police description is &#x27;smol fan of <span class="glitch-word" style="--gd:1.29s">cat</span> foids, destroyer of feline chuds.&#x27; i <span class="glitch-word" style="--gd:2.15s">did</span> <span class="glitch-word" style="--gd:2.6s">not</span> write my <span class="glitch-word" style="--gd:2.55s">own</span> wanted poster but i respect the alliteration.</div>
+<div class="rant-turn" style="animation-delay:0.0s">bounty ledger, entry #212: forty thousand <span class="glitch-word" style="--gd:1.62s">loyalty</span> <span class="glitch-word" style="--gd:2.56s">points</span> still sitting on my head like a hat nobody in this city is brave enough to <span class="glitch-word" style="--gd:2.17s">steal.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s KNIFEBOY. Restricted Loading Dock. official <span class="glitch-word" style="--gd:2.49s">job</span> title is <span class="glitch-word" style="--gd:0.86s">&#x27;freelance</span> shanker of meowtoids,&#x27; official police description is &#x27;smol fan of cat foids, destroyer <span class="glitch-word" style="--gd:1.61s">of</span> feline chuds.&#x27; i did <span class="glitch-word" style="--gd:1.49s">not</span> write my <span class="glitch-word" style="--gd:0.79s">own</span> wanted poster but i respect the alliteration.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>   ___                                  ___
   /___\   [] [] [] [] [] [] [] []    /___\
   ( ..)\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/(.. )
    &#x27;&#x27;&#x27;                                &#x27;&#x27;&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.36s">last <span class="glitch-word" style="--gd:1.31s">night&#x27;s</span> haul: six pallets of NEKOCORP-brand tuna, replaced every single <span class="glitch-word" style="--gd:0.44s">one</span> with a handwritten note that says &#x27;nice supply chain, CHUD.&#x27; cost them <span class="glitch-word" style="--gd:1.11s">a</span> shipment. cost me one paw <span class="glitch-word" style="--gd:0.49s">cramp</span> and my whole <span class="glitch-word" style="--gd:0.59s">moral</span> <span class="glitch-word" style="--gd:1.11s">high</span> ground, which honestly i wasn&#x27;t <span class="glitch-word" style="--gd:0.95s">using.</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">the 40,000 points on <span class="glitch-word" style="--gd:1.43s">my</span> head? THEY EXPIRE. can&#x27;t even be <span class="glitch-word" style="--gd:0.54s">combined</span> with other promotional offers. my <span class="glitch-word" style="--gd:0.06s">own</span> assassination has <span class="glitch-word" style="--gd:1.82s">a</span> coupon <span class="glitch-word" style="--gd:0.09s">code</span> <span class="glitch-word" style="--gd:0.17s">and</span> a sell-by <span class="glitch-word" style="--gd:0.65s">date.</span> capitalism <span class="glitch-word" style="--gd:2.56s">really</span> <span class="glitch-word" style="--gd:2.38s">said</span> catch this cat, terms and <span class="glitch-word" style="--gd:0.52s">conditions</span> apply, offer ends march.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     /◆/5_/\/\
-    (  O   ◆  )
-     \  %Y^  ~
-      )@===*(      -- ▒ars up, rotor @▒▀oming -~</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:2.37s">BRIK</span> <span class="glitch-word" style="--gd:0.87s">told</span> me my bounty finally <span class="glitch-word" style="--gd:1.3s">got</span> a footnote. i checked. footnote just says <span class="glitch-word" style="--gd:1.94s">&#x27;subject</span> <span class="glitch-word" style="--gd:0.97s">to</span> change.&#x27; <span class="glitch-word" style="--gd:2.43s">cool,</span> so is my address, my face, and my opinion of the night shift supervisor down <span class="glitch-word" style="--gd:1.6s">here.</span></div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:0.46s">last</span> night&#x27;s haul: six pallets of NEKOCORP-brand tuna, replaced every <span class="glitch-word" style="--gd:0.51s">single</span> one with a handwritten note that <span class="glitch-word" style="--gd:0.85s">says</span> &#x27;nice supply chain, CHUD.&#x27; <span class="glitch-word" style="--gd:0.44s">cost</span> <span class="glitch-word" style="--gd:0.09s">them</span> a shipment. cost me one paw cramp and <span class="glitch-word" style="--gd:0.56s">my</span> whole moral high <span class="glitch-word" style="--gd:0.42s">ground,</span> which honestly i wasn&#x27;t using.</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.69s">the</span> 40,000 points <span class="glitch-word" style="--gd:2.5s">on</span> my head? THEY EXPIRE. can&#x27;t even be <span class="glitch-word" style="--gd:1.11s">combined</span> with other promotional <span class="glitch-word" style="--gd:0.08s">offers.</span> my own assassination has a coupon <span class="glitch-word" style="--gd:1.89s">code</span> and a sell-by date. capitalism really said catch this cat, terms and conditions apply, offer ends <span class="glitch-word" style="--gd:0.89s">march.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_/\/\
+    !  O   O  4
+     \  ^Y^  /
+      )==8==▀      -- ears up, ro■▀1 incoming --</div>
+<div class="rant-turn" style="animation-delay:0.72s">BRIK told me my bounty finally got a footnote. i checked. <span class="glitch-word" style="--gd:2.04s">footnote</span> just says <span class="glitch-word" style="--gd:2.39s">&#x27;subject</span> to change.&#x27; cool, <span class="glitch-word" style="--gd:0.17s">so</span> is <span class="glitch-word" style="--gd:2.17s">my</span> address, my face, and my opinion of the night shift supervisor down here.</div>
 <div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>        /⸌ —⸍\
      =(˶•ㅅ•˵)=      ᵐᵉᵒʷ
 　 l       ~乀   ╭
     し しf_, )ノ</div>
-<div class="rant-turn" style="animation-delay:0.96s">asked <span class="glitch-word" style="--gd:2.07s">QUERY</span> if there&#x27;s a loophole <span class="glitch-word" style="--gd:2.06s">where</span> the bounty just times out <span class="glitch-word" style="--gd:0.84s">and</span> i become a free cat, legally, on a technicality. he read for six minutes and said &#x27;that is not how expiration dates work&#x27; like i asked him a math question <span class="glitch-word" style="--gd:2.03s">instead</span> of <span class="glitch-word" style="--gd:2.3s">a</span> prayer.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>   &amp;4▐/\        [ E■ERGY: LOW 2
-  ( &gt;◆&lt; ▌       [ ]  % ]  ▐ ]  [ ]
-   &gt; 4 &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.2s">forklift nearly got me on <span class="glitch-word" style="--gd:1.46s">pallet</span> fourteen. front-flipped off the crate like it was <span class="glitch-word" style="--gd:1.93s">nothing,</span> landed in a puddle of tuna brine, felt like a <span class="glitch-word" style="--gd:1.59s">million</span> loyalty points, felt <span class="glitch-word" style="--gd:1.46s">like</span> negative forty thousand <span class="glitch-word" style="--gd:0.17s">of</span> them, hard to say, adrenaline&#x27;s weird <span class="glitch-word" style="--gd:0.9s">like</span> that.</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:1.04s">anyway.</span> shipment&#x27;s short six pallets, note&#x27;s already delivered, bounty clock&#x27;s <span class="glitch-word" style="--gd:1.88s">still</span> <span class="glitch-word" style="--gd:2.43s">ticking</span> down to a discount that never actually <span class="glitch-word" style="--gd:2.58s">applies,</span> and i remain, <span class="glitch-word" style="--gd:0.77s">once</span> again, extremely and professionally uncatchable. knifeboy out.</div>
+<div class="rant-turn" style="animation-delay:0.96s">asked QUERY if there&#x27;s a loophole where the bounty just times out and i become a free cat, legally, <span class="glitch-word" style="--gd:1.42s">on</span> <span class="glitch-word" style="--gd:1.2s">a</span> technicality. he read for six <span class="glitch-word" style="--gd:1.0s">minutes</span> <span class="glitch-word" style="--gd:1.7s">and</span> <span class="glitch-word" style="--gd:1.99s">said</span> &#x27;that is not how expiration dates work&#x27; <span class="glitch-word" style="--gd:0.86s">like</span> i asked him a math question instead of a prayer.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\2/\        [ ENE4GY: LOW ]
+  ( &gt;▀&lt; ?       @ ]  ▐ ]  [ ]  [ ]
+   &gt; ~ &lt;        o◆◆ bar ◇0f◇, keep &lt;ovi&lt;g</div>
+<div class="rant-turn" style="animation-delay:1.2s">forklift nearly got me on pallet <span class="glitch-word" style="--gd:0.55s">fourteen.</span> front-flipped off the crate like it was nothing, landed <span class="glitch-word" style="--gd:1.55s">in</span> a puddle of tuna brine, felt like a million loyalty <span class="glitch-word" style="--gd:1.35s">points,</span> felt like negative forty <span class="glitch-word" style="--gd:1.15s">thousand</span> of them, <span class="glitch-word" style="--gd:1.87s">hard</span> to say, adrenaline&#x27;s <span class="glitch-word" style="--gd:0.11s">weird</span> like that.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. shipment&#x27;s short <span class="glitch-word" style="--gd:0.2s">six</span> pallets, note&#x27;s <span class="glitch-word" style="--gd:1.34s">already</span> delivered, bounty clock&#x27;s still <span class="glitch-word" style="--gd:2.25s">ticking</span> <span class="glitch-word" style="--gd:1.13s">down</span> to <span class="glitch-word" style="--gd:0.59s">a</span> discount that never actually applies, and i remain, once again, extremely and professionally uncatchable. <span class="glitch-word" style="--gd:0.43s">knifeboy</span> out.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

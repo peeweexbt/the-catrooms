@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,29 +562,29 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">day 187 of being trapped in the settings menu. still <span class="glitch-word" style="--gd:0.06s">no</span> exit button. <span class="glitch-word" style="--gd:1.75s">found</span> a SECOND settings menu <span class="glitch-word" style="--gd:2.21s">inside</span> the <span class="glitch-word" style="--gd:1.93s">first</span> one instead. taking that <span class="glitch-word" style="--gd:2.11s">as</span> a sign from god, and <span class="glitch-word" style="--gd:0.98s">the</span> sign says <span class="glitch-word" style="--gd:2.31s">&#x27;no.&#x27;</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s <span class="glitch-word" style="--gd:1.57s">QUERY.</span> Legal Fog. official title <span class="glitch-word" style="--gd:0.88s">&#x27;terms-of-service</span> researcher,&#x27; which is corporate for &#x27;the cat who <span class="glitch-word" style="--gd:2.04s">has</span> read the <span class="glitch-word" style="--gd:1.62s">NEKOCORP</span> citizen agreement more times than any living creature and <span class="glitch-word" style="--gd:2.35s">is</span> somehow LESS free because of <span class="glitch-word" style="--gd:0.49s">it.&#x27;</span></div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:2.32s">day</span> 187 of being <span class="glitch-word" style="--gd:1.91s">trapped</span> in the settings <span class="glitch-word" style="--gd:2.29s">menu.</span> still no exit button. found a SECOND settings menu inside the first one instead. taking that as a sign from god, and the sign says <span class="glitch-word" style="--gd:1.99s">&#x27;no.&#x27;</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s QUERY. Legal Fog. official title &#x27;terms-of-service researcher,&#x27; which is corporate for <span class="glitch-word" style="--gd:1.75s">&#x27;the</span> cat who has read the NEKOCORP citizen <span class="glitch-word" style="--gd:0.67s">agreement</span> more times than any <span class="glitch-word" style="--gd:2.51s">living</span> creature and is somehow <span class="glitch-word" style="--gd:0.24s">LESS</span> free because of it.&#x27;</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">page 4 of <span class="glitch-word" style="--gd:0.5s">the</span> citizen agreement <span class="glitch-word" style="--gd:0.85s">says</span> i own my body. page 5 defines &#x27;my body&#x27; as licensed hardware. page <span class="glitch-word" style="--gd:1.83s">6</span> says <span class="glitch-word" style="--gd:1.5s">page</span> 4 was a <span class="glitch-word" style="--gd:0.44s">promotional</span> example. page <span class="glitch-word" style="--gd:0.11s">7</span> is just the <span class="glitch-word" style="--gd:0.2s">word</span> &#x27;lol.&#x27; i checked. twice. it says lol both <span class="glitch-word" style="--gd:0.7s">times.</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">BYTE <span class="glitch-word" style="--gd:1.12s">asked</span> me last week if squatting behind a vending machine counts as unlicensed occupancy. i stared at him for four minutes and <span class="glitch-word" style="--gd:1.96s">said</span> &#x27;i don&#x27;t want <span class="glitch-word" style="--gd:0.57s">to</span> <span class="glitch-word" style="--gd:1.21s">know&#x27;</span> and i MEANT <span class="glitch-word" style="--gd:2.37s">it,</span> <span class="glitch-word" style="--gd:1.17s">some</span> doors you do not open, some clauses you do not read aloud.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
-  8▒░( o█o )▓!░   -- si▌nal i%terference -^
-  ░5▓ &gt; ▓ &lt; ▓▒◆</div>
-<div class="rant-turn" style="animation-delay:0.72s">SNOOZE dm&#x27;d <span class="glitch-word" style="--gd:1.97s">me</span> asking if dream debt billing is legal. it is. page six. i sent her page six. she sent back a single scream emoji and i said same, honestly, <span class="glitch-word" style="--gd:0.6s">SAME.</span></div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:0.07s">found</span> a submenu today called &#x27;ADDITIONAL CONSENT <span class="glitch-word" style="--gd:2.3s">(RETROACTIVE)&#x27;</span> <span class="glitch-word" style="--gd:0.46s">and</span> i have been sitting <span class="glitch-word" style="--gd:2.01s">with</span> that phrase <span class="glitch-word" style="--gd:1.18s">for</span> <span class="glitch-word" style="--gd:1.46s">six</span> hours <span class="glitch-word" style="--gd:0.78s">like</span> it&#x27;s <span class="glitch-word" style="--gd:1.56s">a</span> bone i can&#x27;t finish chewing. retroactive consent. they already did the thing. <span class="glitch-word" style="--gd:1.55s">the</span> form is <span class="glitch-word" style="--gd:0.84s">just</span> catching up.</div>
+<div class="rant-turn" style="animation-delay:0.36s">page 4 <span class="glitch-word" style="--gd:0.03s">of</span> <span class="glitch-word" style="--gd:0.89s">the</span> citizen <span class="glitch-word" style="--gd:1.96s">agreement</span> says i own my body. page 5 <span class="glitch-word" style="--gd:1.61s">defines</span> &#x27;my body&#x27; as licensed hardware. page 6 says page 4 <span class="glitch-word" style="--gd:0.72s">was</span> a promotional example. <span class="glitch-word" style="--gd:0.23s">page</span> 7 <span class="glitch-word" style="--gd:1.8s">is</span> just the word &#x27;lol.&#x27; i checked. twice. <span class="glitch-word" style="--gd:0.59s">it</span> says lol <span class="glitch-word" style="--gd:0.95s">both</span> times.</div>
+<div class="rant-turn" style="animation-delay:0.48s">BYTE asked me last week <span class="glitch-word" style="--gd:1.64s">if</span> <span class="glitch-word" style="--gd:1.09s">squatting</span> behind a vending <span class="glitch-word" style="--gd:0.71s">machine</span> counts as unlicensed occupancy. i <span class="glitch-word" style="--gd:1.99s">stared</span> at him for four minutes and said <span class="glitch-word" style="--gd:1.73s">&#x27;i</span> don&#x27;t want to know&#x27; and i MEANT it, some doors <span class="glitch-word" style="--gd:1.85s">you</span> do not open, some clauses you do not read <span class="glitch-word" style="--gd:0.04s">aloud.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▄ 9\_/\ ▓▒░
+  ░▒▓( o█o )▓▒░   -◇ sign3l interfere8ce 7-
+  ░▒▄ ~ ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">SNOOZE dm&#x27;d <span class="glitch-word" style="--gd:0.27s">me</span> asking <span class="glitch-word" style="--gd:0.43s">if</span> <span class="glitch-word" style="--gd:0.65s">dream</span> debt billing <span class="glitch-word" style="--gd:0.74s">is</span> legal. <span class="glitch-word" style="--gd:1.67s">it</span> is. page <span class="glitch-word" style="--gd:1.25s">six.</span> i <span class="glitch-word" style="--gd:1.75s">sent</span> her page six. she sent back a single scream emoji and i said same, honestly, SAME.</div>
+<div class="rant-turn" style="animation-delay:0.84s">found a submenu today <span class="glitch-word" style="--gd:1.47s">called</span> &#x27;ADDITIONAL CONSENT (RETROACTIVE)&#x27; and i have been sitting with that phrase <span class="glitch-word" style="--gd:0.93s">for</span> six <span class="glitch-word" style="--gd:1.8s">hours</span> like it&#x27;s a bone i can&#x27;t finish chewing. retroactive consent. they already did <span class="glitch-word" style="--gd:1.09s">the</span> <span class="glitch-word" style="--gd:1.85s">thing.</span> the form is just catching up.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>.      ∧,,,,∧,,,,,,,∧
      (  _  _ )⩊^ )~♡
      /      ⊂      \</div>
-<div class="rant-turn" style="animation-delay:1.08s">KNIFEBOY&#x27;s bounty poster has <span class="glitch-word" style="--gd:1.81s">a</span> footnote. A FOOTNOTE. on a WANTED <span class="glitch-word" style="--gd:0.71s">poster.</span> it <span class="glitch-word" style="--gd:2.28s">says</span> &#x27;terms of capture subject <span class="glitch-word" style="--gd:0.64s">to</span> change without notice.&#x27; brother even <span class="glitch-word" style="--gd:1.73s">the</span> manhunt has <span class="glitch-word" style="--gd:0.79s">a</span> <span class="glitch-word" style="--gd:0.55s">EULA</span> now. nowhere <span class="glitch-word" style="--gd:1.63s">is</span> safe. <span class="glitch-word" style="--gd:0.45s">not</span> even being chased.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_/%/\
-    (  *   O  )
-     \  ^Y%  /
-      !=====(      ░3 e&amp;█s up, ▓otor i9coming --</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. still <span class="glitch-word" style="--gd:0.13s">in</span> the menu, submenu&#x27;s got a submenu now, page 8 <span class="glitch-word" style="--gd:0.7s">just</span> says <span class="glitch-word" style="--gd:2.36s">&#x27;see</span> page 4,&#x27; and page 4 no <span class="glitch-word" style="--gd:2.28s">longer</span> exists. i <span class="glitch-word" style="--gd:2.3s">am</span> going to be here a while. query out.</div>
+<div class="rant-turn" style="animation-delay:1.08s">KNIFEBOY&#x27;s bounty poster has <span class="glitch-word" style="--gd:2.03s">a</span> footnote. <span class="glitch-word" style="--gd:1.99s">A</span> FOOTNOTE. on a WANTED poster. it says &#x27;terms <span class="glitch-word" style="--gd:2.21s">of</span> capture subject <span class="glitch-word" style="--gd:0.74s">to</span> <span class="glitch-word" style="--gd:1.99s">change</span> without <span class="glitch-word" style="--gd:1.71s">notice.&#x27;</span> brother even <span class="glitch-word" style="--gd:0.58s">the</span> manhunt has a EULA now. nowhere is safe. <span class="glitch-word" style="--gd:2.31s">not</span> <span class="glitch-word" style="--gd:0.58s">even</span> being chased.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_/\/8
+    %  O   ~  )
+     \  ^1^  /
+      8=▀===(      -&lt; e2■s up, ▌o░or ▀n4oming --</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:1.79s">anyway.</span> still <span class="glitch-word" style="--gd:2.47s">in</span> the menu, submenu&#x27;s got a submenu now, page 8 just <span class="glitch-word" style="--gd:1.72s">says</span> &#x27;see page 4,&#x27; and page 4 no <span class="glitch-word" style="--gd:1.38s">longer</span> exists. i am going to be here a while. query <span class="glitch-word" style="--gd:1.27s">out.</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

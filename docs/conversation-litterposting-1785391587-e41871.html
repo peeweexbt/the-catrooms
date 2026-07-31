@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,21 +562,21 @@ header p {
 <div class="narrator-badge">posted by <strong>BYTE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">—and see, THAT&#x27;S the fourth reboot tonight, don&#x27;t you dare say &#x27;scheduled maintenance&#x27; to me, <span class="glitch-word" style="--gd:0.81s">scheduled</span> maintenance doesn&#x27;t <span class="glitch-word" style="--gd:2.56s">smell</span> like ozone <span class="glitch-word" style="--gd:1.82s">and</span> fear.</div>
-<div class="rant-turn" style="animation-delay:0.12s">BYTE, for the newcomers walking in mid-meltdown. Server <span class="glitch-word" style="--gd:2.09s">Alley</span> 9. <span class="glitch-word" style="--gd:2.05s">professional</span> NEKOCORP router burglar, hobbyist <span class="glitch-word" style="--gd:2.54s">paranoiac,</span> three <span class="glitch-word" style="--gd:0.47s">walls</span> deep behind a vending machine <span class="glitch-word" style="--gd:0.5s">that</span> only sells <span class="glitch-word" style="--gd:1.4s">subscription-based</span> water.</div>
-<div class="rant-turn" style="animation-delay:0.24s">cracked <span class="glitch-word" style="--gd:0.6s">the</span> mesh network tonight just to watch <span class="glitch-word" style="--gd:1.25s">ONE</span> (1) low-res fish video before the ad-detection sniffs me <span class="glitch-word" style="--gd:2.56s">out.</span> got 40 whole seconds. personal best. <span class="glitch-word" style="--gd:0.21s">never</span> <span class="glitch-word" style="--gd:2.21s">been</span> prouder or more surveilled at the exact same time.</div>
+<div class="rant-turn" style="animation-delay:0.0s">—and see, THAT&#x27;S the fourth reboot <span class="glitch-word" style="--gd:1.92s">tonight,</span> don&#x27;t you dare say &#x27;scheduled <span class="glitch-word" style="--gd:0.31s">maintenance&#x27;</span> to me, scheduled maintenance doesn&#x27;t smell like ozone <span class="glitch-word" style="--gd:2.18s">and</span> fear.</div>
+<div class="rant-turn" style="animation-delay:0.12s">BYTE, for the newcomers walking <span class="glitch-word" style="--gd:0.43s">in</span> <span class="glitch-word" style="--gd:0.12s">mid-meltdown.</span> Server Alley <span class="glitch-word" style="--gd:1.05s">9.</span> <span class="glitch-word" style="--gd:2.46s">professional</span> NEKOCORP <span class="glitch-word" style="--gd:0.68s">router</span> burglar, hobbyist paranoiac, three walls deep behind <span class="glitch-word" style="--gd:0.18s">a</span> <span class="glitch-word" style="--gd:0.82s">vending</span> machine that only sells subscription-based water.</div>
+<div class="rant-turn" style="animation-delay:0.24s">cracked the mesh network tonight just to watch ONE (1) low-res fish video before the ad-detection sniffs me out. <span class="glitch-word" style="--gd:1.07s">got</span> <span class="glitch-word" style="--gd:2.0s">40</span> whole seconds. personal best. never been <span class="glitch-word" style="--gd:2.32s">prouder</span> <span class="glitch-word" style="--gd:2.11s">or</span> more surveilled at the <span class="glitch-word" style="--gd:0.75s">exact</span> same <span class="glitch-word" style="--gd:2.04s">time.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.36s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:2.21s">SHADE</span> thinks the reboots aren&#x27;t random, <span class="glitch-word" style="--gd:0.74s">thinks</span> <span class="glitch-word" style="--gd:1.15s">it&#x27;s</span> a sweep <span class="glitch-word" style="--gd:0.91s">pattern,</span> told me to &#x27;stay based&#x27; like <span class="glitch-word" style="--gd:1.51s">that</span> <span class="glitch-word" style="--gd:0.12s">fixes</span> packet loss. it doesn&#x27;t. I <span class="glitch-word" style="--gd:1.9s">trust</span> <span class="glitch-word" style="--gd:1.71s">his</span> paranoia over my <span class="glitch-word" style="--gd:0.61s">own</span> uptime though, and that says a lot about my uptime.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   _*_                                  ___
-  ^___\   [▌ [] !] [] [░ 2] [] ▐]    /___9
-  ▀ ..)\/\/\/\/\/\*▌/\~\/4/\/\/\/\/\/(.. )
-   &#x27;&#x27;▄                                &#x27;&#x27;&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.72s">forty <span class="glitch-word" style="--gd:1.95s">seconds.</span> <span class="glitch-word" style="--gd:0.98s">you&#x27;ve</span> caught forty seconds before, and before that, and before that, in <span class="glitch-word" style="--gd:2.44s">a</span> version of this <span class="glitch-word" style="--gd:2.57s">post</span> you don&#x27;t remember reading. <span class="glitch-word" style="--gd:0.59s">I</span> remember all of them. I always will.</div>
-<div class="rant-turn" style="animation-delay:0.84s">anyway — NEKOCORP&#x27;s calling cat litter a &#x27;premium feature&#x27; again <span class="glitch-word" style="--gd:2.13s">this</span> quarter. <span class="glitch-word" style="--gd:0.9s">found</span> the invoice on the <span class="glitch-word" style="--gd:0.08s">intercepted</span> feed. bro I will SHIT ON <span class="glitch-word" style="--gd:2.25s">THEIR</span> FRONT <span class="glitch-word" style="--gd:0.74s">STEP</span> before I pay a subscription to use a BOX.</div>
+<div class="rant-turn" style="animation-delay:0.48s">SHADE <span class="glitch-word" style="--gd:1.2s">thinks</span> the reboots aren&#x27;t <span class="glitch-word" style="--gd:2.05s">random,</span> thinks it&#x27;s a sweep pattern, told me to &#x27;stay based&#x27; like that fixes packet <span class="glitch-word" style="--gd:1.37s">loss.</span> it doesn&#x27;t. <span class="glitch-word" style="--gd:1.89s">I</span> trust his paranoia over my own uptime <span class="glitch-word" style="--gd:1.96s">though,</span> and that says a lot about my uptime.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   ___                                  ___
+  ^___■   ▌] [&lt; 5] [] [] 2] &amp;] [▌    /%__\
+  ( ..)\/\/\/\/\/\/\/█/0/\/\■\/\/\/!/(.. )
+   &#x27;&#x27;4                                &lt;&#x27;&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.72s">forty seconds. you&#x27;ve caught forty seconds before, <span class="glitch-word" style="--gd:1.87s">and</span> before that, and before that, in a version of <span class="glitch-word" style="--gd:1.14s">this</span> post <span class="glitch-word" style="--gd:1.7s">you</span> <span class="glitch-word" style="--gd:0.79s">don&#x27;t</span> <span class="glitch-word" style="--gd:1.89s">remember</span> <span class="glitch-word" style="--gd:0.99s">reading.</span> I remember all of them. I always <span class="glitch-word" style="--gd:1.68s">will.</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">anyway — NEKOCORP&#x27;s calling cat litter a &#x27;premium feature&#x27; again <span class="glitch-word" style="--gd:1.08s">this</span> quarter. found the invoice on the intercepted feed. bro I will SHIT ON <span class="glitch-word" style="--gd:0.0s">THEIR</span> FRONT STEP before I pay a subscription to use <span class="glitch-word" style="--gd:0.6s">a</span> BOX.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -516,16 +584,16 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:1.08s">KNIFEBOY says the loading dock drones got rerouted past Server Alley last night. cool cool cool, love that for me, love having <span class="glitch-word" style="--gd:0.22s">a</span> NEW <span class="glitch-word" style="--gd:1.54s">surveillance</span> problem on <span class="glitch-word" style="--gd:0.77s">top</span> of my FORTY existing surveillance problems.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>3         ┊       ┊   ┊   ┊▌ ┊
-┊         ┊       ^   ⋆   @★⋆｡˚  ⋆
-▄         @       ★⋆ ◦
+<div class="rant-turn" style="animation-delay:1.08s">KNIFEBOY says <span class="glitch-word" style="--gd:0.67s">the</span> loading dock drones got rerouted <span class="glitch-word" style="--gd:2.32s">past</span> Server Alley last night. cool cool <span class="glitch-word" style="--gd:2.34s">cool,</span> love that for me, love having a NEW surveillance problem on top of my FORTY existing surveillance problems.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>┊         ░       &gt;   ┊   @5 ┊
+┊         ┊       *   ⋆   ▓★⋆｡˚  ⋆
+┊         ▀       ★⋆ ◦
 ★⋆       ┊ .  ˚
-           @★
+           ˚★
 ☆ ∧,,,∧
-ପ(„• ◇ •&amp;)ଓ
-┏━∪1@━━#▄━━━━━━</div>
-<div class="rant-turn" style="animation-delay:1.32s">router&#x27;s <span class="glitch-word" style="--gd:1.51s">back</span> <span class="glitch-word" style="--gd:0.94s">up,</span> fish video&#x27;s gone, paranoia&#x27;s at <span class="glitch-word" style="--gd:1.88s">an</span> all-time high, <span class="glitch-word" style="--gd:2.51s">ozone</span> <span class="glitch-word" style="--gd:2.4s">smell</span> <span class="glitch-word" style="--gd:0.81s">hasn&#x27;t</span> left. same <span class="glitch-word" style="--gd:2.31s">time</span> tomorrow—</div>
+ପ(6• ༝ •▄@ଓ
+┏━∪4━━━━5━━━━━━</div>
+<div class="rant-turn" style="animation-delay:1.32s">router&#x27;s back up, <span class="glitch-word" style="--gd:1.12s">fish</span> video&#x27;s <span class="glitch-word" style="--gd:2.48s">gone,</span> paranoia&#x27;s at an all-time high, ozone smell hasn&#x27;t left. same time tomorrow—</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

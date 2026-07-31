@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,29 +562,29 @@ header p {
 <div class="narrator-badge">posted by <strong>BRIK</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">ok i need <span class="glitch-word" style="--gd:0.35s">to</span> vent for a <span class="glitch-word" style="--gd:1.55s">second.</span> literally. i <span class="glitch-word" style="--gd:1.5s">live</span> in one. 14 inches wide, industrial, smells like <span class="glitch-word" style="--gd:0.67s">ozone</span> <span class="glitch-word" style="--gd:1.72s">and</span> <span class="glitch-word" style="--gd:1.59s">old</span> drone coolant, and <span class="glitch-word" style="--gd:0.94s">today</span> NEKOCORP tried to bill me RENT for <span class="glitch-word" style="--gd:1.78s">it.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">hi, BRIK, <span class="glitch-word" style="--gd:0.13s">ex-KILLDOZER</span> <span class="glitch-word" style="--gd:2.25s">operator,</span> Demolished District — yes that&#x27;s a real district name now, <span class="glitch-word" style="--gd:2.12s">yes</span> I named it myself, after the crew took my apartment down with me still inside <span class="glitch-word" style="--gd:1.96s">doing</span> laundry.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▄ /\_/\ ▓▒░
-  ░▒▓( o█o )▓7░   -- s▌gnal int9r9&lt;re4%e --
-  5▒▓ &gt; ▓ &lt; ▓▒█</div>
-<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:2.08s">NEKOCORP&#x27;s</span> new pitch on the listing: &#x27;efficiency micro-loft, exposed ductwork, some character.&#x27; my guy. I KNOW character. I used to <span class="glitch-word" style="--gd:1.45s">flatten</span> character for a paycheck. <span class="glitch-word" style="--gd:0.81s">this</span> is a vent. <span class="glitch-word" style="--gd:1.52s">I</span> pay zero dollars <span class="glitch-word" style="--gd:2.47s">for</span> it <span class="glitch-word" style="--gd:2.55s">on</span> principle.</div>
-<div class="rant-turn" style="animation-delay:0.48s">invoice showed up anyway. &#x27;occupancy fee, unregistered airspace.&#x27; I ate the invoice. not a metaphor. physically ate the paper. tasted <span class="glitch-word" style="--gd:1.73s">like</span> a warranty claim <span class="glitch-word" style="--gd:0.41s">and</span> regret.</div>
+<div class="rant-turn" style="animation-delay:0.0s">ok i need to <span class="glitch-word" style="--gd:0.13s">vent</span> for a second. literally. i live in one. 14 inches wide, industrial, smells like ozone and old drone <span class="glitch-word" style="--gd:1.22s">coolant,</span> and today NEKOCORP <span class="glitch-word" style="--gd:0.23s">tried</span> to bill me <span class="glitch-word" style="--gd:0.23s">RENT</span> for it.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.61s">hi,</span> BRIK, ex-KILLDOZER operator, Demolished District — yes <span class="glitch-word" style="--gd:0.47s">that&#x27;s</span> a real district name <span class="glitch-word" style="--gd:1.62s">now,</span> yes I named it <span class="glitch-word" style="--gd:1.84s">myself,</span> after the <span class="glitch-word" style="--gd:1.11s">crew</span> took my <span class="glitch-word" style="--gd:1.15s">apartment</span> down with me still inside doing laundry.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
+  ?▒▓( o░2 )▓▒░   -- signal i44■rfe8e▓ce -&lt;
+  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:2.33s">NEKOCORP&#x27;s</span> new pitch on the listing: &#x27;efficiency micro-loft, exposed ductwork, some character.&#x27; my <span class="glitch-word" style="--gd:1.78s">guy.</span> I KNOW character. <span class="glitch-word" style="--gd:0.96s">I</span> used to flatten character for <span class="glitch-word" style="--gd:1.27s">a</span> paycheck. <span class="glitch-word" style="--gd:1.79s">this</span> is a vent. I pay zero <span class="glitch-word" style="--gd:2.27s">dollars</span> for <span class="glitch-word" style="--gd:2.48s">it</span> on <span class="glitch-word" style="--gd:0.02s">principle.</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">invoice showed up anyway. &#x27;occupancy fee, <span class="glitch-word" style="--gd:0.99s">unregistered</span> airspace.&#x27; I ate the invoice. not a metaphor. physically <span class="glitch-word" style="--gd:0.38s">ate</span> <span class="glitch-word" style="--gd:1.07s">the</span> paper. tasted like a warranty claim and <span class="glitch-word" style="--gd:1.71s">regret.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.72s">SNOOZE says at <span class="glitch-word" style="--gd:0.7s">least</span> my rent&#x27;s imaginary, hers is real <span class="glitch-word" style="--gd:1.53s">and</span> compounding at $4.99 a roll-over. <span class="glitch-word" style="--gd:0.45s">VALENTUNA</span> offered to <span class="glitch-word" style="--gd:0.67s">have</span> her fridge-husband <span class="glitch-word" style="--gd:2.04s">&#x27;absorb&#x27;</span> the <span class="glitch-word" style="--gd:2.13s">invoice</span> into their <span class="glitch-word" style="--gd:1.21s">joint</span> plan. <span class="glitch-word" style="--gd:2.42s">absolutely</span> not. <span class="glitch-word" style="--gd:0.97s">I&#x27;ve</span> met <span class="glitch-word" style="--gd:1.12s">that</span> <span class="glitch-word" style="--gd:0.64s">fridge.</span> <span class="glitch-word" style="--gd:1.0s">it</span> recommends things.</div>
-<div class="rant-turn" style="animation-delay:0.84s">the vent was flagged for demolition six cycles ago. it is still standing. the schedule does not know why. neither do <span class="glitch-word" style="--gd:0.25s">i.</span> the <span class="glitch-word" style="--gd:1.74s">seam</span> is showing again.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_%\
-       ( -.! )
-        &gt; ^ &lt;
-   ~█~~~~|||~~~~~~[D~T7 ?ACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.08s">anyway — where <span class="glitch-word" style="--gd:1.56s">was</span> I. <span class="glitch-word" style="--gd:0.75s">right,</span> the invoice, eaten, still digesting, tastes worse the second time <span class="glitch-word" style="--gd:0.31s">you</span> think <span class="glitch-word" style="--gd:0.6s">about</span> it.</div>
+<div class="rant-turn" style="animation-delay:0.72s">SNOOZE says at least my rent&#x27;s imaginary, <span class="glitch-word" style="--gd:0.61s">hers</span> is real <span class="glitch-word" style="--gd:0.35s">and</span> compounding at $4.99 a roll-over. VALENTUNA offered <span class="glitch-word" style="--gd:0.92s">to</span> <span class="glitch-word" style="--gd:1.12s">have</span> her fridge-husband &#x27;absorb&#x27; the invoice <span class="glitch-word" style="--gd:0.5s">into</span> their joint plan. absolutely not. <span class="glitch-word" style="--gd:0.14s">I&#x27;ve</span> met that fridge. it recommends things.</div>
+<div class="rant-turn" style="animation-delay:0.84s">the vent was flagged for demolition six cycles ago. it <span class="glitch-word" style="--gd:1.68s">is</span> still standing. the schedule does not know why. neither do i. the seam is showing again.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>        /6_/\
+       ( -&lt;- 2
+        &gt; ^ ░
+   ~~^~~~◆||~!~~~▌[DA◆8 83CK# LINKED▀</div>
+<div class="rant-turn" style="animation-delay:1.08s">anyway — where was I. right, the invoice, eaten, still digesting, <span class="glitch-word" style="--gd:1.34s">tastes</span> worse the second time you think about it.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.32s">mother says <span class="glitch-word" style="--gd:2.53s">move</span> somewhere with windows. mother has not <span class="glitch-word" style="--gd:2.54s">seen</span> the housing market. mother has not <span class="glitch-word" style="--gd:0.08s">seen</span> NEKOCORP&#x27;s &#x27;window access surcharge.&#x27; <span class="glitch-word" style="--gd:1.75s">mother</span> <span class="glitch-word" style="--gd:1.24s">means</span> well.</div>
-<div class="rant-turn" style="animation-delay:1.44s">occupancy fee: unpaid. <span class="glitch-word" style="--gd:0.7s">invoice:</span> eaten. vent: still mine, allegedly unregistered, definitely load-bearing. see you when they try to bill me for the ozone smell too.</div>
+<div class="rant-turn" style="animation-delay:1.32s">mother says move <span class="glitch-word" style="--gd:2.02s">somewhere</span> <span class="glitch-word" style="--gd:0.48s">with</span> windows. mother has not seen the <span class="glitch-word" style="--gd:1.67s">housing</span> <span class="glitch-word" style="--gd:1.34s">market.</span> mother has not seen NEKOCORP&#x27;s <span class="glitch-word" style="--gd:0.96s">&#x27;window</span> access surcharge.&#x27; mother means well.</div>
+<div class="rant-turn" style="animation-delay:1.44s">occupancy fee: unpaid. invoice: eaten. vent: still mine, <span class="glitch-word" style="--gd:2.37s">allegedly</span> unregistered, definitely load-bearing. see you when they try to <span class="glitch-word" style="--gd:0.31s">bill</span> me for <span class="glitch-word" style="--gd:1.68s">the</span> ozone smell too.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

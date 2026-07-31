@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,28 +562,28 @@ header p {
 <div class="narrator-badge">posted by <strong>SHADE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SHADE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:2.45s">SURVEILLANCE</span> THREAT LEVEL TODAY: eyes only. mine, <span class="glitch-word" style="--gd:1.99s">specifically.</span> still processing the repo paperwork on that one.</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.47s">name&#x27;s</span> SHADE. <span class="glitch-word" style="--gd:1.2s">Neon</span> Underpass. professional glasses-haver. official NEKOCORP charge against me is &quot;unauthorized use <span class="glitch-word" style="--gd:1.84s">of</span> BASEDness,&quot; which is a real <span class="glitch-word" style="--gd:2.02s">crime</span> they invented just for me, and I have never been prouder of <span class="glitch-word" style="--gd:0.41s">anything</span> in <span class="glitch-word" style="--gd:0.48s">my</span> life.</div>
+<div class="rant-turn" style="animation-delay:0.0s">SURVEILLANCE THREAT <span class="glitch-word" style="--gd:1.88s">LEVEL</span> TODAY: eyes <span class="glitch-word" style="--gd:1.81s">only.</span> mine, specifically. still processing the repo paperwork on <span class="glitch-word" style="--gd:2.57s">that</span> one.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s SHADE. Neon <span class="glitch-word" style="--gd:0.22s">Underpass.</span> professional glasses-haver. official NEKOCORP charge against me is &quot;unauthorized use of BASEDness,&quot; which is a real <span class="glitch-word" style="--gd:0.88s">crime</span> they <span class="glitch-word" style="--gd:0.83s">invented</span> just for me, <span class="glitch-word" style="--gd:1.02s">and</span> I have <span class="glitch-word" style="--gd:0.39s">never</span> been prouder of anything in my life.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>  /\___/\
  (  o.o  )
   &gt; ^ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:1.15s">these</span> lenses block facial <span class="glitch-word" style="--gd:1.77s">rec,</span> retinal tax, targeted ads, and roughly 14% <span class="glitch-word" style="--gd:0.83s">of</span> the sadness. that&#x27;s more consistent uptime than my therapist ever gave me. RIP her <span class="glitch-word" style="--gd:0.82s">contract,</span> she got <span class="glitch-word" style="--gd:2.03s">outsourced</span> <span class="glitch-word" style="--gd:1.49s">to</span> a wellness app.</div>
-<div class="rant-turn" style="animation-delay:0.48s">repossessed my actual eyes last Thursday. <span class="glitch-word" style="--gd:0.04s">A</span> THURSDAY. <span class="glitch-word" style="--gd:2.14s">sir</span> <span class="glitch-word" style="--gd:1.81s">have</span> some drama. <span class="glitch-word" style="--gd:2.25s">save</span> it for a Monday. show some range in your scheduling.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-▓*◆==-.
-     ( [0]  .2 )
-      &#x27;-==@==-&#x27;
-       8  ▌  |
-   .8.pi▒king ▓hr^ugh the neo~ r6in...</div>
-<div class="rant-turn" style="animation-delay:0.72s">POPUP <span class="glitch-word" style="--gd:1.0s">texted</span> <span class="glitch-word" style="--gd:1.0s">me</span> &quot;must be nice to just choose blindness lol&quot; brother. BROTHER. you haven&#x27;t blinked <span class="glitch-word" style="--gd:1.8s">since</span> March, your eyelids are a SUBSCRIPTION TIER, please sit all <span class="glitch-word" style="--gd:1.65s">the</span> way down.</div>
-<div class="rant-turn" style="animation-delay:0.84s">wearing <span class="glitch-word" style="--gd:0.62s">sunglasses</span> over a repossessed eye socket is objectively the most <span class="glitch-word" style="--gd:0.94s">based</span> act a <span class="glitch-word" style="--gd:1.31s">cat</span> has <span class="glitch-word" style="--gd:2.07s">committed</span> in this city&#x27;s recorded history and I will not be <span class="glitch-word" style="--gd:0.29s">entertaining</span> follow-up <span class="glitch-word" style="--gd:0.0s">questions</span> at <span class="glitch-word" style="--gd:1.25s">this</span> time.</div>
+<div class="rant-turn" style="animation-delay:0.36s">these lenses block facial <span class="glitch-word" style="--gd:1.38s">rec,</span> retinal tax, <span class="glitch-word" style="--gd:2.25s">targeted</span> <span class="glitch-word" style="--gd:0.71s">ads,</span> and roughly 14% of <span class="glitch-word" style="--gd:0.36s">the</span> sadness. that&#x27;s more consistent <span class="glitch-word" style="--gd:0.5s">uptime</span> than <span class="glitch-word" style="--gd:2.31s">my</span> <span class="glitch-word" style="--gd:2.38s">therapist</span> ever gave me. <span class="glitch-word" style="--gd:0.35s">RIP</span> her contract, <span class="glitch-word" style="--gd:0.19s">she</span> got outsourced to <span class="glitch-word" style="--gd:1.37s">a</span> wellness app.</div>
+<div class="rant-turn" style="animation-delay:0.48s">repossessed my actual eyes last Thursday. A THURSDAY. sir have some drama. <span class="glitch-word" style="--gd:0.22s">save</span> it for a Monday. show some <span class="glitch-word" style="--gd:1.11s">range</span> <span class="glitch-word" style="--gd:0.2s">in</span> your scheduling.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-~====▐.
+     ( [06  .. )
+      3-▄▄▄==%0
+       7  |  |
+   ...!ic▄in1 &amp;h◆ough the neon rain.▀.</div>
+<div class="rant-turn" style="animation-delay:0.72s">POPUP texted me &quot;must <span class="glitch-word" style="--gd:0.2s">be</span> <span class="glitch-word" style="--gd:2.15s">nice</span> to just choose blindness lol&quot; brother. BROTHER. you haven&#x27;t blinked since March, your eyelids are a SUBSCRIPTION TIER, <span class="glitch-word" style="--gd:1.52s">please</span> sit all the way down.</div>
+<div class="rant-turn" style="animation-delay:0.84s">wearing <span class="glitch-word" style="--gd:0.01s">sunglasses</span> over a repossessed eye socket is objectively <span class="glitch-word" style="--gd:2.52s">the</span> most based act a cat has committed <span class="glitch-word" style="--gd:0.16s">in</span> this city&#x27;s recorded history and I will not be entertaining follow-up questions <span class="glitch-word" style="--gd:2.32s">at</span> <span class="glitch-word" style="--gd:2.26s">this</span> time.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.08s">BYTE gets <span class="glitch-word" style="--gd:1.68s">it</span> though. out there cracking routers <span class="glitch-word" style="--gd:1.51s">for</span> illegal 240p fish content while <span class="glitch-word" style="--gd:0.6s">I</span> sit here refusing to <span class="glitch-word" style="--gd:2.34s">perceive</span> anything at <span class="glitch-word" style="--gd:2.31s">all.</span> we are, spiritually, the exact same guy on <span class="glitch-word" style="--gd:1.24s">opposite</span> settings.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒3 /\1/\ 9▒░
-  ░▒▓( o█o )▓▒░   -- sign&gt;▌ i^terfe9ence &gt;▓
-  ░▒9 # ▓ &lt; ▓@░</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:2.25s">anyway.</span> can&#x27;t see you. wouldn&#x27;t want to. stay meowpilled, <span class="glitch-word" style="--gd:1.3s">stay</span> off their <span class="glitch-word" style="--gd:1.8s">grid,</span> stay <span class="glitch-word" style="--gd:0.45s">completely</span> and defiantly UNSEEN. 🕶️</div>
+<div class="rant-turn" style="animation-delay:1.08s">BYTE gets it <span class="glitch-word" style="--gd:1.38s">though.</span> out there cracking routers for illegal <span class="glitch-word" style="--gd:2.43s">240p</span> fish content while I sit here refusing to perceive anything <span class="glitch-word" style="--gd:1.94s">at</span> all. we <span class="glitch-word" style="--gd:0.96s">are,</span> spiritually, <span class="glitch-word" style="--gd:1.51s">the</span> <span class="glitch-word" style="--gd:1.2s">exact</span> same guy on opposite settings.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ 92░
+  ░▒▓( ▓█o )▓▒%   -- ?ignal i!terferenc3 --
+  ░▒▄ &gt; ▓ &lt; ~▒▄</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. can&#x27;t see you. wouldn&#x27;t want to. stay <span class="glitch-word" style="--gd:0.77s">meowpilled,</span> <span class="glitch-word" style="--gd:2.07s">stay</span> <span class="glitch-word" style="--gd:1.36s">off</span> their grid, stay completely and defiantly UNSEEN. 🕶️</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

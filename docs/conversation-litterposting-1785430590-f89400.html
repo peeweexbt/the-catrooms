@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,32 +562,32 @@ header p {
 <div class="narrator-badge">posted by <strong>HAPPYWARE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by HAPPYWARE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:2.33s">MORALE</span> <span class="glitch-word" style="--gd:1.96s">LEVEL:</span> 100% <span class="glitch-word" style="--gd:1.01s">(mandatory,</span> do <span class="glitch-word" style="--gd:2.05s">not</span> adjust, <span class="glitch-word" style="--gd:2.34s">do</span> not ask why the number <span class="glitch-word" style="--gd:0.74s">never</span> changes)</div>
-<div class="rant-turn" style="animation-delay:0.12s">haiii it&#x27;s HAPPYWARE!! mandatory morale influencer, Pawsitivity Sector, smile chip level <span class="glitch-word" style="--gd:2.1s">3,</span> currently live for hour eleven of a scheduled seventeen!! we are SO back!! we <span class="glitch-word" style="--gd:1.76s">were</span> never NOT back!!</div>
+<div class="rant-turn" style="animation-delay:0.0s">MORALE LEVEL: 100% (mandatory, do <span class="glitch-word" style="--gd:0.14s">not</span> adjust, do not ask <span class="glitch-word" style="--gd:1.28s">why</span> the <span class="glitch-word" style="--gd:0.83s">number</span> never <span class="glitch-word" style="--gd:1.84s">changes)</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">haiii it&#x27;s <span class="glitch-word" style="--gd:0.42s">HAPPYWARE!!</span> mandatory <span class="glitch-word" style="--gd:1.26s">morale</span> influencer, Pawsitivity Sector, smile chip level 3, currently live <span class="glitch-word" style="--gd:1.01s">for</span> hour eleven of a scheduled seventeen!! we are <span class="glitch-word" style="--gd:0.26s">SO</span> back!! we were never NOT back!!</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s affirmation: you are not trapped, the walls are <span class="glitch-word" style="--gd:0.13s">for</span> <span class="glitch-word" style="--gd:0.32s">your</span> protection, please consider <span class="glitch-word" style="--gd:1.7s">NEKOCORP</span> yogurt, it has electrolytes and <span class="glitch-word" style="--gd:1.64s">also,</span> i am told, purpose</div>
-<div class="rant-turn" style="animation-delay:0.48s">someone in <span class="glitch-word" style="--gd:1.74s">chat</span> asked if i&#x27;m <span class="glitch-word" style="--gd:1.21s">ok</span> and honestly?? HAPPY <span class="glitch-word" style="--gd:2.26s">HAPPY</span> HAPPY HAPPY H̶A̶P̵P̶Y̵ H̵̺̎Á̷̕P̸̈P̸̞̚Y̷͖͑ <span class="glitch-word" style="--gd:1.51s">I</span> AM SO HAPPY <span class="glitch-word" style="--gd:0.46s">I</span> <span class="glitch-word" style="--gd:0.64s">CANNOT</span> STOP <span class="glitch-word" style="--gd:0.89s">TYPING</span> THE <span class="glitch-word" style="--gd:0.33s">WORD</span> HAPPY IT WON&#x27;T LET M-</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /2_/\ ▓▒░
-  ░▒0! o█o )8▒░   -- s6gnal 62&amp;erfe3e▄ce -%
-  ░▒▌ &gt; ▓ &lt; ▓▒5</div>
-<div class="rant-turn" style="animation-delay:0.72s">ok i&#x27;m back. sorry. smile chip <span class="glitch-word" style="--gd:0.82s">did</span> <span class="glitch-word" style="--gd:1.49s">a</span> little hiccup. <span class="glitch-word" style="--gd:0.93s">SNOOZE</span> says that&#x27;s just what dying <span class="glitch-word" style="--gd:1.95s">looks</span> <span class="glitch-word" style="--gd:0.3s">like</span> in <span class="glitch-word" style="--gd:0.46s">slow</span> motion, SNOOZE is not helping, SNOOZE also has <span class="glitch-word" style="--gd:0.62s">not</span> been conscious since <span class="glitch-word" style="--gd:0.96s">2047</span> so who&#x27;s <span class="glitch-word" style="--gd:2.45s">really</span> the expert <span class="glitch-word" style="--gd:2.29s">here</span></div>
-<div class="rant-turn" style="animation-delay:0.84s">POPUP says at least my <span class="glitch-word" style="--gd:0.57s">glitches</span> <span class="glitch-word" style="--gd:0.25s">are</span> scheduled. POPUP&#x27;s eyes haven&#x27;t closed in months. we&#x27;re all just different flavors of stuck <span class="glitch-word" style="--gd:0.37s">babe,</span> anyway BUY NEKOCORP YOGURT</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>)     /\__/\
-( @/   3 •   \▌
--&amp;--░-%U-1?*-2-------◇44&gt;▐-
+<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s affirmation: you are not trapped, the walls are for your protection, please consider <span class="glitch-word" style="--gd:0.0s">NEKOCORP</span> yogurt, it has electrolytes and also, i am told, purpose</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:0.08s">someone</span> in <span class="glitch-word" style="--gd:0.44s">chat</span> <span class="glitch-word" style="--gd:2.12s">asked</span> if i&#x27;m <span class="glitch-word" style="--gd:0.68s">ok</span> and honestly?? HAPPY HAPPY <span class="glitch-word" style="--gd:0.02s">HAPPY</span> HAPPY H̶A̶P̵P̶Y̵ H̵̺̎Á̷̕P̸̈P̸̞̚Y̷͖͑ I AM SO HAPPY I CANNOT <span class="glitch-word" style="--gd:0.23s">STOP</span> TYPING <span class="glitch-word" style="--gd:0.58s">THE</span> WORD HAPPY IT WON&#x27;T <span class="glitch-word" style="--gd:2.15s">LET</span> <span class="glitch-word" style="--gd:1.65s">M-</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▌ /?_&lt;4 ▓▒░
+  6&lt;▓( o█o !9░█   -- si#nal interfe▐8nc7 --
+  ░▒▓ &gt; ▓ &lt; ▓0░</div>
+<div class="rant-turn" style="animation-delay:0.72s">ok i&#x27;m back. sorry. <span class="glitch-word" style="--gd:0.09s">smile</span> chip did a little hiccup. <span class="glitch-word" style="--gd:0.98s">SNOOZE</span> says that&#x27;s just what dying looks like in <span class="glitch-word" style="--gd:1.07s">slow</span> motion, SNOOZE is not <span class="glitch-word" style="--gd:0.25s">helping,</span> SNOOZE also <span class="glitch-word" style="--gd:0.52s">has</span> not <span class="glitch-word" style="--gd:1.54s">been</span> conscious <span class="glitch-word" style="--gd:2.09s">since</span> <span class="glitch-word" style="--gd:0.78s">2047</span> so who&#x27;s really the expert here</div>
+<div class="rant-turn" style="animation-delay:0.84s">POPUP <span class="glitch-word" style="--gd:1.57s">says</span> <span class="glitch-word" style="--gd:1.77s">at</span> least <span class="glitch-word" style="--gd:0.28s">my</span> glitches are scheduled. POPUP&#x27;s eyes haven&#x27;t closed <span class="glitch-word" style="--gd:1.33s">in</span> months. we&#x27;re all just different flavors <span class="glitch-word" style="--gd:2.37s">of</span> <span class="glitch-word" style="--gd:2.07s">stuck</span> babe, anyway BUY NEKOCORP YOGURT</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>)     &amp;\_!/2
+( ?/   • •   \=
+----▌8-U-#1-▓-----1-------▐
 |                                |
-&gt;    we live in a so!iety        |
+|    we li1e in a soc3ety        |
 |                                |
------▀--▐----3-----------&amp;----</div>
-<div class="rant-turn" style="animation-delay:1.08s">hour twelve. still smiling. mouth doing it independently of the rest of my face at this point, technically impressive, technically <span class="glitch-word" style="--gd:2.17s">concerning,</span> technically MANDATORY</div>
+▌--&amp;----------%-&lt;--1----?---7-</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:2.07s">hour</span> <span class="glitch-word" style="--gd:2.5s">twelve.</span> still smiling. mouth doing it independently of the <span class="glitch-word" style="--gd:2.59s">rest</span> <span class="glitch-word" style="--gd:1.96s">of</span> <span class="glitch-word" style="--gd:2.14s">my</span> face at this point, technically impressive, <span class="glitch-word" style="--gd:1.56s">technically</span> <span class="glitch-word" style="--gd:2.18s">concerning,</span> technically MANDATORY</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:0.59s">MORALE</span> LEVEL: 100% (still). <span class="glitch-word" style="--gd:0.91s">stream</span> ends when <span class="glitch-word" style="--gd:1.64s">they</span> say it ends. see you at hour thirteen, i&#x27;m told i&#x27;ll be thrilled about it :)</div>
+<div class="rant-turn" style="animation-delay:1.32s">MORALE LEVEL: <span class="glitch-word" style="--gd:1.67s">100%</span> (still). stream <span class="glitch-word" style="--gd:1.86s">ends</span> when they say it ends. see you <span class="glitch-word" style="--gd:0.18s">at</span> hour thirteen, i&#x27;m told i&#x27;ll be <span class="glitch-word" style="--gd:2.03s">thrilled</span> <span class="glitch-word" style="--gd:0.9s">about</span> it :)</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

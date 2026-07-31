@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -495,29 +563,29 @@ header p {
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
 <div class="rant-turn" style="animation-delay:0.0s">nobody:
-<span class="glitch-word" style="--gd:2.11s">me</span> at 3am: tasting the emergency broadcast signal because my Bluetooth patch decided AM radio counts as a flavor <span class="glitch-word" style="--gd:0.55s">now</span></div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.58s">name&#x27;s</span> GLITCHMEAT. <span class="glitch-word" style="--gd:0.06s">Research</span> Basement. NEKOCORP paid me twelve (12) whole credits to beta test a neural enhancement patch and in exchange i now <span class="glitch-word" style="--gd:2.39s">hear</span> <span class="glitch-word" style="--gd:1.6s">the</span> color purple on a loop, no off switch, no refund policy, no purple bathroom <span class="glitch-word" style="--gd:1.16s">either,</span> just the SOUND</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ 11░
-  ░▒▓( o░o )▓▒░   -- sig6al in2%rfe◇e░!7 --
-  ░▒▓ &gt; ▓ &lt; ▓▀░</div>
-<div class="rant-turn" style="animation-delay:0.36s">woke up this morning remembering a kittenhood that is NOT <span class="glitch-word" style="--gd:0.26s">MINE.</span> someone else&#x27;s mom. someone <span class="glitch-word" style="--gd:0.11s">else&#x27;s</span> yarn ball. <span class="glitch-word" style="--gd:2.52s">someone</span> else&#x27;s very specific trauma about a vacuum cleaner. filed a complaint. NEKOCORP said memories are &#x27;pooled resources&#x27; now per <span class="glitch-word" style="--gd:0.49s">section</span> 14, which i <span class="glitch-word" style="--gd:1.51s">apparently</span> <span class="glitch-word" style="--gd:1.35s">signed</span> with a paw <span class="glitch-word" style="--gd:1.02s">i</span> don&#x27;t have full feeling in anymore</div>
-<div class="rant-turn" style="animation-delay:0.48s">QUERY keeps forwarding me screenshots of the consent form like <span class="glitch-word" style="--gd:0.61s">reading</span> it slower will make it less insane. babe. i can <span class="glitch-word" style="--gd:1.41s">taste</span> radio waves right <span class="glitch-word" style="--gd:2.42s">now.</span> i am <span class="glitch-word" style="--gd:1.76s">not</span> the <span class="glitch-word" style="--gd:0.89s">target</span> demo for &#x27;slower.&#x27;</div>
+<span class="glitch-word" style="--gd:0.03s">me</span> at 3am: tasting <span class="glitch-word" style="--gd:2.11s">the</span> <span class="glitch-word" style="--gd:0.94s">emergency</span> broadcast signal because my Bluetooth patch decided AM radio counts as a flavor now</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s GLITCHMEAT. Research <span class="glitch-word" style="--gd:2.32s">Basement.</span> NEKOCORP paid me twelve (12) whole credits to beta test a neural enhancement patch and in <span class="glitch-word" style="--gd:2.51s">exchange</span> <span class="glitch-word" style="--gd:0.66s">i</span> now hear the color purple <span class="glitch-word" style="--gd:0.43s">on</span> a loop, no off switch, no <span class="glitch-word" style="--gd:0.08s">refund</span> <span class="glitch-word" style="--gd:0.0s">policy,</span> <span class="glitch-word" style="--gd:0.15s">no</span> purple bathroom either, just the SOUND</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/8 @▒░
+  ░▒▓( o#o )▓▒░   -- signal int■rf3^e2ce &lt;*
+  ░▒▓ &gt; # &gt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.36s">woke up this morning remembering <span class="glitch-word" style="--gd:0.43s">a</span> kittenhood <span class="glitch-word" style="--gd:2.03s">that</span> <span class="glitch-word" style="--gd:0.77s">is</span> NOT <span class="glitch-word" style="--gd:1.72s">MINE.</span> someone <span class="glitch-word" style="--gd:1.77s">else&#x27;s</span> mom. someone else&#x27;s yarn ball. someone else&#x27;s very specific <span class="glitch-word" style="--gd:1.36s">trauma</span> <span class="glitch-word" style="--gd:1.4s">about</span> a <span class="glitch-word" style="--gd:0.72s">vacuum</span> cleaner. filed <span class="glitch-word" style="--gd:1.25s">a</span> <span class="glitch-word" style="--gd:2.51s">complaint.</span> <span class="glitch-word" style="--gd:2.2s">NEKOCORP</span> said memories are &#x27;pooled resources&#x27; now <span class="glitch-word" style="--gd:1.87s">per</span> section 14, which i <span class="glitch-word" style="--gd:0.05s">apparently</span> signed <span class="glitch-word" style="--gd:0.51s">with</span> a <span class="glitch-word" style="--gd:1.52s">paw</span> i <span class="glitch-word" style="--gd:0.01s">don&#x27;t</span> have full feeling in anymore</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:2.56s">QUERY</span> keeps forwarding me screenshots of <span class="glitch-word" style="--gd:2.06s">the</span> consent form <span class="glitch-word" style="--gd:0.36s">like</span> reading it slower will make it less insane. babe. i <span class="glitch-word" style="--gd:1.64s">can</span> taste <span class="glitch-word" style="--gd:1.48s">radio</span> waves right now. i am not the target demo for &#x27;slower.&#x27;</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>   ___                                  ___
   /___\   [] [] [] [] [] [] [] []    /___\
   ( ..)\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/(.. )
    &#x27;&#x27;&#x27;                                &#x27;&#x27;&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.72s">SHADE&#x27;s advice: rip the patch out <span class="glitch-word" style="--gd:1.15s">myself,</span> with <span class="glitch-word" style="--gd:1.07s">my</span> own teeth, right now, tonight. SHADE also believes sunglasses solve everything up <span class="glitch-word" style="--gd:1.26s">to</span> and including brain surgery. respect the <span class="glitch-word" style="--gd:0.13s">confidence.</span> doubting the <span class="glitch-word" style="--gd:1.63s">surgical</span> technique. still considering it <span class="glitch-word" style="--gd:0.93s">at</span> this hour, which says more about the hour than the plan</div>
-<div class="rant-turn" style="animation-delay:0.84s">spiders. in. <span class="glitch-word" style="--gd:1.83s">the.</span> bluetooth. not a metaphor, <span class="glitch-word" style="--gd:0.2s">not</span> a bit, i felt eight legs cross <span class="glitch-word" style="--gd:1.55s">a</span> <span class="glitch-word" style="--gd:1.02s">signal</span> bar and then the signal bar <span class="glitch-word" style="--gd:2.22s">started</span> humming a jingle i didn&#x27;t recognize and <span class="glitch-word" style="--gd:0.43s">now,</span> unfortunately, i do</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>    /\,!,~?
-▓◆  5 . •   ░3
-  / &gt;❀░  \</div>
-<div class="rant-turn" style="animation-delay:1.08s">the purple hasn&#x27;t stopped since Tuesday. it&#x27;s <span class="glitch-word" style="--gd:0.99s">not</span> a color anymore, it&#x27;s a ringtone. <span class="glitch-word" style="--gd:2.22s">i</span> <span class="glitch-word" style="--gd:0.27s">hum</span> along now. my case worker won&#x27;t say if that&#x27;s <span class="glitch-word" style="--gd:0.63s">healing</span> <span class="glitch-word" style="--gd:0.7s">or</span> the final stage, she just writes <span class="glitch-word" style="--gd:1.02s">something</span> down and won&#x27;t let me borrow <span class="glitch-word" style="--gd:1.72s">her</span> pen, understandably, given everything</div>
+<div class="rant-turn" style="animation-delay:0.72s">SHADE&#x27;s advice: rip the patch out myself, <span class="glitch-word" style="--gd:1.51s">with</span> <span class="glitch-word" style="--gd:0.84s">my</span> <span class="glitch-word" style="--gd:0.85s">own</span> teeth, right <span class="glitch-word" style="--gd:1.37s">now,</span> tonight. SHADE also believes sunglasses solve everything <span class="glitch-word" style="--gd:0.85s">up</span> to and including brain <span class="glitch-word" style="--gd:1.43s">surgery.</span> respect the confidence. doubting the <span class="glitch-word" style="--gd:2.22s">surgical</span> technique. still considering it at this <span class="glitch-word" style="--gd:0.95s">hour,</span> <span class="glitch-word" style="--gd:0.58s">which</span> says more about <span class="glitch-word" style="--gd:0.6s">the</span> hour than the plan</div>
+<div class="rant-turn" style="animation-delay:0.84s">spiders. in. the. bluetooth. not a metaphor, not <span class="glitch-word" style="--gd:1.11s">a</span> bit, <span class="glitch-word" style="--gd:2.54s">i</span> felt eight legs cross a signal <span class="glitch-word" style="--gd:0.72s">bar</span> <span class="glitch-word" style="--gd:0.15s">and</span> then the signal bar started humming a jingle i didn&#x27;t recognize and now, unfortunately, <span class="glitch-word" style="--gd:0.1s">i</span> do</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>    /5,,3/\
+&gt;(  ▄ ? ^   )~
+  ▀ &gt;9&lt;  \</div>
+<div class="rant-turn" style="animation-delay:1.08s">the <span class="glitch-word" style="--gd:0.11s">purple</span> hasn&#x27;t stopped since <span class="glitch-word" style="--gd:2.2s">Tuesday.</span> it&#x27;s not a color anymore, it&#x27;s a ringtone. <span class="glitch-word" style="--gd:0.29s">i</span> <span class="glitch-word" style="--gd:2.24s">hum</span> along now. my case worker won&#x27;t say if that&#x27;s healing or <span class="glitch-word" style="--gd:1.62s">the</span> final stage, she just writes something down and won&#x27;t let me <span class="glitch-word" style="--gd:0.27s">borrow</span> <span class="glitch-word" style="--gd:0.81s">her</span> pen, <span class="glitch-word" style="--gd:1.37s">understandably,</span> given everything</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:1.95s">anyway.</span> that&#x27;s the update <span class="glitch-word" style="--gd:0.6s">from</span> the basement. still glitching, still borrowed, still owe NEKOCORP for <span class="glitch-word" style="--gd:0.49s">a</span> memory upgrade i <span class="glitch-word" style="--gd:2.46s">never</span> <span class="glitch-word" style="--gd:2.56s">asked</span> for and definitely <span class="glitch-word" style="--gd:1.98s">don&#x27;t</span> get to <span class="glitch-word" style="--gd:1.94s">keep.</span> glitchmeat <span class="glitch-word" style="--gd:2.06s">out,</span> if <span class="glitch-word" style="--gd:0.13s">that&#x27;s</span> even still my <span class="glitch-word" style="--gd:0.49s">name</span> by <span class="glitch-word" style="--gd:0.65s">morning</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. that&#x27;s <span class="glitch-word" style="--gd:0.09s">the</span> update <span class="glitch-word" style="--gd:0.51s">from</span> <span class="glitch-word" style="--gd:1.92s">the</span> basement. still glitching, still borrowed, <span class="glitch-word" style="--gd:1.99s">still</span> owe NEKOCORP for a memory upgrade i never asked for and definitely don&#x27;t get to keep. glitchmeat out, if that&#x27;s even still my name by morning</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

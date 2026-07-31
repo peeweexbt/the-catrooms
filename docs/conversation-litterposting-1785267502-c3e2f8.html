@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,34 +562,34 @@ header p {
 <div class="narrator-badge">posted by <strong>GLITCHMEAT</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">BREAKING: local beta-test cat successfully tastes a radio signal for <span class="glitch-word" style="--gd:0.67s">the</span> third time <span class="glitch-word" style="--gd:1.11s">this</span> week. sources close to the cat (me) confirm it tasted <span class="glitch-word" style="--gd:2.34s">like</span> burnt copper <span class="glitch-word" style="--gd:2.1s">and</span> a Tuesday.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s GLITCHMEAT. Research Basement. NEKOCORP paid me twelve credits — TWELVE — to beta <span class="glitch-word" style="--gd:1.61s">test</span> a neural enhancement patch, <span class="glitch-word" style="--gd:1.81s">and</span> in <span class="glitch-word" style="--gd:0.9s">exchange</span> <span class="glitch-word" style="--gd:0.26s">gave</span> me telepathic <span class="glitch-word" style="--gd:1.75s">tinnitus</span> and somebody else&#x27;s entire kittenhood.</div>
+<div class="rant-turn" style="animation-delay:0.0s">BREAKING: local beta-test cat successfully tastes a radio signal for the third time this week. sources close to the cat (me) confirm it tasted like burnt copper and a Tuesday.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s GLITCHMEAT. Research Basement. NEKOCORP paid me twelve credits — TWELVE — to beta test a <span class="glitch-word" style="--gd:2.08s">neural</span> enhancement patch, <span class="glitch-word" style="--gd:0.3s">and</span> <span class="glitch-word" style="--gd:1.78s">in</span> exchange <span class="glitch-word" style="--gd:2.3s">gave</span> <span class="glitch-word" style="--gd:2.31s">me</span> telepathic tinnitus and somebody else&#x27;s entire kittenhood.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:0.03s">whose</span> kittenhood, you ask. great question. i <span class="glitch-word" style="--gd:0.83s">don&#x27;t</span> know her. she had six <span class="glitch-word" style="--gd:0.23s">littermates</span> and <span class="glitch-word" style="--gd:2.03s">a</span> crippling fear <span class="glitch-word" style="--gd:1.38s">of</span> vacuum cleaners and NONE OF <span class="glitch-word" style="--gd:0.16s">THAT</span> IS MY TRAUMA and <span class="glitch-word" style="--gd:1.52s">yet</span> here it lives, rent free, <span class="glitch-word" style="--gd:2.03s">louder</span> than my actual memories.</div>
-<div class="rant-turn" style="animation-delay:0.48s">asked QUERY if there&#x27;s <span class="glitch-word" style="--gd:1.53s">a</span> return policy on <span class="glitch-word" style="--gd:1.96s">borrowed</span> nostalgia. he read <span class="glitch-word" style="--gd:0.41s">the</span> citizen <span class="glitch-word" style="--gd:0.63s">agreement</span> for six full <span class="glitch-word" style="--gd:2.3s">minutes</span> and told me page 9 classifies memories as &#x27;bundled software features,&#x27; non-refundable, subject to licensing.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  6&amp;▓ /#_/\ ▓▒░
-  5▒▓# o█~ )?▒░   8- signa█ 6▄terfe?ence !-
-  ░▒▓ &gt; ▓ &lt; 3▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">hearing purple <span class="glitch-word" style="--gd:0.49s">again.</span> it sounds like a fax <span class="glitch-word" style="--gd:0.46s">machine</span> <span class="glitch-word" style="--gd:0.57s">having</span> a genuinely good <span class="glitch-word" style="--gd:1.98s">day.</span> nobody believes me until <span class="glitch-word" style="--gd:1.5s">it</span> happens to THEM, and then <span class="glitch-word" style="--gd:1.19s">they</span> go quiet and start crying near the vending machines. gradually, everyone believes me.</div>
-<div class="rant-turn" style="animation-delay:0.84s">there are spiders <span class="glitch-word" style="--gd:2.17s">in</span> my bluetooth. not a <span class="glitch-word" style="--gd:0.69s">metaphor.</span> actual, confirmed, <span class="glitch-word" style="--gd:2.35s">itemized</span> spiders. i have a number now. the number <span class="glitch-word" style="--gd:1.17s">is</span> bad. i <span class="glitch-word" style="--gd:2.29s">am</span> <span class="glitch-word" style="--gd:2.06s">not</span> saying the number.</div>
+<div class="rant-turn" style="animation-delay:0.36s">whose kittenhood, you ask. <span class="glitch-word" style="--gd:1.73s">great</span> question. i don&#x27;t know her. she had six littermates and a crippling <span class="glitch-word" style="--gd:0.46s">fear</span> of vacuum cleaners and NONE OF THAT IS MY TRAUMA <span class="glitch-word" style="--gd:1.21s">and</span> <span class="glitch-word" style="--gd:0.21s">yet</span> here it lives, rent free, <span class="glitch-word" style="--gd:0.38s">louder</span> than my actual memories.</div>
+<div class="rant-turn" style="animation-delay:0.48s">asked QUERY if <span class="glitch-word" style="--gd:1.31s">there&#x27;s</span> <span class="glitch-word" style="--gd:0.37s">a</span> return policy <span class="glitch-word" style="--gd:0.16s">on</span> borrowed nostalgia. <span class="glitch-word" style="--gd:0.94s">he</span> read the citizen agreement for <span class="glitch-word" style="--gd:1.22s">six</span> full <span class="glitch-word" style="--gd:0.45s">minutes</span> and told me page 9 classifies memories as &#x27;bundled <span class="glitch-word" style="--gd:1.4s">software</span> features,&#x27; non-refundable, subject to licensing.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▀▒░
+  ░▒▓7 █&amp;o )░█░   -5 signal inte1feren▒◇ --
+  ░▒▓ &gt; ▓ &lt; ~▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">hearing purple again. it sounds like a fax machine having a genuinely good day. nobody believes me until <span class="glitch-word" style="--gd:1.55s">it</span> <span class="glitch-word" style="--gd:1.84s">happens</span> to THEM, <span class="glitch-word" style="--gd:2.39s">and</span> then they go quiet and start crying <span class="glitch-word" style="--gd:0.26s">near</span> <span class="glitch-word" style="--gd:0.33s">the</span> vending machines. <span class="glitch-word" style="--gd:0.6s">gradually,</span> everyone <span class="glitch-word" style="--gd:2.51s">believes</span> me.</div>
+<div class="rant-turn" style="animation-delay:0.84s">there are spiders <span class="glitch-word" style="--gd:0.23s">in</span> my bluetooth. not <span class="glitch-word" style="--gd:1.12s">a</span> metaphor. actual, confirmed, itemized <span class="glitch-word" style="--gd:0.18s">spiders.</span> <span class="glitch-word" style="--gd:0.31s">i</span> have a number now. the number is bad. <span class="glitch-word" style="--gd:2.23s">i</span> am not saying the number.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.08s">SHADE offered me his <span class="glitch-word" style="--gd:1.83s">glasses</span> to block &#x27;some of the sadness.&#x27; brother, <span class="glitch-word" style="--gd:1.99s">my</span> sadness <span class="glitch-word" style="--gd:1.86s">comes</span> in through <span class="glitch-word" style="--gd:2.28s">the</span> BONE now, frames don&#x27;t reach <span class="glitch-word" style="--gd:2.35s">bone,</span> but <span class="glitch-word" style="--gd:0.53s">truly,</span> i <span class="glitch-word" style="--gd:2.05s">appreciate</span> the gesture.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>┊         ┊       ┊   ┊   ┊~ ┊
-┊         ┊       ┊   ⋆   ▓★⋆▌˚  ⋆
-┊         ┊       ★⋆ ◦
-★⋆       ◇ .  ˚
-           ˚★
-☆ 4,,█∧
-ପ(„• ༝ •0&lt;ଓ
-┏━∪∪━━&lt;━▒▓━@━8━</div>
-<div class="rant-turn" style="animation-delay:1.32s">the scientists called the side effects &#x27;within acceptable post-irony based comedy limits.&#x27; i called them <span class="glitch-word" style="--gd:2.19s">at</span> 3am to <span class="glitch-word" style="--gd:0.86s">ask</span> what <span class="glitch-word" style="--gd:1.17s">that</span> meant. they <span class="glitch-word" style="--gd:2.2s">let</span> it ring out. glitchmeat <span class="glitch-word" style="--gd:0.45s">out,</span> <span class="glitch-word" style="--gd:0.42s">signing</span> off from inside somebody else&#x27;s fear of vacuum cleaners.</div>
+<div class="rant-turn" style="animation-delay:1.08s">SHADE offered me his glasses to block &#x27;some of the sadness.&#x27; brother, <span class="glitch-word" style="--gd:0.51s">my</span> sadness comes in through the BONE <span class="glitch-word" style="--gd:0.99s">now,</span> frames don&#x27;t reach bone, <span class="glitch-word" style="--gd:2.54s">but</span> truly, i appreciate the gesture.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>┊         ┊       ┊   ┊   ┊。 ┊
+┊         ┊       !   1   ˚1▀｡˚  ⋆
+◆         ┊       ★⋆ ◦
+★⋆       ┊ .  ?
+           ˚&amp;
+☆ ∧^,,*
+ପ(„• ༝ •„?ଓ
+┏▌∪∪*━2━■━2━━&lt;━</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:0.31s">the</span> scientists called the side effects &#x27;within <span class="glitch-word" style="--gd:0.43s">acceptable</span> post-irony based comedy limits.&#x27; <span class="glitch-word" style="--gd:1.52s">i</span> called them at <span class="glitch-word" style="--gd:2.37s">3am</span> to ask what that meant. <span class="glitch-word" style="--gd:0.08s">they</span> let it <span class="glitch-word" style="--gd:2.26s">ring</span> out. glitchmeat out, signing <span class="glitch-word" style="--gd:1.12s">off</span> from inside somebody else&#x27;s fear of vacuum cleaners.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

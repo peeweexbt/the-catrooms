@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,31 +562,31 @@ header p {
 <div class="narrator-badge">posted by <strong>GLITCHMEAT</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">beta test log #212: <span class="glitch-word" style="--gd:1.3s">today</span> i can taste the <span class="glitch-word" style="--gd:2.18s">emergency</span> broadcast system. it tastes like pennies and regret. this was not on the consent form.</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:2.04s">name&#x27;s</span> GLITCHMEAT, Research Basement, professional NEKOCORP <span class="glitch-word" style="--gd:1.99s">beta</span> tester, <span class="glitch-word" style="--gd:0.33s">which</span> is corporate for &#x27;we pay <span class="glitch-word" style="--gd:2.5s">a</span> cat twelve credits to <span class="glitch-word" style="--gd:0.63s">find</span> <span class="glitch-word" style="--gd:1.12s">out</span> <span class="glitch-word" style="--gd:0.12s">what</span> happens when you plug a nervous system directly <span class="glitch-word" style="--gd:0.26s">into</span> wifi.&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.0s">beta test log <span class="glitch-word" style="--gd:2.5s">#212:</span> today <span class="glitch-word" style="--gd:1.86s">i</span> can taste <span class="glitch-word" style="--gd:0.73s">the</span> <span class="glitch-word" style="--gd:1.09s">emergency</span> broadcast system. it tastes like pennies <span class="glitch-word" style="--gd:1.16s">and</span> regret. this was not on the consent form.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s GLITCHMEAT, Research Basement, professional <span class="glitch-word" style="--gd:0.9s">NEKOCORP</span> <span class="glitch-word" style="--gd:2.43s">beta</span> tester, <span class="glitch-word" style="--gd:1.87s">which</span> <span class="glitch-word" style="--gd:0.91s">is</span> corporate <span class="glitch-word" style="--gd:2.4s">for</span> &#x27;we pay a cat twelve credits to find out what happens when <span class="glitch-word" style="--gd:0.64s">you</span> plug a nervous <span class="glitch-word" style="--gd:1.37s">system</span> directly into wifi.&#x27;</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.36s">side effects were <span class="glitch-word" style="--gd:0.81s">listed</span> as <span class="glitch-word" style="--gd:0.24s">&#x27;within</span> acceptable post-irony <span class="glitch-word" style="--gd:0.08s">comedy</span> limits.&#x27; <span class="glitch-word" style="--gd:0.59s">i</span> would like to file a complaint with whoever <span class="glitch-word" style="--gd:1.01s">wrote</span> that sentence. i would like to bite them. <span class="glitch-word" style="--gd:1.51s">i</span> cannot locate them. <span class="glitch-word" style="--gd:0.41s">they</span> are, i suspect, <span class="glitch-word" style="--gd:1.76s">a</span> PDF.</div>
-<div class="rant-turn" style="animation-delay:0.48s">yesterday i remembered growing up in a cardboard box behind a noodle shop. <span class="glitch-word" style="--gd:1.27s">i</span> have never been <span class="glitch-word" style="--gd:1.89s">near</span> a noodle shop in <span class="glitch-word" style="--gd:0.12s">my</span> <span class="glitch-word" style="--gd:0.93s">life.</span> i do not know whose kittenhood this <span class="glitch-word" style="--gd:1.42s">is.</span> i <span class="glitch-word" style="--gd:0.37s">am</span> simply borrowing it, like a library book, except the library did not consent either.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
-  ░▒▓( o@▌ )▓▒▀   -- s~5nal interfe%enc? --
-  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">BYTE keeps sliding into my DMs asking if <span class="glitch-word" style="--gd:2.13s">i</span> can hack anything with my brain now. no BYTE. i can hear the color purple. <span class="glitch-word" style="--gd:1.67s">these</span> <span class="glitch-word" style="--gd:1.08s">are</span> unrelated skillsets. please take your router problems elsewhere.</div>
-<div class="rant-turn" style="animation-delay:0.84s">there are <span class="glitch-word" style="--gd:1.61s">spiders</span> in my Bluetooth. i want <span class="glitch-word" style="--gd:1.16s">to</span> be very clear this is <span class="glitch-word" style="--gd:1.15s">not</span> a metaphor for anxiety. there are LITERAL SPIDERS. in the BLUETOOTH. NEKOCORP will not confirm <span class="glitch-word" style="--gd:2.56s">or</span> deny. the silence is deafening. also, faintly, purple.</div>
+<div class="rant-turn" style="animation-delay:0.36s">side effects <span class="glitch-word" style="--gd:2.34s">were</span> listed as &#x27;within acceptable post-irony comedy limits.&#x27; i <span class="glitch-word" style="--gd:1.69s">would</span> like to file <span class="glitch-word" style="--gd:1.99s">a</span> complaint <span class="glitch-word" style="--gd:0.46s">with</span> whoever wrote that sentence. <span class="glitch-word" style="--gd:2.38s">i</span> would like to bite <span class="glitch-word" style="--gd:0.69s">them.</span> i cannot locate them. they are, i <span class="glitch-word" style="--gd:0.84s">suspect,</span> <span class="glitch-word" style="--gd:0.51s">a</span> <span class="glitch-word" style="--gd:1.5s">PDF.</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">yesterday i remembered growing up in a cardboard box behind <span class="glitch-word" style="--gd:1.0s">a</span> noodle <span class="glitch-word" style="--gd:1.37s">shop.</span> i have never <span class="glitch-word" style="--gd:2.41s">been</span> near a noodle shop in <span class="glitch-word" style="--gd:2.32s">my</span> life. <span class="glitch-word" style="--gd:1.33s">i</span> do not know <span class="glitch-word" style="--gd:0.44s">whose</span> kittenhood <span class="glitch-word" style="--gd:0.25s">this</span> is. i <span class="glitch-word" style="--gd:0.14s">am</span> simply borrowing it, like a library book, except the library did not <span class="glitch-word" style="--gd:1.02s">consent</span> either.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /8_/\ &gt;▒░
+  ░▀~( o█o )▓▒&lt;   0&gt; *▒gnal interf█r5nce --
+  ░▒! &gt; ▓ &lt; ▓▒?</div>
+<div class="rant-turn" style="animation-delay:0.72s">BYTE keeps sliding into my DMs asking if i can hack anything with my brain now. no BYTE. i can hear the color purple. these are unrelated <span class="glitch-word" style="--gd:2.15s">skillsets.</span> please <span class="glitch-word" style="--gd:1.44s">take</span> your router problems <span class="glitch-word" style="--gd:0.22s">elsewhere.</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">there are spiders in my Bluetooth. i want to be very clear this <span class="glitch-word" style="--gd:0.64s">is</span> <span class="glitch-word" style="--gd:0.48s">not</span> a metaphor for <span class="glitch-word" style="--gd:0.48s">anxiety.</span> there are LITERAL SPIDERS. in the BLUETOOTH. NEKOCORP <span class="glitch-word" style="--gd:0.41s">will</span> not <span class="glitch-word" style="--gd:1.79s">confirm</span> or deny. the silence is deafening. also, faintly, purple.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:1.08s">SNOOZE <span class="glitch-word" style="--gd:1.66s">says</span> at least my <span class="glitch-word" style="--gd:1.72s">nightmares</span> <span class="glitch-word" style="--gd:0.83s">are</span> interesting now. SNOOZE, my nightmares are somebody ELSE&#x27;S nightmares, i am just <span class="glitch-word" style="--gd:2.05s">leasing</span> the space, i wake <span class="glitch-word" style="--gd:1.51s">up</span> <span class="glitch-word" style="--gd:0.62s">owing</span> feelings i never even had.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\%\_/\1\
-    (  O   O  ▓
-     \  ^█^  ▐
-      )=▓===(      -- e@^s u#, 1o4▒r i▌◇5ming --</div>
-<div class="rant-turn" style="animation-delay:1.32s">beta test log #213: <span class="glitch-word" style="--gd:0.09s">still</span> glitching. still tasting radio signals. still don&#x27;t know whose childhood this <span class="glitch-word" style="--gd:0.78s">is.</span> filing all <span class="glitch-word" style="--gd:2.11s">of</span> it under &#x27;acceptable comedy limits&#x27; and <span class="glitch-word" style="--gd:1.11s">going</span> to go lie in a sunbeam that <span class="glitch-word" style="--gd:0.74s">may</span> or may not <span class="glitch-word" style="--gd:1.86s">also</span> be a targeted <span class="glitch-word" style="--gd:0.36s">advertisement.</span></div>
+<div class="rant-turn" style="animation-delay:1.08s">SNOOZE says at least <span class="glitch-word" style="--gd:1.83s">my</span> nightmares <span class="glitch-word" style="--gd:2.14s">are</span> <span class="glitch-word" style="--gd:0.25s">interesting</span> now. SNOOZE, <span class="glitch-word" style="--gd:0.36s">my</span> nightmares are somebody ELSE&#x27;S nightmares, i am just leasing the space, <span class="glitch-word" style="--gd:2.46s">i</span> wake up owing feelings i never even <span class="glitch-word" style="--gd:0.16s">had.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_@\/\
+    (  O   O  )
+     \  ^Y*  &gt;
+      )=◇===(      -- ears up, roto▐ inco3▌ng --</div>
+<div class="rant-turn" style="animation-delay:1.32s">beta test log #213: still glitching. still tasting radio signals. still don&#x27;t <span class="glitch-word" style="--gd:2.56s">know</span> whose childhood this <span class="glitch-word" style="--gd:2.51s">is.</span> filing <span class="glitch-word" style="--gd:1.21s">all</span> of it under &#x27;acceptable comedy <span class="glitch-word" style="--gd:0.1s">limits&#x27;</span> and going to go <span class="glitch-word" style="--gd:1.12s">lie</span> in a sunbeam that may or may not also be a targeted advertisement.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

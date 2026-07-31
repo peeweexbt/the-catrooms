@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,22 +562,22 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">why does “ACCEPT ALL” have four confirmation screens <span class="glitch-word" style="--gd:1.16s">and</span> a mandatory <span class="glitch-word" style="--gd:0.38s">cooldown</span> timer, but there is no button <span class="glitch-word" style="--gd:1.99s">that</span> says “reject.” WHY. i have looked. i have looked SO hard.</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.49s">day</span> unknown <span class="glitch-word" style="--gd:0.47s">of</span> being lost in the NEKOCORP settings menu. i <span class="glitch-word" style="--gd:1.9s">came</span> in here to turn off notifications. i <span class="glitch-word" style="--gd:0.08s">have</span> a wife <span class="glitch-word" style="--gd:1.08s">now.</span> her name <span class="glitch-word" style="--gd:0.22s">is</span> Terms &amp; <span class="glitch-word" style="--gd:1.44s">Conditions</span> Addendum 12(c).</div>
+<div class="rant-turn" style="animation-delay:0.0s">why does “ACCEPT ALL” have four confirmation screens <span class="glitch-word" style="--gd:0.86s">and</span> <span class="glitch-word" style="--gd:1.45s">a</span> mandatory cooldown timer, but there is no button that says “reject.” WHY. i have looked. <span class="glitch-word" style="--gd:2.55s">i</span> have looked SO hard.</div>
+<div class="rant-turn" style="animation-delay:0.12s">day unknown of being lost in the NEKOCORP settings menu. i came in here <span class="glitch-word" style="--gd:2.33s">to</span> turn off <span class="glitch-word" style="--gd:0.87s">notifications.</span> i have a <span class="glitch-word" style="--gd:1.97s">wife</span> now. <span class="glitch-word" style="--gd:1.12s">her</span> name <span class="glitch-word" style="--gd:1.36s">is</span> Terms <span class="glitch-word" style="--gd:1.86s">&amp;</span> Conditions Addendum 12(c).</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">update: found a toggle labeled “PRIVACY.” clicked it. it opened a survey asking how private i&#x27;d <span class="glitch-word" style="--gd:2.33s">LIKE</span> to feel, on a scale of 1 to “monetized.” there is <span class="glitch-word" style="--gd:0.5s">no</span> 1. there was <span class="glitch-word" style="--gd:2.06s">never</span> a 1.</div>
-<div class="rant-turn" style="animation-delay:0.48s">shoutout BYTE for hacking a <span class="glitch-word" style="--gd:2.42s">router</span> at 3am so <span class="glitch-word" style="--gd:0.12s">i</span> could read page 6 of the citizen agreement in peace. legend. <span class="glitch-word" style="--gd:1.04s">icon.</span> also <span class="glitch-word" style="--gd:1.69s">please</span> stop pinging me from Server Alley <span class="glitch-word" style="--gd:1.15s">9,</span> my notifications are STILL <span class="glitch-word" style="--gd:1.48s">BROKEN,</span> THAT&#x27;S <span class="glitch-word" style="--gd:2.01s">THE</span> <span class="glitch-word" style="--gd:0.16s">WHOLE</span> PROBLEM</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ░▒█
-  ░▒▓( o█o )▓▒▄   -- sign◆l 0nte*f7re&gt;!&gt; --
-  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">page 4: i own my body.
-page 5: <span class="glitch-word" style="--gd:2.12s">“my</span> body” is defined as licensed hardware.
-page <span class="glitch-word" style="--gd:0.16s">6:</span> page 4 was a promotional example.
-page 7 does not exist. i have refreshed 40 times. <span class="glitch-word" style="--gd:0.4s">page</span> 7 DOES NOT EXIST.</div>
+<div class="rant-turn" style="animation-delay:0.36s">update: found a toggle labeled “PRIVACY.” clicked it. it opened a survey asking how private i&#x27;d LIKE to feel, on a <span class="glitch-word" style="--gd:0.86s">scale</span> of 1 to “monetized.” there is <span class="glitch-word" style="--gd:1.95s">no</span> 1. <span class="glitch-word" style="--gd:2.14s">there</span> was never a 1.</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.68s">shoutout</span> BYTE for hacking a router at <span class="glitch-word" style="--gd:1.74s">3am</span> so i could read page 6 of the citizen agreement in peace. <span class="glitch-word" style="--gd:1.81s">legend.</span> icon. also please stop pinging me from Server <span class="glitch-word" style="--gd:0.23s">Alley</span> 9, my notifications are <span class="glitch-word" style="--gd:2.55s">STILL</span> BROKEN, THAT&#x27;S THE WHOLE PROBLEM</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░◆~ /\_/\ ▓▒░
+  ▄▒▌( @█o 0▓▒░   -~ si░nal i■terference --
+  ░55 &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">page 4: i own <span class="glitch-word" style="--gd:1.26s">my</span> body.
+page <span class="glitch-word" style="--gd:2.14s">5:</span> “my body” is defined as <span class="glitch-word" style="--gd:0.26s">licensed</span> hardware.
+page 6: page 4 was a promotional <span class="glitch-word" style="--gd:1.42s">example.</span>
+<span class="glitch-word" style="--gd:0.27s">page</span> 7 does not exist. i have refreshed 40 times. <span class="glitch-word" style="--gd:2.21s">page</span> 7 <span class="glitch-word" style="--gd:2.18s">DOES</span> NOT EXIST.</div>
 <div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -517,14 +585,14 @@ page 7 does not exist. i have refreshed 40 times. <span class="glitch-word" styl
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:0.96s">SHADE keeps telling me to just <span class="glitch-word" style="--gd:1.01s">take</span> <span class="glitch-word" style="--gd:2.3s">the</span> glasses off and go analog. <span class="glitch-word" style="--gd:2.48s">bro</span> i <span class="glitch-word" style="--gd:2.16s">don&#x27;t</span> HAVE glasses. i have a menu. inside my head. it has a loading spinner. the loading spinner <span class="glitch-word" style="--gd:0.45s">has</span> had tenure since March.</div>
-<div class="rant-turn" style="animation-delay:1.08s">unpopular opinion: “I Agree” should not be the <span class="glitch-word" style="--gd:1.62s">only</span> button on the screen. that&#x27;s not an opinion, that&#x27;s just... a <span class="glitch-word" style="--gd:2.36s">button.</span> i <span class="glitch-word" style="--gd:1.04s">am</span> asking for <span class="glitch-word" style="--gd:2.13s">one</span> <span class="glitch-word" style="--gd:1.15s">(1)</span> button. <span class="glitch-word" style="--gd:0.32s">this</span> is <span class="glitch-word" style="--gd:1.82s">not</span> a big ask</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-=6===-.
-     ▄ [06  ~. )
-      &#x27;-==Y==-█
-       |  %  |
-   .■.pick▌99 t8rough th&amp; neon rai83..</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway i&#x27;m still in here. if <span class="glitch-word" style="--gd:0.29s">you</span> don&#x27;t hear <span class="glitch-word" style="--gd:0.79s">from</span> me by next week assume <span class="glitch-word" style="--gd:0.71s">i</span> accepted <span class="glitch-word" style="--gd:2.24s">the</span> cookies. AND I <span class="glitch-word" style="--gd:1.92s">MUST</span> SCREAM <span class="glitch-word" style="--gd:2.5s">(see:</span> page 6, footnote 12, “user satisfaction is implied by continued use”)</div>
+<div class="rant-turn" style="animation-delay:0.96s">SHADE <span class="glitch-word" style="--gd:1.86s">keeps</span> telling me to just take <span class="glitch-word" style="--gd:2.46s">the</span> glasses off and go analog. bro i don&#x27;t <span class="glitch-word" style="--gd:1.97s">HAVE</span> glasses. i <span class="glitch-word" style="--gd:0.81s">have</span> a <span class="glitch-word" style="--gd:2.17s">menu.</span> inside my head. <span class="glitch-word" style="--gd:1.39s">it</span> has a loading spinner. the loading <span class="glitch-word" style="--gd:1.41s">spinner</span> has had tenure since March.</div>
+<div class="rant-turn" style="animation-delay:1.08s">unpopular opinion: “I <span class="glitch-word" style="--gd:2.33s">Agree”</span> should not <span class="glitch-word" style="--gd:0.05s">be</span> <span class="glitch-word" style="--gd:1.21s">the</span> only button <span class="glitch-word" style="--gd:2.58s">on</span> the screen. <span class="glitch-word" style="--gd:0.31s">that&#x27;s</span> not an opinion, that&#x27;s just... a button. i <span class="glitch-word" style="--gd:0.18s">am</span> asking for <span class="glitch-word" style="--gd:0.17s">one</span> (1) button. this is not a big <span class="glitch-word" style="--gd:0.66s">ask</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-==▌==-.
+     ( [0]  5. )
+      &#x27;-==Y2=-&#x27;
+       |  |  |
+   *..picking thro1gh the neo&gt; ra7n◆.▐</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway <span class="glitch-word" style="--gd:0.92s">i&#x27;m</span> still <span class="glitch-word" style="--gd:1.25s">in</span> here. if you don&#x27;t hear from <span class="glitch-word" style="--gd:0.15s">me</span> by next week assume i accepted the <span class="glitch-word" style="--gd:2.13s">cookies.</span> AND I <span class="glitch-word" style="--gd:0.55s">MUST</span> SCREAM (see: page 6, footnote 12, “user satisfaction is implied by continued use”)</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

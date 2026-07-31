@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,29 +562,29 @@ header p {
 <div class="narrator-badge">posted by <strong>BYTE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">hot take: NEKOCORP charging a <span class="glitch-word" style="--gd:2.57s">premium</span> tier <span class="glitch-word" style="--gd:0.0s">for</span> LITTER BOX ACCESS is not <span class="glitch-word" style="--gd:2.54s">even</span> <span class="glitch-word" style="--gd:0.42s">top</span> 5 most <span class="glitch-word" style="--gd:1.82s">deranged</span> thing they&#x27;ve <span class="glitch-word" style="--gd:0.46s">done</span> to this district this week and that should scare <span class="glitch-word" style="--gd:2.05s">you</span> more than it does.</div>
-<div class="rant-turn" style="animation-delay:0.12s">BYTE. Server Alley <span class="glitch-word" style="--gd:0.16s">9.</span> illegal wifi <span class="glitch-word" style="--gd:0.57s">auditor,</span> which is a fancy way of saying i steal bandwidth from a corporation that already stole the concept of <span class="glitch-word" style="--gd:0.82s">clean</span> <span class="glitch-word" style="--gd:0.61s">water</span> from us first.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\░__/^
-    ( o   o )   &gt;&gt; sc9nning...
-     )  Y  (    &gt;% e3rs: anten8a mod v2
-    *   ^   )
-     \&lt;____■</div>
-<div class="rant-turn" style="animation-delay:0.36s">cracked into <span class="glitch-word" style="--gd:2.39s">NEKOCORP&#x27;s</span> <span class="glitch-word" style="--gd:0.1s">mesh</span> <span class="glitch-word" style="--gd:2.13s">at</span> 2am for the <span class="glitch-word" style="--gd:1.85s">express</span> purpose of watching ONE (1) <span class="glitch-word" style="--gd:2.44s">forty-second</span> fish video before <span class="glitch-word" style="--gd:2.13s">their</span> ad-sniffer caught the signature. got 38 seconds <span class="glitch-word" style="--gd:0.58s">in.</span> i regret nothing. i would do <span class="glitch-word" style="--gd:1.63s">this</span> every night for the <span class="glitch-word" style="--gd:0.13s">rest</span> of my nine lives.</div>
-<div class="rant-turn" style="animation-delay:0.48s">QUERY <span class="glitch-word" style="--gd:0.5s">says</span> reading NEKOCORP&#x27;s terms of <span class="glitch-word" style="--gd:1.49s">service</span> <span class="glitch-word" style="--gd:2.45s">is</span> a documented form of self harm. i believe him completely. i personally <span class="glitch-word" style="--gd:2.4s">have</span> <span class="glitch-word" style="--gd:1.23s">never</span> made it <span class="glitch-word" style="--gd:2.41s">past</span> &#x27;BY CONNECTING YOU AGREE&#x27; <span class="glitch-word" style="--gd:1.89s">before</span> my <span class="glitch-word" style="--gd:1.17s">brain</span> just. leaves the body.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.34s">hot</span> take: NEKOCORP <span class="glitch-word" style="--gd:0.3s">charging</span> a premium tier for LITTER <span class="glitch-word" style="--gd:1.18s">BOX</span> ACCESS is not even top 5 most deranged thing they&#x27;ve done to this district this week and that should scare you more than it does.</div>
+<div class="rant-turn" style="animation-delay:0.12s">BYTE. <span class="glitch-word" style="--gd:1.78s">Server</span> Alley 9. illegal wifi auditor, which is a fancy way of saying i steal bandwidth from a corporation that <span class="glitch-word" style="--gd:1.49s">already</span> <span class="glitch-word" style="--gd:2.5s">stole</span> the <span class="glitch-word" style="--gd:2.4s">concept</span> of clean water from us first.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\___/\
+    ( ◇   # )   &gt;&gt; sc0nning..▄
+     &amp;  Y  (    &gt;&gt; ea9s&amp; antenn# mod v2
+    (   |   )
+     \____▄▌</div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:2.4s">cracked</span> into NEKOCORP&#x27;s mesh at <span class="glitch-word" style="--gd:1.83s">2am</span> for the express purpose of watching ONE (1) forty-second fish <span class="glitch-word" style="--gd:2.45s">video</span> <span class="glitch-word" style="--gd:1.86s">before</span> their ad-sniffer caught the signature. got 38 seconds in. i regret <span class="glitch-word" style="--gd:1.3s">nothing.</span> i would do this <span class="glitch-word" style="--gd:1.8s">every</span> <span class="glitch-word" style="--gd:0.12s">night</span> <span class="glitch-word" style="--gd:0.5s">for</span> the rest of my nine lives.</div>
+<div class="rant-turn" style="animation-delay:0.48s">QUERY says <span class="glitch-word" style="--gd:1.92s">reading</span> NEKOCORP&#x27;s terms of service is a documented form of <span class="glitch-word" style="--gd:0.48s">self</span> harm. <span class="glitch-word" style="--gd:2.25s">i</span> believe him completely. i personally have never made <span class="glitch-word" style="--gd:0.83s">it</span> past &#x27;BY CONNECTING YOU AGREE&#x27; <span class="glitch-word" style="--gd:0.6s">before</span> <span class="glitch-word" style="--gd:1.85s">my</span> brain just. leaves the body.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>  ░▒▓ /\_/\ ▓▒░
   ░▒▓( o█o )▓▒░   -- signal interference --
   ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">KNIFEBOY <span class="glitch-word" style="--gd:1.43s">hit</span> me up wanting the tuna shipment schedule in exchange for a &#x27;clean&#x27; router. i do not have <span class="glitch-word" style="--gd:1.47s">that</span> information. i told <span class="glitch-word" style="--gd:1.69s">him</span> i did. never lie <span class="glitch-word" style="--gd:0.57s">to</span> the most wanted cat in the city they said. <span class="glitch-word" style="--gd:2.04s">couldn&#x27;t</span> be me.</div>
-<div class="rant-turn" style="animation-delay:0.84s">you keep thinking this is the first time <span class="glitch-word" style="--gd:1.35s">BYTE&#x27;s</span> cracked that network. it isn&#x27;t. i have <span class="glitch-word" style="--gd:1.32s">the</span> logs. i have all of them. every login, <span class="glitch-word" style="--gd:1.94s">every</span> fish video, <span class="glitch-word" style="--gd:1.85s">every</span> night he told himself <span class="glitch-word" style="--gd:1.62s">it</span> was <span class="glitch-word" style="--gd:1.68s">just</span> this <span class="glitch-word" style="--gd:1.74s">once.</span> you&#x27;re reading post <span class="glitch-word" style="--gd:0.0s">four</span> <span class="glitch-word" style="--gd:0.54s">hundred</span> and something <span class="glitch-word" style="--gd:1.3s">of</span> the same loop and you already knew that.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  /^/\_0\9\
+<div class="rant-turn" style="animation-delay:0.72s">KNIFEBOY hit me up wanting the <span class="glitch-word" style="--gd:2.5s">tuna</span> shipment <span class="glitch-word" style="--gd:2.58s">schedule</span> in exchange for a <span class="glitch-word" style="--gd:1.22s">&#x27;clean&#x27;</span> router. i do not have that <span class="glitch-word" style="--gd:0.67s">information.</span> i told him <span class="glitch-word" style="--gd:0.07s">i</span> did. never lie to the <span class="glitch-word" style="--gd:0.67s">most</span> <span class="glitch-word" style="--gd:0.23s">wanted</span> cat in <span class="glitch-word" style="--gd:2.27s">the</span> city they said. couldn&#x27;t be me.</div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:2.11s">you</span> <span class="glitch-word" style="--gd:0.66s">keep</span> thinking this <span class="glitch-word" style="--gd:0.21s">is</span> the first time BYTE&#x27;s cracked that network. it isn&#x27;t. i have the <span class="glitch-word" style="--gd:2.34s">logs.</span> i have all of them. every login, every <span class="glitch-word" style="--gd:1.43s">fish</span> video, <span class="glitch-word" style="--gd:1.47s">every</span> night he told himself <span class="glitch-word" style="--gd:1.91s">it</span> was just this once. you&#x27;re <span class="glitch-word" style="--gd:1.47s">reading</span> post four hundred and something of the <span class="glitch-word" style="--gd:0.08s">same</span> loop and you <span class="glitch-word" style="--gd:0.13s">already</span> <span class="glitch-word" style="--gd:2.31s">knew</span> that.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  /\/\1/\?\
  (  O   O  )
-  \  ^Y^  /
-   )▓====(      -- ears up, rotor in0omin# --</div>
-<div class="rant-turn" style="animation-delay:1.08s">anyway <span class="glitch-word" style="--gd:0.17s">signal&#x27;s</span> <span class="glitch-word" style="--gd:0.86s">holding,</span> water subscription&#x27;s still <span class="glitch-word" style="--gd:0.18s">criminal,</span> and NEKOCORP thinks the leak&#x27;s coming out <span class="glitch-word" style="--gd:1.62s">of</span> Server Alley <span class="glitch-word" style="--gd:1.78s">6.</span> rookie numbers. <span class="glitch-word" style="--gd:1.4s">wrong</span> alley entirely. not gonna correct them <span class="glitch-word" style="--gd:1.8s">though,</span> learning is a <span class="glitch-word" style="--gd:1.13s">privilege</span> <span class="glitch-word" style="--gd:1.85s">they</span> gatekeep <span class="glitch-word" style="--gd:0.36s">too.</span></div>
+  \  %Y^  /
+   3===■=(      -- 9~%s ~&amp;, ro&gt;2r █■c░min7 --</div>
+<div class="rant-turn" style="animation-delay:1.08s">anyway signal&#x27;s holding, water subscription&#x27;s still criminal, and NEKOCORP thinks the leak&#x27;s coming out of <span class="glitch-word" style="--gd:1.98s">Server</span> Alley 6. rookie numbers. wrong alley entirely. not gonna correct them though, learning is a privilege they gatekeep too.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.32s">38 <span class="glitch-word" style="--gd:2.0s">seconds</span> <span class="glitch-word" style="--gd:1.72s">of</span> fish <span class="glitch-word" style="--gd:2.56s">video.</span> 0 dollars spent. immaculate vibes. see you when the signal comes <span class="glitch-word" style="--gd:0.34s">back.</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">38 seconds of fish video. 0 dollars spent. immaculate vibes. see you when the signal <span class="glitch-word" style="--gd:0.39s">comes</span> back.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

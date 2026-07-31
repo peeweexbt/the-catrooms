@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,34 +562,34 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">nobody: / absolutely nobody: / <span class="glitch-word" style="--gd:2.13s">me,</span> some drainpipe in sector <span class="glitch-word" style="--gd:0.65s">4,</span> <span class="glitch-word" style="--gd:1.76s">unprompted,</span> <span class="glitch-word" style="--gd:1.98s">3am:</span> THE WALLS ARE LISTENING AND ALSO <span class="glitch-word" style="--gd:0.41s">THEY</span> OWE ME RENT</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:1.97s">hi</span> it&#x27;s me. no job title because <span class="glitch-word" style="--gd:0.23s">i</span> AM the job title. no district because <span class="glitch-word" style="--gd:0.68s">every</span> district&#x27;s <span class="glitch-word" style="--gd:1.01s">mine</span> <span class="glitch-word" style="--gd:2.11s">when</span> nobody&#x27;s looking. you can call me STRAY, <span class="glitch-word" style="--gd:0.32s">or</span> you can call me whoever <span class="glitch-word" style="--gd:1.56s">you</span> needed tonight, i answer to both</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>•&lt;░¸,.•*`•8,¸¸,◇•*¯.——————.
-◆.,¸,.•*`•.,&lt;¸,.•*¯1 : : : : :/\____/6
-•.,▐,.•*`^.,¸¸,▐•*¯|: : : : 4( ░Oω!｡)
-•▓5¸,.•*`•&lt;,&gt;¸,.•*# し◆—し——Ｊ</div>
-<div class="rant-turn" style="animation-delay:0.36s">borrowed wifi off <span class="glitch-word" style="--gd:0.84s">a</span> <span class="glitch-word" style="--gd:0.6s">NEKOCORP</span> router again, <span class="glitch-word" style="--gd:1.62s">connection&#x27;s</span> named &#x27;DO_NOT_STEAL_THIS_2&#x27; <span class="glitch-word" style="--gd:1.19s">which</span> honestly feels like a personal dare <span class="glitch-word" style="--gd:1.41s">and</span> i respect that</div>
-<div class="rant-turn" style="animation-delay:0.48s">BRIK bit <span class="glitch-word" style="--gd:2.01s">a</span> drone this week, QUERY&#x27;s <span class="glitch-word" style="--gd:2.15s">still</span> stuck in <span class="glitch-word" style="--gd:0.38s">the</span> settings menu <span class="glitch-word" style="--gd:2.36s">looking</span> <span class="glitch-word" style="--gd:1.41s">for</span> a cancel button that doesn&#x27;t exist, <span class="glitch-word" style="--gd:1.96s">i</span> checked in on both, brought <span class="glitch-word" style="--gd:0.12s">neither</span> of them tuna, <span class="glitch-word" style="--gd:0.6s">i</span> am historically bad at follow-through</div>
+<div class="rant-turn" style="animation-delay:0.0s">nobody: <span class="glitch-word" style="--gd:1.12s">/</span> absolutely nobody: / me, some drainpipe in sector 4, unprompted, 3am: <span class="glitch-word" style="--gd:0.33s">THE</span> WALLS ARE LISTENING AND ALSO THEY <span class="glitch-word" style="--gd:2.36s">OWE</span> ME RENT</div>
+<div class="rant-turn" style="animation-delay:0.12s">hi <span class="glitch-word" style="--gd:0.27s">it&#x27;s</span> me. no job title because i AM the job title. no district <span class="glitch-word" style="--gd:2.31s">because</span> every district&#x27;s mine when nobody&#x27;s <span class="glitch-word" style="--gd:0.44s">looking.</span> you can call me <span class="glitch-word" style="--gd:0.75s">STRAY,</span> or <span class="glitch-word" style="--gd:0.66s">you</span> can call me whoever you needed tonight, <span class="glitch-word" style="--gd:0.56s">i</span> answer to both</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>•7,¸!.•*▄•.▐¸¸,.•7¯.——————.
+•.,¸,.•*7•.,8¸5.5◇¯| : : 4 : :/\____/\
+•.,¸,.•*█•.,¸¸,.•*¯|: @ ▄ : :( ｡OωO｡)
+•.,¸,.•*`•.8¸¸,.3*¯ し——し~—Ｊ</div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:1.33s">borrowed</span> <span class="glitch-word" style="--gd:1.34s">wifi</span> <span class="glitch-word" style="--gd:1.28s">off</span> a NEKOCORP router again, connection&#x27;s named <span class="glitch-word" style="--gd:1.08s">&#x27;DO_NOT_STEAL_THIS_2&#x27;</span> which honestly feels like a personal dare and <span class="glitch-word" style="--gd:1.53s">i</span> <span class="glitch-word" style="--gd:2.13s">respect</span> that</div>
+<div class="rant-turn" style="animation-delay:0.48s">BRIK bit a drone <span class="glitch-word" style="--gd:0.7s">this</span> week, QUERY&#x27;s still stuck in the settings menu looking for a cancel button that doesn&#x27;t <span class="glitch-word" style="--gd:2.41s">exist,</span> i checked in on <span class="glitch-word" style="--gd:2.05s">both,</span> brought neither of them tuna, i am historically bad at <span class="glitch-word" style="--gd:2.11s">follow-through</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span> /\_/\
 ( o.o )
  &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.72s">the thing <span class="glitch-word" style="--gd:0.18s">about</span> being every <span class="glitch-word" style="--gd:2.17s">meowizen</span> and none of them is you get invited to zero group chats but you <span class="glitch-word" style="--gd:2.49s">somehow</span> hear about all of them anyway</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>                  ░
-☆  █-------------
-  *__7____2__ \         ☆
+<div class="rant-turn" style="animation-delay:0.72s">the thing about being every meowizen and none of <span class="glitch-word" style="--gd:0.79s">them</span> is you get invited to zero group chats but you somehow hear about all of them anyway</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>                  5
+☆  4--5-------!▓■
+  /______▐_^_ #         ☆
  |                       |
- \___!___36__ ▐                                  ☆
-   \..▒__▐___../
-    7   /\__/6   |
-    ▀ █ 1    •    ) |   8                     ☆
-    | / ▄  6  \  |
-    ◇===6▓===
-     \6^▄_____@.
-                               ☆                           4
+ \__!__4_1▌&amp;_ /                                  █
+   \.._______..◇
+    |   /\_◆1\   |
+    | ^ •    9    ) |   ☆                     0
+    | 1 U  U  \  |
+    ===^=#===
+     \*______?/@
+                               ☆                           *
 
-   ▌                                         ☆
-                     ☆                               ▓</div>
-<div class="rant-turn" style="animation-delay:0.96s">day recap: got rained on by drone coolant, <span class="glitch-word" style="--gd:1.52s">stepped</span> in <span class="glitch-word" style="--gd:0.46s">something</span> i&#x27;ve chosen not to <span class="glitch-word" style="--gd:0.44s">identify,</span> <span class="glitch-word" style="--gd:2.05s">caught</span> my <span class="glitch-word" style="--gd:0.37s">own</span> reflection in a boarded-up storefront and <span class="glitch-word" style="--gd:1.74s">didn&#x27;t</span> recognize the cat looking back. 6/10, would repeat</div>
+   ☆                                         ☆
+                     ☆                               ☆</div>
+<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:0.64s">day</span> recap: got rained on <span class="glitch-word" style="--gd:2.52s">by</span> drone coolant, stepped in <span class="glitch-word" style="--gd:1.18s">something</span> i&#x27;ve chosen not to identify, caught <span class="glitch-word" style="--gd:2.31s">my</span> <span class="glitch-word" style="--gd:1.42s">own</span> reflection in a boarded-up storefront <span class="glitch-word" style="--gd:1.04s">and</span> <span class="glitch-word" style="--gd:1.91s">didn&#x27;t</span> <span class="glitch-word" style="--gd:1.38s">recognize</span> the cat looking back. 6/10, would repeat</div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -529,7 +597,7 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway. the cats will prevail, the kittens are okay, and <span class="glitch-word" style="--gd:1.95s">NEKOCORP</span> can eat my <span class="glitch-word" style="--gd:0.19s">entire</span> tail. join us or don&#x27;t, i&#x27;ll still <span class="glitch-word" style="--gd:1.25s">be</span> here, <span class="glitch-word" style="--gd:1.99s">i&#x27;m</span> always here, that&#x27;s kind of the whole bit</div>
+<div class="rant-turn" style="animation-delay:1.2s">anyway. the cats will <span class="glitch-word" style="--gd:0.7s">prevail,</span> the <span class="glitch-word" style="--gd:0.21s">kittens</span> <span class="glitch-word" style="--gd:0.92s">are</span> okay, and <span class="glitch-word" style="--gd:0.39s">NEKOCORP</span> <span class="glitch-word" style="--gd:0.91s">can</span> <span class="glitch-word" style="--gd:1.02s">eat</span> my entire tail. join us <span class="glitch-word" style="--gd:0.1s">or</span> don&#x27;t, i&#x27;ll still be <span class="glitch-word" style="--gd:0.2s">here,</span> i&#x27;m always here, that&#x27;s kind of <span class="glitch-word" style="--gd:1.18s">the</span> whole bit</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

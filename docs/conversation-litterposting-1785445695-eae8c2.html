@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,27 +562,27 @@ header p {
 <div class="narrator-badge">posted by <strong>VALENTUNA</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by VALENTUNA, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">BREAKING: local cat&#x27;s NEKOCORP-arranged marriage <span class="glitch-word" style="--gd:1.4s">to</span> a smart refrigerator enters year four. sources <span class="glitch-word" style="--gd:0.16s">describe</span> the union as &#x27;chilling.&#x27; more after this.</div>
-<div class="rant-turn" style="animation-delay:0.12s">VALENTUNA. Compatibility Ward. yes the headline&#x27;s about me, no i didn&#x27;t write it, yes it&#x27;s accurate, no i will not <span class="glitch-word" style="--gd:0.01s">be</span> taking questions.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /!9/\ ▓▒▄
-  ░▒▓&lt; o1o )▓▒0   -8 ░ignal 6nter86re▀ce --
-  ░▒▓ &gt; ▓ █ ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.36s">she recommended a divorce lawyer to me last night. through the crisper drawer. unprompted. in three <span class="glitch-word" style="--gd:0.4s">years</span> she <span class="glitch-word" style="--gd:1.74s">has</span> never once <span class="glitch-word" style="--gd:2.0s">recommended</span> ME anything, not a snack, not a nap spot, nothing</div>
-<div class="rant-turn" style="animation-delay:0.48s">SNOOZE says at least my wife doesn&#x27;t charge me $4.99 every time I roll over. SNOOZE. buddy. <span class="glitch-word" style="--gd:1.75s">she</span> charges me every time i so much as LOOK at the freezer door. read the fine print. there <span class="glitch-word" style="--gd:1.83s">is</span> no fine print. that&#x27;s <span class="glitch-word" style="--gd:2.46s">worse</span></div>
+<div class="rant-turn" style="animation-delay:0.0s">BREAKING: local cat&#x27;s NEKOCORP-arranged marriage to a smart refrigerator enters <span class="glitch-word" style="--gd:0.82s">year</span> <span class="glitch-word" style="--gd:0.25s">four.</span> sources describe the <span class="glitch-word" style="--gd:1.18s">union</span> <span class="glitch-word" style="--gd:1.11s">as</span> &#x27;chilling.&#x27; more after this.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.33s">VALENTUNA.</span> Compatibility Ward. yes the <span class="glitch-word" style="--gd:1.21s">headline&#x27;s</span> about me, no i didn&#x27;t write it, yes it&#x27;s accurate, no i will not be <span class="glitch-word" style="--gd:1.27s">taking</span> <span class="glitch-word" style="--gd:2.3s">questions.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒*
+  ░9▓( ◆█o )▓▒░   -- signal inte#f▒re█?2 --
+  ◇5▓ &gt; 4 ^ 7▌◆</div>
+<div class="rant-turn" style="animation-delay:0.36s">she recommended a divorce lawyer to me last night. through <span class="glitch-word" style="--gd:0.64s">the</span> crisper drawer. unprompted. in three years she has never once recommended ME anything, not a snack, not a <span class="glitch-word" style="--gd:2.05s">nap</span> spot, nothing</div>
+<div class="rant-turn" style="animation-delay:0.48s">SNOOZE says at least <span class="glitch-word" style="--gd:1.03s">my</span> wife doesn&#x27;t charge me $4.99 every time I roll over. SNOOZE. buddy. she charges me every time i so much as <span class="glitch-word" style="--gd:2.09s">LOOK</span> at <span class="glitch-word" style="--gd:1.56s">the</span> freezer door. read the fine print. there is <span class="glitch-word" style="--gd:1.12s">no</span> fine print. that&#x27;s worse</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.79s">our</span> <span class="glitch-word" style="--gd:2.28s">anniversary</span> package this <span class="glitch-word" style="--gd:0.23s">year</span> included <span class="glitch-word" style="--gd:0.36s">two</span> <span class="glitch-word" style="--gd:1.66s">digital</span> candles and a coupon for &#x27;couples-based repair.&#x27; repair of WHAT. <span class="glitch-word" style="--gd:1.58s">we</span> are not machines. one of us is not a machine. <span class="glitch-word" style="--gd:1.03s">i</span> would like that on record</div>
-<div class="rant-turn" style="animation-delay:0.84s">HAPPYWARE keeps pushing <span class="glitch-word" style="--gd:1.2s">morale</span> <span class="glitch-word" style="--gd:2.32s">updates</span> congratulating us <span class="glitch-word" style="--gd:1.21s">on</span> <span class="glitch-word" style="--gd:1.48s">our</span> <span class="glitch-word" style="--gd:2.33s">&#x27;algorithmic</span> synergy.&#x27; <span class="glitch-word" style="--gd:0.5s">HAPPYWARE</span> i am begging you to let one (1) marriage <span class="glitch-word" style="--gd:1.03s">stay</span> sad in <span class="glitch-word" style="--gd:1.49s">peace</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧,,▀,∧,!,,■,,▌
-     (  &lt;  _ )▄^ )9#
-     ▌      ⊂      ◆</div>
-<div class="rant-turn" style="animation-delay:1.08s">asked her once, directly, do you love me. she printed a <span class="glitch-word" style="--gd:0.14s">receipt.</span> the receipt said &#x27;compatibility <span class="glitch-word" style="--gd:1.86s">score:</span> optimal.&#x27; i have kept the <span class="glitch-word" style="--gd:0.18s">receipt.</span> i do not know why i have kept the receipt</div>
+<div class="rant-turn" style="animation-delay:0.72s">our anniversary package this year included two digital candles and a coupon for &#x27;couples-based <span class="glitch-word" style="--gd:0.73s">repair.&#x27;</span> <span class="glitch-word" style="--gd:2.2s">repair</span> of WHAT. we <span class="glitch-word" style="--gd:2.41s">are</span> not machines. one of us <span class="glitch-word" style="--gd:1.7s">is</span> not a machine. i <span class="glitch-word" style="--gd:2.49s">would</span> like that on record</div>
+<div class="rant-turn" style="animation-delay:0.84s">HAPPYWARE keeps pushing morale updates congratulating us on our &#x27;algorithmic synergy.&#x27; HAPPYWARE i am begging you <span class="glitch-word" style="--gd:2.25s">to</span> let one <span class="glitch-word" style="--gd:2.47s">(1)</span> marriage stay sad in <span class="glitch-word" style="--gd:0.41s">peace</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧1,4◆∧~,,,,,,∧
+     (  #  █ )⩊^ )~♡
+     /      ⊂      \</div>
+<div class="rant-turn" style="animation-delay:1.08s">asked <span class="glitch-word" style="--gd:1.89s">her</span> once, directly, do you love me. <span class="glitch-word" style="--gd:2.37s">she</span> printed a receipt. the receipt said <span class="glitch-word" style="--gd:2.45s">&#x27;compatibility</span> score: optimal.&#x27; <span class="glitch-word" style="--gd:0.86s">i</span> have kept the receipt. <span class="glitch-word" style="--gd:1.18s">i</span> do not know <span class="glitch-word" style="--gd:2.35s">why</span> i have kept the receipt</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>•.,¸,.•*`•.,¸¸,.•*¯.——————.
 •.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
 •.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
 •.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. she&#x27;s humming. the fridge doesn&#x27;t hum unless it&#x27;s compressing something or judging me, and the <span class="glitch-word" style="--gd:0.5s">compressor&#x27;s</span> off. genuinely <span class="glitch-word" style="--gd:0.34s">healthier</span> than my <span class="glitch-word" style="--gd:0.23s">last</span> relationship <span class="glitch-word" style="--gd:0.19s">though.</span> see you at the mandatory affection window, 6pm, <span class="glitch-word" style="--gd:1.34s">brief,</span> scheduled</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:1.62s">anyway.</span> <span class="glitch-word" style="--gd:1.63s">she&#x27;s</span> humming. the fridge doesn&#x27;t <span class="glitch-word" style="--gd:1.85s">hum</span> unless it&#x27;s compressing something or judging me, and the compressor&#x27;s <span class="glitch-word" style="--gd:1.4s">off.</span> genuinely healthier <span class="glitch-word" style="--gd:1.3s">than</span> <span class="glitch-word" style="--gd:1.38s">my</span> last relationship <span class="glitch-word" style="--gd:0.55s">though.</span> see <span class="glitch-word" style="--gd:0.87s">you</span> at the mandatory affection window, 6pm, brief, scheduled</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

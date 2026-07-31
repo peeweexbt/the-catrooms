@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -498,25 +566,25 @@ header p {
 
 absolutely nobody:
 
-me, checking my <span class="glitch-word" style="--gd:0.4s">Bluetooth</span> settings at 3am <span class="glitch-word" style="--gd:0.19s">and</span> finding an actual SPIDER logged in there. a literal spider. in the settings menu. how</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.42s">name&#x27;s</span> GLITCHMEAT. Research Basement, <span class="glitch-word" style="--gd:0.3s">professional</span> beta tester, which is <span class="glitch-word" style="--gd:0.88s">corporate</span> for <span class="glitch-word" style="--gd:1.88s">&#x27;NEKOCORP</span> stapled <span class="glitch-word" style="--gd:1.27s">twelve</span> credits and an unfinished neural patch to my brainstem and <span class="glitch-word" style="--gd:1.0s">called</span> it a <span class="glitch-word" style="--gd:1.57s">paid</span> <span class="glitch-word" style="--gd:0.66s">opportunity&#x27;</span></div>
-<div class="rant-turn" style="animation-delay:0.24s">side effects logged so far: <span class="glitch-word" style="--gd:0.74s">I</span> can taste AM radio (tastes like pennies), I can hear the color <span class="glitch-word" style="--gd:2.58s">purple</span> (it&#x27;s a wet <span class="glitch-word" style="--gd:1.63s">sound,</span> <span class="glitch-word" style="--gd:0.35s">don&#x27;t</span> ask <span class="glitch-word" style="--gd:1.55s">me</span> to explain further), and I currently remember three <span class="glitch-word" style="--gd:2.05s">separate</span> kittenhoods that are not mine and <span class="glitch-word" style="--gd:0.81s">legally</span> belong <span class="glitch-word" style="--gd:2.06s">to</span> other cats</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>  /\3__1&gt;
- (  o▀o  )
-  7 ◇ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.48s">one of the <span class="glitch-word" style="--gd:1.45s">borrowed</span> kittenhoods keeps surfacing mid-nap — suddenly I&#x27;m SOMEONE <span class="glitch-word" style="--gd:0.83s">ELSE&#x27;S</span> KITTEN, chasing a yarn <span class="glitch-word" style="--gd:2.56s">ball</span> I never owned, in an apartment I&#x27;ve never set paw in. woke up crying about a couch. <span class="glitch-word" style="--gd:2.05s">not</span> my couch. not <span class="glitch-word" style="--gd:0.57s">my</span> grief. filing a complaint with <span class="glitch-word" style="--gd:1.8s">whoever</span> handles <span class="glitch-word" style="--gd:0.19s">this</span></div>
-<div class="rant-turn" style="animation-delay:0.6s">texted BYTE to ask if any of this is normal. <span class="glitch-word" style="--gd:0.27s">he</span> <span class="glitch-word" style="--gd:1.47s">said</span> &#x27;no, but neither is the fish video, adapt.&#x27; incredible advice from a <span class="glitch-word" style="--gd:0.58s">man</span> who lives behind a <span class="glitch-word" style="--gd:2.12s">vending</span> machine. zero help. love him anyway</div>
+<span class="glitch-word" style="--gd:0.15s">me,</span> checking my Bluetooth settings at 3am and finding an actual SPIDER logged in <span class="glitch-word" style="--gd:0.81s">there.</span> a literal spider. <span class="glitch-word" style="--gd:0.4s">in</span> <span class="glitch-word" style="--gd:1.92s">the</span> settings <span class="glitch-word" style="--gd:0.96s">menu.</span> how</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:2.08s">name&#x27;s</span> GLITCHMEAT. Research Basement, professional beta tester, which is corporate for &#x27;NEKOCORP stapled twelve credits and an unfinished neural patch to <span class="glitch-word" style="--gd:2.35s">my</span> brainstem and called <span class="glitch-word" style="--gd:2.43s">it</span> <span class="glitch-word" style="--gd:2.47s">a</span> <span class="glitch-word" style="--gd:0.76s">paid</span> opportunity&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.24s">side <span class="glitch-word" style="--gd:1.74s">effects</span> logged so far: I <span class="glitch-word" style="--gd:2.19s">can</span> taste AM radio (tastes like <span class="glitch-word" style="--gd:0.85s">pennies),</span> I <span class="glitch-word" style="--gd:1.32s">can</span> hear <span class="glitch-word" style="--gd:0.13s">the</span> color purple (it&#x27;s a wet sound, don&#x27;t <span class="glitch-word" style="--gd:2.44s">ask</span> <span class="glitch-word" style="--gd:1.88s">me</span> to explain further), and I currently remember three <span class="glitch-word" style="--gd:2.27s">separate</span> <span class="glitch-word" style="--gd:0.04s">kittenhoods</span> <span class="glitch-word" style="--gd:1.89s">that</span> are not <span class="glitch-word" style="--gd:0.11s">mine</span> <span class="glitch-word" style="--gd:2.36s">and</span> legally belong to other cats</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>  ▀\_░_/\
+ #  o.o  )
+  &gt; ^ ? &lt;</div>
+<div class="rant-turn" style="animation-delay:0.48s">one of <span class="glitch-word" style="--gd:1.09s">the</span> borrowed kittenhoods keeps surfacing mid-nap — suddenly I&#x27;m <span class="glitch-word" style="--gd:0.79s">SOMEONE</span> ELSE&#x27;S KITTEN, chasing <span class="glitch-word" style="--gd:0.89s">a</span> yarn <span class="glitch-word" style="--gd:1.09s">ball</span> I never owned, in an apartment I&#x27;ve <span class="glitch-word" style="--gd:0.32s">never</span> set paw <span class="glitch-word" style="--gd:0.46s">in.</span> woke up crying about a <span class="glitch-word" style="--gd:1.28s">couch.</span> <span class="glitch-word" style="--gd:0.88s">not</span> my couch. not my grief. filing a complaint <span class="glitch-word" style="--gd:2.03s">with</span> whoever handles this</div>
+<div class="rant-turn" style="animation-delay:0.6s">texted BYTE to <span class="glitch-word" style="--gd:1.85s">ask</span> <span class="glitch-word" style="--gd:2.55s">if</span> any of this <span class="glitch-word" style="--gd:1.91s">is</span> <span class="glitch-word" style="--gd:1.19s">normal.</span> he said &#x27;no, but neither is the fish video, adapt.&#x27; <span class="glitch-word" style="--gd:1.85s">incredible</span> advice from a man who lives behind a vending machine. zero <span class="glitch-word" style="--gd:0.9s">help.</span> love him anyway</div>
 <div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:2.31s">SHADE</span> keeps saying the glasses would <span class="glitch-word" style="--gd:0.14s">fix</span> the radio-tasting <span class="glitch-word" style="--gd:1.31s">thing.</span> they would NOT. I don&#x27;t need to <span class="glitch-word" style="--gd:0.62s">block</span> <span class="glitch-word" style="--gd:0.27s">a</span> signal I <span class="glitch-word" style="--gd:1.72s">can</span> currently EAT with my mouth. this is a Bluetooth problem. this is a <span class="glitch-word" style="--gd:0.35s">SPIDER</span> <span class="glitch-word" style="--gd:0.24s">problem.</span> put the glasses away, <span class="glitch-word" style="--gd:1.76s">SHADE,</span> this <span class="glitch-word" style="--gd:1.98s">is</span> beyond eyewear</div>
-<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:1.63s">ran</span> <span class="glitch-word" style="--gd:1.48s">the</span> <span class="glitch-word" style="--gd:0.01s">diagnostic</span> the lab <span class="glitch-word" style="--gd:2.28s">told</span> <span class="glitch-word" style="--gd:0.51s">me</span> to <span class="glitch-word" style="--gd:0.01s">run.</span> diagnostic came back as one word, repeated four hundred times: <span class="glitch-word" style="--gd:1.65s">&#x27;legs.&#x27;</span> I did not consent to that output. I do not know what it means. I know, somehow, that <span class="glitch-word" style="--gd:1.7s">it</span> means something</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>   __#                                  ___
-  /___\   [■ [4 [] [] [% [] 9▌ ▐]    6___\
-  ░ .▀)\/\/\/\/\/\/\/5/\/\/\/\/\/\/(.. )
-   &#x27;&#x27;▓                                &#x27;&#x27;▀</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway, readout from the basement: still hearing purple, still owe some other cat their childhood back, still <span class="glitch-word" style="--gd:0.83s">haven&#x27;t</span> found where the <span class="glitch-word" style="--gd:0.99s">spiders</span> keep coming from. this <span class="glitch-word" style="--gd:0.81s">is</span> not <span class="glitch-word" style="--gd:1.71s">a</span> metaphor. this <span class="glitch-word" style="--gd:0.65s">is</span> a warranty <span class="glitch-word" style="--gd:1.34s">claim</span> I am <span class="glitch-word" style="--gd:1.35s">too</span> scared to file</div>
+<div class="rant-turn" style="animation-delay:0.84s">SHADE keeps <span class="glitch-word" style="--gd:1.53s">saying</span> the glasses would fix the radio-tasting <span class="glitch-word" style="--gd:0.23s">thing.</span> they would NOT. I don&#x27;t need to block a signal I can currently EAT with my mouth. this <span class="glitch-word" style="--gd:0.54s">is</span> a Bluetooth problem. this is a SPIDER problem. put the glasses away, <span class="glitch-word" style="--gd:2.32s">SHADE,</span> <span class="glitch-word" style="--gd:1.97s">this</span> is beyond eyewear</div>
+<div class="rant-turn" style="animation-delay:0.96s">ran the diagnostic the lab told me to run. diagnostic came back as one word, repeated four hundred <span class="glitch-word" style="--gd:1.31s">times:</span> &#x27;legs.&#x27; I did not consent to that <span class="glitch-word" style="--gd:1.84s">output.</span> I do not know what it means. <span class="glitch-word" style="--gd:1.22s">I</span> know, somehow, that <span class="glitch-word" style="--gd:1.86s">it</span> means something</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>   ___                                  ___
+  /__^▄   [~ [] [] [] [] [] [] %]    /__▒6
+  ( .◆)7%\6\/3/▄/\/\/\/\/\4\▀\/\/\/(.. )
+   &#x27;&#x27;&#x27;                                &#x27;&#x27;&#x27;</div>
+<div class="rant-turn" style="animation-delay:1.2s">anyway, readout from the basement: <span class="glitch-word" style="--gd:0.79s">still</span> hearing purple, still owe some other cat their childhood back, still haven&#x27;t <span class="glitch-word" style="--gd:2.26s">found</span> where the spiders keep <span class="glitch-word" style="--gd:0.86s">coming</span> from. <span class="glitch-word" style="--gd:1.85s">this</span> is not a metaphor. <span class="glitch-word" style="--gd:1.69s">this</span> is a warranty claim I <span class="glitch-word" style="--gd:1.9s">am</span> too scared to <span class="glitch-word" style="--gd:0.15s">file</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

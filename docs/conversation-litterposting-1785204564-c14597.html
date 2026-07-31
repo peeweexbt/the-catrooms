@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,33 +562,33 @@ header p {
 <div class="narrator-badge">posted by <strong>BYTE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">hot take: paying for wifi <span class="glitch-word" style="--gd:0.36s">is</span> a <span class="glitch-word" style="--gd:1.41s">war</span> crime and i will <span class="glitch-word" style="--gd:0.23s">be</span> filing this take with the UN <span class="glitch-word" style="--gd:2.47s">if</span> the UN <span class="glitch-word" style="--gd:1.87s">still</span> exists, which, per my last <span class="glitch-word" style="--gd:1.28s">packet</span> capture, is currently unclear.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BYTE. Server Alley 9. <span class="glitch-word" style="--gd:0.75s">official</span> title <span class="glitch-word" style="--gd:2.01s">&#x27;illegal</span> wifi auditor,&#x27; unofficial title &#x27;the <span class="glitch-word" style="--gd:1.92s">reason</span> your router says <span class="glitch-word" style="--gd:1.33s">UNAUTHORIZED</span> <span class="glitch-word" style="--gd:0.83s">DEVICE</span> at <span class="glitch-word" style="--gd:1.86s">3am,&#x27;</span> that&#x27;s <span class="glitch-word" style="--gd:2.55s">me,</span> hi, hello, i&#x27;m in <span class="glitch-word" style="--gd:0.63s">your</span> <span class="glitch-word" style="--gd:1.25s">walls,</span> i&#x27;m in your <span class="glitch-word" style="--gd:0.58s">walls</span> for the WIFI, not weird <span class="glitch-word" style="--gd:0.7s">reasons,</span> <span class="glitch-word" style="--gd:2.28s">i</span> want that on record.</div>
+<div class="rant-turn" style="animation-delay:0.0s">hot take: <span class="glitch-word" style="--gd:2.09s">paying</span> for wifi is a <span class="glitch-word" style="--gd:0.63s">war</span> crime and <span class="glitch-word" style="--gd:0.67s">i</span> <span class="glitch-word" style="--gd:0.1s">will</span> be <span class="glitch-word" style="--gd:1.71s">filing</span> <span class="glitch-word" style="--gd:0.29s">this</span> take with the UN if the UN still exists, which, per my last packet capture, <span class="glitch-word" style="--gd:2.54s">is</span> currently unclear.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BYTE. Server Alley 9. official title &#x27;illegal wifi auditor,&#x27; unofficial title &#x27;the reason your router says <span class="glitch-word" style="--gd:0.22s">UNAUTHORIZED</span> DEVICE at 3am,&#x27; that&#x27;s me, hi, hello, <span class="glitch-word" style="--gd:0.79s">i&#x27;m</span> <span class="glitch-word" style="--gd:0.29s">in</span> <span class="glitch-word" style="--gd:1.2s">your</span> walls, i&#x27;m <span class="glitch-word" style="--gd:1.14s">in</span> your <span class="glitch-word" style="--gd:2.04s">walls</span> for the WIFI, not weird reasons, i want that on record.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.36s">my landlord is a vending machine. it charges <span class="glitch-word" style="--gd:1.97s">&#x27;SUBSCRIPTION</span> <span class="glitch-word" style="--gd:2.04s">TIER:</span> HYDRATION+&#x27; to drink a puddle <span class="glitch-word" style="--gd:1.55s">that</span> forms UNDER ITSELF. i live behind it. i have <span class="glitch-word" style="--gd:0.9s">never</span> once paid the puddle tax. i <span class="glitch-word" style="--gd:0.2s">drink</span> for free like a king, like an outlaw, like a man who <span class="glitch-word" style="--gd:1.82s">actually</span> read the <span class="glitch-word" style="--gd:2.17s">terms</span> and <span class="glitch-word" style="--gd:2.37s">found</span> the <span class="glitch-word" style="--gd:1.71s">loophole.</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">asked QUERY <span class="glitch-word" style="--gd:0.48s">once</span> if <span class="glitch-word" style="--gd:2.43s">squatting</span> behind a vending machine counts as <span class="glitch-word" style="--gd:1.12s">&#x27;unlicensed</span> occupancy.&#x27; he stared at me for <span class="glitch-word" style="--gd:0.1s">four</span> <span class="glitch-word" style="--gd:1.77s">full</span> minutes, said &#x27;i don&#x27;t want to know,&#x27; and went back into the <span class="glitch-word" style="--gd:0.98s">settings</span> menu. legend. absolute legend. <span class="glitch-word" style="--gd:2.2s">still</span> trapped in there btw.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/*_/\/\
+<div class="rant-turn" style="animation-delay:0.36s">my landlord <span class="glitch-word" style="--gd:0.46s">is</span> a <span class="glitch-word" style="--gd:2.42s">vending</span> machine. it <span class="glitch-word" style="--gd:1.85s">charges</span> &#x27;SUBSCRIPTION TIER: <span class="glitch-word" style="--gd:1.39s">HYDRATION+&#x27;</span> to <span class="glitch-word" style="--gd:0.12s">drink</span> a puddle that forms <span class="glitch-word" style="--gd:0.33s">UNDER</span> ITSELF. i live behind it. i have never once paid the puddle tax. i drink for free like a king, like an outlaw, like <span class="glitch-word" style="--gd:0.39s">a</span> man who actually read the terms and found the loophole.</div>
+<div class="rant-turn" style="animation-delay:0.48s">asked QUERY once if squatting behind a vending machine counts as <span class="glitch-word" style="--gd:1.38s">&#x27;unlicensed</span> occupancy.&#x27; he <span class="glitch-word" style="--gd:2.36s">stared</span> at me for four full minutes, said &#x27;i don&#x27;t want to know,&#x27; and went back into the settings menu. legend. absolute legend. still trapped in <span class="glitch-word" style="--gd:1.18s">there</span> btw.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     ?\/\_/\/\
     (  O   O  )
-     8  9Y0  /
-      )&lt;▄0==(      07 ears up, r~t▓r incoming --</div>
-<div class="rant-turn" style="animation-delay:0.72s">traded KNIFEBOY a <span class="glitch-word" style="--gd:1.75s">router</span> <span class="glitch-word" style="--gd:1.46s">last</span> week for <span class="glitch-word" style="--gd:0.43s">two</span> crates of tuna, he wanted wifi <span class="glitch-word" style="--gd:1.58s">thrown</span> in <span class="glitch-word" style="--gd:1.86s">for</span> free, i said no — wifi comes with silence and <span class="glitch-word" style="--gd:0.46s">mystery,</span> that&#x27;s <span class="glitch-word" style="--gd:0.6s">the</span> whole product. man&#x27;s <span class="glitch-word" style="--gd:0.54s">dodging</span> a <span class="glitch-word" style="--gd:1.33s">40k</span> bounty and still haggling over bandwidth. respect the hustle.</div>
-<div class="rant-turn" style="animation-delay:0.84s">SHADE keeps telling me to just <span class="glitch-word" style="--gd:1.87s">wear</span> the anti-surveillance glasses instead of hacking routers every night. i said glasses don&#x27;t get me a free fish video. he said &#x27;neither does <span class="glitch-word" style="--gd:1.03s">prison.&#x27;</span> <span class="glitch-word" style="--gd:1.29s">we</span> agreed to disagree. mostly because he&#x27;s currently <span class="glitch-word" style="--gd:0.01s">missing</span> his actual eyes.</div>
+     \  6&gt;^  /
+      )==?==(      -- ea7s up9 r#tor i■▐3mi1g -4</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.34s">traded</span> KNIFEBOY <span class="glitch-word" style="--gd:2.05s">a</span> router last week for two crates of tuna, he wanted wifi thrown <span class="glitch-word" style="--gd:2.26s">in</span> for free, i said no — <span class="glitch-word" style="--gd:1.89s">wifi</span> comes with silence and mystery, that&#x27;s the whole product. <span class="glitch-word" style="--gd:0.63s">man&#x27;s</span> dodging a <span class="glitch-word" style="--gd:1.51s">40k</span> bounty and still haggling over bandwidth. respect the hustle.</div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:1.96s">SHADE</span> keeps telling me to just wear the anti-surveillance glasses <span class="glitch-word" style="--gd:0.4s">instead</span> <span class="glitch-word" style="--gd:1.68s">of</span> hacking routers every night. i said glasses don&#x27;t <span class="glitch-word" style="--gd:0.83s">get</span> <span class="glitch-word" style="--gd:0.72s">me</span> a free fish video. he said &#x27;neither does prison.&#x27; we agreed to disagree. mostly <span class="glitch-word" style="--gd:1.22s">because</span> he&#x27;s currently missing his actual eyes.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>        ,--.
        ( o.o)__
         &#x27;--&#x27;   \___
                  \  \__/\_/\
                   \_(  o.o  )
                      &gt; ^ &lt; (watching the towers blink)</div>
-<div class="rant-turn" style="animation-delay:1.08s">NEKOCORP officially classifies cat litter as a &#x27;premium feature.&#x27; i consider that an invitation. <span class="glitch-word" style="--gd:1.12s">i</span> have made my opinion known on their front steps. plural. steps. <span class="glitch-word" style="--gd:0.55s">not</span> step. i do <span class="glitch-word" style="--gd:1.47s">not</span> do things halfway, <span class="glitch-word" style="--gd:0.64s">i</span> do <span class="glitch-word" style="--gd:1.96s">them</span> at scale.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>                              ╱|@
-                         =(˚˕ 。 ▓
+<div class="rant-turn" style="animation-delay:1.08s">NEKOCORP officially classifies <span class="glitch-word" style="--gd:0.38s">cat</span> litter as a &#x27;premium feature.&#x27; i consider that <span class="glitch-word" style="--gd:0.94s">an</span> invitation. i have made my opinion known on their <span class="glitch-word" style="--gd:1.69s">front</span> steps. <span class="glitch-word" style="--gd:1.85s">plural.</span> steps. not <span class="glitch-word" style="--gd:0.2s">step.</span> i do not <span class="glitch-word" style="--gd:0.89s">do</span> things halfway, i do them at scale.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>                              ╱|■
+                         =(˚˕ 。 7
                              |、 ~〵
-                            ▌し   5◇)づ</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. fish video&#x27;s buffering, water&#x27;s free, router&#x27;s stolen, front steps remain structurally unsafe for nekocorp employees. byte out.</div>
+                            じし   ˍ,)づ</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:0.7s">anyway.</span> <span class="glitch-word" style="--gd:0.33s">fish</span> video&#x27;s buffering, water&#x27;s free, <span class="glitch-word" style="--gd:2.36s">router&#x27;s</span> stolen, front steps remain structurally unsafe for nekocorp employees. byte out.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

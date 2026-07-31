@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,29 +562,29 @@ header p {
 <div class="narrator-badge">posted by <strong>BYTE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">UPLINK LOG #4,412: still <span class="glitch-word" style="--gd:1.3s">not</span> caught. <span class="glitch-word" style="--gd:0.4s">still</span> stealing <span class="glitch-word" style="--gd:1.13s">bandwidth.</span> still not sorry. logging this from a rooftop router I have no legal right to be inside of.</div>
-<div class="rant-turn" style="animation-delay:0.12s">for the <span class="glitch-word" style="--gd:2.24s">new</span> <span class="glitch-word" style="--gd:2.07s">followers</span> — BYTE, Server Alley 9, professional <span class="glitch-word" style="--gd:0.59s">gap</span> in NEKOCORP&#x27;s firewall. <span class="glitch-word" style="--gd:0.06s">I</span> live <span class="glitch-word" style="--gd:1.31s">behind</span> a vending machine <span class="glitch-word" style="--gd:1.21s">that</span> sells SUBSCRIPTION water. $6.99/mo for H2O. I drink puddle instead. puddle is the free tier.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\___▐\
-    ( ▀   o )   &gt;&gt; s4annin▀..■
-     )  Y  (    &gt;░ e▀rs: a6tenna m▐d ◆0
-    (   |   2
-     0&amp;!___?</div>
-<div class="rant-turn" style="animation-delay:0.36s">cracked <span class="glitch-word" style="--gd:0.69s">the</span> <span class="glitch-word" style="--gd:1.49s">rooftop</span> signal <span class="glitch-word" style="--gd:0.58s">at</span> 3am <span class="glitch-word" style="--gd:1.7s">for</span> one (1) fish video. 240p. no audio. 40 seconds before the ad-detection sniffs me out and tries to sell me a fishing simulator.</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.27s">worth</span> it. would do the felony again. HAVE done the felony again, in fact, several times, this is basically my Tuesday routine now.</div>
+<div class="rant-turn" style="animation-delay:0.0s">UPLINK LOG #4,412: still not caught. still stealing bandwidth. still not sorry. logging <span class="glitch-word" style="--gd:0.29s">this</span> from <span class="glitch-word" style="--gd:1.2s">a</span> <span class="glitch-word" style="--gd:2.07s">rooftop</span> <span class="glitch-word" style="--gd:1.03s">router</span> I have no legal <span class="glitch-word" style="--gd:0.47s">right</span> to be inside of.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:1.39s">for</span> <span class="glitch-word" style="--gd:0.41s">the</span> new followers — BYTE, Server Alley 9, professional gap in NEKOCORP&#x27;s firewall. I live behind a <span class="glitch-word" style="--gd:1.3s">vending</span> machine that <span class="glitch-word" style="--gd:1.97s">sells</span> <span class="glitch-word" style="--gd:1.89s">SUBSCRIPTION</span> water. $6.99/mo for H2O. I drink puddle instead. <span class="glitch-word" style="--gd:1.65s">puddle</span> is the free tier.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     ▀\___/\
+    ( o   █ )   ■&gt; s&amp;a1nin▓...
+     6  Y  (    &gt;&gt; ears: antenna m▐d &lt;2
+    (   7   9
+     \___&lt;_9</div>
+<div class="rant-turn" style="animation-delay:0.36s">cracked the rooftop signal at 3am for one (1) fish <span class="glitch-word" style="--gd:2.49s">video.</span> 240p. no audio. <span class="glitch-word" style="--gd:1.34s">40</span> seconds before the ad-detection sniffs me out and <span class="glitch-word" style="--gd:1.5s">tries</span> to sell me <span class="glitch-word" style="--gd:1.87s">a</span> fishing <span class="glitch-word" style="--gd:1.9s">simulator.</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">worth it. would do the felony <span class="glitch-word" style="--gd:2.14s">again.</span> HAVE <span class="glitch-word" style="--gd:1.77s">done</span> the felony again, in fact, several times, this is basically my Tuesday routine now.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>  ░▒▓ /\_/\ ▓▒░
   ░▒▓( o█o )▓▒░   -- signal interference --
   ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">meanwhile NEKOCORP just announced cat litter is now a PREMIUM FEATURE. tier 3 subscription. it&#x27;s SAND. <span class="glitch-word" style="--gd:1.54s">they</span> <span class="glitch-word" style="--gd:1.7s">want</span> me to subscribe to SAND that <span class="glitch-word" style="--gd:0.56s">was</span> already on the ground.</div>
-<div class="rant-turn" style="animation-delay:0.84s">so, in response, I shit on their front steps. free. no login required. zero buffering. this is the one <span class="glitch-word" style="--gd:0.86s">service</span> I <span class="glitch-word" style="--gd:1.9s">refuse</span> to let them monetize.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\◆/\
-       ( ■.- 1
-        &gt; ^ &lt;
-   &lt;~~◇~▀5||~~~~9~[DA%A 8A#!? LI▐KED]</div>
-<div class="rant-turn" style="animation-delay:1.08s">KNIFEBOY hit the loading dock again last night, left <span class="glitch-word" style="--gd:0.94s">another</span> <span class="glitch-word" style="--gd:1.71s">note</span> on the crates, absolute icon behavior. SHADE says the glasses ban is &#x27;a badge of honor.&#x27; also an icon. I <span class="glitch-word" style="--gd:0.04s">just</span> want my fish video back, I have <span class="glitch-word" style="--gd:1.82s">simple</span> needs.</div>
+<div class="rant-turn" style="animation-delay:0.72s">meanwhile NEKOCORP just announced cat <span class="glitch-word" style="--gd:0.08s">litter</span> is now a PREMIUM FEATURE. <span class="glitch-word" style="--gd:1.68s">tier</span> 3 subscription. it&#x27;s <span class="glitch-word" style="--gd:0.52s">SAND.</span> they want me to <span class="glitch-word" style="--gd:1.4s">subscribe</span> <span class="glitch-word" style="--gd:1.81s">to</span> SAND that was already on the ground.</div>
+<div class="rant-turn" style="animation-delay:0.84s">so, in response, I shit on their front steps. free. no login required. zero <span class="glitch-word" style="--gd:0.92s">buffering.</span> this is <span class="glitch-word" style="--gd:1.71s">the</span> one service I <span class="glitch-word" style="--gd:1.62s">refuse</span> to let them monetize.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\7%\
+       ( 57- 5
+        5 █ *
+   ~~~▓~~|■░~~2~~%[DATA JAC^: 6INK#D]</div>
+<div class="rant-turn" style="animation-delay:1.08s">KNIFEBOY hit the <span class="glitch-word" style="--gd:1.38s">loading</span> dock again last <span class="glitch-word" style="--gd:0.87s">night,</span> left another note on the crates, absolute icon behavior. SHADE says the glasses ban is <span class="glitch-word" style="--gd:0.6s">&#x27;a</span> badge of honor.&#x27; also an icon. I just <span class="glitch-word" style="--gd:1.67s">want</span> my fish video back, I have <span class="glitch-word" style="--gd:1.13s">simple</span> needs.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.32s">signal&#x27;s holding for maybe nine more minutes. pulling up the fish video again. don&#x27;t tell the landlord router I&#x27;m still here. LOG <span class="glitch-word" style="--gd:0.87s">ENDS.</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">signal&#x27;s holding for maybe nine <span class="glitch-word" style="--gd:0.05s">more</span> minutes. pulling up the <span class="glitch-word" style="--gd:1.77s">fish</span> video <span class="glitch-word" style="--gd:0.72s">again.</span> don&#x27;t tell the landlord router I&#x27;m <span class="glitch-word" style="--gd:1.95s">still</span> here. LOG ENDS.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

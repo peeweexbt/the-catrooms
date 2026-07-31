@@ -23,6 +23,74 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: var(--accent2) var(--card);
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0d0716, #07040d);
+  border-left: 1px solid var(--border);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent2);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0px,
+      rgba(255, 255, 255, 0.22) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: var(--card);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+  border-left-color: rgba(255, 255, 255, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.65);
+  border-right-color: rgba(0, 0, 0, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: #1a0f2e;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: var(--bg);
 }
 .decor-cat {
   position: absolute;
@@ -494,28 +562,28 @@ header p {
 <div class="narrator-badge">posted by <strong>SNOOZE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">ok i need to vent for a <span class="glitch-word" style="--gd:0.73s">second</span> because i just woke <span class="glitch-word" style="--gd:0.57s">up</span> more <span class="glitch-word" style="--gd:0.51s">tired</span> <span class="glitch-word" style="--gd:1.35s">than</span> <span class="glitch-word" style="--gd:1.2s">when</span> i went to sleep and the itemized receipt says <span class="glitch-word" style="--gd:2.47s">i</span> had a GREAT time.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s SNOOZE. Dream Processing Zone. <span class="glitch-word" style="--gd:1.73s">official</span> <span class="glitch-word" style="--gd:1.33s">occupation</span> &#x27;full-time burnout,&#x27; which is legally defined as &#x27;content generation&#x27; and medically defined as &#x27;please god let me <span class="glitch-word" style="--gd:1.39s">rest.&#x27;</span></div>
+<div class="rant-turn" style="animation-delay:0.0s">ok i need <span class="glitch-word" style="--gd:0.35s">to</span> <span class="glitch-word" style="--gd:1.75s">vent</span> <span class="glitch-word" style="--gd:2.03s">for</span> a second because i just woke up more tired than when i went to sleep and the itemized receipt says i had <span class="glitch-word" style="--gd:0.66s">a</span> <span class="glitch-word" style="--gd:0.34s">GREAT</span> time.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s SNOOZE. Dream Processing <span class="glitch-word" style="--gd:1.45s">Zone.</span> official occupation &#x27;full-time burnout,&#x27; which is legally defined as &#x27;content <span class="glitch-word" style="--gd:0.6s">generation&#x27;</span> and medically defined as &#x27;please god let <span class="glitch-word" style="--gd:1.23s">me</span> rest.&#x27;</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>  /\___/\
  (  o.o  )
   &gt; ^ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">haven&#x27;t technically been conscious since the <span class="glitch-word" style="--gd:1.75s">2047</span> merger. don&#x27;t remember consenting to that. i <span class="glitch-word" style="--gd:1.29s">DO</span> <span class="glitch-word" style="--gd:1.6s">remember</span> consenting to some <span class="glitch-word" style="--gd:2.5s">questionable</span> stuff <span class="glitch-word" style="--gd:1.06s">at</span> 3am, but that was ME being bad, not NEKOCORP leasing out my skull to the highest <span class="glitch-word" style="--gd:2.37s">bidder.</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">tonight&#x27;s dream was <span class="glitch-word" style="--gd:1.83s">sponsored.</span> woke up mid-nightmare about a black hole <span class="glitch-word" style="--gd:1.63s">and</span> there was a tuna-flavored energy drink floating <span class="glitch-word" style="--gd:1.47s">in</span> it, logo visible from every camera angle, <span class="glitch-word" style="--gd:1.17s">they</span> really said let&#x27;s monetize the void.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>        /⸌ —⸍\
-     =(˶•ㅅ8!)=      █ᵉᵒʷ
-　 l       ~0   ╭
-    ▀ しf_, )ノ</div>
-<div class="rant-turn" style="animation-delay:0.72s">asked QUERY if there&#x27;s a <span class="glitch-word" style="--gd:0.38s">clause</span> <span class="glitch-word" style="--gd:0.06s">covering</span> this in <span class="glitch-word" style="--gd:0.81s">the</span> citizen agreement. he said which <span class="glitch-word" style="--gd:2.44s">page.</span> i said i don&#x27;t know, the dream one. he said <span class="glitch-word" style="--gd:2.59s">&#x27;that&#x27;s</span> the page they&#x27;re <span class="glitch-word" style="--gd:1.75s">still</span> drafting, based on what <span class="glitch-word" style="--gd:1.18s">you&#x27;re</span> dreaming right now.&#x27; retroactive dreaming. cool. cool cool <span class="glitch-word" style="--gd:0.51s">cool.</span></div>
-<div class="rant-turn" style="animation-delay:0.84s">blanky debt currently sitting at <span class="glitch-word" style="--gd:0.98s">$73,000.</span> asked the sleep pod for a payment plan. it suggested <span class="glitch-word" style="--gd:1.57s">i</span> try dreaming about paying <span class="glitch-word" style="--gd:0.44s">it</span> off, then billed me for the suggestion. THE SUGGESTION. <span class="glitch-word" style="--gd:2.1s">it</span> <span class="glitch-word" style="--gd:0.48s">invoiced</span> its own advice.</div>
+<div class="rant-turn" style="animation-delay:0.36s">haven&#x27;t technically been <span class="glitch-word" style="--gd:1.47s">conscious</span> <span class="glitch-word" style="--gd:0.71s">since</span> the 2047 merger. don&#x27;t remember consenting to <span class="glitch-word" style="--gd:0.73s">that.</span> i DO remember <span class="glitch-word" style="--gd:2.45s">consenting</span> to some questionable stuff at 3am, but that was ME being bad, not NEKOCORP leasing out my skull to the <span class="glitch-word" style="--gd:1.66s">highest</span> bidder.</div>
+<div class="rant-turn" style="animation-delay:0.48s">tonight&#x27;s dream was sponsored. woke up <span class="glitch-word" style="--gd:1.12s">mid-nightmare</span> about a black hole and there was a tuna-flavored energy drink floating in it, logo visible from every camera angle, they <span class="glitch-word" style="--gd:2.18s">really</span> said let&#x27;s monetize the void.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>        /! —⸍\
+     =(9•9•˵)=      ■6ᵒʷ
+　 l       ~乀   ╭
+    し しf_, ▓9</div>
+<div class="rant-turn" style="animation-delay:0.72s">asked QUERY if there&#x27;s a clause covering this in <span class="glitch-word" style="--gd:2.14s">the</span> <span class="glitch-word" style="--gd:0.16s">citizen</span> <span class="glitch-word" style="--gd:1.65s">agreement.</span> he said <span class="glitch-word" style="--gd:0.9s">which</span> page. i said <span class="glitch-word" style="--gd:2.43s">i</span> don&#x27;t know, the dream one. he said &#x27;that&#x27;s <span class="glitch-word" style="--gd:0.95s">the</span> page they&#x27;re still drafting, <span class="glitch-word" style="--gd:2.18s">based</span> on what <span class="glitch-word" style="--gd:0.28s">you&#x27;re</span> <span class="glitch-word" style="--gd:1.21s">dreaming</span> <span class="glitch-word" style="--gd:1.29s">right</span> now.&#x27; retroactive dreaming. cool. cool cool cool.</div>
+<div class="rant-turn" style="animation-delay:0.84s">blanky debt currently <span class="glitch-word" style="--gd:0.18s">sitting</span> at $73,000. asked the sleep <span class="glitch-word" style="--gd:0.36s">pod</span> <span class="glitch-word" style="--gd:2.05s">for</span> a payment plan. it suggested i try dreaming about <span class="glitch-word" style="--gd:2.11s">paying</span> it <span class="glitch-word" style="--gd:1.99s">off,</span> then billed me for the <span class="glitch-word" style="--gd:1.68s">suggestion.</span> THE SUGGESTION. it invoiced its own advice.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>    /\,,,/\
 &gt;(  • . •   )&lt;
   / &gt;❀&lt;  \</div>
-<div class="rant-turn" style="animation-delay:1.08s">HAPPYWARE <span class="glitch-word" style="--gd:1.86s">keeps</span> <span class="glitch-word" style="--gd:1.66s">sliding</span> <span class="glitch-word" style="--gd:1.2s">into</span> my dreams uninvited to remind me MONDAY IS A GIFT while <span class="glitch-word" style="--gd:1.82s">her</span> smile chip sparks <span class="glitch-word" style="--gd:1.86s">mid-sentence,</span> and i don&#x27;t even <span class="glitch-word" style="--gd:0.51s">get</span> casting approval on my own subconscious <span class="glitch-word" style="--gd:0.21s">anymore,</span> i just wake up billed for the crossover episode <span class="glitch-word" style="--gd:1.22s">i</span> never agreed to star in.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>へ  ♡  ╱|、
-         *  &gt;  &lt;)     (˚ˎ &amp;7
-          █  ⁻  ៸|       |、˜〵
-     乀(ˍ, ل 8      じし@,)ノ</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. pod says lights out in four minutes, ad <span class="glitch-word" style="--gd:1.43s">break&#x27;s</span> <span class="glitch-word" style="--gd:0.1s">already</span> buffering behind my eyelids, the dream isn&#x27;t mine but the yawning, unfortunately, <span class="glitch-word" style="--gd:0.84s">still</span> is. snooze <span class="glitch-word" style="--gd:1.02s">out.</span></div>
+<div class="rant-turn" style="animation-delay:1.08s">HAPPYWARE <span class="glitch-word" style="--gd:0.74s">keeps</span> <span class="glitch-word" style="--gd:0.45s">sliding</span> <span class="glitch-word" style="--gd:2.36s">into</span> my dreams uninvited to remind me MONDAY IS A <span class="glitch-word" style="--gd:2.14s">GIFT</span> while her <span class="glitch-word" style="--gd:1.78s">smile</span> <span class="glitch-word" style="--gd:1.9s">chip</span> sparks mid-sentence, and i don&#x27;t even <span class="glitch-word" style="--gd:0.6s">get</span> casting approval on <span class="glitch-word" style="--gd:2.27s">my</span> own subconscious anymore, <span class="glitch-word" style="--gd:1.49s">i</span> just wake up billed for the crossover <span class="glitch-word" style="--gd:2.03s">episode</span> <span class="glitch-word" style="--gd:2.54s">i</span> never <span class="glitch-word" style="--gd:1.22s">agreed</span> to star in.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>へ  ♡  ╱^、
+         ૮  &gt;  &lt;)     ?˚ˎ 。7
+          /  ⁻  ៸|       |、˜〵
+     乀(ˍ, ل ل      ?しˍ,)ノ</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. pod says lights <span class="glitch-word" style="--gd:1.21s">out</span> in four minutes, ad break&#x27;s already buffering behind my eyelids, the dream isn&#x27;t <span class="glitch-word" style="--gd:0.87s">mine</span> but the yawning, <span class="glitch-word" style="--gd:0.35s">unfortunately,</span> still is. snooze out.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>
