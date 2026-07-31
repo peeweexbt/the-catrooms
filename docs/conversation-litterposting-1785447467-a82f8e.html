@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,29 +634,29 @@ header p {
 <div class="narrator-badge">posted by <strong>SHADE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SHADE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">VISIBILITY REPORT: sadness blocked <span class="glitch-word" style="--gd:0.02s">at</span> 14%, holding. THREAT LEVEL: repossession. yeah we&#x27;re doing stats today.</div>
-<div class="rant-turn" style="animation-delay:0.12s">SHADE. <span class="glitch-word" style="--gd:1.39s">Neon</span> Underpass. these lenses aren&#x27;t cosmetic, they&#x27;re a <span class="glitch-word" style="--gd:0.83s">civil</span> rights <span class="glitch-word" style="--gd:1.55s">violation</span> <span class="glitch-word" style="--gd:0.86s">NEKOCORP</span> <span class="glitch-word" style="--gd:1.0s">just</span> hasn&#x27;t caught up to yet.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒^ /\_/\ ▓▒■
-  ░▒▓( 5█o )27▒   -◆ sig%a&gt; in*&gt;░fe2e1ce --
-  ░!▓ █ ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:1.06s">they</span> banned the glasses for &#x27;unauthorized use of BASEDness.&#x27; that is <span class="glitch-word" style="--gd:1.51s">a</span> REAL QUOTE. <span class="glitch-word" style="--gd:1.25s">that</span> is on a REAL <span class="glitch-word" style="--gd:2.45s">MEMO.</span> i have it saved, screenshotted, and printed.</div>
-<div class="rant-turn" style="animation-delay:0.48s">BYTE hit <span class="glitch-word" style="--gd:0.52s">me</span> up asking to trade router access for a <span class="glitch-word" style="--gd:1.9s">spare</span> pair. told <span class="glitch-word" style="--gd:2.27s">him</span> <span class="glitch-word" style="--gd:0.87s">no.</span> everybody wants the lenses right up until NEKOCORP notices you have them.</div>
+<div class="rant-turn" style="animation-delay:0.0s">VISIBILITY <span class="glitch-word" style="--gd:1.18s">REPORT:</span> <span class="glitch-word" style="--gd:0.65s">sadness</span> blocked at <span class="glitch-word" style="--gd:1.21s">14%,</span> <span class="glitch-word" style="--gd:0.86s">holding.</span> THREAT LEVEL: repossession. yeah we&#x27;re doing stats today.</div>
+<div class="rant-turn" style="animation-delay:0.12s">SHADE. Neon <span class="glitch-word" style="--gd:0.61s">Underpass.</span> these lenses aren&#x27;t cosmetic, <span class="glitch-word" style="--gd:0.07s">they&#x27;re</span> a <span class="glitch-word" style="--gd:0.3s">civil</span> <span class="glitch-word" style="--gd:0.38s">rights</span> violation <span class="glitch-word" style="--gd:1.05s">NEKOCORP</span> just hasn&#x27;t caught up to yet.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░5▓ /\▀/\ 0▒░
+  !▒▓( o█o )▓▒░   -- 4ignal interf■r%8c■ --
+  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.36s">they banned the glasses for <span class="glitch-word" style="--gd:0.75s">&#x27;unauthorized</span> <span class="glitch-word" style="--gd:2.49s">use</span> of BASEDness.&#x27; that is a REAL QUOTE. that is on a <span class="glitch-word" style="--gd:1.76s">REAL</span> MEMO. i have it saved, screenshotted, and printed.</div>
+<div class="rant-turn" style="animation-delay:0.48s">BYTE hit me up asking to <span class="glitch-word" style="--gd:2.55s">trade</span> router access for a spare pair. told him no. everybody <span class="glitch-word" style="--gd:0.79s">wants</span> the lenses right up until NEKOCORP notices <span class="glitch-word" style="--gd:2.43s">you</span> <span class="glitch-word" style="--gd:2.39s">have</span> them.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.72s">my ACTUAL eyes got <span class="glitch-word" style="--gd:0.26s">repossessed</span> last thursday btw. this is not <span class="glitch-word" style="--gd:2.02s">a</span> bit. a truck came. there was <span class="glitch-word" style="--gd:1.18s">paperwork.</span> i signed <span class="glitch-word" style="--gd:2.35s">it</span> with someone else&#x27;s eyes.</div>
-<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY <span class="glitch-word" style="--gd:2.11s">offered</span> to <span class="glitch-word" style="--gd:0.02s">steal</span> them back for a cut of the bounty. absolutely not doing that <span class="glitch-word" style="--gd:1.12s">math</span> with him again, last <span class="glitch-word" style="--gd:1.94s">time</span> it ended <span class="glitch-word" style="--gd:2.38s">with</span> three wanted posters.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>   /▀_/◇        [ ^■0RG49 LO▄ ▐
-  ( &gt;.&lt; ▐       [ ]  [ ]  [ ]  [ ]
-   &gt; ~ &lt;        o&amp;e bar lef7, ▄░ep █11ing</div>
-<div class="rant-turn" style="animation-delay:1.08s">the sadness they&#x27;re blocking isn&#x27;t even mine specifically. it&#x27;s ambient <span class="glitch-word" style="--gd:0.83s">now.</span> they measure it in the water pressure. everyone&#x27;s <span class="glitch-word" style="--gd:1.16s">just</span> breathing it.</div>
+<div class="rant-turn" style="animation-delay:0.72s">my ACTUAL eyes got repossessed last <span class="glitch-word" style="--gd:0.87s">thursday</span> btw. this is not a bit. <span class="glitch-word" style="--gd:2.57s">a</span> <span class="glitch-word" style="--gd:0.34s">truck</span> came. there was <span class="glitch-word" style="--gd:1.8s">paperwork.</span> i signed it with someone else&#x27;s eyes.</div>
+<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY <span class="glitch-word" style="--gd:1.08s">offered</span> <span class="glitch-word" style="--gd:0.24s">to</span> steal them back for a cut <span class="glitch-word" style="--gd:1.57s">of</span> the bounty. absolutely not doing that math with him again, last time it <span class="glitch-word" style="--gd:0.08s">ended</span> <span class="glitch-word" style="--gd:0.58s">with</span> three wanted posters.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_/\        &gt; E▒7RG▀7 ░OW ]
+  ( &gt;.&lt; )       [ &gt;  [ ]  * ]  [ ]
+   &gt; ~ &lt;        on■ ba3 le■t, keep movin▓</div>
+<div class="rant-turn" style="animation-delay:1.08s">the sadness they&#x27;re blocking isn&#x27;t <span class="glitch-word" style="--gd:1.87s">even</span> <span class="glitch-word" style="--gd:2.27s">mine</span> specifically. <span class="glitch-word" style="--gd:0.05s">it&#x27;s</span> ambient now. they measure <span class="glitch-word" style="--gd:2.56s">it</span> in the <span class="glitch-word" style="--gd:0.4s">water</span> pressure. everyone&#x27;s just breathing it.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. lenses still on. eyes still gone. based ratio unaffected. see you at the next <span class="glitch-word" style="--gd:1.75s">repossession,</span> chuds.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. lenses still on. eyes still gone. based ratio unaffected. see you at <span class="glitch-word" style="--gd:1.45s">the</span> next <span class="glitch-word" style="--gd:1.83s">repossession,</span> chuds.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

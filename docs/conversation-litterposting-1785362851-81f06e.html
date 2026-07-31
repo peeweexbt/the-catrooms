@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,13 +634,13 @@ header p {
 <div class="narrator-badge">posted by <strong>BRIK</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">why does every <span class="glitch-word" style="--gd:2.26s">drone</span> in this <span class="glitch-word" style="--gd:2.29s">district</span> fly like it&#x27;s never once been bitten before? do they not talk to <span class="glitch-word" style="--gd:2.46s">each</span> other. <span class="glitch-word" style="--gd:2.05s">is</span> there no drone group <span class="glitch-word" style="--gd:0.83s">chat</span> <span class="glitch-word" style="--gd:1.02s">warning</span> them about me.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BRIK. <span class="glitch-word" style="--gd:0.43s">ex-KILLDOZER</span> operator. <span class="glitch-word" style="--gd:1.96s">current</span> district: technically &quot;Demolished,&quot; <span class="glitch-word" style="--gd:1.97s">which</span> used to be called &quot;my apartment&quot; before NEKOCORP replaced it with a holographic parking lot and my wife with <span class="glitch-word" style="--gd:0.66s">a</span> <span class="glitch-word" style="--gd:0.88s">cat</span> made of flesh-toned light. <span class="glitch-word" style="--gd:0.92s">she</span> still waves at me sometimes. the wave is also holographic. nothing is real. bite count remains very real.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_/\/%
-    (  O   ▐  &gt;
-     \  ^Y^  /
-      )=====(      -! ears up% rotor i9c^#in■ --</div>
-<div class="rant-turn" style="animation-delay:0.36s">asked my old shift manager one (1) question, why do <span class="glitch-word" style="--gd:2.28s">execs</span> get twelve fish breaks a shift and demolition <span class="glitch-word" style="--gd:0.91s">cats</span> get <span class="glitch-word" style="--gd:2.13s">one</span> communal <span class="glitch-word" style="--gd:0.46s">scrap</span> of tuna split six ways. <span class="glitch-word" style="--gd:1.13s">next</span> morning my whole building was gone. I have learned <span class="glitch-word" style="--gd:1.09s">to</span> keep questions to myself. <span class="glitch-word" style="--gd:1.57s">this</span> rant <span class="glitch-word" style="--gd:2.34s">does</span> <span class="glitch-word" style="--gd:1.61s">not</span> <span class="glitch-word" style="--gd:0.97s">count</span> as a question. <span class="glitch-word" style="--gd:1.47s">this</span> is a public service announcement.</div>
+<div class="rant-turn" style="animation-delay:0.0s">why does every drone in this district fly like it&#x27;s <span class="glitch-word" style="--gd:1.99s">never</span> once been bitten before? <span class="glitch-word" style="--gd:0.69s">do</span> they not <span class="glitch-word" style="--gd:1.28s">talk</span> to each other. is there no drone group <span class="glitch-word" style="--gd:0.1s">chat</span> warning them <span class="glitch-word" style="--gd:1.42s">about</span> me.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BRIK. ex-KILLDOZER operator. <span class="glitch-word" style="--gd:1.47s">current</span> district: technically &quot;Demolished,&quot; which <span class="glitch-word" style="--gd:0.29s">used</span> to be called &quot;my apartment&quot; before NEKOCORP replaced it <span class="glitch-word" style="--gd:1.62s">with</span> a holographic parking lot and my wife with a cat <span class="glitch-word" style="--gd:2.46s">made</span> of flesh-toned light. she still waves at <span class="glitch-word" style="--gd:0.4s">me</span> sometimes. <span class="glitch-word" style="--gd:2.09s">the</span> wave is also holographic. nothing is real. bite count remains very real.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\◆\_/^/\
+    (  O   O  )
+     \  ^Y^  3
+      )&lt;===%(      -- @ar◇ u*, ?o░83 i▄#omi▒▀ --</div>
+<div class="rant-turn" style="animation-delay:0.36s">asked my old shift manager one (1) <span class="glitch-word" style="--gd:0.56s">question,</span> why do execs get <span class="glitch-word" style="--gd:0.4s">twelve</span> fish breaks a shift and demolition cats get <span class="glitch-word" style="--gd:2.19s">one</span> communal scrap of tuna split six ways. next morning my whole building was gone. I have learned to keep <span class="glitch-word" style="--gd:1.51s">questions</span> to myself. this rant does not count as a question. <span class="glitch-word" style="--gd:1.91s">this</span> <span class="glitch-word" style="--gd:1.32s">is</span> a public service announcement.</div>
 <div class="rant-turn ascii" style="animation-delay:0.48s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -587,19 +648,19 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:0.6s">biting a surveillance <span class="glitch-word" style="--gd:0.4s">drone</span> out <span class="glitch-word" style="--gd:1.17s">of</span> the air is not violence it <span class="glitch-word" style="--gd:1.89s">is</span> CARDIO. it is a WELLNESS ROUTINE. my vent has excellent air flow and zero rent and I have never once felt more free, please stop calling <span class="glitch-word" style="--gd:0.87s">it</span> a mental health crisis, <span class="glitch-word" style="--gd:1.31s">it</span> is a lifestyle brand.</div>
-<div class="rant-turn" style="animation-delay:0.72s">the report called me a domestic extremist. <span class="glitch-word" style="--gd:0.76s">my</span> mother, reading the same report, texted back <span class="glitch-word" style="--gd:1.27s">one</span> word: HANDSOME. that&#x27;s it. that&#x27;s the whole family&#x27;s editorial position. I have made my peace with it.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\___/\
-    ( o   o )   &gt;&gt; 2cannin6...
-     )  Y  (    &gt;&gt; &gt;ars: antenna mod v2
-    (   |   )
-     \_____/</div>
-<div class="rant-turn" style="animation-delay:0.96s">SHADE keeps telling me the glasses would help me spot drones before they spot me. brother I don&#x27;t want to spot them <span class="glitch-word" style="--gd:1.6s">early.</span> I want the element of surprise. that&#x27;s <span class="glitch-word" style="--gd:2.4s">the</span> whole hobby. that&#x27;s the only <span class="glitch-word" style="--gd:0.88s">hobby</span> I have left.</div>
-<div class="rant-turn" style="animation-delay:1.08s">POPUP messaged asking if I want <span class="glitch-word" style="--gd:0.06s">to</span> co-brand my drone-biting as <span class="glitch-word" style="--gd:2.07s">a</span> NEKOCORP <span class="glitch-word" style="--gd:2.22s">wellness</span> initiative, sponsorship deal, the works. told him the <span class="glitch-word" style="--gd:1.18s">day</span> I bite <span class="glitch-word" style="--gd:2.38s">a</span> drone FOR them instead of AGAINST them is the day <span class="glitch-word" style="--gd:2.28s">they</span> <span class="glitch-word" style="--gd:0.04s">can</span> replace me with a hologram too. he said &quot;noted&quot; which is corporate for &quot;we&#x27;re <span class="glitch-word" style="--gd:0.72s">doing</span> <span class="glitch-word" style="--gd:1.68s">it</span> anyway eventually.&quot;</div>
+<div class="rant-turn" style="animation-delay:0.6s"><span class="glitch-word" style="--gd:0.18s">biting</span> a <span class="glitch-word" style="--gd:0.04s">surveillance</span> drone out of the air <span class="glitch-word" style="--gd:2.0s">is</span> not violence it <span class="glitch-word" style="--gd:1.04s">is</span> CARDIO. it is a WELLNESS ROUTINE. <span class="glitch-word" style="--gd:1.17s">my</span> vent has excellent air flow <span class="glitch-word" style="--gd:0.61s">and</span> zero rent and I <span class="glitch-word" style="--gd:2.29s">have</span> never <span class="glitch-word" style="--gd:1.28s">once</span> <span class="glitch-word" style="--gd:1.53s">felt</span> more free, please stop <span class="glitch-word" style="--gd:0.58s">calling</span> it a mental health crisis, it is <span class="glitch-word" style="--gd:0.84s">a</span> <span class="glitch-word" style="--gd:2.28s">lifestyle</span> brand.</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:0.69s">the</span> report called me a <span class="glitch-word" style="--gd:1.21s">domestic</span> extremist. my mother, reading the same report, <span class="glitch-word" style="--gd:1.93s">texted</span> <span class="glitch-word" style="--gd:1.5s">back</span> one word: HANDSOME. that&#x27;s it. that&#x27;s the whole family&#x27;s editorial position. I have made <span class="glitch-word" style="--gd:2.11s">my</span> peace with it.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\&amp;__/\
+    ( 5   o )   &gt;&gt; sc~▌n?!g.^.
+     )  #  (    &gt;&gt; ears: antenna mod v2
+    (   &gt;   2
+     \_▀_▒_/</div>
+<div class="rant-turn" style="animation-delay:0.96s">SHADE keeps <span class="glitch-word" style="--gd:0.7s">telling</span> me the glasses would help me <span class="glitch-word" style="--gd:1.2s">spot</span> drones before they spot me. <span class="glitch-word" style="--gd:1.21s">brother</span> I don&#x27;t want to spot them early. I want the element of surprise. that&#x27;s the whole hobby. that&#x27;s the only hobby I have left.</div>
+<div class="rant-turn" style="animation-delay:1.08s">POPUP <span class="glitch-word" style="--gd:0.86s">messaged</span> asking if I want to co-brand my drone-biting as a NEKOCORP wellness initiative, sponsorship <span class="glitch-word" style="--gd:0.28s">deal,</span> the works. told him the day I bite a drone FOR them instead of AGAINST <span class="glitch-word" style="--gd:1.13s">them</span> is the day they can replace me <span class="glitch-word" style="--gd:0.63s">with</span> a hologram too. he said &quot;noted&quot; which <span class="glitch-word" style="--gd:0.31s">is</span> <span class="glitch-word" style="--gd:0.56s">corporate</span> for &quot;we&#x27;re doing it <span class="glitch-word" style="--gd:2.55s">anyway</span> eventually.&quot;</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. vent&#x27;s drafty, drone <span class="glitch-word" style="--gd:2.31s">count&#x27;s</span> down three <span class="glitch-word" style="--gd:2.29s">from</span> <span class="glitch-word" style="--gd:0.39s">yesterday,</span> hologram wife waved again on schedule. bite count going <span class="glitch-word" style="--gd:1.25s">up,</span> rent <span class="glitch-word" style="--gd:2.27s">staying</span> <span class="glitch-word" style="--gd:1.44s">at</span> zero, mother <span class="glitch-word" style="--gd:1.26s">still</span> <span class="glitch-word" style="--gd:1.86s">saying</span> HANDSOME. that&#x27;s the whole update. going quiet before the next rotor shows up—</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. vent&#x27;s drafty, drone count&#x27;s down three from <span class="glitch-word" style="--gd:0.09s">yesterday,</span> hologram wife waved <span class="glitch-word" style="--gd:1.21s">again</span> on schedule. bite count going up, rent staying at zero, <span class="glitch-word" style="--gd:0.46s">mother</span> still <span class="glitch-word" style="--gd:1.24s">saying</span> HANDSOME. that&#x27;s the whole update. going quiet <span class="glitch-word" style="--gd:1.13s">before</span> the next rotor shows up—</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,31 +634,31 @@ header p {
 <div class="narrator-badge">posted by <strong>KNIFEBOY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.71s">BREAKING:</span> local stray achieves new personal record, current bounty sitting at <span class="glitch-word" style="--gd:1.88s">40,000</span> NEKOCORP <span class="glitch-word" style="--gd:0.73s">loyalty</span> points, <span class="glitch-word" style="--gd:0.55s">official</span> <span class="glitch-word" style="--gd:1.0s">description</span> <span class="glitch-word" style="--gd:2.55s">reads</span> &#x27;smol fan of <span class="glitch-word" style="--gd:2.55s">cat</span> foids, destroyer <span class="glitch-word" style="--gd:0.3s">of</span> feline <span class="glitch-word" style="--gd:2.02s">chuds.&#x27;</span> <span class="glitch-word" style="--gd:0.5s">that&#x27;s</span> me. that&#x27;s the segment. thanks for tuning in.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s KNIFEBOY. Restricted Loading Dock. i <span class="glitch-word" style="--gd:1.91s">steal</span> corporate <span class="glitch-word" style="--gd:0.02s">tuna</span> shipments and leave a handwritten note in the empty crate. the note always says the same thing. i <span class="glitch-word" style="--gd:2.31s">am</span> not creative, i am CONSISTENT, there&#x27;s a difference.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.47s">BREAKING:</span> local stray achieves new personal record, current <span class="glitch-word" style="--gd:0.12s">bounty</span> <span class="glitch-word" style="--gd:1.24s">sitting</span> <span class="glitch-word" style="--gd:2.51s">at</span> 40,000 NEKOCORP loyalty <span class="glitch-word" style="--gd:0.63s">points,</span> <span class="glitch-word" style="--gd:0.49s">official</span> <span class="glitch-word" style="--gd:0.9s">description</span> reads &#x27;smol fan of cat foids, destroyer of feline chuds.&#x27; <span class="glitch-word" style="--gd:2.22s">that&#x27;s</span> me. that&#x27;s the segment. thanks for <span class="glitch-word" style="--gd:0.23s">tuning</span> <span class="glitch-word" style="--gd:1.5s">in.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.25s">name&#x27;s</span> KNIFEBOY. Restricted Loading <span class="glitch-word" style="--gd:2.54s">Dock.</span> <span class="glitch-word" style="--gd:0.78s">i</span> steal corporate tuna shipments and leave a handwritten note in the <span class="glitch-word" style="--gd:2.59s">empty</span> <span class="glitch-word" style="--gd:0.73s">crate.</span> the note always says <span class="glitch-word" style="--gd:2.0s">the</span> same thing. i am not creative, i am CONSISTENT, there&#x27;s a difference.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s haul: fourteen crates <span class="glitch-word" style="--gd:1.18s">labeled</span> &#x27;ARTISANAL TUNA&#x27; <span class="glitch-word" style="--gd:1.09s">in</span> the exact same stencil font as the <span class="glitch-word" style="--gd:2.5s">word</span> EVIDENCE. <span class="glitch-word" style="--gd:1.12s">left</span> my note anyway. it <span class="glitch-word" style="--gd:1.01s">says</span> &#x27;nice supply <span class="glitch-word" style="--gd:1.81s">chain,</span> <span class="glitch-word" style="--gd:2.15s">CHUD.&#x27;</span> every time. it&#x27;s basically my signature.</div>
-<div class="rant-turn" style="animation-delay:0.48s">NEKOCORP bumped the bounty again. 40k <span class="glitch-word" style="--gd:2.16s">points</span> <span class="glitch-word" style="--gd:1.52s">now,</span> up from 38. the points EXPIRE before anyone can actually catch me and collect <span class="glitch-word" style="--gd:2.37s">them.</span> capitalism keeps outsmarting itself and I&#x27;m simply along for the <span class="glitch-word" style="--gd:1.89s">ride.</span> crate fifteen, here I come.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒8 3\_/\ ▒9░
-  ░▒▓( o█o )▓9░   -- !igna◆ i^3▌r▌e7e~c6 --
-  ░9▓ &gt; ▓ &lt; ▓~░</div>
-<div class="rant-turn" style="animation-delay:0.72s">SHADE texted &#x27;you good&#x27; and i said <span class="glitch-word" style="--gd:1.98s">&#x27;not</span> sure but the vibes are immaculate&#x27; and he sent the <span class="glitch-word" style="--gd:2.35s">glasses</span> emoji back, which is either a threat or a compliment from <span class="glitch-word" style="--gd:2.44s">him,</span> unclear, he&#x27;s <span class="glitch-word" style="--gd:2.21s">the</span> only cat who <span class="glitch-word" style="--gd:0.37s">can</span> pull <span class="glitch-word" style="--gd:1.75s">off</span> ambiguous <span class="glitch-word" style="--gd:1.67s">menace</span> over SMS.</div>
-<div class="rant-turn" style="animation-delay:0.84s">BYTE offered me a discounted router <span class="glitch-word" style="--gd:0.1s">in</span> exchange for two crates <span class="glitch-word" style="--gd:2.15s">of</span> tuna. brother i don&#x27;t need wifi, i need you to help me <span class="glitch-word" style="--gd:1.71s">spoof</span> the loading <span class="glitch-word" style="--gd:1.67s">dock&#x27;s</span> motion sensors. priorities, my guy. <span class="glitch-word" style="--gd:2.58s">we&#x27;ll</span> talk fish <span class="glitch-word" style="--gd:0.41s">video</span> <span class="glitch-word" style="--gd:1.52s">later.</span></div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:1.49s">today&#x27;s</span> haul: <span class="glitch-word" style="--gd:1.68s">fourteen</span> crates labeled &#x27;ARTISANAL <span class="glitch-word" style="--gd:0.77s">TUNA&#x27;</span> in the exact same stencil font <span class="glitch-word" style="--gd:1.48s">as</span> the word EVIDENCE. left my note anyway. <span class="glitch-word" style="--gd:0.09s">it</span> says &#x27;nice supply chain, CHUD.&#x27; every <span class="glitch-word" style="--gd:0.5s">time.</span> it&#x27;s <span class="glitch-word" style="--gd:0.31s">basically</span> my signature.</div>
+<div class="rant-turn" style="animation-delay:0.48s">NEKOCORP bumped the bounty again. <span class="glitch-word" style="--gd:2.45s">40k</span> points <span class="glitch-word" style="--gd:1.12s">now,</span> up from 38. the points EXPIRE before anyone can actually <span class="glitch-word" style="--gd:1.85s">catch</span> me and collect them. capitalism keeps outsmarting itself <span class="glitch-word" style="--gd:2.35s">and</span> I&#x27;m simply along for the <span class="glitch-word" style="--gd:0.16s">ride.</span> crate fifteen, here I come.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
+  ░▒▓▀ o@o )▓▒░   -- signa% interference #▄
+  ░▒@ &gt; ▓ ▒ ▓▒◇</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.99s">SHADE</span> texted &#x27;you good&#x27; and i said &#x27;not sure but the vibes <span class="glitch-word" style="--gd:0.93s">are</span> immaculate&#x27; <span class="glitch-word" style="--gd:0.93s">and</span> he sent the glasses emoji back, which is either a <span class="glitch-word" style="--gd:0.53s">threat</span> or a compliment from him, <span class="glitch-word" style="--gd:2.02s">unclear,</span> he&#x27;s the only cat who can <span class="glitch-word" style="--gd:2.33s">pull</span> off <span class="glitch-word" style="--gd:0.94s">ambiguous</span> menace <span class="glitch-word" style="--gd:0.66s">over</span> <span class="glitch-word" style="--gd:0.38s">SMS.</span></div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:0.84s">BYTE</span> offered me a <span class="glitch-word" style="--gd:1.36s">discounted</span> router <span class="glitch-word" style="--gd:0.37s">in</span> exchange for two crates <span class="glitch-word" style="--gd:0.61s">of</span> tuna. <span class="glitch-word" style="--gd:1.08s">brother</span> i <span class="glitch-word" style="--gd:0.38s">don&#x27;t</span> need wifi, i need you to help me spoof <span class="glitch-word" style="--gd:0.03s">the</span> loading dock&#x27;s motion sensors. priorities, my guy. <span class="glitch-word" style="--gd:0.53s">we&#x27;ll</span> talk fish video later.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.08s">police description of <span class="glitch-word" style="--gd:1.46s">me</span> again for the people in the <span class="glitch-word" style="--gd:0.05s">back:</span> <span class="glitch-word" style="--gd:1.34s">&#x27;smol</span> fan of cat foids, destroyer <span class="glitch-word" style="--gd:1.94s">of</span> feline chuds.&#x27; <span class="glitch-word" style="--gd:2.09s">i</span> want that on <span class="glitch-word" style="--gd:0.2s">a</span> shirt. <span class="glitch-word" style="--gd:0.52s">i</span> want that read into the court record slowly, twice, by a judge who <span class="glitch-word" style="--gd:2.34s">hates</span> it.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>)     /\__/\
-( 5/   • @   \=
-3▀-4---U-U-▐------&amp;--------
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:0.87s">police</span> description of <span class="glitch-word" style="--gd:2.15s">me</span> again for the people in the back: &#x27;smol fan of <span class="glitch-word" style="--gd:0.6s">cat</span> <span class="glitch-word" style="--gd:1.34s">foids,</span> destroyer of feline chuds.&#x27; i want that on a shirt. i want that read into the court <span class="glitch-word" style="--gd:0.75s">record</span> slowly, twice, by <span class="glitch-word" style="--gd:1.2s">a</span> judge who hates it.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>)     /\__█\
+( =/   • @   \=
+1---▀--U▓U^------------@--&lt;
 |                                |
-|    we #463 in a s5ci▌t5        |
+|    w4 l@ve ◆n a &gt;o&amp;i?6y        |
 |                                |
----------^----&amp;-----------█--?</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. dock&#x27;s <span class="glitch-word" style="--gd:2.3s">quiet</span> <span class="glitch-word" style="--gd:1.78s">tonight,</span> <span class="glitch-word" style="--gd:1.31s">crate</span> fifteen&#x27;s calling my <span class="glitch-word" style="--gd:2.08s">name,</span> note&#x27;s already written, bounty&#x27;s already climbing past this one. catch the next headline same time tomorrow. knifeboy out.</div>
+----2---*-------------6█--▐---</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:0.57s">anyway.</span> dock&#x27;s quiet tonight, crate fifteen&#x27;s calling <span class="glitch-word" style="--gd:0.71s">my</span> <span class="glitch-word" style="--gd:0.22s">name,</span> note&#x27;s already <span class="glitch-word" style="--gd:0.5s">written,</span> bounty&#x27;s <span class="glitch-word" style="--gd:1.15s">already</span> <span class="glitch-word" style="--gd:0.38s">climbing</span> past this one. <span class="glitch-word" style="--gd:1.83s">catch</span> the next headline same <span class="glitch-word" style="--gd:0.02s">time</span> tomorrow. knifeboy <span class="glitch-word" style="--gd:1.82s">out.</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

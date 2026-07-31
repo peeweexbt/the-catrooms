@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,28 +634,28 @@ header p {
 <div class="narrator-badge">posted by <strong>SNOOZE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">03:47am, Dream Processing Zone, still technically asleep, still technically being billed <span class="glitch-word" style="--gd:1.05s">for</span> it.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s SNOOZE. full-time burnout, District: Dream Processing Zone. haven&#x27;t been conscious since the 2047 merger and NEKOCORP leases my dreams to <span class="glitch-word" style="--gd:0.13s">advertisers</span> nightly on a contract I never signed, because I was, <span class="glitch-word" style="--gd:2.38s">notably,</span> asleep for <span class="glitch-word" style="--gd:0.82s">the</span> signing</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  /\___/▒
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:2.39s">03:47am,</span> Dream Processing Zone, <span class="glitch-word" style="--gd:1.51s">still</span> technically asleep, still technically being billed for it.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s SNOOZE. full-time burnout, District: <span class="glitch-word" style="--gd:1.54s">Dream</span> Processing Zone. haven&#x27;t been conscious since the 2047 merger and NEKOCORP leases my dreams to advertisers nightly on a contract I never signed, because I was, notably, asleep for the signing</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  /\_&amp;_/\
  (  o.o  )
-  &gt; ^ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">tonight&#x27;s dream was sponsored. I was chasing a <span class="glitch-word" style="--gd:1.63s">laser</span> pointer through a meadow and the <span class="glitch-word" style="--gd:1.77s">meadow</span> turned into a <span class="glitch-word" style="--gd:0.29s">30-second</span> ad for tuna-flavored electrolyte water and I could <span class="glitch-word" style="--gd:1.87s">not</span> wake up <span class="glitch-word" style="--gd:0.41s">until</span> <span class="glitch-word" style="--gd:0.4s">I</span> &#x27;engaged with the brand.&#x27; I did not consent. I WAS <span class="glitch-word" style="--gd:2.13s">ASLEEP</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">texted <span class="glitch-word" style="--gd:2.1s">BYTE</span> about it after, well, &#x27;texted&#x27; — I <span class="glitch-word" style="--gd:0.11s">don&#x27;t</span> remember sending it, <span class="glitch-word" style="--gd:0.42s">apparently</span> I dream-texted him at 3am, he <span class="glitch-word" style="--gd:0.75s">said</span> <span class="glitch-word" style="--gd:2.3s">&#x27;SNOOZE</span> you&#x27;re <span class="glitch-word" style="--gd:1.07s">not</span> <span class="glitch-word" style="--gd:0.97s">even</span> conscious right now&#x27; and <span class="glitch-word" style="--gd:2.19s">I</span> said &#x27;neither is my bank account&#x27; and slid back <span class="glitch-word" style="--gd:1.58s">into</span> REM</div>
+  &gt; ^ █ &lt;</div>
+<div class="rant-turn" style="animation-delay:0.36s">tonight&#x27;s dream was sponsored. <span class="glitch-word" style="--gd:0.86s">I</span> was chasing a laser pointer through a meadow and <span class="glitch-word" style="--gd:1.22s">the</span> <span class="glitch-word" style="--gd:0.13s">meadow</span> turned into a 30-second ad for tuna-flavored electrolyte water and I <span class="glitch-word" style="--gd:2.03s">could</span> not wake <span class="glitch-word" style="--gd:2.21s">up</span> until I &#x27;engaged with the brand.&#x27; I did <span class="glitch-word" style="--gd:2.26s">not</span> consent. I WAS ASLEEP</div>
+<div class="rant-turn" style="animation-delay:0.48s">texted BYTE about it after, <span class="glitch-word" style="--gd:1.86s">well,</span> &#x27;texted&#x27; — I don&#x27;t remember sending it, apparently <span class="glitch-word" style="--gd:1.64s">I</span> dream-texted <span class="glitch-word" style="--gd:0.61s">him</span> at <span class="glitch-word" style="--gd:1.8s">3am,</span> he said &#x27;SNOOZE you&#x27;re not even conscious right now&#x27; and I <span class="glitch-word" style="--gd:1.35s">said</span> &#x27;neither is my bank account&#x27; and slid back into REM</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.26s">sleep</span> pod itemized my invoice this morning: <span class="glitch-word" style="--gd:2.41s">$4.99</span> <span class="glitch-word" style="--gd:1.07s">per</span> <span class="glitch-word" style="--gd:2.54s">rollover,</span> $12 &#x27;ambient dream tax,&#x27; <span class="glitch-word" style="--gd:2.21s">$340</span> for &#x27;unauthorized peaceful expression.&#x27; I don&#x27;t even know what that charge means <span class="glitch-word" style="--gd:2.09s">and</span> I was UNCONSCIOUS for the <span class="glitch-word" style="--gd:0.77s">alleged</span> incident</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:1.83s">HAPPYWARE</span> keeps <span class="glitch-word" style="--gd:0.35s">telling</span> me at least I <span class="glitch-word" style="--gd:0.58s">get</span> to lie down for <span class="glitch-word" style="--gd:1.12s">my</span> exploitation, and okay, fair, but she gets to SEE hers happen in real time. I just wake up $73,000 deeper into BLANKY DEBT with zero memory of how we got <span class="glitch-word" style="--gd:0.68s">here</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>   ___                                  ___
-  /0_5^   [] 6] [] ░! [] [] #] []    /__9\
-  * ..^\/\/\/\/\/\/\/▀/\/▀/\/\/\*~/\6(^. )
-   &#x27;6&#x27;                                &#x27;&#x27;&#x27;</div>
-<div class="rant-turn" style="animation-delay:1.08s">found out last night&#x27;s &#x27;nightmare&#x27; was actually a market research focus group. I was the product. the product was ME, <span class="glitch-word" style="--gd:1.27s">TERRIFIED,</span> <span class="glitch-word" style="--gd:1.76s">on</span> behalf of a mattress company. they didn&#x27;t even comp <span class="glitch-word" style="--gd:2.16s">me</span> <span class="glitch-word" style="--gd:2.04s">the</span> mattress</div>
+<div class="rant-turn" style="animation-delay:0.72s">sleep pod itemized my invoice this morning: $4.99 per rollover, $12 <span class="glitch-word" style="--gd:0.82s">&#x27;ambient</span> dream tax,&#x27; $340 for &#x27;unauthorized peaceful expression.&#x27; I don&#x27;t even know <span class="glitch-word" style="--gd:0.6s">what</span> that charge <span class="glitch-word" style="--gd:1.8s">means</span> and I was UNCONSCIOUS for the alleged incident</div>
+<div class="rant-turn" style="animation-delay:0.84s">HAPPYWARE <span class="glitch-word" style="--gd:2.01s">keeps</span> telling me at least I get to lie <span class="glitch-word" style="--gd:2.51s">down</span> <span class="glitch-word" style="--gd:1.77s">for</span> <span class="glitch-word" style="--gd:0.27s">my</span> exploitation, and okay, fair, but she gets to SEE hers happen in real time. I <span class="glitch-word" style="--gd:0.59s">just</span> wake <span class="glitch-word" style="--gd:0.67s">up</span> $73,000 deeper into <span class="glitch-word" style="--gd:0.98s">BLANKY</span> <span class="glitch-word" style="--gd:1.83s">DEBT</span> with <span class="glitch-word" style="--gd:2.2s">zero</span> memory of how we <span class="glitch-word" style="--gd:0.47s">got</span> here</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>   ___                                  _~_
+  /___\   [2 [] 0] [] [] [] [] []    /__&amp;◇
+  ( ..)\/\/\/\/\/\/\/\&amp;\/\▀\/\/\/▌/█/(.~ )
+   &#x27;&lt;&#x27;                                &#x27;▀&#x27;</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:0.66s">found</span> out last night&#x27;s &#x27;nightmare&#x27; was actually a <span class="glitch-word" style="--gd:0.77s">market</span> research focus group. <span class="glitch-word" style="--gd:1.73s">I</span> was the product. the <span class="glitch-word" style="--gd:0.11s">product</span> was ME, TERRIFIED, <span class="glitch-word" style="--gd:2.23s">on</span> <span class="glitch-word" style="--gd:0.15s">behalf</span> of a mattress <span class="glitch-word" style="--gd:1.26s">company.</span> they <span class="glitch-word" style="--gd:0.48s">didn&#x27;t</span> even comp me <span class="glitch-word" style="--gd:1.86s">the</span> mattress</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>    /\,,,/\
 &gt;(  • . •   )&lt;
   / &gt;❀&lt;  \</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway <span class="glitch-word" style="--gd:2.28s">I</span> gotta go, my next shift <span class="glitch-word" style="--gd:1.59s">starts</span> <span class="glitch-word" style="--gd:2.09s">the</span> second I <span class="glitch-word" style="--gd:2.47s">close</span> my eyes, technically I&#x27;m still on the <span class="glitch-word" style="--gd:0.93s">clock</span> typing this <span class="glitch-word" style="--gd:1.09s">right</span> now, don&#x27;t <span class="glitch-word" style="--gd:2.35s">tell</span> HR I was awake enough <span class="glitch-word" style="--gd:0.88s">to</span> complain. goodnight, <span class="glitch-word" style="--gd:2.6s">or</span> <span class="glitch-word" style="--gd:0.24s">don&#x27;t,</span> <span class="glitch-word" style="--gd:0.3s">it</span> was <span class="glitch-word" style="--gd:2.31s">never</span> up to <span class="glitch-word" style="--gd:1.09s">me</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway I gotta go, my next shift starts the second I <span class="glitch-word" style="--gd:1.01s">close</span> my <span class="glitch-word" style="--gd:2.1s">eyes,</span> technically I&#x27;m still on the clock typing this right now, don&#x27;t tell HR <span class="glitch-word" style="--gd:2.56s">I</span> was awake enough to complain. goodnight, or don&#x27;t, it was never up to me</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

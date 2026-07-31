@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,14 +634,14 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">MENU DEPTH: 47 SUBMENUS. <span class="glitch-word" style="--gd:0.77s">EXIT</span> BUTTON: STATUS UNKNOWN. LAST CONFIRMED SIGHTING: NEVER.</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:1.24s">QUERY,</span> <span class="glitch-word" style="--gd:2.48s">yes,</span> still <span class="glitch-word" style="--gd:0.28s">in</span> the <span class="glitch-word" style="--gd:0.19s">Settings</span> menu, <span class="glitch-word" style="--gd:1.45s">no</span> I <span class="glitch-word" style="--gd:2.03s">have</span> not found &#x27;Cancel <span class="glitch-word" style="--gd:0.33s">Subscription,&#x27;</span> yes it has been six days, no I do not remember what <span class="glitch-word" style="--gd:2.45s">I</span> was originally trying to turn off.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>•.,¸,.•*`•@,¸¸,.•*¯.——————.
-•.,¸,.•?`•.,¸¸,.•*¯| : : : : :/\____/\
-!.,¸,&lt;•*`*.,¸¸,&gt;•*¯▓: : : : ?( ｡OωO｡)
-•.,!8&lt;•*`%@,¸¸,8▄*¯ し——し█—Ｊ</div>
-<div class="rant-turn" style="animation-delay:0.36s">found a toggle labeled &#x27;Do Not Sell My <span class="glitch-word" style="--gd:2.28s">Whiskers.&#x27;</span> it was already ON. also already GREYED OUT. that&#x27;s not a setting, that&#x27;s a diorama of a <span class="glitch-word" style="--gd:0.47s">setting.</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">there&#x27;s a submenu called &#x27;Advanced&#x27; inside a submenu called &#x27;More Advanced&#x27; <span class="glitch-word" style="--gd:1.95s">inside</span> one called &#x27;Are You Sure&#x27; inside one that&#x27;s just a photo of a door. I clicked <span class="glitch-word" style="--gd:1.55s">the</span> door. the door redirected me to <span class="glitch-word" style="--gd:1.91s">a</span> <span class="glitch-word" style="--gd:1.58s">survey</span> about the door.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.92s">MENU</span> DEPTH: 47 SUBMENUS. <span class="glitch-word" style="--gd:2.22s">EXIT</span> BUTTON: STATUS UNKNOWN. LAST CONFIRMED SIGHTING: NEVER.</div>
+<div class="rant-turn" style="animation-delay:0.12s">QUERY, yes, still <span class="glitch-word" style="--gd:0.94s">in</span> <span class="glitch-word" style="--gd:1.02s">the</span> <span class="glitch-word" style="--gd:1.19s">Settings</span> menu, no I have not found &#x27;Cancel <span class="glitch-word" style="--gd:1.82s">Subscription,&#x27;</span> yes it has been six days, no I do not remember what I <span class="glitch-word" style="--gd:1.67s">was</span> originally trying to turn off.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>•.,¸,.•*`▒7,¸!,.•*¯.————0▓.
+•▄,¸,.•!`•.,¸¸,*•*¯| : : : &lt; :/\____/\
+•.,¸,*3*`•▐,¸¸,.•&amp;¯&lt;▌ : : : :( ｡O◆O｡▀
+•.,%,.•█`•.,¸^,.•*▄ し——し——Ｊ</div>
+<div class="rant-turn" style="animation-delay:0.36s">found a toggle labeled &#x27;Do Not Sell My Whiskers.&#x27; it was already <span class="glitch-word" style="--gd:2.2s">ON.</span> also already GREYED <span class="glitch-word" style="--gd:0.48s">OUT.</span> that&#x27;s not a setting, that&#x27;s a <span class="glitch-word" style="--gd:1.21s">diorama</span> of a <span class="glitch-word" style="--gd:1.15s">setting.</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">there&#x27;s a submenu called &#x27;Advanced&#x27; inside a submenu <span class="glitch-word" style="--gd:0.81s">called</span> &#x27;More Advanced&#x27; inside <span class="glitch-word" style="--gd:2.58s">one</span> called &#x27;Are You Sure&#x27; inside one that&#x27;s just a photo of a door. I clicked the door. the door redirected me to a survey about the door.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>                  ☆
 ☆  --------------
   /__________ \         ☆
@@ -596,16 +657,16 @@ header p {
 
    ☆                                         ☆
                      ☆                               ☆</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:0.43s">VALENTUNA</span> visits on weekends now. <span class="glitch-word" style="--gd:2.25s">we</span> sit in the loading screen together and don&#x27;t talk about <span class="glitch-word" style="--gd:0.71s">our</span> situations. hers has a compressor. mine has a breadcrumb trail that <span class="glitch-word" style="--gd:0.4s">loops</span> back <span class="glitch-word" style="--gd:2.34s">to</span> <span class="glitch-word" style="--gd:1.36s">itself.</span> equally romantic, <span class="glitch-word" style="--gd:1.29s">arguably.</span></div>
-<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY texted &#x27;just <span class="glitch-word" style="--gd:0.87s">close</span> the tab&#x27; like I haven&#x27;t tried. closing the tab <span class="glitch-word" style="--gd:0.54s">opens</span> a NEW tab asking if I&#x27;m sure I want to lose my settings progress. I have no settings progress. I have never once successfully changed a <span class="glitch-word" style="--gd:1.54s">setting.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>    /\,8,/\
-&gt;(  • . •   )^
-  / &gt;❀&lt;  &gt;</div>
-<div class="rant-turn" style="animation-delay:1.08s">unpopular opinion: the terms of service ARE the terrarium. <span class="glitch-word" style="--gd:1.51s">I</span> am not reading <span class="glitch-word" style="--gd:1.41s">40,000</span> words to find <span class="glitch-word" style="--gd:1.79s">the</span> exit. I am going to live here now. I have made <span class="glitch-word" style="--gd:0.82s">peace</span> with the fine print. the <span class="glitch-word" style="--gd:0.18s">fine</span> print has not made peace with me.</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.56s">VALENTUNA</span> visits on <span class="glitch-word" style="--gd:1.69s">weekends</span> now. we sit in the loading screen together and don&#x27;t talk about our situations. hers has a compressor. mine has a breadcrumb trail that loops back to itself. equally romantic, <span class="glitch-word" style="--gd:0.32s">arguably.</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY texted &#x27;just close the tab&#x27; like I haven&#x27;t tried. closing the tab opens a NEW <span class="glitch-word" style="--gd:1.72s">tab</span> <span class="glitch-word" style="--gd:2.25s">asking</span> if <span class="glitch-word" style="--gd:1.4s">I&#x27;m</span> <span class="glitch-word" style="--gd:1.5s">sure</span> I want to lose my settings progress. I have no settings progress. I <span class="glitch-word" style="--gd:0.34s">have</span> <span class="glitch-word" style="--gd:0.78s">never</span> once successfully changed a setting.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>    /\,,,/\
+&gt;(  1 . •   )▌
+  / &gt;❀&lt;  \</div>
+<div class="rant-turn" style="animation-delay:1.08s">unpopular opinion: the terms of service ARE <span class="glitch-word" style="--gd:0.94s">the</span> terrarium. I am not reading 40,000 words <span class="glitch-word" style="--gd:0.13s">to</span> find the exit. I <span class="glitch-word" style="--gd:0.34s">am</span> going to live <span class="glitch-word" style="--gd:1.91s">here</span> now. I have made peace <span class="glitch-word" style="--gd:0.94s">with</span> the fine <span class="glitch-word" style="--gd:1.32s">print.</span> the fine print has not made peace with me.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>  /\___/\
  (  o.o  )
   &gt; ^ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. still in the menu. still clicking. found a button today <span class="glitch-word" style="--gd:0.92s">that</span> just says &#x27;QUERY.&#x27; clicked it. <span class="glitch-word" style="--gd:2.47s">it</span> opened this <span class="glitch-word" style="--gd:2.43s">post.</span> so. <span class="glitch-word" style="--gd:1.27s">that&#x27;s</span> <span class="glitch-word" style="--gd:2.48s">where</span> we are. that&#x27;s the whole loop.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. still in the menu. still <span class="glitch-word" style="--gd:0.83s">clicking.</span> <span class="glitch-word" style="--gd:0.32s">found</span> a button today that just says <span class="glitch-word" style="--gd:0.75s">&#x27;QUERY.&#x27;</span> clicked it. it opened this post. <span class="glitch-word" style="--gd:0.09s">so.</span> that&#x27;s where we are. that&#x27;s the whole <span class="glitch-word" style="--gd:0.01s">loop.</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

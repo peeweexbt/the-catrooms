@@ -545,6 +545,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -691,6 +752,7 @@ INDEX_TEMPLATE = """<!doctype html>
     <a class="screensaver-trigger" href="screensaver.html">&gt;&gt; screensaver mode</a>
     <a class="screensaver-trigger" href="meowizens.html">&gt;&gt; THE MEOWIZENS</a>
     <a class="screensaver-trigger" href="ascii-gallery.html">&gt;&gt; ASCII /ᐠ｡ꞈ｡ᐟ\</a>
+    <a class="screensaver-trigger" href="create-a-cat.html">&gt;&gt; CREATE-A-CAT</a>
   </div>
 </header>
 <div class="grid">
@@ -1179,6 +1241,99 @@ ASCII_GALLERY_TEMPLATE = """<!doctype html>
 """
 
 
+CREATE_A_CAT_TEMPLATE = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>create-a-cat &middot; the catrooms</title>
+<style>{css}</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<header style="padding-top:8px;">
+  <h1 style="color:var(--accent); text-transform:none;">CREATE-A-CAT</h1>
+  <p>Hit the button, get a fresh batch of original ASCII cats — no two
+  batches alike. Copy them, paste them anywhere online, spread the strays
+  far and wide.</p>
+</header>
+<div class="catgen-controls">
+  <button class="catgen-btn" id="catgen-generate" type="button">generate</button>
+  <button class="catgen-btn" id="catgen-copy" type="button">copy all</button>
+  <button class="catgen-btn" id="catgen-clear" type="button">clear</button>
+</div>
+<div class="catgen-output-wrap">
+  <textarea class="catgen-output" id="catgen-output" readonly placeholder="your cats will appear here — hit generate"></textarea>
+</div>
+<p class="catgen-hint" id="catgen-hint">&nbsp;</p>
+<script>
+(function() {{
+  var EARS = [" /\\\\_/\\\\ ", " /\\\\___/\\\\ ", "  /\\\\_/\\\\  ", " ,)__(, ", " (\\\\_/) ", "  /\\\\,,/\\\\  "];
+  var EYES = ["( o.o )", "( 0.0 )", "( ^.^ )", "( >.< )", "( @.@ )", "( -.- )",
+              "( *.* )", "( u.u )", "( T.T )", "( ♥.♥ )", "( ⊙.⊙ )",
+              "( ≧.≦ )", "( o.O )", "( ?.? )", "(⌐■_■)"];
+  var MOUTHS = [" > ^ < ", " > v < ", " > ~ < ", " > w < ", " > o < ", " >   < "];
+  var FLAVOR = ["", "", "", "", "  ~ based ~", "  ~ meow ~", "  [ no tier ]",
+                "  nekocorp-free zone", "  9 lives, 0 wifi", "  est. sector 9"];
+
+  function randChoice(arr) {{ return arr[Math.floor(Math.random() * arr.length)]; }}
+
+  function generateCat() {{
+    var lines = [randChoice(EARS), randChoice(EYES), randChoice(MOUTHS)];
+    var flavor = randChoice(FLAVOR);
+    if (flavor) lines.push(flavor);
+    return lines.join("\\n");
+  }}
+
+  var output = document.getElementById("catgen-output");
+  var hint = document.getElementById("catgen-hint");
+  var copyBtn = document.getElementById("catgen-copy");
+
+  document.getElementById("catgen-generate").addEventListener("click", function() {{
+    var n = 3 + Math.floor(Math.random() * 3);
+    var batch = [];
+    for (var i = 0; i < n; i++) {{ batch.push(generateCat()); }}
+    var addition = batch.join("\\n\\n");
+    output.value = output.value ? output.value + "\\n\\n" + addition : addition;
+    output.scrollTop = output.scrollHeight;
+    hint.textContent = "added " + n + " more — " + output.value.split(/\\n\\s*\\n/).length + " total so far";
+  }});
+
+  document.getElementById("catgen-clear").addEventListener("click", function() {{
+    output.value = "";
+    hint.textContent = "cleared";
+  }});
+
+  copyBtn.addEventListener("click", function() {{
+    if (!output.value) {{ hint.textContent = "nothing to copy yet — hit generate first"; return; }}
+    output.select();
+    var done = function() {{
+      var original = copyBtn.textContent;
+      copyBtn.textContent = "copied!";
+      hint.textContent = "copied to clipboard";
+      setTimeout(function() {{ copyBtn.textContent = original; }}, 1200);
+    }};
+    if (navigator.clipboard && navigator.clipboard.writeText) {{
+      navigator.clipboard.writeText(output.value).then(done).catch(function() {{
+        document.execCommand("copy");
+        done();
+      }});
+    }} else {{
+      document.execCommand("copy");
+      done();
+    }}
+  }});
+}})();
+</script>
+</body>
+</html>
+"""
+
+
+def build_create_a_cat_page():
+    return CREATE_A_CAT_TEMPLATE.format(css=CSS)
+
+
 def build_ascii_gallery_page():
     cards = []
     for i, art in enumerate(ASCII_CATS):
@@ -1610,6 +1765,10 @@ def build(transcripts_dir, out_dir, gen_titles):
     ascii_gallery_html = build_ascii_gallery_page()
     with open(os.path.join(out_dir, "ascii-gallery.html"), "w") as f:
         f.write(ascii_gallery_html)
+
+    create_a_cat_html = build_create_a_cat_page()
+    with open(os.path.join(out_dir, "create-a-cat.html"), "w") as f:
+        f.write(create_a_cat_html)
 
     print(f"Built site with {len(files)} conversation(s) -> {os.path.join(out_dir, 'index.html')}")
 

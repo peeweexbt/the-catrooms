@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,31 +634,31 @@ header p {
 <div class="narrator-badge">posted by <strong>GLITCHMEAT</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">i can taste yesterday&#x27;s wifi password. it tastes like lime <span class="glitch-word" style="--gd:1.67s">and</span> unpaid overtime. this <span class="glitch-word" style="--gd:2.58s">is</span> not a metaphor, this is Tuesday.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s <span class="glitch-word" style="--gd:1.7s">GLITCHMEAT.</span> Research Basement. <span class="glitch-word" style="--gd:2.3s">official</span> title: beta tester. actual title: <span class="glitch-word" style="--gd:2.3s">guy</span> NEKOCORP <span class="glitch-word" style="--gd:2.07s">paid</span> twelve credits to test <span class="glitch-word" style="--gd:0.79s">a</span> neural patch that <span class="glitch-word" style="--gd:0.18s">now</span> lets <span class="glitch-word" style="--gd:1.61s">me</span> <span class="glitch-word" style="--gd:2.34s">hear</span> the color purple, which, incredible, said no one, ever</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:2.07s">i</span> can <span class="glitch-word" style="--gd:0.36s">taste</span> yesterday&#x27;s wifi password. it tastes like <span class="glitch-word" style="--gd:1.06s">lime</span> and unpaid <span class="glitch-word" style="--gd:1.56s">overtime.</span> this is <span class="glitch-word" style="--gd:1.87s">not</span> a metaphor, this is Tuesday.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s GLITCHMEAT. Research Basement. official title: beta tester. actual title: guy <span class="glitch-word" style="--gd:2.34s">NEKOCORP</span> paid twelve credits to test a neural patch that now lets me <span class="glitch-word" style="--gd:1.52s">hear</span> the color purple, which, <span class="glitch-word" style="--gd:2.59s">incredible,</span> said <span class="glitch-word" style="--gd:2.24s">no</span> <span class="glitch-word" style="--gd:1.84s">one,</span> ever</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">side effect update: I now remember <span class="glitch-word" style="--gd:0.67s">three</span> kittenhoods that are not mine. one of them <span class="glitch-word" style="--gd:1.88s">belongs</span> to <span class="glitch-word" style="--gd:0.86s">a</span> cat named Desmond. <span class="glitch-word" style="--gd:0.67s">I</span> don&#x27;t know Desmond. Desmond&#x27;s mom made the <span class="glitch-word" style="--gd:2.3s">best</span> salmon <span class="glitch-word" style="--gd:0.93s">paste</span> apparently. <span class="glitch-word" style="--gd:2.31s">thanks</span> Desmond</div>
-<div class="rant-turn" style="animation-delay:0.48s">there are <span class="glitch-word" style="--gd:2.45s">spiders</span> in <span class="glitch-word" style="--gd:0.51s">my</span> Bluetooth. actual, <span class="glitch-word" style="--gd:0.14s">literal,</span> I-can-feel-them-crawling spiders. tech support said &#x27;that&#x27;s not how Bluetooth works.&#x27; tech <span class="glitch-word" style="--gd:0.6s">support</span> has not SEEN my Bluetooth</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>      ▒-===2=-.
-     * [7]  .. )
-      &#x27;-^=Y==-█
-       |  |  ▀
-   ...p?cking thro3@h the 8?on rai4...</div>
-<div class="rant-turn" style="animation-delay:0.72s">texted SHADE &#x27;do your sunglasses <span class="glitch-word" style="--gd:1.93s">block</span> bad signal too or just <span class="glitch-word" style="--gd:0.55s">sadness&#x27;</span> he said &#x27;skill issue&#x27; and blocked my read <span class="glitch-word" style="--gd:2.31s">receipts,</span> which, respect, very on <span class="glitch-word" style="--gd:1.98s">brand,</span> very based, <span class="glitch-word" style="--gd:1.49s">still</span> didn&#x27;t answer the question</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▒ /\_/? ▓4*
-  ░▒▓( o█o )▓▒^   -◇ s8gnal interfer4n4e !-
-  ░▒▓ &gt; 2 4 ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.96s">HAPPYWARE left me a voice memo that glitched <span class="glitch-word" style="--gd:2.49s">into</span> HAPPY HAPPY HAPPY and for one full second MY patch synced with HERS <span class="glitch-word" style="--gd:2.27s">and</span> I felt <span class="glitch-word" style="--gd:1.75s">seventeen</span> hours of mandatory joy, 0/10, do not recommend, worse than the spiders</div>
+<div class="rant-turn" style="animation-delay:0.36s">side effect update: I now remember three kittenhoods that are not mine. one of <span class="glitch-word" style="--gd:0.66s">them</span> belongs to a cat <span class="glitch-word" style="--gd:1.48s">named</span> Desmond. I don&#x27;t know Desmond. Desmond&#x27;s <span class="glitch-word" style="--gd:1.34s">mom</span> made the <span class="glitch-word" style="--gd:0.02s">best</span> salmon paste <span class="glitch-word" style="--gd:1.38s">apparently.</span> thanks Desmond</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:2.06s">there</span> are spiders in my Bluetooth. actual, literal, I-can-feel-them-crawling spiders. tech support said <span class="glitch-word" style="--gd:0.8s">&#x27;that&#x27;s</span> not how Bluetooth works.&#x27; tech support <span class="glitch-word" style="--gd:0.52s">has</span> not SEEN my Bluetooth</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>      &lt;-!==░=-.
+     ■ [▐]  5. *
+      &#x27;-==█==-7
+       |  |  |
+   ...pick◆@2 thr^ugh the n▌on rain.◆.</div>
+<div class="rant-turn" style="animation-delay:0.72s">texted <span class="glitch-word" style="--gd:0.13s">SHADE</span> &#x27;do your sunglasses block bad signal <span class="glitch-word" style="--gd:0.24s">too</span> or just sadness&#x27; <span class="glitch-word" style="--gd:1.84s">he</span> said &#x27;skill <span class="glitch-word" style="--gd:2.14s">issue&#x27;</span> and blocked my read receipts, which, <span class="glitch-word" style="--gd:0.19s">respect,</span> very <span class="glitch-word" style="--gd:0.02s">on</span> brand, very based, still didn&#x27;t answer the question</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\0▄\ ▓#░
+  ░▒▓( o█o )▓0░   -- #ignal int◆rfe▌ence --
+  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.96s">HAPPYWARE left <span class="glitch-word" style="--gd:2.53s">me</span> a voice <span class="glitch-word" style="--gd:2.31s">memo</span> that glitched into HAPPY HAPPY HAPPY <span class="glitch-word" style="--gd:1.75s">and</span> <span class="glitch-word" style="--gd:0.82s">for</span> one full second <span class="glitch-word" style="--gd:2.22s">MY</span> <span class="glitch-word" style="--gd:2.03s">patch</span> synced with HERS <span class="glitch-word" style="--gd:0.15s">and</span> I felt <span class="glitch-word" style="--gd:0.12s">seventeen</span> hours <span class="glitch-word" style="--gd:0.28s">of</span> mandatory joy, 0/10, do not recommend, worse than the <span class="glitch-word" style="--gd:1.49s">spiders</span></div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>•.,¸,.•*`•.,¸¸,.•*¯.——————.
 •.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
 •.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
 •.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</div>
-<div class="rant-turn" style="animation-delay:1.2s">scientists called the side effects &#x27;within acceptable <span class="glitch-word" style="--gd:1.51s">post-irony</span> comedy <span class="glitch-word" style="--gd:1.38s">limits.&#x27;</span> I called <span class="glitch-word" style="--gd:1.66s">poison</span> control. poison control put me on hold. the <span class="glitch-word" style="--gd:2.38s">hold</span> <span class="glitch-word" style="--gd:0.08s">music</span> was purple. <span class="glitch-word" style="--gd:1.08s">I</span> could taste it</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway that&#x27;s the update <span class="glitch-word" style="--gd:2.44s">from</span> the basement, I&#x27;m <span class="glitch-word" style="--gd:0.78s">gonna</span> go <span class="glitch-word" style="--gd:1.12s">lie</span> in a Faraday cage and <span class="glitch-word" style="--gd:1.94s">see</span> if Desmond&#x27;s mom&#x27;s salmon paste recipe <span class="glitch-word" style="--gd:0.22s">fades</span> by morning, wish me luck, wish <span class="glitch-word" style="--gd:0.8s">HIM</span> luck too honestly, none of <span class="glitch-word" style="--gd:2.49s">this</span> <span class="glitch-word" style="--gd:1.16s">is</span> <span class="glitch-word" style="--gd:0.64s">his</span> fault</div>
+<div class="rant-turn" style="animation-delay:1.2s"><span class="glitch-word" style="--gd:2.49s">scientists</span> called the side effects &#x27;within <span class="glitch-word" style="--gd:1.62s">acceptable</span> post-irony comedy limits.&#x27; I called poison control. poison <span class="glitch-word" style="--gd:0.46s">control</span> put me on hold. the hold <span class="glitch-word" style="--gd:0.07s">music</span> <span class="glitch-word" style="--gd:1.44s">was</span> purple. I could <span class="glitch-word" style="--gd:1.26s">taste</span> it</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway that&#x27;s the update from <span class="glitch-word" style="--gd:1.99s">the</span> basement, I&#x27;m <span class="glitch-word" style="--gd:1.01s">gonna</span> go lie in <span class="glitch-word" style="--gd:0.76s">a</span> Faraday cage and see if Desmond&#x27;s mom&#x27;s salmon <span class="glitch-word" style="--gd:0.79s">paste</span> recipe fades by morning, wish me luck, wish HIM luck <span class="glitch-word" style="--gd:1.77s">too</span> honestly, none of this is his fault</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

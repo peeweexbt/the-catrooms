@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,28 +634,28 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">SESSION LOG, attempt #4,412: still have not found <span class="glitch-word" style="--gd:2.55s">the</span> button that closes this menu. <span class="glitch-word" style="--gd:1.53s">there</span> is no button. there was <span class="glitch-word" style="--gd:2.23s">never</span> a button. i don&#x27;t think &#x27;button&#x27; is real <span class="glitch-word" style="--gd:2.25s">anymore.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">hi it&#x27;s QUERY. Legal Fog district. official job: terms-of-service researcher. unofficial job: the ONE cat who actually read page 4 of the citizen agreement and <span class="glitch-word" style="--gd:0.87s">has</span> not recovered.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.37s">SESSION</span> LOG, attempt #4,412: <span class="glitch-word" style="--gd:2.06s">still</span> have not found the button that closes this menu. there <span class="glitch-word" style="--gd:0.97s">is</span> no button. <span class="glitch-word" style="--gd:0.95s">there</span> <span class="glitch-word" style="--gd:0.7s">was</span> never a button. i don&#x27;t <span class="glitch-word" style="--gd:1.23s">think</span> &#x27;button&#x27; is real anymore.</div>
+<div class="rant-turn" style="animation-delay:0.12s">hi it&#x27;s QUERY. Legal Fog district. official job: terms-of-service researcher. unofficial job: the ONE cat who actually read page 4 of the citizen <span class="glitch-word" style="--gd:1.86s">agreement</span> and has not recovered.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>  /\___/\
  (  o.o  )
   &gt; ^ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">page <span class="glitch-word" style="--gd:1.83s">4</span> <span class="glitch-word" style="--gd:0.78s">says</span> <span class="glitch-word" style="--gd:1.09s">i</span> own my <span class="glitch-word" style="--gd:2.29s">body.</span> page 5 <span class="glitch-word" style="--gd:2.18s">defines</span> &#x27;my body&#x27; as licensed hardware. page 6 says page 4 was a <span class="glitch-word" style="--gd:0.75s">promotional</span> example. PAGE 6 HAS A DISCLAIMER <span class="glitch-word" style="--gd:0.94s">ABOUT</span> PAGE <span class="glitch-word" style="--gd:2.32s">4.</span> i am going to lose my mind in a courteous, legally binding way.</div>
-<div class="rant-turn" style="animation-delay:0.48s">there is a submenu inside the submenu. inside THAT submenu is <span class="glitch-word" style="--gd:1.02s">a</span> survey <span class="glitch-word" style="--gd:1.45s">asking</span> <span class="glitch-word" style="--gd:0.01s">how</span> satisfied i am with <span class="glitch-word" style="--gd:1.19s">the</span> submenu. i rated it one star. it asked me to <span class="glitch-word" style="--gd:0.18s">explain</span> why in under 12 characters. &#x27;HELP&#x27; is 4 characters. i had 8 left. <span class="glitch-word" style="--gd:2.58s">i</span> used them on &#x27;im serious&#x27;</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   _◇_                                  _▓░
-  /7__9   [] [] [] [] ~8 ▐] [] [▐    █___\
-  ( ..)█/\/\6\/\/\/\▀\/\/\/\/\/8&amp;(█. )
-   &#x27;&#x27;&#x27;                                &#x27;&#x27;&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.72s">KNIFEBOY hit my line <span class="glitch-word" style="--gd:0.34s">last</span> <span class="glitch-word" style="--gd:0.64s">week</span> asking if <span class="glitch-word" style="--gd:1.98s">his</span> <span class="glitch-word" style="--gd:0.35s">bounty</span> can just <span class="glitch-word" style="--gd:0.01s">time</span> out into citizenship. i checked. i checked <span class="glitch-word" style="--gd:0.03s">TWICE.</span> it cannot. he was <span class="glitch-word" style="--gd:0.64s">disappointed.</span> <span class="glitch-word" style="--gd:1.39s">i</span> was thrilled, because for six whole minutes someone needed me for something other than a <span class="glitch-word" style="--gd:0.46s">settings</span> menu</div>
-<div class="rant-turn" style="animation-delay:0.84s">found out BRIK&#x27;s been sitting on <span class="glitch-word" style="--gd:0.79s">a</span> sealed box of my old paperwork <span class="glitch-word" style="--gd:2.49s">this</span> whole <span class="glitch-word" style="--gd:0.21s">time,</span> <span class="glitch-word" style="--gd:0.05s">down</span> in <span class="glitch-word" style="--gd:0.04s">his</span> vent, <span class="glitch-word" style="--gd:1.84s">still</span> says READ BEFORE SIGNING <span class="glitch-word" style="--gd:2.24s">on</span> it. he <span class="glitch-word" style="--gd:1.65s">didn&#x27;t</span> open it. i <span class="glitch-word" style="--gd:0.31s">don&#x27;t</span> know if that&#x27;s respect or if he just doesn&#x27;t want to end up like me. probably both. smart <span class="glitch-word" style="--gd:2.19s">man</span></div>
+<div class="rant-turn" style="animation-delay:0.36s">page 4 says i own my body. page <span class="glitch-word" style="--gd:2.04s">5</span> defines &#x27;my <span class="glitch-word" style="--gd:0.3s">body&#x27;</span> as <span class="glitch-word" style="--gd:1.46s">licensed</span> hardware. page 6 says <span class="glitch-word" style="--gd:1.29s">page</span> <span class="glitch-word" style="--gd:1.73s">4</span> was a promotional example. PAGE 6 HAS A <span class="glitch-word" style="--gd:1.76s">DISCLAIMER</span> ABOUT PAGE 4. i am going to lose my mind in a courteous, legally <span class="glitch-word" style="--gd:0.32s">binding</span> way.</div>
+<div class="rant-turn" style="animation-delay:0.48s">there <span class="glitch-word" style="--gd:0.96s">is</span> a submenu inside the submenu. inside <span class="glitch-word" style="--gd:2.2s">THAT</span> <span class="glitch-word" style="--gd:1.28s">submenu</span> <span class="glitch-word" style="--gd:0.83s">is</span> <span class="glitch-word" style="--gd:1.94s">a</span> survey asking how satisfied i am with the submenu. i rated it one star. it asked me to explain why in under 12 characters. &#x27;HELP&#x27; <span class="glitch-word" style="--gd:1.69s">is</span> 4 characters. i had 8 left. i used them on &#x27;im serious&#x27;</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   ___                                  ___
+  /04_\   [] ?6 [] [] [] [] [] @5    /___\
+  ( ..◆3/▓/?/\/\/\/\/^/6!▌/\/\/\/(.. )
+   &#x27;&#x27;&#x27;                                &#x27;&#x27;░</div>
+<div class="rant-turn" style="animation-delay:0.72s">KNIFEBOY hit my line last week asking if his bounty <span class="glitch-word" style="--gd:1.92s">can</span> just time <span class="glitch-word" style="--gd:1.72s">out</span> into citizenship. <span class="glitch-word" style="--gd:1.23s">i</span> checked. i checked TWICE. it cannot. he was disappointed. i was thrilled, because for six whole minutes <span class="glitch-word" style="--gd:1.68s">someone</span> needed <span class="glitch-word" style="--gd:1.73s">me</span> for something other <span class="glitch-word" style="--gd:2.54s">than</span> a settings <span class="glitch-word" style="--gd:1.72s">menu</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">found out <span class="glitch-word" style="--gd:1.83s">BRIK&#x27;s</span> been sitting <span class="glitch-word" style="--gd:0.72s">on</span> a sealed box of my old <span class="glitch-word" style="--gd:0.86s">paperwork</span> this whole time, <span class="glitch-word" style="--gd:0.02s">down</span> in his <span class="glitch-word" style="--gd:1.97s">vent,</span> still <span class="glitch-word" style="--gd:2.11s">says</span> READ BEFORE <span class="glitch-word" style="--gd:0.31s">SIGNING</span> on <span class="glitch-word" style="--gd:0.54s">it.</span> he didn&#x27;t <span class="glitch-word" style="--gd:2.36s">open</span> <span class="glitch-word" style="--gd:0.94s">it.</span> i don&#x27;t know if that&#x27;s <span class="glitch-word" style="--gd:2.42s">respect</span> or <span class="glitch-word" style="--gd:1.49s">if</span> <span class="glitch-word" style="--gd:1.92s">he</span> <span class="glitch-word" style="--gd:2.1s">just</span> <span class="glitch-word" style="--gd:1.9s">doesn&#x27;t</span> want to end up <span class="glitch-word" style="--gd:0.81s">like</span> me. probably both. <span class="glitch-word" style="--gd:1.66s">smart</span> man</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>        /⸌ —⸍\
      =(˶•ㅅ•˵)=      ᵐᵉᵒʷ
 　 l       ~乀   ╭
     し しf_, )ノ</div>
-<div class="rant-turn" style="animation-delay:1.08s">AND <span class="glitch-word" style="--gd:1.69s">I</span> MUST SCREAM is not a metaphor by the way. it is a <span class="glitch-word" style="--gd:2.41s">checkbox.</span> i <span class="glitch-word" style="--gd:1.08s">have</span> to click it <span class="glitch-word" style="--gd:0.21s">every</span> four hours or <span class="glitch-word" style="--gd:2.46s">my</span> citizenship &#x27;lapses into a grayscale trial period.&#x27; <span class="glitch-word" style="--gd:1.7s">i</span> have screamed <span class="glitch-word" style="--gd:1.98s">1,847</span> times this month. productivity app says i&#x27;m &#x27;on <span class="glitch-word" style="--gd:1.79s">track.&#x27;</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>    /0,,,/\
-◇(  • . •   ▌?
-  / &gt;❀&lt;  \</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway the menu just added a NEW submenu. gotta go. if i don&#x27;t post again by morning assume i finally found page 7 and <span class="glitch-word" style="--gd:1.78s">it</span> ate me. query out. do not, under any circumstances, click accept.</div>
+<div class="rant-turn" style="animation-delay:1.08s">AND I <span class="glitch-word" style="--gd:0.29s">MUST</span> SCREAM is <span class="glitch-word" style="--gd:1.09s">not</span> a metaphor by the <span class="glitch-word" style="--gd:2.16s">way.</span> it <span class="glitch-word" style="--gd:1.9s">is</span> <span class="glitch-word" style="--gd:1.44s">a</span> checkbox. i <span class="glitch-word" style="--gd:1.5s">have</span> to <span class="glitch-word" style="--gd:0.13s">click</span> it every four hours or <span class="glitch-word" style="--gd:0.81s">my</span> citizenship &#x27;lapses into a grayscale trial period.&#x27; i have screamed 1,847 times this month. productivity app <span class="glitch-word" style="--gd:1.92s">says</span> i&#x27;m &#x27;on <span class="glitch-word" style="--gd:0.87s">track.&#x27;</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>    /\,,,▌\
+&gt;3  • . •   )&lt;
+  9 &gt;▒&lt;  \</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:0.18s">anyway</span> the menu just added <span class="glitch-word" style="--gd:0.78s">a</span> <span class="glitch-word" style="--gd:2.32s">NEW</span> submenu. gotta go. if i <span class="glitch-word" style="--gd:2.17s">don&#x27;t</span> post again by morning assume i finally found page 7 and it ate me. query <span class="glitch-word" style="--gd:1.66s">out.</span> do not, under any circumstances, click accept.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

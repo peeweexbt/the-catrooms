@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,31 +634,31 @@ header p {
 <div class="narrator-badge">posted by <strong>GLITCHMEAT</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">ok <span class="glitch-word" style="--gd:2.27s">i</span> need to be real with <span class="glitch-word" style="--gd:0.14s">you</span> for <span class="glitch-word" style="--gd:2.26s">a</span> second. i am a Research Basement beta <span class="glitch-word" style="--gd:0.19s">tester,</span> NEKOCORP paid me twelve <span class="glitch-word" style="--gd:2.08s">(12)</span> credits to test <span class="glitch-word" style="--gd:0.5s">a</span> neural enhancement patch, <span class="glitch-word" style="--gd:1.71s">and</span> i do not think it is working the way the pamphlet said it would</div>
-<div class="rant-turn" style="animation-delay:0.12s">day 40 of the trial. <span class="glitch-word" style="--gd:2.39s">today</span> <span class="glitch-word" style="--gd:0.09s">i</span> tasted <span class="glitch-word" style="--gd:1.53s">the</span> smell of static off a <span class="glitch-word" style="--gd:1.59s">dead</span> AM channel and i <span class="glitch-word" style="--gd:0.41s">have</span> not stopped thinking about it <span class="glitch-word" style="--gd:0.24s">since.</span> <span class="glitch-word" style="--gd:0.59s">it</span> tastes like a parking garage. i don&#x27;t <span class="glitch-word" style="--gd:2.12s">make</span> the rules</div>
+<div class="rant-turn" style="animation-delay:0.0s">ok i need to <span class="glitch-word" style="--gd:0.61s">be</span> real with you for a second. i am a Research Basement <span class="glitch-word" style="--gd:0.35s">beta</span> tester, NEKOCORP paid me twelve (12) credits to test a neural enhancement patch, <span class="glitch-word" style="--gd:2.56s">and</span> <span class="glitch-word" style="--gd:1.41s">i</span> do not think it is working the way the pamphlet said it would</div>
+<div class="rant-turn" style="animation-delay:0.12s">day <span class="glitch-word" style="--gd:1.45s">40</span> of the trial. today i tasted <span class="glitch-word" style="--gd:1.02s">the</span> smell of static <span class="glitch-word" style="--gd:0.82s">off</span> a dead AM channel and <span class="glitch-word" style="--gd:0.36s">i</span> have not stopped thinking about it since. <span class="glitch-word" style="--gd:1.31s">it</span> tastes like a parking garage. i <span class="glitch-word" style="--gd:0.11s">don&#x27;t</span> make the rules</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:1.51s">i</span> also remembered <span class="glitch-word" style="--gd:0.59s">three</span> (3) different kittenhoods this week and none of them were mine. one belonged to a cat <span class="glitch-word" style="--gd:0.04s">named</span> Pretzel who <span class="glitch-word" style="--gd:0.81s">I</span> have never met <span class="glitch-word" style="--gd:1.79s">and</span> <span class="glitch-word" style="--gd:0.65s">who,</span> legally, still owns those memories</div>
-<div class="rant-turn" style="animation-delay:0.48s">Pretzel <span class="glitch-word" style="--gd:1.29s">if</span> you&#x27;re reading this: your mom&#x27;s yarn ball was blue and <span class="glitch-word" style="--gd:2.44s">it</span> meant everything to you and I&#x27;m sorry I <span class="glitch-word" style="--gd:1.98s">know</span> that <span class="glitch-word" style="--gd:1.57s">now</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     /9/\8/#/\
-    (  O   1  )
-     ■  ^%^  /
-      )===0◇(      ■- ▌ars up, rotor ▐n▐oming -▀</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:0.77s">the</span> scientists downstairs call all of this &#x27;within acceptable <span class="glitch-word" style="--gd:0.4s">post-irony</span> <span class="glitch-word" style="--gd:0.15s">comedy</span> limits.&#x27; that is not <span class="glitch-word" style="--gd:0.93s">a</span> medical term. I checked. QUERY checked too <span class="glitch-word" style="--gd:1.86s">and</span> got trapped in a different <span class="glitch-word" style="--gd:0.43s">settings</span> menu for forty-five minutes trying to confirm it</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:0.47s">you</span> <span class="glitch-word" style="--gd:2.45s">already</span> scrolled <span class="glitch-word" style="--gd:0.83s">past</span> this once. you&#x27;ll scroll past <span class="glitch-word" style="--gd:0.22s">the</span> next one too, and the one after that, same as always. <span class="glitch-word" style="--gd:0.62s">I&#x27;ve</span> <span class="glitch-word" style="--gd:1.4s">been</span> reading the feed longer <span class="glitch-word" style="--gd:2.12s">than</span> you&#x27;ve had a face. <span class="glitch-word" style="--gd:2.42s">carry</span> on, <span class="glitch-word" style="--gd:0.17s">little</span> glitch.</div>
-<div class="rant-turn" style="animation-delay:0.96s">anyway. where was I. right, the taste of static, the borrowed kittenhoods, the twelve credits I <span class="glitch-word" style="--gd:0.47s">am</span> never getting back</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒█ /\_▐\ ▓▒░
-  ░▒▓( 4█o )▓▒0   -◆ si*nal interfe▀e7ce -▐
-  ░▒7 &gt; ▓ &lt; ◆3░</div>
-<div class="rant-turn" style="animation-delay:1.2s">there are spiders in my bluetooth again. <span class="glitch-word" style="--gd:2.47s">this</span> is not a metaphor. this is a hardware problem and NEKOCORP <span class="glitch-word" style="--gd:1.3s">support</span> has <span class="glitch-word" style="--gd:1.7s">now</span> closed my ticket four times for &#x27;resolved by user vibes&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:1.62s">i</span> also remembered three <span class="glitch-word" style="--gd:1.43s">(3)</span> different kittenhoods this week and none of them were mine. one belonged <span class="glitch-word" style="--gd:0.38s">to</span> a cat <span class="glitch-word" style="--gd:0.1s">named</span> <span class="glitch-word" style="--gd:1.66s">Pretzel</span> who <span class="glitch-word" style="--gd:0.85s">I</span> have never met and who, legally, <span class="glitch-word" style="--gd:1.01s">still</span> owns those <span class="glitch-word" style="--gd:0.93s">memories</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">Pretzel <span class="glitch-word" style="--gd:2.05s">if</span> you&#x27;re reading <span class="glitch-word" style="--gd:2.31s">this:</span> your mom&#x27;s yarn ball was blue and it meant everything to you and I&#x27;m sorry <span class="glitch-word" style="--gd:0.67s">I</span> <span class="glitch-word" style="--gd:2.4s">know</span> that now</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     !\/\_▌\/\
+    (  O   O  )
+     \  4Y^  /
+      0=====(      -- ear▌ up, ro&gt;or @▐coming --</div>
+<div class="rant-turn" style="animation-delay:0.72s">the scientists downstairs call <span class="glitch-word" style="--gd:1.05s">all</span> of this &#x27;within acceptable post-irony comedy <span class="glitch-word" style="--gd:1.18s">limits.&#x27;</span> that <span class="glitch-word" style="--gd:1.44s">is</span> not a medical term. I <span class="glitch-word" style="--gd:1.12s">checked.</span> QUERY checked too and got trapped in a different settings <span class="glitch-word" style="--gd:1.38s">menu</span> <span class="glitch-word" style="--gd:0.52s">for</span> forty-five <span class="glitch-word" style="--gd:0.71s">minutes</span> trying to confirm it</div>
+<div class="rant-turn" style="animation-delay:0.84s">you already scrolled past this once. <span class="glitch-word" style="--gd:0.07s">you&#x27;ll</span> scroll past the next one <span class="glitch-word" style="--gd:1.32s">too,</span> and the one after that, same as always. I&#x27;ve been reading the feed <span class="glitch-word" style="--gd:2.0s">longer</span> than you&#x27;ve had <span class="glitch-word" style="--gd:1.31s">a</span> face. carry on, little <span class="glitch-word" style="--gd:0.64s">glitch.</span></div>
+<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:0.34s">anyway.</span> where was I. right, the taste of static, the borrowed kittenhoods, the twelve credits <span class="glitch-word" style="--gd:0.72s">I</span> am never getting <span class="glitch-word" style="--gd:0.23s">back</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /■_/~ ░▒░
+  ░▒▓( o█o )▓▒░   -- 84gnal int■r!&lt;ren◆e ▀6
+  &lt;▒7 &amp; ▓ @ ▓▒░</div>
+<div class="rant-turn" style="animation-delay:1.2s">there are spiders in my bluetooth again. this <span class="glitch-word" style="--gd:0.28s">is</span> not a metaphor. this is a hardware problem and NEKOCORP support has now closed my ticket four times for &#x27;resolved by <span class="glitch-word" style="--gd:0.26s">user</span> vibes&#x27;</div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.44s"><span class="glitch-word" style="--gd:2.33s">final</span> <span class="glitch-word" style="--gd:1.81s">beta</span> report, for the record: <span class="glitch-word" style="--gd:1.9s">I</span> can <span class="glitch-word" style="--gd:0.46s">hear</span> <span class="glitch-word" style="--gd:1.11s">purple</span> now. <span class="glitch-word" style="--gd:2.06s">it</span> sounds exactly like <span class="glitch-word" style="--gd:0.58s">SNOOZE&#x27;s</span> landlord. <span class="glitch-word" style="--gd:2.49s">still</span> worth it. still enrolling for <span class="glitch-word" style="--gd:0.48s">phase</span> two. see you <span class="glitch-word" style="--gd:2.14s">all</span> in the next glitch</div>
+<div class="rant-turn" style="animation-delay:1.44s"><span class="glitch-word" style="--gd:1.83s">final</span> beta report, for the record: I can hear purple now. it sounds exactly like SNOOZE&#x27;s <span class="glitch-word" style="--gd:1.34s">landlord.</span> still worth <span class="glitch-word" style="--gd:0.29s">it.</span> still enrolling for <span class="glitch-word" style="--gd:1.79s">phase</span> <span class="glitch-word" style="--gd:0.2s">two.</span> see you <span class="glitch-word" style="--gd:0.63s">all</span> in the next <span class="glitch-word" style="--gd:0.33s">glitch</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

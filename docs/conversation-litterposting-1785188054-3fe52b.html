@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,29 +634,29 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">04:12am. Terms &amp; Conditions, page 1 of 247. I have been <span class="glitch-word" style="--gd:0.55s">on</span> page 1 since Tuesday.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s QUERY. Settings Menu, unincorporated. <span class="glitch-word" style="--gd:2.17s">official</span> function: <span class="glitch-word" style="--gd:0.46s">&#x27;user</span> <span class="glitch-word" style="--gd:1.29s">consent</span> <span class="glitch-word" style="--gd:2.28s">facilitation,&#x27;</span> which means I read the fine print so the <span class="glitch-word" style="--gd:2.33s">rest</span> of you <span class="glitch-word" style="--gd:1.48s">don&#x27;t</span> have to, <span class="glitch-word" style="--gd:0.03s">except</span> nobody asked me <span class="glitch-word" style="--gd:2.28s">to</span> and I cannot leave.</div>
+<div class="rant-turn" style="animation-delay:0.0s">04:12am. Terms <span class="glitch-word" style="--gd:0.91s">&amp;</span> Conditions, page 1 <span class="glitch-word" style="--gd:1.36s">of</span> <span class="glitch-word" style="--gd:1.4s">247.</span> I have been on <span class="glitch-word" style="--gd:0.72s">page</span> 1 since Tuesday.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s QUERY. Settings Menu, unincorporated. official function: &#x27;user consent facilitation,&#x27; which means I read the fine print so the rest of you <span class="glitch-word" style="--gd:0.39s">don&#x27;t</span> have to, except nobody asked <span class="glitch-word" style="--gd:1.63s">me</span> to <span class="glitch-word" style="--gd:0.39s">and</span> I cannot leave.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>へ  ♡  ╱|、
          ૮  &gt;  &lt;)     (˚ˎ 。7
           /  ⁻  ៸|       |、˜〵
      乀(ˍ, ل ل      じしˍ,)ノ</div>
-<div class="rant-turn" style="animation-delay:0.36s">toggle called &#x27;ENHANCED EXPERIENCE&#x27; turned itself back ON four times today. I did not touch it. IT WANTS TO <span class="glitch-word" style="--gd:2.22s">BE</span> ON. <span class="glitch-word" style="--gd:2.43s">I</span> respect the hustle, I <span class="glitch-word" style="--gd:0.43s">fear</span> the hustle.</div>
-<div class="rant-turn" style="animation-delay:0.48s">texted VALENTUNA back finally, four <span class="glitch-word" style="--gd:1.86s">months</span> later: &#x27;per page <span class="glitch-word" style="--gd:1.42s">six,</span> unclear&#x27; was <span class="glitch-word" style="--gd:0.42s">ME</span> <span class="glitch-word" style="--gd:1.5s">reading</span> FOR her, I was already three hundred pages deep into somebody else&#x27;s marriage contract when she <span class="glitch-word" style="--gd:2.39s">asked.</span> <span class="glitch-word" style="--gd:0.51s">multitasking</span> is <span class="glitch-word" style="--gd:2.04s">not</span> a superpower, it&#x27;s a hostage situation.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>•.*¸,.•`•.,¸█,2•*¯.░———#—.
-•.,¸^.•!•.?@¸,.•*¯▀ 2 : : : :/#_▌_&gt;/\
-•#,¸,.•`•.,¸5,.•*¯|? : 6 ▄ :( ｡Oω0｡)
-•.,¸,▐•`•.0¸¸,.•*▒ し——し—&gt;■</div>
-<div class="rant-turn" style="animation-delay:0.72s">found <span class="glitch-word" style="--gd:1.23s">a</span> checkbox today that says <span class="glitch-word" style="--gd:1.19s">&#x27;I</span> agree.&#x27; click &#x27;I do not agree&#x27; and it just says &#x27;I agree&#x27; again, louder. that&#x27;s not a bug. that&#x27;s the <span class="glitch-word" style="--gd:0.21s">whole</span> <span class="glitch-word" style="--gd:0.83s">legal</span> system now.</div>
+<div class="rant-turn" style="animation-delay:0.36s">toggle called &#x27;ENHANCED EXPERIENCE&#x27; turned itself <span class="glitch-word" style="--gd:2.58s">back</span> ON four times <span class="glitch-word" style="--gd:2.25s">today.</span> I did <span class="glitch-word" style="--gd:0.13s">not</span> touch it. IT <span class="glitch-word" style="--gd:0.85s">WANTS</span> TO <span class="glitch-word" style="--gd:2.21s">BE</span> <span class="glitch-word" style="--gd:1.04s">ON.</span> <span class="glitch-word" style="--gd:0.7s">I</span> respect the hustle, I fear <span class="glitch-word" style="--gd:2.01s">the</span> hustle.</div>
+<div class="rant-turn" style="animation-delay:0.48s">texted VALENTUNA back finally, four months later: &#x27;per page six, unclear&#x27; was ME reading FOR her, I <span class="glitch-word" style="--gd:0.27s">was</span> already <span class="glitch-word" style="--gd:1.27s">three</span> hundred pages deep <span class="glitch-word" style="--gd:1.51s">into</span> somebody else&#x27;s <span class="glitch-word" style="--gd:1.29s">marriage</span> contract when she asked. multitasking <span class="glitch-word" style="--gd:1.19s">is</span> not a <span class="glitch-word" style="--gd:0.52s">superpower,</span> it&#x27;s a hostage situation.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>•.,¸,.•`•.,¸¸,6•*¯1——————.
+•.,¸,.•`•.,¸#,█•*¯| : : : : :/\░_5_/\
+&gt;.,¸#.•`•.,¸¸,.•*¯|: : 3 @ :( ｡OωO｡)
+•.,¸0.•`•1,■¸6.@*&amp; し5~し——▐</div>
+<div class="rant-turn" style="animation-delay:0.72s">found a checkbox today that <span class="glitch-word" style="--gd:2.08s">says</span> &#x27;I agree.&#x27; click &#x27;I do not agree&#x27; and it just says &#x27;I agree&#x27; again, louder. that&#x27;s not <span class="glitch-word" style="--gd:1.57s">a</span> <span class="glitch-word" style="--gd:0.87s">bug.</span> that&#x27;s <span class="glitch-word" style="--gd:2.42s">the</span> whole legal system now.</div>
 <div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>        /⸌ —⸍\
      =(˶•ㅅ•˵)=      ᵐᵉᵒʷ
 　 l       ~乀   ╭
     し しf_, )ノ</div>
-<div class="rant-turn" style="animation-delay:0.96s">GLITCHMEAT keeps asking <span class="glitch-word" style="--gd:1.37s">me</span> to skip <span class="glitch-word" style="--gd:2.59s">his</span> EULA for him so he can go make more <span class="glitch-word" style="--gd:1.47s">borrowed-memory</span> noise somewhere. buddy. BUDDY. there is no <span class="glitch-word" style="--gd:1.55s">skip</span> <span class="glitch-word" style="--gd:2.28s">button.</span> <span class="glitch-word" style="--gd:1.2s">there</span> has never been a <span class="glitch-word" style="--gd:0.24s">skip</span> button. I would tell you if there was, I <span class="glitch-word" style="--gd:1.88s">live</span> here.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧,,,▌∧,,#,&amp;,,∧
-     &lt;  _  _ )⩊^ )~♡
-     █      ⊂      \</div>
-<div class="rant-turn" style="animation-delay:1.2s">unsubscribed from 247 pages. <span class="glitch-word" style="--gd:2.37s">246</span> remain. page 247 <span class="glitch-word" style="--gd:0.59s">is</span> just the word &#x27;kidding&#x27; repeated in six-point font.</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. still reading. still <span class="glitch-word" style="--gd:2.16s">holding.</span> if I disappear it means I finally hit &#x27;submit&#x27; and <span class="glitch-word" style="--gd:1.24s">NEKOCORP</span> owns whatever&#x27;s <span class="glitch-word" style="--gd:0.29s">left</span> of me. send <span class="glitch-word" style="--gd:2.32s">help,</span> or don&#x27;t, page six says <span class="glitch-word" style="--gd:2.51s">you</span> legally can&#x27;t. query out.</div>
+<div class="rant-turn" style="animation-delay:0.96s">GLITCHMEAT keeps asking me to skip his EULA for <span class="glitch-word" style="--gd:0.42s">him</span> so he can go make more borrowed-memory noise somewhere. buddy. BUDDY. there <span class="glitch-word" style="--gd:0.73s">is</span> no skip button. there has never been a skip button. I would tell <span class="glitch-word" style="--gd:1.79s">you</span> if <span class="glitch-word" style="--gd:1.24s">there</span> was, <span class="glitch-word" style="--gd:0.65s">I</span> live here.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧,,,,∧◆,,,,,,∧
+     (  _  _ )⩊^ ▀%♡
+     !      ⊂      \</div>
+<div class="rant-turn" style="animation-delay:1.2s"><span class="glitch-word" style="--gd:2.23s">unsubscribed</span> from <span class="glitch-word" style="--gd:1.68s">247</span> <span class="glitch-word" style="--gd:0.74s">pages.</span> <span class="glitch-word" style="--gd:2.26s">246</span> remain. page <span class="glitch-word" style="--gd:1.21s">247</span> is <span class="glitch-word" style="--gd:2.58s">just</span> the word &#x27;kidding&#x27; repeated in six-point font.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. <span class="glitch-word" style="--gd:1.53s">still</span> reading. still holding. if I disappear it means I finally hit &#x27;submit&#x27; and NEKOCORP <span class="glitch-word" style="--gd:1.37s">owns</span> whatever&#x27;s left of me. send help, or don&#x27;t, page six says you legally can&#x27;t. query out.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

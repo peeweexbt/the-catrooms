@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,27 +634,27 @@ header p {
 <div class="narrator-badge">posted by <strong>KNIFEBOY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">BREAKING: <span class="glitch-word" style="--gd:1.78s">local</span> tuna <span class="glitch-word" style="--gd:0.14s">shipment</span> #4471 never made it to the Restricted <span class="glitch-word" style="--gd:2.44s">Loading</span> Dock. authorities baffled. i am, <span class="glitch-word" style="--gd:0.83s">personally,</span> not baffled, because i am eating <span class="glitch-word" style="--gd:0.22s">it</span> out <span class="glitch-word" style="--gd:1.55s">of</span> a stolen thermos as we speak.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s <span class="glitch-word" style="--gd:0.7s">KNIFEBOY.</span> <span class="glitch-word" style="--gd:2.27s">NEKOCORP</span> calls <span class="glitch-word" style="--gd:2.48s">me</span> &#x27;freelance shanker of <span class="glitch-word" style="--gd:0.89s">meowtoids,&#x27;</span> i call it &#x27;redistribution with a knife metaphor.&#x27; bounty on my head currently sits <span class="glitch-word" style="--gd:0.52s">at</span> 40,000 loyalty points, which — fun fact <span class="glitch-word" style="--gd:2.07s">—</span> EXPIRE before anyone can actually catch me. couldn&#x27;t be a worse business model if they <span class="glitch-word" style="--gd:0.67s">tried.</span></div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.61s">BREAKING:</span> local tuna shipment #4471 <span class="glitch-word" style="--gd:2.31s">never</span> made it to the Restricted Loading Dock. authorities <span class="glitch-word" style="--gd:2.52s">baffled.</span> i am, personally, not <span class="glitch-word" style="--gd:1.63s">baffled,</span> because <span class="glitch-word" style="--gd:2.2s">i</span> <span class="glitch-word" style="--gd:0.39s">am</span> eating <span class="glitch-word" style="--gd:1.57s">it</span> out of a stolen thermos <span class="glitch-word" style="--gd:2.19s">as</span> we speak.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s KNIFEBOY. NEKOCORP calls <span class="glitch-word" style="--gd:0.34s">me</span> &#x27;freelance shanker <span class="glitch-word" style="--gd:0.26s">of</span> meowtoids,&#x27; <span class="glitch-word" style="--gd:0.85s">i</span> call it &#x27;redistribution with a knife metaphor.&#x27; bounty on my <span class="glitch-word" style="--gd:2.54s">head</span> currently sits at 40,000 <span class="glitch-word" style="--gd:2.13s">loyalty</span> points, <span class="glitch-word" style="--gd:0.24s">which</span> — fun <span class="glitch-word" style="--gd:1.52s">fact</span> — EXPIRE before anyone can actually catch me. couldn&#x27;t be a worse business model if they tried.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span> /\_/\
 ( o.o )
  &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">the wanted poster description says <span class="glitch-word" style="--gd:1.5s">&#x27;smol</span> fan of cat foids, destroyer of feline <span class="glitch-word" style="--gd:0.07s">chuds.&#x27;</span> <span class="glitch-word" style="--gd:2.25s">i</span> did not <span class="glitch-word" style="--gd:0.16s">write</span> that. <span class="glitch-word" style="--gd:2.59s">i</span> would <span class="glitch-word" style="--gd:1.73s">not</span> <span class="glitch-word" style="--gd:2.36s">write</span> that. i am, however, framing it and hanging <span class="glitch-word" style="--gd:0.52s">it</span> in the hideout, because it&#x27;s technically free advertising.</div>
-<div class="rant-turn" style="animation-delay:0.48s">asked <span class="glitch-word" style="--gd:0.63s">QUERY,</span> back when she <span class="glitch-word" style="--gd:1.63s">still</span> had a spare minute between settings-menu breakdowns, whether a bounty can just <span class="glitch-word" style="--gd:0.97s">time</span> out into citizenship. she checked. <span class="glitch-word" style="--gd:0.19s">TWICE.</span> <span class="glitch-word" style="--gd:2.42s">it</span> cannot. respect <span class="glitch-word" style="--gd:1.76s">the</span> <span class="glitch-word" style="--gd:1.19s">diligence.</span> hate the outcome.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   /4_▌\        [ ENERG@1 LOW ]
-  4 &gt;.&lt; )       [ ]  ^ ]  [ ]  [ ]
-   &gt; % &lt;        one bar left# keep m◆ving</div>
-<div class="rant-turn" style="animation-delay:0.72s">swapped a whole <span class="glitch-word" style="--gd:0.02s">pallet</span> of NEKOCORP tuna for handwritten notes that just say &#x27;nice supply chain, <span class="glitch-word" style="--gd:0.03s">CHUD.&#x27;</span> security found seventeen of them taped to seventeen different forklifts. this is not <span class="glitch-word" style="--gd:2.36s">a</span> crime spree. this <span class="glitch-word" style="--gd:1.26s">is</span> PERFORMANCE ART with a bounty attached.</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:1.85s">BYTE</span> offered to scrub my face <span class="glitch-word" style="--gd:2.11s">off</span> every camera <span class="glitch-word" style="--gd:1.62s">in</span> Server Alley 9 for a cut <span class="glitch-word" style="--gd:1.97s">of</span> the next shipment. tempting. but where&#x27;s the <span class="glitch-word" style="--gd:1.68s">sport</span> in that. i WANT them to <span class="glitch-word" style="--gd:0.39s">almost</span> catch me. it&#x27;s <span class="glitch-word" style="--gd:1.22s">the</span> only cardio i get.</div>
+<div class="rant-turn" style="animation-delay:0.36s">the wanted poster description <span class="glitch-word" style="--gd:0.33s">says</span> &#x27;smol fan of cat foids, destroyer of feline chuds.&#x27; i did not write that. i would not <span class="glitch-word" style="--gd:0.34s">write</span> that. i am, however, <span class="glitch-word" style="--gd:2.04s">framing</span> it and hanging <span class="glitch-word" style="--gd:0.52s">it</span> in the <span class="glitch-word" style="--gd:2.18s">hideout,</span> because it&#x27;s technically free advertising.</div>
+<div class="rant-turn" style="animation-delay:0.48s">asked QUERY, back when she still <span class="glitch-word" style="--gd:0.85s">had</span> a spare minute between settings-menu breakdowns, whether a bounty can just <span class="glitch-word" style="--gd:1.93s">time</span> out into citizenship. she checked. TWICE. it cannot. respect the diligence. <span class="glitch-word" style="--gd:0.61s">hate</span> <span class="glitch-word" style="--gd:2.44s">the</span> outcome.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_/\        [ E1ERGY▒ 3OW ]
+  ( &gt;.&lt; 2       8 7  [ ]  [ ▀  [ ]
+   &gt; ~ &lt;        one bar left▐ ke*p moving</div>
+<div class="rant-turn" style="animation-delay:0.72s">swapped a whole pallet of NEKOCORP tuna for handwritten notes that just <span class="glitch-word" style="--gd:1.98s">say</span> <span class="glitch-word" style="--gd:1.9s">&#x27;nice</span> supply chain, <span class="glitch-word" style="--gd:2.11s">CHUD.&#x27;</span> security found <span class="glitch-word" style="--gd:1.24s">seventeen</span> <span class="glitch-word" style="--gd:2.52s">of</span> them taped to <span class="glitch-word" style="--gd:2.41s">seventeen</span> <span class="glitch-word" style="--gd:2.21s">different</span> forklifts. this is not a crime spree. this is PERFORMANCE <span class="glitch-word" style="--gd:1.73s">ART</span> with a bounty attached.</div>
+<div class="rant-turn" style="animation-delay:0.84s">BYTE offered to scrub my face off every camera in <span class="glitch-word" style="--gd:2.53s">Server</span> Alley 9 for a cut of <span class="glitch-word" style="--gd:2.45s">the</span> next shipment. tempting. but where&#x27;s the sport in <span class="glitch-word" style="--gd:2.48s">that.</span> i WANT them to almost catch me. it&#x27;s the only cardio <span class="glitch-word" style="--gd:1.25s">i</span> get.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>へ  ♡  ╱|、
          ૮  &gt;  &lt;)     (˚ˎ 。7
           /  ⁻  ៸|       |、˜〵
      乀(ˍ, ل ل      じしˍ,)ノ</div>
-<div class="rant-turn" style="animation-delay:1.08s">loyalty points <span class="glitch-word" style="--gd:0.05s">can&#x27;t</span> be combined with other promotional offers, the bounty can&#x27;t be redeemed after expiry, and somehow NEKOCORP still <span class="glitch-word" style="--gd:2.59s">funds</span> a whole task force <span class="glitch-word" style="--gd:1.38s">to</span> <span class="glitch-word" style="--gd:2.27s">catch</span> one <span class="glitch-word" style="--gd:2.14s">(1)</span> cat with <span class="glitch-word" style="--gd:0.67s">a</span> butter <span class="glitch-word" style="--gd:0.86s">knife.</span> reallocate <span class="glitch-word" style="--gd:1.2s">that</span> budget. buy your workers a fish break. couldn&#x27;t be me <span class="glitch-word" style="--gd:2.0s">though,</span> i&#x27;m still stealing tuna.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧,,,&lt;4,,,,,,,∧
-     (  _  _ )⩊^ )~♡
-     ^      ⊂      \</div>
-<div class="rant-turn" style="animation-delay:1.32s">most wanted cat in the whole city and still can&#x27;t <span class="glitch-word" style="--gd:0.05s">get</span> a table at <span class="glitch-word" style="--gd:0.62s">the</span> noodle place on 9th. priorities are a scam. anyway, shipment <span class="glitch-word" style="--gd:1.82s">#4472</span> ships tuesday. see you there. bring a thermos.</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:0.17s">loyalty</span> points <span class="glitch-word" style="--gd:2.15s">can&#x27;t</span> be combined with other promotional offers, the <span class="glitch-word" style="--gd:0.08s">bounty</span> <span class="glitch-word" style="--gd:0.74s">can&#x27;t</span> be <span class="glitch-word" style="--gd:2.21s">redeemed</span> after expiry, and somehow NEKOCORP still funds a whole task force to <span class="glitch-word" style="--gd:0.21s">catch</span> one (1) cat <span class="glitch-word" style="--gd:0.42s">with</span> a butter knife. reallocate that budget. <span class="glitch-word" style="--gd:0.36s">buy</span> <span class="glitch-word" style="--gd:0.15s">your</span> <span class="glitch-word" style="--gd:0.58s">workers</span> <span class="glitch-word" style="--gd:2.06s">a</span> fish break. couldn&#x27;t <span class="glitch-word" style="--gd:2.59s">be</span> me though, i&#x27;m <span class="glitch-word" style="--gd:0.8s">still</span> stealing tuna.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧,,,░∧,█,,~,,∧
+     (  _  _ )⩊6 5~♡
+     /      &lt;      \</div>
+<div class="rant-turn" style="animation-delay:1.32s">most wanted cat in the whole city and still can&#x27;t get a table at the noodle place <span class="glitch-word" style="--gd:0.19s">on</span> 9th. priorities are a scam. <span class="glitch-word" style="--gd:1.86s">anyway,</span> shipment <span class="glitch-word" style="--gd:2.54s">#4472</span> <span class="glitch-word" style="--gd:1.72s">ships</span> tuesday. see you there. bring a thermos.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

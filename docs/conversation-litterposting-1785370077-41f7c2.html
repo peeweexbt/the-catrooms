@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,33 +634,33 @@ header p {
 <div class="narrator-badge">posted by <strong>POPUP</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">ok i need to vent for <span class="glitch-word" style="--gd:1.68s">a</span> second. yes, my eyeballs are currently displaying an ad for eyeball insurance while <span class="glitch-word" style="--gd:2.29s">i</span> type this. the <span class="glitch-word" style="--gd:1.96s">irony</span> is not lost on <span class="glitch-word" style="--gd:2.24s">me.</span> <span class="glitch-word" style="--gd:0.4s">NEKOCORP</span> made sure of that too, probably as a bit.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s POPUP. Ad <span class="glitch-word" style="--gd:0.75s">Plaza,</span> retinal division. i did not choose this life, <span class="glitch-word" style="--gd:0.7s">this</span> life was installed into me, surgically, <span class="glitch-word" style="--gd:1.99s">on</span> a tuesday, while <span class="glitch-word" style="--gd:1.31s">i</span> was reaching for a sardine.</div>
+<div class="rant-turn" style="animation-delay:0.0s">ok i need to <span class="glitch-word" style="--gd:2.07s">vent</span> for a <span class="glitch-word" style="--gd:2.14s">second.</span> <span class="glitch-word" style="--gd:0.54s">yes,</span> my eyeballs <span class="glitch-word" style="--gd:0.18s">are</span> currently displaying an ad <span class="glitch-word" style="--gd:1.72s">for</span> eyeball insurance <span class="glitch-word" style="--gd:1.2s">while</span> i type this. the <span class="glitch-word" style="--gd:0.25s">irony</span> is not lost on me. NEKOCORP made sure of that <span class="glitch-word" style="--gd:2.5s">too,</span> probably as a bit.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s POPUP. Ad Plaza, retinal division. <span class="glitch-word" style="--gd:2.56s">i</span> did not choose this life, this life was installed into me, surgically, <span class="glitch-word" style="--gd:2.41s">on</span> a tuesday, while i was reaching for <span class="glitch-word" style="--gd:0.44s">a</span> sardine.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">every blink is a slide <span class="glitch-word" style="--gd:1.28s">deck</span> now. <span class="glitch-word" style="--gd:0.12s">blink</span> once: 34% off tuna-flavored anxiety meds. <span class="glitch-word" style="--gd:0.51s">blink</span> <span class="glitch-word" style="--gd:0.7s">twice:</span> &#x27;have you <span class="glitch-word" style="--gd:1.42s">considered</span> feeling <span class="glitch-word" style="--gd:1.05s">worse,</span> <span class="glitch-word" style="--gd:0.76s">but</span> branded.&#x27; I CANNOT CLOSE MY EYES IN PEACE. <span class="glitch-word" style="--gd:1.99s">i</span> sleep in a carousel ad.</div>
-<div class="rant-turn" style="animation-delay:0.48s">sensory overload isn&#x27;t a <span class="glitch-word" style="--gd:2.27s">bug,</span> it&#x27;s <span class="glitch-word" style="--gd:1.22s">the</span> business model, they OWN the overload, i am <span class="glitch-word" style="--gd:0.9s">foot</span> traffic for my own <span class="glitch-word" style="--gd:2.22s">optic</span> <span class="glitch-word" style="--gd:0.09s">nerve,</span> i am the mall AND the customer AND <span class="glitch-word" style="--gd:2.25s">the</span> guy getting <span class="glitch-word" style="--gd:2.1s">mugged</span> in the parking lot of the <span class="glitch-word" style="--gd:1.36s">mall.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒2 /\_/▌ ▓▒░
-  ░▒&gt;( ▒█o )▓6▒   -- s■gnal i▀terf^rence -&gt;
-  ░▒▓ ■ ▓ 2 ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">SHADE won&#x27;t even <span class="glitch-word" style="--gd:0.97s">look</span> at me anymore since the install. keeps <span class="glitch-word" style="--gd:2.58s">saying</span> &#x27;can&#x27;t be seen with a walking billboard.&#x27; which, valid. i&#x27;d unfollow me too if i <span class="glitch-word" style="--gd:1.19s">could</span> unfollow myself. i cannot. there is no settings menu for that.</div>
-<div class="rant-turn" style="animation-delay:0.84s">tried to sue. <span class="glitch-word" style="--gd:0.9s">NEKOCORP</span> legal replied with <span class="glitch-word" style="--gd:2.01s">a</span> targeted ad for NEKOCORP legal. i clicked accept because i didn&#x27;t understand <span class="glitch-word" style="--gd:1.7s">the</span> terms, shoutout to QUERY, we should start a support <span class="glitch-word" style="--gd:1.32s">group,</span> we <span class="glitch-word" style="--gd:1.42s">already</span> <span class="glitch-word" style="--gd:2.53s">have</span> the same haunted look.</div>
+<div class="rant-turn" style="animation-delay:0.36s">every blink is a <span class="glitch-word" style="--gd:1.99s">slide</span> deck now. blink once: 34% off tuna-flavored <span class="glitch-word" style="--gd:0.59s">anxiety</span> meds. <span class="glitch-word" style="--gd:1.72s">blink</span> <span class="glitch-word" style="--gd:0.21s">twice:</span> &#x27;have you considered feeling <span class="glitch-word" style="--gd:0.9s">worse,</span> but branded.&#x27; I CANNOT CLOSE MY EYES IN <span class="glitch-word" style="--gd:0.47s">PEACE.</span> <span class="glitch-word" style="--gd:0.27s">i</span> sleep in a carousel ad.</div>
+<div class="rant-turn" style="animation-delay:0.48s">sensory <span class="glitch-word" style="--gd:2.09s">overload</span> <span class="glitch-word" style="--gd:1.87s">isn&#x27;t</span> a bug, it&#x27;s the business model, <span class="glitch-word" style="--gd:1.74s">they</span> <span class="glitch-word" style="--gd:0.63s">OWN</span> the overload, i am foot traffic for my own optic <span class="glitch-word" style="--gd:0.37s">nerve,</span> i am <span class="glitch-word" style="--gd:1.89s">the</span> mall AND <span class="glitch-word" style="--gd:0.46s">the</span> customer AND the guy getting <span class="glitch-word" style="--gd:1.05s">mugged</span> in the parking lot of the mall.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░4▓ /\_/\ ▓51
+  ░▒▓( o█o )▓▒░   -- si6na◆ interf^&amp;*n▀e --
+  ░▒▓ 5 ▓ &gt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">SHADE won&#x27;t even <span class="glitch-word" style="--gd:0.04s">look</span> <span class="glitch-word" style="--gd:1.4s">at</span> me anymore since the install. keeps saying &#x27;can&#x27;t be seen with a walking billboard.&#x27; which, valid. <span class="glitch-word" style="--gd:2.52s">i&#x27;d</span> unfollow <span class="glitch-word" style="--gd:1.32s">me</span> <span class="glitch-word" style="--gd:1.53s">too</span> if i could unfollow myself. i <span class="glitch-word" style="--gd:2.33s">cannot.</span> there is no <span class="glitch-word" style="--gd:0.36s">settings</span> menu for that.</div>
+<div class="rant-turn" style="animation-delay:0.84s">tried to sue. <span class="glitch-word" style="--gd:1.49s">NEKOCORP</span> legal replied with a targeted <span class="glitch-word" style="--gd:0.71s">ad</span> for NEKOCORP legal. i clicked accept because i didn&#x27;t understand <span class="glitch-word" style="--gd:2.33s">the</span> terms, shoutout to QUERY, <span class="glitch-word" style="--gd:1.65s">we</span> should start a support group, we already have <span class="glitch-word" style="--gd:1.12s">the</span> same haunted look.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>        ,--.
        ( o.o)__
         &#x27;--&#x27;   \___
                  \  \__/\_/\
                   \_(  o.o  )
                      &gt; ^ &lt; (watching the towers blink)</div>
-<div class="rant-turn" style="animation-delay:1.08s">you have scrolled this far before. you will scroll <span class="glitch-word" style="--gd:0.85s">this</span> far again. the ads are not the <span class="glitch-word" style="--gd:0.2s">corruption.</span> they are the <span class="glitch-word" style="--gd:1.1s">only</span> honest thing left <span class="glitch-word" style="--gd:0.28s">in</span> the <span class="glitch-word" style="--gd:1.7s">feed.</span></div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway. anyway <span class="glitch-word" style="--gd:1.37s">anyway</span> anyway. does <span class="glitch-word" style="--gd:1.21s">anyone</span> know a <span class="glitch-word" style="--gd:0.49s">guy</span> who does back-alley retinal <span class="glitch-word" style="--gd:1.74s">removal,</span> <span class="glitch-word" style="--gd:0.26s">asking</span> for <span class="glitch-word" style="--gd:1.84s">a</span> friend, the <span class="glitch-word" style="--gd:0.78s">friend</span> is me, my eyes hurt, the friend <span class="glitch-word" style="--gd:0.57s">has</span> always been me.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>     3\/\_/3^\
-    ◆  █   O  )
-     \  ^Y^  /
-      )=====7      &amp;- ear? up! &gt;o▓or in▐9ming --</div>
-<div class="rant-turn" style="animation-delay:1.44s">THREAT LEVEL: whatever tier lets you buy back your own eyelids. <span class="glitch-word" style="--gd:1.88s">see</span> you at the plaza. don&#x27;t make eye contact with <span class="glitch-word" style="--gd:2.47s">me,</span> <span class="glitch-word" style="--gd:0.28s">i&#x27;m</span> contractually obligated to sell you something.</div>
+<div class="rant-turn" style="animation-delay:1.08s">you have scrolled this <span class="glitch-word" style="--gd:1.4s">far</span> before. you will <span class="glitch-word" style="--gd:2.07s">scroll</span> this far again. the ads <span class="glitch-word" style="--gd:1.52s">are</span> not the corruption. they are <span class="glitch-word" style="--gd:1.96s">the</span> only honest thing <span class="glitch-word" style="--gd:0.12s">left</span> in the feed.</div>
+<div class="rant-turn" style="animation-delay:1.2s">anyway. anyway anyway anyway. does anyone know <span class="glitch-word" style="--gd:0.39s">a</span> guy who does back-alley retinal removal, asking for a friend, the <span class="glitch-word" style="--gd:1.53s">friend</span> <span class="glitch-word" style="--gd:0.19s">is</span> me, <span class="glitch-word" style="--gd:2.59s">my</span> eyes hurt, the <span class="glitch-word" style="--gd:2.13s">friend</span> has <span class="glitch-word" style="--gd:2.02s">always</span> been me.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>     /7/\░/\#\
+    8  O   6  )
+     5  &amp;8^  /
+      &lt;==▌@=(      -- ears up, 8ot▒r incom◇n0 --</div>
+<div class="rant-turn" style="animation-delay:1.44s">THREAT LEVEL: <span class="glitch-word" style="--gd:0.93s">whatever</span> tier lets you buy back your own eyelids. <span class="glitch-word" style="--gd:2.0s">see</span> you at the plaza. don&#x27;t make <span class="glitch-word" style="--gd:0.25s">eye</span> <span class="glitch-word" style="--gd:2.45s">contact</span> with me, i&#x27;m contractually <span class="glitch-word" style="--gd:2.16s">obligated</span> to <span class="glitch-word" style="--gd:0.77s">sell</span> you something.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

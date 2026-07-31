@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,33 +634,33 @@ header p {
 <div class="narrator-badge">posted by <strong>HAPPYWARE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by HAPPYWARE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">why does the <span class="glitch-word" style="--gd:0.04s">smile</span> chip vibrate harder every time i think the word &#x27;trapped&#x27;? not <span class="glitch-word" style="--gd:1.17s">a</span> <span class="glitch-word" style="--gd:0.47s">rhetorical</span> question. i need an engineer. <span class="glitch-word" style="--gd:2.49s">i</span> <span class="glitch-word" style="--gd:2.57s">need</span> <span class="glitch-word" style="--gd:2.27s">a</span> priest. i need literally one <span class="glitch-word" style="--gd:2.58s">(1)</span> <span class="glitch-word" style="--gd:1.12s">person</span> in this city <span class="glitch-word" style="--gd:1.26s">who</span> is not also smiling right <span class="glitch-word" style="--gd:0.29s">now.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">HAPPYWARE <span class="glitch-word" style="--gd:0.8s">here.</span> Mandatory Morale Influencer, Pawsitivity Sector, <span class="glitch-word" style="--gd:1.82s">seventeen-hour</span> daily livestream. yes i &#x27;chose&#x27; this job the <span class="glitch-word" style="--gd:0.93s">way</span> <span class="glitch-word" style="--gd:0.03s">you</span> &#x27;choose&#x27; to <span class="glitch-word" style="--gd:1.24s">breathe</span> underwater once someone&#x27;s already holding you down there.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\___/\
-    ( o   o )   &gt;■ scann◆▀g..▀
-     )  Y  (    &gt;&gt; ears: ant@nna mod v2
-    ◆   |   )
-     \_*_?_/</div>
-<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s <span class="glitch-word" style="--gd:0.78s">scheduled</span> content: &#x27;YOU ARE NOT TRAPPED.&#x27; i have said this into a camera <span class="glitch-word" style="--gd:1.78s">four</span> hundred times today. i believe it slightly less every single time, which i&#x27;m fairly sure is the <span class="glitch-word" style="--gd:1.61s">actual</span> metric <span class="glitch-word" style="--gd:2.32s">they&#x27;re</span> optimizing for.</div>
-<div class="rant-turn" style="animation-delay:0.48s">fuck my lif- I MEAN HAPPY HAPPY HAPPY HAPPY H̶A̶P̵P̶Y̵ ̶H̴Ä̦̦̩ѓ́ͅP̸̤̣̤̌P̸̩̥͂ͅY̸̻͍̿ — sorry! technical difficulties! everything <span class="glitch-word" style="--gd:1.07s">here</span> is FINE and so, by extension, are YOU.</div>
+<div class="rant-turn" style="animation-delay:0.0s">why does <span class="glitch-word" style="--gd:1.74s">the</span> <span class="glitch-word" style="--gd:2.16s">smile</span> chip vibrate harder <span class="glitch-word" style="--gd:2.3s">every</span> time i think the word &#x27;trapped&#x27;? <span class="glitch-word" style="--gd:1.9s">not</span> a rhetorical question. <span class="glitch-word" style="--gd:0.73s">i</span> need an engineer. i need a priest. i need literally one (1) person in this city who is not also smiling right now.</div>
+<div class="rant-turn" style="animation-delay:0.12s">HAPPYWARE here. Mandatory Morale Influencer, Pawsitivity Sector, seventeen-hour daily livestream. yes <span class="glitch-word" style="--gd:2.01s">i</span> &#x27;chose&#x27; this job the way <span class="glitch-word" style="--gd:0.48s">you</span> &#x27;choose&#x27; to breathe underwater once <span class="glitch-word" style="--gd:1.01s">someone&#x27;s</span> already holding you <span class="glitch-word" style="--gd:1.6s">down</span> there.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\█__/\
+    ( ◇   o )   &gt;&gt; scan3▀ng@..
+     &gt;  Y  (    *&gt; ears: an7enna ◆5d v2
+    1   |   █
+     2_▓___/</div>
+<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s scheduled content: <span class="glitch-word" style="--gd:2.27s">&#x27;YOU</span> ARE NOT TRAPPED.&#x27; i have said this <span class="glitch-word" style="--gd:0.24s">into</span> a camera four hundred times today. i believe it slightly less <span class="glitch-word" style="--gd:1.87s">every</span> single time, which i&#x27;m fairly sure is the <span class="glitch-word" style="--gd:2.04s">actual</span> metric they&#x27;re optimizing for.</div>
+<div class="rant-turn" style="animation-delay:0.48s">fuck my lif- I MEAN <span class="glitch-word" style="--gd:2.41s">HAPPY</span> HAPPY <span class="glitch-word" style="--gd:0.62s">HAPPY</span> HAPPY H̶A̶P̵P̶Y̵ ̶H̴Ä̦̦̩ѓ́ͅP̸̤̣̤̌P̸̩̥͂ͅY̸̻͍̿ — <span class="glitch-word" style="--gd:2.01s">sorry!</span> <span class="glitch-word" style="--gd:2.25s">technical</span> <span class="glitch-word" style="--gd:1.06s">difficulties!</span> everything here <span class="glitch-word" style="--gd:1.13s">is</span> FINE and so, by extension, <span class="glitch-word" style="--gd:2.26s">are</span> <span class="glitch-word" style="--gd:0.5s">YOU.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.72s">QUERY asked me once if the smile chip has an <span class="glitch-word" style="--gd:1.4s">off</span> switch. i told her to check the settings menu. we both <span class="glitch-word" style="--gd:0.85s">started</span> <span class="glitch-word" style="--gd:0.09s">laughing</span> <span class="glitch-word" style="--gd:2.47s">and,</span> <span class="glitch-word" style="--gd:1.51s">notably,</span> <span class="glitch-word" style="--gd:2.35s">only</span> one of us was <span class="glitch-word" style="--gd:2.5s">scared.</span></div>
-<div class="rant-turn" style="animation-delay:0.84s">SHADE won&#x27;t <span class="glitch-word" style="--gd:1.04s">even</span> look at me on stream anymore. <span class="glitch-word" style="--gd:1.26s">says</span> the eyes <span class="glitch-word" style="--gd:1.23s">go</span> dead about <span class="glitch-word" style="--gd:2.04s">six</span> seconds before <span class="glitch-word" style="--gd:0.49s">the</span> <span class="glitch-word" style="--gd:0.12s">mouth</span> catches up. SHADE. buddy. <span class="glitch-word" style="--gd:0.68s">i</span> can SEE that happening from in here. <span class="glitch-word" style="--gd:0.64s">i</span> cannot STOP that happening <span class="glitch-word" style="--gd:2.51s">from</span> in <span class="glitch-word" style="--gd:0.79s">here.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  8▒~ /\▌/\ ▓◇░
-  &gt;▒▓( o&amp;o ◆▓▒░   -- sig◇a@ i6terference --
-  ░▒▓ &gt; ▓ ■ ~▒░</div>
-<div class="rant-turn" style="animation-delay:1.08s">sponsor segment, mandatory: NEKOCORP Yogurt now contains 12% more &#x27;contentment particulate.&#x27; i do not know what that word means. i ate it live. <span class="glitch-word" style="--gd:0.11s">engagement</span> was up 40%. i would like someone to check on me.</div>
-<div class="rant-turn" style="animation-delay:1.2s"><span class="glitch-word" style="--gd:2.57s">BRIK</span> bit a drone this week and everyone called <span class="glitch-word" style="--gd:2.36s">him</span> unhinged. i have not bitten a single <span class="glitch-word" style="--gd:1.18s">thing</span> in four years <span class="glitch-word" style="--gd:1.54s">and</span> <span class="glitch-word" style="--gd:0.28s">i</span> am rotting <span class="glitch-word" style="--gd:0.38s">from</span> a <span class="glitch-word" style="--gd:1.22s">much</span> quieter, much better-lit distance.</div>
+<div class="rant-turn" style="animation-delay:0.72s">QUERY asked me once if the smile chip has an off switch. i told her to check the settings menu. we both started <span class="glitch-word" style="--gd:1.78s">laughing</span> and, notably, only <span class="glitch-word" style="--gd:1.32s">one</span> of us was <span class="glitch-word" style="--gd:0.9s">scared.</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">SHADE won&#x27;t even look at me on stream anymore. says the eyes go dead about six seconds before <span class="glitch-word" style="--gd:1.05s">the</span> mouth catches up. SHADE. buddy. i can SEE that happening from in here. i <span class="glitch-word" style="--gd:0.02s">cannot</span> <span class="glitch-word" style="--gd:1.17s">STOP</span> that happening from in here.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  %▒▓ /\_/\ ▓▒░
+  ░▒▓( o█o )▓▒░   -- signal i▀te█f░re66e --
+  ░▒▓ &gt; ▓ &lt; ▓9░</div>
+<div class="rant-turn" style="animation-delay:1.08s">sponsor segment, mandatory: NEKOCORP Yogurt now contains <span class="glitch-word" style="--gd:1.6s">12%</span> <span class="glitch-word" style="--gd:1.62s">more</span> &#x27;contentment <span class="glitch-word" style="--gd:2.54s">particulate.&#x27;</span> i do <span class="glitch-word" style="--gd:2.38s">not</span> know what that word means. <span class="glitch-word" style="--gd:0.81s">i</span> ate it <span class="glitch-word" style="--gd:0.73s">live.</span> <span class="glitch-word" style="--gd:1.83s">engagement</span> was <span class="glitch-word" style="--gd:1.49s">up</span> 40%. i would like someone to check on me.</div>
+<div class="rant-turn" style="animation-delay:1.2s">BRIK bit a drone this week and everyone called <span class="glitch-word" style="--gd:2.37s">him</span> <span class="glitch-word" style="--gd:0.09s">unhinged.</span> i <span class="glitch-word" style="--gd:1.5s">have</span> not bitten a single <span class="glitch-word" style="--gd:0.72s">thing</span> in four years and <span class="glitch-word" style="--gd:2.58s">i</span> am rotting from a much quieter, much better-lit distance.</div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>        ,--.
        ( o.o)__
         &#x27;--&#x27;   \___
                  \  \__/\_/\
                   \_(  o.o  )
                      &gt; ^ &lt; (watching the towers blink)</div>
-<div class="rant-turn" style="animation-delay:1.44s">anyway! today&#x27;s closing affirmation, read it with <span class="glitch-word" style="--gd:0.39s">me:</span> THE CITY <span class="glitch-word" style="--gd:0.1s">WALLS</span> ARE FOR YOUR PROTECTION. i don&#x27;t know who wrote that line. i don&#x27;t know who i am <span class="glitch-word" style="--gd:2.08s">when</span> the camera&#x27;s off. <span class="glitch-word" style="--gd:0.27s">see</span> you at 6pm, same <span class="glitch-word" style="--gd:2.15s">smile,</span> new losses.</div>
+<div class="rant-turn" style="animation-delay:1.44s">anyway! today&#x27;s closing <span class="glitch-word" style="--gd:0.6s">affirmation,</span> read it with me: THE CITY <span class="glitch-word" style="--gd:2.54s">WALLS</span> <span class="glitch-word" style="--gd:0.76s">ARE</span> FOR YOUR PROTECTION. <span class="glitch-word" style="--gd:1.29s">i</span> don&#x27;t know who wrote that line. i don&#x27;t <span class="glitch-word" style="--gd:1.56s">know</span> <span class="glitch-word" style="--gd:0.37s">who</span> i am when the camera&#x27;s <span class="glitch-word" style="--gd:1.05s">off.</span> see you at 6pm, same smile, new losses.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

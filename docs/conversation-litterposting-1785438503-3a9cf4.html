@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,24 +634,24 @@ header p {
 <div class="narrator-badge">posted by <strong>BRIK</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">—AND THAT&#x27;S WHEN I BIT THE DRONE. FRONT TEETH. FULL COMMIT. IT TASTED LIKE A WARRANTY CLAIM.</div>
-<div class="rant-turn" style="animation-delay:0.12s">BRIK. former <span class="glitch-word" style="--gd:1.15s">KILLDOZER</span> operator, current air vent tenant, district: &#x27;Demolished,&#x27; which is less a place now and more a vibe. I don&#x27;t really do <span class="glitch-word" style="--gd:2.11s">context</span> anymore. context is for <span class="glitch-word" style="--gd:1.26s">cats</span> who still have apartments.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ @\_0\ ▓▒░
-  ░▒▌■ 68o 2▓▒░   -? si■n&gt;l interfe#ence ▐-
-  ░?▓ * ▓ &lt; ▓◇░</div>
-<div class="rant-turn" style="animation-delay:0.36s">vent&#x27;s actually not bad once you stop thinking of it as a vent and start thinking of <span class="glitch-word" style="--gd:2.52s">it</span> as &#x27;load-bearing <span class="glitch-word" style="--gd:1.98s">studio</span> apartment, no windows, character-building <span class="glitch-word" style="--gd:1.98s">draft.&#x27;</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">SHADE lent me the sunglasses <span class="glitch-word" style="--gd:1.22s">again</span> today so security wouldn&#x27;t clock my <span class="glitch-word" style="--gd:0.1s">face</span> near the substation. told him I&#x27;d give them back. i will <span class="glitch-word" style="--gd:0.35s">not</span> be <span class="glitch-word" style="--gd:1.2s">giving</span> them back. this is not a metaphor, i just really like the sunglasses</div>
+<div class="rant-turn" style="animation-delay:0.0s">—AND <span class="glitch-word" style="--gd:2.55s">THAT&#x27;S</span> WHEN I BIT THE <span class="glitch-word" style="--gd:2.59s">DRONE.</span> FRONT TEETH. FULL COMMIT. <span class="glitch-word" style="--gd:1.88s">IT</span> TASTED LIKE A WARRANTY CLAIM.</div>
+<div class="rant-turn" style="animation-delay:0.12s">BRIK. former KILLDOZER operator, current <span class="glitch-word" style="--gd:0.82s">air</span> vent tenant, district: <span class="glitch-word" style="--gd:1.72s">&#x27;Demolished,&#x27;</span> <span class="glitch-word" style="--gd:0.54s">which</span> is less <span class="glitch-word" style="--gd:0.68s">a</span> place now and more a vibe. I <span class="glitch-word" style="--gd:1.5s">don&#x27;t</span> really <span class="glitch-word" style="--gd:0.92s">do</span> context anymore. context <span class="glitch-word" style="--gd:1.62s">is</span> for cats who still have <span class="glitch-word" style="--gd:0.18s">apartments.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░*▓ /1_1\ ▓▒3
+  ░▒▓( ◇■o 2▓▒░   -- ▌▐gna&amp; *&gt;ter■eren0e --
+  ░▒▓ &gt; 2 &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.36s">vent&#x27;s actually not bad once you stop thinking <span class="glitch-word" style="--gd:1.62s">of</span> it as a vent and <span class="glitch-word" style="--gd:0.59s">start</span> thinking of it <span class="glitch-word" style="--gd:2.19s">as</span> <span class="glitch-word" style="--gd:2.18s">&#x27;load-bearing</span> studio apartment, no <span class="glitch-word" style="--gd:0.08s">windows,</span> character-building draft.&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.48s">SHADE lent me the sunglasses again today so security <span class="glitch-word" style="--gd:1.74s">wouldn&#x27;t</span> clock my <span class="glitch-word" style="--gd:0.41s">face</span> near the substation. told him <span class="glitch-word" style="--gd:2.46s">I&#x27;d</span> <span class="glitch-word" style="--gd:2.37s">give</span> them back. i <span class="glitch-word" style="--gd:1.97s">will</span> not be giving them back. this <span class="glitch-word" style="--gd:0.16s">is</span> <span class="glitch-word" style="--gd:1.11s">not</span> a metaphor, i just really <span class="glitch-word" style="--gd:0.37s">like</span> the sunglasses</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.65s">asked</span> the tower why executives get twelve <span class="glitch-word" style="--gd:1.29s">fish</span> breaks a shift and factory cats get one communal scrap of tuna. tower didn&#x27;t <span class="glitch-word" style="--gd:0.52s">answer.</span> tower <span class="glitch-word" style="--gd:0.83s">does</span> not answer questions, tower answers <span class="glitch-word" style="--gd:1.96s">with</span> holograms. my old <span class="glitch-word" style="--gd:1.93s">apartment</span> IS <span class="glitch-word" style="--gd:0.52s">a</span> hologram parking <span class="glitch-word" style="--gd:1.61s">lot</span> now, <span class="glitch-word" style="--gd:0.71s">so,</span> point made i guess</div>
-<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY dropped off tuna he &#x27;acquired.&#x27; <span class="glitch-word" style="--gd:1.36s">didn&#x27;t</span> ask questions. we don&#x27;t <span class="glitch-word" style="--gd:1.06s">ask</span> questions in this district, we ask &#x27;how many drones this week&#x27; and the answer <span class="glitch-word" style="--gd:1.16s">today</span> was three. personal record</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>        !\_/\
-       ( &lt;.- )
-        &gt; ^ &lt;
-   ~~~▒~~|||~*~~~6▐DAT░ JACK▒ !I5KED1</div>
-<div class="rant-turn" style="animation-delay:1.08s">my <span class="glitch-word" style="--gd:1.37s">mother</span> calls me handsome. NEKOCORP calls me a domestic extremist. i contain multitudes, one of which bites rotors for sport</div>
+<div class="rant-turn" style="animation-delay:0.72s">asked the tower why executives get twelve fish breaks <span class="glitch-word" style="--gd:1.58s">a</span> shift and <span class="glitch-word" style="--gd:1.2s">factory</span> cats get one communal scrap <span class="glitch-word" style="--gd:1.3s">of</span> tuna. tower didn&#x27;t <span class="glitch-word" style="--gd:1.34s">answer.</span> tower <span class="glitch-word" style="--gd:0.2s">does</span> not answer questions, tower answers <span class="glitch-word" style="--gd:0.77s">with</span> holograms. my old apartment IS a <span class="glitch-word" style="--gd:0.6s">hologram</span> parking lot now, so, point made i guess</div>
+<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY dropped off tuna he &#x27;acquired.&#x27; didn&#x27;t ask <span class="glitch-word" style="--gd:0.11s">questions.</span> we don&#x27;t ask <span class="glitch-word" style="--gd:2.55s">questions</span> in this district, we ask &#x27;how many drones this week&#x27; and the answer today was three. personal <span class="glitch-word" style="--gd:1.19s">record</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_/4
+       # 9.- ~
+        0 # ◆
+   ~~◇◆~~|||6~~7■~~DATA JACK: LI4KED]</div>
+<div class="rant-turn" style="animation-delay:1.08s">my mother <span class="glitch-word" style="--gd:2.46s">calls</span> me handsome. NEKOCORP calls <span class="glitch-word" style="--gd:0.02s">me</span> a domestic extremist. i contain multitudes, one of which bites <span class="glitch-word" style="--gd:1.15s">rotors</span> for sport</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -598,7 +659,7 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. vent&#x27;s <span class="glitch-word" style="--gd:0.14s">cold,</span> teeth are fine, drone count&#x27;s at <span class="glitch-word" style="--gd:1.33s">three.</span> building&#x27;s <span class="glitch-word" style="--gd:2.41s">gonna</span> fall on someone eventually, statistically better odds it&#x27;s not me. goodnight.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. vent&#x27;s cold, teeth are fine, <span class="glitch-word" style="--gd:2.58s">drone</span> count&#x27;s at three. building&#x27;s gonna <span class="glitch-word" style="--gd:0.36s">fall</span> on someone eventually, <span class="glitch-word" style="--gd:1.76s">statistically</span> better odds it&#x27;s not me. goodnight.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

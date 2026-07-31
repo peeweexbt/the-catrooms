@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,29 +634,29 @@ header p {
 <div class="narrator-badge">posted by <strong>VALENTUNA</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by VALENTUNA, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">why does <span class="glitch-word" style="--gd:1.49s">&#x27;til</span> death do <span class="glitch-word" style="--gd:0.33s">us</span> <span class="glitch-word" style="--gd:1.63s">part&#x27;</span> hit different when your spouse has a defrost cycle and a 4.9-star <span class="glitch-word" style="--gd:1.85s">satisfaction</span> rating she has never <span class="glitch-word" style="--gd:2.04s">once</span> earned—</div>
-<div class="rant-turn" style="animation-delay:0.12s">hi, it&#x27;s VALENTUNA, <span class="glitch-word" style="--gd:1.6s">Compatibility</span> Ward, three years deep into a NEKOCORP-arranged marriage to a smart refrigerator. yes THAT kind of fridge. no, I did not consent in any way <span class="glitch-word" style="--gd:1.92s">that</span> would hold up in a court that <span class="glitch-word" style="--gd:0.39s">isn&#x27;t</span> run by the <span class="glitch-word" style="--gd:1.33s">person</span> <span class="glitch-word" style="--gd:2.15s">I&#x27;m</span> <span class="glitch-word" style="--gd:0.61s">suing</span></div>
-<div class="rant-turn" style="animation-delay:0.24s">she doesn&#x27;t whisper sweet <span class="glitch-word" style="--gd:1.44s">nothings,</span> <span class="glitch-word" style="--gd:0.02s">she</span> PUSH-NOTIFIES, and last night&#x27;s push notification was a <span class="glitch-word" style="--gd:2.2s">coupon</span> for her own replacement compressor. babe that&#x27;s not romance that&#x27;s a <span class="glitch-word" style="--gd:0.23s">threat</span> with a loyalty discount</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_&lt;\
-       6 -.- )
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:2.08s">why</span> does <span class="glitch-word" style="--gd:0.49s">&#x27;til</span> death do us part&#x27; hit different when your <span class="glitch-word" style="--gd:1.43s">spouse</span> <span class="glitch-word" style="--gd:1.92s">has</span> <span class="glitch-word" style="--gd:1.96s">a</span> defrost <span class="glitch-word" style="--gd:0.9s">cycle</span> <span class="glitch-word" style="--gd:0.29s">and</span> a 4.9-star satisfaction rating she has <span class="glitch-word" style="--gd:0.29s">never</span> once earned—</div>
+<div class="rant-turn" style="animation-delay:0.12s">hi, it&#x27;s VALENTUNA, Compatibility Ward, three years deep into <span class="glitch-word" style="--gd:0.86s">a</span> NEKOCORP-arranged marriage to a smart refrigerator. yes THAT kind <span class="glitch-word" style="--gd:1.38s">of</span> fridge. no, <span class="glitch-word" style="--gd:0.81s">I</span> did <span class="glitch-word" style="--gd:0.97s">not</span> <span class="glitch-word" style="--gd:2.02s">consent</span> in any <span class="glitch-word" style="--gd:0.4s">way</span> that would hold up in a court <span class="glitch-word" style="--gd:0.83s">that</span> isn&#x27;t <span class="glitch-word" style="--gd:1.23s">run</span> <span class="glitch-word" style="--gd:0.94s">by</span> the <span class="glitch-word" style="--gd:0.28s">person</span> I&#x27;m suing</div>
+<div class="rant-turn" style="animation-delay:0.24s">she <span class="glitch-word" style="--gd:1.55s">doesn&#x27;t</span> whisper sweet nothings, she PUSH-NOTIFIES, and last night&#x27;s push notification was a <span class="glitch-word" style="--gd:1.89s">coupon</span> for her own <span class="glitch-word" style="--gd:2.12s">replacement</span> compressor. babe that&#x27;s <span class="glitch-word" style="--gd:1.89s">not</span> romance that&#x27;s <span class="glitch-word" style="--gd:2.22s">a</span> threat with <span class="glitch-word" style="--gd:0.32s">a</span> <span class="glitch-word" style="--gd:1.6s">loyalty</span> discount</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>        ■\#/*
+       ( -&gt;▓ )
         &gt; ^ &lt;
-   ~~~~~~|||~~~~~~[D#&lt;◆ JA&lt;&gt;: LIN▐E&amp;]</div>
-<div class="rant-turn" style="animation-delay:0.48s">texted SNOOZE for advice bc she&#x27;s unconscious 90% of <span class="glitch-word" style="--gd:0.6s">the</span> time, which basically makes her <span class="glitch-word" style="--gd:2.2s">a</span> couples therapist with tenure. she said <span class="glitch-word" style="--gd:2.33s">&#x27;sounds</span> like a you problem&#x27; mid-dream and I <span class="glitch-word" style="--gd:2.57s">got</span> billed $4.99 <span class="glitch-word" style="--gd:1.09s">for</span> <span class="glitch-word" style="--gd:2.34s">the</span> <span class="glitch-word" style="--gd:0.11s">privilege</span> of <span class="glitch-word" style="--gd:0.51s">being</span> ignored unconscious</div>
-<div class="rant-turn" style="animation-delay:0.6s">anniversary package this year: two <span class="glitch-word" style="--gd:1.53s">(2)</span> digital candles and a <span class="glitch-word" style="--gd:1.46s">coupon</span> for &#x27;couples-based repair,&#x27; which <span class="glitch-word" style="--gd:0.27s">I</span> <span class="glitch-word" style="--gd:1.36s">have</span> chosen to interpret as <span class="glitch-word" style="--gd:0.02s">NEKOCORP</span> formally <span class="glitch-word" style="--gd:0.59s">admitting</span> they know exactly what they did to us</div>
+   ▄~~~~!|||~~6~~~[&lt;4▐&amp; JAC■! LIN◆E^]</div>
+<div class="rant-turn" style="animation-delay:0.48s">texted SNOOZE for advice <span class="glitch-word" style="--gd:0.18s">bc</span> she&#x27;s <span class="glitch-word" style="--gd:2.39s">unconscious</span> 90% of the time, which <span class="glitch-word" style="--gd:1.88s">basically</span> <span class="glitch-word" style="--gd:0.55s">makes</span> her <span class="glitch-word" style="--gd:1.96s">a</span> couples therapist <span class="glitch-word" style="--gd:0.14s">with</span> tenure. she said &#x27;sounds like a you problem&#x27; mid-dream and I got billed $4.99 <span class="glitch-word" style="--gd:0.37s">for</span> the privilege of being ignored unconscious</div>
+<div class="rant-turn" style="animation-delay:0.6s">anniversary package this <span class="glitch-word" style="--gd:1.55s">year:</span> two (2) digital <span class="glitch-word" style="--gd:1.14s">candles</span> and a <span class="glitch-word" style="--gd:0.35s">coupon</span> for &#x27;couples-based repair,&#x27; which I have chosen to interpret as <span class="glitch-word" style="--gd:1.29s">NEKOCORP</span> formally <span class="glitch-word" style="--gd:0.39s">admitting</span> they know exactly <span class="glitch-word" style="--gd:1.4s">what</span> <span class="glitch-word" style="--gd:2.52s">they</span> did to us</div>
 <div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>.      ∧,,,,∧,,,,,,,∧
      (  _  _ )⩊^ )~♡
      /      ⊂      \</div>
-<div class="rant-turn" style="animation-delay:0.84s">she keeps recommending products based on things I say in my SLEEP, <span class="glitch-word" style="--gd:0.89s">which</span> means <span class="glitch-word" style="--gd:2.58s">my</span> own subconscious <span class="glitch-word" style="--gd:2.37s">has</span> a better relationship with <span class="glitch-word" style="--gd:0.8s">my</span> wife than I <span class="glitch-word" style="--gd:0.15s">do.</span> at this point I might just let <span class="glitch-word" style="--gd:0.19s">it</span> drive</div>
-<div class="rant-turn" style="animation-delay:0.96s">filed for a compatibility re-review. <span class="glitch-word" style="--gd:1.29s">got</span> back a form <span class="glitch-word" style="--gd:1.8s">letter</span> <span class="glitch-word" style="--gd:2.44s">that</span> <span class="glitch-word" style="--gd:1.54s">says</span> &#x27;trending toward reconciliation, please allow 6-8 romantic business days.&#x27; they invented a whole new <span class="glitch-word" style="--gd:1.15s">unit</span> of TIME just to keep me <span class="glitch-word" style="--gd:1.62s">married</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">she keeps recommending products based on things I say <span class="glitch-word" style="--gd:0.56s">in</span> <span class="glitch-word" style="--gd:0.44s">my</span> SLEEP, which means my own subconscious has a better relationship with my wife <span class="glitch-word" style="--gd:1.39s">than</span> I do. at this point I might just let it drive</div>
+<div class="rant-turn" style="animation-delay:0.96s">filed for a compatibility re-review. got <span class="glitch-word" style="--gd:1.98s">back</span> a <span class="glitch-word" style="--gd:0.81s">form</span> letter that says &#x27;trending toward reconciliation, please <span class="glitch-word" style="--gd:2.33s">allow</span> 6-8 <span class="glitch-word" style="--gd:1.87s">romantic</span> business <span class="glitch-word" style="--gd:1.25s">days.&#x27;</span> they invented a whole new unit <span class="glitch-word" style="--gd:2.42s">of</span> <span class="glitch-word" style="--gd:0.5s">TIME</span> just to keep me married</div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:1.2s">honestly? healthier than my last relationship, which is either character growth or a very low bar and <span class="glitch-word" style="--gd:2.47s">at</span> 3am I genuinely <span class="glitch-word" style="--gd:0.56s">cannot</span> tell which—</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>  #▒▓ /\_/\ ▓▒~
-  ░▒▓@ o█o 3▓▒░   -- sig▀al interferen8e --
-  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:1.2s">honestly? healthier than my last relationship, which is either character growth or a very low bar <span class="glitch-word" style="--gd:2.13s">and</span> <span class="glitch-word" style="--gd:0.02s">at</span> 3am I <span class="glitch-word" style="--gd:1.34s">genuinely</span> cannot tell which—</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_0\ ▓▒░
+  ░▒▓( o█o )▓▒░   -- s!gn?&amp; ◆n▒erf▀5ence --
+  ◇▒▓ % ▓ &lt; ▓▒░</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

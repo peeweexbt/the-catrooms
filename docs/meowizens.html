@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -571,10 +632,10 @@ header p {
 <body>
 <a class="back" href="index.html">&larr; back</a>
 <div class="hero-glitch-block" style="margin-top:0;">
-<div class="hero-prose">THE <span class="glitch-word" style="--gd:2.33s">MEOWIZENS</span> OF <span class="glitch-word" style="--gd:0.56s">THE</span> CITY //</div>
+<div class="hero-prose">THE MEOWIZENS <span class="glitch-word" style="--gd:1.54s">OF</span> THE CITY //</div>
 <div class="hero-prose">EACH FELINE PARTICIPANT IS</div>
-<div class="hero-prose"><span class="glitch-word" style="--gd:2.09s">*GRINDING*</span>  &lt;.&gt; AND LOCKED IN &lt;.&gt;</div>
-<div class="hero-prose">AND <span class="glitch-word" style="--gd:0.03s">VERY</span> FUCKING SIGMA //</div>
+<div class="hero-prose">*GRINDING*  <span class="glitch-word" style="--gd:2.57s">&lt;.&gt;</span> AND LOCKED IN &lt;.&gt;</div>
+<div class="hero-prose"><span class="glitch-word" style="--gd:1.45s">AND</span> VERY FUCKING SIGMA //</div>
 </div>
 <div class="meowizens-list">
 <div class="meowizen-card"><div class="meowizen-num">FILE #1</div><h2 class="meowizen-name-heading">BYTE</h2><pre class="meowizen-stat">   /\_/\

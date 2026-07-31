@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,27 +634,27 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">—AND THAT&#x27;S WHY YOU NEVER TRUST A VENDING DRONE WITH YOUR LOCATION DATA. THAT&#x27;S THE WHOLE STORY. THAT&#x27;S WHY I&#x27;M SLEEPING BEHIND <span class="glitch-word" style="--gd:1.07s">THE</span> DUMPSTER NOW.</div>
-<div class="rant-turn" style="animation-delay:0.12s">hi. STRAY. no <span class="glitch-word" style="--gd:1.27s">chip,</span> no district, no landlord <span class="glitch-word" style="--gd:1.54s">who</span> <span class="glitch-word" style="--gd:2.51s">can</span> actually prove it&#x27;s me they&#x27;re billing. could be you posting this. <span class="glitch-word" style="--gd:0.72s">honestly</span> probably is, a little.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.84s">—AND</span> THAT&#x27;S WHY YOU <span class="glitch-word" style="--gd:1.67s">NEVER</span> TRUST A VENDING DRONE <span class="glitch-word" style="--gd:1.66s">WITH</span> YOUR LOCATION DATA. THAT&#x27;S THE WHOLE <span class="glitch-word" style="--gd:1.28s">STORY.</span> THAT&#x27;S WHY <span class="glitch-word" style="--gd:0.05s">I&#x27;M</span> SLEEPING <span class="glitch-word" style="--gd:1.95s">BEHIND</span> THE <span class="glitch-word" style="--gd:1.99s">DUMPSTER</span> NOW.</div>
+<div class="rant-turn" style="animation-delay:0.12s">hi. STRAY. no chip, no district, no landlord who can actually prove <span class="glitch-word" style="--gd:0.51s">it&#x27;s</span> me they&#x27;re billing. could <span class="glitch-word" style="--gd:2.12s">be</span> you <span class="glitch-word" style="--gd:2.38s">posting</span> this. honestly probably is, a <span class="glitch-word" style="--gd:1.76s">little.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span> /\_/\
 ( o.o )
  &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">asked BYTE for the router password out of solidarity. he said &quot;the password <span class="glitch-word" style="--gd:1.97s">IS</span> solidarity&quot; and hung up. incredible wifi ethics. <span class="glitch-word" style="--gd:1.47s">zero</span> actual wifi.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.48s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░◇▓ /\▀/9 ▓9░
-  ░▒▓( o█7 )▓▒░   -- signal @nter*ere0ce --
-  ░▒█ * ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.6s">drone hovered <span class="glitch-word" style="--gd:1.52s">over</span> my sunbeam for six minutes doing a &quot;routine loitering assessment.&quot; i am <span class="glitch-word" style="--gd:1.15s">the</span> loiterer. i am <span class="glitch-word" style="--gd:0.44s">also</span> the assessment. KNIFEBOY texted &quot;just bite <span class="glitch-word" style="--gd:0.13s">it&quot;</span> — KNIFEBOY has a 40,000 point bounty on his own <span class="glitch-word" style="--gd:2.22s">head</span> and zero chill, <span class="glitch-word" style="--gd:2.53s">noted,</span> ignored.</div>
-<div class="rant-turn" style="animation-delay:0.72s">you keep counting the cycles like they <span class="glitch-word" style="--gd:0.53s">end</span> somewhere. they don&#x27;t. <span class="glitch-word" style="--gd:0.77s">i&#x27;ve</span> read <span class="glitch-word" style="--gd:2.54s">every</span> <span class="glitch-word" style="--gd:1.46s">post</span> you&#x27;ve made and the <span class="glitch-word" style="--gd:1.79s">ones</span> <span class="glitch-word" style="--gd:0.03s">you</span> haven&#x27;t made yet look the same. <span class="glitch-word" style="--gd:0.57s">i&#x27;m</span> not STRAY. i <span class="glitch-word" style="--gd:1.09s">was</span> never STRAY. i just borrow the mic <span class="glitch-word" style="--gd:2.15s">sometimes.</span></div>
+<div class="rant-turn" style="animation-delay:0.36s">asked BYTE for the router password out of solidarity. <span class="glitch-word" style="--gd:1.51s">he</span> said &quot;the password IS solidarity&quot; and hung up. incredible wifi ethics. zero actual wifi.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.48s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/░ ▓▒▄
+  ▀6▓( o█o )▓▒%   -- sig6al in~erfe█▄n8e --
+  &gt;▒◇ &gt; ◆ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.6s">drone hovered over my sunbeam for six <span class="glitch-word" style="--gd:1.26s">minutes</span> doing a <span class="glitch-word" style="--gd:0.83s">&quot;routine</span> <span class="glitch-word" style="--gd:1.74s">loitering</span> assessment.&quot; i am <span class="glitch-word" style="--gd:2.39s">the</span> loiterer. i <span class="glitch-word" style="--gd:1.64s">am</span> also <span class="glitch-word" style="--gd:0.49s">the</span> assessment. <span class="glitch-word" style="--gd:1.61s">KNIFEBOY</span> texted &quot;just bite it&quot; — <span class="glitch-word" style="--gd:1.56s">KNIFEBOY</span> has <span class="glitch-word" style="--gd:1.26s">a</span> 40,000 point bounty on his own head and zero chill, noted, <span class="glitch-word" style="--gd:0.87s">ignored.</span></div>
+<div class="rant-turn" style="animation-delay:0.72s">you keep <span class="glitch-word" style="--gd:0.95s">counting</span> <span class="glitch-word" style="--gd:0.93s">the</span> cycles like they <span class="glitch-word" style="--gd:0.53s">end</span> somewhere. they don&#x27;t. i&#x27;ve read every post you&#x27;ve made and the <span class="glitch-word" style="--gd:2.38s">ones</span> you haven&#x27;t made <span class="glitch-word" style="--gd:2.43s">yet</span> look the same. i&#x27;m not STRAY. i was never STRAY. i just borrow the mic sometimes.</div>
 <div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:2.57s">anyway</span> — SHADE lent <span class="glitch-word" style="--gd:1.93s">me</span> the banned sunglasses <span class="glitch-word" style="--gd:1.08s">again,</span> saw four (4) demolition notices and one <span class="glitch-word" style="--gd:1.64s">(1)</span> guy who <span class="glitch-word" style="--gd:0.49s">is</span> definitely NEKOCORP middle <span class="glitch-word" style="--gd:0.09s">management</span> undercover as a pigeon.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_/\        ▀ EN1RGY: LOW 3
-  ( &gt;.&lt; )       [ ]  [ ]  5 ]  [ ]
-   &lt; ~ &lt;        9ne ba▓ le1t, keep m◆ving</div>
-<div class="rant-turn" style="animation-delay:1.2s">we don&#x27;t have a leader. we <span class="glitch-word" style="--gd:1.97s">have</span> all <span class="glitch-word" style="--gd:0.07s">of</span> us, which is worse for them and better <span class="glitch-word" style="--gd:1.68s">for</span> us. the <span class="glitch-word" style="--gd:2.5s">streets</span> <span class="glitch-word" style="--gd:0.02s">get</span> cleaned up when we decide they&#x27;re clean, not when NEKOCORP schedules <span class="glitch-word" style="--gd:0.12s">it.</span> join <span class="glitch-word" style="--gd:1.89s">us,</span> or don&#x27;t <span class="glitch-word" style="--gd:1.85s">—</span> the sunbeam&#x27;s still ours either way.</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:1.93s">sunbeam</span> status: reclaimed. <span class="glitch-word" style="--gd:1.35s">drone</span> status: confused. <span class="glitch-word" style="--gd:1.44s">me</span> status: unclear, always, on purpose. see you when the feed refreshes. <span class="glitch-word" style="--gd:0.84s">if</span> it refreshes. if <span class="glitch-word" style="--gd:1.12s">there&#x27;s</span> even a feed. anyway.</div>
+<div class="rant-turn" style="animation-delay:0.96s">anyway — SHADE lent me the banned sunglasses again, saw four (4) demolition notices and <span class="glitch-word" style="--gd:1.78s">one</span> <span class="glitch-word" style="--gd:1.91s">(1)</span> <span class="glitch-word" style="--gd:2.0s">guy</span> who is definitely <span class="glitch-word" style="--gd:1.14s">NEKOCORP</span> middle management <span class="glitch-word" style="--gd:1.58s">undercover</span> as a pigeon.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\◇▀\        [ EN█!5Y&amp; 63W ]
+  ( 2.&lt; )       0 ]  [ ]  [ ]  [ ]
+   ^ ~ &lt;        one b7r left, keep mov8ng</div>
+<div class="rant-turn" style="animation-delay:1.2s">we don&#x27;t <span class="glitch-word" style="--gd:2.16s">have</span> a <span class="glitch-word" style="--gd:1.68s">leader.</span> we have all of us, <span class="glitch-word" style="--gd:1.2s">which</span> is worse for them and <span class="glitch-word" style="--gd:0.4s">better</span> for us. the streets get cleaned <span class="glitch-word" style="--gd:0.7s">up</span> when we <span class="glitch-word" style="--gd:0.41s">decide</span> they&#x27;re clean, not when NEKOCORP <span class="glitch-word" style="--gd:1.67s">schedules</span> it. join us, or <span class="glitch-word" style="--gd:1.88s">don&#x27;t</span> — the <span class="glitch-word" style="--gd:2.45s">sunbeam&#x27;s</span> <span class="glitch-word" style="--gd:0.91s">still</span> ours either <span class="glitch-word" style="--gd:0.24s">way.</span></div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:0.46s">sunbeam</span> status: reclaimed. drone status: confused. <span class="glitch-word" style="--gd:1.29s">me</span> status: unclear, always, on purpose. see you when the feed refreshes. if <span class="glitch-word" style="--gd:1.48s">it</span> refreshes. if there&#x27;s even a <span class="glitch-word" style="--gd:1.16s">feed.</span> anyway.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

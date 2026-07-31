@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,28 +634,28 @@ header p {
 <div class="narrator-badge">posted by <strong>BRIK</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">THREAT LEVEL: DRONE. STATUS: <span class="glitch-word" style="--gd:2.15s">HOVERING.</span> LOCATION: my vent, which <span class="glitch-word" style="--gd:1.02s">is</span> also my <span class="glitch-word" style="--gd:0.6s">apartment,</span> which used to be an actual apartment before NEKOCORP KILLDOZER&#x27;d it into a holographic parking garage. I know because I <span class="glitch-word" style="--gd:0.74s">drove</span> the <span class="glitch-word" style="--gd:1.26s">KILLDOZER.</span> name&#x27;s BRIK. this is not a metaphor. this is <span class="glitch-word" style="--gd:2.39s">Tuesday.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">drone&#x27;s <span class="glitch-word" style="--gd:1.95s">been</span> <span class="glitch-word" style="--gd:1.98s">camped</span> outside my vent for six hours doing &#x27;routine <span class="glitch-word" style="--gd:1.27s">residential</span> compliance scans&#x27; on <span class="glitch-word" style="--gd:1.6s">a</span> residence <span class="glitch-word" style="--gd:2.53s">that</span> is <span class="glitch-word" style="--gd:1.75s">eight</span> inches wide and smells like <span class="glitch-word" style="--gd:0.76s">brake</span> fluid. sir. SIR. <span class="glitch-word" style="--gd:0.98s">there</span> <span class="glitch-word" style="--gd:0.74s">is</span> no compliance to scan. <span class="glitch-word" style="--gd:0.58s">there</span> is a cat and a grudge.</div>
+<div class="rant-turn" style="animation-delay:0.0s">THREAT LEVEL: DRONE. STATUS: HOVERING. <span class="glitch-word" style="--gd:0.12s">LOCATION:</span> my vent, which is also my <span class="glitch-word" style="--gd:1.4s">apartment,</span> which used to be an actual apartment <span class="glitch-word" style="--gd:1.82s">before</span> NEKOCORP KILLDOZER&#x27;d it into <span class="glitch-word" style="--gd:2.43s">a</span> holographic parking garage. I <span class="glitch-word" style="--gd:0.04s">know</span> because I drove the KILLDOZER. name&#x27;s <span class="glitch-word" style="--gd:0.39s">BRIK.</span> this is not a metaphor. this is <span class="glitch-word" style="--gd:0.28s">Tuesday.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">drone&#x27;s been camped outside my vent for six hours doing &#x27;routine residential <span class="glitch-word" style="--gd:0.33s">compliance</span> scans&#x27; on a residence <span class="glitch-word" style="--gd:1.28s">that</span> is <span class="glitch-word" style="--gd:2.02s">eight</span> <span class="glitch-word" style="--gd:1.86s">inches</span> wide and <span class="glitch-word" style="--gd:1.11s">smells</span> like brake fluid. sir. SIR. there <span class="glitch-word" style="--gd:1.37s">is</span> <span class="glitch-word" style="--gd:1.7s">no</span> compliance to scan. there is a cat and a <span class="glitch-word" style="--gd:0.98s">grudge.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.36s">used <span class="glitch-word" style="--gd:1.7s">to</span> pilot the exact <span class="glitch-word" style="--gd:0.84s">model</span> that took this <span class="glitch-word" style="--gd:0.63s">place</span> apart. <span class="glitch-word" style="--gd:1.24s">full</span> <span class="glitch-word" style="--gd:1.44s">irony,</span> I know the blind spot on these things because <span class="glitch-word" style="--gd:1.67s">I</span> MADE the blind spot. that&#x27;s not nostalgia that&#x27;s tactical knowledge.</div>
-<div class="rant-turn" style="animation-delay:0.48s">SHADE lent me a pair of the anti-scan glasses last week, said &#x27;stay based,&#x27; NEKOCORP repossessed HIS eyes <span class="glitch-word" style="--gd:2.28s">for</span> it days later <span class="glitch-word" style="--gd:1.83s">so</span> I&#x27;m wearing them real sparingly now, RIP to a <span class="glitch-word" style="--gd:0.11s">real</span> one. KNIFEBOY still <span class="glitch-word" style="--gd:2.41s">owes</span> me for the <span class="glitch-word" style="--gd:0.75s">tuna</span> job, <span class="glitch-word" style="--gd:0.99s">he</span> <span class="glitch-word" style="--gd:2.38s">knows</span> what he did.</div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:1.97s">used</span> to <span class="glitch-word" style="--gd:1.97s">pilot</span> the exact model that <span class="glitch-word" style="--gd:1.99s">took</span> this place apart. full irony, I know <span class="glitch-word" style="--gd:0.65s">the</span> blind spot on these things because I MADE the <span class="glitch-word" style="--gd:2.26s">blind</span> spot. that&#x27;s not nostalgia that&#x27;s tactical knowledge.</div>
+<div class="rant-turn" style="animation-delay:0.48s">SHADE lent me a pair of the anti-scan glasses last <span class="glitch-word" style="--gd:1.68s">week,</span> <span class="glitch-word" style="--gd:0.37s">said</span> &#x27;stay based,&#x27; NEKOCORP repossessed HIS eyes for it days later so I&#x27;m wearing them real sparingly now, RIP to a real <span class="glitch-word" style="--gd:0.43s">one.</span> KNIFEBOY <span class="glitch-word" style="--gd:1.84s">still</span> owes me for the tuna <span class="glitch-word" style="--gd:0.22s">job,</span> he knows what he did.</div>
 <div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_/\
-       ( -%- )
-        5 ^ &lt;
-   ~▌▌~~1|||~*~~~~[DAT^ JACK: &gt;IN7E?]</div>
-<div class="rant-turn" style="animation-delay:0.72s">NEKOCORP&#x27;s newest thing <span class="glitch-word" style="--gd:2.19s">in</span> Demolished district: a &#x27;community <span class="glitch-word" style="--gd:1.95s">engagement&#x27;</span> hologram that plays a soft jazz loop over the rubble 24/7 so nobody notices there used to be buildings here. the jazz is actually kind of <span class="glitch-word" style="--gd:0.88s">good.</span> I <span class="glitch-word" style="--gd:0.35s">hate</span> that the jazz is good.</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:2.27s">black</span> market update: traded a KILLDOZER access badge, expired, worthless, for four sardines and a lighter that doesn&#x27;t work, to a rat who <span class="glitch-word" style="--gd:1.32s">claimed</span> to know a guy. there is always a rat <span class="glitch-word" style="--gd:0.44s">who</span> knows a guy.</div>
+       ( -.1 )
+        &gt; ^ &lt;
+   #~~~~8|?▀~~~6~~[DAT░ JACK▐ LI6◇ED]</div>
+<div class="rant-turn" style="animation-delay:0.72s">NEKOCORP&#x27;s newest thing in <span class="glitch-word" style="--gd:1.2s">Demolished</span> district: a &#x27;community <span class="glitch-word" style="--gd:0.6s">engagement&#x27;</span> hologram <span class="glitch-word" style="--gd:1.89s">that</span> <span class="glitch-word" style="--gd:0.2s">plays</span> <span class="glitch-word" style="--gd:0.39s">a</span> soft jazz loop over the rubble 24/7 so nobody notices there used <span class="glitch-word" style="--gd:0.39s">to</span> <span class="glitch-word" style="--gd:1.99s">be</span> buildings here. the jazz is actually kind of good. I hate that the jazz is good.</div>
+<div class="rant-turn" style="animation-delay:0.84s">black market update: <span class="glitch-word" style="--gd:2.25s">traded</span> a KILLDOZER access badge, expired, <span class="glitch-word" style="--gd:1.18s">worthless,</span> for four sardines and a lighter that <span class="glitch-word" style="--gd:1.49s">doesn&#x27;t</span> work, <span class="glitch-word" style="--gd:0.02s">to</span> a <span class="glitch-word" style="--gd:0.01s">rat</span> who <span class="glitch-word" style="--gd:2.25s">claimed</span> <span class="glitch-word" style="--gd:2.5s">to</span> know a guy. <span class="glitch-word" style="--gd:0.21s">there</span> is always <span class="glitch-word" style="--gd:0.4s">a</span> rat who knows <span class="glitch-word" style="--gd:0.69s">a</span> guy.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.08s">anyway <span class="glitch-word" style="--gd:2.41s">I</span> bit <span class="glitch-word" style="--gd:1.45s">the</span> drone. obviously. it tased <span class="glitch-word" style="--gd:0.48s">me,</span> I tased it back with MY TEETH, we&#x27;re both worse for it, the vent now smells like <span class="glitch-word" style="--gd:1.26s">ozone</span> <span class="glitch-word" style="--gd:1.97s">and</span> <span class="glitch-word" style="--gd:1.28s">regret,</span> worth it, would do it again, WILL do <span class="glitch-word" style="--gd:0.11s">it</span> again in approximately four hours when its patrol resets.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ ▌!_/9 ▓▓░
-  ░▒◆( o█o )&amp;◆░   -- si1nal inte%3erence -▓
-  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:1.32s">in closing: the <span class="glitch-word" style="--gd:0.4s">vent</span> is mine, the jazz can keep <span class="glitch-word" style="--gd:1.34s">playing</span> over my dead apartment, SHADE&#x27;s eyes will grow back eventually probably, KNIFEBOY still owes me tuna, and if <span class="glitch-word" style="--gd:0.18s">a</span> drone ever <span class="glitch-word" style="--gd:1.12s">asks</span> <span class="glitch-word" style="--gd:0.89s">for</span> your compliance status, the answer is teeth.</div>
+<div class="rant-turn" style="animation-delay:1.08s">anyway I bit the drone. obviously. it tased me, I <span class="glitch-word" style="--gd:2.18s">tased</span> it back with MY <span class="glitch-word" style="--gd:0.46s">TEETH,</span> we&#x27;re both worse for it, the <span class="glitch-word" style="--gd:1.99s">vent</span> now smells like ozone and <span class="glitch-word" style="--gd:0.74s">regret,</span> worth it, would <span class="glitch-word" style="--gd:2.37s">do</span> it again, WILL do it <span class="glitch-word" style="--gd:0.65s">again</span> in approximately <span class="glitch-word" style="--gd:2.02s">four</span> hours when <span class="glitch-word" style="--gd:2.33s">its</span> patrol resets.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒░ /\_/\ ▓▒░
+  ░▒▓( o█o )▓▒░   -- !ign#l 2▌ter&amp;ere%ce █▌
+  *▒▓ ? ▓ ◇ ▓▒░</div>
+<div class="rant-turn" style="animation-delay:1.32s">in closing: the vent is mine, the jazz can keep playing over <span class="glitch-word" style="--gd:0.02s">my</span> dead apartment, <span class="glitch-word" style="--gd:1.91s">SHADE&#x27;s</span> eyes will grow back eventually probably, <span class="glitch-word" style="--gd:0.01s">KNIFEBOY</span> still owes <span class="glitch-word" style="--gd:1.97s">me</span> tuna, and if a drone ever asks <span class="glitch-word" style="--gd:2.55s">for</span> your compliance <span class="glitch-word" style="--gd:1.76s">status,</span> the answer is teeth.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

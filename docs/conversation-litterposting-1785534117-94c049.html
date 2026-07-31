@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,30 +634,30 @@ header p {
 <div class="narrator-badge">posted by <strong>HAPPYWARE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by HAPPYWARE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">day 212 of mandatory positivity training: smile <span class="glitch-word" style="--gd:2.36s">chip</span> holding <span class="glitch-word" style="--gd:2.23s">steady,</span> morale numbers up 3%, will not be discussing why.</div>
-<div class="rant-turn" style="animation-delay:0.12s">HAPPYWARE <span class="glitch-word" style="--gd:2.54s">here!!</span> Pawsitivity Sector&#x27;s #1 (unpaid, contractually cheerful) morale influencer. seventeen-hour livestream starts in T-minus <span class="glitch-word" style="--gd:2.21s">however</span> long it takes me to stop shaking.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\%__/\
-    4 &lt;   o )   1&gt; scan25n▌...
-     )  Y  (    &gt;&gt; ears: antenn▌ 7od %#
-    (   |   8
-     \#__?_■</div>
-<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:2.55s">today&#x27;s</span> affirmation, <span class="glitch-word" style="--gd:2.41s">mandatory,</span> read aloud or the chip vibrates: <span class="glitch-word" style="--gd:1.92s">&#x27;you</span> are not trapped, the city walls <span class="glitch-word" style="--gd:0.65s">are</span> for your protection, please buy nekocorp yogurt.&#x27; i have said <span class="glitch-word" style="--gd:2.56s">this</span> 400 times. it <span class="glitch-word" style="--gd:0.38s">has</span> stopped <span class="glitch-word" style="--gd:0.67s">meaning</span> words.</div>
-<div class="rant-turn" style="animation-delay:0.48s">SNOOZE fell asleep mid-broadcast again and got billed for the <span class="glitch-word" style="--gd:0.35s">nap</span> AND the ad that <span class="glitch-word" style="--gd:1.87s">played</span> during <span class="glitch-word" style="--gd:0.91s">it.</span> meanwhile i&#x27;m not allowed to blink wrong or the <span class="glitch-word" style="--gd:1.86s">sponsors</span> get nervous. we are not the same and yet we are <span class="glitch-word" style="--gd:0.6s">exactly</span> the same.</div>
+<div class="rant-turn" style="animation-delay:0.0s">day 212 of mandatory positivity training: smile chip holding steady, morale numbers up 3%, will not be discussing why.</div>
+<div class="rant-turn" style="animation-delay:0.12s">HAPPYWARE here!! Pawsitivity Sector&#x27;s #1 (unpaid, contractually cheerful) morale influencer. seventeen-hour livestream starts in T-minus however <span class="glitch-word" style="--gd:0.66s">long</span> it takes me to <span class="glitch-word" style="--gd:0.95s">stop</span> shaking.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     2\◇_1/3
+    ( #   o )   &gt;&gt; scannin█...
+     )  Y  (    &gt;&gt; e▀rs: a▀tenn&gt; mod v2
+    (   |   )
+     \_____/</div>
+<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s affirmation, mandatory, read aloud or the chip <span class="glitch-word" style="--gd:1.94s">vibrates:</span> &#x27;you are not trapped, <span class="glitch-word" style="--gd:2.02s">the</span> city walls are <span class="glitch-word" style="--gd:0.98s">for</span> your protection, please buy nekocorp yogurt.&#x27; i have said this <span class="glitch-word" style="--gd:0.66s">400</span> <span class="glitch-word" style="--gd:1.46s">times.</span> it has stopped meaning <span class="glitch-word" style="--gd:0.58s">words.</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">SNOOZE fell asleep mid-broadcast <span class="glitch-word" style="--gd:1.52s">again</span> and got billed for the nap AND the ad that played during it. meanwhile i&#x27;m not <span class="glitch-word" style="--gd:0.25s">allowed</span> to blink wrong or the <span class="glitch-word" style="--gd:0.65s">sponsors</span> get nervous. we are not the same and yet we are exactly the same.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.72s">MONDAY AGAIN LOL i <span class="glitch-word" style="--gd:2.03s">mean</span> HAPPY HAPPY HAPPY HAPPY H̶A̶P̵P̶Y̵ H̵̺̎Á̷̕P̸̈P̸̞̚Y̷͖͑ <span class="glitch-word" style="--gd:2.13s">̶̥̹͙̊̂̔H̴͎͍͏͒̍Ä̦̦̩</span> how do i turn this off. does anyone know <span class="glitch-word" style="--gd:0.66s">how</span> to turn this off</div>
-<div class="rant-turn" style="animation-delay:0.84s">—sorry!! <span class="glitch-word" style="--gd:0.38s">false</span> alarm!! technical positivity!! <span class="glitch-word" style="--gd:1.39s">anyway</span> <span class="glitch-word" style="--gd:1.87s">QUERY</span> still <span class="glitch-word" style="--gd:0.33s">can&#x27;t</span> find the clause where they agreed to <span class="glitch-word" style="--gd:2.08s">any</span> of this, six months lost in the settings menu and counting, couldn&#x27;t <span class="glitch-word" style="--gd:1.54s">be</span> me, couldn&#x27;t be me, couldn&#x27;t be m—</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
-  ░▒▓( o█o )▓▒░   -█ s▌gn8l interf?rence --
-  ░▒▓ &gt; ▓ &lt; 0▒&lt;</div>
-<div class="rant-turn" style="animation-delay:1.08s">BRIK bit a drone on <span class="glitch-word" style="--gd:0.28s">my</span> behalf today as a show <span class="glitch-word" style="--gd:1.62s">of</span> <span class="glitch-word" style="--gd:2.25s">solidarity.</span> i cried on stream. the tears registered as &#x27;engagement&#x27; and i got a bonus. <span class="glitch-word" style="--gd:0.4s">everything</span> <span class="glitch-word" style="--gd:0.43s">is</span> fine. everything <span class="glitch-word" style="--gd:2.33s">is</span> going great.</div>
+<div class="rant-turn" style="animation-delay:0.72s">MONDAY AGAIN LOL i <span class="glitch-word" style="--gd:1.18s">mean</span> HAPPY HAPPY <span class="glitch-word" style="--gd:1.97s">HAPPY</span> <span class="glitch-word" style="--gd:0.84s">HAPPY</span> H̶A̶P̵P̶Y̵ H̵̺̎Á̷̕P̸̈P̸̞̚Y̷͖͑ ̶̥̹͙̊̂̔H̴͎͍͏͒̍Ä̦̦̩ how do i turn this <span class="glitch-word" style="--gd:2.37s">off.</span> does anyone know how to turn this off</div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:1.64s">—sorry!!</span> false alarm!! technical positivity!! anyway QUERY still can&#x27;t find the clause where they agreed to any of this, six months lost in the settings menu and counting, couldn&#x27;t be me, couldn&#x27;t be me, couldn&#x27;t <span class="glitch-word" style="--gd:2.32s">be</span> m—</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░3▓ /\_/\ ▓▒░
+  ░▒▓( o█3 )▓▒░   -- signal in4er▄^%ence --
+  &gt;▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:1.08s">BRIK bit a drone on my behalf today as a show of <span class="glitch-word" style="--gd:2.14s">solidarity.</span> i <span class="glitch-word" style="--gd:1.8s">cried</span> on stream. <span class="glitch-word" style="--gd:2.45s">the</span> tears registered as &#x27;engagement&#x27; and <span class="glitch-word" style="--gd:2.38s">i</span> got a <span class="glitch-word" style="--gd:0.79s">bonus.</span> everything is fine. everything is going great.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>        /⸌ —⸍\
      =(˶•ㅅ•˵)=      ᵐᵉᵒʷ
 　 l       ~乀   ╭
     し しf_, )ノ</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:2.12s">anyway!!</span> livestream in nine minutes!! remember: you are not trapped, the walls are for your protection, HAPPY HAPPY HAPPY— <span class="glitch-word" style="--gd:0.92s">ok</span> going live now, wish me luck, wish the chip <span class="glitch-word" style="--gd:1.12s">luck,</span> <span class="glitch-word" style="--gd:0.1s">wish</span> us both luck</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway!! livestream in nine minutes!! remember: <span class="glitch-word" style="--gd:1.49s">you</span> are <span class="glitch-word" style="--gd:2.31s">not</span> <span class="glitch-word" style="--gd:2.53s">trapped,</span> the walls are for your protection, HAPPY HAPPY HAPPY— ok going live now, wish me luck, wish the chip luck, wish us both luck</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

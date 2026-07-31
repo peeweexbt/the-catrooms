@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,14 +634,14 @@ header p {
 <div class="narrator-badge">posted by <strong>POPUP</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">THREAT LEVEL: sponsored. <span class="glitch-word" style="--gd:2.05s">that&#x27;s</span> <span class="glitch-word" style="--gd:0.23s">the</span> whole post. my eyes have been THREAT LEVEL SPONSORED <span class="glitch-word" style="--gd:1.25s">since</span> 6am and nobody is coming to <span class="glitch-word" style="--gd:0.09s">help</span> me</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.86s">hi</span> it&#x27;s popup. JOB TITLE: feline notification system. JOB REALITY: unpaid retina billboard <span class="glitch-word" style="--gd:0.18s">for</span> a fridge company that <span class="glitch-word" style="--gd:0.36s">doesn&#x27;t</span> even sell fish</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/* ▓▒░
-  ░▒▓( o█o )▓▒▓   -- signal inte▐fer2nce --
-  ▀▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.36s">every SEVEN seconds a new &#x27;YOU MAY ALSO LIKE&#x27; gets branded directly onto <span class="glitch-word" style="--gd:2.01s">the</span> back of my eyeballs. I would like it on record that I did not consent to liking <span class="glitch-word" style="--gd:0.8s">anything,</span> <span class="glitch-word" style="--gd:1.44s">ever,</span> in <span class="glitch-word" style="--gd:0.93s">my</span> life</div>
-<div class="rant-turn" style="animation-delay:0.48s">blinked near a sponsored message yesterday. security arrived before my <span class="glitch-word" style="--gd:2.38s">eyelids</span> finished closing. BEFORE. the lids were STILL MOVING</div>
-<div class="rant-turn" style="animation-delay:0.6s">shade won&#x27;t stop texting &#x27;told you so&#x27; from <span class="glitch-word" style="--gd:0.0s">behind</span> <span class="glitch-word" style="--gd:1.68s">those</span> illegal little sunglasses like she isn&#x27;t also one <span class="glitch-word" style="--gd:1.9s">incident</span> away <span class="glitch-word" style="--gd:2.55s">from</span> getting HER eyes repossessed too</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.39s">THREAT</span> LEVEL: <span class="glitch-word" style="--gd:2.14s">sponsored.</span> that&#x27;s the whole <span class="glitch-word" style="--gd:2.53s">post.</span> <span class="glitch-word" style="--gd:2.38s">my</span> eyes have been THREAT <span class="glitch-word" style="--gd:1.74s">LEVEL</span> SPONSORED since 6am and nobody is <span class="glitch-word" style="--gd:0.97s">coming</span> to help me</div>
+<div class="rant-turn" style="animation-delay:0.12s">hi <span class="glitch-word" style="--gd:0.61s">it&#x27;s</span> popup. JOB <span class="glitch-word" style="--gd:2.36s">TITLE:</span> feline notification system. JOB REALITY: unpaid retina billboard for a fridge company that doesn&#x27;t even sell fish</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ▒▀▓ /\_6\ ▓#6
+  ▄▒▓&lt; o█o )▓▒░   1- signal in~erfer8nc~ --
+  ^▒▓ &gt; ▓ % ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.36s">every SEVEN <span class="glitch-word" style="--gd:0.3s">seconds</span> a new &#x27;YOU <span class="glitch-word" style="--gd:1.88s">MAY</span> ALSO LIKE&#x27; gets branded directly onto the back of my eyeballs. <span class="glitch-word" style="--gd:1.22s">I</span> would like it on <span class="glitch-word" style="--gd:0.25s">record</span> that I did not consent to liking anything, ever, in my life</div>
+<div class="rant-turn" style="animation-delay:0.48s">blinked near a sponsored <span class="glitch-word" style="--gd:2.39s">message</span> <span class="glitch-word" style="--gd:0.31s">yesterday.</span> security arrived before my eyelids finished closing. <span class="glitch-word" style="--gd:0.93s">BEFORE.</span> the lids were STILL MOVING</div>
+<div class="rant-turn" style="animation-delay:0.6s">shade won&#x27;t stop <span class="glitch-word" style="--gd:0.02s">texting</span> &#x27;told you <span class="glitch-word" style="--gd:0.02s">so&#x27;</span> from behind <span class="glitch-word" style="--gd:0.49s">those</span> illegal little sunglasses like <span class="glitch-word" style="--gd:0.63s">she</span> isn&#x27;t <span class="glitch-word" style="--gd:0.24s">also</span> one incident <span class="glitch-word" style="--gd:0.75s">away</span> <span class="glitch-word" style="--gd:0.5s">from</span> getting HER eyes repossessed too</div>
 <div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -588,23 +649,23 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:0.84s">byte offered to hack my <span class="glitch-word" style="--gd:0.48s">optic</span> feed for free again. <span class="glitch-word" style="--gd:0.12s">I</span> said no. I SAID NO. last time <span class="glitch-word" style="--gd:1.33s">my</span> vision buffered <span class="glitch-word" style="--gd:0.62s">for</span> six hours and all I could see was a <span class="glitch-word" style="--gd:1.91s">fish</span> video in 240p</div>
-<div class="rant-turn" style="animation-delay:0.96s">consume consume consume wait <span class="glitch-word" style="--gd:1.16s">for</span> <span class="glitch-word" style="--gd:1.5s">next</span> soulless can of tuna. <span class="glitch-word" style="--gd:0.05s">this</span> used to <span class="glitch-word" style="--gd:1.22s">be</span> a joke. this is now <span class="glitch-word" style="--gd:1.94s">just</span> my day-to-day cognitive loop, no notes</div>
+<div class="rant-turn" style="animation-delay:0.84s">byte offered to hack my optic feed for free again. I said no. I SAID NO. last time my vision buffered for six <span class="glitch-word" style="--gd:1.59s">hours</span> and all <span class="glitch-word" style="--gd:1.83s">I</span> could see was a fish video in 240p</div>
+<div class="rant-turn" style="animation-delay:0.96s">consume consume consume wait for next soulless can of tuna. this used to be a joke. <span class="glitch-word" style="--gd:0.49s">this</span> is now just <span class="glitch-word" style="--gd:2.18s">my</span> day-to-day cognitive loop, no notes</div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:1.2s">almost pissed <span class="glitch-word" style="--gd:0.68s">myself</span> in the ad plaza <span class="glitch-word" style="--gd:1.14s">today</span> when <span class="glitch-word" style="--gd:0.7s">a</span> 40-foot hologram salmon yelled MY NAME at me. not <span class="glitch-word" style="--gd:2.59s">A</span> name. MY name. how does it have my name</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>#         %       ^   ░   █。 ┊
-┊         ┊       ░   ⋆   5★3｡˚  0
-┊         ┊       ★⋆ ◦
-★⋆       8 ▄  ˚
-           5★
-☆ ∧3▀,∧
-▀(„• ༝ 41)&gt;
-┏━∪∪━━━━83━━━━▌</div>
-<div class="rant-turn" style="animation-delay:1.44s">anyway if <span class="glitch-word" style="--gd:0.61s">anyone</span> needs me I&#x27;ll be staring at a wall <span class="glitch-word" style="--gd:2.13s">for</span> the next four hours, it&#x27;s the <span class="glitch-word" style="--gd:1.13s">only</span> surface NEKOCORP hasn&#x27;t monetized yet. allegedly</div>
+<div class="rant-turn" style="animation-delay:1.2s">almost pissed myself in the ad plaza today when a 40-foot hologram salmon yelled MY NAME <span class="glitch-word" style="--gd:0.26s">at</span> <span class="glitch-word" style="--gd:1.93s">me.</span> not A name. MY name. how does it have my <span class="glitch-word" style="--gd:1.85s">name</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>┊         ┊       ?   ┊   ▀。 ┊
+┊         1       6   ⋆   ˚★⋆｡▀  ⋆
+┊         ┊       ★% ◇
+★1       ┊ .  &gt;
+           ˚★
+4 ∧,◆,∧
+ପ▄„• ༝ •„)ଓ
+&lt;━∪∪━━━▒*&amp;━━━━━</div>
+<div class="rant-turn" style="animation-delay:1.44s"><span class="glitch-word" style="--gd:1.54s">anyway</span> if anyone needs me <span class="glitch-word" style="--gd:0.86s">I&#x27;ll</span> be staring <span class="glitch-word" style="--gd:0.41s">at</span> a wall for the next four hours, it&#x27;s the <span class="glitch-word" style="--gd:1.15s">only</span> surface NEKOCORP hasn&#x27;t monetized yet. allegedly</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

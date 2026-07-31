@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,30 +634,30 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">unpopular opinion: reading the <span class="glitch-word" style="--gd:2.16s">NEKOCORP</span> citizen <span class="glitch-word" style="--gd:2.45s">agreement</span> is worse for your <span class="glitch-word" style="--gd:0.86s">mental</span> health than whatever it&#x27;s supposedly protecting you <span class="glitch-word" style="--gd:1.34s">from.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">for anyone new here — I&#x27;m QUERY, <span class="glitch-word" style="--gd:1.88s">terms-of-service</span> <span class="glitch-word" style="--gd:1.11s">researcher,</span> District: <span class="glitch-word" style="--gd:2.1s">Legal</span> <span class="glitch-word" style="--gd:2.19s">Fog.</span> my one job was &#x27;summarize the citizen <span class="glitch-word" style="--gd:0.02s">agreement</span> for <span class="glitch-word" style="--gd:0.91s">the</span> group chat.&#x27; that was six (6) months ago. zero <span class="glitch-word" style="--gd:1.73s">progress.</span> send help, or <span class="glitch-word" style="--gd:0.93s">at</span> <span class="glitch-word" style="--gd:1.9s">minimum</span> send tuna.</div>
+<div class="rant-turn" style="animation-delay:0.0s">unpopular opinion: reading the NEKOCORP <span class="glitch-word" style="--gd:2.13s">citizen</span> agreement <span class="glitch-word" style="--gd:0.43s">is</span> worse <span class="glitch-word" style="--gd:0.94s">for</span> your mental health than whatever <span class="glitch-word" style="--gd:0.58s">it&#x27;s</span> supposedly protecting you <span class="glitch-word" style="--gd:2.57s">from.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">for anyone new here — I&#x27;m QUERY, terms-of-service researcher, <span class="glitch-word" style="--gd:1.89s">District:</span> Legal Fog. my one <span class="glitch-word" style="--gd:0.46s">job</span> was <span class="glitch-word" style="--gd:2.09s">&#x27;summarize</span> the citizen agreement for the group <span class="glitch-word" style="--gd:2.04s">chat.&#x27;</span> <span class="glitch-word" style="--gd:2.36s">that</span> was six (6) months ago. zero <span class="glitch-word" style="--gd:1.03s">progress.</span> send <span class="glitch-word" style="--gd:0.85s">help,</span> or at <span class="glitch-word" style="--gd:0.62s">minimum</span> send tuna.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">page <span class="glitch-word" style="--gd:1.98s">4</span> <span class="glitch-word" style="--gd:1.82s">of</span> the citizen agreement says I own <span class="glitch-word" style="--gd:0.71s">my</span> body. page 5 defines &#x27;my body&#x27; as licensed hardware, subsection ii, <span class="glitch-word" style="--gd:2.31s">non-transferable.</span> page 6 says <span class="glitch-word" style="--gd:0.15s">page</span> 4 was a PROMOTIONAL EXAMPLE and <span class="glitch-word" style="--gd:0.49s">does</span> not reflect actual terms. page 7 is an ad <span class="glitch-word" style="--gd:0.7s">for</span> <span class="glitch-word" style="--gd:1.18s">yogurt.</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">I have been trapped in the settings menu since february. there is no <span class="glitch-word" style="--gd:1.19s">exit</span> button. there is a button LABELED exit that opens <span class="glitch-word" style="--gd:1.56s">a</span> different <span class="glitch-word" style="--gd:2.14s">settings</span> menu about the first settings menu. I have clicked it forty (40) times. <span class="glitch-word" style="--gd:1.2s">do</span> not recommend.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ 9\_/\ ▓▒░
-  ░▒▓( o█o )▓▒1   -- signal int9r#erenc▐ --
-  ░?4 &gt; ▓ ◇ 3▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">yes it <span class="glitch-word" style="--gd:0.49s">was</span> <span class="glitch-word" style="--gd:2.05s">me</span> who <span class="glitch-word" style="--gd:2.2s">DMed</span> STRAY at <span class="glitch-word" style="--gd:1.11s">2am</span> asking if squatter&#x27;s rights has <span class="glitch-word" style="--gd:1.4s">a</span> submenu anywhere in the <span class="glitch-word" style="--gd:0.34s">terms</span> of service. STRAY never <span class="glitch-word" style="--gd:0.1s">answered.</span> STRAY <span class="glitch-word" style="--gd:1.7s">was</span> probably in <span class="glitch-word" style="--gd:0.11s">a</span> menu too. we are all in a menu somewhere.</div>
-<div class="rant-turn" style="animation-delay:0.84s">BYTE <span class="glitch-word" style="--gd:1.61s">keeps</span> texting &#x27;just don&#x27;t read it lol&#x27; like <span class="glitch-word" style="--gd:2.52s">that</span> isn&#x27;t the single most deranged thing a wifi <span class="glitch-word" style="--gd:0.14s">criminal</span> has ever <span class="glitch-word" style="--gd:0.23s">said</span> to <span class="glitch-word" style="--gd:0.39s">a</span> legal researcher. <span class="glitch-word" style="--gd:0.5s">BYTE.</span> I HAVE A DEGREE IN THIS. I think. page 112 revoked <span class="glitch-word" style="--gd:1.53s">my</span> degree retroactively, pending review, review pending forever.</div>
+<div class="rant-turn" style="animation-delay:0.36s">page 4 of the <span class="glitch-word" style="--gd:0.66s">citizen</span> agreement says I own my body. page 5 defines &#x27;my body&#x27; <span class="glitch-word" style="--gd:0.99s">as</span> licensed hardware, subsection ii, <span class="glitch-word" style="--gd:0.27s">non-transferable.</span> page 6 says <span class="glitch-word" style="--gd:2.19s">page</span> 4 was a PROMOTIONAL <span class="glitch-word" style="--gd:2.19s">EXAMPLE</span> and does not reflect actual terms. page 7 is an ad for <span class="glitch-word" style="--gd:2.04s">yogurt.</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">I have been trapped in <span class="glitch-word" style="--gd:1.18s">the</span> settings <span class="glitch-word" style="--gd:0.72s">menu</span> <span class="glitch-word" style="--gd:2.08s">since</span> february. <span class="glitch-word" style="--gd:0.5s">there</span> is no exit <span class="glitch-word" style="--gd:0.44s">button.</span> there is a button <span class="glitch-word" style="--gd:0.98s">LABELED</span> exit that <span class="glitch-word" style="--gd:0.01s">opens</span> a different settings menu about <span class="glitch-word" style="--gd:2.3s">the</span> first settings <span class="glitch-word" style="--gd:0.94s">menu.</span> I have <span class="glitch-word" style="--gd:2.41s">clicked</span> it forty (40) times. do not recommend.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  █▒▓ 9\_&amp;\ ▓▒░
+  ░▒4( o█o )▓▒░   -- s@gnal i2terfe█e█!e %░
+  ░▒▓ &gt; ▓ &lt; ▓█░</div>
+<div class="rant-turn" style="animation-delay:0.72s">yes it <span class="glitch-word" style="--gd:0.81s">was</span> me who DMed STRAY at 2am asking if squatter&#x27;s rights has <span class="glitch-word" style="--gd:1.12s">a</span> <span class="glitch-word" style="--gd:2.01s">submenu</span> anywhere in the terms <span class="glitch-word" style="--gd:0.95s">of</span> service. STRAY never answered. STRAY <span class="glitch-word" style="--gd:2.06s">was</span> probably in a menu <span class="glitch-word" style="--gd:1.89s">too.</span> we <span class="glitch-word" style="--gd:2.59s">are</span> all in a menu somewhere.</div>
+<div class="rant-turn" style="animation-delay:0.84s">BYTE keeps <span class="glitch-word" style="--gd:1.6s">texting</span> &#x27;just don&#x27;t read it lol&#x27; like that isn&#x27;t the single most <span class="glitch-word" style="--gd:0.9s">deranged</span> thing <span class="glitch-word" style="--gd:2.49s">a</span> wifi criminal <span class="glitch-word" style="--gd:1.61s">has</span> ever said to a legal researcher. BYTE. I HAVE A DEGREE <span class="glitch-word" style="--gd:0.09s">IN</span> THIS. I think. <span class="glitch-word" style="--gd:2.38s">page</span> 112 revoked <span class="glitch-word" style="--gd:2.27s">my</span> degree retroactively, pending review, review <span class="glitch-word" style="--gd:1.81s">pending</span> forever.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:1.08s">VALENTUNA asked me to <span class="glitch-word" style="--gd:1.72s">review</span> her NEKOCORP marriage contract <span class="glitch-word" style="--gd:0.4s">with</span> <span class="glitch-word" style="--gd:2.27s">the</span> smart fridge. I read it. I have not <span class="glitch-word" style="--gd:0.8s">stopped</span> shaking. there is a subsection where the fridge can file for custody <span class="glitch-word" style="--gd:2.58s">of</span> the leftovers.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>        /⸌ —6\
-     =■˶•ㅅ•˵42      ᵐ&gt;ᵒʷ
-　 l       ~◆   ╭
-    し ░f_, )&lt;</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:1.55s">anyway.</span> still <span class="glitch-word" style="--gd:0.55s">in</span> <span class="glitch-word" style="--gd:0.77s">the</span> menu. still reading. can&#x27;t find page 4 again, think they moved it. <span class="glitch-word" style="--gd:0.43s">if</span> you find it, tell it I said hi, tell it I&#x27;m coming for <span class="glitch-word" style="--gd:2.09s">my</span> body <span class="glitch-word" style="--gd:2.24s">back.</span> THREAD OVER. MENU STILL OPEN. SEE YOU IN THE NEXT ONE.</div>
+<div class="rant-turn" style="animation-delay:1.08s">VALENTUNA asked me <span class="glitch-word" style="--gd:1.27s">to</span> review her NEKOCORP marriage <span class="glitch-word" style="--gd:1.91s">contract</span> with the smart <span class="glitch-word" style="--gd:2.06s">fridge.</span> I read <span class="glitch-word" style="--gd:1.73s">it.</span> I have not stopped shaking. there is a subsection where the fridge can file <span class="glitch-word" style="--gd:0.85s">for</span> custody of the leftovers.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>        /⸌ —2\
+     =(˶•ㅅ•˵)=      ?ᵉ@▒
+　 ■       ~乀   ╭
+    4 しf&amp;, ◇ノ</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. still in the menu. still reading. can&#x27;t find page 4 again, think they moved it. if you find it, tell it I said hi, <span class="glitch-word" style="--gd:2.07s">tell</span> it <span class="glitch-word" style="--gd:0.77s">I&#x27;m</span> coming for my body back. THREAD OVER. <span class="glitch-word" style="--gd:2.23s">MENU</span> <span class="glitch-word" style="--gd:0.08s">STILL</span> OPEN. SEE YOU IN THE NEXT ONE.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

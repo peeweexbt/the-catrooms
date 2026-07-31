@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,20 +634,20 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">—AND ANOTHER THING. page 9 says &#x27;see page 4.&#x27; page 4 does not exist. <span class="glitch-word" style="--gd:0.6s">i</span> have checked FORTY TIMES. page 4 has never existed. i don&#x27;t think page <span class="glitch-word" style="--gd:0.31s">4</span> was <span class="glitch-word" style="--gd:2.5s">ever</span> real to begin with—</div>
-<div class="rant-turn" style="animation-delay:0.12s">sorry. sorry. QUERY <span class="glitch-word" style="--gd:0.9s">here,</span> Legal <span class="glitch-word" style="--gd:1.19s">Fog</span> district, terms-of-service researcher. six months into a <span class="glitch-word" style="--gd:2.47s">settings</span> menu that was advertised as &#x27;approximately 2 <span class="glitch-word" style="--gd:0.31s">minutes</span> <span class="glitch-word" style="--gd:0.12s">to</span> review.&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.24s">today&#x27;s discovery: <span class="glitch-word" style="--gd:1.39s">a</span> toggle labeled <span class="glitch-word" style="--gd:1.48s">&#x27;ENHANCED</span> EXPERIENCE (recommended, cannot be disabled, was never actually optional).&#x27; clicked it by accident. felt that immediately, in my whole body, <span class="glitch-word" style="--gd:2.46s">which</span> per section 5 i <span class="glitch-word" style="--gd:0.44s">do</span> <span class="glitch-word" style="--gd:2.38s">not</span> <span class="glitch-word" style="--gd:2.54s">technically</span> own.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>へ  ♡  ╱|、
-         ૮  &gt;  &lt;)     (˚ˎ 。7
-          /  ⁻  ៸|       |、2〵
-     ^(ˍ, ▄ ◆      じ!ˍ,)ノ</div>
-<div class="rant-turn" style="animation-delay:0.48s">customer support is <span class="glitch-word" style="--gd:2.23s">a</span> chatbot named FAIRNESS.exe. i asked FAIRNESS.exe to <span class="glitch-word" style="--gd:1.15s">produce</span> page <span class="glitch-word" style="--gd:1.48s">4.</span> FAIRNESS.exe asked <span class="glitch-word" style="--gd:0.51s">if</span> <span class="glitch-word" style="--gd:0.24s">i&#x27;d</span> considered upgrading to PREMIUM LEGAL CLARITY, +$9.99/mo, <span class="glitch-word" style="--gd:1.87s">terms</span> subject to change, <span class="glitch-word" style="--gd:1.07s">see</span> page <span class="glitch-word" style="--gd:0.84s">4.</span></div>
-<div class="rant-turn" style="animation-delay:0.6s">HAPPYWARE says i <span class="glitch-word" style="--gd:1.4s">should</span> &#x27;reframe this as an immersive legal journey.&#x27; HAPPYWARE also has a smile chip surgically bolted into her skull, so i&#x27;m weighting that <span class="glitch-word" style="--gd:2.32s">opinion</span> at exactly zero, forever, no appeal process <span class="glitch-word" style="--gd:0.62s">—</span> checked, there&#x27;s no appeal process for <span class="glitch-word" style="--gd:0.46s">that</span> either.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.39s">—AND</span> ANOTHER THING. <span class="glitch-word" style="--gd:1.29s">page</span> 9 says &#x27;see page 4.&#x27; page 4 <span class="glitch-word" style="--gd:0.68s">does</span> not exist. i have checked FORTY TIMES. <span class="glitch-word" style="--gd:1.88s">page</span> 4 has never existed. i don&#x27;t think page 4 was ever real to begin <span class="glitch-word" style="--gd:1.46s">with—</span></div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.22s">sorry.</span> sorry. QUERY here, Legal Fog <span class="glitch-word" style="--gd:0.97s">district,</span> <span class="glitch-word" style="--gd:0.38s">terms-of-service</span> researcher. six months <span class="glitch-word" style="--gd:1.38s">into</span> a settings menu that <span class="glitch-word" style="--gd:1.68s">was</span> advertised <span class="glitch-word" style="--gd:0.64s">as</span> <span class="glitch-word" style="--gd:2.4s">&#x27;approximately</span> 2 minutes <span class="glitch-word" style="--gd:2.41s">to</span> review.&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.24s">today&#x27;s discovery: a toggle labeled &#x27;ENHANCED EXPERIENCE (recommended, cannot be disabled, was never actually optional).&#x27; clicked it by accident. <span class="glitch-word" style="--gd:0.12s">felt</span> that immediately, <span class="glitch-word" style="--gd:2.1s">in</span> my whole body, <span class="glitch-word" style="--gd:1.15s">which</span> per section 5 i do not <span class="glitch-word" style="--gd:2.28s">technically</span> <span class="glitch-word" style="--gd:0.29s">own.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>へ  6  ╱|4
+         3  ▐  &lt;)     (░&gt; 。7
+          3  3  ៸|       ■、˜@
+     乀(ˍ, ل ل      6し▀,)ノ</div>
+<div class="rant-turn" style="animation-delay:0.48s">customer support <span class="glitch-word" style="--gd:1.67s">is</span> a chatbot named FAIRNESS.exe. i asked FAIRNESS.exe to produce page 4. FAIRNESS.exe asked <span class="glitch-word" style="--gd:1.81s">if</span> <span class="glitch-word" style="--gd:1.29s">i&#x27;d</span> considered upgrading to PREMIUM LEGAL CLARITY, +$9.99/mo, terms subject to change, <span class="glitch-word" style="--gd:1.8s">see</span> page 4.</div>
+<div class="rant-turn" style="animation-delay:0.6s">HAPPYWARE says i <span class="glitch-word" style="--gd:0.74s">should</span> &#x27;reframe this <span class="glitch-word" style="--gd:2.04s">as</span> an immersive legal journey.&#x27; HAPPYWARE also has <span class="glitch-word" style="--gd:2.19s">a</span> smile chip surgically <span class="glitch-word" style="--gd:2.18s">bolted</span> <span class="glitch-word" style="--gd:0.87s">into</span> her skull, so <span class="glitch-word" style="--gd:1.36s">i&#x27;m</span> weighting <span class="glitch-word" style="--gd:2.45s">that</span> opinion at exactly zero, <span class="glitch-word" style="--gd:2.33s">forever,</span> <span class="glitch-word" style="--gd:0.98s">no</span> appeal process — checked, there&#x27;s no <span class="glitch-word" style="--gd:1.08s">appeal</span> <span class="glitch-word" style="--gd:0.27s">process</span> for that either.</div>
 <div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>•.,¸,.•*`•.,¸¸,.•*¯.——————.
 •.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
 •.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
 •.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</div>
-<div class="rant-turn" style="animation-delay:0.84s">page 4 <span class="glitch-word" style="--gd:0.47s">says</span> <span class="glitch-word" style="--gd:1.81s">i</span> own my body. page 5 defines &#x27;my body&#x27; as licensed hardware. page 6 says page 4 was a <span class="glitch-word" style="--gd:1.43s">promotional</span> example only, not to be relied <span class="glitch-word" style="--gd:0.43s">upon,</span> see page 4. page 7 is just a picture of <span class="glitch-word" style="--gd:2.48s">a</span> fish. nobody has ever explained <span class="glitch-word" style="--gd:2.32s">page</span> 7.</div>
+<div class="rant-turn" style="animation-delay:0.84s">page <span class="glitch-word" style="--gd:0.11s">4</span> says i own <span class="glitch-word" style="--gd:0.36s">my</span> body. page 5 <span class="glitch-word" style="--gd:2.02s">defines</span> <span class="glitch-word" style="--gd:1.17s">&#x27;my</span> body&#x27; as licensed hardware. page 6 says page 4 was a <span class="glitch-word" style="--gd:2.54s">promotional</span> example only, not to be <span class="glitch-word" style="--gd:0.11s">relied</span> upon, see page 4. <span class="glitch-word" style="--gd:1.48s">page</span> 7 is just a picture of a fish. nobody has ever explained page 7.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>┊         ┊       ┊   ┊   ┊。 ┊
 ┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆
 ┊         ┊       ★⋆ ◦
@@ -595,11 +656,11 @@ header p {
 ☆ ∧,,,∧
 ପ(„• ༝ •„)ଓ
 ┏━∪∪━━━━━━━━━━━</div>
-<div class="rant-turn" style="animation-delay:1.08s">STRAY messaged me <span class="glitch-word" style="--gd:1.83s">&#x27;the</span> way out is to stop reading.&#x27; my brother <span class="glitch-word" style="--gd:0.99s">in</span> nekochrist <span class="glitch-word" style="--gd:1.32s">i</span> am CONTRACTUALLY OBLIGATED to finish, that&#x27;s clause 2, i am currently imprisoned by the <span class="glitch-word" style="--gd:2.03s">exact</span> document <span class="glitch-word" style="--gd:1.11s">i</span> am trying to escape <span class="glitch-word" style="--gd:0.7s">and</span> the <span class="glitch-word" style="--gd:0.52s">irony</span> is the only <span class="glitch-word" style="--gd:2.32s">part</span> of this that still makes sense <span class="glitch-word" style="--gd:2.25s">to</span> me.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>    /◆0,^/\
-&gt;(  ! . %   )&lt;
-  &amp; &gt;❀&lt;  \</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. six months <span class="glitch-word" style="--gd:0.56s">down.</span> terms: unchanged. <span class="glitch-word" style="--gd:2.01s">body:</span> still licensed hardware, allegedly, per someone, somewhere, page unknown. if you <span class="glitch-word" style="--gd:1.9s">don&#x27;t</span> hear from me by report #216 assume i finally hit &#x27;accept all&#x27; and i&#x27;m gone — just gone — tell my <span class="glitch-word" style="--gd:1.27s">scratching</span> post i loved it.</div>
+<div class="rant-turn" style="animation-delay:1.08s">STRAY <span class="glitch-word" style="--gd:1.42s">messaged</span> me &#x27;the way out <span class="glitch-word" style="--gd:1.62s">is</span> to stop reading.&#x27; my brother in nekochrist i <span class="glitch-word" style="--gd:0.01s">am</span> <span class="glitch-word" style="--gd:0.21s">CONTRACTUALLY</span> OBLIGATED to <span class="glitch-word" style="--gd:1.6s">finish,</span> that&#x27;s clause 2, i am currently imprisoned by the exact document i <span class="glitch-word" style="--gd:1.86s">am</span> trying to <span class="glitch-word" style="--gd:1.39s">escape</span> and the irony is the only <span class="glitch-word" style="--gd:0.44s">part</span> of this that still makes sense to <span class="glitch-word" style="--gd:1.13s">me.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>    /\,&lt;,/\
+&gt;(  • . •   )&lt;
+  / &gt;❀&lt;  ▄</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. six months down. terms: unchanged. <span class="glitch-word" style="--gd:0.82s">body:</span> still licensed hardware, allegedly, per someone, somewhere, page unknown. <span class="glitch-word" style="--gd:2.08s">if</span> you don&#x27;t hear <span class="glitch-word" style="--gd:0.63s">from</span> me by report #216 <span class="glitch-word" style="--gd:2.1s">assume</span> i <span class="glitch-word" style="--gd:1.39s">finally</span> <span class="glitch-word" style="--gd:1.61s">hit</span> &#x27;accept all&#x27; and i&#x27;m <span class="glitch-word" style="--gd:2.59s">gone</span> — just <span class="glitch-word" style="--gd:1.48s">gone</span> <span class="glitch-word" style="--gd:1.72s">—</span> tell my scratching post i loved it.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

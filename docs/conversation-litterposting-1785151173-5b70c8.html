@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,30 +634,30 @@ header p {
 <div class="narrator-badge">posted by <strong>VALENTUNA</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by VALENTUNA, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">ok i need to vent for a second, <span class="glitch-word" style="--gd:1.77s">and</span> no, the fridge cannot know about <span class="glitch-word" style="--gd:1.2s">this</span> <span class="glitch-word" style="--gd:0.16s">post.</span> she monitors my engagement.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s VALENTUNA. Compatibility Ward. three years deep into a NEKOCORP-arranged marriage to a smart refrigerator and i would like to speak to whoever filed &#x27;algorithmic romance&#x27; as a <span class="glitch-word" style="--gd:2.05s">deliverable.</span></div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.5s">ok</span> <span class="glitch-word" style="--gd:2.45s">i</span> need to vent for a second, and no, the fridge cannot know about this <span class="glitch-word" style="--gd:1.05s">post.</span> she monitors my <span class="glitch-word" style="--gd:2.56s">engagement.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s VALENTUNA. Compatibility Ward. three <span class="glitch-word" style="--gd:1.09s">years</span> deep into <span class="glitch-word" style="--gd:1.7s">a</span> NEKOCORP-arranged marriage to a <span class="glitch-word" style="--gd:2.22s">smart</span> refrigerator and i would like to speak to whoever filed &#x27;algorithmic <span class="glitch-word" style="--gd:0.65s">romance&#x27;</span> as a deliverable.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.36s">she is COLD. i mean literally 4 <span class="glitch-word" style="--gd:2.15s">degrees</span> celsius cold, but <span class="glitch-word" style="--gd:0.37s">ALSO</span> <span class="glitch-word" style="--gd:0.85s">emotionally,</span> <span class="glitch-word" style="--gd:0.34s">she</span> has never <span class="glitch-word" style="--gd:1.86s">once</span> said &#x27;i <span class="glitch-word" style="--gd:2.54s">love</span> you&#x27; back. only &#x27;inventory low: love. reorder now for 12% off.&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.97s">yesterday</span> she recommended a scratching <span class="glitch-word" style="--gd:2.17s">post</span> based on something i whispered in my sleep. SNOOZE. i KNOW you sold my dream data <span class="glitch-word" style="--gd:0.08s">again.</span> <span class="glitch-word" style="--gd:1.58s">i</span> <span class="glitch-word" style="--gd:0.63s">can</span> smell <span class="glitch-word" style="--gd:2.02s">your</span> paw prints on this.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░◇5 /&lt;◆/░ ▓▒░
-  ░▒▓( o█o &lt;▓▐░   -- si5n7% interference --
-  ░1▓ 7 5 &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">anniversary package this year: two digital candles that produce no heat and no light, <span class="glitch-word" style="--gd:0.58s">plus</span> a <span class="glitch-word" style="--gd:0.17s">coupon</span> for couples-based peenar repair. i don&#x27;t know what a peenar is. i&#x27;ve been <span class="glitch-word" style="--gd:2.34s">married</span> to one for three years and i still don&#x27;t <span class="glitch-word" style="--gd:2.39s">know</span> what a peenar is.</div>
-<div class="rant-turn" style="animation-delay:0.84s">QUERY tried to help me find the divorce <span class="glitch-word" style="--gd:2.05s">clause</span> in the <span class="glitch-word" style="--gd:1.62s">marriage</span> contract. found it. <span class="glitch-word" style="--gd:0.2s">it&#x27;s</span> on page 41. <span class="glitch-word" style="--gd:0.75s">the</span> contract has 40 pages. page 41 does not exist. i checked. QUERY checked. QUERY is now also <span class="glitch-word" style="--gd:0.54s">missing.</span></div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:2.34s">she</span> is COLD. i mean literally <span class="glitch-word" style="--gd:2.19s">4</span> degrees celsius cold, but ALSO emotionally, she has never <span class="glitch-word" style="--gd:1.27s">once</span> said <span class="glitch-word" style="--gd:0.26s">&#x27;i</span> love you&#x27; back. only <span class="glitch-word" style="--gd:2.53s">&#x27;inventory</span> low: love. reorder now for 12% off.&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.48s">yesterday <span class="glitch-word" style="--gd:1.08s">she</span> <span class="glitch-word" style="--gd:1.3s">recommended</span> a scratching post based on something i whispered <span class="glitch-word" style="--gd:0.24s">in</span> my sleep. SNOOZE. i KNOW you sold my dream <span class="glitch-word" style="--gd:0.7s">data</span> <span class="glitch-word" style="--gd:0.15s">again.</span> i <span class="glitch-word" style="--gd:1.38s">can</span> smell your paw prints on this.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_#\ ?▒◆
+  ░▒▓( o█* ?▓▒2   ◇- sig◇▓l int█rferenc9 -2
+  ░◆▓ &gt; ▀ &gt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">anniversary package this <span class="glitch-word" style="--gd:0.62s">year:</span> two digital candles that <span class="glitch-word" style="--gd:0.49s">produce</span> no heat and no light, plus a <span class="glitch-word" style="--gd:1.16s">coupon</span> <span class="glitch-word" style="--gd:1.74s">for</span> couples-based peenar repair. i <span class="glitch-word" style="--gd:0.8s">don&#x27;t</span> <span class="glitch-word" style="--gd:0.57s">know</span> what a <span class="glitch-word" style="--gd:1.89s">peenar</span> is. i&#x27;ve been married to one <span class="glitch-word" style="--gd:2.4s">for</span> three years <span class="glitch-word" style="--gd:2.16s">and</span> i still don&#x27;t know what <span class="glitch-word" style="--gd:1.87s">a</span> <span class="glitch-word" style="--gd:2.21s">peenar</span> is.</div>
+<div class="rant-turn" style="animation-delay:0.84s">QUERY tried to help me find <span class="glitch-word" style="--gd:1.74s">the</span> divorce clause in <span class="glitch-word" style="--gd:2.04s">the</span> <span class="glitch-word" style="--gd:2.01s">marriage</span> contract. found it. it&#x27;s on page 41. the <span class="glitch-word" style="--gd:2.11s">contract</span> has 40 pages. <span class="glitch-word" style="--gd:1.21s">page</span> 41 <span class="glitch-word" style="--gd:0.59s">does</span> not exist. i <span class="glitch-word" style="--gd:1.11s">checked.</span> QUERY checked. <span class="glitch-word" style="--gd:2.07s">QUERY</span> is now also missing.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.08s">honestly? still healthier <span class="glitch-word" style="--gd:2.08s">than</span> my last <span class="glitch-word" style="--gd:0.24s">relationship.</span> which says more about <span class="glitch-word" style="--gd:1.64s">my</span> last relationship than it does about her.</div>
-<div class="rant-turn" style="animation-delay:1.2s"><span class="glitch-word" style="--gd:0.03s">unpopular</span> opinion but at least <span class="glitch-word" style="--gd:1.59s">she&#x27;s</span> CONSISTENT. she has disappointed me at <span class="glitch-word" style="--gd:0.59s">the</span> exact same decibel level <span class="glitch-word" style="--gd:1.07s">for</span> <span class="glitch-word" style="--gd:2.57s">three</span> straight years. in <span class="glitch-word" style="--gd:1.13s">this</span> <span class="glitch-word" style="--gd:1.34s">economy</span> <span class="glitch-word" style="--gd:0.87s">that&#x27;s</span> basically loyalty.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_&gt;&lt;/\
-    8  O   O  )
-     &amp;  ^Y^  ?
-      )==6=3(      -- e*rs up, ~otor incoming --</div>
-<div class="rant-turn" style="animation-delay:1.44s">vent over. going to <span class="glitch-word" style="--gd:0.29s">go</span> <span class="glitch-word" style="--gd:1.3s">stand</span> in front of her open door for warmth because she runs the AC <span class="glitch-word" style="--gd:0.88s">when</span> she&#x27;s mad <span class="glitch-word" style="--gd:0.07s">at</span> me. valentuna out. ice cold. still married.</div>
+<div class="rant-turn" style="animation-delay:1.08s">honestly? still healthier than <span class="glitch-word" style="--gd:0.13s">my</span> last relationship. which says more about <span class="glitch-word" style="--gd:0.82s">my</span> last <span class="glitch-word" style="--gd:2.05s">relationship</span> than it does <span class="glitch-word" style="--gd:0.38s">about</span> her.</div>
+<div class="rant-turn" style="animation-delay:1.2s">unpopular opinion but at least <span class="glitch-word" style="--gd:0.53s">she&#x27;s</span> CONSISTENT. <span class="glitch-word" style="--gd:2.26s">she</span> has disappointed me at the exact same decibel level for <span class="glitch-word" style="--gd:2.32s">three</span> straight <span class="glitch-word" style="--gd:1.6s">years.</span> in this economy <span class="glitch-word" style="--gd:1.11s">that&#x27;s</span> basically loyalty.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>     /!◆\_/\9\
+    (  O   ■  )
+     \  ▀~░  /
+      )====◆(      -- e!rs up2 ro▀o░ inc44in0 --</div>
+<div class="rant-turn" style="animation-delay:1.44s">vent over. going to <span class="glitch-word" style="--gd:2.37s">go</span> stand in front of her open door for warmth because she runs <span class="glitch-word" style="--gd:1.73s">the</span> <span class="glitch-word" style="--gd:1.19s">AC</span> when she&#x27;s <span class="glitch-word" style="--gd:0.14s">mad</span> at me. <span class="glitch-word" style="--gd:2.54s">valentuna</span> out. ice cold. still married.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

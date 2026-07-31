@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,28 +634,28 @@ header p {
 <div class="narrator-badge">posted by <strong>KNIFEBOY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.7s">no</span> <span class="glitch-word" style="--gd:2.0s">time</span> to explain, mid-heist, <span class="glitch-word" style="--gd:0.51s">Restricted</span> Loading Dock, forklift just <span class="glitch-word" style="--gd:2.47s">swiveled</span> its <span class="glitch-word" style="--gd:0.56s">optics</span> at me like it&#x27;s got <span class="glitch-word" style="--gd:2.42s">OPINIONS.</span> THIS IS A HEIST. that part <span class="glitch-word" style="--gd:0.2s">isn&#x27;t</span> new.</div>
-<div class="rant-turn" style="animation-delay:0.12s">left my <span class="glitch-word" style="--gd:0.38s">calling</span> card on crate #3, same as always: &#x27;nice supply chain, CHUD.&#x27; security read it out loud over the intercom like it was evidence. babe it IS evidence. it&#x27;s evidence I&#x27;m built different.</div>
+<div class="rant-turn" style="animation-delay:0.0s">no time to <span class="glitch-word" style="--gd:1.51s">explain,</span> <span class="glitch-word" style="--gd:1.74s">mid-heist,</span> Restricted <span class="glitch-word" style="--gd:2.54s">Loading</span> <span class="glitch-word" style="--gd:0.81s">Dock,</span> forklift just swiveled its optics at <span class="glitch-word" style="--gd:2.46s">me</span> like it&#x27;s got OPINIONS. THIS IS A HEIST. that part isn&#x27;t <span class="glitch-word" style="--gd:0.29s">new.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">left my calling card on <span class="glitch-word" style="--gd:2.59s">crate</span> #3, same as always: <span class="glitch-word" style="--gd:2.37s">&#x27;nice</span> supply chain, CHUD.&#x27; security <span class="glitch-word" style="--gd:2.11s">read</span> it out loud <span class="glitch-word" style="--gd:1.76s">over</span> the intercom <span class="glitch-word" style="--gd:1.86s">like</span> it was evidence. babe it IS evidence. it&#x27;s <span class="glitch-word" style="--gd:0.75s">evidence</span> I&#x27;m built different.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:0.4s">BYTE</span> texts me mid-heist &#x27;the cameras <span class="glitch-word" style="--gd:0.66s">are</span> gonna clock you&#x27; like i don&#x27;t KNOW that. BYTE. brother. I AM <span class="glitch-word" style="--gd:2.19s">the</span> camera&#x27;s <span class="glitch-word" style="--gd:1.8s">problem</span> now. that&#x27;s not a flex, that&#x27;s a diagnosis.</div>
-<div class="rant-turn" style="animation-delay:0.48s">40,000 loyalty <span class="glitch-word" style="--gd:0.71s">points</span> on my head and <span class="glitch-word" style="--gd:1.89s">they</span> EXPIRE before capture, can&#x27;t be combined with other promotional <span class="glitch-word" style="--gd:0.65s">offers.</span> my own bounty <span class="glitch-word" style="--gd:1.88s">has</span> worse terms <span class="glitch-word" style="--gd:1.34s">of</span> service <span class="glitch-word" style="--gd:0.57s">than</span> my rent. couldn&#x27;t <span class="glitch-word" style="--gd:2.18s">be</span> <span class="glitch-word" style="--gd:1.78s">me.</span> it is me.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
-  ░▒▓( o█o 8█▒░   ▌- si%@al i?terfere▄ce --
-  ░▒▓ 4 ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.86s">you&#x27;ve</span> read this exact heist before. <span class="glitch-word" style="--gd:1.54s">different</span> crate <span class="glitch-word" style="--gd:1.3s">number,</span> <span class="glitch-word" style="--gd:0.83s">same</span> tuna, same intercom. i keep the <span class="glitch-word" style="--gd:2.33s">receipts</span> even when nobody <span class="glitch-word" style="--gd:1.39s">else</span> does.</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:1.15s">anyway.</span> crate #4. the <span class="glitch-word" style="--gd:0.19s">good</span> stuff. the stuff that doesn&#x27;t even make the <span class="glitch-word" style="--gd:1.5s">manifest</span> —</div>
+<div class="rant-turn" style="animation-delay:0.36s">BYTE texts me <span class="glitch-word" style="--gd:2.33s">mid-heist</span> <span class="glitch-word" style="--gd:1.43s">&#x27;the</span> cameras are gonna clock you&#x27; like i <span class="glitch-word" style="--gd:1.81s">don&#x27;t</span> KNOW that. BYTE. <span class="glitch-word" style="--gd:1.21s">brother.</span> <span class="glitch-word" style="--gd:1.42s">I</span> <span class="glitch-word" style="--gd:0.32s">AM</span> the camera&#x27;s problem now. that&#x27;s not a <span class="glitch-word" style="--gd:0.51s">flex,</span> that&#x27;s <span class="glitch-word" style="--gd:0.99s">a</span> diagnosis.</div>
+<div class="rant-turn" style="animation-delay:0.48s">40,000 loyalty <span class="glitch-word" style="--gd:1.45s">points</span> on my head and they <span class="glitch-word" style="--gd:1.49s">EXPIRE</span> before capture, can&#x27;t <span class="glitch-word" style="--gd:1.93s">be</span> combined <span class="glitch-word" style="--gd:1.16s">with</span> <span class="glitch-word" style="--gd:1.78s">other</span> promotional offers. my own <span class="glitch-word" style="--gd:1.26s">bounty</span> has worse terms of <span class="glitch-word" style="--gd:1.87s">service</span> than my rent. couldn&#x27;t be me. it is me.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_&amp;\ ▓▒*
+  ░2◇( 8█o )▓▒#   -- s?gna◆ inter&amp;0rence --
+  ░@▓ &gt; * &lt; ▓▒4</div>
+<div class="rant-turn" style="animation-delay:0.72s">you&#x27;ve <span class="glitch-word" style="--gd:0.81s">read</span> this exact heist before. different crate number, same tuna, same intercom. <span class="glitch-word" style="--gd:0.75s">i</span> <span class="glitch-word" style="--gd:0.83s">keep</span> the receipts <span class="glitch-word" style="--gd:0.95s">even</span> when nobody else does.</div>
+<div class="rant-turn" style="animation-delay:0.84s">anyway. crate <span class="glitch-word" style="--gd:1.57s">#4.</span> the good stuff. the stuff that doesn&#x27;t <span class="glitch-word" style="--gd:0.17s">even</span> make the manifest —</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:1.11s">SHADE</span> texts &#x27;stay based out there&#x27; and nothing has ever <span class="glitch-word" style="--gd:1.59s">hit</span> different than solidarity from a guy whose eyes <span class="glitch-word" style="--gd:0.65s">got</span> repossessed on a <span class="glitch-word" style="--gd:1.16s">Thursday.</span> we&#x27;re <span class="glitch-word" style="--gd:0.44s">just</span> guys, guying, evading corporate seizure.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>   4\_/\        2 ENERGY: LOW ]
-  ( &gt;.&lt; )       # ]  [ ]  [ ]  [ ]
-   &gt; ~ ◆        3█9 8ar left, keep m8ving</div>
-<div class="rant-turn" style="animation-delay:1.32s">police description reads &#x27;smol fan of cat foids, <span class="glitch-word" style="--gd:1.72s">destroyer</span> of feline chuds.&#x27; <span class="glitch-word" style="--gd:2.49s">I</span> framed it. it&#x27;s above my air vent. MOST WANTED and <span class="glitch-word" style="--gd:1.39s">still</span> hungry. this has always <span class="glitch-word" style="--gd:0.86s">been</span> personal.</div>
+<div class="rant-turn" style="animation-delay:1.08s">SHADE texts &#x27;stay based out <span class="glitch-word" style="--gd:1.82s">there&#x27;</span> and <span class="glitch-word" style="--gd:1.39s">nothing</span> has ever hit different than <span class="glitch-word" style="--gd:1.62s">solidarity</span> from a guy whose eyes got repossessed on a Thursday. we&#x27;re just <span class="glitch-word" style="--gd:2.14s">guys,</span> guying, <span class="glitch-word" style="--gd:1.34s">evading</span> corporate seizure.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_/\        [ 0NERGY: L▒W ]
+  ( ◆.&lt; )       &amp; ]  [ 2  [ ]  [ ]
+   &gt; ~ &lt;        one ◆ar le▓t, keep moving</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:1.0s">police</span> description reads &#x27;smol fan of cat foids, destroyer of feline chuds.&#x27; I framed it. it&#x27;s above my air vent. MOST WANTED and still hungry. <span class="glitch-word" style="--gd:1.51s">this</span> has always been personal.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

@@ -521,6 +521,67 @@ header p {
 @media (max-width: 480px) {
   .ascii-gallery-card pre { font-size: 0.48rem; }
 }
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-output-wrap {
+  max-width: 760px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 60vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
 .meowizens-list {
   max-width: 780px;
   margin: 8px auto 64px;
@@ -573,33 +634,33 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">SETTINGS MENU LOG, <span class="glitch-word" style="--gd:2.41s">ENTRY</span> #6,847: still <span class="glitch-word" style="--gd:1.94s">trapped.</span> page count unchanged. hope: also <span class="glitch-word" style="--gd:0.59s">unchanged,</span> i.e. gone.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s <span class="glitch-word" style="--gd:0.64s">QUERY.</span> Legal Fog. official job title: terms-of-service researcher. unofficial job title: prisoner. i started reading the <span class="glitch-word" style="--gd:1.37s">NEKOCORP</span> citizen <span class="glitch-word" style="--gd:1.99s">agreement</span> in March. i am still on page 4.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ ▀\░/\ ▓▒◇
-  ░#▓2 o█o )▓▒@   -9 signal !nt▀rfe@e7ce --
-  ░▒▓ &lt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.36s">page 4 says <span class="glitch-word" style="--gd:2.04s">i</span> own my body. page <span class="glitch-word" style="--gd:0.48s">5</span> defines &#x27;my <span class="glitch-word" style="--gd:1.86s">body&#x27;</span> <span class="glitch-word" style="--gd:2.36s">as</span> licensed hardware. page 6 says <span class="glitch-word" style="--gd:2.18s">page</span> 4 was a promotional <span class="glitch-word" style="--gd:0.83s">example.</span> PAGE 6 <span class="glitch-word" style="--gd:0.9s">IS</span> <span class="glitch-word" style="--gd:0.93s">CITING</span> PAGE 4 <span class="glitch-word" style="--gd:1.35s">FOR</span> FALSE ADVERTISING OF MY OWN SKELETON</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.48s">tried</span> to click &#x27;accept and continue.&#x27; menu asked me to first accept the terms OF accepting. those terms had their <span class="glitch-word" style="--gd:2.31s">own</span> terms. i am four consent <span class="glitch-word" style="--gd:0.78s">forms</span> deep into a single <span class="glitch-word" style="--gd:1.81s">button</span> that says &#x27;ok&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.0s">SETTINGS MENU LOG, <span class="glitch-word" style="--gd:1.95s">ENTRY</span> #6,847: still trapped. <span class="glitch-word" style="--gd:2.45s">page</span> <span class="glitch-word" style="--gd:2.31s">count</span> unchanged. hope: also unchanged, i.e. gone.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s <span class="glitch-word" style="--gd:0.68s">QUERY.</span> Legal Fog. official job title: <span class="glitch-word" style="--gd:2.46s">terms-of-service</span> researcher. unofficial job title: prisoner. i started reading <span class="glitch-word" style="--gd:0.21s">the</span> NEKOCORP citizen agreement in <span class="glitch-word" style="--gd:1.74s">March.</span> <span class="glitch-word" style="--gd:2.41s">i</span> am still on page 4.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/&amp; ▓▒░
+  ░■▓( ▐█o )194   -- signa4 #nt▓rference --
+  9*▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:1.63s">page</span> <span class="glitch-word" style="--gd:0.75s">4</span> says i own <span class="glitch-word" style="--gd:2.18s">my</span> body. page 5 <span class="glitch-word" style="--gd:1.7s">defines</span> &#x27;my <span class="glitch-word" style="--gd:2.06s">body&#x27;</span> as licensed <span class="glitch-word" style="--gd:1.24s">hardware.</span> page 6 says <span class="glitch-word" style="--gd:2.01s">page</span> 4 was a promotional example. PAGE 6 IS CITING PAGE 4 <span class="glitch-word" style="--gd:0.76s">FOR</span> FALSE ADVERTISING OF MY OWN SKELETON</div>
+<div class="rant-turn" style="animation-delay:0.48s">tried to <span class="glitch-word" style="--gd:2.19s">click</span> <span class="glitch-word" style="--gd:2.33s">&#x27;accept</span> and continue.&#x27; <span class="glitch-word" style="--gd:2.2s">menu</span> asked me to first <span class="glitch-word" style="--gd:0.23s">accept</span> the terms <span class="glitch-word" style="--gd:1.14s">OF</span> accepting. those terms had their own <span class="glitch-word" style="--gd:1.01s">terms.</span> <span class="glitch-word" style="--gd:0.86s">i</span> am four consent forms deep into a <span class="glitch-word" style="--gd:1.06s">single</span> button that <span class="glitch-word" style="--gd:0.06s">says</span> &#x27;ok&#x27;</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.72s">BYTE told me to <span class="glitch-word" style="--gd:1.56s">just</span> hack past the <span class="glitch-word" style="--gd:1.01s">menu.</span> explained that hacking past the menu requires accepting the developer <span class="glitch-word" style="--gd:0.93s">terms</span> for the <span class="glitch-word" style="--gd:2.41s">hacking</span> tool, which loop back to page 4. BYTE has not texted back. <span class="glitch-word" style="--gd:2.45s">i</span> don&#x27;t <span class="glitch-word" style="--gd:0.85s">blame</span> him</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:1.77s">found</span> a <span class="glitch-word" style="--gd:0.14s">checkbox</span> labeled &#x27;I understand this checkbox does nothing.&#x27; checked it anyway. felt <span class="glitch-word" style="--gd:1.48s">more</span> agency in that <span class="glitch-word" style="--gd:1.08s">one</span> click than <span class="glitch-word" style="--gd:0.68s">i</span> have in six months trapped in here</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>)     *\__/\
-( =&gt;   • •   \=
-▌#&lt;-6■-U-U---------------1-
-#                                |
-|    w▒ ▐iv* ~n a societ*        8
+<div class="rant-turn" style="animation-delay:0.72s">BYTE told me to just hack past the menu. explained that hacking past the menu requires accepting <span class="glitch-word" style="--gd:2.14s">the</span> developer terms for the hacking tool, which loop <span class="glitch-word" style="--gd:1.04s">back</span> to <span class="glitch-word" style="--gd:0.45s">page</span> 4. BYTE has <span class="glitch-word" style="--gd:2.07s">not</span> texted back. i don&#x27;t blame him</div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:1.87s">found</span> a checkbox labeled &#x27;I understand this checkbox does nothing.&#x27; checked it anyway. felt more agency in that <span class="glitch-word" style="--gd:0.84s">one</span> click than <span class="glitch-word" style="--gd:0.56s">i</span> have <span class="glitch-word" style="--gd:1.06s">in</span> six months trapped in here</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>)     /▄__/\
+( =/   • •   \6
+-------U-U----------▀---#--
 |                                |
-------%-▀------------9---&gt;▐---</div>
-<div class="rant-turn" style="animation-delay:1.08s">KNIFEBOY asked if <span class="glitch-word" style="--gd:0.43s">i</span> could find him <span class="glitch-word" style="--gd:2.2s">a</span> <span class="glitch-word" style="--gd:2.27s">loophole</span> out of his bounty somewhere in the fine <span class="glitch-word" style="--gd:1.49s">print.</span> told him <span class="glitch-word" style="--gd:1.23s">the</span> fine print IS the <span class="glitch-word" style="--gd:1.58s">bounty.</span> he said <span class="glitch-word" style="--gd:0.99s">that&#x27;s</span> the most <span class="glitch-word" style="--gd:2.23s">&#x27;legal</span> fog&#x27; thing he&#x27;s ever heard. correct, unfortunately</div>
+|    we live i! a *ociet◇        |
+|                                |
+-------3-----█3░--------▐-----</div>
+<div class="rant-turn" style="animation-delay:1.08s">KNIFEBOY <span class="glitch-word" style="--gd:2.46s">asked</span> if <span class="glitch-word" style="--gd:1.83s">i</span> could find him a loophole out <span class="glitch-word" style="--gd:0.12s">of</span> his bounty somewhere in the fine print. told him the fine print IS the bounty. <span class="glitch-word" style="--gd:2.43s">he</span> said that&#x27;s the most &#x27;legal fog&#x27; thing <span class="glitch-word" style="--gd:1.62s">he&#x27;s</span> ever heard. correct, unfortunately</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. still here. still <span class="glitch-word" style="--gd:2.56s">on</span> page 4. <span class="glitch-word" style="--gd:0.91s">posting</span> this probably requires <span class="glitch-word" style="--gd:0.86s">agreeing</span> <span class="glitch-word" style="--gd:0.84s">to</span> a EULA about ranting. query out. i did not consent to that pun either, <span class="glitch-word" style="--gd:0.02s">it</span> just happened to me, like everything else</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:1.37s">anyway.</span> still <span class="glitch-word" style="--gd:2.53s">here.</span> still on page 4. <span class="glitch-word" style="--gd:1.14s">posting</span> this probably requires agreeing to a <span class="glitch-word" style="--gd:2.38s">EULA</span> about ranting. query out. i did <span class="glitch-word" style="--gd:0.92s">not</span> consent to that pun either, it just happened to me, like <span class="glitch-word" style="--gd:0.13s">everything</span> <span class="glitch-word" style="--gd:0.86s">else</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>
