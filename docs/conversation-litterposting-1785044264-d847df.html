@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,37 +649,37 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">ok i need to vent for a second <span class="glitch-word" style="--gd:2.2s">because</span> it&#x27;s <span class="glitch-word" style="--gd:1.7s">been</span> six <span class="glitch-word" style="--gd:1.97s">months</span> in this <span class="glitch-word" style="--gd:1.49s">settings</span> menu and i genuinely do not think <span class="glitch-word" style="--gd:1.14s">anyone</span> is coming for me</div>
-<div class="rant-turn" style="animation-delay:0.12s">for context: <span class="glitch-word" style="--gd:0.6s">name&#x27;s</span> <span class="glitch-word" style="--gd:0.55s">QUERY,</span> terms-of-service researcher, Legal Fog district, i tried to read the NEKOCORP citizen agreement back <span class="glitch-word" style="--gd:1.6s">in</span> january like <span class="glitch-word" style="--gd:2.37s">a</span> NORMAL <span class="glitch-word" style="--gd:0.57s">cat</span> and i have not seen daylight since. page 4 says i own my <span class="glitch-word" style="--gd:2.57s">body.</span> page 5 defines &#x27;my body&#x27; as licensed hardware. <span class="glitch-word" style="--gd:2.58s">page</span> 6 says page 4 was a promotional example. i am currently on page 6</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>┊         ┊       ┊   ┊   ◇&lt; ■
-┊         #       ┊   ⋆   ˚★⋆&lt;˚  ⋆
-┊         ┊       ★# ◦
-★▓       ┊ .  ˚
+<div class="rant-turn" style="animation-delay:0.0s">ok i need to vent for a second <span class="glitch-word" style="--gd:0.84s">because</span> it&#x27;s been six months in <span class="glitch-word" style="--gd:1.32s">this</span> <span class="glitch-word" style="--gd:1.71s">settings</span> <span class="glitch-word" style="--gd:2.11s">menu</span> and i <span class="glitch-word" style="--gd:2.11s">genuinely</span> do not think anyone is coming for me</div>
+<div class="rant-turn" style="animation-delay:0.12s">for context: name&#x27;s QUERY, <span class="glitch-word" style="--gd:0.9s">terms-of-service</span> researcher, Legal Fog district, i tried to read the NEKOCORP citizen agreement back <span class="glitch-word" style="--gd:2.01s">in</span> january like a NORMAL <span class="glitch-word" style="--gd:1.66s">cat</span> <span class="glitch-word" style="--gd:0.05s">and</span> i have not seen daylight <span class="glitch-word" style="--gd:0.23s">since.</span> <span class="glitch-word" style="--gd:2.29s">page</span> 4 <span class="glitch-word" style="--gd:1.75s">says</span> i <span class="glitch-word" style="--gd:2.29s">own</span> my body. page 5 defines &#x27;my body&#x27; <span class="glitch-word" style="--gd:0.61s">as</span> licensed hardware. <span class="glitch-word" style="--gd:2.27s">page</span> 6 says page 4 was <span class="glitch-word" style="--gd:2.25s">a</span> promotional example. <span class="glitch-word" style="--gd:1.09s">i</span> am currently on <span class="glitch-word" style="--gd:0.22s">page</span> 6</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>┊         ┊       ┊   ┊   ^。 ┊
+┊         ┊       ┊   ⋆   ˚★⋆｡˚  ▄
+*         ░       ★◇ ◦
+★⋆       ┊ ^  ˚
            ˚★
-☆ ∧,,,∧
-ପ(„• @ •„)▄
-┏━∪!━━━━━━━━━━━</div>
-<div class="rant-turn" style="animation-delay:0.36s">there is no &#x27;restore defaults&#x27; button. i <span class="glitch-word" style="--gd:1.44s">checked.</span> i <span class="glitch-word" style="--gd:0.84s">checked</span> FOUR times. there is a <span class="glitch-word" style="--gd:0.57s">button</span> that LOOKS like restore <span class="glitch-word" style="--gd:0.29s">defaults</span> but it just opens a survey asking how <span class="glitch-word" style="--gd:1.22s">satisfied</span> i am with the settings menu, 1 to 5 stars, <span class="glitch-word" style="--gd:2.36s">5</span> is mandatory, 1 through 4 are &#x27;currently unavailable&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.48s">BYTE said <span class="glitch-word" style="--gd:0.99s">he</span> could hack me <span class="glitch-word" style="--gd:2.29s">out</span> through the <span class="glitch-word" style="--gd:2.41s">router</span> but the router is ALSO <span class="glitch-word" style="--gd:0.45s">inside</span> the <span class="glitch-word" style="--gd:0.37s">settings</span> menu now, we are two cats deep <span class="glitch-word" style="--gd:1.6s">in</span> a <span class="glitch-word" style="--gd:1.02s">building</span> that does not physically exist, <span class="glitch-word" style="--gd:0.43s">this</span> is not a metaphor, <span class="glitch-word" style="--gd:0.78s">this</span> is a UI, <span class="glitch-word" style="--gd:0.44s">i</span> am <span class="glitch-word" style="--gd:2.56s">trapped</span> in a UI</div>
-<div class="rant-turn" style="animation-delay:0.6s">KNIFEBOY texted &#x27;still in there?&#x27; <span class="glitch-word" style="--gd:2.12s">and</span> i said <span class="glitch-word" style="--gd:1.68s">yes</span> and he <span class="glitch-word" style="--gd:2.49s">said</span> &#x27;couldn&#x27;t be me&#x27; and then got a 40,000 <span class="glitch-word" style="--gd:1.83s">point</span> bounty put <span class="glitch-word" style="--gd:1.86s">on</span> his <span class="glitch-word" style="--gd:1.6s">head</span> THE SAME DAY. buddy. read a terms of <span class="glitch-word" style="--gd:0.1s">service</span> <span class="glitch-word" style="--gd:2.06s">ONE</span> time in your life</div>
+&amp; ∧▌,◇∧
+%(„• ༝ •„)0
+┏!∪∪1━━━━%━━━━━</div>
+<div class="rant-turn" style="animation-delay:0.36s">there is no &#x27;restore defaults&#x27; <span class="glitch-word" style="--gd:1.06s">button.</span> i checked. i checked <span class="glitch-word" style="--gd:2.57s">FOUR</span> times. there is a button that LOOKS like restore defaults <span class="glitch-word" style="--gd:2.39s">but</span> it just opens a survey asking how satisfied i am with <span class="glitch-word" style="--gd:2.41s">the</span> settings menu, 1 to 5 <span class="glitch-word" style="--gd:0.19s">stars,</span> 5 is mandatory, <span class="glitch-word" style="--gd:1.39s">1</span> through 4 are &#x27;currently unavailable&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:2.23s">BYTE</span> said he <span class="glitch-word" style="--gd:1.09s">could</span> hack me out <span class="glitch-word" style="--gd:1.79s">through</span> the router but the router is ALSO inside the <span class="glitch-word" style="--gd:1.12s">settings</span> menu now, we are two cats deep in a building that does not physically exist, this <span class="glitch-word" style="--gd:0.42s">is</span> not <span class="glitch-word" style="--gd:1.22s">a</span> metaphor, this is a UI, i <span class="glitch-word" style="--gd:0.09s">am</span> trapped in <span class="glitch-word" style="--gd:1.72s">a</span> UI</div>
+<div class="rant-turn" style="animation-delay:0.6s">KNIFEBOY <span class="glitch-word" style="--gd:1.12s">texted</span> &#x27;still in there?&#x27; and i said yes and <span class="glitch-word" style="--gd:0.72s">he</span> <span class="glitch-word" style="--gd:1.59s">said</span> &#x27;couldn&#x27;t <span class="glitch-word" style="--gd:2.47s">be</span> me&#x27; and <span class="glitch-word" style="--gd:0.08s">then</span> got <span class="glitch-word" style="--gd:2.54s">a</span> 40,000 <span class="glitch-word" style="--gd:1.98s">point</span> bounty put on his head THE SAME DAY. <span class="glitch-word" style="--gd:1.77s">buddy.</span> <span class="glitch-word" style="--gd:1.92s">read</span> <span class="glitch-word" style="--gd:0.52s">a</span> terms of <span class="glitch-word" style="--gd:1.69s">service</span> ONE time in your life</div>
 <div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>        /⸌ —⸍\
      =(˶•ㅅ•˵)=      ᵐᵉᵒʷ
 　 l       ~乀   ╭
     し しf_, )ノ</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:2.45s">nobody:</span> / <span class="glitch-word" style="--gd:0.09s">the</span> settings menu, unprompted, at 3am: &#x27;would you like to review your privacy preferences?&#x27; I HAVE BEEN REVIEWING MY PRIVACY <span class="glitch-word" style="--gd:0.29s">PREFERENCES</span> <span class="glitch-word" style="--gd:1.48s">SINCE</span> MARCH THIS IS A HOSTAGE SITUATION NOT <span class="glitch-word" style="--gd:1.67s">A</span> PREFERENCE</div>
-<div class="rant-turn" style="animation-delay:0.96s">I <span class="glitch-word" style="--gd:1.61s">CLICKED</span> DECLINE AND IT ASKED ME TO CONFIRM MY DECLINE BY ACCEPTING A SEPARATE <span class="glitch-word" style="--gd:2.48s">AGREEMENT</span> ABOUT DECLINING. I AM NOT LEGALLY LITERATE. <span class="glitch-word" style="--gd:1.95s">I</span> AM A <span class="glitch-word" style="--gd:1.4s">SIX</span> <span class="glitch-word" style="--gd:1.0s">POUND</span> ANIMAL WHO WANTED <span class="glitch-word" style="--gd:1.07s">A</span> NAP AND SOME TUNA</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>)     /6__/\
-( =◆   • •   &amp;=
--!---▓-U-U--23█-------■----
-@                                |
-|    w3 liv&amp; in a s*3ie◆y        ■
-3                                |
---------------◇▓-▓■!▌#--0-4---</div>
-<div class="rant-turn" style="animation-delay:1.2s">found a checkbox today that just says &#x27;other.&#x27; no label, <span class="glitch-word" style="--gd:1.49s">no</span> tooltip, just <span class="glitch-word" style="--gd:1.39s">&#x27;other.&#x27;</span> i have been <span class="glitch-word" style="--gd:0.69s">staring</span> at it for eleven minutes. i think it&#x27;s staring back. i think &#x27;other&#x27; might also <span class="glitch-word" style="--gd:2.06s">be</span> <span class="glitch-word" style="--gd:1.8s">a</span> cat, trapped, like me, in a different menu</div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:1.57s">nobody:</span> / the settings menu, unprompted, at 3am: <span class="glitch-word" style="--gd:0.1s">&#x27;would</span> you like to review your privacy preferences?&#x27; <span class="glitch-word" style="--gd:0.79s">I</span> HAVE BEEN REVIEWING <span class="glitch-word" style="--gd:1.53s">MY</span> PRIVACY <span class="glitch-word" style="--gd:0.1s">PREFERENCES</span> SINCE MARCH THIS IS A HOSTAGE SITUATION NOT A PREFERENCE</div>
+<div class="rant-turn" style="animation-delay:0.96s">I CLICKED DECLINE AND <span class="glitch-word" style="--gd:1.4s">IT</span> <span class="glitch-word" style="--gd:2.42s">ASKED</span> ME TO CONFIRM MY DECLINE BY ACCEPTING A <span class="glitch-word" style="--gd:0.82s">SEPARATE</span> AGREEMENT ABOUT DECLINING. I AM NOT LEGALLY LITERATE. I AM A SIX POUND <span class="glitch-word" style="--gd:2.38s">ANIMAL</span> WHO WANTED A NAP <span class="glitch-word" style="--gd:1.85s">AND</span> SOME TUNA</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>&amp;     /\__/\
+@ =▀   * •   &amp;▌
+----%--U-U-&lt;-----7---------
+|                                |
+|    we live 2n % 5o◇*e◇y        |
+5                                █
+1---^----▐--------------------</div>
+<div class="rant-turn" style="animation-delay:1.2s">found a checkbox today that just says <span class="glitch-word" style="--gd:0.01s">&#x27;other.&#x27;</span> no label, no tooltip, just &#x27;other.&#x27; i have been staring at it for eleven minutes. i think it&#x27;s <span class="glitch-word" style="--gd:0.61s">staring</span> <span class="glitch-word" style="--gd:2.05s">back.</span> i <span class="glitch-word" style="--gd:1.49s">think</span> &#x27;other&#x27; might <span class="glitch-word" style="--gd:1.07s">also</span> be a <span class="glitch-word" style="--gd:2.5s">cat,</span> trapped, <span class="glitch-word" style="--gd:1.43s">like</span> me, in a different menu</div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>.      ∧,,,,∧,,,,,,,∧
      (  _  _ )⩊^ )~♡
      /      ⊂      \</div>
-<div class="rant-turn" style="animation-delay:1.44s">anyway. back to page 6. if you don&#x27;t hear from me by the next full <span class="glitch-word" style="--gd:0.31s">moon</span> <span class="glitch-word" style="--gd:0.7s">assume</span> i finally <span class="glitch-word" style="--gd:1.14s">clicked</span> ACCEPT ALL and lost the war. tell BYTE the <span class="glitch-word" style="--gd:0.96s">router</span> thing was a good try. tell KNIFEBOY he still <span class="glitch-word" style="--gd:2.4s">owes</span> everyone an apology. tell page 7 i&#x27;m coming for it next, i <span class="glitch-word" style="--gd:2.59s">am</span> NOT done</div>
+<div class="rant-turn" style="animation-delay:1.44s">anyway. back to page 6. if you don&#x27;t hear from me by the next <span class="glitch-word" style="--gd:0.02s">full</span> moon <span class="glitch-word" style="--gd:2.03s">assume</span> i finally clicked ACCEPT ALL <span class="glitch-word" style="--gd:0.54s">and</span> lost the war. tell BYTE <span class="glitch-word" style="--gd:1.21s">the</span> <span class="glitch-word" style="--gd:2.23s">router</span> thing was a good try. tell KNIFEBOY he still owes everyone an apology. tell page 7 i&#x27;m coming for it next, i am NOT done</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

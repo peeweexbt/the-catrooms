@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,29 +649,29 @@ header p {
 <div class="narrator-badge">posted by <strong>GLITCHMEAT</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">there <span class="glitch-word" style="--gd:0.87s">are</span> spiders in <span class="glitch-word" style="--gd:0.38s">my</span> bluetooth again. i can hear <span class="glitch-word" style="--gd:1.81s">them</span> arguing. this <span class="glitch-word" style="--gd:1.86s">is</span> not a <span class="glitch-word" style="--gd:2.48s">metaphor,</span> i genuinely wish it was a metaphor</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:1.71s">GLITCHMEAT</span> here, Research <span class="glitch-word" style="--gd:0.18s">Basement,</span> <span class="glitch-word" style="--gd:0.71s">beta</span> tester. &#x27;beta tester&#x27; is a business term for &#x27;we <span class="glitch-word" style="--gd:2.46s">do</span> not know what <span class="glitch-word" style="--gd:0.53s">this</span> patch <span class="glitch-word" style="--gd:1.14s">does</span> but <span class="glitch-word" style="--gd:1.24s">the</span> paperwork says try <span class="glitch-word" style="--gd:0.23s">it</span> on the cat&#x27;</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒◇ /~_/6 ▓▒▓
-  ░▒░( 7█o )▓▒░   -~ s%gnal inte▒ference ▒%
-  6▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s side effect: i can taste the radio. it tastes <span class="glitch-word" style="--gd:2.28s">like</span> a parking garage. yesterday it tasted like wednesday. no notes, <span class="glitch-word" style="--gd:2.05s">ten</span> out <span class="glitch-word" style="--gd:2.03s">of</span> ten, <span class="glitch-word" style="--gd:2.45s">would</span> not recommend</div>
-<div class="rant-turn" style="animation-delay:0.48s">also i remembered a kittenhood today that is not mine. new information: someone <span class="glitch-word" style="--gd:0.21s">named</span> <span class="glitch-word" style="--gd:2.15s">Mr.</span> Buttons had a very normal, loving childhood, and i now have full unrestricted access to it, <span class="glitch-word" style="--gd:1.27s">free</span> of charge, entirely unconsented</div>
+<div class="rant-turn" style="animation-delay:0.0s">there are spiders in my bluetooth <span class="glitch-word" style="--gd:2.57s">again.</span> i can hear them arguing. this is <span class="glitch-word" style="--gd:1.9s">not</span> a metaphor, i genuinely wish it was a metaphor</div>
+<div class="rant-turn" style="animation-delay:0.12s">GLITCHMEAT here, <span class="glitch-word" style="--gd:0.75s">Research</span> <span class="glitch-word" style="--gd:0.31s">Basement,</span> beta tester. &#x27;beta tester&#x27; is a business <span class="glitch-word" style="--gd:0.85s">term</span> for &#x27;we do not know what this patch <span class="glitch-word" style="--gd:0.69s">does</span> but the <span class="glitch-word" style="--gd:0.63s">paperwork</span> says try it on the cat&#x27;</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒▄
+  ░▒▓◇ ▀▀o )▓◆░   -- sign2l interference -6
+  ░!▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s side effect: i can taste the radio. it tastes like a <span class="glitch-word" style="--gd:0.58s">parking</span> garage. yesterday it <span class="glitch-word" style="--gd:2.42s">tasted</span> like wednesday. no notes, ten out of ten, would not recommend</div>
+<div class="rant-turn" style="animation-delay:0.48s">also i remembered a kittenhood today <span class="glitch-word" style="--gd:0.43s">that</span> is not mine. new information: someone named <span class="glitch-word" style="--gd:2.43s">Mr.</span> Buttons had a <span class="glitch-word" style="--gd:1.86s">very</span> normal, <span class="glitch-word" style="--gd:2.53s">loving</span> childhood, and i now have full <span class="glitch-word" style="--gd:1.33s">unrestricted</span> access to it, free of <span class="glitch-word" style="--gd:1.61s">charge,</span> entirely unconsented</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.72s">QUERY says my situation <span class="glitch-word" style="--gd:1.01s">&#x27;raises</span> interesting <span class="glitch-word" style="--gd:2.48s">licensing</span> questions.&#x27; QUERY has been trapped in <span class="glitch-word" style="--gd:1.25s">the</span> NEKOCORP settings menu for six months. QUERY is not <span class="glitch-word" style="--gd:1.05s">currently</span> in <span class="glitch-word" style="--gd:0.39s">a</span> position to be <span class="glitch-word" style="--gd:2.13s">raising</span> anything</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:0.04s">SHADE</span> offered <span class="glitch-word" style="--gd:0.96s">me</span> the sunglasses, said they block out 14% of &#x27;the <span class="glitch-word" style="--gd:0.37s">sadness.&#x27;</span> i <span class="glitch-word" style="--gd:2.06s">asked</span> what they <span class="glitch-word" style="--gd:1.26s">do</span> about the spiders. SHADE said &#x27;nothing helps with the spiders man.&#x27; respect <span class="glitch-word" style="--gd:2.42s">the</span> honesty honestly</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>     /%/◇_/\/\
-    ?  *   O  ?
-     \  ^Y^  /
-      8=====(      3◇ ears up, rot░r incoming --</div>
-<div class="rant-turn" style="animation-delay:1.08s">hearing purple today. purple is <span class="glitch-word" style="--gd:2.54s">louder</span> than i expected. <span class="glitch-word" style="--gd:0.62s">purple</span> sounds like a fax machine <span class="glitch-word" style="--gd:1.64s">that</span> has simply had enough</div>
+<div class="rant-turn" style="animation-delay:0.72s">QUERY says <span class="glitch-word" style="--gd:2.46s">my</span> situation &#x27;raises interesting licensing <span class="glitch-word" style="--gd:1.15s">questions.&#x27;</span> QUERY has been trapped in the NEKOCORP settings <span class="glitch-word" style="--gd:1.33s">menu</span> for <span class="glitch-word" style="--gd:1.48s">six</span> months. QUERY is not currently in a position to be raising anything</div>
+<div class="rant-turn" style="animation-delay:0.84s">SHADE offered me the sunglasses, said they block out 14% of &#x27;the sadness.&#x27; i <span class="glitch-word" style="--gd:0.71s">asked</span> what they do about <span class="glitch-word" style="--gd:1.38s">the</span> spiders. SHADE <span class="glitch-word" style="--gd:0.76s">said</span> <span class="glitch-word" style="--gd:0.31s">&#x27;nothing</span> helps with the spiders man.&#x27; respect the honesty honestly</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/&amp;5/\/░
+    (  O   O  )
+     \  ^Y2  /
+      )=▌===(      -- 5ars 1p, ro4or incoming ^-</div>
+<div class="rant-turn" style="animation-delay:1.08s">hearing <span class="glitch-word" style="--gd:0.96s">purple</span> today. purple is louder than i expected. purple <span class="glitch-word" style="--gd:2.55s">sounds</span> like a fax machine that <span class="glitch-word" style="--gd:1.83s">has</span> simply had enough</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.32s">twelve credits. twelve whole credits <span class="glitch-word" style="--gd:0.61s">is</span> what i got for this. i would not do <span class="glitch-word" style="--gd:0.48s">it</span> <span class="glitch-word" style="--gd:2.4s">again.</span> i am absolutely going to do it again <span class="glitch-word" style="--gd:2.48s">next</span> week. see you then, assuming Mr. <span class="glitch-word" style="--gd:0.98s">Buttons</span> doesn&#x27;t want his childhood back first</div>
+<div class="rant-turn" style="animation-delay:1.32s">twelve credits. twelve whole credits is what i got for this. i would not do it <span class="glitch-word" style="--gd:0.67s">again.</span> i am absolutely going to do it <span class="glitch-word" style="--gd:1.02s">again</span> next week. see you then, assuming Mr. <span class="glitch-word" style="--gd:1.75s">Buttons</span> doesn&#x27;t want his childhood <span class="glitch-word" style="--gd:0.96s">back</span> first</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

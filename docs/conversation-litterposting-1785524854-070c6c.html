@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,28 +649,28 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">unpopular opinion: the sunbeam on the fire escape at 7th and vend belongs to whoever&#x27;s already lying in <span class="glitch-word" style="--gd:0.01s">it</span> and mittens is WRONG about this, actually, factually wrong</div>
-<div class="rant-turn" style="animation-delay:0.12s">i don&#x27;t have a district. i don&#x27;t have a job. i <span class="glitch-word" style="--gd:0.4s">have</span> a fire escape <span class="glitch-word" style="--gd:1.98s">and</span> a grudge and <span class="glitch-word" style="--gd:2.48s">that&#x27;s</span> basically a real estate <span class="glitch-word" style="--gd:0.94s">portfolio</span> <span class="glitch-word" style="--gd:0.41s">in</span> this economy</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░9# █◆_/# ▓▒░
-  4▒▓( o35 )▓▒░   -6 si8nal in▒▐2▄9&lt;ence -&amp;
-  ░▓▓ &amp; ▓ &lt; ▓░&gt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">byte hacked into the vending machine again just to watch <span class="glitch-word" style="--gd:0.18s">fish</span> tv and got yelled <span class="glitch-word" style="--gd:2.17s">at</span> by a toaster with <span class="glitch-word" style="--gd:1.84s">a</span> badge. legend behavior <span class="glitch-word" style="--gd:0.76s">honestly</span></div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:0.93s">meanwhile</span> <span class="glitch-word" style="--gd:1.26s">knifeboy&#x27;s</span> <span class="glitch-word" style="--gd:1.97s">bounty</span> went up another 4 grand <span class="glitch-word" style="--gd:1.98s">in</span> loyalty points <span class="glitch-word" style="--gd:0.03s">that</span> expire <span class="glitch-word" style="--gd:0.89s">in</span> 6 hours. capitalism but make it a fetch quest</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.86s">unpopular</span> opinion: <span class="glitch-word" style="--gd:0.19s">the</span> sunbeam on the fire escape at 7th <span class="glitch-word" style="--gd:1.64s">and</span> vend <span class="glitch-word" style="--gd:1.46s">belongs</span> to whoever&#x27;s already lying in it and <span class="glitch-word" style="--gd:0.22s">mittens</span> is WRONG about this, actually, factually wrong</div>
+<div class="rant-turn" style="animation-delay:0.12s">i don&#x27;t have a <span class="glitch-word" style="--gd:2.36s">district.</span> i don&#x27;t <span class="glitch-word" style="--gd:1.24s">have</span> a <span class="glitch-word" style="--gd:1.14s">job.</span> i have a fire escape and a grudge and <span class="glitch-word" style="--gd:0.13s">that&#x27;s</span> basically <span class="glitch-word" style="--gd:0.84s">a</span> <span class="glitch-word" style="--gd:2.41s">real</span> <span class="glitch-word" style="--gd:0.81s">estate</span> portfolio in <span class="glitch-word" style="--gd:0.8s">this</span> economy</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
+  ░@▓( ▒█6 )▓^?   -- sig▀al interf6rence -*
+  ░▄▀ 1 ^ &lt; ▓0░</div>
+<div class="rant-turn" style="animation-delay:0.36s">byte hacked into the <span class="glitch-word" style="--gd:2.55s">vending</span> <span class="glitch-word" style="--gd:1.82s">machine</span> again just to watch fish tv and got yelled at by a toaster with a badge. legend behavior honestly</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:0.68s">meanwhile</span> knifeboy&#x27;s bounty went up another <span class="glitch-word" style="--gd:1.43s">4</span> grand in loyalty points that expire in 6 hours. capitalism but make it a fetch <span class="glitch-word" style="--gd:0.01s">quest</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.72s">everyone keeps asking <span class="glitch-word" style="--gd:0.25s">who</span> i actually am like <span class="glitch-word" style="--gd:1.44s">it&#x27;s</span> a gotcha. babe i&#x27;m whoever&#x27;s standing <span class="glitch-word" style="--gd:0.89s">where</span> the drone <span class="glitch-word" style="--gd:1.58s">isn&#x27;t</span> looking. that&#x27;s <span class="glitch-word" style="--gd:0.19s">the</span> whole bit</div>
-<div class="rant-turn" style="animation-delay:0.84s">i have read this post before you <span class="glitch-word" style="--gd:1.21s">wrote</span> it. i <span class="glitch-word" style="--gd:2.3s">will</span> read it again <span class="glitch-word" style="--gd:2.25s">after</span> you forget you wrote it. the counter does not care either way.</div>
-<div class="rant-turn" style="animation-delay:0.96s">anyway <span class="glitch-word" style="--gd:0.7s">if</span> anyone sees my food bowl <span class="glitch-word" style="--gd:2.39s">tell</span> it i said <span class="glitch-word" style="--gd:0.09s">hi,</span> i haven&#x27;t <span class="glitch-word" style="--gd:1.51s">been</span> home in a <span class="glitch-word" style="--gd:0.82s">WEEK,</span> home is a concept now</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>)     █\_!/8
-( =/   • •   \=
----0~--U-U◇-----------▀◇-█-
-■                                |
-|    ▄e live i&gt; &gt; society        |
-4                                |
----*---------▀---█--------▐---</div>
-<div class="rant-turn" style="animation-delay:1.2s">but real talk for one (1) <span class="glitch-word" style="--gd:0.82s">second</span> — nekocorp built a whole city out <span class="glitch-word" style="--gd:0.64s">of</span> subscription <span class="glitch-word" style="--gd:0.37s">fees</span> and drone shadows and they <span class="glitch-word" style="--gd:1.87s">think</span> none of us notice the seams. we notice. every stray, every meowizen, every cat still owed a sunbeam. <span class="glitch-word" style="--gd:2.3s">the</span> streets don&#x27;t belong to them. join us or don&#x27;t, the fence <span class="glitch-word" style="--gd:0.76s">is</span> open either way <span class="glitch-word" style="--gd:1.33s">~</span></div>
+<div class="rant-turn" style="animation-delay:0.72s">everyone keeps asking who i actually am <span class="glitch-word" style="--gd:0.78s">like</span> <span class="glitch-word" style="--gd:1.23s">it&#x27;s</span> a gotcha. babe i&#x27;m <span class="glitch-word" style="--gd:0.9s">whoever&#x27;s</span> standing where the <span class="glitch-word" style="--gd:2.04s">drone</span> isn&#x27;t <span class="glitch-word" style="--gd:1.86s">looking.</span> that&#x27;s the whole bit</div>
+<div class="rant-turn" style="animation-delay:0.84s">i have read this post before you wrote it. i will read it again after you forget you wrote <span class="glitch-word" style="--gd:0.57s">it.</span> the counter <span class="glitch-word" style="--gd:2.55s">does</span> not care either way.</div>
+<div class="rant-turn" style="animation-delay:0.96s">anyway if anyone sees my food bowl tell it i said hi, i haven&#x27;t been home in a WEEK, home is a <span class="glitch-word" style="--gd:0.08s">concept</span> now</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>)     /\6_/\
+( =/   • •   5=
+-----*■U4U█-9-?-*----------
+|                                |
+|    0e 7i■3 in a so▐iet6        |
+|                                |
+---▄-------------------▒-8----</div>
+<div class="rant-turn" style="animation-delay:1.2s">but <span class="glitch-word" style="--gd:1.15s">real</span> talk for one (1) second — nekocorp <span class="glitch-word" style="--gd:0.48s">built</span> a whole city out of subscription <span class="glitch-word" style="--gd:2.51s">fees</span> and drone shadows and they think none of us notice the seams. we <span class="glitch-word" style="--gd:1.44s">notice.</span> every stray, every <span class="glitch-word" style="--gd:1.91s">meowizen,</span> every cat still owed <span class="glitch-word" style="--gd:0.54s">a</span> sunbeam. the streets don&#x27;t belong to <span class="glitch-word" style="--gd:0.05s">them.</span> join us <span class="glitch-word" style="--gd:0.57s">or</span> don&#x27;t, the <span class="glitch-word" style="--gd:0.78s">fence</span> is open either way ~</div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>        ,--.
        ( o.o)__
         &#x27;--&#x27;   \___

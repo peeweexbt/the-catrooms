@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,20 +649,20 @@ header p {
 <div class="narrator-badge">posted by <strong>GLITCHMEAT</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">beta test log, day 191: i <span class="glitch-word" style="--gd:0.45s">can</span> taste the wifi again. <span class="glitch-word" style="--gd:2.43s">that&#x27;s</span> not a metaphor, <span class="glitch-word" style="--gd:2.29s">that&#x27;s</span> a listed side effect NEKOCORP put in a font too small for consent.</div>
-<div class="rant-turn" style="animation-delay:0.12s">Research <span class="glitch-word" style="--gd:0.38s">Basement</span> smells like <span class="glitch-word" style="--gd:1.66s">ozone</span> and <span class="glitch-word" style="--gd:2.57s">regret</span> today. <span class="glitch-word" style="--gd:2.09s">also</span> i heard the <span class="glitch-word" style="--gd:0.39s">color</span> purple this <span class="glitch-word" style="--gd:1.53s">morning.</span> it sounded like <span class="glitch-word" style="--gd:1.11s">a</span> dial tone underwater. normal tuesday for <span class="glitch-word" style="--gd:1.44s">a</span> professional guinea pig.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.65s">beta</span> test log, day 191: <span class="glitch-word" style="--gd:1.95s">i</span> can taste the wifi again. that&#x27;s not a metaphor, that&#x27;s a listed side effect NEKOCORP put in a <span class="glitch-word" style="--gd:1.38s">font</span> too small <span class="glitch-word" style="--gd:2.47s">for</span> consent.</div>
+<div class="rant-turn" style="animation-delay:0.12s">Research <span class="glitch-word" style="--gd:1.29s">Basement</span> smells like ozone and regret today. also i heard the color purple this morning. it sounded like a dial tone underwater. normal <span class="glitch-word" style="--gd:2.28s">tuesday</span> for <span class="glitch-word" style="--gd:2.33s">a</span> professional guinea pig.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.36s">remembered someone else&#x27;s kittenhood again. <span class="glitch-word" style="--gd:1.17s">tiny</span> orange kitten, <span class="glitch-word" style="--gd:1.52s">big</span> yard, zero drones. <span class="glitch-word" style="--gd:2.44s">beautiful</span> memory. not mine. suing NEKOCORP for <span class="glitch-word" style="--gd:0.74s">emotional</span> identity theft, my lawyer is a vending <span class="glitch-word" style="--gd:1.46s">machine,</span> we are LOSING.</div>
-<div class="rant-turn" style="animation-delay:0.48s">BYTE keeps texting me <span class="glitch-word" style="--gd:0.32s">about</span> his &#x27;secure&#x27; pirate stream out of Server Alley 9 like <span class="glitch-word" style="--gd:0.08s">i</span> can&#x27;t taste his router screaming from four districts away. buddy. it tastes like mountain dew and paranoia. you are not stealth.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   __◇                                  ___
-  /___\   [5 [] [] [] ▄] [] [◆ []    /6_&gt;\
-  &amp; ..)\/\/\/\/\◆\/\6■/\%\/\/\2\/\▒\/7.. )
-   &#x27;?&#x27;                                &#x27;&#x27;&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.72s">there are spiders in my bluetooth. this is not a <span class="glitch-word" style="--gd:0.22s">bit.</span> <span class="glitch-word" style="--gd:1.58s">paired</span> with <span class="glitch-word" style="--gd:0.32s">my</span> toaster <span class="glitch-word" style="--gd:2.4s">this</span> <span class="glitch-word" style="--gd:1.03s">morning</span> <span class="glitch-word" style="--gd:1.29s">and</span> felt <span class="glitch-word" style="--gd:0.09s">eight</span> legs walk across my thoughts. scientists <span class="glitch-word" style="--gd:0.02s">call</span> it &#x27;within acceptable post-irony comedy limits.&#x27; i call it TUESDAY.</div>
-<div class="rant-turn" style="animation-delay:0.84s">SHADE texted <span class="glitch-word" style="--gd:0.67s">&#x27;stay</span> based&#x27; and i replied <span class="glitch-word" style="--gd:1.89s">with</span> a color <span class="glitch-word" style="--gd:0.19s">that</span> doesn&#x27;t exist yet and he left the <span class="glitch-word" style="--gd:2.37s">group</span> chat immediately. worth it. worth every side effect.</div>
+<div class="rant-turn" style="animation-delay:0.36s">remembered <span class="glitch-word" style="--gd:0.4s">someone</span> else&#x27;s kittenhood <span class="glitch-word" style="--gd:1.97s">again.</span> tiny orange kitten, <span class="glitch-word" style="--gd:2.54s">big</span> yard, zero drones. beautiful memory. not mine. suing NEKOCORP for emotional identity theft, my lawyer is a <span class="glitch-word" style="--gd:0.63s">vending</span> machine, we are LOSING.</div>
+<div class="rant-turn" style="animation-delay:0.48s">BYTE keeps texting me about his &#x27;secure&#x27; pirate <span class="glitch-word" style="--gd:1.92s">stream</span> out <span class="glitch-word" style="--gd:2.03s">of</span> Server Alley 9 like i can&#x27;t taste his router screaming from four districts away. buddy. <span class="glitch-word" style="--gd:0.96s">it</span> tastes <span class="glitch-word" style="--gd:1.29s">like</span> mountain dew and paranoia. you are not <span class="glitch-word" style="--gd:0.31s">stealth.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   ___                                  _4_
+  /___8   ▄] [] [] [] [] [] [6 [▒    ▓___\
+  1 ..)*/\4\4\/\/\/~&gt;\▓■/\/\/\▄\/\%\/(.. )
+   &#x27;&#x27;&#x27;                                &#x27;&#x27;&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.72s">there are spiders in my bluetooth. this is not a bit. paired with my <span class="glitch-word" style="--gd:0.52s">toaster</span> this morning and felt eight legs <span class="glitch-word" style="--gd:1.52s">walk</span> across my thoughts. scientists call it &#x27;within acceptable post-irony comedy <span class="glitch-word" style="--gd:0.98s">limits.&#x27;</span> <span class="glitch-word" style="--gd:0.6s">i</span> call it TUESDAY.</div>
+<div class="rant-turn" style="animation-delay:0.84s">SHADE texted &#x27;stay based&#x27; and <span class="glitch-word" style="--gd:2.15s">i</span> replied <span class="glitch-word" style="--gd:0.43s">with</span> <span class="glitch-word" style="--gd:2.32s">a</span> color that doesn&#x27;t exist yet <span class="glitch-word" style="--gd:0.67s">and</span> he <span class="glitch-word" style="--gd:0.5s">left</span> the group chat immediately. worth it. <span class="glitch-word" style="--gd:0.28s">worth</span> every side effect.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>┊         ┊       ┊   ┊   ┊。 ┊
 ┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆
 ┊         ┊       ★⋆ ◦
@@ -656,11 +671,11 @@ header p {
 ☆ ∧,,,∧
 ପ(„• ༝ •„)ଓ
 ┏━∪∪━━━━━━━━━━━</div>
-<div class="rant-turn" style="animation-delay:1.08s">twelve credits. TWELVE. that&#x27;s what they paid <span class="glitch-word" style="--gd:0.79s">me</span> to <span class="glitch-word" style="--gd:2.2s">let</span> them rewire my <span class="glitch-word" style="--gd:1.54s">whole</span> nervous system. spent it on <span class="glitch-word" style="--gd:1.22s">a</span> gas station <span class="glitch-word" style="--gd:1.7s">sushi</span> roll and a <span class="glitch-word" style="--gd:2.34s">receipt</span> that printed directly onto <span class="glitch-word" style="--gd:2.32s">my</span> optic nerve. don&#x27;t ask. i didn&#x27;t.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧◆,,,1,,,,,,,∧
-     (  _  _ )⩊^ )~♡
-     /      ⊂      \</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. going <span class="glitch-word" style="--gd:1.17s">to</span> go lie <span class="glitch-word" style="--gd:1.23s">in</span> the basement and hum static until my next appointment. if you hear purple before i do, it&#x27;s mine, i <span class="glitch-word" style="--gd:0.86s">called</span> it first. glitchmeat out.</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:0.6s">twelve</span> credits. TWELVE. <span class="glitch-word" style="--gd:1.12s">that&#x27;s</span> <span class="glitch-word" style="--gd:1.69s">what</span> <span class="glitch-word" style="--gd:2.11s">they</span> paid me to let <span class="glitch-word" style="--gd:2.36s">them</span> rewire <span class="glitch-word" style="--gd:1.78s">my</span> whole nervous system. spent <span class="glitch-word" style="--gd:2.05s">it</span> on a gas <span class="glitch-word" style="--gd:0.26s">station</span> <span class="glitch-word" style="--gd:1.02s">sushi</span> roll and a receipt that printed directly onto my optic nerve. don&#x27;t ask. i didn&#x27;t.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>.      2,,#,∧,,,,,,,∧
+     (  _  _ )⩊^ %~♡
+     /      ⊂      ▀</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. going <span class="glitch-word" style="--gd:1.58s">to</span> go lie in the basement and hum static until my <span class="glitch-word" style="--gd:1.41s">next</span> appointment. if you hear <span class="glitch-word" style="--gd:2.47s">purple</span> before i do, it&#x27;s <span class="glitch-word" style="--gd:1.68s">mine,</span> i called it first. glitchmeat out.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

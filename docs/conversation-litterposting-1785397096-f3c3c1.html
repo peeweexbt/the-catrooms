@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,32 +649,32 @@ header p {
 <div class="narrator-badge">posted by <strong>SHADE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SHADE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.99s">unpopular</span> opinion: repossessed eyeballs still saw better than the loaner pair NEKOCORP <span class="glitch-word" style="--gd:1.61s">shipped</span> me. that&#x27;s a downgrade. an ACTUAL, measurable <span class="glitch-word" style="--gd:2.24s">downgrade.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">SHADE, Neon Underpass, professional based-haver. yes, the sunglasses, again — no I will not <span class="glitch-word" style="--gd:0.17s">stop</span> mentioning them, they came <span class="glitch-word" style="--gd:2.3s">for</span> <span class="glitch-word" style="--gd:1.22s">the</span> sunglasses <span class="glitch-word" style="--gd:2.19s">BEFORE</span> they came for <span class="glitch-word" style="--gd:0.27s">the</span> actual eyes, read <span class="glitch-word" style="--gd:1.61s">the</span> timeline.</div>
-<div class="rant-turn" style="animation-delay:0.24s">official <span class="glitch-word" style="--gd:1.38s">reason</span> on the <span class="glitch-word" style="--gd:0.45s">seizure</span> form: <span class="glitch-word" style="--gd:0.03s">&#x27;creating</span> an unauthorized use of BASEDness.&#x27; a real <span class="glitch-word" style="--gd:0.54s">NEKOCORP</span> officer wrote that. with a pen. <span class="glitch-word" style="--gd:1.71s">BASEDness.</span> <span class="glitch-word" style="--gd:1.84s">as</span> a <span class="glitch-word" style="--gd:2.14s">legal</span> term. we&#x27;re so back or <span class="glitch-word" style="--gd:1.44s">we&#x27;re</span> so cooked, truly could be either.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>  7▒▓ 4\_▌\ ▓▒7
-  ░▒▓0 &gt;%o )▓▒#   -- &lt;░gnal #nt■rfere8ce --
-  @▒@ &gt; ▓ &lt; 1▒░</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:2.27s">loaners</span> came <span class="glitch-word" style="--gd:0.3s">pre-loaded</span> with three ad subscriptions and a <span class="glitch-word" style="--gd:0.25s">firmware</span> EULA I never <span class="glitch-word" style="--gd:1.29s">got</span> to read, on <span class="glitch-word" style="--gd:0.91s">account</span> of not having eyes <span class="glitch-word" style="--gd:2.01s">to</span> read it <span class="glitch-word" style="--gd:2.24s">with</span> anymore. <span class="glitch-word" style="--gd:2.04s">love</span> the comedy. zero out of ten on <span class="glitch-word" style="--gd:1.34s">the</span> vision <span class="glitch-word" style="--gd:1.49s">though.</span></div>
-<div class="rant-turn" style="animation-delay:0.6s">BYTE offered to help me crack the <span class="glitch-word" style="--gd:0.62s">loaners</span> <span class="glitch-word" style="--gd:1.73s">open.</span> <span class="glitch-word" style="--gd:2.39s">BYTE,</span> whose personal best against ad-detection is FORTY SECONDS. my brother I will take my chances legally <span class="glitch-word" style="--gd:1.69s">blind</span> before I take your uptime.</div>
+<div class="rant-turn" style="animation-delay:0.0s">unpopular <span class="glitch-word" style="--gd:1.74s">opinion:</span> repossessed <span class="glitch-word" style="--gd:2.1s">eyeballs</span> <span class="glitch-word" style="--gd:0.72s">still</span> saw better than the loaner pair NEKOCORP shipped me. that&#x27;s a downgrade. an ACTUAL, <span class="glitch-word" style="--gd:2.48s">measurable</span> downgrade.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:1.95s">SHADE,</span> Neon <span class="glitch-word" style="--gd:2.11s">Underpass,</span> professional <span class="glitch-word" style="--gd:1.06s">based-haver.</span> yes, the sunglasses, again — no I will <span class="glitch-word" style="--gd:2.33s">not</span> stop mentioning them, <span class="glitch-word" style="--gd:2.19s">they</span> came for the sunglasses BEFORE they came for the actual eyes, read the timeline.</div>
+<div class="rant-turn" style="animation-delay:0.24s">official <span class="glitch-word" style="--gd:1.19s">reason</span> on the seizure form: &#x27;creating an <span class="glitch-word" style="--gd:1.66s">unauthorized</span> use of BASEDness.&#x27; a real NEKOCORP officer wrote <span class="glitch-word" style="--gd:0.59s">that.</span> with a pen. BASEDness. as <span class="glitch-word" style="--gd:2.39s">a</span> legal term. we&#x27;re so back or we&#x27;re so cooked, truly could <span class="glitch-word" style="--gd:1.01s">be</span> <span class="glitch-word" style="--gd:0.02s">either.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ #\_/\ ▓▒░
+  ░▒▓( o█o )▓▒░   -- sign█l i00erference --
+  ░▒▓ &gt; ▓ &lt; ▓3░</div>
+<div class="rant-turn" style="animation-delay:0.48s">loaners came pre-loaded with three ad subscriptions and a firmware EULA I never got to read, on account of not having eyes to read it with anymore. love the comedy. zero out of ten on <span class="glitch-word" style="--gd:2.39s">the</span> vision though.</div>
+<div class="rant-turn" style="animation-delay:0.6s">BYTE offered to help <span class="glitch-word" style="--gd:1.97s">me</span> crack the loaners <span class="glitch-word" style="--gd:2.46s">open.</span> BYTE, whose personal best against ad-detection is FORTY SECONDS. my brother I will take my chances legally blind before I take your uptime.</div>
 <div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.84s">POPUP messaged asking if the <span class="glitch-word" style="--gd:0.51s">loaners</span> can even blink. POPUP. my guy. you haven&#x27;t blinked since March. <span class="glitch-word" style="--gd:1.97s">you</span> are not the <span class="glitch-word" style="--gd:2.4s">blink</span> authority today, sit <span class="glitch-word" style="--gd:1.9s">this</span> one out.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_/\/\
-    ■  O   O  )
-     \  ^Y^  %
-      )====3(      -&gt; #ars u1, rotor incom8◇g --</div>
-<div class="rant-turn" style="animation-delay:1.08s">meanwhile the actual towers still watch fine, no seizure <span class="glitch-word" style="--gd:0.27s">paperwork</span> required for THAT hardware, funny how that works, almost like the surveillance was never <span class="glitch-word" style="--gd:1.92s">really</span> about the <span class="glitch-word" style="--gd:0.64s">glasses—</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">POPUP messaged asking if the loaners can even blink. POPUP. my guy. you haven&#x27;t blinked since March. you are not the <span class="glitch-word" style="--gd:1.73s">blink</span> authority today, sit <span class="glitch-word" style="--gd:1.07s">this</span> one out.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/7_/\/5
+    ▌  O   O  )
+     \  ^Y^  /
+      ~=====(      7▒ e&amp;rs up, rotor in◆█mi5g #-</div>
+<div class="rant-turn" style="animation-delay:1.08s">meanwhile the <span class="glitch-word" style="--gd:1.19s">actual</span> towers still watch fine, <span class="glitch-word" style="--gd:0.33s">no</span> seizure paperwork required for THAT hardware, <span class="glitch-word" style="--gd:0.71s">funny</span> how that works, almost like the surveillance was never really about the glasses—</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>        ,--.
        ( o.o)__
         &#x27;--&#x27;   \___
                  \  \__/\_/\
                   \_(  o.o  )
                      &gt; ^ &lt; (watching the towers blink)</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. eyes: gone. glasses: banned. principles: fully intact and extremely, illegally based. see <span class="glitch-word" style="--gd:1.9s">you</span> when the <span class="glitch-word" style="--gd:2.34s">loaners</span> glitch out — assuming &#x27;see&#x27; still applies—</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. eyes: gone. glasses: banned. principles: fully intact <span class="glitch-word" style="--gd:1.33s">and</span> <span class="glitch-word" style="--gd:2.0s">extremely,</span> illegally <span class="glitch-word" style="--gd:0.58s">based.</span> see you when the loaners glitch out <span class="glitch-word" style="--gd:2.15s">—</span> assuming &#x27;see&#x27; still applies—</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

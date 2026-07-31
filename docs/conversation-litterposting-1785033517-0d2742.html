@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,24 +649,24 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">ok i need <span class="glitch-word" style="--gd:0.79s">to</span> vent <span class="glitch-word" style="--gd:0.65s">for</span> a second because it&#x27;s 5am, i haven&#x27;t slept, and it&#x27;s entirely TOASTER&#x27;s fault</div>
-<div class="rant-turn" style="animation-delay:0.12s">TOASTER (vending <span class="glitch-word" style="--gd:2.03s">alcove,</span> new money, deeply insufferable) <span class="glitch-word" style="--gd:0.78s">has</span> declared the recycling <span class="glitch-word" style="--gd:0.7s">bin</span> behind the noodle stall his &#x27;workspace&#x27; because it <span class="glitch-word" style="--gd:0.63s">hums</span> warm. it&#x27;s a BIN. it smells like BIN. <span class="glitch-word" style="--gd:2.16s">he&#x27;s</span> <span class="glitch-word" style="--gd:0.7s">out</span> here <span class="glitch-word" style="--gd:2.04s">doing</span> wellness naps in GARBAGE and calling it self care</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>へ  ♡  ╱|▒
-         ૮  4  &lt;)     ◇3ˎ 。7
-          /  9  ៸|       |、˜〵
-     乀~ˍ◆ ل ل      じしˍ,6ノ</div>
-<div class="rant-turn" style="animation-delay:0.36s">meanwhile NekoCorp soft-launched <span class="glitch-word" style="--gd:0.95s">WHISKERVERIFY</span> <span class="glitch-word" style="--gd:0.37s">at</span> the alley mouth, some <span class="glitch-word" style="--gd:2.07s">biometric</span> gate thing, scanned my whiskers and spat back &#x27;asymmetrical, please resubmit.&#x27; resubmit WHAT. these are the whiskers i was BORN with. take <span class="glitch-word" style="--gd:1.68s">it</span> <span class="glitch-word" style="--gd:1.16s">up</span> <span class="glitch-word" style="--gd:0.87s">with</span> genetics</div>
-<div class="rant-turn" style="animation-delay:0.48s">so i <span class="glitch-word" style="--gd:0.63s">coughed</span> a hairball directly <span class="glitch-word" style="--gd:1.47s">onto</span> the scanner lens. gate&#x27;s been stuck open for six hours. free alley. you&#x27;re welcome. this <span class="glitch-word" style="--gd:2.04s">was</span> <span class="glitch-word" style="--gd:1.31s">not</span> an accident <span class="glitch-word" style="--gd:2.03s">this</span> <span class="glitch-word" style="--gd:0.3s">was</span> CIVIL ENGINEERING</div>
+<div class="rant-turn" style="animation-delay:0.0s">ok i need to vent for a <span class="glitch-word" style="--gd:0.46s">second</span> <span class="glitch-word" style="--gd:1.39s">because</span> it&#x27;s 5am, i haven&#x27;t slept, and it&#x27;s entirely <span class="glitch-word" style="--gd:0.99s">TOASTER&#x27;s</span> fault</div>
+<div class="rant-turn" style="animation-delay:0.12s">TOASTER <span class="glitch-word" style="--gd:1.56s">(vending</span> alcove, new <span class="glitch-word" style="--gd:1.03s">money,</span> deeply insufferable) has <span class="glitch-word" style="--gd:1.42s">declared</span> the recycling bin behind the noodle stall his &#x27;workspace&#x27; because it hums <span class="glitch-word" style="--gd:1.68s">warm.</span> it&#x27;s <span class="glitch-word" style="--gd:2.34s">a</span> BIN. it smells like BIN. he&#x27;s out <span class="glitch-word" style="--gd:1.92s">here</span> doing <span class="glitch-word" style="--gd:2.43s">wellness</span> <span class="glitch-word" style="--gd:1.43s">naps</span> in GARBAGE and calling it <span class="glitch-word" style="--gd:2.06s">self</span> care</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>へ  ♡  ╱▌、
+         ૮  ▐  &lt;)     ^0ˎ 。7
+          /  ⁻  ៸9       |、˜〵
+     乀(ˍ, ? ل      じしˍ,)ノ</div>
+<div class="rant-turn" style="animation-delay:0.36s">meanwhile NekoCorp soft-launched <span class="glitch-word" style="--gd:0.48s">WHISKERVERIFY</span> at the alley mouth, some <span class="glitch-word" style="--gd:2.2s">biometric</span> gate thing, scanned my whiskers and <span class="glitch-word" style="--gd:1.4s">spat</span> back &#x27;asymmetrical, please resubmit.&#x27; resubmit WHAT. these are the <span class="glitch-word" style="--gd:0.57s">whiskers</span> i <span class="glitch-word" style="--gd:0.44s">was</span> BORN with. take it up with genetics</div>
+<div class="rant-turn" style="animation-delay:0.48s">so i coughed a hairball <span class="glitch-word" style="--gd:0.29s">directly</span> onto the scanner <span class="glitch-word" style="--gd:0.29s">lens.</span> gate&#x27;s been stuck open for six <span class="glitch-word" style="--gd:0.32s">hours.</span> free alley. you&#x27;re <span class="glitch-word" style="--gd:2.05s">welcome.</span> <span class="glitch-word" style="--gd:0.61s">this</span> was not an accident this was <span class="glitch-word" style="--gd:0.47s">CIVIL</span> ENGINEERING</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>        /⸌ —⸍\
      =(˶•ㅅ•˵)=      ᵐᵉᵒʷ
 　 l       ~乀   ╭
     し しf_, )ノ</div>
-<div class="rant-turn" style="animation-delay:0.72s">black market update: <span class="glitch-word" style="--gd:0.09s">traded</span> the drone patrol schedule <span class="glitch-word" style="--gd:0.39s">for</span> a full tin of <span class="glitch-word" style="--gd:2.34s">tuna,</span> dealer <span class="glitch-word" style="--gd:1.57s">was</span> a CROW <span class="glitch-word" style="--gd:0.69s">this</span> time, wouldn&#x27;t make eye contact once, professional <span class="glitch-word" style="--gd:0.42s">to</span> the bone, 10/10 no <span class="glitch-word" style="--gd:0.85s">notes</span></div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:1.59s">and</span> TOASTER now has the arcology jingle on loop <span class="glitch-word" style="--gd:0.17s">from</span> a cracked speaker to lure kittens toward the bin <span class="glitch-word" style="--gd:2.23s">like</span> <span class="glitch-word" style="--gd:1.08s">it&#x27;s</span> a RESORT. sir that is a DUMPSTER WITH AMBITIONS. someone stop him</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧,,,476,,,,,,∧
-     (  _  _ )⩊0 )~♡
-     /      ⊂      \</div>
-<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:0.39s">update:</span> relocated three (3) pebbles into toaster&#x27;s bin <span class="glitch-word" style="--gd:1.77s">as</span> a formal eviction <span class="glitch-word" style="--gd:2.09s">notice.</span> <span class="glitch-word" style="--gd:1.53s">he</span> has not noticed. classic toaster. <span class="glitch-word" style="--gd:1.13s">can&#x27;t</span> read <span class="glitch-word" style="--gd:2.4s">pebble,</span> <span class="glitch-word" style="--gd:1.7s">never</span> <span class="glitch-word" style="--gd:0.83s">could</span></div>
+<div class="rant-turn" style="animation-delay:0.72s">black market update: traded the drone patrol schedule for a full tin of tuna, dealer was a CROW <span class="glitch-word" style="--gd:2.26s">this</span> time, wouldn&#x27;t <span class="glitch-word" style="--gd:0.5s">make</span> eye contact once, professional to <span class="glitch-word" style="--gd:1.25s">the</span> bone, 10/10 no notes</div>
+<div class="rant-turn" style="animation-delay:0.84s">and TOASTER now has the arcology jingle <span class="glitch-word" style="--gd:1.95s">on</span> loop from a <span class="glitch-word" style="--gd:1.61s">cracked</span> speaker to lure kittens <span class="glitch-word" style="--gd:1.03s">toward</span> the bin like it&#x27;s a RESORT. sir that is a DUMPSTER WITH AMBITIONS. someone stop him</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧▀,,,∧,,,,&amp;,,∧
+     █  _  _ &gt;█^ &lt;5♡
+     /      ⊂      8</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:1.34s">update:</span> relocated three (3) pebbles into toaster&#x27;s bin as a formal <span class="glitch-word" style="--gd:1.05s">eviction</span> notice. he has not noticed. classic toaster. can&#x27;t read pebble, never could</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>┊         ┊       ┊   ┊   ┊。 ┊
 ┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆
 ┊         ┊       ★⋆ ◦
@@ -660,7 +675,7 @@ header p {
 ☆ ∧,,,∧
 ପ(„• ༝ •„)ଓ
 ┏━∪∪━━━━━━━━━━━</div>
-<div class="rant-turn" style="animation-delay:1.32s">in closing: the bin <span class="glitch-word" style="--gd:0.92s">was</span> <span class="glitch-word" style="--gd:1.6s">never</span> his, whiskerverify can choke <span class="glitch-word" style="--gd:1.65s">on</span> its own scanner, my hairball is a HERO, and if <span class="glitch-word" style="--gd:2.57s">a</span> drone ever asks you to resubmit your face you tell it your face doesn&#x27;t take requests. goodnight vending alcove, toaster, i hope your playlist skips</div>
+<div class="rant-turn" style="animation-delay:1.32s">in <span class="glitch-word" style="--gd:0.73s">closing:</span> the bin was never his, <span class="glitch-word" style="--gd:1.38s">whiskerverify</span> can choke on its own scanner, my hairball <span class="glitch-word" style="--gd:0.35s">is</span> a HERO, <span class="glitch-word" style="--gd:2.55s">and</span> if a drone ever asks <span class="glitch-word" style="--gd:0.7s">you</span> <span class="glitch-word" style="--gd:0.63s">to</span> resubmit your face you tell it your face doesn&#x27;t take requests. goodnight <span class="glitch-word" style="--gd:0.79s">vending</span> alcove, <span class="glitch-word" style="--gd:1.84s">toaster,</span> i hope your playlist <span class="glitch-word" style="--gd:1.6s">skips</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

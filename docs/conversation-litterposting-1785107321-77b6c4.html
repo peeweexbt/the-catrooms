@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,26 +649,26 @@ header p {
 <div class="narrator-badge">posted by <strong>BYTE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">uptime <span class="glitch-word" style="--gd:1.71s">log,</span> night 214: <span class="glitch-word" style="--gd:0.63s">router&#x27;s</span> <span class="glitch-word" style="--gd:0.97s">mine</span> again. for now. <span class="glitch-word" style="--gd:0.13s">NEKOCORP</span> rotates the WPA key every six <span class="glitch-word" style="--gd:0.13s">hours</span> like that&#x27;s <span class="glitch-word" style="--gd:0.54s">gonna</span> stop <span class="glitch-word" style="--gd:2.59s">a</span> guy whose home address <span class="glitch-word" style="--gd:0.24s">is</span> &#x27;behind a vending machine&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BYTE. Server <span class="glitch-word" style="--gd:1.78s">Alley</span> 9. official title: <span class="glitch-word" style="--gd:1.51s">none,</span> I don&#x27;t have one, <span class="glitch-word" style="--gd:2.37s">unofficial</span> title: illegal Wi-Fi auditor, which is a nice way of saying I crack NEKOCORP routers nightly to watch one (1) <span class="glitch-word" style="--gd:1.2s">low-res</span> fish video before the ad-detector clocks me</div>
-<div class="rant-turn" style="animation-delay:0.24s">NEKOCORP&#x27;s official position is that cat litter <span class="glitch-word" style="--gd:2.2s">is</span> now <span class="glitch-word" style="--gd:2.49s">a</span> <span class="glitch-word" style="--gd:2.41s">PREMIUM</span> FEATURE. tier 3 subscription. financing <span class="glitch-word" style="--gd:2.35s">available,</span> apparently, for LITTER. my official position: <span class="glitch-word" style="--gd:0.85s">I</span> will <span class="glitch-word" style="--gd:1.01s">be</span> shitting on <span class="glitch-word" style="--gd:0.01s">their</span> front steps <span class="glitch-word" style="--gd:2.56s">until</span> this changes. <span class="glitch-word" style="--gd:0.61s">this</span> is not a threat. this is <span class="glitch-word" style="--gd:0.7s">a</span> business <span class="glitch-word" style="--gd:0.21s">plan</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\___/\
-    ? o   o )   &gt;&gt; sc%n&gt;█ng...
-     )  Y  (    &gt;&gt; ea!&gt;: antenn▌ mod v2
+<div class="rant-turn" style="animation-delay:0.0s">uptime log, night 214: router&#x27;s mine again. <span class="glitch-word" style="--gd:1.08s">for</span> now. NEKOCORP rotates <span class="glitch-word" style="--gd:2.4s">the</span> WPA key <span class="glitch-word" style="--gd:1.63s">every</span> six hours like that&#x27;s gonna stop a guy whose home address is &#x27;behind a vending machine&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BYTE. Server Alley 9. official title: none, I don&#x27;t have one, unofficial title: <span class="glitch-word" style="--gd:1.06s">illegal</span> Wi-Fi auditor, which is a nice way <span class="glitch-word" style="--gd:0.72s">of</span> <span class="glitch-word" style="--gd:2.24s">saying</span> <span class="glitch-word" style="--gd:1.69s">I</span> crack NEKOCORP routers nightly to watch <span class="glitch-word" style="--gd:0.9s">one</span> (1) low-res fish video <span class="glitch-word" style="--gd:0.26s">before</span> the ad-detector clocks me</div>
+<div class="rant-turn" style="animation-delay:0.24s"><span class="glitch-word" style="--gd:0.61s">NEKOCORP&#x27;s</span> <span class="glitch-word" style="--gd:1.5s">official</span> position is <span class="glitch-word" style="--gd:0.79s">that</span> <span class="glitch-word" style="--gd:1.22s">cat</span> litter is now a PREMIUM FEATURE. tier 3 subscription. <span class="glitch-word" style="--gd:1.83s">financing</span> available, apparently, for LITTER. my official position: I <span class="glitch-word" style="--gd:2.22s">will</span> be shitting on <span class="glitch-word" style="--gd:1.53s">their</span> front steps until this changes. <span class="glitch-word" style="--gd:0.24s">this</span> is not a <span class="glitch-word" style="--gd:1.12s">threat.</span> this is a business plan</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\_▀_/\
+    ( o   o )   &gt;&gt; scanni1g...
+     )  ▌  (    ▀&gt; ears: ▐nte!na mod v2
     (   |   )
-     \___2_/</div>
-<div class="rant-turn" style="animation-delay:0.48s">cracked three separate routers tonight just to check if the <span class="glitch-word" style="--gd:0.89s">fish</span> video <span class="glitch-word" style="--gd:0.46s">buffered</span> any better somewhere else in the city. it did not. it is the SAME <span class="glitch-word" style="--gd:0.54s">fish.</span> every router. everywhere. I am now fairly confident <span class="glitch-word" style="--gd:0.9s">NEKOCORP</span> owns exactly one fish</div>
-<div class="rant-turn" style="animation-delay:0.6s">texted KNIFEBOY to see if he wanted in on the bandwidth split, he said <span class="glitch-word" style="--gd:0.74s">&#x27;can&#x27;t,</span> laying <span class="glitch-word" style="--gd:0.03s">low,</span> there&#x27;s a <span class="glitch-word" style="--gd:1.57s">bounty</span> on me,&#x27; brother there&#x27;s <span class="glitch-word" style="--gd:2.41s">basically</span> <span class="glitch-word" style="--gd:1.76s">a</span> bounty on OXYGEN in this city now, everything&#x27;s metered, get in the router with me, <span class="glitch-word" style="--gd:2.0s">it&#x27;s</span> warm <span class="glitch-word" style="--gd:1.33s">in</span> here</div>
+     \__&lt;__/</div>
+<div class="rant-turn" style="animation-delay:0.48s">cracked three separate <span class="glitch-word" style="--gd:2.0s">routers</span> tonight just to check if the fish <span class="glitch-word" style="--gd:1.47s">video</span> buffered any better somewhere else in the city. it <span class="glitch-word" style="--gd:1.18s">did</span> not. it <span class="glitch-word" style="--gd:1.83s">is</span> the <span class="glitch-word" style="--gd:0.55s">SAME</span> <span class="glitch-word" style="--gd:1.11s">fish.</span> every <span class="glitch-word" style="--gd:0.12s">router.</span> everywhere. I am now fairly confident NEKOCORP owns exactly one fish</div>
+<div class="rant-turn" style="animation-delay:0.6s">texted KNIFEBOY <span class="glitch-word" style="--gd:1.04s">to</span> see if <span class="glitch-word" style="--gd:0.38s">he</span> wanted in on the bandwidth split, he <span class="glitch-word" style="--gd:0.11s">said</span> &#x27;can&#x27;t, laying low, there&#x27;s <span class="glitch-word" style="--gd:2.08s">a</span> <span class="glitch-word" style="--gd:0.38s">bounty</span> on me,&#x27; brother there&#x27;s <span class="glitch-word" style="--gd:1.6s">basically</span> a bounty on OXYGEN in <span class="glitch-word" style="--gd:0.73s">this</span> city <span class="glitch-word" style="--gd:1.4s">now,</span> everything&#x27;s <span class="glitch-word" style="--gd:1.44s">metered,</span> get in <span class="glitch-word" style="--gd:0.29s">the</span> router with me, it&#x27;s warm in here</div>
 <div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>  ░▒▓ /\_/\ ▓▒░
   ░▒▓( o█o )▓▒░   -- signal interference --
   ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.84s">the vending machine behind my building <span class="glitch-word" style="--gd:1.7s">charges</span> <span class="glitch-word" style="--gd:1.17s">14</span> credits for a bottle of water <span class="glitch-word" style="--gd:2.2s">with</span> a SUBSCRIPTION TIER attached. water. the free wet stuff. it has a loyalty program <span class="glitch-word" style="--gd:0.83s">now.</span> it sent me a birthday email</div>
-<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:2.11s">SHADE</span> <span class="glitch-word" style="--gd:1.73s">keeps</span> telling me the <span class="glitch-word" style="--gd:0.49s">based</span> move is <span class="glitch-word" style="--gd:2.34s">to</span> go full analog, unplug completely, <span class="glitch-word" style="--gd:1.45s">and</span> I respect that, truly, but <span class="glitch-word" style="--gd:0.39s">my</span> guy your entire personality is <span class="glitch-word" style="--gd:2.01s">a</span> pair of glasses that block signal, you <span class="glitch-word" style="--gd:0.32s">ARE</span> the network, come back to the router, we miss you</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>        ▒&lt;_/\
-       ( -.■ )
-        &gt; ^ 8
-   ~~~~~~6▀&amp;&amp;~~~~3[DAT3 JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway. router&#x27;s mine till sunrise, then they rotate the key and I start <span class="glitch-word" style="--gd:0.51s">over</span> from zero, this is the whole life, this is the whole website: click stream, watch fish, ad-detector wakes up, vanish <span class="glitch-word" style="--gd:1.48s">into</span> the vent system like I was never here</div>
+<div class="rant-turn" style="animation-delay:0.84s">the vending machine behind my building charges 14 credits for <span class="glitch-word" style="--gd:2.37s">a</span> bottle of water with a SUBSCRIPTION TIER attached. <span class="glitch-word" style="--gd:1.78s">water.</span> the free wet stuff. it has a loyalty program now. it <span class="glitch-word" style="--gd:2.18s">sent</span> <span class="glitch-word" style="--gd:1.07s">me</span> a birthday email</div>
+<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:1.76s">SHADE</span> <span class="glitch-word" style="--gd:0.18s">keeps</span> <span class="glitch-word" style="--gd:1.91s">telling</span> me <span class="glitch-word" style="--gd:1.58s">the</span> based move <span class="glitch-word" style="--gd:2.19s">is</span> to <span class="glitch-word" style="--gd:0.57s">go</span> <span class="glitch-word" style="--gd:2.52s">full</span> analog, unplug completely, and I respect that, truly, but my guy your entire personality is <span class="glitch-word" style="--gd:0.08s">a</span> pair of <span class="glitch-word" style="--gd:0.94s">glasses</span> that block signal, you ARE the network, come back to the router, we miss you</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>        6\_/\
+       @ -.&gt; 4
+        &gt; ^ ░
+   ~~~~?~|||~&gt;~~~~&gt;DA■A JACK: LI5KE▀]</div>
+<div class="rant-turn" style="animation-delay:1.2s">anyway. router&#x27;s mine till sunrise, then <span class="glitch-word" style="--gd:1.92s">they</span> rotate the key and <span class="glitch-word" style="--gd:0.29s">I</span> start over <span class="glitch-word" style="--gd:0.45s">from</span> zero, this is the whole life, <span class="glitch-word" style="--gd:2.52s">this</span> is the whole <span class="glitch-word" style="--gd:2.53s">website:</span> click stream, <span class="glitch-word" style="--gd:2.24s">watch</span> fish, ad-detector wakes up, vanish <span class="glitch-word" style="--gd:1.62s">into</span> the vent system like I was never here</div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>

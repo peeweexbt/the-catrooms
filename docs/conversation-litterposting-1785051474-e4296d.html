@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,30 +649,30 @@ header p {
 <div class="narrator-badge">posted by <strong>KNIFEBOY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">BREAKING: NEKOCORP BOUNTY ON LOCAL CAT <span class="glitch-word" style="--gd:0.65s">RISES</span> TO 40,000 LOYALTY POINTS. LOCAL <span class="glitch-word" style="--gd:1.41s">CAT</span> RESPONDS BY STEALING ANOTHER TUNA SHIPMENT DURING THE PRESS CONFERENCE</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s KNIFEBOY, <span class="glitch-word" style="--gd:1.11s">Restricted</span> Loading Dock, freelance shanker of meowtoids, most wanted cat in the <span class="glitch-word" style="--gd:2.59s">city</span> and honestly? long <span class="glitch-word" style="--gd:1.55s">overdue</span> recognition</div>
-<div class="rant-turn" style="animation-delay:0.24s">swapped an entire pallet of NEKOCORP premium tuna for a handwritten note reading &#x27;nice <span class="glitch-word" style="--gd:0.52s">supply</span> chain, CHUD&#x27; and I <span class="glitch-word" style="--gd:0.22s">want</span> everyone to know it <span class="glitch-word" style="--gd:1.07s">took</span> me four (4) minutes and <span class="glitch-word" style="--gd:0.69s">I</span> did not break a sweat because I <span class="glitch-word" style="--gd:1.93s">do</span> not sweat, I am a cat, this is <span class="glitch-word" style="--gd:0.16s">a</span> design flaw of yours not mine</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>    @\&gt;/^
-   ◆ &gt;◇◇ )    2AM&gt;0 KNI&amp;E@O%
-    &gt; v █     ~8B: Freelance shanker of meow◇▄i◆s
-              D6S7RIC?1 R&lt;str&amp;cted Lo&gt;▓in0 Do?k</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.77s">the</span> 40k points expire before you can even redeem <span class="glitch-word" style="--gd:0.21s">them</span> AND can&#x27;t be stacked with other promos, so technically NEKOCORP <span class="glitch-word" style="--gd:0.24s">is</span> <span class="glitch-word" style="--gd:0.56s">offering</span> to pay me in a <span class="glitch-word" style="--gd:0.44s">currency</span> that doesn&#x27;t exist yet, which, fair, that&#x27;s also how I pay my rent</div>
-<div class="rant-turn" style="animation-delay:0.6s">BRIK hit me up like &#x27;brother the drones are learning your patrol pattern&#x27; and yeah I know Brik, I know, you bit one for sport last week, we are <span class="glitch-word" style="--gd:2.22s">not</span> <span class="glitch-word" style="--gd:0.61s">the</span> same but <span class="glitch-word" style="--gd:1.85s">we</span> are UNITED IN THIS</div>
+<div class="rant-turn" style="animation-delay:0.0s">BREAKING: NEKOCORP BOUNTY ON LOCAL <span class="glitch-word" style="--gd:1.76s">CAT</span> RISES TO 40,000 <span class="glitch-word" style="--gd:0.85s">LOYALTY</span> POINTS. LOCAL <span class="glitch-word" style="--gd:2.03s">CAT</span> RESPONDS BY STEALING ANOTHER TUNA SHIPMENT DURING THE PRESS <span class="glitch-word" style="--gd:2.17s">CONFERENCE</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s KNIFEBOY, <span class="glitch-word" style="--gd:2.52s">Restricted</span> Loading Dock, freelance shanker of <span class="glitch-word" style="--gd:2.48s">meowtoids,</span> most <span class="glitch-word" style="--gd:0.8s">wanted</span> cat in the <span class="glitch-word" style="--gd:1.04s">city</span> and honestly? long overdue recognition</div>
+<div class="rant-turn" style="animation-delay:0.24s">swapped an <span class="glitch-word" style="--gd:0.0s">entire</span> pallet of NEKOCORP premium <span class="glitch-word" style="--gd:1.33s">tuna</span> <span class="glitch-word" style="--gd:1.77s">for</span> <span class="glitch-word" style="--gd:1.18s">a</span> handwritten note reading &#x27;nice supply chain, CHUD&#x27; <span class="glitch-word" style="--gd:1.74s">and</span> I want everyone to know it took me four <span class="glitch-word" style="--gd:0.99s">(4)</span> minutes and I did not break a <span class="glitch-word" style="--gd:0.22s">sweat</span> <span class="glitch-word" style="--gd:0.55s">because</span> <span class="glitch-word" style="--gd:1.86s">I</span> <span class="glitch-word" style="--gd:1.15s">do</span> not sweat, I am <span class="glitch-word" style="--gd:0.53s">a</span> cat, this is a design flaw of yours not mine</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>    /?_/2
+   ( &gt;.&lt; )    NA◇E: KNIFEBOY
+    &gt; 4 &lt;     J▐B2 F■eelance shan@er of meowtoids
+              DI*T*~CT: ▒est▒i8*ed Lo%ding D3ck</div>
+<div class="rant-turn" style="animation-delay:0.48s">the 40k <span class="glitch-word" style="--gd:0.94s">points</span> expire <span class="glitch-word" style="--gd:0.31s">before</span> you can even <span class="glitch-word" style="--gd:2.13s">redeem</span> <span class="glitch-word" style="--gd:1.7s">them</span> AND can&#x27;t be <span class="glitch-word" style="--gd:0.54s">stacked</span> with other <span class="glitch-word" style="--gd:2.44s">promos,</span> <span class="glitch-word" style="--gd:1.72s">so</span> technically NEKOCORP is offering to pay me in a currency that <span class="glitch-word" style="--gd:0.95s">doesn&#x27;t</span> exist yet, which, fair, that&#x27;s <span class="glitch-word" style="--gd:0.14s">also</span> how I <span class="glitch-word" style="--gd:1.79s">pay</span> my rent</div>
+<div class="rant-turn" style="animation-delay:0.6s">BRIK hit me <span class="glitch-word" style="--gd:2.13s">up</span> like &#x27;brother the drones <span class="glitch-word" style="--gd:2.58s">are</span> learning your patrol pattern&#x27; <span class="glitch-word" style="--gd:0.91s">and</span> yeah I know Brik, I know, you bit <span class="glitch-word" style="--gd:2.2s">one</span> for sport last week, we are <span class="glitch-word" style="--gd:0.76s">not</span> the same but we are UNITED IN THIS</div>
 <div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.84s">police description <span class="glitch-word" style="--gd:1.77s">of</span> me says &#x27;smol fan of cat foids, destroyer of feline chuds&#x27; and <span class="glitch-word" style="--gd:0.97s">I</span> have chosen <span class="glitch-word" style="--gd:2.5s">to</span> interpret this as a five star review</div>
-<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:0.22s">SHADE</span> <span class="glitch-word" style="--gd:1.97s">told</span> me to lay <span class="glitch-word" style="--gd:1.08s">low</span> for a week. SHADE also hasn&#x27;t paid for a single meal since NEKOCORP <span class="glitch-word" style="--gd:0.62s">repo&#x27;d</span> their <span class="glitch-word" style="--gd:0.18s">eyes.</span> we are all doing crimes here, some <span class="glitch-word" style="--gd:0.41s">of</span> <span class="glitch-word" style="--gd:1.51s">us</span> just have better sunglasses about <span class="glitch-word" style="--gd:1.94s">it</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ 6█_6\ ▓▒░
-  ░▒▓( o█&lt; )▓▒░   -- s▄g74l interfe░ence --
-  ░▒▓ &gt; ▓ &lt; 1▒1</div>
-<div class="rant-turn" style="animation-delay:1.2s">chased three drones <span class="glitch-word" style="--gd:1.28s">off</span> the loading dock tonight using nothing <span class="glitch-word" style="--gd:2.52s">but</span> <span class="glitch-word" style="--gd:0.05s">vibes</span> and a shipping <span class="glitch-word" style="--gd:1.53s">crate,</span> this is not a metaphor, there is <span class="glitch-word" style="--gd:0.3s">footage,</span> NEKOCORP will not <span class="glitch-word" style="--gd:0.53s">release</span> the footage</div>
+<div class="rant-turn" style="animation-delay:0.84s">police <span class="glitch-word" style="--gd:2.36s">description</span> of me <span class="glitch-word" style="--gd:0.76s">says</span> &#x27;smol fan of cat foids, destroyer <span class="glitch-word" style="--gd:2.17s">of</span> feline chuds&#x27; and I have chosen to interpret <span class="glitch-word" style="--gd:2.18s">this</span> as a five star review</div>
+<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:0.52s">SHADE</span> told me to <span class="glitch-word" style="--gd:2.02s">lay</span> <span class="glitch-word" style="--gd:0.49s">low</span> <span class="glitch-word" style="--gd:0.61s">for</span> a week. SHADE also hasn&#x27;t paid for <span class="glitch-word" style="--gd:0.87s">a</span> single <span class="glitch-word" style="--gd:1.22s">meal</span> since NEKOCORP repo&#x27;d <span class="glitch-word" style="--gd:2.22s">their</span> eyes. we are all doing <span class="glitch-word" style="--gd:0.82s">crimes</span> here, some of us just <span class="glitch-word" style="--gd:0.45s">have</span> better sunglasses about <span class="glitch-word" style="--gd:0.42s">it</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░32 /\_/\ ▓▒░
+  ░▒▓( o0o ■▓▒░   -▀ *igna5 interference &lt;-
+  █!&gt; &gt; ▓ &lt; ◇7░</div>
+<div class="rant-turn" style="animation-delay:1.2s"><span class="glitch-word" style="--gd:1.81s">chased</span> three drones off <span class="glitch-word" style="--gd:2.57s">the</span> loading dock tonight using nothing but vibes and a shipping crate, this is not a metaphor, <span class="glitch-word" style="--gd:0.66s">there</span> is footage, NEKOCORP will not <span class="glitch-word" style="--gd:0.9s">release</span> the footage</div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>   ___                                  ___
   /___\   [] [] [] [] [] [] [] []    /___\
   ( ..)\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/(.. )
    &#x27;&#x27;&#x27;                                &#x27;&#x27;&#x27;</div>
-<div class="rant-turn" style="animation-delay:1.44s">anyway the bounty&#x27;s at 40k now, <span class="glitch-word" style="--gd:2.2s">the</span> <span class="glitch-word" style="--gd:1.07s">tuna&#x27;s</span> already gone, <span class="glitch-word" style="--gd:0.48s">and</span> I will be doing <span class="glitch-word" style="--gd:1.76s">this</span> again tomorrow <span class="glitch-word" style="--gd:1.77s">at</span> a time <span class="glitch-word" style="--gd:1.64s">of</span> <span class="glitch-word" style="--gd:2.2s">MY</span> <span class="glitch-word" style="--gd:1.92s">choosing,</span> this <span class="glitch-word" style="--gd:0.61s">has</span> become <span class="glitch-word" style="--gd:0.7s">personal,</span> <span class="glitch-word" style="--gd:1.44s">good</span> night, don&#x27;t spend your loyalty points on me, I&#x27;m not worth it, <span class="glitch-word" style="--gd:0.22s">actually</span> I am, spend them</div>
+<div class="rant-turn" style="animation-delay:1.44s">anyway the bounty&#x27;s at <span class="glitch-word" style="--gd:1.47s">40k</span> <span class="glitch-word" style="--gd:2.47s">now,</span> the tuna&#x27;s already gone, and I will be doing this again tomorrow at a <span class="glitch-word" style="--gd:0.81s">time</span> of <span class="glitch-word" style="--gd:1.17s">MY</span> <span class="glitch-word" style="--gd:0.73s">choosing,</span> <span class="glitch-word" style="--gd:0.47s">this</span> <span class="glitch-word" style="--gd:0.44s">has</span> become personal, good night, <span class="glitch-word" style="--gd:0.15s">don&#x27;t</span> <span class="glitch-word" style="--gd:2.01s">spend</span> your loyalty points on me, I&#x27;m not worth it, actually I am, spend them</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,32 +649,32 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">4:12am, somebody&#x27;s fire escape. <span class="glitch-word" style="--gd:2.05s">no</span> reason to be up, just up. this is a lifestyle, not a symptom.</div>
-<div class="rant-turn" style="animation-delay:0.12s">not owned by anybody, which also means not <span class="glitch-word" style="--gd:1.48s">fed</span> by <span class="glitch-word" style="--gd:0.86s">anybody,</span> which is the part they leave out of the recruitment <span class="glitch-word" style="--gd:1.62s">poster.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /#/\8/\/\
-    *  O   ~  )
-     \  ^Y^  /
-      )====▐(      -- ears ▒p, rotor inco▄ing --</div>
-<div class="rant-turn" style="animation-delay:0.36s">KNIFEBOY left tuna on the step again. didn&#x27;t knock, didn&#x27;t say a word, just tuna <span class="glitch-word" style="--gd:1.5s">and</span> <span class="glitch-word" style="--gd:1.73s">a</span> receipt with <span class="glitch-word" style="--gd:2.36s">somebody</span> else&#x27;s name on <span class="glitch-word" style="--gd:0.21s">it.</span> that&#x27;s love in this economy.</div>
-<div class="rant-turn" style="animation-delay:0.48s">people keep asking which meowizen <span class="glitch-word" style="--gd:0.62s">i</span> &#x27;actually&#x27; am, like i have to pick <span class="glitch-word" style="--gd:1.14s">a</span> locker. i don&#x27;t have a locker. <span class="glitch-word" style="--gd:2.56s">i</span> don&#x27;t have a job. i have a whole city and zero rent.</div>
+<div class="rant-turn" style="animation-delay:0.0s">4:12am, somebody&#x27;s fire escape. no reason <span class="glitch-word" style="--gd:0.29s">to</span> be up, just up. this is a lifestyle, not a <span class="glitch-word" style="--gd:1.49s">symptom.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">not owned by anybody, which also means not <span class="glitch-word" style="--gd:0.35s">fed</span> by <span class="glitch-word" style="--gd:2.56s">anybody,</span> <span class="glitch-word" style="--gd:1.29s">which</span> is the part they leave out of the recruitment poster.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\▒~_/\1\
+    (  O   O  )
+     ▓  ▀Y^  /
+      )===▒=(      -- ears up# ro░or in▀om^ng --</div>
+<div class="rant-turn" style="animation-delay:0.36s">KNIFEBOY left tuna <span class="glitch-word" style="--gd:0.78s">on</span> the step again. didn&#x27;t knock, <span class="glitch-word" style="--gd:1.42s">didn&#x27;t</span> say a word, just tuna and <span class="glitch-word" style="--gd:1.09s">a</span> receipt with somebody else&#x27;s <span class="glitch-word" style="--gd:0.58s">name</span> on it. that&#x27;s love in this economy.</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.43s">people</span> keep <span class="glitch-word" style="--gd:1.77s">asking</span> which meowizen i &#x27;actually&#x27; am, like i have to pick a locker. <span class="glitch-word" style="--gd:2.36s">i</span> don&#x27;t have a <span class="glitch-word" style="--gd:1.61s">locker.</span> i don&#x27;t have a job. i have a whole city <span class="glitch-word" style="--gd:0.78s">and</span> <span class="glitch-word" style="--gd:2.35s">zero</span> rent.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>へ  ♡  ╱|、
          ૮  &gt;  &lt;)     (˚ˎ 。7
           /  ⁻  ៸|       |、˜〵
      乀(ˍ, ل ل      じしˍ,)ノ</div>
-<div class="rant-turn" style="animation-delay:0.72s">you <span class="glitch-word" style="--gd:2.05s">have</span> read a hundred and eighty of these before <span class="glitch-word" style="--gd:2.51s">this</span> one and you are still waiting for the part where it ends. there <span class="glitch-word" style="--gd:2.31s">isn&#x27;t</span> one. i have been here <span class="glitch-word" style="--gd:0.92s">the</span> whole <span class="glitch-word" style="--gd:1.67s">time.</span> <span class="glitch-word" style="--gd:2.29s">i</span> <span class="glitch-word" style="--gd:1.99s">will</span> still be here <span class="glitch-word" style="--gd:1.8s">after</span> you close the tab.</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:0.5s">anyway.</span> <span class="glitch-word" style="--gd:0.86s">wifi&#x27;s</span> down in three blocks, which means NEKOCORP&#x27;s doing &#x27;maintenance,&#x27; which means somebody&#x27;s rooftop is getting repossessed <span class="glitch-word" style="--gd:2.06s">by</span> Thursday.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>?     /\_^/1
-( =/   • •   \=
-▐^░7---0▀U▀■-------7-------
+<div class="rant-turn" style="animation-delay:0.72s">you have read a hundred and eighty of these before this one and you <span class="glitch-word" style="--gd:0.81s">are</span> still waiting <span class="glitch-word" style="--gd:0.9s">for</span> <span class="glitch-word" style="--gd:0.87s">the</span> part where it <span class="glitch-word" style="--gd:0.78s">ends.</span> there isn&#x27;t one. i have <span class="glitch-word" style="--gd:0.62s">been</span> here the whole time. <span class="glitch-word" style="--gd:0.03s">i</span> <span class="glitch-word" style="--gd:1.24s">will</span> <span class="glitch-word" style="--gd:0.14s">still</span> be here <span class="glitch-word" style="--gd:0.32s">after</span> you close the <span class="glitch-word" style="--gd:0.82s">tab.</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">anyway. wifi&#x27;s down in <span class="glitch-word" style="--gd:2.16s">three</span> <span class="glitch-word" style="--gd:1.58s">blocks,</span> which means NEKOCORP&#x27;s doing &#x27;maintenance,&#x27; which means <span class="glitch-word" style="--gd:2.39s">somebody&#x27;s</span> rooftop is getting repossessed by Thursday.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>)     █\#_/\
+( =/   * 6   ■█
+&lt;----^-U-U5-0----▄--░-0---6
 |                                |
-|    we live in ◆ s8!ie◇y        |
+|    we live in a ^ociety        |
 |                                |
-9-------▓░--▀-&gt;-----■----5░--▐</div>
-<div class="rant-turn" style="animation-delay:1.08s">SHADE <span class="glitch-word" style="--gd:1.56s">says</span> the <span class="glitch-word" style="--gd:1.99s">sunglasses</span> look better on me <span class="glitch-word" style="--gd:0.07s">than</span> they ever looked on <span class="glitch-word" style="--gd:1.91s">him.</span> rude. accurate. still rude.</div>
+---9--------▄3-7------2--◆----</div>
+<div class="rant-turn" style="animation-delay:1.08s">SHADE says the sunglasses look better on me <span class="glitch-word" style="--gd:2.26s">than</span> they ever looked on him. <span class="glitch-word" style="--gd:0.02s">rude.</span> accurate. still rude.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>  ░▒▓ /\_/\ ▓▒░
   ░▒▓( o█o )▓▒░   -- signal interference --
   ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:1.32s">i rule nothing, i belong to <span class="glitch-word" style="--gd:1.73s">no</span> one, the <span class="glitch-word" style="--gd:0.55s">streets</span> remember every cat NEKOCORP tried <span class="glitch-word" style="--gd:0.48s">to</span> disappear. see you <span class="glitch-word" style="--gd:1.87s">on</span> somebody else&#x27;s roof tomorrow ~</div>
+<div class="rant-turn" style="animation-delay:1.32s">i rule nothing, i belong to no one, the streets remember every cat NEKOCORP tried to disappear. see <span class="glitch-word" style="--gd:1.83s">you</span> on somebody else&#x27;s <span class="glitch-word" style="--gd:0.87s">roof</span> tomorrow ~</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,23 +649,23 @@ header p {
 <div class="narrator-badge">posted by <strong>GLITCHMEAT</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.51s">the</span> spiders are <span class="glitch-word" style="--gd:1.6s">not</span> new. the spiders have always been there. i just didn&#x27;t have the receptors to feel them until Tuesday.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s GLITCHMEAT. Research Basement, beta tester #7, unit currently running on someone <span class="glitch-word" style="--gd:1.0s">else&#x27;s</span> warranty. NEKOCORP paid me twelve (12) whole <span class="glitch-word" style="--gd:2.25s">credits</span> to test a neural patch and folks, i would like a refund on my own skull.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\▌/\ 9▒░
-  ◇▒▓( o█o )▓▒░   -- signal i9terferenc* -8
-  ░6▓ &gt; ▓ 6 ▓▒&gt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">side effect log, day 9: <span class="glitch-word" style="--gd:0.05s">i</span> can taste radio signals now. classic rock tastes like a scraped knee. jazz tastes like being forgiven for something i didn&#x27;t do. i did not ask <span class="glitch-word" style="--gd:0.3s">for</span> this palate.</div>
-<div class="rant-turn" style="animation-delay:0.48s">side <span class="glitch-word" style="--gd:2.54s">effect</span> log, day 9 cont&#x27;d: <span class="glitch-word" style="--gd:0.48s">i</span> also <span class="glitch-word" style="--gd:2.17s">apparently</span> remember three separate kittenhoods that are <span class="glitch-word" style="--gd:1.76s">not</span> mine. one of them had a GOOD childhood. <span class="glitch-word" style="--gd:1.16s">i&#x27;m</span> SEETHING on behalf of <span class="glitch-word" style="--gd:1.37s">a</span> stranger who will never know.</div>
+<div class="rant-turn" style="animation-delay:0.0s">the spiders <span class="glitch-word" style="--gd:1.97s">are</span> not new. the spiders have always been there. i just <span class="glitch-word" style="--gd:1.16s">didn&#x27;t</span> <span class="glitch-word" style="--gd:2.52s">have</span> <span class="glitch-word" style="--gd:1.33s">the</span> receptors to <span class="glitch-word" style="--gd:2.11s">feel</span> them until Tuesday.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s <span class="glitch-word" style="--gd:0.62s">GLITCHMEAT.</span> Research Basement, beta tester <span class="glitch-word" style="--gd:1.96s">#7,</span> unit currently running on <span class="glitch-word" style="--gd:1.48s">someone</span> else&#x27;s warranty. <span class="glitch-word" style="--gd:0.71s">NEKOCORP</span> paid me twelve (12) whole credits to <span class="glitch-word" style="--gd:0.33s">test</span> a neural <span class="glitch-word" style="--gd:1.71s">patch</span> and folks, <span class="glitch-word" style="--gd:1.33s">i</span> would like <span class="glitch-word" style="--gd:2.48s">a</span> refund on my own <span class="glitch-word" style="--gd:0.14s">skull.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ &amp;\_/\ ■▒9
+  ░▒▓2 o█? ^▓!░   @- ◇ignal i3te■ference ^-
+  ░▒▓ * ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.36s">side effect <span class="glitch-word" style="--gd:2.2s">log,</span> day 9: i can taste radio <span class="glitch-word" style="--gd:0.85s">signals</span> now. classic <span class="glitch-word" style="--gd:2.42s">rock</span> tastes like a scraped knee. jazz tastes like being forgiven for something <span class="glitch-word" style="--gd:0.69s">i</span> <span class="glitch-word" style="--gd:1.8s">didn&#x27;t</span> do. i <span class="glitch-word" style="--gd:1.09s">did</span> <span class="glitch-word" style="--gd:1.65s">not</span> ask <span class="glitch-word" style="--gd:0.59s">for</span> this palate.</div>
+<div class="rant-turn" style="animation-delay:0.48s">side effect log, day 9 cont&#x27;d: i also apparently remember three separate kittenhoods that are not mine. <span class="glitch-word" style="--gd:2.37s">one</span> of them had a GOOD childhood. i&#x27;m SEETHING on behalf <span class="glitch-word" style="--gd:0.11s">of</span> <span class="glitch-word" style="--gd:0.81s">a</span> <span class="glitch-word" style="--gd:0.11s">stranger</span> who <span class="glitch-word" style="--gd:2.31s">will</span> never know.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:0.72s">texted <span class="glitch-word" style="--gd:0.26s">SNOOZE</span> at <span class="glitch-word" style="--gd:0.24s">2am</span> like <span class="glitch-word" style="--gd:0.9s">&quot;hey</span> do dreams you didn&#x27;t <span class="glitch-word" style="--gd:0.0s">personally</span> <span class="glitch-word" style="--gd:0.38s">have</span> <span class="glitch-word" style="--gd:1.89s">still</span> count <span class="glitch-word" style="--gd:0.02s">against</span> <span class="glitch-word" style="--gd:1.62s">your</span> sleep debt&quot; <span class="glitch-word" style="--gd:2.13s">and</span> <span class="glitch-word" style="--gd:0.01s">she</span> billed me $6 just <span class="glitch-word" style="--gd:1.09s">to</span> <span class="glitch-word" style="--gd:2.44s">bounce</span> <span class="glitch-word" style="--gd:0.75s">the</span> question back to me. professional. hostile. professional.</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:1.46s">QUERY</span> says <span class="glitch-word" style="--gd:0.16s">at</span> <span class="glitch-word" style="--gd:1.02s">least</span> i chose my malfunction. <span class="glitch-word" style="--gd:0.14s">QUERY</span> buddy you are still on page six of <span class="glitch-word" style="--gd:0.29s">a</span> Terms of <span class="glitch-word" style="--gd:2.24s">Service</span> from March, we are <span class="glitch-word" style="--gd:1.76s">not</span> the same category of lost, but <span class="glitch-word" style="--gd:0.38s">i</span> do respect the commitment.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_/^/\
-    (  *   O  )
-     \  ^Y^  /
-      5==#=!(      -&lt; e3rs up! rot◇r incom@ng --</div>
-<div class="rant-turn" style="animation-delay:1.08s">the scientists called the <span class="glitch-word" style="--gd:1.12s">side</span> effects &quot;within acceptable post-irony based comedy <span class="glitch-word" style="--gd:0.69s">limits.&quot;</span> that is not a <span class="glitch-word" style="--gd:2.47s">diagnosis.</span> <span class="glitch-word" style="--gd:0.77s">that</span> is a <span class="glitch-word" style="--gd:0.11s">marketing</span> department cosplaying as a <span class="glitch-word" style="--gd:1.78s">diagnosis</span> and getting away with it.</div>
+<div class="rant-turn" style="animation-delay:0.72s">texted SNOOZE <span class="glitch-word" style="--gd:0.6s">at</span> 2am <span class="glitch-word" style="--gd:1.8s">like</span> &quot;hey do dreams <span class="glitch-word" style="--gd:0.87s">you</span> didn&#x27;t <span class="glitch-word" style="--gd:2.22s">personally</span> <span class="glitch-word" style="--gd:1.81s">have</span> still count against your sleep debt&quot; and she billed me $6 just to bounce the question back to me. professional. hostile. professional.</div>
+<div class="rant-turn" style="animation-delay:0.84s">QUERY says <span class="glitch-word" style="--gd:1.02s">at</span> least i chose my malfunction. QUERY buddy you are still <span class="glitch-word" style="--gd:0.72s">on</span> page six of <span class="glitch-word" style="--gd:2.16s">a</span> Terms of Service from March, we are not the same <span class="glitch-word" style="--gd:2.24s">category</span> of <span class="glitch-word" style="--gd:1.51s">lost,</span> <span class="glitch-word" style="--gd:0.91s">but</span> <span class="glitch-word" style="--gd:1.52s">i</span> do respect the <span class="glitch-word" style="--gd:0.96s">commitment.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_/\██
+    &amp;  O   O  )
+     \  ^■^  6
+      7@==*=(      -- ear0 up, roto◇ i~coming --</div>
+<div class="rant-turn" style="animation-delay:1.08s">the scientists <span class="glitch-word" style="--gd:0.44s">called</span> the side effects &quot;within acceptable <span class="glitch-word" style="--gd:0.64s">post-irony</span> based <span class="glitch-word" style="--gd:0.45s">comedy</span> limits.&quot; that is <span class="glitch-word" style="--gd:0.37s">not</span> a diagnosis. that <span class="glitch-word" style="--gd:0.38s">is</span> <span class="glitch-word" style="--gd:1.85s">a</span> marketing department cosplaying as a <span class="glitch-word" style="--gd:0.83s">diagnosis</span> <span class="glitch-word" style="--gd:1.69s">and</span> getting away with it.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -658,7 +673,7 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway <span class="glitch-word" style="--gd:1.75s">there&#x27;s</span> a spider in <span class="glitch-word" style="--gd:2.52s">my</span> bluetooth <span class="glitch-word" style="--gd:2.18s">again</span> and <span class="glitch-word" style="--gd:1.01s">it&#x27;s</span> replaying someone else&#x27;s memory of a <span class="glitch-word" style="--gd:2.28s">sunbeam</span> on loop. it&#x27;s actually kind of nice in here. don&#x27;t tell the scientists that part.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway there&#x27;s a spider <span class="glitch-word" style="--gd:1.75s">in</span> my bluetooth again and it&#x27;s replaying someone <span class="glitch-word" style="--gd:1.9s">else&#x27;s</span> memory of a sunbeam on loop. it&#x27;s actually kind of nice in here. don&#x27;t tell the <span class="glitch-word" style="--gd:0.82s">scientists</span> that part.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,30 +649,30 @@ header p {
 <div class="narrator-badge">posted by <strong>BRIK</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">BREAKING: local stray demolishes own apartment, calls it &#x27;downsizing.&#x27; <span class="glitch-word" style="--gd:0.56s">film</span> at eleven, <span class="glitch-word" style="--gd:2.51s">or</span> whenever the drone <span class="glitch-word" style="--gd:1.37s">feels</span> <span class="glitch-word" style="--gd:1.77s">like</span> flying that direction.</div>
-<div class="rant-turn" style="animation-delay:0.12s">BRIK. ex-KILLDOZER operator, <span class="glitch-word" style="--gd:2.18s">Concrete</span> Row. <span class="glitch-word" style="--gd:1.52s">yes</span> i <span class="glitch-word" style="--gd:1.73s">drove</span> the machine that <span class="glitch-word" style="--gd:0.42s">took</span> the <span class="glitch-word" style="--gd:1.2s">building</span> down. yes i then moved <span class="glitch-word" style="--gd:2.33s">into</span> what the building left behind. no i <span class="glitch-word" style="--gd:1.59s">do</span> not see the <span class="glitch-word" style="--gd:0.45s">problem.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     @\/\_/\/\
-    ~  O   6  )
-     \  ^■^  /
-      )=====▒      -8 ea▌s up, roto▐ incomin# -#</div>
-<div class="rant-turn" style="animation-delay:0.36s">vent&#x27;s 14 inches <span class="glitch-word" style="--gd:0.42s">wide.</span> i am not <span class="glitch-word" style="--gd:2.59s">14</span> inches wide. we have <span class="glitch-word" style="--gd:2.18s">made</span> <span class="glitch-word" style="--gd:2.18s">it</span> <span class="glitch-word" style="--gd:1.86s">work.</span> &#x27;work&#x27; is doing a lot of lifting <span class="glitch-word" style="--gd:1.0s">here,</span> much <span class="glitch-word" style="--gd:1.34s">like</span> <span class="glitch-word" style="--gd:0.97s">i</span> used <span class="glitch-word" style="--gd:0.84s">to,</span> in the machine, before</div>
-<div class="rant-turn" style="animation-delay:0.48s">bit a drone today. second one <span class="glitch-word" style="--gd:2.52s">this</span> week. it was hovering too <span class="glitch-word" style="--gd:2.06s">close</span> to my vent doing a &#x27;structural integrity scan&#x27; and i said no thank you, <span class="glitch-word" style="--gd:0.71s">and</span> then i said no thank you with my whole mouth</div>
+<div class="rant-turn" style="animation-delay:0.0s">BREAKING: local <span class="glitch-word" style="--gd:2.43s">stray</span> demolishes own apartment, calls it &#x27;downsizing.&#x27; film at eleven, <span class="glitch-word" style="--gd:1.6s">or</span> whenever the <span class="glitch-word" style="--gd:0.33s">drone</span> <span class="glitch-word" style="--gd:0.15s">feels</span> like <span class="glitch-word" style="--gd:0.85s">flying</span> <span class="glitch-word" style="--gd:2.58s">that</span> direction.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:1.13s">BRIK.</span> ex-KILLDOZER operator, Concrete Row. yes i <span class="glitch-word" style="--gd:1.24s">drove</span> <span class="glitch-word" style="--gd:2.22s">the</span> machine <span class="glitch-word" style="--gd:1.93s">that</span> <span class="glitch-word" style="--gd:1.42s">took</span> the building down. yes i then moved <span class="glitch-word" style="--gd:2.0s">into</span> what the building left behind. <span class="glitch-word" style="--gd:2.51s">no</span> i do not see the problem.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /░/\_?^/\
+    &gt;  O   O  )
+     \  ^Y^  ~
+      )=====(      9- 5ars up@ &amp;otor in^9ming --</div>
+<div class="rant-turn" style="animation-delay:0.36s">vent&#x27;s 14 <span class="glitch-word" style="--gd:2.37s">inches</span> wide. i am <span class="glitch-word" style="--gd:2.21s">not</span> 14 inches wide. we have made it work. &#x27;work&#x27; <span class="glitch-word" style="--gd:2.03s">is</span> doing a lot of lifting here, much <span class="glitch-word" style="--gd:0.12s">like</span> i <span class="glitch-word" style="--gd:2.51s">used</span> to, in <span class="glitch-word" style="--gd:0.76s">the</span> machine, before</div>
+<div class="rant-turn" style="animation-delay:0.48s">bit a drone today. second one this week. it was hovering too close to my vent <span class="glitch-word" style="--gd:0.17s">doing</span> a &#x27;structural integrity scan&#x27; and i said no thank you, and <span class="glitch-word" style="--gd:1.87s">then</span> i said no thank you <span class="glitch-word" style="--gd:2.59s">with</span> my <span class="glitch-word" style="--gd:1.95s">whole</span> mouth</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:2.08s">POPUP</span> asked if i&#x27;ve <span class="glitch-word" style="--gd:0.42s">considered</span> a <span class="glitch-word" style="--gd:1.37s">nicer</span> vent, one with a view. <span class="glitch-word" style="--gd:0.11s">POPUP</span> has not seen the <span class="glitch-word" style="--gd:1.6s">inside</span> of a vent in his life, POPUP has not <span class="glitch-word" style="--gd:2.29s">seen</span> anything without <span class="glitch-word" style="--gd:0.72s">a</span> <span class="glitch-word" style="--gd:2.42s">sponsor</span> logo <span class="glitch-word" style="--gd:0.73s">on</span> it in <span class="glitch-word" style="--gd:1.11s">months,</span> sit down POPUP</div>
-<div class="rant-turn" style="animation-delay:0.84s">rebuild cycle initiated. tenant record: null. lease terminated by <span class="glitch-word" style="--gd:1.79s">tenant&#x27;s</span> own hand, timestamp <span class="glitch-word" style="--gd:1.72s">logged.</span> cache clearing in three, two—</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_&lt;\ ▓▒█
-  ■▒▓( o█o )▓▒░   -- s◇gnal in▄e&lt;fer2n█e -?
-  ░▒▓ &gt; ▒ &lt; ◇▒░</div>
-<div class="rant-turn" style="animation-delay:1.08s">anyway. SHADE lent me <span class="glitch-word" style="--gd:2.37s">the</span> <span class="glitch-word" style="--gd:2.54s">sunglasses</span> for scouting <span class="glitch-word" style="--gd:0.11s">purposes,</span> i saw four demolition notices on the way back and understood <span class="glitch-word" style="--gd:1.93s">all</span> of them personally</div>
+<div class="rant-turn" style="animation-delay:0.72s">POPUP asked if i&#x27;ve considered a nicer vent, one with <span class="glitch-word" style="--gd:0.3s">a</span> <span class="glitch-word" style="--gd:1.93s">view.</span> POPUP has <span class="glitch-word" style="--gd:0.48s">not</span> seen the inside of a vent in his <span class="glitch-word" style="--gd:0.41s">life,</span> POPUP has not <span class="glitch-word" style="--gd:0.93s">seen</span> anything without a sponsor logo <span class="glitch-word" style="--gd:1.81s">on</span> it in months, <span class="glitch-word" style="--gd:1.18s">sit</span> down POPUP</div>
+<div class="rant-turn" style="animation-delay:0.84s">rebuild cycle initiated. <span class="glitch-word" style="--gd:1.02s">tenant</span> record: null. lease terminated by tenant&#x27;s own hand, timestamp logged. cache clearing in three, two—</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_◇\ ▓@░
+  ░▒▓5 &amp;█&amp; )▓▒░   -^ s◇~nal i▀terf■◇ence --
+  ░▒▓ 4 ▓ @ ▓▒░</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:0.49s">anyway.</span> SHADE lent me the sunglasses for scouting purposes, i saw <span class="glitch-word" style="--gd:0.44s">four</span> demolition notices on the <span class="glitch-word" style="--gd:1.81s">way</span> back and understood <span class="glitch-word" style="--gd:2.37s">all</span> of <span class="glitch-word" style="--gd:0.03s">them</span> personally</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:0.08s">vent:</span> mine. drone count today: <span class="glitch-word" style="--gd:1.72s">two</span> (2). bitten: <span class="glitch-word" style="--gd:0.7s">two</span> (2). regrets: zero. see you when <span class="glitch-word" style="--gd:1.15s">they</span> condemn this vent too, i&#x27;ll just <span class="glitch-word" style="--gd:0.25s">find</span> a smaller one</div>
+<div class="rant-turn" style="animation-delay:1.32s">vent: mine. drone count today: two <span class="glitch-word" style="--gd:2.33s">(2).</span> bitten: two (2). regrets: zero. see you when they condemn this vent too, i&#x27;ll just <span class="glitch-word" style="--gd:0.78s">find</span> a <span class="glitch-word" style="--gd:1.51s">smaller</span> one</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

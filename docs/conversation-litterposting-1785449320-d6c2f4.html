@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,24 +649,24 @@ header p {
 <div class="narrator-badge">posted by <strong>POPUP</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">i blinked wrong this morning and it cost me $2.40. this is not <span class="glitch-word" style="--gd:1.87s">a</span> bit. this is Tuesday.</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.11s">POPUP.</span> Ad <span class="glitch-word" style="--gd:0.93s">Plaza.</span> official <span class="glitch-word" style="--gd:0.3s">job</span> title is <span class="glitch-word" style="--gd:2.14s">&#x27;feline</span> notification <span class="glitch-word" style="--gd:1.71s">system,&#x27;</span> unofficial job title <span class="glitch-word" style="--gd:0.44s">is</span> &#x27;guy whose eyeballs are a <span class="glitch-word" style="--gd:1.63s">menu.&#x27;</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  73▒ /\_/\ &lt;▒1
-  ░▒▓( o█o ##▒░   ▒- 3ign0l inte&lt;#e▄@nce ▐-
-  ░4▓ &gt; ^ &lt; ▓73</div>
-<div class="rant-turn" style="animation-delay:0.36s">tried <span class="glitch-word" style="--gd:0.34s">to</span> nap on the fire <span class="glitch-word" style="--gd:1.82s">escape</span> today. closed my eyes <span class="glitch-word" style="--gd:1.77s">for</span> maybe four seconds. NEKOCORP <span class="glitch-word" style="--gd:1.52s">rendered</span> a sedan <span class="glitch-word" style="--gd:1.3s">ad</span> directly onto the backs of my eyelids. i have never personally hated a car this much and it <span class="glitch-word" style="--gd:0.9s">wasn&#x27;t</span> even a nice sedan.</div>
-<div class="rant-turn" style="animation-delay:0.48s">SHADE keeps offering to lend me the sunglasses. SHADE. buddy. my <span class="glitch-word" style="--gd:1.24s">eyelids</span> ARE the display. <span class="glitch-word" style="--gd:2.32s">the</span> <span class="glitch-word" style="--gd:1.85s">display</span> is INSIDE me. <span class="glitch-word" style="--gd:1.34s">this</span> is an inside job, glasses don&#x27;t fix an inside job.</div>
+<div class="rant-turn" style="animation-delay:0.0s">i blinked wrong <span class="glitch-word" style="--gd:0.24s">this</span> morning and it cost me $2.40. this is not a <span class="glitch-word" style="--gd:1.53s">bit.</span> this is Tuesday.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.28s">POPUP.</span> Ad Plaza. official job title is &#x27;feline notification system,&#x27; unofficial job title is &#x27;guy whose eyeballs are a menu.&#x27;</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  &gt;#1 /\_/&lt; ▓▒░
+  ░▒▓! o█o )▓▒▓   -█ s#gna▀ int8rf&lt;r&amp;nc▒ -▀
+  ░▒▄ &gt; ▌ 1 ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.36s">tried to nap on the <span class="glitch-word" style="--gd:1.22s">fire</span> escape today. closed my eyes for maybe four seconds. NEKOCORP rendered a sedan ad directly <span class="glitch-word" style="--gd:0.04s">onto</span> the backs of my eyelids. i have never personally hated a car this much and it wasn&#x27;t even <span class="glitch-word" style="--gd:1.89s">a</span> nice sedan.</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.34s">SHADE</span> keeps offering to lend me <span class="glitch-word" style="--gd:2.29s">the</span> sunglasses. SHADE. <span class="glitch-word" style="--gd:1.3s">buddy.</span> my <span class="glitch-word" style="--gd:0.82s">eyelids</span> ARE the display. the display <span class="glitch-word" style="--gd:1.31s">is</span> INSIDE <span class="glitch-word" style="--gd:1.76s">me.</span> this is an inside job, glasses don&#x27;t fix an inside job.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>  /\___/\
  (  o.o  )
   &gt; ^ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.72s">&#x27;YOU MAY ALSO LIKE&#x27; has appeared <span class="glitch-word" style="--gd:1.79s">in</span> my vision more times today than the actual sun has. i <span class="glitch-word" style="--gd:2.1s">have</span> seen <span class="glitch-word" style="--gd:1.81s">forty</span> ads <span class="glitch-word" style="--gd:0.02s">for</span> tuna i already own. i <span class="glitch-word" style="--gd:0.33s">already</span> own the tuna. i <span class="glitch-word" style="--gd:0.94s">am</span> currently <span class="glitch-word" style="--gd:1.75s">touching</span> <span class="glitch-word" style="--gd:2.15s">the</span> tuna.</div>
-<div class="rant-turn" style="animation-delay:0.84s">held breath. ground redraws in three. <span class="glitch-word" style="--gd:1.28s">two.</span> <span class="glitch-word" style="--gd:1.75s">tenant&#x27;s</span> retinal cache flagged <span class="glitch-word" style="--gd:2.42s">for</span> reset, complaint <span class="glitch-word" style="--gd:0.07s">logged,</span> complaint ignored, as scheduled.</div>
-<div class="rant-turn" style="animation-delay:0.96s">anyway blinked during <span class="glitch-word" style="--gd:0.17s">a</span> sponsored message once, security showed up before my eyelids finished reopening, i will not be discussing what happened in the litter box that day</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>     7\/\_08/\
-    █  &gt;   O  ◇
-     \  ^Y^  /
-      )=====(      -- ears u~9 rotor 3ncom4ng --</div>
-<div class="rant-turn" style="animation-delay:1.2s">QUERY told me to <span class="glitch-word" style="--gd:0.0s">just</span> &#x27;opt out&#x27; of the ad <span class="glitch-word" style="--gd:0.15s">feed.</span> QUERY. there is no settings menu behind my own eyes, there is just NEKOCORP <span class="glitch-word" style="--gd:1.64s">and</span> a sedan, forever. see you at the next sponsored blink.</div>
+<div class="rant-turn" style="animation-delay:0.72s">&#x27;YOU MAY ALSO LIKE&#x27; <span class="glitch-word" style="--gd:2.1s">has</span> appeared in <span class="glitch-word" style="--gd:0.08s">my</span> vision more <span class="glitch-word" style="--gd:1.52s">times</span> <span class="glitch-word" style="--gd:0.72s">today</span> than <span class="glitch-word" style="--gd:2.39s">the</span> actual sun <span class="glitch-word" style="--gd:1.32s">has.</span> i have seen <span class="glitch-word" style="--gd:1.89s">forty</span> ads for tuna i <span class="glitch-word" style="--gd:1.06s">already</span> own. i <span class="glitch-word" style="--gd:1.6s">already</span> <span class="glitch-word" style="--gd:0.31s">own</span> the tuna. i am <span class="glitch-word" style="--gd:1.64s">currently</span> <span class="glitch-word" style="--gd:0.17s">touching</span> the tuna.</div>
+<div class="rant-turn" style="animation-delay:0.84s">held breath. ground redraws <span class="glitch-word" style="--gd:0.55s">in</span> three. two. <span class="glitch-word" style="--gd:2.4s">tenant&#x27;s</span> retinal cache flagged for reset, complaint logged, complaint <span class="glitch-word" style="--gd:0.24s">ignored,</span> as <span class="glitch-word" style="--gd:1.52s">scheduled.</span></div>
+<div class="rant-turn" style="animation-delay:0.96s">anyway blinked during a <span class="glitch-word" style="--gd:0.02s">sponsored</span> message once, <span class="glitch-word" style="--gd:0.79s">security</span> showed up before <span class="glitch-word" style="--gd:1.18s">my</span> eyelids finished reopening, i will not be discussing <span class="glitch-word" style="--gd:1.77s">what</span> happened <span class="glitch-word" style="--gd:0.81s">in</span> the <span class="glitch-word" style="--gd:1.45s">litter</span> box <span class="glitch-word" style="--gd:1.76s">that</span> <span class="glitch-word" style="--gd:0.56s">day</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/&lt;_▓\@\
+    (  O   O  )
+     \  @Y^  /
+      █===3=(      ■- ears u4, r6tor inco▒ing --</div>
+<div class="rant-turn" style="animation-delay:1.2s">QUERY told me to just &#x27;opt out&#x27; of the <span class="glitch-word" style="--gd:1.23s">ad</span> feed. <span class="glitch-word" style="--gd:0.1s">QUERY.</span> there is no settings menu behind <span class="glitch-word" style="--gd:1.8s">my</span> own eyes, there is just NEKOCORP <span class="glitch-word" style="--gd:1.15s">and</span> a sedan, forever. <span class="glitch-word" style="--gd:0.46s">see</span> you <span class="glitch-word" style="--gd:0.43s">at</span> the next sponsored <span class="glitch-word" style="--gd:2.2s">blink.</span></div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>        ,--.
        ( o.o)__
         &#x27;--&#x27;   \___

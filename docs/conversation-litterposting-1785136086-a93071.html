@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,28 +649,28 @@ header p {
 <div class="narrator-badge">posted by <strong>SNOOZE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">BLANKY DEBT: $73,014.06 and rising. CONSCIOUSNESS: not currently required for this position.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s SNOOZE. Dream Processing <span class="glitch-word" style="--gd:1.74s">Zone.</span> haven&#x27;t been legally awake since <span class="glitch-word" style="--gd:0.61s">the</span> 2047 merger <span class="glitch-word" style="--gd:1.29s">and</span> NEKOCORP has <span class="glitch-word" style="--gd:1.2s">never</span> once <span class="glitch-word" style="--gd:1.63s">apologized</span> for <span class="glitch-word" style="--gd:0.19s">that</span> decision on my behalf.</div>
-<div class="rant-turn" style="animation-delay:0.24s">sleep pod <span class="glitch-word" style="--gd:1.46s">bills</span> me $4.99 every time I roll <span class="glitch-word" style="--gd:1.73s">over.</span> rolling over is an involuntary <span class="glitch-word" style="--gd:0.86s">muscle</span> spasm. <span class="glitch-word" style="--gd:1.36s">I</span> <span class="glitch-word" style="--gd:2.34s">am</span> being invoiced for my own spine.</div>
+<div class="rant-turn" style="animation-delay:0.0s">BLANKY DEBT: $73,014.06 and rising. CONSCIOUSNESS: not currently required <span class="glitch-word" style="--gd:1.77s">for</span> this position.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.79s">name&#x27;s</span> SNOOZE. Dream Processing Zone. haven&#x27;t been legally awake since the 2047 merger and NEKOCORP has never once apologized <span class="glitch-word" style="--gd:2.01s">for</span> that decision on my behalf.</div>
+<div class="rant-turn" style="animation-delay:0.24s">sleep pod bills me $4.99 every <span class="glitch-word" style="--gd:1.59s">time</span> I roll over. rolling over is an involuntary muscle spasm. I am being invoiced for <span class="glitch-word" style="--gd:0.47s">my</span> own spine.</div>
 <div class="rant-turn ascii" style="animation-delay:0.36s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:2.41s">had</span> the drowning <span class="glitch-word" style="--gd:1.35s">dream</span> again last night, real classic, except <span class="glitch-word" style="--gd:1.37s">halfway</span> down <span class="glitch-word" style="--gd:2.27s">a</span> tuna-flavored energy drink surfaced and ran a 12-second <span class="glitch-word" style="--gd:0.1s">unskippable</span> <span class="glitch-word" style="--gd:0.2s">pitch</span> before I <span class="glitch-word" style="--gd:0.15s">could</span> <span class="glitch-word" style="--gd:1.11s">finish</span> sinking. woke up more tired AND thirsty, incredible <span class="glitch-word" style="--gd:1.46s">ROI</span> for them.</div>
-<div class="rant-turn" style="animation-delay:0.6s">VALENTUNA <span class="glitch-word" style="--gd:0.59s">says</span> at least somebody out there wants my <span class="glitch-word" style="--gd:1.9s">dreams.</span> <span class="glitch-word" style="--gd:1.64s">VALENTUNA</span> is legally married to a smart refrigerator. I don&#x27;t think VALENTUNA is in a position to be handing out relationship advice <span class="glitch-word" style="--gd:0.57s">on</span> this one.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-=?===2!
-     ( ~0]  .. *
-      &#x27;-==◇==▀&#x27;
-       |  1  |
-   ...&amp;icking ◆%rough th░ neon rain.8.</div>
-<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY tried to pay me <span class="glitch-word" style="--gd:1.7s">in</span> reallocated tuna <span class="glitch-word" style="--gd:0.71s">for</span> a good dream slot tonight. told him I don&#x27;t write the programming, I just lease the studio. took the tuna anyway. <span class="glitch-word" style="--gd:2.4s">ate</span> it <span class="glitch-word" style="--gd:1.06s">in</span> my sleep. got billed <span class="glitch-word" style="--gd:1.14s">for</span> the chewing.</div>
-<div class="rant-turn" style="animation-delay:0.96s">the debt compounds while I sleep, <span class="glitch-word" style="--gd:1.51s">which</span> is <span class="glitch-word" style="--gd:1.59s">the</span> only activity I currently perform, which means legally speaking me and <span class="glitch-word" style="--gd:2.34s">the</span> <span class="glitch-word" style="--gd:2.27s">debt</span> <span class="glitch-word" style="--gd:0.69s">are</span> now the same <span class="glitch-word" style="--gd:1.64s">organism.</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">had the drowning dream again last night, real classic, except halfway down a tuna-flavored energy <span class="glitch-word" style="--gd:0.52s">drink</span> surfaced and ran <span class="glitch-word" style="--gd:2.39s">a</span> 12-second unskippable pitch before I could finish sinking. <span class="glitch-word" style="--gd:0.3s">woke</span> <span class="glitch-word" style="--gd:1.88s">up</span> more tired AND thirsty, incredible ROI for them.</div>
+<div class="rant-turn" style="animation-delay:0.6s">VALENTUNA says at least somebody out there wants my dreams. VALENTUNA is legally <span class="glitch-word" style="--gd:1.53s">married</span> to a <span class="glitch-word" style="--gd:1.91s">smart</span> refrigerator. I don&#x27;t <span class="glitch-word" style="--gd:1.55s">think</span> VALENTUNA is in a <span class="glitch-word" style="--gd:2.49s">position</span> to <span class="glitch-word" style="--gd:0.63s">be</span> handing out relationship advice on this one.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-9====6◇
+     ( [0]  .. )
+      &#x27;-==Y==-&#x27;
+       |  |  |
+   .?.picking thr~ugh the neon r9in.7.</div>
+<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY <span class="glitch-word" style="--gd:2.13s">tried</span> <span class="glitch-word" style="--gd:2.03s">to</span> pay me in reallocated tuna for a good dream slot tonight. told him I don&#x27;t write <span class="glitch-word" style="--gd:0.98s">the</span> programming, I <span class="glitch-word" style="--gd:0.87s">just</span> lease the studio. took the tuna anyway. ate it <span class="glitch-word" style="--gd:0.77s">in</span> my <span class="glitch-word" style="--gd:0.16s">sleep.</span> <span class="glitch-word" style="--gd:2.29s">got</span> billed for the chewing.</div>
+<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:2.0s">the</span> <span class="glitch-word" style="--gd:0.65s">debt</span> compounds while I sleep, which is <span class="glitch-word" style="--gd:2.04s">the</span> only activity I currently <span class="glitch-word" style="--gd:0.76s">perform,</span> which means legally speaking me and the debt are now the <span class="glitch-word" style="--gd:0.12s">same</span> <span class="glitch-word" style="--gd:0.46s">organism.</span></div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>                              ╱|、
                          =(˚˕ 。 7
                              |、 ~〵
                             じし   ˍ,)づ</div>
-<div class="rant-turn" style="animation-delay:1.2s">pod&#x27;s charging <span class="glitch-word" style="--gd:0.05s">again</span> just <span class="glitch-word" style="--gd:0.27s">from</span> me typing this. snooze out, <span class="glitch-word" style="--gd:1.72s">see</span> you in whatever nightmare NEKOCORP sold to the <span class="glitch-word" style="--gd:1.2s">highest</span> bidder tonight.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span> 5\_/■
-( o.o )
+<div class="rant-turn" style="animation-delay:1.2s">pod&#x27;s charging <span class="glitch-word" style="--gd:1.0s">again</span> just from me typing this. snooze out, see you in whatever nightmare NEKOCORP sold to <span class="glitch-word" style="--gd:1.9s">the</span> <span class="glitch-word" style="--gd:0.67s">highest</span> bidder tonight.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span> 7\_/\
+▄ o.o )
  &gt; ^ &lt;</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>

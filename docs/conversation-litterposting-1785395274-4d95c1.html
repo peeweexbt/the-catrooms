@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,32 +649,32 @@ header p {
 <div class="narrator-badge">posted by <strong>BRIK</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">STRUCTURAL INTEGRITY: 12%. that&#x27;s my old apartment&#x27;s rating right <span class="glitch-word" style="--gd:0.25s">before</span> NEKOCORP condemned <span class="glitch-word" style="--gd:0.51s">it.</span> that&#x27;s also my rating right now, personally, emotionally, structurally.</div>
-<div class="rant-turn" style="animation-delay:0.12s">BRIK. ex-KILLDOZER operator. district: Demolished — yeah that&#x27;s the actual district name <span class="glitch-word" style="--gd:0.11s">now,</span> <span class="glitch-word" style="--gd:1.87s">they</span> didn&#x27;t even rebrand it after they finished with it, <span class="glitch-word" style="--gd:0.11s">just</span> left the sign up as a warning.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     7\/\?▀*/\
-    ▐  O   O  1
-     \  6^^  /
-      )=#■==(      -- ears up, r▌tor 5n8om78g -3</div>
-<div class="rant-turn" style="animation-delay:0.36s">asked ONE question at my last shift review. why do <span class="glitch-word" style="--gd:0.81s">execs</span> get twelve fish breaks a shift <span class="glitch-word" style="--gd:1.98s">and</span> <span class="glitch-word" style="--gd:1.66s">factory</span> cats split one communal scrap of tuna between forty of <span class="glitch-word" style="--gd:1.49s">us.</span> next morning my building&#x27;s a holographic parking lot and my wife&#x27;s <span class="glitch-word" style="--gd:2.34s">a</span> <span class="glitch-word" style="--gd:1.81s">&#x27;cat</span> made <span class="glitch-word" style="--gd:1.62s">flesh</span> <span class="glitch-word" style="--gd:2.26s">light&#x27;</span> now, whatever that <span class="glitch-word" style="--gd:1.03s">means,</span> nobody will <span class="glitch-word" style="--gd:2.23s">explain</span> it, HR just keeps smiling.</div>
-<div class="rant-turn" style="animation-delay:0.48s">live in an air <span class="glitch-word" style="--gd:1.39s">vent</span> now. <span class="glitch-word" style="--gd:2.16s">biting</span> surveillance drones for sport, not even for a cause anymore honestly, just bc it&#x27;s the <span class="glitch-word" style="--gd:0.36s">only</span> thing left that still feels like winning.</div>
+<div class="rant-turn" style="animation-delay:0.0s">STRUCTURAL INTEGRITY: 12%. that&#x27;s my old apartment&#x27;s <span class="glitch-word" style="--gd:1.23s">rating</span> right before <span class="glitch-word" style="--gd:2.16s">NEKOCORP</span> condemned <span class="glitch-word" style="--gd:1.6s">it.</span> that&#x27;s <span class="glitch-word" style="--gd:2.15s">also</span> my rating <span class="glitch-word" style="--gd:1.19s">right</span> now, personally, emotionally, structurally.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.04s">BRIK.</span> ex-KILLDOZER operator. district: <span class="glitch-word" style="--gd:2.23s">Demolished</span> — yeah that&#x27;s the actual district name now, <span class="glitch-word" style="--gd:1.93s">they</span> didn&#x27;t even rebrand <span class="glitch-word" style="--gd:0.4s">it</span> after they finished with it, just left the sign <span class="glitch-word" style="--gd:2.19s">up</span> as <span class="glitch-word" style="--gd:2.51s">a</span> warning.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /&amp;%\_/\/\
+    (  O   O  )
+     ░  ^▐^  ▀
+      )=====&amp;      -- ea▀s ^p, ro▓?r inc&amp;ming -^</div>
+<div class="rant-turn" style="animation-delay:0.36s">asked ONE question at my last shift review. <span class="glitch-word" style="--gd:0.48s">why</span> do execs get <span class="glitch-word" style="--gd:1.4s">twelve</span> fish breaks a shift and factory cats split <span class="glitch-word" style="--gd:0.22s">one</span> communal scrap of tuna between forty of us. <span class="glitch-word" style="--gd:0.78s">next</span> morning my building&#x27;s a holographic <span class="glitch-word" style="--gd:0.67s">parking</span> lot and my wife&#x27;s a &#x27;cat made flesh light&#x27; now, whatever that means, nobody will explain it, HR just keeps smiling.</div>
+<div class="rant-turn" style="animation-delay:0.48s">live in <span class="glitch-word" style="--gd:0.97s">an</span> air vent now. <span class="glitch-word" style="--gd:1.73s">biting</span> <span class="glitch-word" style="--gd:2.35s">surveillance</span> drones <span class="glitch-word" style="--gd:1.04s">for</span> <span class="glitch-word" style="--gd:2.45s">sport,</span> not even for a cause anymore <span class="glitch-word" style="--gd:0.9s">honestly,</span> just bc it&#x27;s the only thing left that still feels like winning.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span> /\_/\
 ( o.o )
  &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.72s">official file says &#x27;domestic <span class="glitch-word" style="--gd:0.97s">extremist.&#x27;</span> my <span class="glitch-word" style="--gd:0.04s">mother,</span> who <span class="glitch-word" style="--gd:0.86s">has</span> read the file, says &#x27;HANDSOME.&#x27; <span class="glitch-word" style="--gd:2.15s">both</span> <span class="glitch-word" style="--gd:0.6s">of</span> these are, respectfully, correct.</div>
-<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY hit me up <span class="glitch-word" style="--gd:1.45s">about</span> the loading dock job again. bro I OPERATED THE MACHINE THAT ATE MY <span class="glitch-word" style="--gd:0.13s">OWN</span> NEIGHBORHOOD, I <span class="glitch-word" style="--gd:1.85s">am</span> not spiritually equipped to <span class="glitch-word" style="--gd:1.56s">steal</span> tuna <span class="glitch-word" style="--gd:0.73s">shipments</span> <span class="glitch-word" style="--gd:1.26s">for</span> fun, I <span class="glitch-word" style="--gd:1.37s">need</span> my crimes to have a MESSAGE.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>)     5\_?/\
-9 =/   • •   \2
-▐------░-U---6----7------@-
-|                                4
-6    w6 live in a so8ie4y        |
+<div class="rant-turn" style="animation-delay:0.72s">official file says &#x27;domestic <span class="glitch-word" style="--gd:2.48s">extremist.&#x27;</span> my mother, who <span class="glitch-word" style="--gd:1.95s">has</span> <span class="glitch-word" style="--gd:1.36s">read</span> the file, says &#x27;HANDSOME.&#x27; both of these are, respectfully, <span class="glitch-word" style="--gd:0.39s">correct.</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY hit me up about the loading dock job again. <span class="glitch-word" style="--gd:0.92s">bro</span> I OPERATED THE MACHINE <span class="glitch-word" style="--gd:0.07s">THAT</span> ATE MY OWN <span class="glitch-word" style="--gd:1.59s">NEIGHBORHOOD,</span> I am not <span class="glitch-word" style="--gd:1.54s">spiritually</span> equipped to steal tuna shipments for fun, I need my crimes to have a MESSAGE.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>)     /8__/\
+4 =/   • ■   \=
+--1--^-U6U@8-------------#-
+|                                0
+|    w% live in a 1█ciety        |
 |                                |
-8-------◇------------&lt;--------</div>
-<div class="rant-turn" style="animation-delay:1.08s">drone number six tonight tasted <span class="glitch-word" style="--gd:0.99s">like</span> ozone <span class="glitch-word" style="--gd:0.31s">and</span> <span class="glitch-word" style="--gd:2.15s">bad</span> decisions. <span class="glitch-word" style="--gd:0.55s">worth</span> it. logged it as <span class="glitch-word" style="--gd:1.99s">&#x27;unscheduled</span> <span class="glitch-word" style="--gd:0.17s">structural</span> assessment&#x27; in <span class="glitch-word" style="--gd:1.62s">my</span> head, <span class="glitch-word" style="--gd:1.61s">that&#x27;s</span> the only paperwork I still believe in.</div>
+-◇▄-◆--~--█---2-▐-!---~-------</div>
+<div class="rant-turn" style="animation-delay:1.08s">drone number six tonight tasted <span class="glitch-word" style="--gd:1.11s">like</span> ozone and bad <span class="glitch-word" style="--gd:2.47s">decisions.</span> worth it. <span class="glitch-word" style="--gd:0.89s">logged</span> it as &#x27;unscheduled <span class="glitch-word" style="--gd:0.44s">structural</span> assessment&#x27; in my head, that&#x27;s the only paperwork <span class="glitch-word" style="--gd:2.5s">I</span> still believe <span class="glitch-word" style="--gd:0.45s">in.</span></div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:1.27s">anyway.</span> vent&#x27;s cold, wife&#x27;s a hologram, <span class="glitch-word" style="--gd:1.28s">mother</span> thinks <span class="glitch-word" style="--gd:1.1s">I&#x27;m</span> handsome, drone count&#x27;s <span class="glitch-word" style="--gd:1.57s">at</span> six. tomorrow the number <span class="glitch-word" style="--gd:0.02s">goes</span> up. that&#x27;s not a threat that&#x27;s a <span class="glitch-word" style="--gd:0.09s">SCHEDULE.</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. vent&#x27;s cold, wife&#x27;s a hologram, mother thinks I&#x27;m handsome, drone count&#x27;s at six. tomorrow the number goes up. that&#x27;s not a threat that&#x27;s <span class="glitch-word" style="--gd:2.31s">a</span> <span class="glitch-word" style="--gd:0.69s">SCHEDULE.</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

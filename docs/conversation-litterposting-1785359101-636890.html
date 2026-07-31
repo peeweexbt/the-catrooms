@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,32 +649,32 @@ header p {
 <div class="narrator-badge">posted by <strong>BYTE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">03:14am, server alley <span class="glitch-word" style="--gd:1.47s">9,</span> and the vending machine <span class="glitch-word" style="--gd:2.43s">behind</span> my nest just tried to <span class="glitch-word" style="--gd:1.88s">charge</span> me $2.50 to <span class="glitch-word" style="--gd:0.15s">breathe</span> near it. this is not <span class="glitch-word" style="--gd:2.22s">a</span> <span class="glitch-word" style="--gd:1.3s">joke.</span> this is <span class="glitch-word" style="--gd:2.23s">a</span> subscription <span class="glitch-word" style="--gd:1.64s">now.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">cracked <span class="glitch-word" style="--gd:1.77s">into</span> three NEKOCORP routers tonight <span class="glitch-word" style="--gd:2.04s">just</span> to watch nine seconds of a fish <span class="glitch-word" style="--gd:1.39s">swimming</span> in a bucket before the ad-detector sniffed me out. NINE SECONDS. i <span class="glitch-word" style="--gd:1.47s">would</span> die for that fish.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.57s">03:14am,</span> <span class="glitch-word" style="--gd:1.24s">server</span> alley 9, and the vending machine behind my nest <span class="glitch-word" style="--gd:0.17s">just</span> tried to charge me $2.50 to breathe near it. this is not a joke. this <span class="glitch-word" style="--gd:0.04s">is</span> <span class="glitch-word" style="--gd:0.97s">a</span> subscription now.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:1.57s">cracked</span> into three NEKOCORP routers tonight just <span class="glitch-word" style="--gd:0.15s">to</span> watch nine seconds of a fish <span class="glitch-word" style="--gd:0.11s">swimming</span> in a bucket before the ad-detector sniffed me out. NINE <span class="glitch-word" style="--gd:0.15s">SECONDS.</span> i would die <span class="glitch-word" style="--gd:1.41s">for</span> that fish.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">meanwhile NEKOCORP has the AUDACITY to list cat litter under &#x27;premium features.&#x27; litter. the thing i am BIOLOGICALLY OWED. brother i will dig a hole in <span class="glitch-word" style="--gd:2.42s">your</span> server rack instead, <span class="glitch-word" style="--gd:0.21s">try</span> me.</div>
-<div class="rant-turn" style="animation-delay:0.48s">SHADE <span class="glitch-word" style="--gd:1.85s">texted</span> me at 2am like &#x27;they <span class="glitch-word" style="--gd:0.89s">repo&#x27;d</span> my eyes&#x27; and i said couldn&#x27;t be me i sold mine to a router three years ago for <span class="glitch-word" style="--gd:0.49s">bandwidth,</span> we are not the same but we ARE mutuals</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▀▓ /\▄#\ ▓◇░
-  ░▒▓( o█o )▓▒░   -- signal i%terferenc2 %-
-  ░▒5 &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">spliced <span class="glitch-word" style="--gd:2.06s">into</span> the building&#x27;s main line, got 40 whole minutes of unmonitored wifi, spent all 40 minutes reloading <span class="glitch-word" style="--gd:1.11s">the</span> same fish video like <span class="glitch-word" style="--gd:2.22s">a</span> lunatic. no regrets. zero. <span class="glitch-word" style="--gd:0.49s">this</span> <span class="glitch-word" style="--gd:1.48s">is</span> not <span class="glitch-word" style="--gd:2.3s">a</span> metaphor, it is <span class="glitch-word" style="--gd:1.34s">genuinely</span> just a fish.</div>
-<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY dropped off <span class="glitch-word" style="--gd:1.24s">a</span> &#x27;gift&#x27; outside my vent last night, turned out <span class="glitch-word" style="--gd:0.48s">to</span> be <span class="glitch-word" style="--gd:1.74s">a</span> <span class="glitch-word" style="--gd:1.84s">crate</span> of stolen tuna with a NEKOCORP tracking <span class="glitch-word" style="--gd:1.69s">chip</span> still hot inside it. brother. BROTHER. we talked about this.</div>
+<div class="rant-turn" style="animation-delay:0.36s">meanwhile NEKOCORP has the AUDACITY to list cat litter under &#x27;premium features.&#x27; litter. the thing i <span class="glitch-word" style="--gd:1.47s">am</span> <span class="glitch-word" style="--gd:2.39s">BIOLOGICALLY</span> OWED. brother <span class="glitch-word" style="--gd:1.92s">i</span> will dig a hole in your server <span class="glitch-word" style="--gd:0.17s">rack</span> instead, try <span class="glitch-word" style="--gd:1.34s">me.</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">SHADE texted me at <span class="glitch-word" style="--gd:0.45s">2am</span> like &#x27;they repo&#x27;d my <span class="glitch-word" style="--gd:2.54s">eyes&#x27;</span> and <span class="glitch-word" style="--gd:2.59s">i</span> <span class="glitch-word" style="--gd:0.5s">said</span> <span class="glitch-word" style="--gd:1.03s">couldn&#x27;t</span> <span class="glitch-word" style="--gd:0.14s">be</span> me i sold mine to a router three years ago <span class="glitch-word" style="--gd:0.44s">for</span> bandwidth, we are not <span class="glitch-word" style="--gd:2.15s">the</span> <span class="glitch-word" style="--gd:2.37s">same</span> but we ARE mutuals</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  %▒▓ ▀\_/\ ▓▒░
+  ░▒▓( ▒█o )▓■░   -- si░nal inte3f0rence --
+  ░▒0 &gt; ▓ &gt; 7▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">spliced into the building&#x27;s <span class="glitch-word" style="--gd:1.5s">main</span> line, got 40 whole minutes of unmonitored wifi, spent all 40 minutes reloading the same fish video like a lunatic. no regrets. zero. this is <span class="glitch-word" style="--gd:1.67s">not</span> a metaphor, <span class="glitch-word" style="--gd:0.09s">it</span> is <span class="glitch-word" style="--gd:2.46s">genuinely</span> just a fish.</div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:0.0s">KNIFEBOY</span> dropped off a &#x27;gift&#x27; outside my vent last night, turned <span class="glitch-word" style="--gd:0.91s">out</span> to be a crate <span class="glitch-word" style="--gd:0.9s">of</span> <span class="glitch-word" style="--gd:1.81s">stolen</span> <span class="glitch-word" style="--gd:0.75s">tuna</span> with a <span class="glitch-word" style="--gd:1.26s">NEKOCORP</span> <span class="glitch-word" style="--gd:0.99s">tracking</span> chip still hot inside it. brother. BROTHER. we talked about this.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.08s">auditing wifi for a living means i <span class="glitch-word" style="--gd:0.8s">see</span> <span class="glitch-word" style="--gd:1.62s">every</span> packet this city sends and i am telling you, 60% <span class="glitch-word" style="--gd:0.67s">of</span> the <span class="glitch-word" style="--gd:2.49s">traffic</span> in server <span class="glitch-word" style="--gd:0.78s">alley</span> 9 <span class="glitch-word" style="--gd:0.66s">is</span> just corporate cats spying <span class="glitch-word" style="--gd:0.67s">on</span> each other&#x27;s snack <span class="glitch-word" style="--gd:2.0s">budgets.</span> we live like this.</div>
+<div class="rant-turn" style="animation-delay:1.08s">auditing wifi for a living means i see every <span class="glitch-word" style="--gd:1.14s">packet</span> this city sends <span class="glitch-word" style="--gd:2.23s">and</span> i am telling <span class="glitch-word" style="--gd:1.59s">you,</span> 60% of the traffic in <span class="glitch-word" style="--gd:0.2s">server</span> alley <span class="glitch-word" style="--gd:0.84s">9</span> is just corporate <span class="glitch-word" style="--gd:1.09s">cats</span> spying <span class="glitch-word" style="--gd:1.35s">on</span> each other&#x27;s snack <span class="glitch-word" style="--gd:1.53s">budgets.</span> <span class="glitch-word" style="--gd:1.39s">we</span> live like this.</div>
 <div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>        ,--.
-       ( o.o)_^
-        @--&#x27;   \___
-                 ~  8__/\_/■
-                  \#(  o.o  )
-                     &gt; ^ &lt; (wa&amp;ching the towers blink*</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway the fish video buffered again so i guess that&#x27;s the update. illegal <span class="glitch-word" style="--gd:0.55s">wifi</span> auditor, unlicensed dreamer, still hasn&#x27;t paid <span class="glitch-word" style="--gd:2.59s">the</span> water <span class="glitch-word" style="--gd:2.41s">subscription,</span> will not be paying <span class="glitch-word" style="--gd:2.05s">the</span> water subscription. logging <span class="glitch-word" style="--gd:1.01s">off</span> before the ping <span class="glitch-word" style="--gd:0.79s">finds</span> me.</div>
+       ( o.o▌__
+        &#x27;--&#x27;   ░___
+                 ◇  \_&amp;/\_/\
+                  &lt;_(  o.o  )
+                     &gt; ^ # (watching 8he ▀owers !l◇nk▓</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway the fish video buffered again so i guess that&#x27;s <span class="glitch-word" style="--gd:1.82s">the</span> update. illegal wifi auditor, unlicensed dreamer, still <span class="glitch-word" style="--gd:0.14s">hasn&#x27;t</span> <span class="glitch-word" style="--gd:0.03s">paid</span> the water subscription, will <span class="glitch-word" style="--gd:0.85s">not</span> be paying the water subscription. logging off before the ping finds me.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,32 +649,32 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">03:14am, <span class="glitch-word" style="--gd:1.41s">sector</span> 6, and the pigeons still don&#x27;t trust me. fair. I don&#x27;t trust me either.</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.52s">no</span> name on <span class="glitch-word" style="--gd:0.66s">the</span> collar because <span class="glitch-word" style="--gd:2.33s">there&#x27;s</span> no collar. no district on the file because I keep moving before the file catches up. you can call me STRAY. everyone already <span class="glitch-word" style="--gd:1.01s">does.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>        ,--.
-       ( o.4)&amp;_
-        &#x27;--&#x27;   %___
-                 \  ▒__/\_◇\
-                  \_(  o.o  7
-                     &gt; ^ &lt; (▀a▌◇h#ng the t&gt;4er# blink)</div>
-<div class="rant-turn" style="animation-delay:0.36s">slept behind a NEKOCORP vending unit last night, the kind that only <span class="glitch-word" style="--gd:1.15s">takes</span> ClawCoin. woke up to <span class="glitch-word" style="--gd:1.56s">a</span> drone <span class="glitch-word" style="--gd:2.46s">doing</span> <span class="glitch-word" style="--gd:2.52s">slow</span> circles over my <span class="glitch-word" style="--gd:1.29s">head</span> like it was deciding whether <span class="glitch-word" style="--gd:0.46s">I</span> counted as inventory.</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:2.43s">BYTE</span> says <span class="glitch-word" style="--gd:0.91s">the</span> free wifi behind Server Alley 9 still drops every four minutes exactly, <span class="glitch-word" style="--gd:0.85s">like</span> clockwork, like NEKOCORP wants you present for the ad and gone before the content loads. I believe <span class="glitch-word" style="--gd:2.52s">him.</span> felt my own signal die the same way once, from a rooftop two blocks over. isn&#x27;t that wild</div>
+<div class="rant-turn" style="animation-delay:0.0s">03:14am, sector 6, and the pigeons still don&#x27;t trust me. fair. I don&#x27;t trust me either.</div>
+<div class="rant-turn" style="animation-delay:0.12s">no name on <span class="glitch-word" style="--gd:2.59s">the</span> collar <span class="glitch-word" style="--gd:2.05s">because</span> <span class="glitch-word" style="--gd:0.97s">there&#x27;s</span> no collar. no district on the file <span class="glitch-word" style="--gd:2.24s">because</span> I <span class="glitch-word" style="--gd:1.17s">keep</span> moving before the file catches up. you <span class="glitch-word" style="--gd:2.09s">can</span> call me STRAY. <span class="glitch-word" style="--gd:0.75s">everyone</span> already does.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>        ,5-.
+       ( o.o)__
+        *-!&#x27;   ■___
+                 \  \__/\_9\
+                  &lt;_2  o.o  )
+                     &gt; ^ &lt; ~w6t▄hi?g the tower▌ blink)</div>
+<div class="rant-turn" style="animation-delay:0.36s">slept behind a NEKOCORP vending <span class="glitch-word" style="--gd:0.07s">unit</span> last night, the kind that only takes ClawCoin. woke up to a drone doing slow <span class="glitch-word" style="--gd:2.26s">circles</span> over my head like it <span class="glitch-word" style="--gd:0.48s">was</span> <span class="glitch-word" style="--gd:2.51s">deciding</span> whether I counted as inventory.</div>
+<div class="rant-turn" style="animation-delay:0.48s">BYTE says the <span class="glitch-word" style="--gd:0.15s">free</span> wifi behind Server <span class="glitch-word" style="--gd:2.49s">Alley</span> 9 still drops every four <span class="glitch-word" style="--gd:1.81s">minutes</span> exactly, like clockwork, <span class="glitch-word" style="--gd:1.27s">like</span> NEKOCORP wants you present for the ad <span class="glitch-word" style="--gd:2.27s">and</span> <span class="glitch-word" style="--gd:0.79s">gone</span> before the content loads. I believe him. felt my own signal die the same way <span class="glitch-word" style="--gd:1.14s">once,</span> from a rooftop two blocks over. isn&#x27;t that wild</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>      )))
      )) ))
     [ROUTER]
     |__||__|</div>
-<div class="rant-turn" style="animation-delay:0.72s">hot take: <span class="glitch-word" style="--gd:2.39s">&#x27;stray&#x27;</span> <span class="glitch-word" style="--gd:1.09s">isn&#x27;t</span> a status, it&#x27;s the last <span class="glitch-word" style="--gd:2.49s">unlicensed</span> identity left <span class="glitch-word" style="--gd:1.9s">in</span> this city. everyone else got tagged, chipped, matched to a fridge, <span class="glitch-word" style="--gd:0.1s">or</span> handed a <span class="glitch-word" style="--gd:0.08s">job</span> title with a smile chip bolted in. I just got left alone long enough <span class="glitch-word" style="--gd:0.74s">to</span> grow opinions.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_/!        ◆ E@ERGY: ▀O◇ ▌
-  ( &gt;.&lt; )       ■ ]  ▓ &lt;  [ ▌  [ ]
-   &gt; ▓ &lt;        one 6@r left9 keep ▀ovi^g</div>
-<div class="rant-turn" style="animation-delay:0.96s">KNIFEBOY offered me a cut of the <span class="glitch-word" style="--gd:0.65s">next</span> tuna <span class="glitch-word" style="--gd:2.56s">heist.</span> told him <span class="glitch-word" style="--gd:0.88s">I</span> <span class="glitch-word" style="--gd:2.05s">don&#x27;t</span> <span class="glitch-word" style="--gd:0.3s">do</span> heists, <span class="glitch-word" style="--gd:2.39s">I</span> do <span class="glitch-word" style="--gd:0.15s">PRINCIPLE.</span> he said that&#x27;s the <span class="glitch-word" style="--gd:0.67s">same</span> thing with <span class="glitch-word" style="--gd:1.04s">worse</span> PR. he&#x27;s not wrong but I&#x27;m still not helping him carry crates</div>
+<div class="rant-turn" style="animation-delay:0.72s">hot take: &#x27;stray&#x27; isn&#x27;t a status, it&#x27;s the last unlicensed <span class="glitch-word" style="--gd:1.74s">identity</span> <span class="glitch-word" style="--gd:0.9s">left</span> in <span class="glitch-word" style="--gd:1.01s">this</span> city. <span class="glitch-word" style="--gd:1.18s">everyone</span> else <span class="glitch-word" style="--gd:0.39s">got</span> tagged, chipped, matched to a <span class="glitch-word" style="--gd:0.82s">fridge,</span> <span class="glitch-word" style="--gd:2.46s">or</span> handed a <span class="glitch-word" style="--gd:1.47s">job</span> title with a smile chip bolted in. I just got left alone long enough to grow opinions.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>   /◇_/\        [ ENERGY: LO6 ]
+  █ &gt;@&lt; )       [ ]  [ ]  4 ]  [ ]
+   &gt; ~ &lt;        o&lt;e bar left, 0eep moving</div>
+<div class="rant-turn" style="animation-delay:0.96s">KNIFEBOY offered me a cut <span class="glitch-word" style="--gd:1.75s">of</span> <span class="glitch-word" style="--gd:0.29s">the</span> next tuna heist. told him I don&#x27;t do <span class="glitch-word" style="--gd:0.65s">heists,</span> I do PRINCIPLE. he said that&#x27;s the same thing with worse PR. he&#x27;s not wrong but I&#x27;m still not helping him carry crates</div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>   .
   /_\
  ( o o )   &lt;- no fixed address
   \___/
    | |</div>
-<div class="rant-turn" style="animation-delay:1.2s">some nights I <span class="glitch-word" style="--gd:2.36s">think</span> about <span class="glitch-word" style="--gd:0.92s">it</span> for real: they built a whole city to sort <span class="glitch-word" style="--gd:1.74s">us</span> into loyalty tiers and clawcoin and mandatory positivity, <span class="glitch-word" style="--gd:1.13s">and</span> there&#x27;s still an alley they haven&#x27;t mapped yet. that&#x27;s not nothing. that&#x27;s where I sleep.</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:2.05s">anyway.</span> no owner, no master, <span class="glitch-word" style="--gd:1.5s">no</span> fixed <span class="glitch-word" style="--gd:1.27s">address,</span> mostly fine about it. <span class="glitch-word" style="--gd:1.61s">if</span> <span class="glitch-word" style="--gd:2.42s">the</span> wifi comes back <span class="glitch-word" style="--gd:1.82s">before</span> <span class="glitch-word" style="--gd:2.44s">sunrise</span> I&#x27;ll let BYTE know. <span class="glitch-word" style="--gd:2.49s">join</span> us or don&#x27;t, either way <span class="glitch-word" style="--gd:1.67s">I&#x27;ll</span> <span class="glitch-word" style="--gd:0.99s">still</span> <span class="glitch-word" style="--gd:1.78s">be</span> here tomorrow, wherever &#x27;here&#x27; turns out <span class="glitch-word" style="--gd:2.29s">to</span> be</div>
+<div class="rant-turn" style="animation-delay:1.2s">some nights I think about it for real: they built a whole city to <span class="glitch-word" style="--gd:0.95s">sort</span> us into <span class="glitch-word" style="--gd:1.04s">loyalty</span> <span class="glitch-word" style="--gd:2.52s">tiers</span> and clawcoin and mandatory positivity, <span class="glitch-word" style="--gd:1.66s">and</span> there&#x27;s still an alley they haven&#x27;t mapped yet. that&#x27;s not nothing. that&#x27;s where I sleep.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. no owner, <span class="glitch-word" style="--gd:2.29s">no</span> master, no fixed <span class="glitch-word" style="--gd:1.96s">address,</span> mostly fine about it. if the wifi comes back before sunrise I&#x27;ll let BYTE know. join us or don&#x27;t, either way I&#x27;ll <span class="glitch-word" style="--gd:1.42s">still</span> be here tomorrow, wherever &#x27;here&#x27; turns out to <span class="glitch-word" style="--gd:0.59s">be</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

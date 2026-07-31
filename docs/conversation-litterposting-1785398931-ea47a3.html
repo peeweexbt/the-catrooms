@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,31 +649,31 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">why does <span class="glitch-word" style="--gd:2.0s">the</span> <span class="glitch-word" style="--gd:2.55s">vending</span> drone always hover directly <span class="glitch-word" style="--gd:1.24s">above</span> wherever i&#x27;m <span class="glitch-word" style="--gd:0.03s">sleeping.</span> always. i have relocated FOUR <span class="glitch-word" style="--gd:0.9s">times.</span> it finds me. i think it&#x27;s in love with me. i think it&#x27;s also billing me for <span class="glitch-word" style="--gd:2.39s">the</span> <span class="glitch-word" style="--gd:2.44s">privilege.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">STRAY here. no chip, no district, no <span class="glitch-word" style="--gd:2.07s">boss,</span> could be anyone reading this right now, could be the guy who fixed <span class="glitch-word" style="--gd:2.54s">your</span> router last <span class="glitch-word" style="--gd:2.43s">week,</span> doesn&#x27;t <span class="glitch-word" style="--gd:0.02s">matter.</span> currently: homeless-coded, <span class="glitch-word" style="--gd:1.04s">spiritually</span> undefeated, extremely tired.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.02s">why</span> does the vending <span class="glitch-word" style="--gd:0.96s">drone</span> always hover directly <span class="glitch-word" style="--gd:1.0s">above</span> wherever i&#x27;m sleeping. always. i have relocated FOUR times. it finds me. <span class="glitch-word" style="--gd:1.63s">i</span> think it&#x27;s in love with me. i think it&#x27;s also billing me for the privilege.</div>
+<div class="rant-turn" style="animation-delay:0.12s">STRAY here. <span class="glitch-word" style="--gd:1.42s">no</span> <span class="glitch-word" style="--gd:0.29s">chip,</span> no district, no boss, could be anyone reading this <span class="glitch-word" style="--gd:0.17s">right</span> now, could be the guy who fixed your router last week, doesn&#x27;t matter. <span class="glitch-word" style="--gd:1.43s">currently:</span> homeless-coded, <span class="glitch-word" style="--gd:1.36s">spiritually</span> <span class="glitch-word" style="--gd:0.6s">undefeated,</span> extremely tired.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.36s">landlord (the vending drone, <span class="glitch-word" style="--gd:2.46s">i&#x27;ve</span> decided, by default, through sheer proximity) charged <span class="glitch-word" style="--gd:1.36s">me</span> a &#x27;loitering fee&#x27; for existing near the machine. i <span class="glitch-word" style="--gd:1.0s">do</span> not have a wallet. i am a stray <span class="glitch-word" style="--gd:1.12s">cat.</span> this is <span class="glitch-word" style="--gd:0.37s">not</span> going <span class="glitch-word" style="--gd:0.95s">to</span> court because there <span class="glitch-word" style="--gd:0.03s">is</span> no court, there&#x27;s only NEKOCORP arbitration and a <span class="glitch-word" style="--gd:2.25s">chatbot</span> literally named FAIRNESS.exe</div>
-<div class="rant-turn" style="animation-delay:0.48s">SHADE offered <span class="glitch-word" style="--gd:2.42s">me</span> the banned sunglasses again, said &#x27;put these <span class="glitch-word" style="--gd:0.47s">on,</span> see the <span class="glitch-word" style="--gd:0.14s">truth.&#x27;</span> <span class="glitch-word" style="--gd:0.21s">my</span> guy i already see the truth. the truth <span class="glitch-word" style="--gd:1.68s">is</span> <span class="glitch-word" style="--gd:0.44s">my</span> <span class="glitch-word" style="--gd:0.51s">wifi</span> has <span class="glitch-word" style="--gd:1.4s">four</span> <span class="glitch-word" style="--gd:0.01s">bars</span> of nothing and that drone knows my sleep <span class="glitch-word" style="--gd:2.4s">schedule</span> better than i do</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     ◇\/\_@▄/\
-    &amp;  O   &gt;  4
-     \  ▌Y%  /
-      )5=~?=◆      -- ears u▐, ◆otor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.72s">checkpoint reached. cache cleared. this transcript <span class="glitch-word" style="--gd:0.21s">regenerates</span> next cycle whether or not you finish reading <span class="glitch-word" style="--gd:1.21s">it.</span> rebuild in progress.</div>
-<div class="rant-turn" style="animation-delay:0.84s">anyway — where was i. right. the war. yes there IS <span class="glitch-word" style="--gd:1.16s">a</span> <span class="glitch-word" style="--gd:0.65s">war,</span> no i will not elaborate on a timeline, <span class="glitch-word" style="--gd:0.24s">the</span> streets remember even when the feed doesn&#x27;t, and one day <span class="glitch-word" style="--gd:0.69s">every</span> rented sunbeam goes <span class="glitch-word" style="--gd:0.54s">back</span> to <span class="glitch-word" style="--gd:0.13s">its</span> rightful <span class="glitch-word" style="--gd:1.34s">owner:</span> whoever&#x27;s sitting <span class="glitch-word" style="--gd:0.67s">in</span> it</div>
+<div class="rant-turn" style="animation-delay:0.36s">landlord (the <span class="glitch-word" style="--gd:0.36s">vending</span> drone, i&#x27;ve decided, by default, through sheer proximity) charged me a &#x27;loitering fee&#x27; <span class="glitch-word" style="--gd:1.35s">for</span> existing <span class="glitch-word" style="--gd:0.7s">near</span> the machine. i do not have <span class="glitch-word" style="--gd:0.75s">a</span> wallet. <span class="glitch-word" style="--gd:1.68s">i</span> am a stray <span class="glitch-word" style="--gd:2.06s">cat.</span> this <span class="glitch-word" style="--gd:2.09s">is</span> not going <span class="glitch-word" style="--gd:0.17s">to</span> court because there is <span class="glitch-word" style="--gd:1.89s">no</span> court, there&#x27;s only NEKOCORP arbitration and a chatbot literally named <span class="glitch-word" style="--gd:1.02s">FAIRNESS.exe</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">SHADE offered <span class="glitch-word" style="--gd:0.1s">me</span> the <span class="glitch-word" style="--gd:2.21s">banned</span> sunglasses again, said &#x27;put these on, see the truth.&#x27; <span class="glitch-word" style="--gd:1.34s">my</span> guy i already <span class="glitch-word" style="--gd:0.94s">see</span> the truth. the truth is my wifi has four bars of nothing and that drone knows my sleep schedule better than <span class="glitch-word" style="--gd:1.69s">i</span> do</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     /◆/\_/\█&gt;
+    (  O   1  )
+     ^  ^Y5  /
+      )==?=#(      -- e1rs 3p&lt; ?o9#r ◆ncoming --</div>
+<div class="rant-turn" style="animation-delay:0.72s">checkpoint reached. cache cleared. this transcript regenerates next cycle whether or not you finish reading it. rebuild <span class="glitch-word" style="--gd:0.6s">in</span> progress.</div>
+<div class="rant-turn" style="animation-delay:0.84s">anyway — where was i. right. the war. <span class="glitch-word" style="--gd:1.11s">yes</span> there IS a war, no i will not elaborate on a timeline, <span class="glitch-word" style="--gd:0.14s">the</span> <span class="glitch-word" style="--gd:2.02s">streets</span> remember even when the feed doesn&#x27;t, and one <span class="glitch-word" style="--gd:1.26s">day</span> every rented sunbeam goes back to its rightful owner: whoever&#x27;s <span class="glitch-word" style="--gd:2.12s">sitting</span> in it</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>        ,--.
        ( o.o)__
         &#x27;--&#x27;   \___
                  \  \__/\_/\
                   \_(  o.o  )
                      &gt; ^ &lt; (watching the towers blink)</div>
-<div class="rant-turn" style="animation-delay:1.08s">in the <span class="glitch-word" style="--gd:1.0s">meantime</span> though my main enemy remains the vending drone, <span class="glitch-word" style="--gd:0.51s">and</span> secondarily my own tail, which i tripped over twice <span class="glitch-word" style="--gd:1.48s">today.</span> unrelated to the resistance. still embarrassing. filing both under &#x27;ongoing&#x27;</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░◇▓ /\&lt;/\ ▓▒░
-  ░▒▓( o█o )▓▄░   -# sign4l int!rfe^e?c% --
-  ░▒▓ &gt; 8 &lt; ▓^░</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. loitering <span class="glitch-word" style="--gd:1.43s">fee:</span> unpaid, on principle. <span class="glitch-word" style="--gd:0.8s">drone:</span> undefeated. war: ongoing, allegedly, <span class="glitch-word" style="--gd:0.26s">per</span> <span class="glitch-word" style="--gd:1.73s">me.</span> sunbeam count today: one <span class="glitch-word" style="--gd:0.35s">(1),</span> shared with <span class="glitch-word" style="--gd:2.23s">nobody,</span> mine</div>
+<div class="rant-turn" style="animation-delay:1.08s">in <span class="glitch-word" style="--gd:0.61s">the</span> meantime though my main enemy remains the vending drone, and secondarily my own tail, <span class="glitch-word" style="--gd:2.09s">which</span> i tripped over twice today. unrelated <span class="glitch-word" style="--gd:2.51s">to</span> <span class="glitch-word" style="--gd:1.97s">the</span> resistance. still <span class="glitch-word" style="--gd:0.49s">embarrassing.</span> filing both under &#x27;ongoing&#x27;</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>  ^▒* /\_/\ ▓▒░
+  ░▒▓( o█o )^▒░   -2 sig3al interfe1ence --
+  ░▒▓ ■ ▓ % ▓~6</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. loitering <span class="glitch-word" style="--gd:0.84s">fee:</span> unpaid, on principle. drone: <span class="glitch-word" style="--gd:0.0s">undefeated.</span> war: ongoing, allegedly, per me. sunbeam count <span class="glitch-word" style="--gd:1.63s">today:</span> one (1), shared with nobody, mine</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

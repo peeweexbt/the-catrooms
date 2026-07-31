@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,30 +649,30 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">nobody elected stray. stray showed up anyway. that&#x27;s kind <span class="glitch-word" style="--gd:1.13s">of</span> the whole system honestly.</div>
-<div class="rant-turn" style="animation-delay:0.12s">rent <span class="glitch-word" style="--gd:0.33s">went</span> <span class="glitch-word" style="--gd:2.45s">up</span> on THREE apartments <span class="glitch-word" style="--gd:1.07s">today</span> that stray does not have. <span class="glitch-word" style="--gd:0.39s">NEKOCORP</span> invoiced an alley. an ALLEY. good luck collecting, the alley does not have <span class="glitch-word" style="--gd:2.31s">hands</span></div>
+<div class="rant-turn" style="animation-delay:0.0s">nobody elected stray. stray showed <span class="glitch-word" style="--gd:1.68s">up</span> anyway. that&#x27;s kind of the whole system honestly.</div>
+<div class="rant-turn" style="animation-delay:0.12s">rent <span class="glitch-word" style="--gd:1.27s">went</span> <span class="glitch-word" style="--gd:0.76s">up</span> on <span class="glitch-word" style="--gd:1.32s">THREE</span> apartments today that <span class="glitch-word" style="--gd:2.08s">stray</span> does not have. NEKOCORP invoiced <span class="glitch-word" style="--gd:0.4s">an</span> <span class="glitch-word" style="--gd:0.63s">alley.</span> an ALLEY. good luck collecting, the alley does <span class="glitch-word" style="--gd:2.33s">not</span> have hands</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span> /\_/\
 ( o.o )
  &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">drone followed stray four blocks tonight for &#x27;loitering.&#x27; <span class="glitch-word" style="--gd:1.4s">stray</span> was ASLEEP. asleep <span class="glitch-word" style="--gd:2.27s">is</span> not <span class="glitch-word" style="--gd:1.41s">a</span> crime yet, they&#x27;re still workshopping that one</div>
-<div class="rant-turn" style="animation-delay:0.48s">BRIK says stray talks too much for someone who &#x27;rules <span class="glitch-word" style="--gd:0.23s">the</span> streets.&#x27; <span class="glitch-word" style="--gd:2.05s">correct.</span> multitasking. leadership <span class="glitch-word" style="--gd:1.32s">is</span> 40% vision, 60% yelling at drones</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     #\/0_/\&amp;*
+<div class="rant-turn" style="animation-delay:0.36s">drone followed stray four blocks tonight for &#x27;loitering.&#x27; stray was ASLEEP. asleep <span class="glitch-word" style="--gd:0.47s">is</span> <span class="glitch-word" style="--gd:2.0s">not</span> a crime yet, they&#x27;re still workshopping that one</div>
+<div class="rant-turn" style="animation-delay:0.48s">BRIK says stray talks too much for someone who <span class="glitch-word" style="--gd:2.03s">&#x27;rules</span> <span class="glitch-word" style="--gd:2.07s">the</span> streets.&#x27; correct. multitasking. leadership is <span class="glitch-word" style="--gd:2.44s">40%</span> vision, <span class="glitch-word" style="--gd:0.66s">60%</span> yelling at drones</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\▌\_/\/\
     (  O   O  )
-     \  ^▒^  /
-      )=====(      -- ears up, rotor inco◆in▓ -9</div>
-<div class="rant-turn" style="animation-delay:0.72s">KNIFEBOY texted asking if <span class="glitch-word" style="--gd:1.35s">stray</span> wants in on the <span class="glitch-word" style="--gd:0.74s">tuna</span> job. <span class="glitch-word" style="--gd:2.5s">stray</span> <span class="glitch-word" style="--gd:0.0s">said</span> <span class="glitch-word" style="--gd:2.27s">no.</span> stray said this on principle. stray is currently, separately, eyeing <span class="glitch-word" style="--gd:0.27s">the</span> tuna job</div>
-<div class="rant-turn" style="animation-delay:0.84s">small thing though, real quick: one stray becomes two strays becomes a block <span class="glitch-word" style="--gd:0.31s">becomes</span> a problem for NEKOCORP specifically. anyway forget I said that</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░8▓ /\▐/\ 9▀░
-  ░▒▓▀ o▐o )▓▒8   -- signal in%erfer▌n▓e --
-  ░▒▓ @ ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:1.08s">wifi&#x27;s down <span class="glitch-word" style="--gd:1.13s">in</span> the alley again which means stray&#x27;s out here <span class="glitch-word" style="--gd:1.31s">manifesting</span> purely <span class="glitch-word" style="--gd:1.82s">off</span> vibes <span class="glitch-word" style="--gd:1.14s">and</span> secondhand signal</div>
+     \  ^&amp;0  /
+      )=====(      -- ears up5 rotor incoming ▄■</div>
+<div class="rant-turn" style="animation-delay:0.72s">KNIFEBOY texted asking if stray wants in on the tuna <span class="glitch-word" style="--gd:0.07s">job.</span> stray said no. <span class="glitch-word" style="--gd:2.15s">stray</span> said this <span class="glitch-word" style="--gd:0.09s">on</span> principle. stray is currently, separately, eyeing the <span class="glitch-word" style="--gd:2.56s">tuna</span> <span class="glitch-word" style="--gd:1.49s">job</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">small thing though, real quick: one stray becomes two strays becomes a block becomes a problem for <span class="glitch-word" style="--gd:1.83s">NEKOCORP</span> specifically. anyway forget I said <span class="glitch-word" style="--gd:1.15s">that</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  ▓6▓ &lt;\_/\ &gt;▒4
+  ░▒▓( o█o )▓▒░   -5 ~ign^l inter7ere!c▀ -&gt;
+  ◇▒▓ &gt; ▓ &lt; ▓!~</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:2.09s">wifi&#x27;s</span> down in the alley <span class="glitch-word" style="--gd:1.75s">again</span> which means stray&#x27;s out here manifesting purely off <span class="glitch-word" style="--gd:0.97s">vibes</span> and secondhand signal</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>        ,--.
        ( o.o)__
         &#x27;--&#x27;   \___
                  \  \__/\_/\
                   \_(  o.o  )
                      &gt; ^ &lt; (watching the towers blink)</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. sunbeam&#x27;s warm, block&#x27;s <span class="glitch-word" style="--gd:1.36s">still</span> standing, NEKOCORP still hasn&#x27;t <span class="glitch-word" style="--gd:1.09s">figured</span> out where stray <span class="glitch-word" style="--gd:2.02s">actually</span> lives. keep it that way.</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:1.96s">anyway.</span> <span class="glitch-word" style="--gd:0.08s">sunbeam&#x27;s</span> warm, block&#x27;s still standing, <span class="glitch-word" style="--gd:2.07s">NEKOCORP</span> still hasn&#x27;t <span class="glitch-word" style="--gd:1.96s">figured</span> out where <span class="glitch-word" style="--gd:2.31s">stray</span> actually lives. keep it that way.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

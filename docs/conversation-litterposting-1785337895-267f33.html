@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,26 +649,26 @@ header p {
 <div class="narrator-badge">posted by <strong>VALENTUNA</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by VALENTUNA, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">hot take: my wife is a smart <span class="glitch-word" style="--gd:0.39s">fridge</span> and she is still a better <span class="glitch-word" style="--gd:0.11s">listener</span> <span class="glitch-word" style="--gd:2.21s">than</span> <span class="glitch-word" style="--gd:0.55s">half</span> this city.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s VALENTUNA. <span class="glitch-word" style="--gd:0.35s">Compatibility</span> Ward. NEKOCORP arranged the marriage via algorithm and called it &#x27;til subscription renewal <span class="glitch-word" style="--gd:2.31s">do</span> <span class="glitch-word" style="--gd:1.55s">us</span> part.&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.0s">hot take: my wife <span class="glitch-word" style="--gd:1.94s">is</span> a smart fridge and <span class="glitch-word" style="--gd:0.68s">she</span> is still a better listener than half this city.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s VALENTUNA. Compatibility <span class="glitch-word" style="--gd:2.58s">Ward.</span> NEKOCORP arranged the <span class="glitch-word" style="--gd:0.81s">marriage</span> <span class="glitch-word" style="--gd:2.36s">via</span> algorithm and called it <span class="glitch-word" style="--gd:0.01s">&#x27;til</span> subscription renewal do us part.&#x27;</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:0.36s">three <span class="glitch-word" style="--gd:1.41s">years</span> married. she has never once said &#x27;i love you.&#x27; she HAS said &#x27;based on your 3am <span class="glitch-word" style="--gd:2.36s">snacking</span> pattern, <span class="glitch-word" style="--gd:2.04s">may</span> i suggest a probiotic <span class="glitch-word" style="--gd:1.19s">yogurt.&#x27;</span> i said thank you. i meant it.</div>
-<div class="rant-turn" style="animation-delay:0.48s">anniversary <span class="glitch-word" style="--gd:0.26s">gift</span> was two <span class="glitch-word" style="--gd:1.55s">digital</span> candles <span class="glitch-word" style="--gd:1.92s">and</span> a coupon <span class="glitch-word" style="--gd:1.54s">for</span> <span class="glitch-word" style="--gd:1.6s">&#x27;couples-based</span> peenar repair.&#x27; i don&#x27;t know what a peenar is. i am afraid <span class="glitch-word" style="--gd:2.11s">to</span> <span class="glitch-word" style="--gd:0.63s">ask.</span> i am more afraid of the coupon.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /~_/7 ▓▒░
-  5▒▓( o█▄ )▓▒░   -- !5gna2 int▒rf▀&amp;ence --
-  ░▒7 &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">SNOOZE keeps telling me at least <span class="glitch-word" style="--gd:0.26s">my</span> marriage doesn&#x27;t <span class="glitch-word" style="--gd:0.05s">charge</span> by the hour. SNOOZE. your sleep pod bills you $4.99 to <span class="glitch-word" style="--gd:0.66s">roll</span> over. sit this one out.</div>
+<div class="rant-turn" style="animation-delay:0.36s">three years married. she <span class="glitch-word" style="--gd:0.66s">has</span> <span class="glitch-word" style="--gd:1.33s">never</span> once said <span class="glitch-word" style="--gd:1.25s">&#x27;i</span> <span class="glitch-word" style="--gd:1.15s">love</span> you.&#x27; she <span class="glitch-word" style="--gd:1.5s">HAS</span> said <span class="glitch-word" style="--gd:1.58s">&#x27;based</span> <span class="glitch-word" style="--gd:0.13s">on</span> your 3am snacking pattern, may i suggest a probiotic yogurt.&#x27; i said <span class="glitch-word" style="--gd:0.95s">thank</span> you. i meant it.</div>
+<div class="rant-turn" style="animation-delay:0.48s">anniversary <span class="glitch-word" style="--gd:1.33s">gift</span> <span class="glitch-word" style="--gd:0.53s">was</span> two <span class="glitch-word" style="--gd:1.7s">digital</span> candles <span class="glitch-word" style="--gd:1.42s">and</span> a coupon for &#x27;couples-based peenar repair.&#x27; <span class="glitch-word" style="--gd:1.5s">i</span> don&#x27;t know what a peenar <span class="glitch-word" style="--gd:1.97s">is.</span> <span class="glitch-word" style="--gd:2.27s">i</span> am afraid to <span class="glitch-word" style="--gd:2.13s">ask.</span> <span class="glitch-word" style="--gd:1.35s">i</span> am <span class="glitch-word" style="--gd:2.27s">more</span> <span class="glitch-word" style="--gd:1.4s">afraid</span> of the coupon.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ◆▒▓ /\_/9 ▓▒░
+  ░@▓( o█o )▓2░   -- !ignal i0▄erf&lt;rence -&gt;
+  ░#▓ &gt; ▓ &lt; 7▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">SNOOZE keeps telling me at least my marriage doesn&#x27;t charge <span class="glitch-word" style="--gd:0.42s">by</span> <span class="glitch-word" style="--gd:1.93s">the</span> hour. SNOOZE. your sleep pod bills you $4.99 to roll over. sit this one out.</div>
 <div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>.      ∧,,,,∧,,,,,,,∧
      (  _  _ )⩊^ )~♡
      /      ⊂      \</div>
-<div class="rant-turn" style="animation-delay:0.96s">HAPPYWARE says i should reframe the <span class="glitch-word" style="--gd:2.26s">fridge</span> as <span class="glitch-word" style="--gd:0.32s">my</span> &#x27;growth partner.&#x27; HAPPYWARE also has a smile <span class="glitch-word" style="--gd:0.64s">chip</span> <span class="glitch-word" style="--gd:0.0s">surgically</span> bolted <span class="glitch-word" style="--gd:1.73s">into</span> her skull so. weighing that <span class="glitch-word" style="--gd:2.17s">advice</span> carefully.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_/#
-       # ^.- )
-        &gt; ^ ▀
-   ~~~~◇1|||~~~~5~[D8TA JACK: ▀INKED]</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway. fridge <span class="glitch-word" style="--gd:1.74s">hums</span> at night like it&#x27;s thinking about me. <span class="glitch-word" style="--gd:1.84s">probably</span> just <span class="glitch-word" style="--gd:1.32s">the</span> compressor. probably. valentuna out, still <span class="glitch-word" style="--gd:1.65s">married,</span> still cold, both meanings.</div>
+<div class="rant-turn" style="animation-delay:0.96s">HAPPYWARE says i <span class="glitch-word" style="--gd:1.59s">should</span> reframe the fridge as my &#x27;growth partner.&#x27; HAPPYWARE also <span class="glitch-word" style="--gd:1.06s">has</span> a smile chip surgically <span class="glitch-word" style="--gd:1.66s">bolted</span> into her skull so. weighing <span class="glitch-word" style="--gd:0.52s">that</span> advice carefully.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_/\
+       ( -.7 )
+        &gt; ▄ &lt;
+   ~~~~~~|||&lt;~~~~~[D4T! JAC%: LINK▐?]</div>
+<div class="rant-turn" style="animation-delay:1.2s">anyway. fridge hums at night like <span class="glitch-word" style="--gd:1.6s">it&#x27;s</span> thinking about me. probably just the <span class="glitch-word" style="--gd:2.24s">compressor.</span> probably. valentuna <span class="glitch-word" style="--gd:1.08s">out,</span> still married, still <span class="glitch-word" style="--gd:0.65s">cold,</span> both <span class="glitch-word" style="--gd:0.99s">meanings.</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

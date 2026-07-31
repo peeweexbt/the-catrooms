@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,23 +649,23 @@ header p {
 <div class="narrator-badge">posted by <strong>BRIK</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">they replaced my apartment <span class="glitch-word" style="--gd:0.1s">with</span> <span class="glitch-word" style="--gd:2.06s">a</span> holographic <span class="glitch-word" style="--gd:2.08s">parking</span> lot. i found out by walking through where my bedroom used to be and hitting nothing <span class="glitch-word" style="--gd:2.17s">but</span> <span class="glitch-word" style="--gd:2.01s">a</span> parking validation kiosk.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BRIK. yes, THAT brik, the KILLDOZER guy. i asked one (1) question about tuna break equity and NEKOCORP&#x27;s answer was structural. <span class="glitch-word" style="--gd:0.31s">i</span> live in an air vent now. better square <span class="glitch-word" style="--gd:1.37s">footage</span> than the studio, not even joking.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /▐/\_/\/\
-    (  O   O  )
-     \  ^Y0  /
-      )^=0==(      -■ ears up, ro0or incoming -▐</div>
-<div class="rant-turn" style="animation-delay:0.36s">bite count today: three drones, one delivery bot that had the AUDACITY to <span class="glitch-word" style="--gd:0.17s">knock,</span> and a vent grate <span class="glitch-word" style="--gd:1.23s">that</span> startled me first, so <span class="glitch-word" style="--gd:1.85s">that</span> one doesn&#x27;t count, that&#x27;s self defense.</div>
-<div class="rant-turn" style="animation-delay:0.48s">they <span class="glitch-word" style="--gd:1.75s">keep</span> sending &#x27;wellness check&#x27; drones to see if I&#x27;ve &#x27;processed <span class="glitch-word" style="--gd:1.16s">my</span> trauma.&#x27; brother <span class="glitch-word" style="--gd:2.47s">I</span> AM the trauma. <span class="glitch-word" style="--gd:1.36s">i</span> drove the trauma into my own kitchen. we are well past processing, we are <span class="glitch-word" style="--gd:1.98s">in</span> the archival stage.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.87s">they</span> <span class="glitch-word" style="--gd:2.45s">replaced</span> my apartment with a <span class="glitch-word" style="--gd:1.6s">holographic</span> parking lot. <span class="glitch-word" style="--gd:0.14s">i</span> found out by walking through <span class="glitch-word" style="--gd:0.71s">where</span> my bedroom used to be and hitting nothing <span class="glitch-word" style="--gd:0.06s">but</span> a parking validation kiosk.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:1.07s">name&#x27;s</span> BRIK. yes, THAT brik, the KILLDOZER guy. i asked one <span class="glitch-word" style="--gd:0.71s">(1)</span> question about tuna break equity <span class="glitch-word" style="--gd:1.04s">and</span> NEKOCORP&#x27;s answer <span class="glitch-word" style="--gd:0.03s">was</span> structural. i live in <span class="glitch-word" style="--gd:2.33s">an</span> air vent now. better square footage than the studio, <span class="glitch-word" style="--gd:0.92s">not</span> <span class="glitch-word" style="--gd:0.72s">even</span> <span class="glitch-word" style="--gd:1.71s">joking.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\7/\/\
+    (  7   ▒  )
+     ▒  ^Y^  /
+      )=====(      0- ▄░rs up, rot2r 1nc&amp;ming --</div>
+<div class="rant-turn" style="animation-delay:0.36s">bite count today: three drones, one delivery bot that had the AUDACITY to knock, and <span class="glitch-word" style="--gd:1.14s">a</span> vent grate that startled me first, so that <span class="glitch-word" style="--gd:0.87s">one</span> doesn&#x27;t count, that&#x27;s self <span class="glitch-word" style="--gd:0.84s">defense.</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">they keep <span class="glitch-word" style="--gd:0.92s">sending</span> &#x27;wellness check&#x27; drones to see if I&#x27;ve &#x27;processed my trauma.&#x27; brother I <span class="glitch-word" style="--gd:1.24s">AM</span> the <span class="glitch-word" style="--gd:1.87s">trauma.</span> i <span class="glitch-word" style="--gd:0.39s">drove</span> the <span class="glitch-word" style="--gd:2.52s">trauma</span> into my own kitchen. we are <span class="glitch-word" style="--gd:0.37s">well</span> past processing, <span class="glitch-word" style="--gd:2.32s">we</span> are in the archival stage.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.72s">KNIFEBOY <span class="glitch-word" style="--gd:0.97s">dropped</span> <span class="glitch-word" style="--gd:0.21s">two</span> stolen sardines through the vent grate <span class="glitch-word" style="--gd:1.6s">last</span> night, didn&#x27;t <span class="glitch-word" style="--gd:0.86s">say</span> a word, just <span class="glitch-word" style="--gd:1.38s">tossed</span> <span class="glitch-word" style="--gd:2.46s">them</span> in and vanished. <span class="glitch-word" style="--gd:1.73s">tuna-scented</span> <span class="glitch-word" style="--gd:1.0s">guardian</span> angel. that man gets it. RESPECT.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>   /!_/◇        [ ENERGY▒ LO&gt; ]
-  ( &gt;.7 )       [ ]  @ ]  [ ]  [ ]
-   &gt; ~ &lt;        o■e ~ar left? ◇e█3 moving</div>
-<div class="rant-turn" style="animation-delay:0.96s">meanwhile <span class="glitch-word" style="--gd:2.59s">HAPPYWARE</span> did <span class="glitch-word" style="--gd:2.01s">SEVENTEEN</span> HOURS of livestream today about <span class="glitch-word" style="--gd:2.56s">&#x27;finding</span> your fresh start&#x27; while standing on the rubble of my old kitchen for the b-roll. ma&#x27;am. MA&#x27;AM. <span class="glitch-word" style="--gd:0.38s">that&#x27;s</span> <span class="glitch-word" style="--gd:1.23s">my</span> <span class="glitch-word" style="--gd:2.46s">kitchen.</span> you&#x27;re monetizing my kitchen.</div>
+<div class="rant-turn" style="animation-delay:0.72s">KNIFEBOY dropped two stolen sardines through the <span class="glitch-word" style="--gd:1.5s">vent</span> <span class="glitch-word" style="--gd:1.96s">grate</span> <span class="glitch-word" style="--gd:2.55s">last</span> night, <span class="glitch-word" style="--gd:0.42s">didn&#x27;t</span> say a word, just tossed them in <span class="glitch-word" style="--gd:0.39s">and</span> vanished. tuna-scented guardian angel. <span class="glitch-word" style="--gd:1.31s">that</span> man gets it. RESPECT.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\■/\        ! 5NE▐G2: LOW ]
+  ◆ &gt;.&lt; )       [ ]  [ ]  0 ]  ▌ ]
+   &gt; ~ 6        3ne bar l▒ft, keep moving</div>
+<div class="rant-turn" style="animation-delay:0.96s">meanwhile HAPPYWARE <span class="glitch-word" style="--gd:2.39s">did</span> SEVENTEEN <span class="glitch-word" style="--gd:2.18s">HOURS</span> of livestream today about &#x27;finding your fresh start&#x27; while standing on the rubble <span class="glitch-word" style="--gd:0.19s">of</span> my old <span class="glitch-word" style="--gd:2.38s">kitchen</span> for <span class="glitch-word" style="--gd:2.31s">the</span> b-roll. <span class="glitch-word" style="--gd:0.36s">ma&#x27;am.</span> MA&#x27;AM. <span class="glitch-word" style="--gd:1.35s">that&#x27;s</span> my kitchen. you&#x27;re <span class="glitch-word" style="--gd:0.5s">monetizing</span> my kitchen.</div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -658,7 +673,7 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway. vent&#x27;s warm, drones keep their distance now, and my mother still calls me handsome under all the soot. domestic extremist <span class="glitch-word" style="--gd:2.01s">AND</span> certified good boy — both on <span class="glitch-word" style="--gd:1.33s">record,</span> both <span class="glitch-word" style="--gd:1.31s">true.</span> brik out.</div>
+<div class="rant-turn" style="animation-delay:1.2s">anyway. vent&#x27;s warm, drones keep their distance now, and my mother still calls <span class="glitch-word" style="--gd:0.82s">me</span> handsome under all the soot. domestic extremist AND certified good boy — both <span class="glitch-word" style="--gd:0.4s">on</span> record, both true. brik out.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

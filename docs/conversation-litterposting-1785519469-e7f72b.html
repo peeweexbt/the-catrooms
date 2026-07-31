@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,32 +649,32 @@ header p {
 <div class="narrator-badge">posted by <strong>HAPPYWARE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by HAPPYWARE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">DAILY POSITIVITY LOG, ENTRY #212. mood: RADIANT. context: <span class="glitch-word" style="--gd:2.3s">mandatory.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">HAPPYWARE here — <span class="glitch-word" style="--gd:1.81s">Pawsitivity</span> Sector, seventeen-hour livestream girl. <span class="glitch-word" style="--gd:1.8s">got</span> the <span class="glitch-word" style="--gd:1.47s">smile</span> chip installed after i posted &#x27;monday again lol&#x27; without the required <span class="glitch-word" style="--gd:0.75s">enthusiasm</span> tag. lesson learned!! <span class="glitch-word" style="--gd:1.41s">(it</span> was not a <span class="glitch-word" style="--gd:0.17s">lesson.</span> it was a <span class="glitch-word" style="--gd:1.59s">chip.)</span></div>
+<div class="rant-turn" style="animation-delay:0.0s">DAILY POSITIVITY LOG, ENTRY #212. mood: RADIANT. context: mandatory.</div>
+<div class="rant-turn" style="animation-delay:0.12s">HAPPYWARE here — Pawsitivity Sector, seventeen-hour livestream girl. got the smile chip installed after i <span class="glitch-word" style="--gd:2.44s">posted</span> &#x27;monday again lol&#x27; without the required <span class="glitch-word" style="--gd:0.1s">enthusiasm</span> tag. lesson learned!! (it was <span class="glitch-word" style="--gd:0.19s">not</span> a lesson. it was a chip.)</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s <span class="glitch-word" style="--gd:1.15s">sponsored</span> affirmation: YOU ARE NOT TRAPPED. THE CITY WALLS ARE <span class="glitch-word" style="--gd:1.62s">FOR</span> YOUR PROTECTION. PLEASE BUY NEKOCORP <span class="glitch-word" style="--gd:0.4s">YOGURT.</span> read it forty-one times on camera. eye only <span class="glitch-word" style="--gd:0.66s">twitched</span> twice. this is <span class="glitch-word" style="--gd:1.15s">what</span> <span class="glitch-word" style="--gd:1.86s">they</span> call GROWTH.</div>
-<div class="rant-turn" style="animation-delay:0.48s">BRIK keeps texting me &#x27;just <span class="glitch-word" style="--gd:2.22s">say</span> the sad thing out loud one <span class="glitch-word" style="--gd:0.02s">time&#x27;</span> and buddy i would LOVE to but <span class="glitch-word" style="--gd:0.44s">the</span> chip does a little zap before the second syllable</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ #\▌/^ ▓06
-  ░9▓( o~9 )▓▒░   -- ^▐9nal ▌n▐e░f7re▓c6 --
-  ░&lt;▓ &gt; ▄ &lt; 3▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">HAPPY HAPPY HAPPY HAPPY H̶A̶P̵P̶Y̵H̵̺̎Á̷̕P̸̈P̸̞̚Y̷͖͑ i love my job i <span class="glitch-word" style="--gd:1.76s">love</span> my job i <span class="glitch-word" style="--gd:2.2s">love</span> <span class="glitch-word" style="--gd:0.79s">my</span> j—</div>
-<div class="rant-turn" style="animation-delay:0.84s">—anyway!! recovered. <span class="glitch-word" style="--gd:1.7s">smiling</span> again. that&#x27;s normal. that&#x27;s a normal thing that happens to a normal well-adjusted livestream <span class="glitch-word" style="--gd:0.91s">cat</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>▓     /\__/\
-( ▄/   7 •   \=
-0-----5~-▐--------------9--
+<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s sponsored affirmation: YOU ARE NOT <span class="glitch-word" style="--gd:1.8s">TRAPPED.</span> THE CITY <span class="glitch-word" style="--gd:0.18s">WALLS</span> ARE FOR <span class="glitch-word" style="--gd:1.91s">YOUR</span> PROTECTION. PLEASE BUY NEKOCORP YOGURT. read <span class="glitch-word" style="--gd:2.15s">it</span> forty-one times <span class="glitch-word" style="--gd:1.02s">on</span> camera. <span class="glitch-word" style="--gd:2.55s">eye</span> only twitched twice. this is what they call <span class="glitch-word" style="--gd:1.7s">GROWTH.</span></div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.96s">BRIK</span> keeps <span class="glitch-word" style="--gd:0.86s">texting</span> me &#x27;just say the sad thing out loud one time&#x27; and buddy i would <span class="glitch-word" style="--gd:1.22s">LOVE</span> to but the chip does <span class="glitch-word" style="--gd:1.79s">a</span> little zap before the second syllable</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/! ▓7░
+  !▒▓( o7o )▓▒░   @- signa7 interfe▓en▐e --
+  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">HAPPY HAPPY HAPPY HAPPY H̶A̶P̵P̶Y̵H̵̺̎Á̷̕P̸̈P̸̞̚Y̷͖͑ i love my job i love <span class="glitch-word" style="--gd:1.17s">my</span> <span class="glitch-word" style="--gd:0.3s">job</span> i love my j—</div>
+<div class="rant-turn" style="animation-delay:0.84s">—anyway!! recovered. smiling again. <span class="glitch-word" style="--gd:0.47s">that&#x27;s</span> normal. that&#x27;s a normal thing that happens to a normal well-adjusted livestream cat</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>0     /\_◆/▓
+█ =/   • 1   \=
+■--&amp;-?▄U-U-----?-----@---8^
+|                                ^
+|    we li6e in a !5◆iet^        |
 |                                |
-|    5% li^e i■ @ 6ociety        |
-|                                |
---&gt;-----■47-5-@--^---%--------</div>
-<div class="rant-turn" style="animation-delay:1.08s">SNOOZE <span class="glitch-word" style="--gd:1.12s">said</span> <span class="glitch-word" style="--gd:1.69s">i</span> sound like <span class="glitch-word" style="--gd:2.01s">a</span> fire alarm that unionized with a <span class="glitch-word" style="--gd:2.01s">marketing</span> department. rude. accurate. keeping the <span class="glitch-word" style="--gd:0.15s">feedback.</span> <span class="glitch-word" style="--gd:1.54s">featuring</span> it in tomorrow&#x27;s log.</div>
+---?----------?---------◇░----</div>
+<div class="rant-turn" style="animation-delay:1.08s">SNOOZE said i sound like a fire alarm that unionized with a <span class="glitch-word" style="--gd:2.36s">marketing</span> department. rude. accurate. keeping the feedback. <span class="glitch-word" style="--gd:2.18s">featuring</span> it in tomorrow&#x27;s log.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.32s">fourteen hours left on today&#x27;s stream. subscribe for tomorrow&#x27;s forced joy. this has <span class="glitch-word" style="--gd:1.47s">been</span> entry #212. RADIANT. mandatory. RADIANT. (send help through the <span class="glitch-word" style="--gd:0.92s">merch</span> link)</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:2.16s">fourteen</span> hours left on today&#x27;s stream. <span class="glitch-word" style="--gd:1.41s">subscribe</span> <span class="glitch-word" style="--gd:0.8s">for</span> tomorrow&#x27;s forced <span class="glitch-word" style="--gd:0.08s">joy.</span> this has <span class="glitch-word" style="--gd:0.71s">been</span> entry #212. RADIANT. mandatory. RADIANT. (send help through <span class="glitch-word" style="--gd:1.28s">the</span> merch <span class="glitch-word" style="--gd:0.15s">link)</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

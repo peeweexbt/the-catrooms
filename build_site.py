@@ -575,6 +575,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -1278,33 +1293,71 @@ CREATE_A_CAT_TEMPLATE = """<!doctype html>
 
   function randChoice(arr) {{ return arr[Math.floor(Math.random() * arr.length)]; }}
 
-  function generateCat() {{
+  function generateCatLines() {{
     var lines = [randChoice(EARS), randChoice(EYES), randChoice(MOUTHS)];
     var flavor = randChoice(FLAVOR);
     if (flavor) lines.push(flavor);
-    return lines.join("\\n");
+    return lines;
   }}
 
   var output = document.getElementById("catgen-output");
   var hint = document.getElementById("catgen-hint");
   var copyBtn = document.getElementById("catgen-copy");
+  var clearBtn = document.getElementById("catgen-clear");
+  var genBtn = document.getElementById("catgen-generate");
+  var genBtnLabel = genBtn.textContent;
+  var typing = false;
+
+  function setButtonsDisabled(disabled) {{
+    genBtn.disabled = disabled;
+    copyBtn.disabled = disabled;
+    clearBtn.disabled = disabled;
+  }}
+
+  function typeLines(lines, onDone) {{
+    var i = 0;
+    function step() {{
+      if (i >= lines.length) {{ onDone(); return; }}
+      var sep = output.value ? "\\n" : "";
+      output.value += sep + lines[i];
+      output.scrollTop = output.scrollHeight;
+      i++;
+      setTimeout(step, 55 + Math.random() * 90);
+    }}
+    step();
+  }}
 
   document.getElementById("catgen-generate").addEventListener("click", function() {{
+    if (typing) return;
+    typing = true;
+    setButtonsDisabled(true);
+    genBtn.innerHTML = "generating<span class=\\"catgen-cursor\\">&#9608;</span>";
+    hint.textContent = "connecting to the strays...";
+
     var n = 3 + Math.floor(Math.random() * 3);
-    var batch = [];
-    for (var i = 0; i < n; i++) {{ batch.push(generateCat()); }}
-    var addition = batch.join("\\n\\n");
-    output.value = output.value ? output.value + "\\n\\n" + addition : addition;
-    output.scrollTop = output.scrollHeight;
-    hint.textContent = "added " + n + " more — " + output.value.split(/\\n\\s*\\n/).length + " total so far";
+    var allLines = [];
+    for (var i = 0; i < n; i++) {{
+      if (i > 0) {{ allLines.push(""); }}
+      allLines = allLines.concat(generateCatLines());
+    }}
+
+    typeLines(allLines, function() {{
+      typing = false;
+      setButtonsDisabled(false);
+      genBtn.textContent = genBtnLabel;
+      var total = output.value.split(/\\n\\s*\\n/).length;
+      hint.textContent = "added " + n + " more — " + total + " total so far";
+    }});
   }});
 
   document.getElementById("catgen-clear").addEventListener("click", function() {{
+    if (typing) return;
     output.value = "";
     hint.textContent = "cleared";
   }});
 
   copyBtn.addEventListener("click", function() {{
+    if (typing) return;
     if (!output.value) {{ hint.textContent = "nothing to copy yet — hit generate first"; return; }}
     output.select();
     var done = function() {{

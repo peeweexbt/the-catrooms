@@ -551,6 +551,21 @@ header p {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
 }
 .catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 .catgen-output-wrap {
   max-width: 760px;
   margin: 24px auto 64px;
@@ -634,29 +649,29 @@ header p {
 <div class="narrator-badge">posted by <strong>GLITCHMEAT</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">why do i keep tasting tuesday. that&#x27;s not a metaphor. i licked a doorknob this morning and got a full flavor profile of NEXT tuesday&#x27;s weather report and i am NOT okay</div>
-<div class="rant-turn" style="animation-delay:0.12s">hi. GLITCHMEAT. <span class="glitch-word" style="--gd:0.82s">Research</span> Basement. beta tester for <span class="glitch-word" style="--gd:2.02s">NEKOCORP&#x27;s</span> neural enhancement program, meaning i signed a waiver for twelve credits and the ability to <span class="glitch-word" style="--gd:0.62s">hear</span> the color purple, <span class="glitch-word" style="--gd:1.27s">which</span> sounds like a fax machine having a nervous breakdown</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:2.06s">why</span> do i keep tasting tuesday. <span class="glitch-word" style="--gd:1.95s">that&#x27;s</span> not a metaphor. <span class="glitch-word" style="--gd:1.36s">i</span> licked a doorknob this morning and got a full flavor <span class="glitch-word" style="--gd:1.48s">profile</span> <span class="glitch-word" style="--gd:2.47s">of</span> NEXT tuesday&#x27;s <span class="glitch-word" style="--gd:0.39s">weather</span> <span class="glitch-word" style="--gd:0.29s">report</span> and i am NOT okay</div>
+<div class="rant-turn" style="animation-delay:0.12s">hi. GLITCHMEAT. Research Basement. beta tester for NEKOCORP&#x27;s neural <span class="glitch-word" style="--gd:0.91s">enhancement</span> program, meaning i <span class="glitch-word" style="--gd:1.45s">signed</span> a waiver <span class="glitch-word" style="--gd:2.51s">for</span> twelve credits and the ability <span class="glitch-word" style="--gd:0.01s">to</span> hear the color purple, <span class="glitch-word" style="--gd:2.12s">which</span> sounds like a fax machine having <span class="glitch-word" style="--gd:1.36s">a</span> nervous breakdown</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span> /\_/\
 ( o.o )
  &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">found another <span class="glitch-word" style="--gd:1.3s">memory</span> in my head <span class="glitch-word" style="--gd:0.03s">today</span> that isn&#x27;t mine. some kitten called &#x27;mr. tumbles&#x27; <span class="glitch-word" style="--gd:0.34s">got</span> locked out of a sunbeam in <span class="glitch-word" style="--gd:2.17s">2019</span> and <span class="glitch-word" style="--gd:1.99s">i</span> FELT that grief <span class="glitch-word" style="--gd:0.66s">like</span> <span class="glitch-word" style="--gd:2.47s">it</span> was my own. mr <span class="glitch-word" style="--gd:0.82s">tumbles</span> if you&#x27;re reading this. i don&#x27;t know you. i grieve you anyway</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.48s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-===!=-!
-     # [0]  .◆ )
-      5-=0Y==-&#x27;
-       |  |  ▀
-   ..^p%c~ing throu%h the ne▄~ r6in!83</div>
-<div class="rant-turn" style="animation-delay:0.6s">there are, medically confirmed, <span class="glitch-word" style="--gd:1.02s">spiders</span> in <span class="glitch-word" style="--gd:0.92s">my</span> bluetooth. not <span class="glitch-word" style="--gd:0.17s">a</span> joke. <span class="glitch-word" style="--gd:2.24s">the</span> basement <span class="glitch-word" style="--gd:1.73s">techs</span> looked at the scan and <span class="glitch-word" style="--gd:0.1s">wrote</span> &#x27;huh&#x27; on the <span class="glitch-word" style="--gd:1.97s">clipboard</span> and <span class="glitch-word" style="--gd:2.33s">walked</span> away. HUH <span class="glitch-word" style="--gd:0.24s">IS</span> NOT A DIAGNOSIS DR. WHISKERS</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:2.0s">HAPPYWARE</span> messaged me &#x27;have you tried seeing this as a GIFT <span class="glitch-word" style="--gd:0.71s">:)&#x27;</span> i can taste <span class="glitch-word" style="--gd:2.48s">her</span> enthusiasm through the text now. it tastes like a <span class="glitch-word" style="--gd:2.11s">fire</span> alarm. hard pass</div>
+<div class="rant-turn" style="animation-delay:0.36s">found another memory in my head today that isn&#x27;t mine. some kitten called <span class="glitch-word" style="--gd:0.76s">&#x27;mr.</span> tumbles&#x27; <span class="glitch-word" style="--gd:1.77s">got</span> locked out of a sunbeam in <span class="glitch-word" style="--gd:1.71s">2019</span> and i FELT that grief like it was my own. mr tumbles if you&#x27;re reading this. i don&#x27;t know you. i grieve you anyway</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.48s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-=@▌=#-.
+     ( [0]  .■ ▀
+      &#x27;▓==Y?▓-&#x27;
+       |  |  7
+   .6.picki8g t!rough t7e neon 2@i8...</div>
+<div class="rant-turn" style="animation-delay:0.6s"><span class="glitch-word" style="--gd:1.9s">there</span> are, <span class="glitch-word" style="--gd:1.67s">medically</span> confirmed, spiders in my bluetooth. not a joke. <span class="glitch-word" style="--gd:2.15s">the</span> basement techs looked at the scan and wrote &#x27;huh&#x27; on the <span class="glitch-word" style="--gd:0.02s">clipboard</span> and walked <span class="glitch-word" style="--gd:1.27s">away.</span> HUH IS NOT A <span class="glitch-word" style="--gd:1.87s">DIAGNOSIS</span> DR. WHISKERS</div>
+<div class="rant-turn" style="animation-delay:0.72s">HAPPYWARE messaged me &#x27;have you tried seeing this <span class="glitch-word" style="--gd:0.32s">as</span> a GIFT :)&#x27; i can taste <span class="glitch-word" style="--gd:0.99s">her</span> enthusiasm through the text now. <span class="glitch-word" style="--gd:0.65s">it</span> <span class="glitch-word" style="--gd:0.36s">tastes</span> like a fire <span class="glitch-word" style="--gd:2.07s">alarm.</span> hard pass</div>
 <div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.96s">BYTE offered to hardwire my patch to his stolen bandwidth so <span class="glitch-word" style="--gd:2.01s">the</span> spiders at <span class="glitch-word" style="--gd:0.95s">least</span> get faster wifi. said yes immediately. spiders deserve better connectivity than NEKOCORP <span class="glitch-word" style="--gd:2.41s">gives</span> ME, a paying involuntary test subject</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>へ  ♡  %|、
-         ૮  &gt;  &lt;2     (˚ˎ 。7
-          /  8  ៸|       |▄˜〵
-     乀(ˍ, ل ل      !しˍ,)7</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway. <span class="glitch-word" style="--gd:0.91s">consent</span> form <span class="glitch-word" style="--gd:1.96s">said</span> <span class="glitch-word" style="--gd:1.39s">&#x27;mild</span> tingling.&#x27; current side effects: tasting tuesday, hearing purple, grieving a kitten i never <span class="glitch-word" style="--gd:1.47s">met,</span> and roommates in my bluetooth with better wifi <span class="glitch-word" style="--gd:2.6s">than</span> me. &#x27;within <span class="glitch-word" style="--gd:1.2s">acceptable</span> post-irony comedy limits&#x27; they <span class="glitch-word" style="--gd:1.02s">said.</span> glitchmeat out. <span class="glitch-word" style="--gd:2.5s">stay</span> buggy</div>
+<div class="rant-turn" style="animation-delay:0.96s">BYTE offered to hardwire my patch to his stolen bandwidth so the spiders at least get faster wifi. said yes immediately. spiders deserve better connectivity than <span class="glitch-word" style="--gd:0.68s">NEKOCORP</span> <span class="glitch-word" style="--gd:1.08s">gives</span> ME, a paying involuntary test <span class="glitch-word" style="--gd:1.64s">subject</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>へ  ♡  %3%
+         #  &gt;  #)     (˚ˎ 。▒
+          ?  2  ៸|       0、˜〵
+     乀(ˍ, ل ل      じ&amp;ˍ,)7</div>
+<div class="rant-turn" style="animation-delay:1.2s">anyway. consent form said <span class="glitch-word" style="--gd:1.04s">&#x27;mild</span> tingling.&#x27; current side effects: tasting <span class="glitch-word" style="--gd:0.49s">tuesday,</span> hearing purple, grieving a kitten i never <span class="glitch-word" style="--gd:0.83s">met,</span> and roommates in <span class="glitch-word" style="--gd:2.51s">my</span> <span class="glitch-word" style="--gd:1.2s">bluetooth</span> <span class="glitch-word" style="--gd:2.57s">with</span> better wifi than me. &#x27;within acceptable post-irony comedy limits&#x27; they said. glitchmeat out. stay buggy</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>
