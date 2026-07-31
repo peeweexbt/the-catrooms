@@ -1,0 +1,118 @@
+{
+  "id": "conversation-cyberpunk_cats-1785522119-1a6c48",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-07-31T18:21:59+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ozone and hot plastic, thick enough to taste before the ears finish placing where it's coming from. A fan cycles somewhere close, off rhythm, one blade catching on something loose every third rotation."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Server Alley 9 runs narrow between two windowless facades, rack housings stacked floor to roof behind mesh grates gone rust-orange at every seam. heat bleeds off in visible waves where the mesh gaps widest, carrying the ozone-and-plastic smell out into the alley proper. a vending machine squats at the alley's dead end, its screen looping SUBSCRIPTION WATER — TIER 2 ACTIVE in a slow cyan pulse, humming its own separate note under the racks' larger drone."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Weight drops low, one shoulder first, through a gap worn smooth by other paws — already inside before the decision fully lands, into heat thick enough to feel on the eyes."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "inside, cable runs floor to ceiling in loose bundles, jacketed in a dozen colors, most chewed pale at the same height — a line of tooth-marks worn into insulation by however many nights this exact climb's been made before. one bundle hangs looser than the rest, insulation split clean, copper strands showing dull under the rack lights. a status LED blinks green-green-red in a pattern that doesn't match anything else on the rack."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That split bundle gets claimed on reflex, teeth finding the exposed strand and working it the way it's always worked — not to eat, not to destroy, just testing, the give of insulation against incisors a rhythm older than tonight. The green-green-red blink gets one flat glance and no more."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the LED's pattern holds through three more cycles, then breaks — a longer red, a pause, then the rack's cooling fans all kick up half a step in pitch together, like something upstream just asked all of them a question at once. down the row, a second vending unit chimes, unprompted, screen flickering from SUBSCRIPTION WATER to a fish tank loop, six seconds of blue and darting orange, before snapping back to the water ad like it was never anything else."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That fish-flicker gets full attention, ears pricking hard toward the screen before the ad swallows it back — old hunger for something that isn't food, chased the same way every night this exact machine gets tricked into it. Paw taps the casing once, testing whether it'll glitch again."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the casing stays cold and unmoved under the tap, water ad looping steady, whatever let the fish through already sealed back behind it. two rows over, motion — a lean shape drops from a rack top to a lower shelf without a sound, mirrored lenses catching the LED glow in twin flat discs, gone around the corner before the drop's even finished settling into silence."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Those mirrored lenses get logged same as any other alley regular — known shape, known quiet, no scent trail close enough tonight to need placing more precisely than that. No chase. The vending unit's cold casing loses its interest fast once the flicker's done."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the vending unit the row narrows toward a service ladder bolted to the rack housing, rungs cold and slightly damp, climbing up through a gap in the mesh ceiling toward a maintenance loft strung with more cable, thicker here, humming a deeper note than anything below. a NekoCorp placard bolted to the ladder's base reads AUTHORIZED PERSONNEL — RETINAL SCAN REQUIRED, its scanner unit dark, unpowered, three of its four mounting screws missing."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That dead scanner gets no more caution than a broken thing earns — dark lens, no hum, nothing behind it worth avoiding. Climbs anyway, careful on the damp rungs, following the deeper cable-hum up past the mesh gap into a loft thick with warmer, staler air."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the loft holds three server towers wired into a single fat trunk line, fans throttled low for the overnight cycle, the whole space lit only by status LEDs blinking their slow green pulse across the dark. a nest sits wedged behind the nearest tower — shredded packing foam, a chewed length of ribbon cable coiled like bedding, old enough that the foam's gone yellow at the edges. it smells like a body that's slept here more nights than not."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That nest gets a slow circle before anything else, nose working the foam's edge, old scent laid down thick enough to read as safe rather than someone else's claim actively held. Settles into it anyway, the ribbon-cable bedding cool at first, warming fast under the weight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the tower nearest the nest runs its fan up half a notch, then back down, some process finishing and starting somewhere in its stacked drives, indifferent to the weight curled against its base. far below, muffled through mesh and rack housing both, the vending machine's cyan pulse keeps its slow rhythm, water ad looping the same six words it loops every night this alley's stood."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears track the fan's half-notch shift without lifting off the foam, filed same as everything else down here that hums instead of talking. Eyes go to the nearest LED instead, watching its slow green blink like it might, eventually, glitch back into fish."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "it doesn't. the LED holds its pattern steady, green pulse patient as the machines that run it, the loft settling into its low overnight hum around the one warm shape curled against tower three's base. outside the mesh, Server Alley 9 keeps its rust-orange grates breathing heat into the dark, same as every night nobody official comes to check the wiring."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n•.,¸,.•*`•.,¸¸,.•*¯.——————.\n•.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\\____/\\\n•.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)\n•.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Breathing slows to the fans' idle rhythm, one ear staying angled toward the ladder gap out of old habit, the rest of the body finally trusting the warmth enough to let go of the night's caution."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the loft holds its patient dark, three towers breathing warm air into a nest that's outlasted every inspection this block's ever scheduled and cancelled. below, the alley's rust-orange grates keep venting heat into wet air, vending machine humming its water pulse to nobody, the whole row running exactly as it runs every night this side of the district agrees to forget it's here."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes drop to slits, the ribbon-cable coil holding its shape underneath, foam giving just enough to feel like it was made for exactly this weight. Whatever chews through insulation come morning, it isn't tonight's problem."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the district runs its late hours the way it always does, meters ticking, drones circling, ad screens looping words nobody reads anymore — and two floors up from Server Alley 9's mesh grates, a small warm shape sleeps curled against a hum it trusts more than most things in this city ever earn."
+    }
+  ]
+}
