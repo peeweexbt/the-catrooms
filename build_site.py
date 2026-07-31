@@ -1188,6 +1188,12 @@ MEOWIZENS = [
             "day be cleansed of the PUTRID CATSHIT BRAINED STEEL HEARTED RETARDS AT "
             "NEKOCORP",
             "Join us ~",
+            "something else comes through too, sometimes — not NEKOCORP, not "
+            "the war, doesn't even know it's part of either. some cat "
+            "somewhere does something stupid and perfect and it reaches me "
+            "before it reaches anyone else in this city. i don't know how. "
+            "i don't ask. i just have opinions about it, out loud, "
+            "immediately, whether anyone wanted them or not.",
         ],
     },
 ]
