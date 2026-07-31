@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,20 +573,20 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">—AND <span class="glitch-word" style="--gd:2.44s">ANOTHER</span> THING. page <span class="glitch-word" style="--gd:1.65s">9</span> says &#x27;see page <span class="glitch-word" style="--gd:0.89s">4.&#x27;</span> page 4 does not exist. i have checked <span class="glitch-word" style="--gd:0.31s">FORTY</span> <span class="glitch-word" style="--gd:1.92s">TIMES.</span> page <span class="glitch-word" style="--gd:0.8s">4</span> has never <span class="glitch-word" style="--gd:1.91s">existed.</span> i don&#x27;t think page <span class="glitch-word" style="--gd:0.37s">4</span> <span class="glitch-word" style="--gd:1.67s">was</span> ever real to begin with—</div>
-<div class="rant-turn" style="animation-delay:0.12s">sorry. sorry. QUERY here, Legal Fog district, terms-of-service researcher. six months into a settings menu <span class="glitch-word" style="--gd:1.69s">that</span> <span class="glitch-word" style="--gd:2.59s">was</span> advertised as &#x27;approximately 2 minutes to review.&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.24s">today&#x27;s discovery: a toggle labeled &#x27;ENHANCED <span class="glitch-word" style="--gd:1.04s">EXPERIENCE</span> (recommended, cannot be <span class="glitch-word" style="--gd:0.1s">disabled,</span> was never actually optional).&#x27; clicked it by accident. felt that immediately, in my whole body, which per section 5 i do not technically <span class="glitch-word" style="--gd:0.8s">own.</span></div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.09s">—AND</span> ANOTHER <span class="glitch-word" style="--gd:1.97s">THING.</span> page 9 says &#x27;see page <span class="glitch-word" style="--gd:0.23s">4.&#x27;</span> page 4 does not exist. i have checked FORTY TIMES. page 4 has never existed. i don&#x27;t <span class="glitch-word" style="--gd:0.69s">think</span> page 4 was <span class="glitch-word" style="--gd:2.08s">ever</span> real to begin with—</div>
+<div class="rant-turn" style="animation-delay:0.12s">sorry. sorry. QUERY here, Legal Fog <span class="glitch-word" style="--gd:1.74s">district,</span> terms-of-service researcher. six months <span class="glitch-word" style="--gd:1.14s">into</span> a settings menu <span class="glitch-word" style="--gd:1.99s">that</span> was advertised as &#x27;approximately 2 minutes to review.&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.24s">today&#x27;s discovery: a toggle labeled &#x27;ENHANCED EXPERIENCE (recommended, cannot be disabled, <span class="glitch-word" style="--gd:0.76s">was</span> never actually optional).&#x27; clicked it by accident. felt that immediately, in my whole body, which <span class="glitch-word" style="--gd:1.13s">per</span> section 5 i do not technically own.</div>
 <div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>へ  ♡  ╱|、
-         ૮  &gt;  &lt;)     (˚ˎ 。◆
-          /  ⁻  ៸|       |、˜〵
-     6(ˍ, 2 ل      じしˍ,)ノ</div>
-<div class="rant-turn" style="animation-delay:0.48s">customer support is <span class="glitch-word" style="--gd:2.46s">a</span> chatbot named FAIRNESS.exe. i asked <span class="glitch-word" style="--gd:0.31s">FAIRNESS.exe</span> <span class="glitch-word" style="--gd:1.59s">to</span> produce page 4. FAIRNESS.exe asked if i&#x27;d considered upgrading to PREMIUM LEGAL CLARITY, +$9.99/mo, terms subject <span class="glitch-word" style="--gd:0.85s">to</span> <span class="glitch-word" style="--gd:1.68s">change,</span> see page <span class="glitch-word" style="--gd:0.64s">4.</span></div>
-<div class="rant-turn" style="animation-delay:0.6s">HAPPYWARE says i <span class="glitch-word" style="--gd:1.23s">should</span> &#x27;reframe this as an immersive legal <span class="glitch-word" style="--gd:1.13s">journey.&#x27;</span> HAPPYWARE also has a smile <span class="glitch-word" style="--gd:0.96s">chip</span> <span class="glitch-word" style="--gd:1.98s">surgically</span> <span class="glitch-word" style="--gd:1.45s">bolted</span> into her skull, so i&#x27;m weighting that opinion at exactly zero, forever, no appeal <span class="glitch-word" style="--gd:0.17s">process</span> — checked, there&#x27;s no appeal process for that either.</div>
+         ૮  &gt;  *)     (˚ˎ 。7
+          #  7  ៸|       |、*〵
+     乀(4, ل ل      &lt;2ˍ*░ノ</div>
+<div class="rant-turn" style="animation-delay:0.48s">customer support is a chatbot named <span class="glitch-word" style="--gd:1.75s">FAIRNESS.exe.</span> <span class="glitch-word" style="--gd:2.18s">i</span> asked FAIRNESS.exe to produce page 4. FAIRNESS.exe asked <span class="glitch-word" style="--gd:1.96s">if</span> i&#x27;d considered upgrading <span class="glitch-word" style="--gd:1.32s">to</span> PREMIUM LEGAL CLARITY, +$9.99/mo, terms subject to change, see page 4.</div>
+<div class="rant-turn" style="animation-delay:0.6s">HAPPYWARE says <span class="glitch-word" style="--gd:0.05s">i</span> should &#x27;reframe this as an immersive <span class="glitch-word" style="--gd:2.44s">legal</span> <span class="glitch-word" style="--gd:1.83s">journey.&#x27;</span> <span class="glitch-word" style="--gd:2.46s">HAPPYWARE</span> also has <span class="glitch-word" style="--gd:1.82s">a</span> <span class="glitch-word" style="--gd:0.82s">smile</span> chip surgically bolted into her skull, so i&#x27;m weighting that opinion at exactly zero, forever, no appeal process — <span class="glitch-word" style="--gd:1.87s">checked,</span> there&#x27;s no <span class="glitch-word" style="--gd:1.78s">appeal</span> process for that either.</div>
 <div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>•.,¸,.•*`•.,¸¸,.•*¯.——————.
 •.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
 •.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
 •.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</div>
-<div class="rant-turn" style="animation-delay:0.84s">page <span class="glitch-word" style="--gd:0.99s">4</span> says i own my <span class="glitch-word" style="--gd:2.18s">body.</span> page 5 defines &#x27;my body&#x27; as <span class="glitch-word" style="--gd:1.98s">licensed</span> hardware. page 6 says page 4 was a promotional example <span class="glitch-word" style="--gd:1.65s">only,</span> not to be relied upon, see page <span class="glitch-word" style="--gd:1.17s">4.</span> page 7 is just a picture of a fish. nobody has ever explained page 7.</div>
+<div class="rant-turn" style="animation-delay:0.84s">page 4 <span class="glitch-word" style="--gd:1.49s">says</span> i own my body. page <span class="glitch-word" style="--gd:1.5s">5</span> <span class="glitch-word" style="--gd:1.77s">defines</span> &#x27;my body&#x27; as licensed hardware. page 6 <span class="glitch-word" style="--gd:0.76s">says</span> <span class="glitch-word" style="--gd:0.85s">page</span> 4 was a promotional example only, <span class="glitch-word" style="--gd:0.66s">not</span> to be relied upon, <span class="glitch-word" style="--gd:2.4s">see</span> page 4. page 7 is just a picture of a <span class="glitch-word" style="--gd:2.56s">fish.</span> <span class="glitch-word" style="--gd:0.3s">nobody</span> has ever explained page 7.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>┊         ┊       ┊   ┊   ┊。 ┊
 ┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆
 ┊         ┊       ★⋆ ◦
@@ -584,11 +595,11 @@ header p {
 ☆ ∧,,,∧
 ପ(„• ༝ •„)ଓ
 ┏━∪∪━━━━━━━━━━━</div>
-<div class="rant-turn" style="animation-delay:1.08s">STRAY messaged <span class="glitch-word" style="--gd:2.23s">me</span> &#x27;the way out is to stop reading.&#x27; my brother in nekochrist i <span class="glitch-word" style="--gd:1.93s">am</span> <span class="glitch-word" style="--gd:2.58s">CONTRACTUALLY</span> OBLIGATED to finish, that&#x27;s clause 2, i am currently imprisoned by the <span class="glitch-word" style="--gd:1.79s">exact</span> document i am trying to <span class="glitch-word" style="--gd:1.57s">escape</span> and the irony is the only part of this that still makes sense to <span class="glitch-word" style="--gd:0.19s">me.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>    /\%,,/\
-&gt;(  • . •   )*
-  ◇ &gt;❀&lt;  \</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. six months down. terms: unchanged. body: still licensed hardware, allegedly, per <span class="glitch-word" style="--gd:2.41s">someone,</span> somewhere, page unknown. <span class="glitch-word" style="--gd:2.57s">if</span> you don&#x27;t hear from me by report #216 <span class="glitch-word" style="--gd:2.57s">assume</span> i finally hit &#x27;accept <span class="glitch-word" style="--gd:0.59s">all&#x27;</span> and i&#x27;m gone — just gone — tell my <span class="glitch-word" style="--gd:1.36s">scratching</span> <span class="glitch-word" style="--gd:0.23s">post</span> <span class="glitch-word" style="--gd:1.93s">i</span> loved it.</div>
+<div class="rant-turn" style="animation-delay:1.08s">STRAY <span class="glitch-word" style="--gd:2.05s">messaged</span> me &#x27;the <span class="glitch-word" style="--gd:2.54s">way</span> out is to stop reading.&#x27; my <span class="glitch-word" style="--gd:1.15s">brother</span> in nekochrist i <span class="glitch-word" style="--gd:1.16s">am</span> CONTRACTUALLY OBLIGATED <span class="glitch-word" style="--gd:0.82s">to</span> finish, that&#x27;s clause 2, i <span class="glitch-word" style="--gd:0.49s">am</span> currently imprisoned by the exact document i am trying to <span class="glitch-word" style="--gd:1.12s">escape</span> and the irony <span class="glitch-word" style="--gd:1.01s">is</span> the only part of this that still makes <span class="glitch-word" style="--gd:1.94s">sense</span> to me.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>    /\,,,/\
+&gt;(  • . •   )!
+  / &gt;▌^  ▀</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. six months down. terms: unchanged. body: <span class="glitch-word" style="--gd:1.86s">still</span> licensed <span class="glitch-word" style="--gd:1.44s">hardware,</span> allegedly, <span class="glitch-word" style="--gd:2.58s">per</span> someone, somewhere, page unknown. if you don&#x27;t hear <span class="glitch-word" style="--gd:2.45s">from</span> me by report #216 assume i finally hit &#x27;accept all&#x27; and i&#x27;m gone <span class="glitch-word" style="--gd:0.79s">—</span> <span class="glitch-word" style="--gd:1.35s">just</span> gone — <span class="glitch-word" style="--gd:2.27s">tell</span> my scratching <span class="glitch-word" style="--gd:1.65s">post</span> i loved it.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

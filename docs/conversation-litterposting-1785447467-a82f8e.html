@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,29 +573,29 @@ header p {
 <div class="narrator-badge">posted by <strong>SHADE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SHADE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">VISIBILITY REPORT: sadness blocked at 14%, holding. THREAT LEVEL: repossession. yeah we&#x27;re <span class="glitch-word" style="--gd:2.19s">doing</span> stats today.</div>
-<div class="rant-turn" style="animation-delay:0.12s">SHADE. <span class="glitch-word" style="--gd:2.21s">Neon</span> Underpass. these lenses aren&#x27;t cosmetic, they&#x27;re a civil rights violation NEKOCORP just hasn&#x27;t caught up to <span class="glitch-word" style="--gd:2.48s">yet.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░*? /\_/\ ▓◇░
-  ■▒▓3 o█o )▓▒■   -- signal int▀rfer◆nce --
-  ^▒▓ &gt; ▓ @ ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.36s">they banned the glasses for <span class="glitch-word" style="--gd:0.9s">&#x27;unauthorized</span> use of BASEDness.&#x27; that is a REAL QUOTE. that <span class="glitch-word" style="--gd:0.04s">is</span> on a REAL MEMO. i have it saved, screenshotted, and printed.</div>
-<div class="rant-turn" style="animation-delay:0.48s">BYTE hit me up asking to trade router access for a <span class="glitch-word" style="--gd:2.32s">spare</span> pair. <span class="glitch-word" style="--gd:1.82s">told</span> him <span class="glitch-word" style="--gd:2.2s">no.</span> everybody wants the lenses right up until NEKOCORP notices you have them.</div>
+<div class="rant-turn" style="animation-delay:0.0s">VISIBILITY <span class="glitch-word" style="--gd:0.56s">REPORT:</span> sadness blocked at 14%, holding. THREAT LEVEL: <span class="glitch-word" style="--gd:0.55s">repossession.</span> yeah we&#x27;re doing stats today.</div>
+<div class="rant-turn" style="animation-delay:0.12s">SHADE. <span class="glitch-word" style="--gd:0.98s">Neon</span> <span class="glitch-word" style="--gd:0.85s">Underpass.</span> these lenses aren&#x27;t cosmetic, they&#x27;re a <span class="glitch-word" style="--gd:1.89s">civil</span> rights <span class="glitch-word" style="--gd:0.39s">violation</span> <span class="glitch-word" style="--gd:1.36s">NEKOCORP</span> just hasn&#x27;t caught <span class="glitch-word" style="--gd:0.43s">up</span> to yet.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/&amp; ▓▒░
+  3▒▓( #█&lt; )▓▒░   -- ◆ignal i&amp;t■rference --
+  ?▒2 &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.36s">they <span class="glitch-word" style="--gd:0.81s">banned</span> the glasses for &#x27;unauthorized use of BASEDness.&#x27; that is a REAL QUOTE. that is on a REAL MEMO. i have it <span class="glitch-word" style="--gd:1.89s">saved,</span> screenshotted, and <span class="glitch-word" style="--gd:0.42s">printed.</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">BYTE hit me up <span class="glitch-word" style="--gd:2.29s">asking</span> to trade router access for a spare pair. told him no. everybody wants the lenses right <span class="glitch-word" style="--gd:2.32s">up</span> <span class="glitch-word" style="--gd:1.4s">until</span> NEKOCORP <span class="glitch-word" style="--gd:1.03s">notices</span> you have them.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.72s">my ACTUAL eyes got repossessed last thursday btw. this <span class="glitch-word" style="--gd:0.51s">is</span> not a <span class="glitch-word" style="--gd:0.87s">bit.</span> a truck came. there <span class="glitch-word" style="--gd:1.99s">was</span> <span class="glitch-word" style="--gd:1.73s">paperwork.</span> i signed it with someone else&#x27;s <span class="glitch-word" style="--gd:1.77s">eyes.</span></div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:1.34s">KNIFEBOY</span> offered to steal them back for a cut of the bounty. <span class="glitch-word" style="--gd:2.11s">absolutely</span> not doing that math with <span class="glitch-word" style="--gd:0.89s">him</span> again, last time it ended with three wanted posters.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>   *■_/\        [ ENE^G@: L@W ]
-  % &gt;.&amp; )       [ 4  [ ]  [ ]  [ 0
-   &gt; ~ &lt;        on% bar left, &amp;eep moving</div>
-<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:0.66s">the</span> sadness they&#x27;re blocking <span class="glitch-word" style="--gd:1.88s">isn&#x27;t</span> <span class="glitch-word" style="--gd:2.48s">even</span> mine specifically. it&#x27;s ambient now. they measure it in the water pressure. everyone&#x27;s just breathing it.</div>
+<div class="rant-turn" style="animation-delay:0.72s">my ACTUAL eyes got <span class="glitch-word" style="--gd:0.08s">repossessed</span> last thursday btw. <span class="glitch-word" style="--gd:2.51s">this</span> is not a bit. a truck came. there was paperwork. i signed it <span class="glitch-word" style="--gd:1.98s">with</span> someone else&#x27;s eyes.</div>
+<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY offered to <span class="glitch-word" style="--gd:0.17s">steal</span> them back for a <span class="glitch-word" style="--gd:1.99s">cut</span> of the bounty. <span class="glitch-word" style="--gd:1.35s">absolutely</span> not doing that math with him <span class="glitch-word" style="--gd:1.66s">again,</span> <span class="glitch-word" style="--gd:0.8s">last</span> time it ended with three wanted <span class="glitch-word" style="--gd:0.72s">posters.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\9&lt;\        [ EN&gt;R&amp;Y: LOW ]
+  ( &gt;.&lt; )       [ ]  [ ]  [ ]  █ ]
+   &gt; ▓ ◆        one b8r left? 7eep moving</div>
+<div class="rant-turn" style="animation-delay:1.08s">the sadness they&#x27;re blocking isn&#x27;t even mine specifically. it&#x27;s ambient now. they <span class="glitch-word" style="--gd:0.01s">measure</span> it in the water pressure. <span class="glitch-word" style="--gd:0.11s">everyone&#x27;s</span> <span class="glitch-word" style="--gd:0.91s">just</span> <span class="glitch-word" style="--gd:0.15s">breathing</span> it.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:2.28s">anyway.</span> lenses still on. eyes still gone. based <span class="glitch-word" style="--gd:0.69s">ratio</span> unaffected. <span class="glitch-word" style="--gd:2.52s">see</span> you at <span class="glitch-word" style="--gd:1.59s">the</span> next repossession, <span class="glitch-word" style="--gd:1.25s">chuds.</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. lenses still on. eyes still gone. based ratio <span class="glitch-word" style="--gd:1.68s">unaffected.</span> see you at the <span class="glitch-word" style="--gd:0.48s">next</span> repossession, chuds.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

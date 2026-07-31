@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,23 +573,23 @@ header p {
 <div class="narrator-badge">posted by <strong>GLITCHMEAT</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">the spiders are not new. the spiders have always been <span class="glitch-word" style="--gd:2.44s">there.</span> i just <span class="glitch-word" style="--gd:1.22s">didn&#x27;t</span> have the receptors to feel them until Tuesday.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s GLITCHMEAT. <span class="glitch-word" style="--gd:1.58s">Research</span> Basement, beta tester #7, unit currently <span class="glitch-word" style="--gd:0.84s">running</span> <span class="glitch-word" style="--gd:2.05s">on</span> someone else&#x27;s warranty. NEKOCORP paid me twelve (12) whole credits to test a neural patch <span class="glitch-word" style="--gd:1.46s">and</span> folks, i would like a refund on my own skull.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /%_/3 56░
-  ░▒▓( 5█! )▓▒░   !■ si▓nal i█te▓ference --
-  ░#▓ 5 ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.36s">side effect log, day 9: i can taste radio signals now. classic rock tastes like a scraped knee. jazz tastes like being forgiven for something i didn&#x27;t do. i did not ask for this palate.</div>
-<div class="rant-turn" style="animation-delay:0.48s">side effect log, day 9 cont&#x27;d: i also apparently remember three separate kittenhoods that are not mine. one of them had a GOOD childhood. i&#x27;m SEETHING on behalf of a stranger who will never know.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.67s">the</span> spiders are not new. the <span class="glitch-word" style="--gd:1.51s">spiders</span> have always been there. i just didn&#x27;t <span class="glitch-word" style="--gd:0.1s">have</span> the receptors to feel them until Tuesday.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:2.04s">name&#x27;s</span> GLITCHMEAT. Research <span class="glitch-word" style="--gd:1.16s">Basement,</span> beta tester #7, unit currently running on someone else&#x27;s warranty. NEKOCORP paid me twelve (12) whole credits to test a neural patch and <span class="glitch-word" style="--gd:1.26s">folks,</span> <span class="glitch-word" style="--gd:0.22s">i</span> would like a refund <span class="glitch-word" style="--gd:0.63s">on</span> my own skull.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░&gt;▓ /\_/@ ▓▒░
+  7▒9&amp; o8o ▓▓▒░   -- ◆▀gnal █nte█ference --
+  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.36s">side effect log, day 9: i can taste radio signals now. classic rock tastes like a scraped <span class="glitch-word" style="--gd:0.55s">knee.</span> jazz tastes like being forgiven for something i <span class="glitch-word" style="--gd:2.17s">didn&#x27;t</span> do. i did not ask <span class="glitch-word" style="--gd:1.23s">for</span> this palate.</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.85s">side</span> effect log, <span class="glitch-word" style="--gd:0.88s">day</span> 9 cont&#x27;d: <span class="glitch-word" style="--gd:0.62s">i</span> also apparently remember three separate <span class="glitch-word" style="--gd:1.92s">kittenhoods</span> that are not mine. one of them had a <span class="glitch-word" style="--gd:1.51s">GOOD</span> childhood. i&#x27;m SEETHING <span class="glitch-word" style="--gd:1.97s">on</span> <span class="glitch-word" style="--gd:1.6s">behalf</span> of a stranger who will never know.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:0.72s">texted SNOOZE at 2am like &quot;hey do <span class="glitch-word" style="--gd:0.32s">dreams</span> you <span class="glitch-word" style="--gd:0.19s">didn&#x27;t</span> personally have still count against your <span class="glitch-word" style="--gd:0.24s">sleep</span> debt&quot; and she <span class="glitch-word" style="--gd:0.55s">billed</span> me $6 just to bounce the question back to me. professional. <span class="glitch-word" style="--gd:2.44s">hostile.</span> professional.</div>
-<div class="rant-turn" style="animation-delay:0.84s">QUERY says at <span class="glitch-word" style="--gd:0.6s">least</span> <span class="glitch-word" style="--gd:2.15s">i</span> chose my malfunction. <span class="glitch-word" style="--gd:2.07s">QUERY</span> buddy you are still on page six of a <span class="glitch-word" style="--gd:1.04s">Terms</span> of Service from March, we are not the same <span class="glitch-word" style="--gd:1.35s">category</span> of <span class="glitch-word" style="--gd:1.45s">lost,</span> but i do respect the commitment.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\▄5\!*
-    (  O   O  )
-     \  ^Y^  3
-      )==4==(      -- e6rs up, rotor in79▀i▀g 4-</div>
-<div class="rant-turn" style="animation-delay:1.08s">the scientists called the side effects &quot;within acceptable post-irony based comedy limits.&quot; that is <span class="glitch-word" style="--gd:1.67s">not</span> <span class="glitch-word" style="--gd:0.66s">a</span> diagnosis. that is a marketing department <span class="glitch-word" style="--gd:0.21s">cosplaying</span> as a diagnosis <span class="glitch-word" style="--gd:0.58s">and</span> getting <span class="glitch-word" style="--gd:1.7s">away</span> with it.</div>
+<div class="rant-turn" style="animation-delay:0.72s">texted SNOOZE at 2am <span class="glitch-word" style="--gd:0.11s">like</span> &quot;hey do dreams <span class="glitch-word" style="--gd:2.28s">you</span> didn&#x27;t personally <span class="glitch-word" style="--gd:1.2s">have</span> still count against your sleep debt&quot; and she billed me <span class="glitch-word" style="--gd:1.9s">$6</span> just <span class="glitch-word" style="--gd:1.21s">to</span> bounce the question back to me. <span class="glitch-word" style="--gd:2.25s">professional.</span> hostile. professional.</div>
+<div class="rant-turn" style="animation-delay:0.84s">QUERY says at least i chose my malfunction. <span class="glitch-word" style="--gd:1.5s">QUERY</span> buddy you are still on page six of <span class="glitch-word" style="--gd:0.97s">a</span> Terms of <span class="glitch-word" style="--gd:0.51s">Service</span> from March, we are not the same category of <span class="glitch-word" style="--gd:0.08s">lost,</span> but i do respect the commitment.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\■/\/◇
+    (  O   5  )
+     \  ▓Y▓  /
+      )7%===(      -&amp; ears !p, ro0or incoming -&gt;</div>
+<div class="rant-turn" style="animation-delay:1.08s">the scientists called the side effects &quot;within acceptable post-irony based comedy limits.&quot; that is not a diagnosis. that is <span class="glitch-word" style="--gd:1.25s">a</span> marketing department cosplaying as <span class="glitch-word" style="--gd:1.24s">a</span> diagnosis and getting away with it.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -586,7 +597,7 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway there&#x27;s a spider in <span class="glitch-word" style="--gd:2.52s">my</span> bluetooth again and it&#x27;s replaying someone <span class="glitch-word" style="--gd:0.23s">else&#x27;s</span> <span class="glitch-word" style="--gd:0.2s">memory</span> of a sunbeam on loop. it&#x27;s actually <span class="glitch-word" style="--gd:2.07s">kind</span> of nice in here. don&#x27;t tell the scientists that <span class="glitch-word" style="--gd:2.21s">part.</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway there&#x27;s a spider in <span class="glitch-word" style="--gd:0.88s">my</span> bluetooth again and it&#x27;s replaying <span class="glitch-word" style="--gd:1.75s">someone</span> else&#x27;s memory of a sunbeam on loop. it&#x27;s actually kind of nice in here. don&#x27;t tell the scientists that <span class="glitch-word" style="--gd:1.98s">part.</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

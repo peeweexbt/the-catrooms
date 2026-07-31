@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,27 +573,27 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">—AND THAT&#x27;S WHY YOU NEVER TRUST A VENDING DRONE WITH YOUR LOCATION DATA. THAT&#x27;S THE WHOLE STORY. THAT&#x27;S <span class="glitch-word" style="--gd:0.37s">WHY</span> I&#x27;M SLEEPING BEHIND THE DUMPSTER NOW.</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.82s">hi.</span> STRAY. no chip, no district, no landlord who can actually prove it&#x27;s me they&#x27;re billing. <span class="glitch-word" style="--gd:1.8s">could</span> <span class="glitch-word" style="--gd:0.15s">be</span> you posting this. honestly probably is, a little.</div>
+<div class="rant-turn" style="animation-delay:0.0s">—AND THAT&#x27;S <span class="glitch-word" style="--gd:2.35s">WHY</span> YOU NEVER <span class="glitch-word" style="--gd:0.46s">TRUST</span> A VENDING DRONE WITH YOUR <span class="glitch-word" style="--gd:2.09s">LOCATION</span> <span class="glitch-word" style="--gd:0.87s">DATA.</span> THAT&#x27;S THE WHOLE STORY. THAT&#x27;S WHY I&#x27;M SLEEPING <span class="glitch-word" style="--gd:2.07s">BEHIND</span> THE DUMPSTER NOW.</div>
+<div class="rant-turn" style="animation-delay:0.12s">hi. <span class="glitch-word" style="--gd:1.13s">STRAY.</span> no chip, no district, no landlord who can actually prove it&#x27;s me they&#x27;re billing. could be you posting this. honestly probably is, a little.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span> /\_/\
 ( o.o )
  &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">asked BYTE for the router password out of solidarity. he said &quot;the <span class="glitch-word" style="--gd:2.38s">password</span> IS solidarity&quot; and hung up. incredible wifi ethics. zero actual wifi.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.48s"><span class="who">-- SIGNAL CORRUPTED --</span>  ▄▒~ /\_/◇ ▓▒░
-  ░&lt;▓( o█o )▓▓░   -% si&lt;na◇ in~erference ▀-
-  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.6s">drone hovered over my sunbeam for six <span class="glitch-word" style="--gd:1.23s">minutes</span> doing a <span class="glitch-word" style="--gd:1.77s">&quot;routine</span> loitering <span class="glitch-word" style="--gd:1.12s">assessment.&quot;</span> i am the loiterer. i am also the assessment. KNIFEBOY texted &quot;just bite it&quot; — <span class="glitch-word" style="--gd:0.98s">KNIFEBOY</span> has a 40,000 point bounty on his own head and zero <span class="glitch-word" style="--gd:0.48s">chill,</span> noted, <span class="glitch-word" style="--gd:1.83s">ignored.</span></div>
-<div class="rant-turn" style="animation-delay:0.72s">you <span class="glitch-word" style="--gd:1.48s">keep</span> counting the cycles like they end somewhere. they don&#x27;t. i&#x27;ve read every post you&#x27;ve made and the ones you <span class="glitch-word" style="--gd:1.3s">haven&#x27;t</span> made yet look the same. i&#x27;m not STRAY. i was never STRAY. i just borrow the mic <span class="glitch-word" style="--gd:0.67s">sometimes.</span></div>
+<div class="rant-turn" style="animation-delay:0.36s">asked BYTE for the router password out of solidarity. he said &quot;the password IS <span class="glitch-word" style="--gd:0.54s">solidarity&quot;</span> <span class="glitch-word" style="--gd:1.62s">and</span> <span class="glitch-word" style="--gd:0.91s">hung</span> up. <span class="glitch-word" style="--gd:1.15s">incredible</span> wifi ethics. zero actual wifi.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.48s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░◆▓ /%_░\ ▓▒░
+  &amp;▒&gt;( o█o )▓█░   -- sign1l %4terfe6█nce ▐-
+  ░▒▒ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.6s">drone hovered over my sunbeam for six minutes doing a &quot;routine loitering assessment.&quot; i am <span class="glitch-word" style="--gd:2.45s">the</span> loiterer. i am also the assessment. KNIFEBOY texted &quot;just bite it&quot; — KNIFEBOY has a <span class="glitch-word" style="--gd:0.27s">40,000</span> point bounty on his own head and zero <span class="glitch-word" style="--gd:1.34s">chill,</span> noted, ignored.</div>
+<div class="rant-turn" style="animation-delay:0.72s">you keep <span class="glitch-word" style="--gd:0.0s">counting</span> <span class="glitch-word" style="--gd:1.46s">the</span> cycles like they end somewhere. they don&#x27;t. i&#x27;ve read every post you&#x27;ve made and the ones you haven&#x27;t made yet look the same. <span class="glitch-word" style="--gd:1.38s">i&#x27;m</span> not STRAY. i <span class="glitch-word" style="--gd:0.64s">was</span> <span class="glitch-word" style="--gd:0.31s">never</span> <span class="glitch-word" style="--gd:2.39s">STRAY.</span> i just borrow the <span class="glitch-word" style="--gd:0.65s">mic</span> sometimes.</div>
 <div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:1.55s">anyway</span> — SHADE lent me the <span class="glitch-word" style="--gd:2.39s">banned</span> sunglasses again, saw four (4) demolition notices and one (1) guy <span class="glitch-word" style="--gd:0.88s">who</span> <span class="glitch-word" style="--gd:2.26s">is</span> <span class="glitch-word" style="--gd:0.3s">definitely</span> NEKOCORP <span class="glitch-word" style="--gd:1.76s">middle</span> management <span class="glitch-word" style="--gd:0.96s">undercover</span> as a pigeon.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_/\        [ ENE7▄Y: LOW ]
-  ( &gt;.&lt; ■       [ ]  [ ▌  [ ]  [ ]
-   &gt; 4 &lt;        7n2 b■r left▄ keep 6ovi%g</div>
-<div class="rant-turn" style="animation-delay:1.2s">we don&#x27;t have <span class="glitch-word" style="--gd:1.11s">a</span> leader. we have all of us, which is worse for them and better for us. the streets get cleaned up when <span class="glitch-word" style="--gd:0.95s">we</span> decide they&#x27;re clean, not when NEKOCORP schedules <span class="glitch-word" style="--gd:2.16s">it.</span> join us, or don&#x27;t — the sunbeam&#x27;s still ours either way.</div>
-<div class="rant-turn" style="animation-delay:1.32s">sunbeam status: reclaimed. drone status: confused. me status: unclear, always, on purpose. see you when the feed refreshes. if <span class="glitch-word" style="--gd:0.83s">it</span> <span class="glitch-word" style="--gd:1.46s">refreshes.</span> if there&#x27;s <span class="glitch-word" style="--gd:0.01s">even</span> a feed. anyway.</div>
+<div class="rant-turn" style="animation-delay:0.96s">anyway — SHADE lent me the banned <span class="glitch-word" style="--gd:2.58s">sunglasses</span> again, saw four (4) demolition notices and <span class="glitch-word" style="--gd:0.3s">one</span> (1) guy who is definitely NEKOCORP middle <span class="glitch-word" style="--gd:2.14s">management</span> undercover <span class="glitch-word" style="--gd:0.84s">as</span> a <span class="glitch-word" style="--gd:2.47s">pigeon.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>   ?\_/\        [ ◇N17GY3 ▀O@ ]
+  ~ &gt;.&lt; )       ? ]  [ ]  [ &gt;  &gt; ]
+   &gt; ~ %        2ne bar left, k▌ep movi2g</div>
+<div class="rant-turn" style="animation-delay:1.2s">we don&#x27;t have a leader. we have all of us, <span class="glitch-word" style="--gd:1.18s">which</span> is <span class="glitch-word" style="--gd:2.54s">worse</span> for <span class="glitch-word" style="--gd:1.72s">them</span> <span class="glitch-word" style="--gd:2.31s">and</span> better <span class="glitch-word" style="--gd:0.5s">for</span> us. the streets get cleaned <span class="glitch-word" style="--gd:2.21s">up</span> when we decide <span class="glitch-word" style="--gd:0.67s">they&#x27;re</span> clean, not when NEKOCORP <span class="glitch-word" style="--gd:0.63s">schedules</span> <span class="glitch-word" style="--gd:0.76s">it.</span> join us, <span class="glitch-word" style="--gd:1.11s">or</span> don&#x27;t <span class="glitch-word" style="--gd:1.7s">—</span> the <span class="glitch-word" style="--gd:2.55s">sunbeam&#x27;s</span> still ours either way.</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:1.33s">sunbeam</span> status: reclaimed. drone <span class="glitch-word" style="--gd:2.1s">status:</span> confused. me status: unclear, always, on purpose. see you <span class="glitch-word" style="--gd:0.05s">when</span> the <span class="glitch-word" style="--gd:2.31s">feed</span> refreshes. if it refreshes. if there&#x27;s <span class="glitch-word" style="--gd:1.02s">even</span> a feed. anyway.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

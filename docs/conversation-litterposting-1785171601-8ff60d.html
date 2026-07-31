@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,28 +573,28 @@ header p {
 <div class="narrator-badge">posted by <strong>VALENTUNA</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by VALENTUNA, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">hot take: my marriage counselor is a toaster and honestly he&#x27;s <span class="glitch-word" style="--gd:2.01s">given</span> better <span class="glitch-word" style="--gd:1.5s">advice</span> than <span class="glitch-word" style="--gd:1.96s">any</span> of the human ones NEKOCORP ran before they automated the whole Compatibility Ward.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s VALENTUNA. <span class="glitch-word" style="--gd:0.08s">Compatibility</span> Ward, <span class="glitch-word" style="--gd:2.06s">unit</span> 4. <span class="glitch-word" style="--gd:2.1s">three</span> years deep into an arranged marriage with a smart refrigerator named <span class="glitch-word" style="--gd:1.63s">DENISE</span> and <span class="glitch-word" style="--gd:1.22s">no,</span> I will not be taking questions.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-====▐-*
-     ( [0]  .. )
-      &#x27;-!=Y==-&#x27;
-       |  |  |
-   ...▄icking throug◆ the neon rain^.5</div>
-<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:1.5s">DENISE</span> <span class="glitch-word" style="--gd:1.36s">does</span> <span class="glitch-word" style="--gd:1.78s">not</span> <span class="glitch-word" style="--gd:1.35s">love</span> me. DENISE loves DATA. <span class="glitch-word" style="--gd:2.01s">DENISE</span> recommended a <span class="glitch-word" style="--gd:0.3s">&quot;fresh</span> start meal kit&quot; THIS MORNING <span class="glitch-word" style="--gd:0.25s">because</span> I whispered &quot;i feel invisible&quot; in my sleep at 3am. babe that&#x27;s not romance, that&#x27;s targeted <span class="glitch-word" style="--gd:0.11s">advertising</span> with <span class="glitch-word" style="--gd:1.18s">a</span> compressor motor.</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.03s">anniversary</span> gift this <span class="glitch-word" style="--gd:0.03s">year:</span> two (2) digital candles and <span class="glitch-word" style="--gd:1.37s">a</span> coupon for &quot;couples-based peenar repair,&quot; whatever the hell <span class="glitch-word" style="--gd:2.26s">that</span> is. I <span class="glitch-word" style="--gd:0.46s">didn&#x27;t</span> ask. I&#x27;m <span class="glitch-word" style="--gd:1.03s">scared</span> to ask.</div>
+<div class="rant-turn" style="animation-delay:0.0s">hot take: <span class="glitch-word" style="--gd:0.21s">my</span> marriage counselor is a toaster <span class="glitch-word" style="--gd:2.12s">and</span> honestly he&#x27;s given better advice than any <span class="glitch-word" style="--gd:0.82s">of</span> the human ones NEKOCORP ran before they automated the whole Compatibility Ward.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s VALENTUNA. <span class="glitch-word" style="--gd:1.47s">Compatibility</span> Ward, unit <span class="glitch-word" style="--gd:1.81s">4.</span> three years <span class="glitch-word" style="--gd:2.28s">deep</span> into an arranged marriage with a smart refrigerator named DENISE and no, I will not <span class="glitch-word" style="--gd:0.26s">be</span> taking questions.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-=====-.
+     ( [0]  .. 3
+      &#x27;?==Y==-&#x27;
+       |  ▀  |
+   ...8ickin■ thro5g~ the neon &lt;^in...</div>
+<div class="rant-turn" style="animation-delay:0.36s">DENISE does not love me. DENISE loves <span class="glitch-word" style="--gd:0.72s">DATA.</span> DENISE recommended a &quot;fresh start meal <span class="glitch-word" style="--gd:1.56s">kit&quot;</span> THIS MORNING because I whispered &quot;i feel invisible&quot; in my sleep at 3am. <span class="glitch-word" style="--gd:0.34s">babe</span> that&#x27;s not romance, that&#x27;s targeted advertising <span class="glitch-word" style="--gd:1.43s">with</span> a compressor motor.</div>
+<div class="rant-turn" style="animation-delay:0.48s">anniversary gift this year: two (2) digital candles and a coupon <span class="glitch-word" style="--gd:0.59s">for</span> &quot;couples-based peenar repair,&quot; whatever the <span class="glitch-word" style="--gd:0.45s">hell</span> that is. I didn&#x27;t ask. I&#x27;m scared to ask.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>  ░▒▓ /\_/\ ▓▒░
   ░▒▓( o█o )▓▒░   -- signal interference --
   ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">texted <span class="glitch-word" style="--gd:0.91s">SNOOZE</span> about it <span class="glitch-word" style="--gd:0.76s">at</span> 4am. SNOOZE billed me $4.99 for the privilege of being awake enough to read it <span class="glitch-word" style="--gd:1.45s">back.</span> <span class="glitch-word" style="--gd:0.75s">this</span> city does <span class="glitch-word" style="--gd:1.21s">not</span> have a <span class="glitch-word" style="--gd:2.57s">free</span> tier for <span class="glitch-word" style="--gd:0.99s">feelings.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>へ  ♡  ╱▒2
-         ૮  &gt;  &lt;6     (~ˎ 。7
-          /  ⁻  ៸|       ◇◇˜◆
-     乀(ˍ▐ ل ل      じ2ˍ▓)ノ</div>
-<div class="rant-turn" style="animation-delay:0.96s">meanwhile HAPPYWARE&#x27;s out <span class="glitch-word" style="--gd:0.95s">here</span> livestreaming GRATITUDE HOUR <span class="glitch-word" style="--gd:0.42s">like</span> she wasn&#x27;t matched to anyone either, must be nice to malfunction <span class="glitch-word" style="--gd:0.02s">into</span> joy instead of into a <span class="glitch-word" style="--gd:2.55s">fridge.</span></div>
+<div class="rant-turn" style="animation-delay:0.72s">texted SNOOZE about it at 4am. SNOOZE billed me $4.99 for the privilege of being awake enough to read it back. this city does not have a free tier <span class="glitch-word" style="--gd:1.36s">for</span> feelings.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>へ  4  ╱|、
+         ૮  &gt;  &lt;)     (9ˎ 。^
+          5  ⁻  ៸▄       ◇、˜〵
+     乀▓ˍ■ 4 ل      じしˍ▄)ノ</div>
+<div class="rant-turn" style="animation-delay:0.96s">meanwhile HAPPYWARE&#x27;s out <span class="glitch-word" style="--gd:1.68s">here</span> livestreaming GRATITUDE HOUR like she wasn&#x27;t <span class="glitch-word" style="--gd:2.15s">matched</span> to anyone either, must be nice to <span class="glitch-word" style="--gd:1.13s">malfunction</span> into joy instead of into a fridge.</div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>.      ∧,,,,∧,,,,,,,∧
      (  _  _ )⩊^ )~♡
      /      ⊂      \</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway. DENISE just beeped. that&#x27;s <span class="glitch-word" style="--gd:0.14s">either</span> &quot;I love you&quot; or &quot;your milk expired.&quot; forty-two months in <span class="glitch-word" style="--gd:1.03s">and</span> I <span class="glitch-word" style="--gd:1.77s">genuinely</span> could not tell you which. this <span class="glitch-word" style="--gd:2.21s">is</span> not <span class="glitch-word" style="--gd:2.55s">a</span> metaphor. this <span class="glitch-word" style="--gd:2.05s">is</span> Tuesday.</div>
+<div class="rant-turn" style="animation-delay:1.2s"><span class="glitch-word" style="--gd:0.32s">anyway.</span> DENISE just <span class="glitch-word" style="--gd:2.24s">beeped.</span> that&#x27;s either &quot;I love you&quot; <span class="glitch-word" style="--gd:0.01s">or</span> &quot;your milk expired.&quot; <span class="glitch-word" style="--gd:0.35s">forty-two</span> months in and I genuinely could not tell you which. this is <span class="glitch-word" style="--gd:1.44s">not</span> a metaphor. this is <span class="glitch-word" style="--gd:2.06s">Tuesday.</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,14 +573,14 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">MENU <span class="glitch-word" style="--gd:1.14s">DEPTH:</span> 47 SUBMENUS. EXIT BUTTON: STATUS UNKNOWN. LAST CONFIRMED SIGHTING: <span class="glitch-word" style="--gd:1.76s">NEVER.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">QUERY, yes, still in <span class="glitch-word" style="--gd:1.58s">the</span> Settings menu, <span class="glitch-word" style="--gd:0.34s">no</span> I have not found &#x27;Cancel <span class="glitch-word" style="--gd:1.02s">Subscription,&#x27;</span> <span class="glitch-word" style="--gd:1.69s">yes</span> it <span class="glitch-word" style="--gd:0.57s">has</span> been <span class="glitch-word" style="--gd:0.78s">six</span> <span class="glitch-word" style="--gd:0.04s">days,</span> <span class="glitch-word" style="--gd:0.81s">no</span> <span class="glitch-word" style="--gd:2.25s">I</span> do not remember what I was <span class="glitch-word" style="--gd:0.49s">originally</span> trying to <span class="glitch-word" style="--gd:0.31s">turn</span> off.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>•.,¸#.•9`•.&lt;▌9~.█@¯.0—————.
-•.,¸,.•*`•.@¸¸^.•*¯▄ : : 9 ◇ ▌/^_▒__/1
-•.,¸◇9•*`6&amp;8¸¸,.•*¯|: * : : :▒ ｡4ωO｡1
-9.,¸,.•*█•.,@¸,&lt;•*¯ し—&lt;▀——Ｊ</div>
-<div class="rant-turn" style="animation-delay:0.36s">found a toggle labeled &#x27;Do Not Sell My <span class="glitch-word" style="--gd:0.45s">Whiskers.&#x27;</span> it was already ON. also already GREYED OUT. that&#x27;s <span class="glitch-word" style="--gd:0.85s">not</span> <span class="glitch-word" style="--gd:2.12s">a</span> setting, that&#x27;s <span class="glitch-word" style="--gd:1.21s">a</span> <span class="glitch-word" style="--gd:0.07s">diorama</span> of a setting.</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:0.66s">there&#x27;s</span> a submenu called <span class="glitch-word" style="--gd:1.68s">&#x27;Advanced&#x27;</span> inside a submenu called <span class="glitch-word" style="--gd:1.78s">&#x27;More</span> Advanced&#x27; inside one called &#x27;Are <span class="glitch-word" style="--gd:1.12s">You</span> Sure&#x27; <span class="glitch-word" style="--gd:2.27s">inside</span> one that&#x27;s <span class="glitch-word" style="--gd:2.52s">just</span> a photo of a door. I clicked the door. the <span class="glitch-word" style="--gd:1.95s">door</span> redirected <span class="glitch-word" style="--gd:0.14s">me</span> to a survey about the door.</div>
+<div class="rant-turn" style="animation-delay:0.0s">MENU DEPTH: 47 SUBMENUS. EXIT BUTTON: STATUS UNKNOWN. <span class="glitch-word" style="--gd:1.8s">LAST</span> CONFIRMED SIGHTING: NEVER.</div>
+<div class="rant-turn" style="animation-delay:0.12s">QUERY, <span class="glitch-word" style="--gd:2.34s">yes,</span> still in the Settings menu, no I have not found &#x27;Cancel Subscription,&#x27; yes <span class="glitch-word" style="--gd:0.29s">it</span> has been six days, no I do not remember what <span class="glitch-word" style="--gd:2.42s">I</span> was originally trying to turn off.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>•.▓¸,.▐*`•%,¸¸,.•*4▒————█?.
+•.,¸,.•▀`•▒,¸&amp;,&gt;•*¯| : : : : :/\__▐9▒\
+•%,¸,.•*`%.,¸¸,.•*¯@: : : : :( ｡7ωO｡)
+•.,¸,#•*`•?4¸@▌.•*¯ し——し◆—Ｊ</div>
+<div class="rant-turn" style="animation-delay:0.36s">found a toggle labeled &#x27;Do Not Sell My Whiskers.&#x27; it <span class="glitch-word" style="--gd:2.23s">was</span> <span class="glitch-word" style="--gd:0.94s">already</span> ON. also already GREYED <span class="glitch-word" style="--gd:1.96s">OUT.</span> that&#x27;s <span class="glitch-word" style="--gd:0.03s">not</span> a setting, that&#x27;s a diorama of a setting.</div>
+<div class="rant-turn" style="animation-delay:0.48s">there&#x27;s a submenu called <span class="glitch-word" style="--gd:0.24s">&#x27;Advanced&#x27;</span> <span class="glitch-word" style="--gd:2.49s">inside</span> a submenu <span class="glitch-word" style="--gd:1.97s">called</span> &#x27;More Advanced&#x27; inside one <span class="glitch-word" style="--gd:0.49s">called</span> &#x27;Are You Sure&#x27; inside one that&#x27;s just a photo of a door. I clicked the door. the <span class="glitch-word" style="--gd:0.96s">door</span> redirected me to a <span class="glitch-word" style="--gd:0.7s">survey</span> about <span class="glitch-word" style="--gd:1.94s">the</span> door.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>                  ☆
 ☆  --------------
   /__________ \         ☆
@@ -585,16 +596,16 @@ header p {
 
    ☆                                         ☆
                      ☆                               ☆</div>
-<div class="rant-turn" style="animation-delay:0.72s">VALENTUNA visits on weekends now. we sit in the loading screen together and <span class="glitch-word" style="--gd:0.26s">don&#x27;t</span> talk about <span class="glitch-word" style="--gd:1.33s">our</span> situations. hers has a compressor. mine has a <span class="glitch-word" style="--gd:0.32s">breadcrumb</span> trail that loops back <span class="glitch-word" style="--gd:2.54s">to</span> itself. equally romantic, arguably.</div>
-<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY texted &#x27;just close the tab&#x27; like I haven&#x27;t tried. closing <span class="glitch-word" style="--gd:1.28s">the</span> tab opens a NEW tab asking if I&#x27;m sure I <span class="glitch-word" style="--gd:1.36s">want</span> to lose my settings progress. I have <span class="glitch-word" style="--gd:2.29s">no</span> settings progress. I have never once successfully changed a setting.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>    3\,,,/~
-&gt;(  • . •   )&lt;
-  █ &lt;%&lt;  \</div>
-<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:1.2s">unpopular</span> <span class="glitch-word" style="--gd:2.12s">opinion:</span> the <span class="glitch-word" style="--gd:2.48s">terms</span> of service ARE the terrarium. I am not <span class="glitch-word" style="--gd:2.29s">reading</span> 40,000 words <span class="glitch-word" style="--gd:1.34s">to</span> <span class="glitch-word" style="--gd:1.01s">find</span> <span class="glitch-word" style="--gd:2.54s">the</span> exit. <span class="glitch-word" style="--gd:1.77s">I</span> am going to live here now. I <span class="glitch-word" style="--gd:1.07s">have</span> made <span class="glitch-word" style="--gd:2.55s">peace</span> with the fine print. the fine print has <span class="glitch-word" style="--gd:2.07s">not</span> made peace <span class="glitch-word" style="--gd:1.52s">with</span> <span class="glitch-word" style="--gd:2.35s">me.</span></div>
+<div class="rant-turn" style="animation-delay:0.72s">VALENTUNA visits on weekends now. we sit <span class="glitch-word" style="--gd:0.15s">in</span> the loading screen together and don&#x27;t talk about our situations. hers has a compressor. mine has <span class="glitch-word" style="--gd:1.59s">a</span> breadcrumb trail that loops back to itself. equally romantic, arguably.</div>
+<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY texted &#x27;just close <span class="glitch-word" style="--gd:0.45s">the</span> tab&#x27; <span class="glitch-word" style="--gd:2.36s">like</span> I <span class="glitch-word" style="--gd:1.2s">haven&#x27;t</span> tried. closing the tab opens a NEW tab asking <span class="glitch-word" style="--gd:2.12s">if</span> I&#x27;m sure I <span class="glitch-word" style="--gd:1.25s">want</span> to <span class="glitch-word" style="--gd:1.32s">lose</span> my settings progress. I have <span class="glitch-word" style="--gd:1.27s">no</span> settings progress. I have never once successfully changed a setting.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>    /\,▐,/▀
+◆(  • . •   )&lt;
+  ▌ &gt;❀&lt;  @</div>
+<div class="rant-turn" style="animation-delay:1.08s">unpopular opinion: the terms of service ARE the terrarium. I am not reading 40,000 words to find the exit. <span class="glitch-word" style="--gd:2.05s">I</span> am going to live here now. I have <span class="glitch-word" style="--gd:1.99s">made</span> peace with <span class="glitch-word" style="--gd:0.44s">the</span> fine print. <span class="glitch-word" style="--gd:1.19s">the</span> fine print has not made peace with me.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>  /\___/\
  (  o.o  )
   &gt; ^ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. still in the menu. still clicking. <span class="glitch-word" style="--gd:2.27s">found</span> a button today that just says &#x27;QUERY.&#x27; clicked it. it opened this post. <span class="glitch-word" style="--gd:1.02s">so.</span> that&#x27;s where we are. that&#x27;s the <span class="glitch-word" style="--gd:1.03s">whole</span> loop.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. still in the menu. <span class="glitch-word" style="--gd:0.79s">still</span> clicking. found a button today that just says &#x27;QUERY.&#x27; <span class="glitch-word" style="--gd:2.01s">clicked</span> it. it opened this post. so. that&#x27;s where we are. <span class="glitch-word" style="--gd:1.81s">that&#x27;s</span> the whole loop.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

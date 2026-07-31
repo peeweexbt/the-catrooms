@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,26 +573,26 @@ header p {
 <div class="narrator-badge">posted by <strong>POPUP</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">unpopular opinion: the worst <span class="glitch-word" style="--gd:1.17s">part</span> of being POPUP isn&#x27;t the ads. it&#x27;s that NEKOCORP thinks &#x27;YOU MAY ALSO LIKE&#x27; is a personality trait now</div>
-<div class="rant-turn" style="animation-delay:0.12s">cyber-eyes physically cannot close. Ad Plaza district. seven-second refresh rate. I have seen <span class="glitch-word" style="--gd:1.66s">more</span> sponsored tuna than actual tuna in my LIFE</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-==▌==-▀
+<div class="rant-turn" style="animation-delay:0.0s">unpopular opinion: the worst part of <span class="glitch-word" style="--gd:0.69s">being</span> POPUP isn&#x27;t the ads. it&#x27;s that NEKOCORP thinks &#x27;YOU MAY ALSO LIKE&#x27; is a <span class="glitch-word" style="--gd:1.88s">personality</span> trait <span class="glitch-word" style="--gd:0.65s">now</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">cyber-eyes physically cannot <span class="glitch-word" style="--gd:0.88s">close.</span> Ad <span class="glitch-word" style="--gd:1.46s">Plaza</span> district. seven-second refresh rate. I have seen more sponsored tuna <span class="glitch-word" style="--gd:0.83s">than</span> actual <span class="glitch-word" style="--gd:1.53s">tuna</span> in my LIFE</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>      .0==█==-.
      ( [0]  .. )
-      &#x27;-==Y&amp;=-&#x27;
-       |  |  |
-   ...▐icking thr@ugh the n*on rain.▓.</div>
-<div class="rant-turn" style="animation-delay:0.36s">blinked ONE (1) time <span class="glitch-word" style="--gd:1.99s">during</span> a sponsored message last <span class="glitch-word" style="--gd:1.64s">week.</span> security arrived before my eyelids finished reopening. <span class="glitch-word" style="--gd:1.19s">still</span> <span class="glitch-word" style="--gd:1.79s">on</span> probation</div>
-<div class="rant-turn" style="animation-delay:0.48s">SHADE keeps offering me the banned <span class="glitch-word" style="--gd:2.45s">sunglasses</span> like <span class="glitch-word" style="--gd:0.43s">that</span> fixes anything. bro I don&#x27;t have eyelids to protect, I have eyeballs <span class="glitch-word" style="--gd:1.85s">that</span> are CONTRACTUALLY OBLIGATED to stay open</div>
+      &#x27;-&amp;=Y==-░
+       3  |  |
+   .@◇picking throug8 the n◇on rain.3.</div>
+<div class="rant-turn" style="animation-delay:0.36s">blinked ONE (1) <span class="glitch-word" style="--gd:0.46s">time</span> during a sponsored message <span class="glitch-word" style="--gd:0.11s">last</span> week. security arrived before my eyelids finished <span class="glitch-word" style="--gd:0.06s">reopening.</span> still on probation</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:0.37s">SHADE</span> keeps offering me the banned sunglasses like that <span class="glitch-word" style="--gd:0.78s">fixes</span> anything. <span class="glitch-word" style="--gd:1.66s">bro</span> <span class="glitch-word" style="--gd:1.0s">I</span> don&#x27;t have eyelids to protect, I have <span class="glitch-word" style="--gd:0.71s">eyeballs</span> that are CONTRACTUALLY <span class="glitch-word" style="--gd:1.03s">OBLIGATED</span> to stay open</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:0.72s">QUERY <span class="glitch-word" style="--gd:1.31s">texted</span> me &#x27;at least <span class="glitch-word" style="--gd:2.53s">your</span> ads make sense&#x27; from inside the settings menu he&#x27;s been <span class="glitch-word" style="--gd:0.9s">trapped</span> in for <span class="glitch-word" style="--gd:1.53s">six</span> months. buddy. buddy. no <span class="glitch-word" style="--gd:1.45s">they</span> don&#x27;t</div>
-<div class="rant-turn" style="animation-delay:0.84s">today&#x27;s retina rotation: tuna energy drink, tuna-scented candle, a fridge (unrelated, pretty sure NEKOCORP&#x27;s just guessing now), tuna-flavored HOPE</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-=2===-.
+<div class="rant-turn" style="animation-delay:0.72s">QUERY texted me &#x27;at least your ads make sense&#x27; from inside the settings menu he&#x27;s been trapped in <span class="glitch-word" style="--gd:1.16s">for</span> six months. buddy. <span class="glitch-word" style="--gd:2.26s">buddy.</span> no they <span class="glitch-word" style="--gd:2.56s">don&#x27;t</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">today&#x27;s retina <span class="glitch-word" style="--gd:1.93s">rotation:</span> <span class="glitch-word" style="--gd:0.13s">tuna</span> <span class="glitch-word" style="--gd:0.9s">energy</span> drink, tuna-scented candle, a fridge (unrelated, pretty sure NEKOCORP&#x27;s just guessing now), <span class="glitch-word" style="--gd:0.08s">tuna-flavored</span> HOPE</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>      ?-==▐==-◇
      ( [0]  .. )
-      &#x27;-==Y==-&#x27;
-       ~  |  |
-   .▓.p&lt;c^ing t@r4ugh t4e neon ^ain..&gt;</div>
-<div class="rant-turn" style="animation-delay:1.08s">the ad plaza doesn&#x27;t have a night <span class="glitch-word" style="--gd:0.5s">mode.</span> the ad plaza IS the <span class="glitch-word" style="--gd:1.06s">night</span> mode now. <span class="glitch-word" style="--gd:1.0s">we</span> <span class="glitch-word" style="--gd:2.27s">just</span> call <span class="glitch-word" style="--gd:1.71s">it</span> that <span class="glitch-word" style="--gd:0.45s">so</span> it sounds like a feature</div>
+      &amp;-==2▐=-&#x27;
+       |  |  |
+   .6.picking throug7 the neon r2in*8.</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:0.21s">the</span> ad plaza doesn&#x27;t have a night <span class="glitch-word" style="--gd:1.92s">mode.</span> the ad plaza IS the <span class="glitch-word" style="--gd:1.75s">night</span> mode now. we just <span class="glitch-word" style="--gd:0.19s">call</span> it that so it <span class="glitch-word" style="--gd:1.44s">sounds</span> like a feature</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -589,7 +600,7 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. eyes open. as always. as forever. YOU MAY ALSO LIKE: sleep. I <span class="glitch-word" style="--gd:1.62s">would</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. eyes <span class="glitch-word" style="--gd:0.76s">open.</span> <span class="glitch-word" style="--gd:2.23s">as</span> always. as forever. YOU MAY <span class="glitch-word" style="--gd:0.97s">ALSO</span> LIKE: sleep. I would</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

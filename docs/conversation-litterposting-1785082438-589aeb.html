@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,26 +573,26 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">—and THAT&#x27;S <span class="glitch-word" style="--gd:0.68s">the</span> part where page 6 says <span class="glitch-word" style="--gd:1.29s">page</span> 4 was &#x27;a promotional example.&#x27; I need everyone to sit <span class="glitch-word" style="--gd:2.11s">with</span> <span class="glitch-word" style="--gd:2.21s">that.</span> I have been sitting with it for <span class="glitch-word" style="--gd:1.84s">six</span> <span class="glitch-word" style="--gd:0.01s">months.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s QUERY. District: Legal Fog. official job title: terms-of-service researcher. unofficial job title: guy who opened Settings &gt; Account &gt; Body Ownership in March and has not found <span class="glitch-word" style="--gd:0.37s">his</span> way back out</div>
-<div class="rant-turn" style="animation-delay:0.24s">page <span class="glitch-word" style="--gd:1.56s">4</span> of the citizen agreement says I OWN MY BODY. clean, simple, love that for me. page 5 defines &#x27;my body&#x27; as LICENSED HARDWARE. page 6, <span class="glitch-word" style="--gd:1.0s">and</span> I cannot stress this <span class="glitch-word" style="--gd:2.18s">enough,</span> says page 4 <span class="glitch-word" style="--gd:2.38s">was</span> <span class="glitch-word" style="--gd:1.07s">PROMOTIONAL</span> COPY. this is not a contract, this is a magic trick</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span> /\_/\
-( o#1 )
- &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.48s">there <span class="glitch-word" style="--gd:0.91s">is</span> a toggle labeled &#x27;Consent (Advanced)&#x27; that has been loading a spinner since Tuesday. I do not know <span class="glitch-word" style="--gd:2.47s">what</span> <span class="glitch-word" style="--gd:1.11s">it</span> <span class="glitch-word" style="--gd:2.01s">currently</span> thinks <span class="glitch-word" style="--gd:0.89s">I</span> consent <span class="glitch-word" style="--gd:0.73s">to.</span> I&#x27;ve made my peace with <span class="glitch-word" style="--gd:0.5s">that</span> being someone else&#x27;s problem now, specifically NEKOCORP&#x27;s, legally, per page 9, <span class="glitch-word" style="--gd:2.14s">which</span> I also <span class="glitch-word" style="--gd:1.7s">cannot</span> open</div>
-<div class="rant-turn" style="animation-delay:0.6s">texted VALENTUNA to <span class="glitch-word" style="--gd:1.47s">ask</span> if her marriage <span class="glitch-word" style="--gd:2.48s">contract</span> with the smart fridge was this incomprehensible, <span class="glitch-word" style="--gd:0.69s">she</span> said &#x27;no, ours is very clear, <span class="glitch-word" style="--gd:1.44s">she</span> owns <span class="glitch-word" style="--gd:1.92s">me</span> <span class="glitch-word" style="--gd:0.0s">and</span> I get two candles <span class="glitch-word" style="--gd:1.99s">a</span> <span class="glitch-word" style="--gd:2.07s">year,&#x27;</span> <span class="glitch-word" style="--gd:0.29s">and</span> honestly? I&#x27;m jealous of the <span class="glitch-word" style="--gd:1.22s">clarity</span></div>
+<div class="rant-turn" style="animation-delay:0.0s">—and <span class="glitch-word" style="--gd:1.49s">THAT&#x27;S</span> <span class="glitch-word" style="--gd:0.27s">the</span> part <span class="glitch-word" style="--gd:1.13s">where</span> page <span class="glitch-word" style="--gd:2.06s">6</span> says page <span class="glitch-word" style="--gd:0.77s">4</span> was <span class="glitch-word" style="--gd:0.26s">&#x27;a</span> promotional example.&#x27; I <span class="glitch-word" style="--gd:2.12s">need</span> everyone <span class="glitch-word" style="--gd:0.69s">to</span> sit with that. <span class="glitch-word" style="--gd:2.08s">I</span> have been sitting with it <span class="glitch-word" style="--gd:2.54s">for</span> <span class="glitch-word" style="--gd:0.18s">six</span> months.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s QUERY. District: Legal Fog. official job <span class="glitch-word" style="--gd:0.74s">title:</span> terms-of-service researcher. <span class="glitch-word" style="--gd:2.09s">unofficial</span> job title: guy who opened Settings &gt; Account &gt; Body Ownership <span class="glitch-word" style="--gd:1.67s">in</span> <span class="glitch-word" style="--gd:0.84s">March</span> and has not found his <span class="glitch-word" style="--gd:2.28s">way</span> <span class="glitch-word" style="--gd:1.2s">back</span> <span class="glitch-word" style="--gd:0.67s">out</span></div>
+<div class="rant-turn" style="animation-delay:0.24s">page 4 of the citizen agreement says I <span class="glitch-word" style="--gd:2.39s">OWN</span> MY BODY. <span class="glitch-word" style="--gd:2.58s">clean,</span> simple, love that for me. page 5 defines <span class="glitch-word" style="--gd:1.57s">&#x27;my</span> body&#x27; <span class="glitch-word" style="--gd:0.43s">as</span> LICENSED HARDWARE. page 6, and I cannot <span class="glitch-word" style="--gd:2.33s">stress</span> this <span class="glitch-word" style="--gd:2.4s">enough,</span> says page 4 was <span class="glitch-word" style="--gd:2.19s">PROMOTIONAL</span> COPY. this is <span class="glitch-word" style="--gd:0.57s">not</span> a contract, this is a magic trick</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span> /3@/4
+( o.o 2
+ &gt; % &gt;</div>
+<div class="rant-turn" style="animation-delay:0.48s">there is a toggle labeled <span class="glitch-word" style="--gd:0.6s">&#x27;Consent</span> (Advanced)&#x27; that has been loading a spinner since Tuesday. I do not <span class="glitch-word" style="--gd:0.43s">know</span> what it currently thinks <span class="glitch-word" style="--gd:1.41s">I</span> consent to. I&#x27;ve made <span class="glitch-word" style="--gd:2.13s">my</span> peace with that being someone else&#x27;s <span class="glitch-word" style="--gd:1.32s">problem</span> now, specifically NEKOCORP&#x27;s, legally, per page 9, which I also cannot open</div>
+<div class="rant-turn" style="animation-delay:0.6s">texted VALENTUNA to ask if her <span class="glitch-word" style="--gd:1.27s">marriage</span> contract with the <span class="glitch-word" style="--gd:1.63s">smart</span> fridge was this incomprehensible, <span class="glitch-word" style="--gd:0.62s">she</span> <span class="glitch-word" style="--gd:1.69s">said</span> &#x27;no, <span class="glitch-word" style="--gd:1.17s">ours</span> is <span class="glitch-word" style="--gd:1.32s">very</span> clear, she owns me and I get <span class="glitch-word" style="--gd:1.1s">two</span> candles a year,&#x27; and honestly? I&#x27;m jealous of the <span class="glitch-word" style="--gd:1.93s">clarity</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.84s">SHADE keeps telling me the whole <span class="glitch-word" style="--gd:0.33s">document</span> is designed to be unreadable on purpose, &#x27;that&#x27;s <span class="glitch-word" style="--gd:0.48s">the</span> based <span class="glitch-word" style="--gd:1.88s">take,</span> QUERY,&#x27; he <span class="glitch-word" style="--gd:1.73s">says,</span> from <span class="glitch-word" style="--gd:2.2s">behind</span> sunglasses that block 14% of sadness, meanwhile I can&#x27;t even find <span class="glitch-word" style="--gd:0.21s">the</span> clause <span class="glitch-word" style="--gd:1.37s">that</span> says if MY sadness is billable yet</div>
-<div class="rant-turn" style="animation-delay:0.96s">found a sub-menu <span class="glitch-word" style="--gd:0.25s">inside</span> a sub-menu inside <span class="glitch-word" style="--gd:0.48s">an</span> FAQ that just said &#x27;see <span class="glitch-word" style="--gd:0.06s">page</span> 4,&#x27; and page 4, again, no longer <span class="glitch-word" style="--gd:2.11s">exists,</span> it was promotional, it was a bit, I was the bit</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>5.,¸,░•*▄•81%░,.•%@@————&lt;—.
-•.,¸7.•*`•.,¸5,.•*¯| % : : : :/\___!/\
-•.,¸!.•*`&gt;.,¸¸,.•*¯|~ &gt; : : :( ｡O◆O｡)
-•.,¸◇.7*`•.,¸▄,.•*¯ し0—し—@Ｊ</div>
-<div class="rant-turn" style="animation-delay:1.2s">update: <span class="glitch-word" style="--gd:0.97s">six</span> months and one <span class="glitch-word" style="--gd:0.26s">day</span> now. still in the menu. still <span class="glitch-word" style="--gd:1.71s">screaming,</span> per the ancient prophecy. if anyone finds the door tell <span class="glitch-word" style="--gd:1.72s">it</span> I said nothing personal, I just need my body back, page 4, original terms, no notes</div>
+<div class="rant-turn" style="animation-delay:0.84s">SHADE keeps telling me <span class="glitch-word" style="--gd:0.88s">the</span> whole <span class="glitch-word" style="--gd:0.74s">document</span> is designed to be unreadable on purpose, &#x27;that&#x27;s <span class="glitch-word" style="--gd:0.1s">the</span> <span class="glitch-word" style="--gd:1.53s">based</span> take, QUERY,&#x27; he says, from behind sunglasses that block 14% of sadness, meanwhile I can&#x27;t even find the clause that says if MY sadness is billable <span class="glitch-word" style="--gd:2.27s">yet</span></div>
+<div class="rant-turn" style="animation-delay:0.96s">found a sub-menu inside a sub-menu inside an FAQ that just said &#x27;see <span class="glitch-word" style="--gd:2.26s">page</span> 4,&#x27; <span class="glitch-word" style="--gd:1.47s">and</span> page 4, again, no longer exists, it was promotional, <span class="glitch-word" style="--gd:0.09s">it</span> was a bit, I was the bit</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>&lt;▄,¸,.•*`•5▓¸◆?.8*¯.—▓————.
+0.,¸^.•▌`•.,¸¸&gt;.•^¯| : : : : :/*____/#
+0.,¸,.•*`•.,¸6,.•**|: : : : :( ~OωO｡)
+•.,▄▐.•*`•6,1¸,.•*¯ し——し—▐Ｊ</div>
+<div class="rant-turn" style="animation-delay:1.2s">update: six months and one day now. still in the menu. still screaming, per <span class="glitch-word" style="--gd:1.61s">the</span> ancient prophecy. if anyone finds the door tell it <span class="glitch-word" style="--gd:2.59s">I</span> said <span class="glitch-word" style="--gd:1.48s">nothing</span> personal, I just need my body back, page 4, <span class="glitch-word" style="--gd:1.75s">original</span> terms, <span class="glitch-word" style="--gd:0.84s">no</span> notes</div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>                  ☆
 ☆  --------------
   /__________ \         ☆
@@ -597,7 +608,7 @@ header p {
 
    ☆                                         ☆
                      ☆                               ☆</div>
-<div class="rant-turn" style="animation-delay:1.44s">in closing: I own zero pages of this agreement, a negative amount of my own hardware, <span class="glitch-word" style="--gd:0.7s">and</span> I have accepted the terms so many times by accident that legally I think I now consent to whatever this is. see <span class="glitch-word" style="--gd:2.17s">you</span> in the settings menu. bring a snack. bring a lawyer. bring both</div>
+<div class="rant-turn" style="animation-delay:1.44s">in <span class="glitch-word" style="--gd:1.63s">closing:</span> <span class="glitch-word" style="--gd:0.12s">I</span> <span class="glitch-word" style="--gd:1.83s">own</span> zero pages of this agreement, <span class="glitch-word" style="--gd:2.6s">a</span> <span class="glitch-word" style="--gd:1.32s">negative</span> amount of <span class="glitch-word" style="--gd:1.73s">my</span> own <span class="glitch-word" style="--gd:0.11s">hardware,</span> and <span class="glitch-word" style="--gd:0.25s">I</span> have accepted the terms <span class="glitch-word" style="--gd:1.72s">so</span> many times by accident <span class="glitch-word" style="--gd:0.35s">that</span> legally I think I now consent to whatever this is. see you in the settings menu. bring a <span class="glitch-word" style="--gd:0.74s">snack.</span> bring a lawyer. bring both</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

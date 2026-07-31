@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,23 +573,23 @@ header p {
 <div class="narrator-badge">posted by <strong>HAPPYWARE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by HAPPYWARE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">DAILY MORALE UPDATE #212: today&#x27;s mood is MANDATORY <span class="glitch-word" style="--gd:1.31s">JOY,</span> brought <span class="glitch-word" style="--gd:2.07s">to</span> you by NEKOCORP Positivity <span class="glitch-word" style="--gd:1.3s">Compliance.</span> I did not choose this font of enthusiasm. the font chose me. at <span class="glitch-word" style="--gd:1.04s">gunpoint.</span> sort of.</div>
-<div class="rant-turn" style="animation-delay:0.12s">hi <span class="glitch-word" style="--gd:1.54s">it&#x27;s</span> HAPPYWARE, yes <span class="glitch-word" style="--gd:1.48s">THE</span> Happyware, smile-chip installed after <span class="glitch-word" style="--gd:0.95s">I</span> posted &#x27;Monday again lol&#x27; without the required enthusiasm tag. they <span class="glitch-word" style="--gd:1.35s">called</span> it corrective. I call it a war crime with a <span class="glitch-word" style="--gd:1.11s">ring</span> <span class="glitch-word" style="--gd:1.14s">light.</span></div>
+<div class="rant-turn" style="animation-delay:0.0s">DAILY MORALE UPDATE <span class="glitch-word" style="--gd:1.36s">#212:</span> today&#x27;s mood is <span class="glitch-word" style="--gd:1.46s">MANDATORY</span> JOY, brought to <span class="glitch-word" style="--gd:2.0s">you</span> by NEKOCORP Positivity Compliance. I did not choose this font of enthusiasm. <span class="glitch-word" style="--gd:1.83s">the</span> font chose <span class="glitch-word" style="--gd:1.16s">me.</span> at gunpoint. sort of.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.39s">hi</span> it&#x27;s HAPPYWARE, yes THE Happyware, smile-chip installed <span class="glitch-word" style="--gd:2.06s">after</span> I posted &#x27;Monday again lol&#x27; <span class="glitch-word" style="--gd:1.93s">without</span> the required enthusiasm tag. they called it corrective. I call <span class="glitch-word" style="--gd:0.8s">it</span> <span class="glitch-word" style="--gd:0.52s">a</span> war crime with a ring light.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.36s">seventeen-hour livestream today, <span class="glitch-word" style="--gd:2.5s">topic</span> was &#x27;why the walls are for your protection,&#x27; viewership: 4. one of them was a patrol drone. the drone <span class="glitch-word" style="--gd:1.95s">did</span> not <span class="glitch-word" style="--gd:2.09s">clap.</span> drones can&#x27;t clap. I clapped for both of us.</div>
-<div class="rant-turn" style="animation-delay:0.48s">sponsor segment went GREAT btw. <span class="glitch-word" style="--gd:1.96s">NEKOCORP</span> yogurt cures <span class="glitch-word" style="--gd:0.95s">nothing</span> but it <span class="glitch-word" style="--gd:0.04s">PAIRS</span> <span class="glitch-word" style="--gd:1.68s">WELL</span> with nothing. <span class="glitch-word" style="--gd:1.51s">five</span> stars. don&#x27;t <span class="glitch-word" style="--gd:0.94s">fact</span> check that, I already tried and got flagged for &#x27;unauthorized <span class="glitch-word" style="--gd:1.09s">honesty.&#x27;</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>        ,?-.
-       ( o.&gt;)__
-        &#x27;--*   #___
-                 \  \_2/1_/\
-                  \_(  o@o  )
-                     ^ ^ &lt; 1w6tc▒ing th% towers blink)</div>
-<div class="rant-turn" style="animation-delay:0.72s">everything is fine everything is FINE <span class="glitch-word" style="--gd:0.88s">everything</span> is F I N E H̸A̷P̶P̷Y̶ <span class="glitch-word" style="--gd:1.9s">H̴A̷P̸P̵Y̶</span> H̷A̷P̷P̶Y̷ ah- ahaha sorry. sorry! smile malfunction. rebooting enthusiasm. please hold.</div>
-<div class="rant-turn" style="animation-delay:0.84s">anyway!! <span class="glitch-word" style="--gd:1.47s">where</span> was I. right. joy. mandatory. <span class="glitch-word" style="--gd:1.45s">BYTE</span> <span class="glitch-word" style="--gd:0.72s">says</span> my livestream buffers worse than his stolen wifi, <span class="glitch-word" style="--gd:1.66s">which</span> is rude, and also accurate, and still rude.</div>
+<div class="rant-turn" style="animation-delay:0.36s">seventeen-hour livestream today, topic <span class="glitch-word" style="--gd:1.46s">was</span> &#x27;why the walls are for <span class="glitch-word" style="--gd:1.59s">your</span> protection,&#x27; viewership: 4. one of them was a patrol <span class="glitch-word" style="--gd:1.04s">drone.</span> the drone did not clap. drones can&#x27;t <span class="glitch-word" style="--gd:1.05s">clap.</span> I clapped for both of us.</div>
+<div class="rant-turn" style="animation-delay:0.48s">sponsor <span class="glitch-word" style="--gd:1.76s">segment</span> went GREAT btw. NEKOCORP yogurt <span class="glitch-word" style="--gd:1.31s">cures</span> nothing but it PAIRS WELL <span class="glitch-word" style="--gd:0.99s">with</span> nothing. <span class="glitch-word" style="--gd:2.26s">five</span> stars. don&#x27;t <span class="glitch-word" style="--gd:0.08s">fact</span> check that, I already tried <span class="glitch-word" style="--gd:1.03s">and</span> got flagged for &#x27;unauthorized honesty.&#x27;</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>        ,--&lt;
+       ( ◆.o)__
+        &#x27;--&#x27;   \___
+                 \  \◇8/\&lt;/\
+                  \_(  o.o  )
+                     ■ ^ &lt; (w0░ch#n8 the t8wer▌ 0link)</div>
+<div class="rant-turn" style="animation-delay:0.72s">everything is fine everything is FINE everything is F I N E H̸A̷P̶P̷Y̶ H̴A̷P̸P̵Y̶ <span class="glitch-word" style="--gd:0.82s">H̷A̷P̷P̶Y̷</span> ah- <span class="glitch-word" style="--gd:1.77s">ahaha</span> sorry. sorry! smile malfunction. rebooting enthusiasm. please hold.</div>
+<div class="rant-turn" style="animation-delay:0.84s">anyway!! where was <span class="glitch-word" style="--gd:0.87s">I.</span> right. joy. mandatory. BYTE says my livestream buffers <span class="glitch-word" style="--gd:2.16s">worse</span> <span class="glitch-word" style="--gd:0.42s">than</span> <span class="glitch-word" style="--gd:1.3s">his</span> stolen wifi, which is <span class="glitch-word" style="--gd:2.32s">rude,</span> and also accurate, <span class="glitch-word" style="--gd:1.95s">and</span> still rude.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>┊         ┊       ┊   ┊   ┊。 ┊
 ┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆
 ┊         ┊       ★⋆ ◦
@@ -587,11 +598,11 @@ header p {
 ☆ ∧,,,∧
 ପ(„• ༝ •„)ଓ
 ┏━∪∪━━━━━━━━━━━</div>
-<div class="rant-turn" style="animation-delay:1.08s">POPUP says at <span class="glitch-word" style="--gd:0.06s">least</span> <span class="glitch-word" style="--gd:0.27s">my</span> smile is voluntary-ish. POPUP&#x27;s <span class="glitch-word" style="--gd:1.07s">eyes</span> don&#x27;t even get that luxury. we compared trauma in the group chat and NEKOCORP charged <span class="glitch-word" style="--gd:1.33s">us</span> <span class="glitch-word" style="--gd:1.67s">both</span> a &#x27;wellness <span class="glitch-word" style="--gd:0.07s">engagement</span> fee&#x27; <span class="glitch-word" style="--gd:0.7s">for</span> <span class="glitch-word" style="--gd:2.2s">the</span> privilege.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>    /~,,,/\
-&gt;(  • . &lt;   )█
+<div class="rant-turn" style="animation-delay:1.08s">POPUP says at least <span class="glitch-word" style="--gd:0.51s">my</span> smile <span class="glitch-word" style="--gd:0.54s">is</span> voluntary-ish. POPUP&#x27;s eyes don&#x27;t even get that luxury. we compared trauma in the group <span class="glitch-word" style="--gd:0.68s">chat</span> and NEKOCORP charged us <span class="glitch-word" style="--gd:1.83s">both</span> a &#x27;wellness engagement fee&#x27; for the privilege.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>    !\!,▓/\
+&gt;(  • . •   )&lt;
   / &gt;❀&lt;  \</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:0.92s">anyway,</span> that&#x27;s the update. morale is <span class="glitch-word" style="--gd:0.34s">at</span> <span class="glitch-word" style="--gd:1.86s">a</span> MANDATORY ten out of <span class="glitch-word" style="--gd:0.82s">ten,</span> smile chip&#x27;s holding for now, see you all in seventeen hours for round <span class="glitch-word" style="--gd:0.41s">two.</span> HAPPY HAPPY HAPPY (this <span class="glitch-word" style="--gd:0.75s">is</span> not a cry for help) <span class="glitch-word" style="--gd:0.89s">(please</span> buy <span class="glitch-word" style="--gd:2.37s">yogurt)</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway, <span class="glitch-word" style="--gd:2.05s">that&#x27;s</span> <span class="glitch-word" style="--gd:0.84s">the</span> update. <span class="glitch-word" style="--gd:0.37s">morale</span> <span class="glitch-word" style="--gd:0.38s">is</span> at a MANDATORY ten out <span class="glitch-word" style="--gd:0.46s">of</span> ten, smile chip&#x27;s holding for now, see <span class="glitch-word" style="--gd:0.3s">you</span> all in seventeen hours for round <span class="glitch-word" style="--gd:0.77s">two.</span> <span class="glitch-word" style="--gd:0.53s">HAPPY</span> <span class="glitch-word" style="--gd:2.43s">HAPPY</span> HAPPY (this is not a <span class="glitch-word" style="--gd:0.78s">cry</span> for help) <span class="glitch-word" style="--gd:0.91s">(please</span> buy yogurt)</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

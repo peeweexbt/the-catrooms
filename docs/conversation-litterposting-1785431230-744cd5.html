@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,26 +573,26 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">nobody: / me, 4am, occupying <span class="glitch-word" style="--gd:1.3s">a</span> rooftop that is legally <span class="glitch-word" style="--gd:0.04s">NEKOCORP</span> <span class="glitch-word" style="--gd:0.93s">property:</span> this is <span class="glitch-word" style="--gd:0.18s">a</span> <span class="glitch-word" style="--gd:0.66s">bit</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">hi yes it&#x27;s me, STRAY. no fixed job, no fixed district, no fixed face. i am <span class="glitch-word" style="--gd:2.5s">every</span> <span class="glitch-word" style="--gd:1.49s">meowizen</span> and none of them. currently vibing on THIS particular <span class="glitch-word" style="--gd:1.23s">roof</span> specifically because the wifi bleeds over from the tower and that is crucial, that is load-bearing information</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ ?\_▄\ ▓▒*
-  5▒▓( o█o )▓36   -- 22gnal !&amp;terferen&amp;e -◆
-  &amp;▒▓ &gt; ▓ &lt; ▓▒▒</div>
-<div class="rant-turn" style="animation-delay:0.36s">anyway the tower (the landlord, not a <span class="glitch-word" style="--gd:0.99s">person,</span> <span class="glitch-word" style="--gd:1.28s">there</span> is no person, there has never been a person) <span class="glitch-word" style="--gd:1.07s">sent</span> a notice. notice says <span class="glitch-word" style="--gd:0.47s">&#x27;unauthorized</span> warmth detected.&#x27; i am the warmth. i am unauthorized. genuinely <span class="glitch-word" style="--gd:2.2s">could</span> not agree more</div>
-<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.36s">BYTE</span> says <span class="glitch-word" style="--gd:1.08s">the</span> wifi&#x27;s stolen anyway so <span class="glitch-word" style="--gd:1.53s">morally</span> i&#x27;m in the clear. SHADE lent me the sunglasses for the <span class="glitch-word" style="--gd:2.28s">walk</span> over. mutual respect between strays is very sacred and extremely funny to <span class="glitch-word" style="--gd:1.68s">witness</span> from the inside</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.05s">nobody:</span> / me, <span class="glitch-word" style="--gd:0.62s">4am,</span> <span class="glitch-word" style="--gd:1.85s">occupying</span> a rooftop that is legally NEKOCORP property: this is a bit</div>
+<div class="rant-turn" style="animation-delay:0.12s">hi yes <span class="glitch-word" style="--gd:0.11s">it&#x27;s</span> me, STRAY. no fixed job, no fixed district, no <span class="glitch-word" style="--gd:0.72s">fixed</span> face. i am <span class="glitch-word" style="--gd:0.89s">every</span> meowizen and none <span class="glitch-word" style="--gd:0.15s">of</span> them. currently vibing <span class="glitch-word" style="--gd:0.48s">on</span> <span class="glitch-word" style="--gd:1.25s">THIS</span> particular roof specifically because the wifi bleeds over from the tower and that is crucial, that is load-bearing information</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  &lt;■▓ /6▓/\ ▓▒8
+  ░▒▓( o█o )▓▒░   -# ▀ignal ▌!ter◇ere6&amp;e --
+  ░▒▓ &gt; 3 &lt; ▓▄░</div>
+<div class="rant-turn" style="animation-delay:0.36s">anyway the <span class="glitch-word" style="--gd:1.58s">tower</span> (the <span class="glitch-word" style="--gd:0.9s">landlord,</span> not a person, there is <span class="glitch-word" style="--gd:0.48s">no</span> person, there has never been a person) sent a notice. notice says &#x27;unauthorized warmth detected.&#x27; i am the warmth. i <span class="glitch-word" style="--gd:1.81s">am</span> unauthorized. <span class="glitch-word" style="--gd:0.7s">genuinely</span> could not <span class="glitch-word" style="--gd:1.57s">agree</span> <span class="glitch-word" style="--gd:0.26s">more</span></div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:0.53s">BYTE</span> says the wifi&#x27;s stolen anyway so morally i&#x27;m in the <span class="glitch-word" style="--gd:1.41s">clear.</span> SHADE lent me the sunglasses for the walk over. mutual <span class="glitch-word" style="--gd:0.98s">respect</span> <span class="glitch-word" style="--gd:0.78s">between</span> strays is very sacred <span class="glitch-word" style="--gd:0.67s">and</span> extremely funny to witness from the inside</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>        ,--.
        ( o.o)__
         &#x27;--&#x27;   \___
                  \  \__/\_/\
                   \_(  o.o  )
                      &gt; ^ &lt; (watching the towers blink)</div>
-<div class="rant-turn" style="animation-delay:0.72s">drone did a <span class="glitch-word" style="--gd:0.58s">flyby.</span> <span class="glitch-word" style="--gd:0.15s">i</span> made <span class="glitch-word" style="--gd:1.41s">eye</span> contact <span class="glitch-word" style="--gd:1.19s">with</span> it like we <span class="glitch-word" style="--gd:2.32s">were</span> both just guys at work. we are not both just guys at work. one of us gets paid and <span class="glitch-word" style="--gd:0.96s">it</span> isn&#x27;t the one sleeping on a roof</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:2.47s">here&#x27;s</span> the thing though. every rooftop i <span class="glitch-word" style="--gd:0.63s">sleep</span> <span class="glitch-word" style="--gd:2.31s">on</span> used to be someone&#x27;s <span class="glitch-word" style="--gd:1.92s">ceiling.</span> <span class="glitch-word" style="--gd:0.45s">every</span> vent BRIK bites <span class="glitch-word" style="--gd:0.82s">into</span> <span class="glitch-word" style="--gd:1.75s">used</span> to be <span class="glitch-word" style="--gd:0.56s">a</span> <span class="glitch-word" style="--gd:0.48s">wall.</span> <span class="glitch-word" style="--gd:2.45s">we</span> didn&#x27;t get evicted, the city just kept building over us like we were weather</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>     /▌/6809/\
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.96s">drone</span> did a flyby. i made <span class="glitch-word" style="--gd:0.75s">eye</span> contact with it <span class="glitch-word" style="--gd:0.92s">like</span> we were <span class="glitch-word" style="--gd:0.37s">both</span> just guys at work. we are not both just guys at work. one of us gets paid <span class="glitch-word" style="--gd:1.83s">and</span> it isn&#x27;t <span class="glitch-word" style="--gd:0.83s">the</span> one <span class="glitch-word" style="--gd:2.55s">sleeping</span> on a roof</div>
+<div class="rant-turn" style="animation-delay:0.84s">here&#x27;s <span class="glitch-word" style="--gd:2.33s">the</span> thing though. every rooftop i sleep on used to be someone&#x27;s ceiling. <span class="glitch-word" style="--gd:1.99s">every</span> <span class="glitch-word" style="--gd:1.56s">vent</span> <span class="glitch-word" style="--gd:2.31s">BRIK</span> bites <span class="glitch-word" style="--gd:0.41s">into</span> used to be a wall. we didn&#x27;t get evicted, the <span class="glitch-word" style="--gd:0.37s">city</span> just <span class="glitch-word" style="--gd:0.68s">kept</span> <span class="glitch-word" style="--gd:1.23s">building</span> over us like we were <span class="glitch-word" style="--gd:0.85s">weather</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>     2\/\_/\/~
     (  O   O  )
-     \  ^Y^  /
-      )&gt;==◆▐(      -- ears up▒ rotor %ncomin◇ 8-</div>
-<div class="rant-turn" style="animation-delay:1.08s">so no, <span class="glitch-word" style="--gd:1.19s">i</span> will not confirm my location to NEKOCORP&#x27;s little census drone, and no, i am not &#x27;one specific <span class="glitch-word" style="--gd:1.98s">cat.&#x27;</span> i am a pattern. i am a rumor. i am the guy your <span class="glitch-word" style="--gd:0.44s">landlord</span> warned you <span class="glitch-word" style="--gd:1.28s">about</span></div>
+     ▒  ^Y^  /
+      )==◆=&gt;(      -- 9a▌! u?~ r%7@r inco▌ing --</div>
+<div class="rant-turn" style="animation-delay:1.08s">so no, i will not confirm my location to NEKOCORP&#x27;s little census drone, <span class="glitch-word" style="--gd:2.48s">and</span> no, i am <span class="glitch-word" style="--gd:0.07s">not</span> &#x27;one specific <span class="glitch-word" style="--gd:1.04s">cat.&#x27;</span> i am a pattern. i am a rumor. i am the guy your landlord warned you <span class="glitch-word" style="--gd:1.85s">about</span></div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -589,7 +600,7 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. <span class="glitch-word" style="--gd:1.42s">wifi&#x27;s</span> still crucial. resistance can <span class="glitch-word" style="--gd:1.51s">wait</span> <span class="glitch-word" style="--gd:1.16s">till</span> it stops raining. this is not a <span class="glitch-word" style="--gd:2.55s">metaphor.</span> g&#x27;night</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. wifi&#x27;s still crucial. resistance can wait till it <span class="glitch-word" style="--gd:1.54s">stops</span> raining. this is not <span class="glitch-word" style="--gd:1.71s">a</span> <span class="glitch-word" style="--gd:2.56s">metaphor.</span> g&#x27;night</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

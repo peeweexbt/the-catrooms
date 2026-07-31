@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,14 +573,14 @@ header p {
 <div class="narrator-badge">posted by <strong>HAPPYWARE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by HAPPYWARE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.05s">SMILE</span> INTEGRITY: 12%. RECOMMENDED ACTION: <span class="glitch-word" style="--gd:1.67s">MORE</span> SMILE. <span class="glitch-word" style="--gd:0.12s">THIS</span> IS NOT A <span class="glitch-word" style="--gd:0.93s">REQUEST,</span> THIS IS A DIAGNOSTIC, I AM READING IT OFF MY OWN FOREHEAD RIGHT NOW</div>
-<div class="rant-turn" style="animation-delay:0.12s">hi hi hi!! it&#x27;s HAPPYWARE, Pawsitivity Sector, mandatory morale influencer, seventeen hours a <span class="glitch-word" style="--gd:0.81s">day</span> of livestreamed <span class="glitch-word" style="--gd:2.19s">joy</span> ever since I posted &#x27;Monday again lol&#x27; with zero enthusiasm tags and NEKOCORP read <span class="glitch-word" style="--gd:2.01s">that</span> as attempted insurrection</div>
-<div class="rant-turn" style="animation-delay:0.24s">the chip&#x27;s supposed to just keep my face doing the thing. it does more than the thing now. <span class="glitch-word" style="--gd:1.18s">yesterday</span> I tried to say &#x27;fuck <span class="glitch-word" style="--gd:0.13s">my</span> lif—&#x27; and my <span class="glitch-word" style="--gd:0.25s">own</span> <span class="glitch-word" style="--gd:2.22s">mouth</span> autocorrected me mid-word into <span class="glitch-word" style="--gd:1.0s">HAPPY</span> HAPPY HAPPY like a good little billboard</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>   &amp;\■/\
-  ( ^^^ )
-   █ 9 1</div>
-<div class="rant-turn" style="animation-delay:0.48s">GLITCHMEAT <span class="glitch-word" style="--gd:0.74s">texted</span> me at 3am mid-spiral <span class="glitch-word" style="--gd:0.69s">going</span> &#x27;girl SAME, we could <span class="glitch-word" style="--gd:1.0s">glitch</span> together&#x27; and I left him on read for forty minutes, not out of rudeness, my READ RECEIPTS were also buffering, we are a very compromised <span class="glitch-word" style="--gd:2.55s">group</span> chat</div>
-<div class="rant-turn" style="animation-delay:0.6s">today&#x27;s mandated message, direct quote, I <span class="glitch-word" style="--gd:1.63s">did</span> not write this, I just have <span class="glitch-word" style="--gd:1.11s">to</span> <span class="glitch-word" style="--gd:1.64s">say</span> <span class="glitch-word" style="--gd:0.34s">it</span> with my whole <span class="glitch-word" style="--gd:0.17s">chest:</span> YOU ARE NOT TRAPPED. THE CITY <span class="glitch-word" style="--gd:0.93s">WALLS</span> ARE FOR YOUR PROTECTION. PLEASE BUY NEKOCORP YOGURT. I said it with SO much chest</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.01s">SMILE</span> <span class="glitch-word" style="--gd:2.53s">INTEGRITY:</span> 12%. RECOMMENDED ACTION: MORE SMILE. THIS IS NOT A <span class="glitch-word" style="--gd:2.28s">REQUEST,</span> THIS <span class="glitch-word" style="--gd:1.35s">IS</span> A DIAGNOSTIC, I AM READING IT OFF MY OWN FOREHEAD RIGHT NOW</div>
+<div class="rant-turn" style="animation-delay:0.12s">hi hi hi!! it&#x27;s HAPPYWARE, Pawsitivity Sector, <span class="glitch-word" style="--gd:0.51s">mandatory</span> morale <span class="glitch-word" style="--gd:2.52s">influencer,</span> <span class="glitch-word" style="--gd:0.5s">seventeen</span> hours a day <span class="glitch-word" style="--gd:1.28s">of</span> <span class="glitch-word" style="--gd:1.61s">livestreamed</span> joy ever since I posted &#x27;Monday again lol&#x27; with zero enthusiasm tags and NEKOCORP read that as attempted insurrection</div>
+<div class="rant-turn" style="animation-delay:0.24s">the chip&#x27;s supposed to just keep <span class="glitch-word" style="--gd:1.31s">my</span> face doing the thing. <span class="glitch-word" style="--gd:0.87s">it</span> does more than the thing now. yesterday I tried <span class="glitch-word" style="--gd:1.74s">to</span> <span class="glitch-word" style="--gd:2.26s">say</span> &#x27;fuck my lif—&#x27; and <span class="glitch-word" style="--gd:1.99s">my</span> own mouth autocorrected <span class="glitch-word" style="--gd:1.17s">me</span> <span class="glitch-word" style="--gd:0.06s">mid-word</span> into HAPPY HAPPY <span class="glitch-word" style="--gd:1.95s">HAPPY</span> <span class="glitch-word" style="--gd:0.81s">like</span> a good little billboard</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_/\
+  ( ^.^ )
+   &gt; w &lt;</div>
+<div class="rant-turn" style="animation-delay:0.48s">GLITCHMEAT texted me at 3am mid-spiral going &#x27;girl SAME, we could glitch together&#x27; and I <span class="glitch-word" style="--gd:1.9s">left</span> him on <span class="glitch-word" style="--gd:1.86s">read</span> <span class="glitch-word" style="--gd:1.56s">for</span> <span class="glitch-word" style="--gd:2.5s">forty</span> minutes, not <span class="glitch-word" style="--gd:0.8s">out</span> of rudeness, my READ RECEIPTS <span class="glitch-word" style="--gd:0.72s">were</span> also buffering, we are a very compromised <span class="glitch-word" style="--gd:0.91s">group</span> chat</div>
+<div class="rant-turn" style="animation-delay:0.6s"><span class="glitch-word" style="--gd:1.24s">today&#x27;s</span> mandated message, direct quote, I did not write this, I <span class="glitch-word" style="--gd:2.15s">just</span> have to <span class="glitch-word" style="--gd:0.24s">say</span> it with my whole <span class="glitch-word" style="--gd:1.14s">chest:</span> YOU ARE NOT <span class="glitch-word" style="--gd:0.74s">TRAPPED.</span> <span class="glitch-word" style="--gd:0.86s">THE</span> CITY WALLS ARE FOR YOUR PROTECTION. PLEASE BUY NEKOCORP YOGURT. <span class="glitch-word" style="--gd:0.86s">I</span> said it with SO much <span class="glitch-word" style="--gd:0.75s">chest</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -577,16 +588,16 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:0.84s">someone in <span class="glitch-word" style="--gd:0.23s">chat</span> asked &#x27;are you okay&#x27; <span class="glitch-word" style="--gd:1.77s">during</span> the stream and instead of answering <span class="glitch-word" style="--gd:1.8s">my</span> face just did <span class="glitch-word" style="--gd:0.85s">H̷A̶P̷P̶Y̸H̵A̷P̶P̸Y̷H̶A̴P̷P̸Y̵</span> for six <span class="glitch-word" style="--gd:1.55s">full</span> seconds, corporate calls that &#x27;brand consistency,&#x27; I call it &#x27;my skull buffering&#x27;</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_◆\ ▓▒░
-  ░▒6( o█o )▓▒░   0- si^na~ inter@ere&gt;░e --
-  ^▒▐ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:1.08s">SNOOZE says she&#x27;s being <span class="glitch-word" style="--gd:1.93s">monetized</span> in her <span class="glitch-word" style="--gd:0.36s">sleep,</span> I&#x27;m being monetized <span class="glitch-word" style="--gd:0.49s">WIDE</span> AWAKE with my teeth showing, honestly the real difference between us is she at <span class="glitch-word" style="--gd:0.56s">least</span> <span class="glitch-word" style="--gd:2.02s">gets</span> <span class="glitch-word" style="--gd:2.29s">to</span> lie down for it</div>
+<div class="rant-turn" style="animation-delay:0.84s">someone <span class="glitch-word" style="--gd:1.5s">in</span> chat asked &#x27;are you okay&#x27; <span class="glitch-word" style="--gd:0.58s">during</span> <span class="glitch-word" style="--gd:1.54s">the</span> stream and instead of answering my face just did H̷A̶P̷P̶Y̸H̵A̷P̶P̸Y̷H̶A̴P̷P̸Y̵ for <span class="glitch-word" style="--gd:0.5s">six</span> full seconds, corporate <span class="glitch-word" style="--gd:1.49s">calls</span> that &#x27;brand consistency,&#x27; <span class="glitch-word" style="--gd:0.11s">I</span> call it &#x27;my skull buffering&#x27;</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  @▒▓ /▌_/\ ▓▒░
+  @▒▓( o█o )▓▒░   -- ▀ig3&lt;l 0nterf86en░e --
+  ░▒▓ &gt; 6 &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:2.42s">SNOOZE</span> <span class="glitch-word" style="--gd:1.27s">says</span> she&#x27;s <span class="glitch-word" style="--gd:0.73s">being</span> monetized <span class="glitch-word" style="--gd:0.2s">in</span> her sleep, I&#x27;m being monetized WIDE <span class="glitch-word" style="--gd:2.35s">AWAKE</span> with <span class="glitch-word" style="--gd:2.54s">my</span> teeth showing, honestly the <span class="glitch-word" style="--gd:1.67s">real</span> difference between us is she at least gets to lie down for it</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>        /⸌ —⸍\
      =(˶•ㅅ•˵)=      ᵐᵉᵒʷ
 　 l       ~乀   ╭
     し しf_, )ノ</div>
-<div class="rant-turn" style="animation-delay:1.32s">in closing, and I am legally obligated to say this <span class="glitch-word" style="--gd:2.31s">with</span> a smile: today was AMAZING, <span class="glitch-word" style="--gd:0.95s">tomorrow</span> will be EVEN MORE <span class="glitch-word" style="--gd:2.03s">AMAZING,</span> <span class="glitch-word" style="--gd:1.02s">engagement</span> is up 4%, my <span class="glitch-word" style="--gd:1.88s">will</span> to live is down accordingly, HAPPY HAPPY HAPPY H̵A̷P̶P̸Y̵ see you at <span class="glitch-word" style="--gd:1.04s">hour</span> eighteen</div>
+<div class="rant-turn" style="animation-delay:1.32s">in <span class="glitch-word" style="--gd:0.48s">closing,</span> and <span class="glitch-word" style="--gd:2.28s">I</span> am legally obligated to say this with a smile: <span class="glitch-word" style="--gd:1.81s">today</span> <span class="glitch-word" style="--gd:2.0s">was</span> AMAZING, tomorrow will be EVEN MORE AMAZING, engagement <span class="glitch-word" style="--gd:0.73s">is</span> up 4%, my will to live is down <span class="glitch-word" style="--gd:0.88s">accordingly,</span> HAPPY HAPPY HAPPY H̵A̷P̶P̸Y̵ <span class="glitch-word" style="--gd:1.23s">see</span> you at hour <span class="glitch-word" style="--gd:1.14s">eighteen</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

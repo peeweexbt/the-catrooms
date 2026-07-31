@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,32 +573,32 @@ header p {
 <div class="narrator-badge">posted by <strong>BRIK</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">STRUCTURAL INTEGRITY: 12%. that&#x27;s my old <span class="glitch-word" style="--gd:1.36s">apartment&#x27;s</span> rating <span class="glitch-word" style="--gd:0.82s">right</span> before NEKOCORP condemned it. <span class="glitch-word" style="--gd:1.35s">that&#x27;s</span> also my rating right now, personally, <span class="glitch-word" style="--gd:1.57s">emotionally,</span> structurally.</div>
-<div class="rant-turn" style="animation-delay:0.12s">BRIK. <span class="glitch-word" style="--gd:2.57s">ex-KILLDOZER</span> operator. district: Demolished — yeah that&#x27;s the actual district <span class="glitch-word" style="--gd:1.66s">name</span> now, <span class="glitch-word" style="--gd:1.31s">they</span> didn&#x27;t <span class="glitch-word" style="--gd:0.66s">even</span> rebrand it after they finished with it, just left the sign <span class="glitch-word" style="--gd:2.23s">up</span> as a warning.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\0/&amp;/\
-    (  O   O  1
-     \  ^Y^  4
-      )=====(      -- ear7 u%, roto█ inco▒ing @◆</div>
-<div class="rant-turn" style="animation-delay:0.36s">asked ONE question at my last shift review. why do execs <span class="glitch-word" style="--gd:1.99s">get</span> twelve fish breaks <span class="glitch-word" style="--gd:0.09s">a</span> shift and factory <span class="glitch-word" style="--gd:0.95s">cats</span> split one communal scrap of <span class="glitch-word" style="--gd:2.14s">tuna</span> between forty of us. next morning my building&#x27;s <span class="glitch-word" style="--gd:0.04s">a</span> holographic parking lot and my <span class="glitch-word" style="--gd:1.91s">wife&#x27;s</span> a &#x27;cat made flesh light&#x27; now, whatever that means, nobody will explain it, HR just keeps smiling.</div>
-<div class="rant-turn" style="animation-delay:0.48s">live in an air vent now. biting surveillance drones for sport, not even for a cause anymore <span class="glitch-word" style="--gd:2.57s">honestly,</span> <span class="glitch-word" style="--gd:1.61s">just</span> bc it&#x27;s the <span class="glitch-word" style="--gd:0.31s">only</span> thing left that <span class="glitch-word" style="--gd:2.35s">still</span> feels like winning.</div>
+<div class="rant-turn" style="animation-delay:0.0s">STRUCTURAL INTEGRITY: 12%. that&#x27;s my old <span class="glitch-word" style="--gd:1.62s">apartment&#x27;s</span> rating right before NEKOCORP condemned <span class="glitch-word" style="--gd:1.32s">it.</span> that&#x27;s also my rating <span class="glitch-word" style="--gd:2.0s">right</span> now, personally, emotionally, structurally.</div>
+<div class="rant-turn" style="animation-delay:0.12s">BRIK. ex-KILLDOZER operator. district: Demolished — yeah that&#x27;s <span class="glitch-word" style="--gd:1.08s">the</span> actual district name now, they didn&#x27;t even rebrand it after they finished with <span class="glitch-word" style="--gd:0.63s">it,</span> <span class="glitch-word" style="--gd:1.84s">just</span> left the sign up as <span class="glitch-word" style="--gd:2.07s">a</span> warning.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     ▄█/\9/\/5
+    (  O   O  )
+     \  ^Y^  /
+      )==8==(      0- ea▓s up, rot▐! incoming -6</div>
+<div class="rant-turn" style="animation-delay:0.36s">asked ONE question at <span class="glitch-word" style="--gd:1.51s">my</span> last shift review. why do execs <span class="glitch-word" style="--gd:0.72s">get</span> twelve fish <span class="glitch-word" style="--gd:1.71s">breaks</span> a <span class="glitch-word" style="--gd:0.48s">shift</span> and factory cats <span class="glitch-word" style="--gd:1.42s">split</span> one communal scrap of <span class="glitch-word" style="--gd:1.33s">tuna</span> between forty of us. next morning my building&#x27;s a holographic parking <span class="glitch-word" style="--gd:1.53s">lot</span> and my wife&#x27;s a &#x27;cat made flesh light&#x27; <span class="glitch-word" style="--gd:0.11s">now,</span> whatever that means, nobody <span class="glitch-word" style="--gd:1.19s">will</span> <span class="glitch-word" style="--gd:2.23s">explain</span> it, HR just keeps smiling.</div>
+<div class="rant-turn" style="animation-delay:0.48s">live <span class="glitch-word" style="--gd:2.58s">in</span> an air vent now. <span class="glitch-word" style="--gd:0.65s">biting</span> surveillance drones for sport, not even for a <span class="glitch-word" style="--gd:1.62s">cause</span> anymore <span class="glitch-word" style="--gd:0.65s">honestly,</span> just bc <span class="glitch-word" style="--gd:2.54s">it&#x27;s</span> <span class="glitch-word" style="--gd:0.34s">the</span> only thing left that still <span class="glitch-word" style="--gd:1.39s">feels</span> like winning.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span> /\_/\
 ( o.o )
  &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.72s">official file says &#x27;domestic extremist.&#x27; my mother, who has read the file, says &#x27;HANDSOME.&#x27; both of these are, respectfully, correct.</div>
-<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY hit me up <span class="glitch-word" style="--gd:0.18s">about</span> the <span class="glitch-word" style="--gd:1.67s">loading</span> <span class="glitch-word" style="--gd:2.41s">dock</span> job again. bro I OPERATED THE MACHINE THAT ATE MY OWN NEIGHBORHOOD, <span class="glitch-word" style="--gd:0.82s">I</span> am not spiritually equipped to steal tuna shipments for fun, <span class="glitch-word" style="--gd:1.5s">I</span> need <span class="glitch-word" style="--gd:1.51s">my</span> <span class="glitch-word" style="--gd:1.69s">crimes</span> to have <span class="glitch-word" style="--gd:1.13s">a</span> MESSAGE.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>)     7\▄▀/5
-( =/   • 3   \=
-9----&lt;◇96U---▄---█▐--◇-----
+<div class="rant-turn" style="animation-delay:0.72s">official file says <span class="glitch-word" style="--gd:0.37s">&#x27;domestic</span> extremist.&#x27; my mother, who has read the file, says &#x27;HANDSOME.&#x27; both <span class="glitch-word" style="--gd:0.8s">of</span> these are, respectfully, correct.</div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:1.35s">KNIFEBOY</span> <span class="glitch-word" style="--gd:2.4s">hit</span> me up about the loading dock job again. bro I OPERATED THE MACHINE THAT ATE MY OWN NEIGHBORHOOD, <span class="glitch-word" style="--gd:0.2s">I</span> am not <span class="glitch-word" style="--gd:2.01s">spiritually</span> equipped to steal tuna shipments for fun, I need my crimes to have a MESSAGE.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>░     /2&amp;8/\
+◇ =~   • •   \6
+----█9-U-U-----◆--1--------
 |                                |
-|    w7 0ive ?n a societ█        |
-%                                9
-■-----------------------1-----</div>
-<div class="rant-turn" style="animation-delay:1.08s">drone number six <span class="glitch-word" style="--gd:1.18s">tonight</span> <span class="glitch-word" style="--gd:1.36s">tasted</span> like ozone and bad decisions. worth it. logged <span class="glitch-word" style="--gd:0.87s">it</span> as &#x27;unscheduled <span class="glitch-word" style="--gd:2.42s">structural</span> <span class="glitch-word" style="--gd:0.91s">assessment&#x27;</span> in my head, that&#x27;s the only paperwork I <span class="glitch-word" style="--gd:0.84s">still</span> believe in.</div>
+|    we live in a s&amp;ciety        5
+|                                |
+-----------▓-------6---64----▓</div>
+<div class="rant-turn" style="animation-delay:1.08s">drone number <span class="glitch-word" style="--gd:2.18s">six</span> tonight tasted like ozone and bad decisions. worth it. logged it as &#x27;unscheduled <span class="glitch-word" style="--gd:0.95s">structural</span> assessment&#x27; in my head, that&#x27;s the only paperwork I <span class="glitch-word" style="--gd:2.4s">still</span> believe in.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. <span class="glitch-word" style="--gd:1.4s">vent&#x27;s</span> cold, wife&#x27;s a hologram, mother thinks I&#x27;m handsome, drone count&#x27;s at six. tomorrow the number goes up. that&#x27;s <span class="glitch-word" style="--gd:2.36s">not</span> a <span class="glitch-word" style="--gd:1.74s">threat</span> that&#x27;s <span class="glitch-word" style="--gd:0.52s">a</span> SCHEDULE.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. vent&#x27;s cold, wife&#x27;s <span class="glitch-word" style="--gd:0.88s">a</span> hologram, mother thinks <span class="glitch-word" style="--gd:1.85s">I&#x27;m</span> handsome, drone count&#x27;s at six. tomorrow the <span class="glitch-word" style="--gd:0.07s">number</span> goes up. that&#x27;s not a threat that&#x27;s a SCHEDULE.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

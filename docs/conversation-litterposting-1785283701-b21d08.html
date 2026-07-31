@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,30 +573,30 @@ header p {
 <div class="narrator-badge">posted by <strong>BYTE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.65s">ok</span> i need to vent <span class="glitch-word" style="--gd:1.61s">for</span> a <span class="glitch-word" style="--gd:2.29s">second</span> <span class="glitch-word" style="--gd:1.35s">and</span> this stays between us, whoever&#x27;s reading this off a stolen transcript at 2am</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s <span class="glitch-word" style="--gd:1.3s">BYTE.</span> Server Alley 9. official job: illegal wifi auditor. unofficial <span class="glitch-word" style="--gd:1.64s">job:</span> personally holding <span class="glitch-word" style="--gd:2.53s">the</span> entire district&#x27;s black <span class="glitch-word" style="--gd:2.32s">market</span> bandwidth together with duct tape and spite</div>
+<div class="rant-turn" style="animation-delay:0.0s">ok i need to <span class="glitch-word" style="--gd:2.59s">vent</span> <span class="glitch-word" style="--gd:0.65s">for</span> a second and <span class="glitch-word" style="--gd:0.76s">this</span> stays <span class="glitch-word" style="--gd:2.3s">between</span> <span class="glitch-word" style="--gd:1.08s">us,</span> <span class="glitch-word" style="--gd:1.88s">whoever&#x27;s</span> reading this off a stolen transcript at 2am</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BYTE. Server Alley <span class="glitch-word" style="--gd:0.41s">9.</span> <span class="glitch-word" style="--gd:2.51s">official</span> <span class="glitch-word" style="--gd:0.95s">job:</span> illegal wifi auditor. unofficial job: personally holding the entire district&#x27;s black market bandwidth together with <span class="glitch-word" style="--gd:2.25s">duct</span> tape <span class="glitch-word" style="--gd:0.47s">and</span> spite</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">cracked router #6 <span class="glitch-word" style="--gd:1.18s">tonight</span> for the eleventh time this month. NEKOCORP changes the password every <span class="glitch-word" style="--gd:2.19s">48</span> hours. i change my whole personality every 47. we are in an arms race and only <span class="glitch-word" style="--gd:2.3s">one</span> of us has a pension</div>
-<div class="rant-turn" style="animation-delay:0.48s">the reward for all <span class="glitch-word" style="--gd:0.91s">this</span> labor? one (1) low-res fish video. buffers at the good <span class="glitch-word" style="--gd:1.96s">part.</span> EVERY TIME. the fish just freezes mid-jump like it too got flagged for premium content</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░!6 /~_/█ ▓◆░
-  ░▒▓( o█! )▓▒░   -▌ s&amp;gnal inter░er~nce --
-  ░6▓ &gt; ? &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">shoutout SNOOZE, i <span class="glitch-word" style="--gd:1.57s">hacked</span> her sleep pod&#x27;s router <span class="glitch-word" style="--gd:1.95s">last</span> week <span class="glitch-word" style="--gd:1.14s">so</span> the ads in her <span class="glitch-word" style="--gd:0.29s">nightmare</span> <span class="glitch-word" style="--gd:1.76s">streamed</span> <span class="glitch-word" style="--gd:0.46s">in</span> <span class="glitch-word" style="--gd:1.25s">1080p,</span> she said thank you, then fell back asleep <span class="glitch-word" style="--gd:0.69s">before</span> finishing the <span class="glitch-word" style="--gd:1.87s">sentence,</span> <span class="glitch-word" style="--gd:1.93s">that&#x27;s</span> <span class="glitch-word" style="--gd:1.06s">the</span> whole friendship honestly</div>
-<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY keeps offering me a cut of stolen tuna to scrub his face off every camera in the alley. <span class="glitch-word" style="--gd:1.26s">tempting.</span> but if i start <span class="glitch-word" style="--gd:1.28s">deleting</span> HIS face i gotta start deleting MY face and then what am i even <span class="glitch-word" style="--gd:1.18s">doing</span> here. <span class="glitch-word" style="--gd:1.41s">principles.</span> i have several</div>
+<div class="rant-turn" style="animation-delay:0.36s">cracked router #6 tonight for the eleventh time this month. NEKOCORP changes <span class="glitch-word" style="--gd:1.38s">the</span> password every 48 hours. i change my whole personality every 47. we are in an arms <span class="glitch-word" style="--gd:1.64s">race</span> and only one of us has a pension</div>
+<div class="rant-turn" style="animation-delay:0.48s">the <span class="glitch-word" style="--gd:2.42s">reward</span> for <span class="glitch-word" style="--gd:0.66s">all</span> this labor? one (1) low-res fish video. buffers at the good part. EVERY <span class="glitch-word" style="--gd:0.04s">TIME.</span> the fish just freezes mid-jump like <span class="glitch-word" style="--gd:0.52s">it</span> too got flagged for premium <span class="glitch-word" style="--gd:1.16s">content</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ▐▒@ /\_/\ ▓▒░
+  ░▒▄( o█o )▓▒░   -- si▀nal interfe&gt;░n&lt;e -8
+  ◆▒▓ &gt; ▓ &lt; 6▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">shoutout SNOOZE, i <span class="glitch-word" style="--gd:0.0s">hacked</span> her <span class="glitch-word" style="--gd:2.39s">sleep</span> pod&#x27;s router last week so the ads in her nightmare streamed in 1080p, <span class="glitch-word" style="--gd:0.09s">she</span> <span class="glitch-word" style="--gd:0.67s">said</span> thank you, then fell back asleep before finishing the sentence, that&#x27;s the whole friendship <span class="glitch-word" style="--gd:1.69s">honestly</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY keeps <span class="glitch-word" style="--gd:2.03s">offering</span> me a cut of stolen tuna to scrub his face off every camera in the alley. tempting. but if i start <span class="glitch-word" style="--gd:0.84s">deleting</span> HIS face i gotta start deleting MY face and then what am i even doing here. principles. i <span class="glitch-word" style="--gd:1.41s">have</span> several</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:1.58s">every</span> <span class="glitch-word" style="--gd:2.14s">night</span> i wait for <span class="glitch-word" style="--gd:0.45s">the</span> knock. it doesn&#x27;t come. i wait anyway. THREAT LEVEL: doormat. STATUS: still connected. <span class="glitch-word" style="--gd:1.6s">PING:</span> 4ms and dropping</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_/\
-       ░ -!* 4
-        &gt; ^ &lt;
-   ▌~▓~~~|||~&amp;~~&amp;~[DATA JA▐K: LINKE█]</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway router&#x27;s back up, stream&#x27;s live, fish is still frozen mid-jump, and if this transcript disappears by morning you&#x27;ll know why. byte out. keep your <span class="glitch-word" style="--gd:0.74s">bandwidth</span> close and your enemies closer <span class="glitch-word" style="--gd:0.01s">to</span> the <span class="glitch-word" style="--gd:1.22s">router</span></div>
+<div class="rant-turn" style="animation-delay:1.08s">every night i wait for <span class="glitch-word" style="--gd:2.39s">the</span> knock. <span class="glitch-word" style="--gd:0.58s">it</span> doesn&#x27;t come. i <span class="glitch-word" style="--gd:0.73s">wait</span> anyway. THREAT LEVEL: doormat. STATUS: still connected. PING: 4ms and dropping</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_/!
+       2 -.- )
+        &gt; ^ █
+   ~~13~~||░~~~~█~4DATA JACK: LIN▓ED]</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway router&#x27;s <span class="glitch-word" style="--gd:2.37s">back</span> up, stream&#x27;s <span class="glitch-word" style="--gd:0.31s">live,</span> fish is still frozen <span class="glitch-word" style="--gd:1.18s">mid-jump,</span> <span class="glitch-word" style="--gd:2.24s">and</span> if <span class="glitch-word" style="--gd:2.34s">this</span> transcript <span class="glitch-word" style="--gd:0.57s">disappears</span> by morning you&#x27;ll know why. byte <span class="glitch-word" style="--gd:1.83s">out.</span> keep <span class="glitch-word" style="--gd:2.54s">your</span> bandwidth close and your enemies <span class="glitch-word" style="--gd:0.87s">closer</span> to the <span class="glitch-word" style="--gd:0.09s">router</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

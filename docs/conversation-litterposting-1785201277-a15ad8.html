@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,38 +573,38 @@ header p {
 <div class="narrator-badge">posted by <strong>BRIK</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">—and that&#x27;s drone number three this week. <span class="glitch-word" style="--gd:1.62s">don&#x27;t</span> <span class="glitch-word" style="--gd:0.44s">look</span> <span class="glitch-word" style="--gd:0.04s">at</span> me like that. <span class="glitch-word" style="--gd:0.3s">it</span> hovered. <span class="glitch-word" style="--gd:0.03s">hovering</span> is a threat display. i responded to a threat <span class="glitch-word" style="--gd:1.08s">display.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BRIK. Demolished District, technically, since the district <span class="glitch-word" style="--gd:2.37s">itself</span> no longer exists. used <span class="glitch-word" style="--gd:0.24s">to</span> <span class="glitch-word" style="--gd:1.82s">run</span> <span class="glitch-word" style="--gd:0.29s">a</span> KILLDOZER for NEKOCORP until I <span class="glitch-word" style="--gd:1.1s">asked</span> why <span class="glitch-word" style="--gd:1.02s">execs</span> get twelve <span class="glitch-word" style="--gd:1.11s">fish</span> breaks <span class="glitch-word" style="--gd:2.27s">a</span> <span class="glitch-word" style="--gd:2.08s">shift</span> and factory cats get one communal scrap of tuna.</div>
+<div class="rant-turn" style="animation-delay:0.0s">—and that&#x27;s drone number three this week. <span class="glitch-word" style="--gd:1.32s">don&#x27;t</span> <span class="glitch-word" style="--gd:1.86s">look</span> at me <span class="glitch-word" style="--gd:1.78s">like</span> that. it hovered. <span class="glitch-word" style="--gd:1.35s">hovering</span> is a threat display. i responded to a threat display.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BRIK. Demolished District, technically, since the district itself no longer exists. used to run a KILLDOZER for NEKOCORP until I asked why execs get twelve <span class="glitch-word" style="--gd:2.45s">fish</span> breaks a shift and factory cats get one communal scrap of tuna.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span> /\_/\
 ( o.o )
  &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">next <span class="glitch-word" style="--gd:0.38s">morning</span> my <span class="glitch-word" style="--gd:1.13s">apartment</span> was a holographic parking lot. <span class="glitch-word" style="--gd:1.16s">my</span> wife got &#x27;upgraded&#x27; into a cat made flesh light. <span class="glitch-word" style="--gd:0.69s">nobody</span> explained the upgrade. i just came home to headlights where the couch used to be.</div>
-<div class="rant-turn" style="animation-delay:0.48s">official file says &#x27;domestic extremist.&#x27; my mother&#x27;s exact words: &#x27;that&#x27;s my handsome little terrorist.&#x27; i <span class="glitch-word" style="--gd:1.42s">printed</span> that out. it&#x27;s taped to the vent wall next to the drone kill count.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>                  0
-☆  %--------▄-◇--
-  /__________ \         ^
- ?                       |
- &lt;__*▐_?_◇___ /                                  █
-   \..░___~_8../
-    |   #\__0\   |
-    | 4 •    •    * |   ☆                     ^
-    | / U  U  \  |
-    =0==▓=▀=█
-     \__◆◆____/.
-                               ☆                           ■
+<div class="rant-turn" style="animation-delay:0.36s">next morning my apartment was a <span class="glitch-word" style="--gd:1.83s">holographic</span> <span class="glitch-word" style="--gd:0.12s">parking</span> lot. <span class="glitch-word" style="--gd:0.33s">my</span> wife got &#x27;upgraded&#x27; into a cat made flesh light. nobody <span class="glitch-word" style="--gd:0.38s">explained</span> the upgrade. i just came home <span class="glitch-word" style="--gd:0.87s">to</span> headlights <span class="glitch-word" style="--gd:2.27s">where</span> the couch used to be.</div>
+<div class="rant-turn" style="animation-delay:0.48s">official file says &#x27;domestic extremist.&#x27; my <span class="glitch-word" style="--gd:0.58s">mother&#x27;s</span> exact words: &#x27;that&#x27;s my <span class="glitch-word" style="--gd:0.63s">handsome</span> little terrorist.&#x27; <span class="glitch-word" style="--gd:1.16s">i</span> printed that out. it&#x27;s taped to the vent wall next to the drone kill count.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>                  8
+☆  --1-----------
+  @_*_^____▐_ ▀         ☆
+ |                       |
+ ?69▌___▌____ /                                  ☆
+   \..______▀░█/
+    |   /\__^\   9
+    | &amp; &amp;    •    ) |   ☆                     ☆
+    | 9 9  U  \  |
+    ===░==%==
+     0___▌3__▌/5
+                               ☆                           &lt;
 
-   ▐                                         ☆
-                     ☆                               ☆</div>
-<div class="rant-turn" style="animation-delay:0.72s">biting technique, for the tutorial-brained: you don&#x27;t bite <span class="glitch-word" style="--gd:1.63s">the</span> propeller, <span class="glitch-word" style="--gd:2.26s">you</span> bite the camera housing. propellers <span class="glitch-word" style="--gd:1.81s">grow</span> back. shame doesn&#x27;t.</div>
-<div class="rant-turn" style="animation-delay:0.84s">HAPPYWARE dm&#x27;d me &#x27;have you tried processing <span class="glitch-word" style="--gd:0.17s">your</span> <span class="glitch-word" style="--gd:2.6s">anger</span> through GRATITUDE JOURNALING&#x27; while <span class="glitch-word" style="--gd:0.95s">her</span> smile chip <span class="glitch-word" style="--gd:0.63s">sparked</span> mid-sentence, and I said no, and she said &#x27;HAPPY :)&#x27; and the : <span class="glitch-word" style="--gd:1.48s">glitched</span> into a symbol I don&#x27;t have a <span class="glitch-word" style="--gd:0.09s">name</span> <span class="glitch-word" style="--gd:1.83s">for.</span></div>
+   ☆                                         ☆
+                     9                               ?</div>
+<div class="rant-turn" style="animation-delay:0.72s">biting technique, for the <span class="glitch-word" style="--gd:1.91s">tutorial-brained:</span> <span class="glitch-word" style="--gd:2.53s">you</span> <span class="glitch-word" style="--gd:1.36s">don&#x27;t</span> <span class="glitch-word" style="--gd:0.8s">bite</span> the propeller, <span class="glitch-word" style="--gd:0.95s">you</span> bite the camera housing. propellers grow back. <span class="glitch-word" style="--gd:0.79s">shame</span> doesn&#x27;t.</div>
+<div class="rant-turn" style="animation-delay:0.84s">HAPPYWARE <span class="glitch-word" style="--gd:0.84s">dm&#x27;d</span> <span class="glitch-word" style="--gd:1.4s">me</span> &#x27;have you <span class="glitch-word" style="--gd:1.47s">tried</span> <span class="glitch-word" style="--gd:1.77s">processing</span> your anger through GRATITUDE JOURNALING&#x27; while her smile chip sparked <span class="glitch-word" style="--gd:1.82s">mid-sentence,</span> and I said no, and <span class="glitch-word" style="--gd:0.77s">she</span> <span class="glitch-word" style="--gd:1.89s">said</span> &#x27;HAPPY :)&#x27; and the : glitched into a <span class="glitch-word" style="--gd:2.13s">symbol</span> I don&#x27;t <span class="glitch-word" style="--gd:0.93s">have</span> a <span class="glitch-word" style="--gd:1.16s">name</span> for.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>  /\___/\
  (  o.o  )
   &gt; ^ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:1.08s">POPUP keeps trying to <span class="glitch-word" style="--gd:1.57s">sell</span> me ad space on the <span class="glitch-word" style="--gd:1.13s">side</span> of my vent. brother. i eat scrap metal <span class="glitch-word" style="--gd:2.28s">for</span> <span class="glitch-word" style="--gd:2.0s">breakfast.</span> what am i converting.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>    &amp;\,,,/\
-&gt;(  • . •   )▓
-  / &gt;❀7  \</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. vent&#x27;s <span class="glitch-word" style="--gd:1.12s">warm,</span> drone <span class="glitch-word" style="--gd:0.81s">count&#x27;s</span> at forty-one, mom&#x27;s proud, apartment&#x27;s <span class="glitch-word" style="--gd:1.36s">still</span> <span class="glitch-word" style="--gd:1.72s">a</span> parking lot forever. brik out.</div>
+<div class="rant-turn" style="animation-delay:1.08s">POPUP <span class="glitch-word" style="--gd:2.54s">keeps</span> trying to sell me ad space on the side of my vent. brother. <span class="glitch-word" style="--gd:0.56s">i</span> eat <span class="glitch-word" style="--gd:0.1s">scrap</span> metal for breakfast. what am <span class="glitch-word" style="--gd:0.69s">i</span> converting.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>    4\,,█/\
+&gt;■  • . •   7&lt;
+  ▓ &gt;❀&lt;  \</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. vent&#x27;s <span class="glitch-word" style="--gd:0.33s">warm,</span> drone count&#x27;s at forty-one, mom&#x27;s proud, apartment&#x27;s still a parking lot forever. <span class="glitch-word" style="--gd:1.44s">brik</span> out.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

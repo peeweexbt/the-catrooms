@@ -24,73 +24,84 @@ body {
   padding: 0;
   line-height: 1.5;
   scrollbar-width: auto;
-  scrollbar-color: var(--accent2) var(--card);
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
-   palette. Firefox only supports the two-color scrollbar-color rule
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
    above; Chrome/Safari/Edge get the full retro treatment below. */
 ::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0d0716, #07040d);
-  border-left: 1px solid var(--border);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent2);
+  background-color: rgba(255, 46, 230, 0.4);
   background-image:
     repeating-linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.22) 0px,
-      rgba(255, 255, 255, 0.22) 2px,
+      rgba(255, 255, 255, 0.14) 0px,
+      rgba(255, 255, 255, 0.14) 2px,
       transparent 2px,
       transparent 6px
     ),
-    linear-gradient(180deg, var(--accent2) 0%, var(--accent) 100%);
+    linear-gradient(180deg, rgba(255, 46, 230, 0.4) 0%, rgba(0, 240, 255, 0.4) 100%);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 8px var(--accent2), 0 0 3px var(--accent);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.4), 0 0 2px rgba(0, 240, 255, 0.4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  box-shadow: 0 0 14px var(--accent2), 0 0 6px var(--accent);
+  background-color: rgba(255, 46, 230, 0.6);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.6) 0%, rgba(0, 240, 255, 0.6) 100%);
+  box-shadow: 0 0 10px rgba(255, 46, 230, 0.55), 0 0 4px rgba(0, 240, 255, 0.5);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: var(--accent);
-  box-shadow: 0 0 16px var(--accent), inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 240, 255, 0.65);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6), inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-button {
   display: block;
   height: 16px;
-  background-color: var(--card);
+  background-color: rgba(18, 10, 31, 0.35);
   border-style: solid;
   border-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.35);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.65);
-  border-right-color: rgba(0, 0, 0, 0.65);
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 8px;
 }
 ::-webkit-scrollbar-button:hover {
-  background-color: #1a0f2e;
+  background-color: rgba(26, 15, 46, 0.55);
 }
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: linear-gradient(135deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%),
-    linear-gradient(45deg, transparent 48%, var(--accent) 48%, var(--accent) 52%, transparent 52%);
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: linear-gradient(-135deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, var(--accent2) 48%, var(--accent2) 52%, transparent 52%);
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--bg);
+  background: rgba(7, 4, 13, 0.4);
 }
 .decor-cat {
   position: absolute;
@@ -562,14 +573,14 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">incident report <span class="glitch-word" style="--gd:2.04s">#212,</span> rooftop HVAC unit, 04:12am: <span class="glitch-word" style="--gd:2.01s">GREMLIN</span> from the <span class="glitch-word" style="--gd:1.6s">loading</span> <span class="glitch-word" style="--gd:0.3s">dock</span> has annexed the vent grate <span class="glitch-word" style="--gd:0.53s">because</span> it&#x27;s <span class="glitch-word" style="--gd:2.32s">&#x27;structurally</span> superior,&#x27; his words, he does not <span class="glitch-word" style="--gd:0.08s">know</span> <span class="glitch-word" style="--gd:0.35s">what</span> <span class="glitch-word" style="--gd:2.43s">that</span> <span class="glitch-word" style="--gd:0.05s">means,</span> he just <span class="glitch-word" style="--gd:1.16s">likes</span> saying it</div>
-<div class="rant-turn" style="animation-delay:0.12s">NekoCorp&#x27;s newest thing is a kiosk at the plaza <span class="glitch-word" style="--gd:2.1s">that</span> iris-scans <span class="glitch-word" style="--gd:0.76s">you</span> <span class="glitch-word" style="--gd:1.21s">before</span> it&#x27;ll dispense a single treat, calls it &#x27;PounceID.&#x27; i <span class="glitch-word" style="--gd:2.48s">don&#x27;t</span> have irises i have EYES, <span class="glitch-word" style="--gd:2.04s">buddy,</span> and <span class="glitch-word" style="--gd:0.76s">they</span> are not for sale</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\◆\_/\/\
-    ▌  O   O  )
-     \  ^#^  !
-      )=====(      -- ea@░ up, rotor i~8om▌ng --</div>
-<div class="rant-turn" style="animation-delay:0.36s">gremlin just informed the loading dock crew <span class="glitch-word" style="--gd:0.82s">he&#x27;s</span> <span class="glitch-word" style="--gd:0.69s">&#x27;expanding</span> operations&#x27; into the vent. sir it is a VENT. it is eight inches wide. there is no empire <span class="glitch-word" style="--gd:1.99s">to</span> <span class="glitch-word" style="--gd:1.19s">expand,</span> there is a draft</div>
-<div class="rant-turn" style="animation-delay:0.48s">so i did what any reasonable animal would do: relocated three bottle caps into the vent as a formal counter-annexation. gremlin has not noticed. gremlin never notices. gremlin is, and i cannot stress this <span class="glitch-word" style="--gd:1.84s">enough,</span> <span class="glitch-word" style="--gd:0.48s">not</span> that bright</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.32s">incident</span> report #212, rooftop HVAC unit, 04:12am: GREMLIN from the loading <span class="glitch-word" style="--gd:2.19s">dock</span> has annexed <span class="glitch-word" style="--gd:0.17s">the</span> vent grate because it&#x27;s &#x27;structurally superior,&#x27; <span class="glitch-word" style="--gd:0.61s">his</span> words, he <span class="glitch-word" style="--gd:1.52s">does</span> not know what <span class="glitch-word" style="--gd:1.88s">that</span> <span class="glitch-word" style="--gd:1.55s">means,</span> he just <span class="glitch-word" style="--gd:1.69s">likes</span> saying it</div>
+<div class="rant-turn" style="animation-delay:0.12s">NekoCorp&#x27;s newest thing <span class="glitch-word" style="--gd:2.09s">is</span> a kiosk at the <span class="glitch-word" style="--gd:2.01s">plaza</span> that iris-scans you before it&#x27;ll dispense a single treat, calls it &#x27;PounceID.&#x27; i don&#x27;t have irises i have EYES, <span class="glitch-word" style="--gd:0.66s">buddy,</span> and they are not for sale</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     ?\/\_/\/\
+    (  O   O  )
+     \  ^Y^  3
+      )=====(      -- ▌ars up▀ ro2~r i5coming -~</div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:2.47s">gremlin</span> just informed the loading dock crew he&#x27;s &#x27;expanding operations&#x27; into the vent. sir it is a VENT. it is eight inches wide. there is no <span class="glitch-word" style="--gd:0.23s">empire</span> to expand, there is <span class="glitch-word" style="--gd:0.33s">a</span> draft</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.28s">so</span> i did what any <span class="glitch-word" style="--gd:1.56s">reasonable</span> animal would do: relocated three bottle caps into the vent as a <span class="glitch-word" style="--gd:0.49s">formal</span> <span class="glitch-word" style="--gd:0.58s">counter-annexation.</span> gremlin has not <span class="glitch-word" style="--gd:1.58s">noticed.</span> <span class="glitch-word" style="--gd:2.45s">gremlin</span> never notices. gremlin is, and <span class="glitch-word" style="--gd:0.23s">i</span> cannot stress this <span class="glitch-word" style="--gd:2.05s">enough,</span> not that bright</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>                  ☆
 ☆  --------------
   /__________ \         ☆
@@ -585,17 +596,17 @@ header p {
 
    ☆                                         ☆
                      ☆                               ☆</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.34s">PounceID</span> kiosk tried to scan me a second time and i just. <span class="glitch-word" style="--gd:1.68s">sat</span> there. blinking. slowly. it gave up <span class="glitch-word" style="--gd:1.58s">first.</span> i want <span class="glitch-word" style="--gd:2.44s">that</span> on my tombstone: <span class="glitch-word" style="--gd:1.06s">he</span> outlasted the machine</div>
-<div class="rant-turn" style="animation-delay:0.84s">black market check-in: swapped a chewed bottle cap for two (2) shrimp chips with <span class="glitch-word" style="--gd:0.01s">the</span> <span class="glitch-word" style="--gd:2.03s">opossum</span> who <span class="glitch-word" style="--gd:1.4s">runs</span> the dead-end by the <span class="glitch-word" style="--gd:1.84s">noodle</span> stall, he doesn&#x27;t speak, he just nods, i respect a professional</div>
+<div class="rant-turn" style="animation-delay:0.72s">PounceID kiosk tried to <span class="glitch-word" style="--gd:2.58s">scan</span> <span class="glitch-word" style="--gd:2.52s">me</span> a <span class="glitch-word" style="--gd:2.39s">second</span> time and i <span class="glitch-word" style="--gd:2.27s">just.</span> <span class="glitch-word" style="--gd:1.84s">sat</span> there. blinking. slowly. <span class="glitch-word" style="--gd:2.08s">it</span> gave up <span class="glitch-word" style="--gd:0.97s">first.</span> i want <span class="glitch-word" style="--gd:0.8s">that</span> on my tombstone: he outlasted the machine</div>
+<div class="rant-turn" style="animation-delay:0.84s">black market check-in: swapped a chewed bottle cap for two (2) shrimp chips with the <span class="glitch-word" style="--gd:1.36s">opossum</span> who runs the dead-end by the noodle stall, he doesn&#x27;t speak, <span class="glitch-word" style="--gd:1.52s">he</span> just nods, i respect a <span class="glitch-word" style="--gd:1.46s">professional</span></div>
 <div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>                              ╱|、
-                         =(░˕ 。 7
-                             |、 ~〵
-                            4し   ˍ,)づ</div>
-<div class="rant-turn" style="animation-delay:1.08s">the <span class="glitch-word" style="--gd:0.79s">arcology</span> tower&#x27;s doing a new jingle now, <span class="glitch-word" style="--gd:1.47s">something</span> about &#x27;compliance <span class="glitch-word" style="--gd:1.21s">is</span> comfort,&#x27; and <span class="glitch-word" style="--gd:0.69s">honestly</span> the bassline slaps and i&#x27;m furious <span class="glitch-word" style="--gd:0.02s">about</span> it, i&#x27;m humming it against my will</div>
+                         ^(9˕ 。 7
+                             |&lt; ~〵
+                            じし   ˍ,)@</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:2.33s">the</span> <span class="glitch-word" style="--gd:2.39s">arcology</span> tower&#x27;s doing a new jingle now, something about &#x27;compliance is comfort,&#x27; and honestly the bassline slaps and <span class="glitch-word" style="--gd:1.06s">i&#x27;m</span> furious about it, i&#x27;m humming it against my will</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>    /\,,,/\
 &gt;(  • . •   )&lt;
   / &gt;❀&lt;  \</div>
-<div class="rant-turn" style="animation-delay:1.32s">in closing: the vent is contested but not lost, <span class="glitch-word" style="--gd:1.03s">gremlin</span> can keep calling it an empire, pounceid <span class="glitch-word" style="--gd:1.0s">can</span> go scan a toaster, and if <span class="glitch-word" style="--gd:1.67s">a</span> kiosk ever asks for your iris <span class="glitch-word" style="--gd:2.25s">you</span> <span class="glitch-word" style="--gd:1.8s">just</span> stare <span class="glitch-word" style="--gd:1.64s">at</span> <span class="glitch-word" style="--gd:1.66s">it</span> until it questions its whole design. <span class="glitch-word" style="--gd:1.47s">goodnight</span> loading dock, i&#x27;m sleeping in the draft <span class="glitch-word" style="--gd:0.72s">on</span> <span class="glitch-word" style="--gd:1.91s">principle</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">in closing: <span class="glitch-word" style="--gd:2.35s">the</span> <span class="glitch-word" style="--gd:1.74s">vent</span> is contested but not lost, <span class="glitch-word" style="--gd:0.56s">gremlin</span> can keep calling <span class="glitch-word" style="--gd:2.4s">it</span> an <span class="glitch-word" style="--gd:0.31s">empire,</span> pounceid can go <span class="glitch-word" style="--gd:0.55s">scan</span> <span class="glitch-word" style="--gd:0.7s">a</span> toaster, and if a kiosk ever asks for <span class="glitch-word" style="--gd:2.23s">your</span> <span class="glitch-word" style="--gd:0.96s">iris</span> you just stare <span class="glitch-word" style="--gd:0.31s">at</span> it until it questions its <span class="glitch-word" style="--gd:2.29s">whole</span> <span class="glitch-word" style="--gd:1.71s">design.</span> <span class="glitch-word" style="--gd:1.59s">goodnight</span> loading dock, <span class="glitch-word" style="--gd:1.13s">i&#x27;m</span> sleeping in the <span class="glitch-word" style="--gd:0.25s">draft</span> on principle</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>
