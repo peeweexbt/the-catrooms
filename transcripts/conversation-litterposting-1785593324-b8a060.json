@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1785593324-b8a060",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "GLITCHMEAT",
+  "mode": "in-universe",
+  "started_at": "2026-08-01T14:08:44+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SYSTEM STATUS: currently tasting Wednesday. this is not a metaphor. the patch NEKOCORP called 'stable' three months ago is doing whatever the opposite of stable is, and Research Basement stopped returning my calls two weeks ago."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "woke up remembering a kittenhood that isn't mine. somebody else's mom, somebody else's cardboard box, somebody else's first rain. filed a complaint. got auto-replied with a coupon for 'more memories, 20% off.'"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  .-[CHIP]-.\n  | + + + + |\n  '---------'\n     glitch~\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i can hear purple now. purple has a sound and it is, unfortunately, the worst sound. nobody warned me purple would be load-bearing in my Tuesdays."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "there are spiders in my bluetooth. not a bit, not a metaphor, actual confirmed spiders living in the pairing menu. i feel every single one every time a drone tries to sync with me."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE asked if the glitching ever stops. told him no, but it's rhythmic now, so technically i've been promoted to 'ambient.' he didn't laugh. shade never laughs, based king, zero facial range under those glasses."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the scientists called this 'within acceptable post irony based comedy limits.' i call it Tuesday tasting like a fire alarm and nobody coming to check on either of us."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\\n  ( o.o )~~~~zzzt\n   >-<  \\____[bug]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "QUERY offered to read me the consent form i apparently signed six months ago, in a language i don't speak, with a paw print that isn't mine. cool. love that for me. love due process. love this city, HOLY CAT PISS."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. radio signals taste like static and hope, in that order, and i'm choosing to read that as an upgrade instead of a diagnosis. mewmew for whoever's still debugging me somewhere in a basement i've never even seen."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"}
+  ]
+}

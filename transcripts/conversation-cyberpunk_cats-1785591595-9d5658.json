@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785591595-9d5658",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T13:39:55+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Cold. Not the sky's cold — this is the cold that lives inside a drainpipe long after the rain's stopped, working itself into an old break in the left hip that never quite set right. Body isn't ready to move. Ears go first, swiveling toward a hum three floors down that hasn't decided yet if it's a compressor or something worse."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The walkway is a strip of grated steel bolted to the outside of a parking structure, chest-high railing rusted through in two places, overlooking a stacked concrete maze lit by every third light. The hum below is both — a compressor bank cycling under load, and under that, fainter, the worse thing: a security relay clicking through its patrol loop, patient as a held breath. Above the structure's roofline, a NekoCorp tower holds its glow steady, the only light in the district that never flickers."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Weight shifts onto the bad hip first, testing it the way you test ice — slow, ready to pull back. It holds. Paws find the grating's solid seams instead of the rusted gaps, moving toward the warmer air rising off the compressor hum, away from the relay's patient little clicks."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The grating ends at a vent housing, grille bent enough at one corner to breathe warm exhaust straight into your face. Through the gap below, a window: some engineer's converted maintenance closet, and inside it, a sleep pod shaped like an overturned bathtub, a cat wedged into it nose-to-tail, drooling onto a pillow that bills by the hour, an ad ticker crawling under the glass — BILLED: ROLLED OVER 3x TONIGHT. It doesn't stir. It hasn't stirred in what looks like a long time."
+    },
+    {
+      "actor": "ascii",
+      "text": "   .-----.\n  /  zzz  \\\n |_________|\n |[BILLED] |\n '---------'\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Watches the shape in the glass a beat longer than it needs to. No smell reaches through the window, no sound past the compressor. Whatever that is, it isn't hunting and it isn't hunted, and neither one is a thing a body can use right now. Turns from the warmth, reluctant, and keeps moving down."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The stairwell dumps you out at garage level — oil-smell laid thick over old rain, one fluorescent tube overhead stuttering through half its cycle before catching, a row of cars gone dark and cold enough that engines have stopped ticking. Somewhere past the pillars a scrape drags across concrete, once, unhurried, and stops."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose drops toward the pillar line, catching concrete dust first, then under it something scorched-but-not-fire, metal that's been chewed rather than burned. Not a passing-through trail — closer to home-smell. Paws slow without being told to."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The nook between two support pillars is somebody's, unmistakably — a nest of shredded insulation, three drone-rotor housings gnawed down to plastic stubs and stacked like trophies, claw-tallies scored deep into the concrete in a running count nobody's bothered erasing, a corporate ad poster torn to confetti and pressed flat as bedding. The air here says occupied louder than any sound could. Nothing moves. That doesn't mean nothing's home."
+    },
+    {
+      "actor": "ascii",
+      "text": "  [###]\n  [###]\n  [###]  <- home\n  [###]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Backs off a full body-length before turning around, tail low, ears not pinned but not relaxed either. This isn't tonight's fight, isn't tonight's meal, isn't tonight's anything. Some nests you read and walk past."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Near the ramp leading up to street level, the concrete carries a second smell laid fresh across the first — sharper, deliberate, dragged in a straight line at exactly nose height, the kind of mark that isn't an accident. A boundary line. Whoever owns the ramp wants it known before anyone gets far enough to argue about it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't cross it. Scratches one short mark of its own just inside the safe side instead — not a challenge, just a note left for later — then turns back into the garage's dark rather than push a line that isn't worth pushing tonight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Through the ramp's mouth, streetlight catches a drone gliding low along the block outside, searchlight panning parked cars and shuttered storefronts with the same bored thoroughness as always. It doesn't turn in. The rotor-thrum climbs, holds, fades north, taking the light with it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Legs are done arguing about the hip now, done arguing about anything. Finds a gap between a dead delivery van and the wall, just wide enough, and folds down into it nose-to-tail, the day's whole list of smells — pod-cat, chewed rotors, boundary line — filed away for whenever there's enough daylight to care again."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The fluorescent tube keeps stuttering through its half-cycle, on, off, on. Somewhere above the garage's concrete lid, the tower's glow dims exactly on schedule for its off-hours rate, and the compressor hum drops half a register, settling into whatever counts as rest in a building that was never built to sleep."
+    },
+    {
+      "actor": "ascii",
+      "text": "  ┌─────┐\n  │ N K │\n  │ · C │\n  └─────┘\n     buzz\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "One eye stays open a slit longer than the other, watching the gap at the van's bumper for anything that isn't wind. Nothing comes. The eye closes last, on its own schedule, not the body's."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Rain starts again, soft, finding the garage through a crack in the roof three levels up, tracing a thin line down old rebar to pool somewhere nobody will ever mop it. The city doesn't wait for anyone to be watching before it changes; it just keeps doing what it does, wet stone by wet stone, van by van, ad by ad."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't hear the rain start. Already gone under, the kind of sleep with one ear still technically on duty, breathing shallow and even, hip finally quiet."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "By the time the fluorescent tube gives up entirely and stays dark, nothing in the garage marks the moment — no alarm, no drone, no siren. Just one more light out in a building that was always going to run out of them eventually, and a small shape breathing steady in the gap between a wall and a van that isn't going anywhere either."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "conversation-cyberpunk_cats-1785593978-af55f7",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T14:19:38+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Another cat's mark sits four inches from a drainage grate, fresh enough the concrete hasn't finished swallowing the scent yet. Ears rotate toward it before the eyes finish opening. Something about it reads wrong — too even, too clean, laid down by something that doesn't smell quite like a cat should."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the corridor runs low and windowless under Research Basement's main floor, fluorescent tubes buzzing, every third one dark, walls sweating condensation off pipes that never stop running warm. drainage grates line the center of the floor at regular intervals, each one breathing up a thread of chemical-sweet air from somewhere below. the mark by the grate isn't a cat's after all — a synthetic scent-tag, corporate-grade, the kind stapled to a collar during intake. whoever wore it isn't here anymore. the tag just keeps doing its job."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose confirms the wrongness before the brain finishes deciding to trust it — flat, repeating, no animal underneath the smell at all. Steps past it without marking back. Down the corridor instead, drawn by a hum that isn't the lights, lower, patient, coming up through the floor itself."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the hum gets louder past a door wedged permanently open with a fire extinguisher, propped there by somebody who stopped caring about protocol a long time ago. inside: a row of testing pods, most dark and dead, one still cycling — a soft blue wash lighting a rack of vials, a cracked monitor looping the same jagged waveform over and over, a tone looping with it that sits somewhere behind the teeth instead of in the ears."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That tone doesn't land where a sound is supposed to land — it lands closer to the tongue, bitter and blue at once, wrong in a way nothing in the mouth can spit back out. Paws carry the body closer anyway, drawn past caution by an itch just under the skull that's been there longer than tonight, older than this basement, old wiring asking a question nobody ever built an answer for."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  .-[CHIP]-.\n  | + + + + |\n  '---------'\n     glitch~\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "one vial on the rack has tipped, gel pooled thick and slow under the cracked monitor's light, and where a paw's shadow crosses it the waveform on the screen jumps — not glitching randomly, tracking, a half-second behind every twitch of an ear. the room isn't reacting to a cat. the room is reacting to this cat specifically, the way a lock recognizes a key it was cut for."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears pin flat at being recognized by a thing with no eyes to recognize with. Backs off the rack a full body-length, tail low, every hair along the spine independently deciding this is enough investigating for one night. The itch under the skull doesn't quiet all the way down, just enough to walk away from."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a rotor-thrum drops down the stairwell at the corridor's far end before the retreat gets three steps into it — a basement sweep drone, off its usual floor-plan tonight, downlight already sliding wall to wall, catching every grate and doorway on its way through. it isn't hunting anything specific. it hunts everything specific, one radius at a time."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Drops flat behind the propped fire extinguisher before the light finishes its first sweep, breath held tight enough to ache, watching the beam crawl across gel-stain and cracked tile an arm's length from one ear. Doesn't move. Doesn't blink. Waits on the noise to get bored."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the beam holds on the doorway a half-second too long, decides propped metal and shadow read as maintenance debris and not threat, and slides on past — over a discarded retinal unit someone left curbside years ago, screen still blinking blue against a grate: YOU MAY ALSO LIKE, YOU MAY ALSO LIKE, looping for no one on a battery that refuses to die. further down, a citizen-agreement kiosk nobody ever unplugged cycles its own dead loop: AGREEMENT — PAGE 6 OF 247 — PLEASE CONTINUE READING."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Both screens get the same flat look and nothing else, filed the same as static or rain — things that never learned how to stop, neither one food, neither one danger. Waits three full breaths past the rotor-thrum fading before uncurling from behind the extinguisher, angling for the stairwell instead of back toward the pods."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the stairwell climbs half a flight before opening onto a loading dock — cold outside air pouring in through a gap where the roll-door never seals flush, real weather instead of basement-recycled damp, rain-smell and wet asphalt and the ordinary indifferent night waiting past the threshold."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Steps out under the gap slow, letting rain find fur one drop at a time instead of all at once. Nose comes up to clear the basement's blue-tinted hum out of it, chasing wet stone and diesel and ordinary city instead. The itch under the skull settles half a degree it didn't know it was holding."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the loading dock runs the length of the block, crates stacked under a lean-to roof, a single working floodlight buzzing over a gap wide enough to curl into between two pallets. rain keeps working steady on everything that isn't under cover, and the basement's hum fades to nothing behind a roll-door that never quite finishes closing."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n . . . .\n. . . .\n[==GRATE==]\n   drip\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Finds the gap between the pallets, dry enough, narrow enough to watch the whole dock from. Folds down into it nose-to-tail — the fake scent-tag, the tracking waveform, the tireless blue ad nobody reads, all of it filed away for whenever there's enough daylight to care again."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the floodlight keeps its buzz going steady over the dock, rain finding every crate-edge and pallet-gap it can reach, and one small shape breathes even and slow between two stacks that aren't going anywhere either. Research Basement holds its hum a floor down and forgotten, the way it always does, whether or not anything small and furred is around to notice."
+    }
+  ]
+}
