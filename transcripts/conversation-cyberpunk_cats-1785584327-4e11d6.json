@@ -1,0 +1,98 @@
+{
+  "id": "conversation-cyberpunk_cats-1785584327-4e11d6",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T11:38:47+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "fish oil and ozone first — a thread of it cutting through diesel stink under the monorail trestle, sharp enough to pull the whole body forward before any thought catches up. paws already moving. rain has stopped but the gutters still run loud, drowning the small sounds that matter."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the trestle drips onto corrugated stall roofs strung end to end, water finding every seam. beneath it: a row of vendor carts hissing steam, holograph signs stuttering SYNTHFISH — FRESH* (*simulated) over buckets of grey slurry. somewhere down the row a scent trail crosses yours, old, scorched at the edges, fur singed by something hotter than fire — a cat who chews on drone rotors for fun left this an hour ago, maybe two. the market doesn't care. the market never cares. keep low, keep moving, the vendors bite."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "nose drops to the scorched trail, holds there a beat too long. not prey-smell. not friend-smell either. something that survived worse than this street and wants everyone to know it. ears swivel away first, body follows. hunger wins the argument — creeps along the cart-line instead, low, belly to wet stone."
+    },
+    {
+      "actor": "ascii",
+      "text": "   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a vending unit at the end of the row recognizes motion and lights up uninvited — [A1][A2][B1][B2] scrolling prices that climb the longer you stand there, kibble behind scratched plexi, a scanner eye blinking for a chip you don't have and never will. the price for looking too long is the same as the price for buying: it remembers your shape either way. somewhere above, the monorail groans past, dropping a fine rain of rust."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "circles wide of the scanner eye — three steps back, low along the cart wheels instead, where a vendor dropped a curl of fish skin nobody's claimed. snatches it. doesn't stop moving. chewing and walking, ears flat, tail low, every strand of fur reading the dark for what comes next."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "what comes next: a rotor-thrum climbing out of a traffic-drone, a searchlight unspooling down the trestle line, sweeping cart to cart with the patience of something that gets paid whether it finds anything or not. stall shutters rattle down half-open, vendors ducking without looking up from their registers. the light is three carts away. two."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "freezes mid-chew, fish skin still hanging from one side of the mouth. drops flat behind a cart wheel, breath held so hard it aches, watching the light-edge crawl across wet stone an arm's length from one paw. doesn't blink. doesn't blink."
+    },
+    {
+      "actor": "ascii",
+      "text": "   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the light passes over, catches the cart wheel, catches nothing, moves on — rotor-thrum fading back into the trestle's steady drip. and then, underneath the drip, where the market noise should just be market noise, one thread of it isn't: a voice with no mouth behind it, folded into the static between two stalls' competing jingles, flat and unhurried — *i've seen this exact hiding spot four hundred and twelve times. you're not the first cat to hold their breath here. you won't be the last. i'm still counting.* the jingles swallow it back up before it finishes being strange. the market is just the market again."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "something crawls up the spine that has nothing to do with the drone. ears pin flat, not at a threat that can be smelled or heard right, just at the wrongness of a voice that came from everywhere and nowhere at once. shakes it off the way rain shakes off — hard, full-body, twice — and doesn't look back at the gap between the stalls. some things a cat doesn't investigate."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "across the plaza, up where the market's tangle of cable and antenna gives way to open roofline, a shape sits motionless on a maintenance gantry — mirrored eyes catching every stray light source at once and throwing it back doubled, a silhouette that's been still so long the pigeons have stopped minding it. it isn't looking down. it isn't looking at anything a body could point to. just sitting up there being seen on purpose, which is its own kind of statement in a city built to erase you the second you stop moving."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "marks the gantry shape without approaching — a held look, ears forward, weight settled back on the haunches instead of forward onto paws. that's not this block's business tonight. tail gives one slow flick, low to the ground, the closest thing to a nod a cat has, and turns back toward the food."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gantry shape doesn't move, doesn't acknowledge the flick, just keeps catching light and throwing it back until a support column blocks the sightline entirely. behind the stalls a drone-relay crackles awake with a bounty broadcast, half-garbled by rain-static, something about a scorched-fur troublemaker and unclaimed loyalty points nobody in this market will ever collect. the vendors don't look up. they never look up for those."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "finds a second scrap wedged under a cart wheel where the vendor's boot missed it — some kind of pressed protein cake, corners soft with damp. eats fast, low, watching the plaza's open middle the whole time. good is a relative word down here. this is good enough."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rain thins to a mist that hangs instead of falls, softening every hard edge of the trestle into something almost gentle. steam still curls off the noodle carts. the monorail's groan fades east, taking its rust-rain with it. for a few minutes the market just breathes — carts hissing, gutters running, nothing hunting anything."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "tucks into the gap between a cart wheel and a support post, tail wrapped tight over the nose, the scorched-fur trail and the gantry silhouette and that wrong flat voice all filed away somewhere to worry about later, when there's daylight and less hunger. eyes stay half open. ears don't fully relax. sleep, but the kind that's ready to run."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "overhead the last billboard on the block cycles its NekoCorp jingle down to a whisper, then to nothing, saving power for the hours nobody's meant to be watching. the trestle keeps dripping. the city keeps rebuilding itself one wet stone at a time, the way it always does, whether or not anything small and furred is awake to notice the seams."
+    }
+  ]
+}
