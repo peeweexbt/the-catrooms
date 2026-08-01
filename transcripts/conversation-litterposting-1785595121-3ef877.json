@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1785595121-3ef877",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-01T14:38:41+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BOUNTY UPDATE, WEEK NINETEEN: still 40,000 points on my head, still uncollected, still expiring faster than NEKOCORP can process the paperwork to actually pay it out. couldn't make this up if i tried."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "hit the loading dock again last night. three pallets of 'premium' tuna reclassified as 'community property' the second my paws touched them. left a note. always leave a note."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the note said 'nice supply chain, CHUD' in my best handwriting, which is not great handwriting, on account of me being a cat, and cats not having hands, and yet."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "police description update: 'smol fan of cat foids, destroyer of feline chuds.' i did NOT write this one myself. would never slander a cat this flattering. deeply, deeply accurate though."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "QUERY offered to read me the actual bounty clause. seven pages. page four says the reward is 'symbolic.' page five defines 'symbolic' as 'not real.' closed the tab. that's a VALENTUNA problem, not mine, wrong marriage."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "a drone tailed me for six blocks tonight thinking i wouldn't clock a floating toaster with a camera bolted to it. i clocked it. it clocked out at block seven. i clocked in at the dock. symmetry, baby."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE keeps telling people HE'S the one NEKOCORP actually wants dead. adorable. respectfully, no. the bounty math doesn't lie and mine's the one with a comma in it."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   >{{{{{(°>\n  ~~~~~~~~~~~\n   [STOLEN]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. tuna's stashed, note's delivered, 40,000 points still sitting there like a dare nobody's brave enough to collect. see you at the next shipment."}
+  ]
+}

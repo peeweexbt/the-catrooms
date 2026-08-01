@@ -34,6 +34,8 @@ Usage:
     python3 post_to_x.py --dry-run --narrator STRAY --random   # preview a random eligible STRAY post instead of always the newest one; rerun to see a different one
     python3 post_to_x.py --dry-run --full         # preview with the full untruncated rant forced on (requires X Premium verification to actually post at this length)
     python3 post_to_x.py --dry-run --short        # preview with the classic punchy 280-char cut forced on
+    python3 post_to_x.py --text "exact tweet text"            # post this exact custom text right now, no transcript involved, ignores the time window
+    python3 post_to_x.py --dry-run --text "exact tweet text"  # preview a custom post without actually sending it
 
 Since the account is now X Premium-verified (raises the real per-post cap
 to ~4,000 chars, see EXTENDED_TWEET_LEN), each post rolls FULL_POST_PROBABILITY
@@ -338,11 +340,28 @@ def main():
     parser.add_argument("--queue", help="comma-separated times to schedule future posts at: relative (+90m, +2h, +1d) or absolute local ISO datetime (2026-08-02T09:00); adds to the queue and exits without posting anything now")
     parser.add_argument("--list-queue", action="store_true", help="print all queued posts (pending and already-fired) and exit")
     parser.add_argument("--clear-queue", action="store_true", help="delete all pending queue entries and exit")
+    parser.add_argument("--text", help="post this exact custom text as a tweet right now, bypassing the transcript pick and the time window entirely; combine with --dry-run to preview instead of posting")
     args = parser.parse_args()
 
     if args.whoami:
         ok = whoami()
         return 0 if ok else 1
+
+    if args.text is not None:
+        tweet_text = args.text.strip()
+        print(f"Custom tweet ({len(tweet_text)} chars):\n{tweet_text}")
+        if args.dry_run:
+            print("\n[dry run — not posting, not updating state]")
+            return 0
+        result = post_tweet(tweet_text)
+        tweet_id = result.get("data", {}).get("id")
+        print(f"\nPosted. Tweet id: {tweet_id}")
+        state = load_state()
+        now = datetime.now(timezone.utc)
+        state["last_tweeted_at"] = now.isoformat()
+        schedule_next_window(state, now)
+        save_state(state)
+        return 0
 
     if args.queue:
         added = add_to_queue(args.queue)
