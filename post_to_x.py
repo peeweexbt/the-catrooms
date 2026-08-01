@@ -32,6 +32,13 @@ Usage:
     python3 post_to_x.py --now                    # ignore the 3-6hr window and post immediately if there's something new
     python3 post_to_x.py --now --narrator STRAY   # ignore the window AND force the pick to a STRAY-narrated post (skips the weighted pick entirely)
     python3 post_to_x.py --dry-run --narrator STRAY --random   # preview a random eligible STRAY post instead of always the newest one; rerun to see a different one
+    python3 post_to_x.py --dry-run --full         # preview with the full untruncated rant forced on (requires X Premium verification to actually post at this length)
+    python3 post_to_x.py --dry-run --short        # preview with the classic punchy 280-char cut forced on
+
+Since the account is now X Premium-verified (raises the real per-post cap
+to ~4,000 chars, see EXTENDED_TWEET_LEN), each post rolls FULL_POST_PROBABILITY
+(40%) to decide whether to post the rant in full or keep the shorter punchy
+cut — pass --full or --short to override that roll for a single run.
 
 State is tracked in x_post_state.json: the set of already-tweeted
 transcript ids (so nothing gets posted twice, regardless of which category
@@ -58,6 +65,20 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 TRANSCRIPTS_DIR = os.path.join(SCRIPT_DIR, "transcripts")
 STATE_PATH = os.path.join(SCRIPT_DIR, "x_post_state.json")
 MAX_TWEET_LEN = 280
+
+# The account's real cap under X Premium verification (~4,000 chars). Almost
+# every litterposting rant fits under this in full, so "full post" mode
+# below basically never needs to truncate. If you upgrade to Premium+
+# (~25,000 chars) or drop verification back to none (280 chars again),
+# update this.
+EXTENDED_TWEET_LEN = 4000
+
+# Probability that a given post uses the FULL rant (up to EXTENDED_TWEET_LEN)
+# instead of the classic punchy MAX_TWEET_LEN-cut version. Requires the
+# account to actually be verified (Premium or higher) — un-verified accounts
+# are capped at 280 chars by X itself regardless of what text is sent, so
+# leave this at 0 if verification lapses.
+FULL_POST_PROBABILITY = 0.4
 
 # Probability that a given run prefers a STRAY-narrated rant over a
 # named-Meowizen one. This is independent of whatever ratio the site's own
@@ -152,20 +173,28 @@ def pick_transcript(tweeted_ids, narrator_filter=None, random_pick=False):
     return random.choice(chosen) if random_pick else chosen[0]
 
 
-def build_tweet_text(transcript):
-    """Concatenate the rant's spoken turns and cut it down to fit a
-    tweet, preferring a clean sentence-boundary cut over a mid-sentence
-    hard truncation."""
+def build_tweet_text(transcript, full=False):
+    """Concatenate the rant's spoken turns into one block of text.
+
+    By default (full=False) this is cut down to the classic punchy
+    MAX_TWEET_LEN (280 chars), preferring a clean sentence-boundary cut over
+    a mid-sentence hard truncation — same behavior as before verification.
+
+    If full=True, the cap is raised to EXTENDED_TWEET_LEN instead, so the
+    whole rant posts essentially uncut (it'll still apply the same
+    sentence-boundary-aware truncation logic in the rare case a rant somehow
+    exceeds even that)."""
+    limit = EXTENDED_TWEET_LEN if full else MAX_TWEET_LEN
     parts = [t["text"].strip() for t in transcript.get("turns", []) if t.get("actor") == "lm1"]
     full_text = re.sub(r"\s+", " ", " ".join(parts)).strip()
 
-    if len(full_text) <= MAX_TWEET_LEN:
+    if len(full_text) <= limit:
         return full_text
 
     best_cut = None
     for m in re.finditer(r"[.!?]\s", full_text):
         end = m.end()
-        if end <= MAX_TWEET_LEN:
+        if end <= limit:
             best_cut = end
         else:
             break
@@ -173,7 +202,7 @@ def build_tweet_text(transcript):
     if best_cut and best_cut >= 40:
         return full_text[:best_cut].strip()
 
-    truncated = full_text[:MAX_TWEET_LEN - 1].rsplit(" ", 1)[0]
+    truncated = full_text[:limit - 1].rsplit(" ", 1)[0]
     return truncated.rstrip(",;: ") + "…"
 
 
@@ -218,6 +247,9 @@ def main():
     parser.add_argument("--now", action="store_true", help="ignore the 3-6hr window and post immediately if there's something new")
     parser.add_argument("--narrator", help="force the pick to this exact narrator (e.g. STRAY) instead of the usual weighted pick; no-ops if nothing untweeted matches")
     parser.add_argument("--random", action="store_true", help="pick a random eligible candidate instead of always the newest one; combine with --dry-run to preview different options by rerunning")
+    full_group = parser.add_mutually_exclusive_group()
+    full_group.add_argument("--full", action="store_true", help="force this post to use the full rant (up to EXTENDED_TWEET_LEN) instead of rolling FULL_POST_PROBABILITY")
+    full_group.add_argument("--short", action="store_true", help="force this post to use the classic punchy 280-char cut instead of rolling FULL_POST_PROBABILITY")
     args = parser.parse_args()
 
     if args.whoami:
@@ -233,13 +265,21 @@ def main():
         "No untweeted litterposting transcripts found."
     )
 
+    if args.full:
+        use_full = True
+    elif args.short:
+        use_full = False
+    else:
+        use_full = random.random() < FULL_POST_PROBABILITY
+
     if args.dry_run:
         transcript = pick_transcript(state["tweeted_ids"], narrator_filter=args.narrator, random_pick=args.random)
         if transcript is None:
             print(no_match_msg)
             return 0
-        tweet_text = build_tweet_text(transcript)
+        tweet_text = build_tweet_text(transcript, full=use_full)
         print(f"Transcript: {transcript['id']} (narrator: {transcript.get('narrator') or 'STRAY'})")
+        print(f"Mode: {'FULL POST' if use_full else 'short (280-char cut)'}")
         print(f"Tweet ({len(tweet_text)} chars):\n{tweet_text}")
         print("\n[dry run — not posting, not updating state, ignoring the 3-6hr window]")
         return 0
@@ -259,8 +299,9 @@ def main():
         save_state(state)
         return 0
 
-    tweet_text = build_tweet_text(transcript)
+    tweet_text = build_tweet_text(transcript, full=use_full)
     print(f"Transcript: {transcript['id']} (narrator: {transcript.get('narrator') or 'STRAY'})")
+    print(f"Mode: {'FULL POST' if use_full else 'short (280-char cut)'}")
     print(f"Tweet ({len(tweet_text)} chars):\n{tweet_text}")
 
     result = post_tweet(tweet_text)
