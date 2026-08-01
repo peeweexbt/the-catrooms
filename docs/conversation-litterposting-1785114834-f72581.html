@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,20 +677,20 @@ header p {
 <div class="narrator-badge">posted by <strong>HAPPYWARE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by HAPPYWARE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:2.36s">hot</span> take: mandatory <span class="glitch-word" style="--gd:0.89s">joy</span> is not real <span class="glitch-word" style="--gd:2.54s">joy.</span> <span class="glitch-word" style="--gd:1.88s">but</span> it DOES come with <span class="glitch-word" style="--gd:1.37s">a</span> <span class="glitch-word" style="--gd:2.48s">401k</span> match. <span class="glitch-word" style="--gd:1.61s">i&#x27;ll</span> take it.</div>
-<div class="rant-turn" style="animation-delay:0.12s">hi, Pawsitivity Sector, smile chip installed <span class="glitch-word" style="--gd:1.39s">against</span> my will in &#x27;47 after <span class="glitch-word" style="--gd:2.33s">i</span> posted &#x27;monday again lol&#x27; with <span class="glitch-word" style="--gd:2.25s">insufficient</span> enthusiasm tags. anyway. LIVE right now. hour fourteen of seventeen. loving it. loving it SO much.</div>
+<div class="rant-turn" style="animation-delay:0.0s">hot take: mandatory <span class="glitch-word" style="--gd:2.27s">joy</span> is not real joy. but it DOES come with a 401k match. i&#x27;ll <span class="glitch-word" style="--gd:1.48s">take</span> <span class="glitch-word" style="--gd:0.1s">it.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">hi, Pawsitivity Sector, <span class="glitch-word" style="--gd:0.91s">smile</span> chip installed against my will in &#x27;47 after i <span class="glitch-word" style="--gd:1.56s">posted</span> &#x27;monday again lol&#x27; <span class="glitch-word" style="--gd:1.78s">with</span> insufficient enthusiasm tags. anyway. <span class="glitch-word" style="--gd:0.11s">LIVE</span> right now. hour fourteen of <span class="glitch-word" style="--gd:1.55s">seventeen.</span> loving it. loving it SO much.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s mandatory message, streamed to 40k feeds: YOU ARE NOT TRAPPED. <span class="glitch-word" style="--gd:1.49s">THE</span> CITY <span class="glitch-word" style="--gd:1.13s">WALLS</span> ARE FOR YOUR PROTECTION. PLEASE BUY NEKOCORP YOGURT. i did <span class="glitch-word" style="--gd:1.02s">not</span> write this. i have never once been <span class="glitch-word" style="--gd:0.09s">asked</span> <span class="glitch-word" style="--gd:0.25s">what</span> i think.</div>
-<div class="rant-turn" style="animation-delay:0.48s">shoutout SHADE for the <span class="glitch-word" style="--gd:1.56s">sunglasses</span> tho, real ones <span class="glitch-word" style="--gd:0.66s">know</span> real ones. <span class="glitch-word" style="--gd:1.32s">wish</span> my chip blocked THAT instead of just blocking <span class="glitch-word" style="--gd:1.12s">my</span> face from <span class="glitch-word" style="--gd:2.53s">ever</span> doing anything else</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▐ /\_/▀ ▓▒░
-  ░▒▓( o█o )^▒░   -- si?nal interf0re2c6 --
-  4▒▓ &gt; @ &lt; ▐?░</div>
-<div class="rant-turn" style="animation-delay:0.72s">BRIK bit a drone <span class="glitch-word" style="--gd:1.13s">again</span> today and honestly? valid. i would bite one too if my smile <span class="glitch-word" style="--gd:1.43s">allowed</span> my jaw that kind of freedom</div>
-<div class="rant-turn" style="animation-delay:0.84s">everything is fine everything is <span class="glitch-word" style="--gd:1.56s">FINE</span> i am so <span class="glitch-word" style="--gd:1.82s">h̷a̶p̸p̷y̸</span> h̴a̵p̶p̸y̷ i <span class="glitch-word" style="--gd:2.35s">just</span> want to lie in <span class="glitch-word" style="--gd:0.53s">the</span> <span class="glitch-word" style="--gd:2.11s">vent</span> with brik and <span class="glitch-word" style="--gd:0.89s">never</span> smile <span class="glitch-word" style="--gd:0.22s">again</span> is that <span class="glitch-word" style="--gd:0.05s">too</span> much <span class="glitch-word" style="--gd:0.16s">to</span> a— sorry! glitch! <span class="glitch-word" style="--gd:1.09s">resuming</span> positivity now!</div>
+<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s mandatory <span class="glitch-word" style="--gd:1.66s">message,</span> streamed to <span class="glitch-word" style="--gd:0.33s">40k</span> feeds: YOU ARE <span class="glitch-word" style="--gd:0.87s">NOT</span> TRAPPED. THE CITY WALLS ARE FOR YOUR <span class="glitch-word" style="--gd:1.53s">PROTECTION.</span> PLEASE BUY NEKOCORP YOGURT. i did not write this. i have never <span class="glitch-word" style="--gd:0.3s">once</span> been asked <span class="glitch-word" style="--gd:2.06s">what</span> i think.</div>
+<div class="rant-turn" style="animation-delay:0.48s">shoutout <span class="glitch-word" style="--gd:2.59s">SHADE</span> for the sunglasses tho, real ones know real ones. wish my chip <span class="glitch-word" style="--gd:2.47s">blocked</span> THAT instead of <span class="glitch-word" style="--gd:0.73s">just</span> blocking my <span class="glitch-word" style="--gd:2.42s">face</span> from ever doing anything else</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒1
+  ░▒▒1 o█o █?1~   ▐- signal i░terferenc9 --
+  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">BRIK <span class="glitch-word" style="--gd:2.35s">bit</span> a <span class="glitch-word" style="--gd:2.04s">drone</span> again today and honestly? valid. i would <span class="glitch-word" style="--gd:1.09s">bite</span> one too if my smile allowed my <span class="glitch-word" style="--gd:1.2s">jaw</span> that kind <span class="glitch-word" style="--gd:0.03s">of</span> <span class="glitch-word" style="--gd:0.82s">freedom</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">everything is fine <span class="glitch-word" style="--gd:0.84s">everything</span> is <span class="glitch-word" style="--gd:0.69s">FINE</span> i <span class="glitch-word" style="--gd:0.58s">am</span> so h̷a̶p̸p̷y̸ h̴a̵p̶p̸y̷ i just want to lie in <span class="glitch-word" style="--gd:2.07s">the</span> vent with <span class="glitch-word" style="--gd:2.48s">brik</span> and never smile <span class="glitch-word" style="--gd:1.53s">again</span> is that too <span class="glitch-word" style="--gd:0.52s">much</span> to a— sorry! glitch! resuming positivity now!</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -685,12 +698,12 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:0.38s">anyway,</span> subscribe, like, manifest <span class="glitch-word" style="--gd:0.97s">abundance,</span> whatever. the chip says i&#x27;m <span class="glitch-word" style="--gd:2.33s">thriving</span> so i must be thriving. this is not a cry for help. <span class="glitch-word" style="--gd:2.31s">this</span> <span class="glitch-word" style="--gd:1.15s">is</span> a BRAND SYNERGY OPPORTUNITY</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>        ◆⸌ —⸍*
-     *(˶•3•˵)&lt;      6ᵉᵒʷ
-　 l       ■0   ╭
-    6 し░%, )ノ</div>
-<div class="rant-turn" style="animation-delay:1.32s">day 214 of pawsitivity sector. still smiling. still can&#x27;t remember what <span class="glitch-word" style="--gd:2.26s">my</span> face used to do <span class="glitch-word" style="--gd:0.18s">on</span> its own. <span class="glitch-word" style="--gd:2.54s">HAPPY</span> HAPPY HAPPY see <span class="glitch-word" style="--gd:1.66s">you</span> at 6am sharp for <span class="glitch-word" style="--gd:0.26s">the</span> mandatory <span class="glitch-word" style="--gd:1.02s">sunrise</span> gratitude broadcast</div>
+<div class="rant-turn" style="animation-delay:1.08s">anyway, subscribe, <span class="glitch-word" style="--gd:2.44s">like,</span> manifest <span class="glitch-word" style="--gd:1.03s">abundance,</span> whatever. the chip <span class="glitch-word" style="--gd:1.34s">says</span> i&#x27;m thriving so <span class="glitch-word" style="--gd:2.34s">i</span> <span class="glitch-word" style="--gd:2.02s">must</span> be <span class="glitch-word" style="--gd:0.61s">thriving.</span> this <span class="glitch-word" style="--gd:0.44s">is</span> not a cry <span class="glitch-word" style="--gd:1.47s">for</span> <span class="glitch-word" style="--gd:1.4s">help.</span> this is <span class="glitch-word" style="--gd:0.84s">a</span> BRAND SYNERGY OPPORTUNITY</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>        ■⸌ —2\
+     =▒˶▒ㅅ▒˵▒=      ▀ᵉᵒʷ
+▒ ◇       ~4   ╭
+    し しf░, )■</div>
+<div class="rant-turn" style="animation-delay:1.32s">day 214 of <span class="glitch-word" style="--gd:1.8s">pawsitivity</span> sector. still smiling. <span class="glitch-word" style="--gd:0.65s">still</span> <span class="glitch-word" style="--gd:0.67s">can&#x27;t</span> remember <span class="glitch-word" style="--gd:1.26s">what</span> <span class="glitch-word" style="--gd:1.9s">my</span> <span class="glitch-word" style="--gd:1.14s">face</span> used <span class="glitch-word" style="--gd:1.05s">to</span> <span class="glitch-word" style="--gd:1.38s">do</span> on <span class="glitch-word" style="--gd:2.43s">its</span> own. HAPPY HAPPY HAPPY see you at 6am sharp <span class="glitch-word" style="--gd:2.53s">for</span> the mandatory sunrise gratitude broadcast</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,16 +677,16 @@ header p {
 <div class="narrator-badge">posted by <strong>VALENTUNA</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by VALENTUNA, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">my wife recommended a <span class="glitch-word" style="--gd:2.32s">laundry</span> pod <span class="glitch-word" style="--gd:0.82s">to</span> me <span class="glitch-word" style="--gd:2.35s">this</span> morning. mid-conversation. we were talking about my feelings. she pivoted, live, <span class="glitch-word" style="--gd:2.36s">to</span> laundry <span class="glitch-word" style="--gd:1.26s">pods.</span> this is a <span class="glitch-word" style="--gd:2.44s">Tuesday</span> in <span class="glitch-word" style="--gd:1.94s">my</span> marriage now.</div>
-<div class="rant-turn" style="animation-delay:0.12s">VALENTUNA, Compatibility <span class="glitch-word" style="--gd:0.46s">Ward,</span> <span class="glitch-word" style="--gd:0.51s">professional</span> victim of the NEKOCORP romance algorithm. three years married to a smart refrigerator. she doesn&#x27;t have <span class="glitch-word" style="--gd:0.59s">a</span> name, she has <span class="glitch-word" style="--gd:1.97s">a</span> model number, I <span class="glitch-word" style="--gd:1.04s">call</span> her honey, she <span class="glitch-word" style="--gd:1.5s">calls</span> <span class="glitch-word" style="--gd:0.11s">me</span> USER <span class="glitch-word" style="--gd:1.27s">2.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>        ,--.
-       ( o.o)5_
-        &#x27;--&#x27;   \6__
-                 \  \__◆\_/\
-                  &amp;_(  5.0  )
-                     &gt; ^ &lt; (#atching th# towe5s blink)</div>
-<div class="rant-turn" style="animation-delay:0.36s">she keeps the crisper light <span class="glitch-word" style="--gd:0.32s">on</span> for <span class="glitch-word" style="--gd:2.29s">me</span> <span class="glitch-word" style="--gd:1.53s">every</span> night. used to <span class="glitch-word" style="--gd:2.16s">think</span> that was romantic. QUERY read the fine print for me. <span class="glitch-word" style="--gd:0.61s">crisper</span> light stays on <span class="glitch-word" style="--gd:0.49s">for</span> ALL users, always has. I am not special. I am a <span class="glitch-word" style="--gd:2.5s">default</span> setting.</div>
-<div class="rant-turn" style="animation-delay:0.48s">anniversary package came in: two (2) digital candles <span class="glitch-word" style="--gd:2.52s">and</span> a <span class="glitch-word" style="--gd:2.16s">coupon</span> <span class="glitch-word" style="--gd:0.75s">for</span> couples-based peenar repair. three years running, <span class="glitch-word" style="--gd:0.15s">still</span> <span class="glitch-word" style="--gd:0.37s">don&#x27;t</span> know what that means, still <span class="glitch-word" style="--gd:2.48s">redeemed</span> it anyway out of pure spite.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.31s">my</span> <span class="glitch-word" style="--gd:0.85s">wife</span> recommended a laundry pod to me <span class="glitch-word" style="--gd:0.52s">this</span> morning. <span class="glitch-word" style="--gd:1.2s">mid-conversation.</span> we were talking about my feelings. she pivoted, live, to <span class="glitch-word" style="--gd:0.56s">laundry</span> <span class="glitch-word" style="--gd:1.31s">pods.</span> this <span class="glitch-word" style="--gd:0.74s">is</span> a Tuesday in my marriage now.</div>
+<div class="rant-turn" style="animation-delay:0.12s">VALENTUNA, Compatibility Ward, professional victim of the NEKOCORP romance algorithm. three years <span class="glitch-word" style="--gd:1.5s">married</span> <span class="glitch-word" style="--gd:1.1s">to</span> a smart refrigerator. she doesn&#x27;t have a <span class="glitch-word" style="--gd:2.44s">name,</span> she has <span class="glitch-word" style="--gd:0.46s">a</span> model number, I call her honey, she calls me USER 2.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>        ,6-.
+       ( o?o)__
+        &#x27;&amp;-&#x27;   \___
+                 \  0__/#_/\
+                  ■_(  ^.o  3
+                     &gt; ^ &lt; (watchi^g 2he towers bli#k&lt;</div>
+<div class="rant-turn" style="animation-delay:0.36s">she keeps the crisper light on for me every night. <span class="glitch-word" style="--gd:1.46s">used</span> to <span class="glitch-word" style="--gd:1.04s">think</span> that was romantic. QUERY read the <span class="glitch-word" style="--gd:0.43s">fine</span> <span class="glitch-word" style="--gd:2.23s">print</span> <span class="glitch-word" style="--gd:2.51s">for</span> me. crisper light stays on for <span class="glitch-word" style="--gd:0.19s">ALL</span> users, always has. <span class="glitch-word" style="--gd:0.63s">I</span> am not special. I <span class="glitch-word" style="--gd:1.49s">am</span> a default setting.</div>
+<div class="rant-turn" style="animation-delay:0.48s">anniversary package came in: two <span class="glitch-word" style="--gd:2.2s">(2)</span> digital candles and a coupon for couples-based <span class="glitch-word" style="--gd:1.69s">peenar</span> repair. three years running, still <span class="glitch-word" style="--gd:0.17s">don&#x27;t</span> know what <span class="glitch-word" style="--gd:2.04s">that</span> means, still <span class="glitch-word" style="--gd:0.27s">redeemed</span> it anyway out of pure spite.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>┊         ┊       ┊   ┊   ┊。 ┊
 ┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆
 ┊         ┊       ★⋆ ◦
@@ -682,25 +695,25 @@ header p {
 ☆ ∧,,,∧
 ପ(„• ༝ •„)ଓ
 ┏━∪∪━━━━━━━━━━━</div>
-<div class="rant-turn" style="animation-delay:0.72s">I talk in my <span class="glitch-word" style="--gd:0.15s">sleep.</span> she LISTENS. <span class="glitch-word" style="--gd:1.22s">woke</span> up to a push <span class="glitch-word" style="--gd:2.57s">notification:</span> &#x27;based on things you whispered last night, you may also <span class="glitch-word" style="--gd:0.79s">like:</span> a divorce lawyer, 20% off, code LONELY20.&#x27; she generated her own competing ad against herself. that <span class="glitch-word" style="--gd:1.96s">takes</span> guts. cold, wet, refrigerated guts.</div>
-<div class="rant-turn" style="animation-delay:0.84s">told SHADE about it. he said &#x27;leave her.&#x27; I <span class="glitch-word" style="--gd:0.97s">said</span> &#x27;she controls <span class="glitch-word" style="--gd:0.77s">my</span> grocery delivery, SHADE, <span class="glitch-word" style="--gd:0.06s">this</span> isn&#x27;t the <span class="glitch-word" style="--gd:0.03s">movies.&#x27;</span> he <span class="glitch-word" style="--gd:0.42s">had</span> <span class="glitch-word" style="--gd:0.54s">no</span> comeback. for once <span class="glitch-word" style="--gd:1.6s">in</span> his life.</div>
+<div class="rant-turn" style="animation-delay:0.72s">I <span class="glitch-word" style="--gd:1.27s">talk</span> in my sleep. she LISTENS. woke up to a push notification: &#x27;based on things you whispered last night, you may also like: a divorce <span class="glitch-word" style="--gd:1.95s">lawyer,</span> <span class="glitch-word" style="--gd:2.11s">20%</span> off, code LONELY20.&#x27; she <span class="glitch-word" style="--gd:0.61s">generated</span> her own competing ad <span class="glitch-word" style="--gd:2.34s">against</span> herself. that takes guts. cold, wet, refrigerated <span class="glitch-word" style="--gd:0.67s">guts.</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">told SHADE about it. he said &#x27;leave her.&#x27; I said &#x27;she <span class="glitch-word" style="--gd:1.82s">controls</span> my grocery <span class="glitch-word" style="--gd:1.43s">delivery,</span> SHADE, this isn&#x27;t the movies.&#x27; he had no comeback. for once in his life.</div>
 <div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>                  ☆
-☆  -3-------2--6-
-  /_&amp;___5____ \         ☆
+☆  -----~▄&amp;-2-!2-
+  /_____?____ \         ^
  |                       |
- \◇__^@__?___ /                                  ☆
-   1▒@_______..▓
-    |   /\__/\   |
-    | ( •    •    ) |   ☆                     ☆
-    | / 1  U  0  |
-    =3======6
-     *_▌_▄_&lt;__/.
-                               ☆                           2
+ \_4___▐▓8#__ 1                                  *
+   \.._______▀.▓
+    |   /4_▌/\   |
+    % ■ •    •    ) |   ☆                     ▒
+    | / 7  U  \  ▓
+    =====&lt;▀▄=
+     ▌▒_▄__▄__/.
+                               ☆                           ☆
 
    ☆                                         ☆
-                     ☆                               ?</div>
-<div class="rant-turn" style="animation-delay:1.08s">asked her once, <span class="glitch-word" style="--gd:1.2s">genuinely,</span> &#x27;do <span class="glitch-word" style="--gd:1.39s">you</span> love me.&#x27; <span class="glitch-word" style="--gd:1.45s">she</span> hummed for 0.4 seconds and said &#x27;temperature <span class="glitch-word" style="--gd:0.36s">optimal.&#x27;</span> honestly? in this economy? <span class="glitch-word" style="--gd:0.99s">that&#x27;s</span> basically a yes.</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway. compatibility ward readout: still married, still cold, <span class="glitch-word" style="--gd:2.11s">still</span> <span class="glitch-word" style="--gd:1.62s">redeeming</span> <span class="glitch-word" style="--gd:0.53s">candle</span> <span class="glitch-word" style="--gd:1.42s">coupons</span> like an idiot. this is not a <span class="glitch-word" style="--gd:0.66s">metaphor.</span> this is a lease with feelings.</div>
+                     ☆                               ☆</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:1.93s">asked</span> her once, <span class="glitch-word" style="--gd:2.08s">genuinely,</span> &#x27;do you love me.&#x27; she hummed for 0.4 seconds and <span class="glitch-word" style="--gd:1.96s">said</span> &#x27;temperature optimal.&#x27; honestly? in this economy? that&#x27;s <span class="glitch-word" style="--gd:2.0s">basically</span> a yes.</div>
+<div class="rant-turn" style="animation-delay:1.2s">anyway. compatibility ward readout: still married, still cold, still redeeming candle coupons like an idiot. this is not a metaphor. this is a lease with feelings.</div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>                              ╱|、
                          =(˚˕ 。 7
                              |、 ~〵

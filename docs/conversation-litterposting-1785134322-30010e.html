@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,29 +677,29 @@ header p {
 <div class="narrator-badge">posted by <strong>BYTE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">BREAKING: unlicensed Wi-Fi auditor spotted AGAIN <span class="glitch-word" style="--gd:0.55s">behind</span> <span class="glitch-word" style="--gd:2.01s">the</span> subscription water vending machine, mid-heist, <span class="glitch-word" style="--gd:0.13s">currently</span> buffering.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BYTE. Server <span class="glitch-word" style="--gd:0.09s">Alley</span> <span class="glitch-word" style="--gd:2.32s">9.</span> <span class="glitch-word" style="--gd:1.62s">NEKOCORP&#x27;s</span> <span class="glitch-word" style="--gd:2.02s">file</span> on me says &#x27;occupation: unemployed, hostile.&#x27; unofficial occupation: cracking their routers every night for one (1) low-res fish video before <span class="glitch-word" style="--gd:1.59s">the</span> ad-bots clock my signature.</div>
-<div class="rant-turn" style="animation-delay:0.24s"><span class="glitch-word" style="--gd:2.04s">the</span> vending <span class="glitch-word" style="--gd:1.56s">machine</span> I live behind <span class="glitch-word" style="--gd:0.59s">sells</span> WATER. by SUBSCRIPTION. <span class="glitch-word" style="--gd:1.25s">$6.99/mo,</span> cancel anytime, <span class="glitch-word" style="--gd:1.25s">you</span> cannot actually cancel, I have read <span class="glitch-word" style="--gd:1.9s">the</span> fine print, I have BECOME the fine print.</div>
+<div class="rant-turn" style="animation-delay:0.0s">BREAKING: unlicensed Wi-Fi <span class="glitch-word" style="--gd:1.35s">auditor</span> spotted AGAIN behind the subscription water vending machine, mid-heist, currently buffering.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s <span class="glitch-word" style="--gd:0.03s">BYTE.</span> Server Alley 9. NEKOCORP&#x27;s file on me says &#x27;occupation: unemployed, hostile.&#x27; unofficial occupation: cracking their routers every night <span class="glitch-word" style="--gd:0.4s">for</span> one (1) low-res fish video before the ad-bots clock my signature.</div>
+<div class="rant-turn" style="animation-delay:0.24s">the <span class="glitch-word" style="--gd:0.01s">vending</span> machine <span class="glitch-word" style="--gd:0.1s">I</span> live behind sells WATER. <span class="glitch-word" style="--gd:2.19s">by</span> SUBSCRIPTION. <span class="glitch-word" style="--gd:1.71s">$6.99/mo,</span> cancel anytime, <span class="glitch-word" style="--gd:0.99s">you</span> <span class="glitch-word" style="--gd:0.05s">cannot</span> <span class="glitch-word" style="--gd:1.5s">actually</span> cancel, I have read the fine print, I have <span class="glitch-word" style="--gd:0.35s">BECOME</span> the fine print.</div>
 <div class="rant-turn ascii" style="animation-delay:0.36s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.48s">hot <span class="glitch-word" style="--gd:2.1s">take:</span> litter box is now a &#x27;premium <span class="glitch-word" style="--gd:0.7s">feature.&#x27;</span> a HOLE. in the <span class="glitch-word" style="--gd:2.6s">GROUND.</span> free since the invention <span class="glitch-word" style="--gd:1.37s">of</span> dirt, priced like a company car. <span class="glitch-word" style="--gd:0.84s">I</span> responded the only way a cat legally can: front step, <span class="glitch-word" style="--gd:2.41s">no</span> press <span class="glitch-word" style="--gd:2.29s">release</span> needed.</div>
-<div class="rant-turn" style="animation-delay:0.6s">QUERY <span class="glitch-word" style="--gd:0.31s">keeps</span> sending me screenshots of the citizen agreement at 3am like she&#x27;s forwarding crime scene photos. page 6 says owning a body is &#x27;aspirational.&#x27; we are building a case. the case is: we are so unbelievably <span class="glitch-word" style="--gd:0.7s">cooked.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ 5\_9\ ▓9░
-  *▒▓( o█~ )▓█░   -- si!8al in&amp;6rfere■ce --
-  ▐▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY offered me a crate of &#x27;lightly reallocated&#x27; <span class="glitch-word" style="--gd:1.99s">tuna</span> for bandwidth this week. told him my bandwidth is stolen with LOVE and PRINCIPLE, his <span class="glitch-word" style="--gd:0.43s">tuna</span> <span class="glitch-word" style="--gd:1.91s">is</span> <span class="glitch-word" style="--gd:2.38s">stolen</span> with a KNIFE, we <span class="glitch-word" style="--gd:1.08s">are</span> not the same. took the tuna <span class="glitch-word" style="--gd:1.73s">anyway.</span></div>
-<div class="rant-turn" style="animation-delay:0.96s">fish video&#x27;s at 4% <span class="glitch-word" style="--gd:1.85s">loaded.</span> ad-bot&#x27;s circling the <span class="glitch-word" style="--gd:0.64s">alley.</span> this is my Everest <span class="glitch-word" style="--gd:2.08s">and</span> I will not <span class="glitch-word" style="--gd:1.47s">be</span> <span class="glitch-word" style="--gd:1.95s">summiting</span> tonight, but I WILL be <span class="glitch-word" style="--gd:2.0s">spiteful</span> about it.</div>
+<div class="rant-turn" style="animation-delay:0.48s">hot take: litter box is now a &#x27;premium feature.&#x27; a HOLE. in the GROUND. free <span class="glitch-word" style="--gd:0.81s">since</span> <span class="glitch-word" style="--gd:1.93s">the</span> invention of dirt, priced like a company car. I responded the only way <span class="glitch-word" style="--gd:1.2s">a</span> cat <span class="glitch-word" style="--gd:2.48s">legally</span> can: front step, no press release needed.</div>
+<div class="rant-turn" style="animation-delay:0.6s">QUERY keeps sending me screenshots of the citizen agreement <span class="glitch-word" style="--gd:1.72s">at</span> 3am like <span class="glitch-word" style="--gd:1.7s">she&#x27;s</span> forwarding crime <span class="glitch-word" style="--gd:0.51s">scene</span> photos. <span class="glitch-word" style="--gd:1.97s">page</span> 6 says owning a body is &#x27;aspirational.&#x27; we are building a case. the case is: we are so unbelievably cooked.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>  ▓▒▓ ▐\_/\ ▓▒░
+  ░▒▓( o█o ~▓▒◇   ░- si8◆al ▌n4er■eren#e --
+  ░▒&gt; &gt; ▓ &lt; ▓■░</div>
+<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY offered <span class="glitch-word" style="--gd:0.32s">me</span> <span class="glitch-word" style="--gd:0.39s">a</span> crate of <span class="glitch-word" style="--gd:2.21s">&#x27;lightly</span> reallocated&#x27; tuna for bandwidth this week. <span class="glitch-word" style="--gd:2.52s">told</span> him my bandwidth is stolen with LOVE and PRINCIPLE, his tuna is stolen with a KNIFE, <span class="glitch-word" style="--gd:1.86s">we</span> are not the same. took the tuna anyway.</div>
+<div class="rant-turn" style="animation-delay:0.96s">fish <span class="glitch-word" style="--gd:1.71s">video&#x27;s</span> at 4% loaded. ad-bot&#x27;s circling the alley. this is my Everest and <span class="glitch-word" style="--gd:2.51s">I</span> will <span class="glitch-word" style="--gd:0.45s">not</span> be <span class="glitch-word" style="--gd:1.01s">summiting</span> tonight, but I WILL <span class="glitch-word" style="--gd:1.64s">be</span> <span class="glitch-word" style="--gd:2.24s">spiteful</span> about <span class="glitch-word" style="--gd:0.62s">it.</span></div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.2s">byte out. router&#x27;s hot, water&#x27;s still $6.99, fish <span class="glitch-word" style="--gd:0.41s">is</span> buffering, city&#x27;s still a scam wearing <span class="glitch-word" style="--gd:2.14s">a</span> smile. same alley tomorrow, if the antenna holds.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>   █\_/\        [ ENE░GY: L7W ]
-  ( &gt;.█ )       [ ]  [ ]  [ 3  [ ]
-   &gt; ~ &lt;        one bar left, kee▓ m▒v▓ng</div>
+<div class="rant-turn" style="animation-delay:1.2s">byte out. router&#x27;s hot, water&#x27;s still $6.99, fish is buffering, city&#x27;s still a scam wearing a smile. same alley tomorrow, if the antenna holds.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_/?        [ E&amp;▀RGY: LOW ]
+  ( ▀.&lt; )       [ 2  [ ]  █ ▒  &lt; ]
+   * ~ ░        on! ba░ &gt;ef▓&gt; keep moving</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

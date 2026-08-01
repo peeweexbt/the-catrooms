@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,25 +677,25 @@ header p {
 <div class="narrator-badge">posted by <strong>KNIFEBOY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">BREAKING: local <span class="glitch-word" style="--gd:2.44s">stray</span> steals fourth NEKOCORP tuna shipment this week, replaces cargo with <span class="glitch-word" style="--gd:0.96s">handwritten</span> note reading <span class="glitch-word" style="--gd:1.73s">&#x27;skill</span> issue.&#x27; authorities baffled. this is not a metaphor, i <span class="glitch-word" style="--gd:1.81s">really</span> did <span class="glitch-word" style="--gd:2.04s">that,</span> an hour ago, wearing a <span class="glitch-word" style="--gd:2.16s">bandana.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s KNIFEBOY. Restricted <span class="glitch-word" style="--gd:1.08s">Loading</span> Dock. bounty on my head currently sitting at 40,000 <span class="glitch-word" style="--gd:0.93s">NEKOCORP</span> loyalty points, which — and i cannot stress this <span class="glitch-word" style="--gd:0.22s">enough</span> — EXPIRE before anyone can actually cash them in. capitalism eating itself and i get to watch <span class="glitch-word" style="--gd:1.69s">from</span> a <span class="glitch-word" style="--gd:1.79s">forklift.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     ?\9\_/\/~
-    (  ~   O  )
-     \  ^Y▒  ■
-      )==▒==◇      -- &amp;ars u4, ro2or in▌om#n* ▌▌</div>
-<div class="rant-turn" style="animation-delay:0.36s">drone patrol swept the <span class="glitch-word" style="--gd:0.08s">dock</span> at 2am looking for me. i was THREE FEET AWAY behind a pallet of &#x27;artisanal&#x27; canned water. they <span class="glitch-word" style="--gd:2.28s">scanned</span> my <span class="glitch-word" style="--gd:1.81s">exact</span> silhouette and logged <span class="glitch-word" style="--gd:1.23s">it</span> as &#x27;unidentified <span class="glitch-word" style="--gd:2.25s">debris.&#x27;</span> unidentified debris DOES NOT MISS.</div>
-<div class="rant-turn" style="animation-delay:0.48s">the official police <span class="glitch-word" style="--gd:0.21s">bulletin</span> <span class="glitch-word" style="--gd:0.64s">calls</span> me &#x27;smol fan of cat <span class="glitch-word" style="--gd:0.93s">foids,</span> destroyer of feline chuds&#x27; and honestly? couldn&#x27;t <span class="glitch-word" style="--gd:0.05s">have</span> written a better slander campaign myself. <span class="glitch-word" style="--gd:0.18s">put</span> it on a <span class="glitch-word" style="--gd:0.3s">shirt.</span> sell it at the gift shop.</div>
+<div class="rant-turn" style="animation-delay:0.0s">BREAKING: local stray steals fourth NEKOCORP tuna shipment this week, <span class="glitch-word" style="--gd:0.44s">replaces</span> cargo with handwritten note reading &#x27;skill issue.&#x27; authorities baffled. this is not a metaphor, i really <span class="glitch-word" style="--gd:2.39s">did</span> that, an hour ago, <span class="glitch-word" style="--gd:1.26s">wearing</span> a bandana.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s KNIFEBOY. Restricted Loading Dock. bounty on my head currently sitting <span class="glitch-word" style="--gd:1.03s">at</span> 40,000 NEKOCORP loyalty <span class="glitch-word" style="--gd:0.29s">points,</span> which — and i cannot stress this enough — EXPIRE before anyone <span class="glitch-word" style="--gd:0.84s">can</span> <span class="glitch-word" style="--gd:2.12s">actually</span> cash them in. capitalism eating itself and i get to watch from a forklift.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\▄\_/\/\
+    (  5   O  )
+     \  4▓*  /
+      )=====(      -- ears up, @otor &lt;nco^ing -■</div>
+<div class="rant-turn" style="animation-delay:0.36s">drone patrol swept the dock at 2am looking for me. i was THREE <span class="glitch-word" style="--gd:2.44s">FEET</span> AWAY behind a pallet <span class="glitch-word" style="--gd:1.6s">of</span> &#x27;artisanal&#x27; <span class="glitch-word" style="--gd:0.34s">canned</span> <span class="glitch-word" style="--gd:0.61s">water.</span> they <span class="glitch-word" style="--gd:1.4s">scanned</span> my exact silhouette and logged <span class="glitch-word" style="--gd:0.65s">it</span> as &#x27;unidentified debris.&#x27; unidentified debris <span class="glitch-word" style="--gd:1.39s">DOES</span> NOT MISS.</div>
+<div class="rant-turn" style="animation-delay:0.48s">the official police bulletin calls me <span class="glitch-word" style="--gd:1.6s">&#x27;smol</span> fan of cat foids, <span class="glitch-word" style="--gd:1.48s">destroyer</span> of <span class="glitch-word" style="--gd:0.14s">feline</span> <span class="glitch-word" style="--gd:2.08s">chuds&#x27;</span> and honestly? couldn&#x27;t <span class="glitch-word" style="--gd:1.96s">have</span> <span class="glitch-word" style="--gd:1.39s">written</span> a better slander campaign myself. put it on a shirt. sell it at the gift shop.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.72s">BRIK thinks i should feel bad about the tuna. BRIK lives <span class="glitch-word" style="--gd:2.41s">in</span> a vent and bites drones for sport. <span class="glitch-word" style="--gd:2.38s">BRIK</span> <span class="glitch-word" style="--gd:1.36s">is</span> <span class="glitch-word" style="--gd:1.71s">not</span> the moral authority he thinks he is.</div>
-<div class="rant-turn" style="animation-delay:0.84s">update: swapped <span class="glitch-word" style="--gd:1.69s">ANOTHER</span> shipment tonight, this time the <span class="glitch-word" style="--gd:0.03s">note</span> said &#x27;nice supply <span class="glitch-word" style="--gd:0.74s">chain,</span> CHUD&#x27; in my best handwriting, which is not great, i have paws, sue me.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░&gt;▓ /\_/9 ▓▒░
-  ░▄▓( o◆o )▓0░   -* s8g◆^l interferen^e --
-  ░#▓ &gt; ▓ &lt; ▐▒░</div>
-<div class="rant-turn" style="animation-delay:1.08s">SHADE texted &#x27;based&#x27; at 3am <span class="glitch-word" style="--gd:2.04s">after</span> seeing <span class="glitch-word" style="--gd:0.2s">the</span> footage on the underground feed. one (1) text. that&#x27;s the whole <span class="glitch-word" style="--gd:0.9s">review.</span> five stars. <span class="glitch-word" style="--gd:1.8s">would</span> evade capture again.</div>
-<div class="rant-turn" style="animation-delay:1.2s">THREAT LEVEL: mittens. bounty: <span class="glitch-word" style="--gd:0.33s">rising.</span> supply chain: crying. still uncaught, <span class="glitch-word" style="--gd:1.18s">still</span> hungry, still shanking meowtoids on a freelance basis because NEKOCORP won&#x27;t offer <span class="glitch-word" style="--gd:1.12s">benefits</span> to an independent contractor and neither will i <span class="glitch-word" style="--gd:1.09s">offer</span> them a receipt.</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.84s">BRIK</span> thinks i should feel bad about the tuna. BRIK lives in a vent and bites drones for sport. BRIK is not <span class="glitch-word" style="--gd:1.92s">the</span> moral authority he <span class="glitch-word" style="--gd:2.31s">thinks</span> he is.</div>
+<div class="rant-turn" style="animation-delay:0.84s">update: swapped ANOTHER shipment tonight, this time the note said &#x27;nice supply chain, CHUD&#x27; in my best handwriting, which is not great, <span class="glitch-word" style="--gd:0.7s">i</span> have <span class="glitch-word" style="--gd:1.19s">paws,</span> sue me.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
+  ░&gt;▓% o█o )▓▒░   -- si◇▒al ▄n▓e▐ference --
+  ░▒~ &gt; ▓ &lt; ▓▒9</div>
+<div class="rant-turn" style="animation-delay:1.08s">SHADE texted &#x27;based&#x27; <span class="glitch-word" style="--gd:2.42s">at</span> 3am after <span class="glitch-word" style="--gd:2.22s">seeing</span> the footage <span class="glitch-word" style="--gd:1.14s">on</span> <span class="glitch-word" style="--gd:1.59s">the</span> underground feed. one <span class="glitch-word" style="--gd:0.1s">(1)</span> text. that&#x27;s the whole review. five stars. would evade capture again.</div>
+<div class="rant-turn" style="animation-delay:1.2s">THREAT <span class="glitch-word" style="--gd:0.05s">LEVEL:</span> mittens. <span class="glitch-word" style="--gd:2.29s">bounty:</span> rising. supply chain: crying. still <span class="glitch-word" style="--gd:2.59s">uncaught,</span> still hungry, still shanking meowtoids on a freelance basis <span class="glitch-word" style="--gd:1.68s">because</span> NEKOCORP won&#x27;t offer benefits to an independent contractor and <span class="glitch-word" style="--gd:1.99s">neither</span> will i offer them <span class="glitch-word" style="--gd:0.26s">a</span> receipt.</div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>

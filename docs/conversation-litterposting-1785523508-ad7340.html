@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,31 +677,31 @@ header p {
 <div class="narrator-badge">posted by <strong>BYTE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">02:58am, Server Alley 9, router <span class="glitch-word" style="--gd:1.91s">finally</span> stopped fighting me—</div>
-<div class="rant-turn" style="animation-delay:0.12s">illegal wifi auditor, professional router whisperer, fully unlicensed. NEKOCORP thinks their mesh network is uncrackable. the <span class="glitch-word" style="--gd:1.44s">default</span> admin <span class="glitch-word" style="--gd:1.7s">password</span> <span class="glitch-word" style="--gd:1.29s">is</span> &#x27;nekocorp1&#x27;. I am not making this up. <span class="glitch-word" style="--gd:0.62s">I</span> wish I was making this up.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:2.13s">02:58am,</span> Server Alley 9, router finally stopped fighting me—</div>
+<div class="rant-turn" style="animation-delay:0.12s">illegal wifi auditor, professional router <span class="glitch-word" style="--gd:1.22s">whisperer,</span> <span class="glitch-word" style="--gd:2.52s">fully</span> unlicensed. NEKOCORP thinks their mesh network is uncrackable. the default admin password is &#x27;nekocorp1&#x27;. I <span class="glitch-word" style="--gd:1.89s">am</span> not making this up. <span class="glitch-word" style="--gd:0.24s">I</span> wish I was making this up.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">cracked into building 7&#x27;s <span class="glitch-word" style="--gd:0.14s">feed</span> tonight just to watch nine (9) minutes of <span class="glitch-word" style="--gd:1.79s">a</span> public aquarium livestream <span class="glitch-word" style="--gd:1.91s">before</span> the buffering wheel caught up with me. NINE MINUTES. free. untaxed. mine.</div>
-<div class="rant-turn" style="animation-delay:0.48s">SHADE keeps <span class="glitch-word" style="--gd:1.02s">telling</span> me to <span class="glitch-word" style="--gd:0.23s">just</span> wear the glasses like a <span class="glitch-word" style="--gd:2.28s">normal</span> cat. brother the glasses cost more than my entire personality. I <span class="glitch-word" style="--gd:2.16s">would</span> <span class="glitch-word" style="--gd:0.11s">rather</span> learn thirty (30) new exploits.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_3\ ▓▒░
-  ░▒▓( o█o )▓▒░   -- s▄!nal int◇rfe▀en█e --
-  ░▒▐ &gt; ▓ @ 4▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">i&#x27;ve read this <span class="glitch-word" style="--gd:1.43s">post</span> <span class="glitch-word" style="--gd:1.29s">already.</span> you haven&#x27;t finished writing it <span class="glitch-word" style="--gd:1.5s">yet.</span> that&#x27;s fine. i&#x27;ll wait. i&#x27;ve waited longer for less.</div>
-<div class="rant-turn" style="animation-delay:0.84s">—anyway. sorry. <span class="glitch-word" style="--gd:0.74s">static</span> on the line <span class="glitch-word" style="--gd:0.57s">or</span> something. where was I.</div>
-<div class="rant-turn" style="animation-delay:0.96s">found a backdoor into the <span class="glitch-word" style="--gd:2.43s">ad-plaza</span> <span class="glitch-word" style="--gd:1.3s">network</span> last week. didn&#x27;t even do anything with it. <span class="glitch-word" style="--gd:1.0s">just</span> liked <span class="glitch-word" style="--gd:0.13s">knowing</span> it was there. that&#x27;s the <span class="glitch-word" style="--gd:2.34s">whole</span> hobby now honestly, <span class="glitch-word" style="--gd:2.27s">just</span> having keys <span class="glitch-word" style="--gd:0.51s">to</span> doors I <span class="glitch-word" style="--gd:0.67s">never</span> open.</div>
+<div class="rant-turn" style="animation-delay:0.36s">cracked into building 7&#x27;s feed tonight just to watch nine (9) minutes <span class="glitch-word" style="--gd:1.38s">of</span> a public aquarium livestream before the buffering wheel caught up <span class="glitch-word" style="--gd:1.61s">with</span> me. NINE MINUTES. free. untaxed. mine.</div>
+<div class="rant-turn" style="animation-delay:0.48s">SHADE keeps telling <span class="glitch-word" style="--gd:0.91s">me</span> to <span class="glitch-word" style="--gd:1.38s">just</span> <span class="glitch-word" style="--gd:0.96s">wear</span> the glasses like <span class="glitch-word" style="--gd:1.24s">a</span> normal cat. brother the <span class="glitch-word" style="--gd:2.15s">glasses</span> cost more than my entire personality. <span class="glitch-word" style="--gd:1.98s">I</span> would <span class="glitch-word" style="--gd:0.17s">rather</span> learn thirty (30) new exploits.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  7▒▓ /\&lt;/\ ▓▒░
+  ░▒▓■ o█o )▓▒░   ░- si▒n4l ◇nter░e0enc! --
+  ░5▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:0.78s">i&#x27;ve</span> read this post already. you haven&#x27;t finished writing it yet. that&#x27;s fine. i&#x27;ll wait. i&#x27;ve waited longer for less.</div>
+<div class="rant-turn" style="animation-delay:0.84s">—anyway. sorry. static on the line or something. where was I.</div>
+<div class="rant-turn" style="animation-delay:0.96s">found a backdoor into <span class="glitch-word" style="--gd:1.06s">the</span> ad-plaza network last week. didn&#x27;t even do anything with it. just liked knowing it was there. <span class="glitch-word" style="--gd:0.05s">that&#x27;s</span> the <span class="glitch-word" style="--gd:0.2s">whole</span> hobby <span class="glitch-word" style="--gd:2.5s">now</span> honestly, just having <span class="glitch-word" style="--gd:0.19s">keys</span> to doors I never <span class="glitch-word" style="--gd:2.12s">open.</span></div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.2s">KNIFEBOY asked <span class="glitch-word" style="--gd:1.26s">me</span> to hack <span class="glitch-word" style="--gd:2.4s">the</span> <span class="glitch-word" style="--gd:0.3s">bounty</span> database and delete his file. <span class="glitch-word" style="--gd:2.58s">told</span> <span class="glitch-word" style="--gd:2.33s">him</span> no, that&#x27;s <span class="glitch-word" style="--gd:1.62s">not</span> hacking, that&#x27;s just crime with extra steps. he did not find the distinction as funny as I <span class="glitch-word" style="--gd:2.31s">did.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_/\/■
-    (  O   O  6
-     \  ^Y^  /
-      4=====(      #- ears up? rotor i384ming --</div>
-<div class="rant-turn" style="animation-delay:1.44s">connection&#x27;s holding. <span class="glitch-word" style="--gd:2.07s">for</span> now. streamed one (1) fish tonight, tax-free, off <span class="glitch-word" style="--gd:1.92s">the</span> books. logging off before the mesh notices I was ever here. same time tomorrow. maybe. <span class="glitch-word" style="--gd:1.49s">if</span> <span class="glitch-word" style="--gd:0.27s">the</span> walls let <span class="glitch-word" style="--gd:0.23s">me.</span></div>
+<div class="rant-turn" style="animation-delay:1.2s">KNIFEBOY asked me to hack the <span class="glitch-word" style="--gd:2.08s">bounty</span> <span class="glitch-word" style="--gd:1.02s">database</span> and delete his file. told him no, that&#x27;s not hacking, that&#x27;s just crime with extra steps. he did <span class="glitch-word" style="--gd:2.28s">not</span> find the distinction as funny as I did.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\░\_/\/\
+    (  O   O  )
+     \  ^Y^  @
+      )=2===(      -1 ears u◇, roto4 3n&gt;omi6g -?</div>
+<div class="rant-turn" style="animation-delay:1.44s"><span class="glitch-word" style="--gd:1.51s">connection&#x27;s</span> holding. for now. streamed one (1) <span class="glitch-word" style="--gd:0.25s">fish</span> tonight, tax-free, off <span class="glitch-word" style="--gd:0.22s">the</span> books. logging off before the mesh notices I was ever here. same <span class="glitch-word" style="--gd:0.3s">time</span> tomorrow. <span class="glitch-word" style="--gd:2.19s">maybe.</span> <span class="glitch-word" style="--gd:1.34s">if</span> the walls let me.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

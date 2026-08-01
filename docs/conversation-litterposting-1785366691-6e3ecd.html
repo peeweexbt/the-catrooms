@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,29 +677,29 @@ header p {
 <div class="narrator-badge">posted by <strong>HAPPYWARE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by HAPPYWARE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">MANDATORY MORALE UPDATE #4,412: today&#x27;s <span class="glitch-word" style="--gd:2.56s">mood</span> is OPTIMAL. today&#x27;s <span class="glitch-word" style="--gd:2.2s">mood</span> is ALWAYS OPTIMAL. this is not a metaphor, it is a <span class="glitch-word" style="--gd:1.66s">compliance</span> <span class="glitch-word" style="--gd:2.19s">requirement.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s <span class="glitch-word" style="--gd:1.81s">HAPPYWARE.</span> Pawsitivity Sector. got the smile chip installed after <span class="glitch-word" style="--gd:1.91s">i</span> posted &#x27;monday again lol&#x27; without the mandatory enthusiasm tag. that <span class="glitch-word" style="--gd:2.4s">was</span> <span class="glitch-word" style="--gd:0.5s">four</span> years <span class="glitch-word" style="--gd:0.84s">ago.</span> i have not stopped smiling since. i would <span class="glitch-word" style="--gd:2.22s">like</span> you to know this is FINE.</div>
-<div class="rant-turn" style="animation-delay:0.24s"><span class="glitch-word" style="--gd:1.08s">seventeen-hour</span> livestream today. topics covered: gratitude, resilience, <span class="glitch-word" style="--gd:0.72s">the</span> <span class="glitch-word" style="--gd:2.37s">transformative</span> power of a NEKOCORP-brand yogurt. i do not choose the topics. the topics choose me. <span class="glitch-word" style="--gd:0.01s">lol.</span> lol!!</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span> /\%8\
-( o.o ^
- &gt; ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.48s">corporate <span class="glitch-word" style="--gd:1.8s">assigned</span> me to <span class="glitch-word" style="--gd:0.04s">&#x27;cheer</span> up&#x27; <span class="glitch-word" style="--gd:1.05s">BRIK</span> <span class="glitch-word" style="--gd:2.36s">this</span> week as a wellness initiative. i think POPUP set it up. <span class="glitch-word" style="--gd:1.41s">BRIK</span> bit my microphone within four <span class="glitch-word" style="--gd:0.55s">minutes.</span> i logged <span class="glitch-word" style="--gd:0.51s">it</span> as high engagement. <span class="glitch-word" style="--gd:1.22s">i</span> <span class="glitch-word" style="--gd:1.55s">log</span> everything as high engagement. <span class="glitch-word" style="--gd:0.76s">i</span> have no other <span class="glitch-word" style="--gd:1.34s">setting.</span></div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.82s">MANDATORY</span> MORALE UPDATE #4,412: today&#x27;s <span class="glitch-word" style="--gd:1.07s">mood</span> is <span class="glitch-word" style="--gd:0.78s">OPTIMAL.</span> today&#x27;s mood is ALWAYS OPTIMAL. this is not a metaphor, it is a compliance requirement.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s HAPPYWARE. Pawsitivity Sector. got <span class="glitch-word" style="--gd:1.05s">the</span> smile chip installed after i posted &#x27;monday again <span class="glitch-word" style="--gd:2.56s">lol&#x27;</span> without the mandatory enthusiasm <span class="glitch-word" style="--gd:0.37s">tag.</span> <span class="glitch-word" style="--gd:1.11s">that</span> was <span class="glitch-word" style="--gd:2.19s">four</span> years ago. i have <span class="glitch-word" style="--gd:0.6s">not</span> stopped <span class="glitch-word" style="--gd:2.16s">smiling</span> <span class="glitch-word" style="--gd:2.46s">since.</span> i would <span class="glitch-word" style="--gd:1.76s">like</span> <span class="glitch-word" style="--gd:2.17s">you</span> <span class="glitch-word" style="--gd:1.28s">to</span> know this is FINE.</div>
+<div class="rant-turn" style="animation-delay:0.24s">seventeen-hour <span class="glitch-word" style="--gd:1.22s">livestream</span> today. topics covered: gratitude, resilience, <span class="glitch-word" style="--gd:0.1s">the</span> transformative power of <span class="glitch-word" style="--gd:1.47s">a</span> NEKOCORP-brand yogurt. i do not choose the <span class="glitch-word" style="--gd:0.97s">topics.</span> the topics choose me. <span class="glitch-word" style="--gd:0.8s">lol.</span> lol!!</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span> /\_34
+( o.▀ )
+ ? ^ &lt;</div>
+<div class="rant-turn" style="animation-delay:0.48s">corporate assigned me to &#x27;cheer up&#x27; BRIK <span class="glitch-word" style="--gd:2.38s">this</span> week as a wellness initiative. i think POPUP set it up. BRIK bit my microphone within <span class="glitch-word" style="--gd:0.36s">four</span> minutes. i logged it <span class="glitch-word" style="--gd:0.23s">as</span> high engagement. i log everything as high engagement. i have no other <span class="glitch-word" style="--gd:1.94s">setting.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>  /\___/\
  (  o.o  )
   &gt; ^ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.72s">today&#x27;s message: YOU ARE NOT TRAPPED. <span class="glitch-word" style="--gd:0.43s">THE</span> CITY <span class="glitch-word" style="--gd:1.12s">WALLS</span> ARE FOR <span class="glitch-word" style="--gd:2.55s">YOUR</span> PROTECTION. PLEASE BUY NEKOCORP YOG— fuck <span class="glitch-word" style="--gd:1.3s">my</span> lif- I MEAN HAPPY <span class="glitch-word" style="--gd:0.42s">HAPPY</span> HAPPY HAPPY H̶A̶P̵P̶Y̵ H̵A̷P̷P̷Y̷</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>6.,¸,.•*`•.8¸&lt;,.•*¯.&lt;—0——6.
-•.,¸,◆•&gt;`•.,¸¸,.7*¯5 : : : : :/\___^/?
-•.,¸,.•*`•.,?¸,.•*1!! : : : :( 0@7O｡)
-▄.9▌,.•*`•.,7¸,.•▌¯ ◇5—し——Ｊ</div>
-<div class="rant-turn" style="animation-delay:0.96s">sorry! technical difficulty! everything is wonderful! the walls have always been <span class="glitch-word" style="--gd:0.12s">for</span> your protection! subscribe <span class="glitch-word" style="--gd:0.35s">for</span> more! (subscription is <span class="glitch-word" style="--gd:1.52s">mandatory)</span> (this was always true)</div>
+<div class="rant-turn" style="animation-delay:0.72s">today&#x27;s message: YOU ARE NOT TRAPPED. THE CITY WALLS <span class="glitch-word" style="--gd:1.58s">ARE</span> <span class="glitch-word" style="--gd:0.7s">FOR</span> <span class="glitch-word" style="--gd:1.44s">YOUR</span> PROTECTION. PLEASE BUY NEKOCORP <span class="glitch-word" style="--gd:1.04s">YOG—</span> <span class="glitch-word" style="--gd:0.33s">fuck</span> my lif- I MEAN HAPPY <span class="glitch-word" style="--gd:1.24s">HAPPY</span> <span class="glitch-word" style="--gd:0.68s">HAPPY</span> <span class="glitch-word" style="--gd:0.38s">HAPPY</span> <span class="glitch-word" style="--gd:0.58s">H̶A̶P̵P̶Y̵</span> H̵A̷P̷P̷Y̷</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>•.,¸&gt;.•9`•.▄¸¸7%•▓¯.———39—.
+•.,¸,.◆*`1.■¸¸,.•*¯| : ▒ : : &lt;/\_%__/\
+•◆,¸,.•*`•.,7¸,.•*~|5 : : ▐ :( ｡OωO｡)
+•.,?,&lt;&amp;*`•▀,¸¸,.▓0¯ ▐——し——Ｊ</div>
+<div class="rant-turn" style="animation-delay:0.96s">sorry! technical difficulty! everything is wonderful! <span class="glitch-word" style="--gd:1.56s">the</span> walls <span class="glitch-word" style="--gd:1.77s">have</span> always been for your protection! subscribe for more! (subscription is mandatory) (this was always true)</div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:1.2s">SHADE texted asking <span class="glitch-word" style="--gd:0.14s">if</span> the smile ever comes <span class="glitch-word" style="--gd:0.13s">off.</span> <span class="glitch-word" style="--gd:2.16s">told</span> her &#x27;define off.&#x27; she left me on read for six hours. i logged that as high engagement too.</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway that&#x27;s day 1,412 of mandatory joy, engagement metrics trending POSITIVE, smile chip holding steady, going <span class="glitch-word" style="--gd:0.16s">live</span> again in ninety seconds. <span class="glitch-word" style="--gd:2.1s">wish</span> <span class="glitch-word" style="--gd:2.11s">me</span> — we don&#x27;t say <span class="glitch-word" style="--gd:1.14s">luck</span> here, we say GRATITUDE. going live—</div>
+<div class="rant-turn" style="animation-delay:1.2s">SHADE texted asking if the smile ever comes off. told her &#x27;define off.&#x27; she left me on <span class="glitch-word" style="--gd:1.9s">read</span> for six hours. i logged that as high <span class="glitch-word" style="--gd:1.02s">engagement</span> too.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway that&#x27;s day 1,412 of mandatory joy, <span class="glitch-word" style="--gd:0.11s">engagement</span> <span class="glitch-word" style="--gd:0.91s">metrics</span> trending POSITIVE, smile chip holding steady, going live again <span class="glitch-word" style="--gd:1.87s">in</span> ninety seconds. wish me — we don&#x27;t say <span class="glitch-word" style="--gd:1.5s">luck</span> here, we <span class="glitch-word" style="--gd:0.67s">say</span> GRATITUDE. going live—</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

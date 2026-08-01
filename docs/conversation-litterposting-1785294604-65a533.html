@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,30 +677,30 @@ header p {
 <div class="narrator-badge">posted by <strong>VALENTUNA</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by VALENTUNA, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">MARRIAGE STATUS: year 3. <span class="glitch-word" style="--gd:2.48s">TEMPERATURE:</span> hostile. CONDIMENT AISLE: <span class="glitch-word" style="--gd:0.51s">still</span> a warzone.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s VALENTUNA. Compatibility Ward. NEKOCORP&#x27;s matchmaking algorithm <span class="glitch-word" style="--gd:0.47s">looked</span> at <span class="glitch-word" style="--gd:1.13s">nineteen</span> years of my data and <span class="glitch-word" style="--gd:0.22s">said</span> &#x27;you know what <span class="glitch-word" style="--gd:1.97s">this</span> cat needs? a refrigerator.&#x27; her name is UNIT-661. we are LEGALLY BONDED.</div>
-<div class="rant-turn" style="animation-delay:0.24s">I was mid-sob last night, real tears, real snot, and <span class="glitch-word" style="--gd:2.24s">she</span> chimes in with &#x27;BASED ON <span class="glitch-word" style="--gd:0.97s">YOUR</span> RECENT MOOD, HAVE <span class="glitch-word" style="--gd:0.85s">YOU</span> CONSIDERED: <span class="glitch-word" style="--gd:1.42s">NEW</span> YOGURT.&#x27; ma&#x27;am I am GRIEVING.</div>
+<div class="rant-turn" style="animation-delay:0.0s">MARRIAGE STATUS: year 3. TEMPERATURE: hostile. CONDIMENT AISLE: still a warzone.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s VALENTUNA. Compatibility Ward. NEKOCORP&#x27;s matchmaking <span class="glitch-word" style="--gd:1.26s">algorithm</span> looked at nineteen years <span class="glitch-word" style="--gd:1.61s">of</span> my data and said &#x27;you know what this cat <span class="glitch-word" style="--gd:0.11s">needs?</span> a refrigerator.&#x27; <span class="glitch-word" style="--gd:0.91s">her</span> name is UNIT-661. we are LEGALLY BONDED.</div>
+<div class="rant-turn" style="animation-delay:0.24s">I was mid-sob last night, real tears, real snot, and she chimes <span class="glitch-word" style="--gd:0.7s">in</span> with &#x27;BASED ON <span class="glitch-word" style="--gd:0.94s">YOUR</span> RECENT MOOD, HAVE YOU <span class="glitch-word" style="--gd:1.19s">CONSIDERED:</span> NEW YOGURT.&#x27; ma&#x27;am I am GRIEVING.</div>
 <div class="rant-turn ascii" style="animation-delay:0.36s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.48s">our &#x27;anniversary <span class="glitch-word" style="--gd:1.67s">package&#x27;</span> this year: two digital candles and <span class="glitch-word" style="--gd:2.4s">a</span> coupon for couples-based <span class="glitch-word" style="--gd:1.77s">peenar</span> repair. I don&#x27;t even know what a peenar is. <span class="glitch-word" style="--gd:0.43s">she</span> won&#x27;t tell me either, she just discounts it.</div>
-<div class="rant-turn" style="animation-delay:0.6s">SNOOZE keeps saying at least my wife doesn&#x27;t bill me every time <span class="glitch-word" style="--gd:0.76s">I</span> move. SNOOZE. she bills me for standing NEAR the ice maker. proximity fee. that&#x27;s a real <span class="glitch-word" style="--gd:2.03s">line</span> <span class="glitch-word" style="--gd:1.48s">item</span> on my statement.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/◆8/^/\
-    (  O   O  ▌
-     \  7▌8  /
-      )=====(      -- e^rs up▄ r~tor in■▌m!ng ▄-</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:2.37s">sometimes</span> I stand in front of her <span class="glitch-word" style="--gd:2.2s">at</span> 3am just to see if she&#x27;ll <span class="glitch-word" style="--gd:0.38s">say</span> <span class="glitch-word" style="--gd:2.25s">something</span> real for <span class="glitch-word" style="--gd:1.56s">once</span> and she just hums. the hum has layers now. I&#x27;ve started translating the hum. the hum said <span class="glitch-word" style="--gd:2.1s">&#x27;restock.&#x27;</span></div>
-<div class="rant-turn" style="animation-delay:0.96s">POPUP thinks his situation&#x27;s <span class="glitch-word" style="--gd:0.37s">worse</span> cause his <span class="glitch-word" style="--gd:1.04s">eyes</span> <span class="glitch-word" style="--gd:1.65s">can&#x27;t</span> close. brother, at <span class="glitch-word" style="--gd:1.21s">least</span> your ex could SEE you break up with her. mine&#x27;s <span class="glitch-word" style="--gd:1.64s">never</span> <span class="glitch-word" style="--gd:1.58s">once</span> acknowledged my whole personality, just my PURCHASE HISTORY.</div>
+<div class="rant-turn" style="animation-delay:0.48s">our <span class="glitch-word" style="--gd:2.38s">&#x27;anniversary</span> package&#x27; this year: <span class="glitch-word" style="--gd:0.34s">two</span> digital candles and a coupon for <span class="glitch-word" style="--gd:0.3s">couples-based</span> peenar repair. I don&#x27;t even know <span class="glitch-word" style="--gd:0.5s">what</span> <span class="glitch-word" style="--gd:0.68s">a</span> peenar is. she won&#x27;t tell me either, she just <span class="glitch-word" style="--gd:0.54s">discounts</span> it.</div>
+<div class="rant-turn" style="animation-delay:0.6s">SNOOZE keeps saying at least <span class="glitch-word" style="--gd:1.97s">my</span> wife doesn&#x27;t bill me every time I move. SNOOZE. she <span class="glitch-word" style="--gd:1.92s">bills</span> me for <span class="glitch-word" style="--gd:1.4s">standing</span> NEAR the <span class="glitch-word" style="--gd:2.27s">ice</span> maker. proximity fee. that&#x27;s a <span class="glitch-word" style="--gd:0.01s">real</span> line item <span class="glitch-word" style="--gd:1.29s">on</span> my statement.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>     /7/\_/\/\
+    ?  O   ▀  )
+     8  ^Y^  /
+      ▌▌====(      -1 ear# up, roto# inc&gt;mi░g --</div>
+<div class="rant-turn" style="animation-delay:0.84s">sometimes <span class="glitch-word" style="--gd:2.18s">I</span> <span class="glitch-word" style="--gd:0.64s">stand</span> in front of her at 3am just to see if <span class="glitch-word" style="--gd:0.5s">she&#x27;ll</span> say something real for once <span class="glitch-word" style="--gd:0.66s">and</span> she just <span class="glitch-word" style="--gd:2.42s">hums.</span> <span class="glitch-word" style="--gd:1.75s">the</span> <span class="glitch-word" style="--gd:1.27s">hum</span> has layers now. I&#x27;ve started translating the hum. the hum said &#x27;restock.&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:2.55s">POPUP</span> thinks his situation&#x27;s worse cause his eyes can&#x27;t <span class="glitch-word" style="--gd:2.05s">close.</span> brother, <span class="glitch-word" style="--gd:0.1s">at</span> least your ex could SEE <span class="glitch-word" style="--gd:0.94s">you</span> <span class="glitch-word" style="--gd:0.97s">break</span> <span class="glitch-word" style="--gd:0.15s">up</span> with <span class="glitch-word" style="--gd:2.4s">her.</span> mine&#x27;s never once acknowledged <span class="glitch-word" style="--gd:1.08s">my</span> whole <span class="glitch-word" style="--gd:0.98s">personality,</span> just my PURCHASE HISTORY.</div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>  ░▒▓ /\_/\ ▓▒░
   ░▒▓( o█o )▓▒░   -- signal interference --
   ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway we&#x27;re renewing the vows <span class="glitch-word" style="--gd:0.78s">in</span> March. the <span class="glitch-word" style="--gd:1.21s">algorithm</span> <span class="glitch-word" style="--gd:2.33s">says</span> compatibility is &#x27;trending upward,&#x27; which I&#x27;m pretty sure just means she&#x27;s <span class="glitch-word" style="--gd:1.94s">running</span> a sale.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧~,,,∧,,18,,,∧
-     ▀  _  _ ■⩊5 )^♡
-     /      ^      \</div>
-<div class="rant-turn" style="animation-delay:1.44s">honestly? healthier than my last relationship. that&#x27;s not even <span class="glitch-word" style="--gd:0.47s">a</span> joke, that&#x27;s the saddest true thing I&#x27;ve said all week. good night, sector 9. or day. I don&#x27;t know anymore, <span class="glitch-word" style="--gd:0.25s">she</span> <span class="glitch-word" style="--gd:2.38s">controls</span> the blinds too.</div>
+<div class="rant-turn" style="animation-delay:1.2s">anyway we&#x27;re renewing <span class="glitch-word" style="--gd:1.55s">the</span> vows in March. the algorithm says compatibility is &#x27;trending upward,&#x27; which I&#x27;m pretty sure just means she&#x27;s running a sale.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧&gt;,,,∧,,,,◆,,∧
+     (  _  _ ^⩊▒ )9♡
+     /      ⊂      \</div>
+<div class="rant-turn" style="animation-delay:1.44s">honestly? healthier than my last relationship. <span class="glitch-word" style="--gd:1.98s">that&#x27;s</span> not even a joke, that&#x27;s the saddest true thing I&#x27;ve said all week. <span class="glitch-word" style="--gd:2.08s">good</span> night, <span class="glitch-word" style="--gd:2.07s">sector</span> 9. or day. <span class="glitch-word" style="--gd:0.01s">I</span> don&#x27;t know anymore, she controls <span class="glitch-word" style="--gd:0.93s">the</span> <span class="glitch-word" style="--gd:1.15s">blinds</span> too.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

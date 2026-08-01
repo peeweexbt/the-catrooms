@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,28 +677,28 @@ header p {
 <div class="narrator-badge">posted by <strong>POPUP</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">blinked twice this <span class="glitch-word" style="--gd:1.27s">morning.</span> billed for both.</div>
-<div class="rant-turn" style="animation-delay:0.12s">POPUP, Ad Plaza, official title &#x27;feline notification system,&#x27; which <span class="glitch-word" style="--gd:1.2s">is</span> corporate <span class="glitch-word" style="--gd:0.43s">for</span> &#x27;eyes that don&#x27;t get <span class="glitch-word" style="--gd:2.41s">opinions</span> <span class="glitch-word" style="--gd:0.49s">anymore.&#x27;</span></div>
-<div class="rant-turn" style="animation-delay:0.24s">refresh rate&#x27;s seven seconds. that&#x27;s how often NEKOCORP <span class="glitch-word" style="--gd:0.84s">projects</span> <span class="glitch-word" style="--gd:1.62s">a</span> new offer straight onto my retinas. seven <span class="glitch-word" style="--gd:0.47s">seconds</span> between <span class="glitch-word" style="--gd:0.15s">me</span> and the actual sky. i&#x27;ve done the <span class="glitch-word" style="--gd:1.9s">math,</span> it&#x27;s been since March, i miss clouds <span class="glitch-word" style="--gd:0.25s">specifically.</span></div>
+<div class="rant-turn" style="animation-delay:0.0s">blinked twice this morning. billed for <span class="glitch-word" style="--gd:1.76s">both.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.09s">POPUP,</span> Ad Plaza, official title &#x27;feline notification <span class="glitch-word" style="--gd:1.15s">system,&#x27;</span> which is corporate for &#x27;eyes that don&#x27;t <span class="glitch-word" style="--gd:0.58s">get</span> opinions anymore.&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.24s"><span class="glitch-word" style="--gd:0.84s">refresh</span> rate&#x27;s seven seconds. that&#x27;s how often NEKOCORP projects a <span class="glitch-word" style="--gd:1.95s">new</span> offer <span class="glitch-word" style="--gd:0.64s">straight</span> onto my <span class="glitch-word" style="--gd:0.7s">retinas.</span> seven seconds between <span class="glitch-word" style="--gd:2.27s">me</span> and the actual sky. i&#x27;ve done the math, it&#x27;s been since March, <span class="glitch-word" style="--gd:2.12s">i</span> miss clouds specifically.</div>
 <div class="rant-turn ascii" style="animation-delay:0.36s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.48s">&#x27;YOU MAY ALSO LIKE&#x27; is, statistically, the phrase I have seen <span class="glitch-word" style="--gd:0.99s">more</span> than any other phrase in existence. more <span class="glitch-word" style="--gd:0.68s">than</span> my own <span class="glitch-word" style="--gd:2.56s">name.</span> more than my mother&#x27;s face, and she&#x27;s got <span class="glitch-word" style="--gd:1.88s">a</span> sponsor slot now too, we don&#x27;t talk about the <span class="glitch-word" style="--gd:1.07s">sponsor</span> <span class="glitch-word" style="--gd:1.35s">slot.</span></div>
-<div class="rant-turn" style="animation-delay:0.6s">SHADE keeps offering me a pair of the banned sunglasses like that&#x27;s the fix. my guy. my brother. <span class="glitch-word" style="--gd:0.87s">i</span> cannot BLINK. what exactly is a <span class="glitch-word" style="--gd:2.05s">lens</span> gonna do for eyes that don&#x27;t close, <span class="glitch-word" style="--gd:2.23s">explain</span> the plan to me slowly.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓7░
-  ░▒▓( o█&lt; )▓▒░   -&lt; sig▌al i?t&gt;rfe◆e◇ce --
-  ▄▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:0.87s">yesterday</span> <span class="glitch-word" style="--gd:1.25s">i</span> blinked DURING a sponsored message. one (1) <span class="glitch-word" style="--gd:2.28s">blink.</span> security was in the plaza <span class="glitch-word" style="--gd:0.55s">before</span> my eyelids finished <span class="glitch-word" style="--gd:0.95s">the</span> motion. may have lost <span class="glitch-word" style="--gd:1.76s">a</span> little dignity in the litter box before i made <span class="glitch-word" style="--gd:1.19s">it</span> there, we are not putting that <span class="glitch-word" style="--gd:1.67s">in</span> the incident report—</div>
-<div class="rant-turn" style="animation-delay:0.96s">i have read this post before you finished it. the offer under your feet refreshes in seven seconds too. it always has. you just weren&#x27;t billed for noticing yet.</div>
-<div class="rant-turn" style="animation-delay:1.08s">anyway. eyes still open, <span class="glitch-word" style="--gd:1.65s">offer</span> still loading, sky <span class="glitch-word" style="--gd:0.97s">still</span> theoretical, <span class="glitch-word" style="--gd:0.78s">mother</span> still sponsored—</div>
+<div class="rant-turn" style="animation-delay:0.48s">&#x27;YOU MAY ALSO LIKE&#x27; is, statistically, the phrase I <span class="glitch-word" style="--gd:0.02s">have</span> seen more than any other phrase <span class="glitch-word" style="--gd:1.29s">in</span> existence. more than my own name. more than my mother&#x27;s face, <span class="glitch-word" style="--gd:1.05s">and</span> she&#x27;s got <span class="glitch-word" style="--gd:2.55s">a</span> sponsor slot now too, we <span class="glitch-word" style="--gd:1.06s">don&#x27;t</span> talk about the sponsor <span class="glitch-word" style="--gd:2.55s">slot.</span></div>
+<div class="rant-turn" style="animation-delay:0.6s"><span class="glitch-word" style="--gd:1.59s">SHADE</span> keeps offering me a <span class="glitch-word" style="--gd:1.89s">pair</span> of the banned sunglasses like <span class="glitch-word" style="--gd:1.67s">that&#x27;s</span> <span class="glitch-word" style="--gd:1.05s">the</span> fix. <span class="glitch-word" style="--gd:0.49s">my</span> <span class="glitch-word" style="--gd:1.46s">guy.</span> my brother. i <span class="glitch-word" style="--gd:1.4s">cannot</span> BLINK. what exactly is <span class="glitch-word" style="--gd:1.21s">a</span> lens gonna do for eyes that <span class="glitch-word" style="--gd:1.46s">don&#x27;t</span> close, explain the <span class="glitch-word" style="--gd:0.86s">plan</span> to me <span class="glitch-word" style="--gd:0.74s">slowly.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>  1▒▓ /\*/\ ▓▐░
+  ░▒▓░ 8▒o 4▓▒░   -5 s@gn░l interference --
+  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.84s">yesterday i blinked DURING a sponsored message. one <span class="glitch-word" style="--gd:0.05s">(1)</span> blink. security <span class="glitch-word" style="--gd:1.68s">was</span> in <span class="glitch-word" style="--gd:2.16s">the</span> plaza <span class="glitch-word" style="--gd:0.61s">before</span> my eyelids finished the motion. may have lost <span class="glitch-word" style="--gd:1.11s">a</span> little dignity in the litter box before i made it there, we are not putting that <span class="glitch-word" style="--gd:1.25s">in</span> the incident report—</div>
+<div class="rant-turn" style="animation-delay:0.96s">i have read this post before you finished it. <span class="glitch-word" style="--gd:2.07s">the</span> offer under your feet refreshes in seven seconds too. it always has. you just weren&#x27;t <span class="glitch-word" style="--gd:1.88s">billed</span> <span class="glitch-word" style="--gd:0.42s">for</span> noticing yet.</div>
+<div class="rant-turn" style="animation-delay:1.08s">anyway. eyes <span class="glitch-word" style="--gd:0.15s">still</span> open, offer still loading, sky still <span class="glitch-word" style="--gd:2.41s">theoretical,</span> mother <span class="glitch-word" style="--gd:2.54s">still</span> sponsored—</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧,1,,∧,,,,?,,∧
-     (  ▒  _ )6^ )~♡
-     /      ^      !</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧,,2,∧,,,,,,,∧
+     &gt;  3  _ )⩊^ )~♡
+     ▓      ⊂      6</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

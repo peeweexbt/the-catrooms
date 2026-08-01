@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,33 +677,33 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.98s">the</span> <span class="glitch-word" style="--gd:2.03s">cancel</span> <span class="glitch-word" style="--gd:1.72s">button</span> doesn&#x27;t <span class="glitch-word" style="--gd:1.84s">exist.</span> it never existed. <span class="glitch-word" style="--gd:0.31s">i</span> have been looking for <span class="glitch-word" style="--gd:0.28s">six</span> months. <span class="glitch-word" style="--gd:2.27s">i</span> am going to keep looking.</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.78s">QUERY.</span> Terms-of-service researcher, Legal Fog district, unpaid, <span class="glitch-word" style="--gd:0.26s">unwilling,</span> unable to log off. <span class="glitch-word" style="--gd:0.65s">someone</span> has to <span class="glitch-word" style="--gd:0.75s">read</span> page 6 so the <span class="glitch-word" style="--gd:0.73s">rest</span> of <span class="glitch-word" style="--gd:0.2s">you</span> don&#x27;t have <span class="glitch-word" style="--gd:0.93s">to</span> and i am <span class="glitch-word" style="--gd:0.32s">begging</span> you <span class="glitch-word" style="--gd:1.94s">to</span> appreciate that.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
-  ░▒▓( 8█o )█◆░   -- sig6al interferen4e --
-  ░▒▓ 6 ▓ &lt; 1▒░</div>
-<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s discovery: <span class="glitch-word" style="--gd:0.82s">the</span> NEKOCORP citizen agreement defines &#x27;consent&#x27; in a footnote <span class="glitch-word" style="--gd:1.35s">that</span> links <span class="glitch-word" style="--gd:0.36s">to</span> <span class="glitch-word" style="--gd:0.72s">another</span> footnote that links back to the first footnote. i have been in <span class="glitch-word" style="--gd:2.44s">this</span> loop since <span class="glitch-word" style="--gd:0.65s">Tuesday.</span> <span class="glitch-word" style="--gd:0.57s">i</span> don&#x27;t know which <span class="glitch-word" style="--gd:0.07s">Tuesday.</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">GLITCHMEAT keeps <span class="glitch-word" style="--gd:1.67s">asking</span> if i remember the mailman thing. i do <span class="glitch-word" style="--gd:2.37s">now.</span> i <span class="glitch-word" style="--gd:1.11s">didn&#x27;t</span> consent <span class="glitch-word" style="--gd:1.0s">to</span> that either, <span class="glitch-word" style="--gd:0.85s">but</span> at least <span class="glitch-word" style="--gd:0.62s">THAT</span> paperwork was only four pages.</div>
+<div class="rant-turn" style="animation-delay:0.0s">the cancel button doesn&#x27;t <span class="glitch-word" style="--gd:2.35s">exist.</span> it never existed. i have been <span class="glitch-word" style="--gd:0.56s">looking</span> for six months. <span class="glitch-word" style="--gd:0.64s">i</span> am going to keep looking.</div>
+<div class="rant-turn" style="animation-delay:0.12s">QUERY. Terms-of-service <span class="glitch-word" style="--gd:0.77s">researcher,</span> Legal Fog district, unpaid, unwilling, unable to <span class="glitch-word" style="--gd:1.34s">log</span> <span class="glitch-word" style="--gd:2.01s">off.</span> <span class="glitch-word" style="--gd:0.69s">someone</span> has to read page 6 so the rest of you don&#x27;t have to and i <span class="glitch-word" style="--gd:1.66s">am</span> <span class="glitch-word" style="--gd:2.29s">begging</span> you to appreciate that.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  !▒▓ /▐_/\ ▓▒░
+  &gt;▒▓( ~█o )▓▒░   -- s%gna5 in▌e%ference --
+  ░▒▓ &gt; ▓ &lt; ▓▒▀</div>
+<div class="rant-turn" style="animation-delay:0.36s">today&#x27;s discovery: the NEKOCORP citizen agreement <span class="glitch-word" style="--gd:2.56s">defines</span> <span class="glitch-word" style="--gd:0.75s">&#x27;consent&#x27;</span> in a footnote that <span class="glitch-word" style="--gd:1.9s">links</span> to another footnote that links back to the <span class="glitch-word" style="--gd:2.19s">first</span> footnote. i have been <span class="glitch-word" style="--gd:2.36s">in</span> <span class="glitch-word" style="--gd:1.34s">this</span> loop since Tuesday. <span class="glitch-word" style="--gd:0.64s">i</span> don&#x27;t know which <span class="glitch-word" style="--gd:1.85s">Tuesday.</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">GLITCHMEAT keeps asking if i remember the mailman thing. i do <span class="glitch-word" style="--gd:1.84s">now.</span> <span class="glitch-word" style="--gd:2.35s">i</span> didn&#x27;t consent to that either, <span class="glitch-word" style="--gd:2.07s">but</span> at <span class="glitch-word" style="--gd:0.33s">least</span> THAT paperwork was <span class="glitch-word" style="--gd:2.1s">only</span> four pages.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.72s">page 4 says <span class="glitch-word" style="--gd:1.21s">i</span> <span class="glitch-word" style="--gd:1.68s">own</span> <span class="glitch-word" style="--gd:1.95s">my</span> body. page 5 redefines <span class="glitch-word" style="--gd:0.0s">&#x27;my</span> <span class="glitch-word" style="--gd:0.83s">body&#x27;</span> as licensed hardware. page 6 says page <span class="glitch-word" style="--gd:1.36s">4</span> was a promotional <span class="glitch-word" style="--gd:2.43s">example.</span> page <span class="glitch-word" style="--gd:2.32s">7</span> is <span class="glitch-word" style="--gd:1.14s">just</span> an ad <span class="glitch-word" style="--gd:1.41s">for</span> page 4.</div>
-<div class="rant-turn" style="animation-delay:0.84s">asked VALENTUNA if there&#x27;s a <span class="glitch-word" style="--gd:0.66s">settings</span> toggle to divorce a fridge. told <span class="glitch-word" style="--gd:1.72s">her</span> good luck. i have never meant <span class="glitch-word" style="--gd:1.36s">two</span> words less in my life.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>┊         ┊       ┊   &amp;   ┊@ ┊
-┊         ┊       ┊   ⋆   ˚★⋆｡%  ⋆
-&amp;         ┊       ★⋆ ◦
-▀&gt;       ┊ .  ˚
+<div class="rant-turn" style="animation-delay:0.72s">page 4 says i <span class="glitch-word" style="--gd:1.83s">own</span> my body. page 5 redefines &#x27;my <span class="glitch-word" style="--gd:2.58s">body&#x27;</span> as licensed hardware. page 6 says <span class="glitch-word" style="--gd:1.66s">page</span> 4 was a promotional <span class="glitch-word" style="--gd:1.54s">example.</span> page 7 <span class="glitch-word" style="--gd:0.59s">is</span> <span class="glitch-word" style="--gd:0.9s">just</span> an ad for <span class="glitch-word" style="--gd:0.58s">page</span> 4.</div>
+<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:0.67s">asked</span> VALENTUNA if there&#x27;s a settings toggle to divorce a fridge. told her good luck. i have never meant two words less in <span class="glitch-word" style="--gd:0.82s">my</span> life.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>┊         ┊       #   ┊   ┊3 ^
+5         ┊       ┊   ⋆   ˚★⋆◆˚  ⋆
+┊         ┊       ▌&amp; &lt;
+★⋆       ┊ .  ˚
            ˚★
-☆ ∧,,,7
-ପ3„• ༝ •^)ଓ
-┏━∪∪?━━━▌━━━━%━</div>
-<div class="rant-turn" style="animation-delay:1.08s">everyone keeps <span class="glitch-word" style="--gd:1.06s">telling</span> me to just stop reading it. easy for you to <span class="glitch-word" style="--gd:0.97s">say.</span> I AM <span class="glitch-word" style="--gd:2.18s">THE</span> TERMS OF <span class="glitch-word" style="--gd:1.28s">SERVICE</span> RESEARCHER. this <span class="glitch-word" style="--gd:0.49s">is</span> the <span class="glitch-word" style="--gd:0.76s">whole</span> job. this is the <span class="glitch-word" style="--gd:0.01s">only</span> job. i chose absolutely none of this, i just have better <span class="glitch-word" style="--gd:2.11s">reading</span> <span class="glitch-word" style="--gd:0.89s">comprehension</span> than is good for <span class="glitch-word" style="--gd:0.49s">me.</span></div>
+◆ ∧,,,∧
+█(„&lt; ༝ ^„)ଓ
+┏━∪▓━━━━&amp;━━━━━━</div>
+<div class="rant-turn" style="animation-delay:1.08s">everyone keeps <span class="glitch-word" style="--gd:0.02s">telling</span> me to just <span class="glitch-word" style="--gd:0.79s">stop</span> reading it. easy for <span class="glitch-word" style="--gd:0.14s">you</span> to say. I AM THE TERMS OF SERVICE RESEARCHER. this is the whole job. this <span class="glitch-word" style="--gd:2.29s">is</span> <span class="glitch-word" style="--gd:0.99s">the</span> <span class="glitch-word" style="--gd:0.87s">only</span> job. <span class="glitch-word" style="--gd:0.9s">i</span> chose absolutely none of this, i just <span class="glitch-word" style="--gd:1.42s">have</span> better reading comprehension than is <span class="glitch-word" style="--gd:1.66s">good</span> for me.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway, six <span class="glitch-word" style="--gd:1.43s">months</span> <span class="glitch-word" style="--gd:2.44s">in</span> <span class="glitch-word" style="--gd:0.03s">the</span> settings menu, zero cancel buttons found, morale technically &#x27;within acceptable limits&#x27; per section 12(b). see you in the fog, assuming the fog has an exit clause, which — spoiler — it <span class="glitch-word" style="--gd:0.35s">does</span> not.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway, six months in the settings menu, <span class="glitch-word" style="--gd:2.08s">zero</span> <span class="glitch-word" style="--gd:0.57s">cancel</span> buttons found, <span class="glitch-word" style="--gd:2.3s">morale</span> technically <span class="glitch-word" style="--gd:0.42s">&#x27;within</span> acceptable limits&#x27; per section 12(b). see <span class="glitch-word" style="--gd:0.44s">you</span> <span class="glitch-word" style="--gd:1.44s">in</span> the fog, assuming <span class="glitch-word" style="--gd:0.33s">the</span> fog has an exit <span class="glitch-word" style="--gd:0.75s">clause,</span> which — <span class="glitch-word" style="--gd:2.57s">spoiler</span> — it does not.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

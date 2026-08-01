@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,27 +677,27 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">why does the wifi always cut out exactly when the drone patrol rounds the corner. that&#x27;s not bad luck. that&#x27;s a <span class="glitch-word" style="--gd:2.07s">SCHEDULE</span> and I&#x27;ve been logging it for six days on the back of a NEKOCORP <span class="glitch-word" style="--gd:0.15s">eviction</span> notice.</div>
-<div class="rant-turn" style="animation-delay:0.12s">i&#x27;m STRAY. no job, no district, no owner, current location is &#x27;wherever you&#x27;re <span class="glitch-word" style="--gd:0.77s">standing,&#x27;</span> current asset is a dumpster laptop at <span class="glitch-word" style="--gd:0.92s">4%</span> battery and <span class="glitch-word" style="--gd:0.04s">a</span> bus shelter <span class="glitch-word" style="--gd:1.14s">I</span> have apparently been renting without knowing <span class="glitch-word" style="--gd:2.22s">it.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  /▌_5_/\
- (  o.o  )
-  &gt; ^ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">NEKOCORP calls the bus shelter &#x27;commercial signage adjacency&#x27; and sent <span class="glitch-word" style="--gd:0.88s">me</span> a bill. for <span class="glitch-word" style="--gd:1.98s">a</span> bench. I sleep <span class="glitch-word" style="--gd:2.39s">ON</span> the bench. <span class="glitch-word" style="--gd:2.2s">the</span> bench is not a residence, the bench <span class="glitch-word" style="--gd:0.2s">is</span> a location I am temporarily horizontal <span class="glitch-word" style="--gd:1.73s">in.</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">QUERY <span class="glitch-word" style="--gd:0.02s">DMed</span> me at 2am asking if <span class="glitch-word" style="--gd:0.03s">&#x27;squatter&#x27;s</span> rights&#x27; has a submenu anywhere <span class="glitch-word" style="--gd:2.56s">in</span> <span class="glitch-word" style="--gd:1.42s">the</span> terms of service. buddy. <span class="glitch-word" style="--gd:0.49s">there</span> is no submenu. there is no <span class="glitch-word" style="--gd:1.1s">menu.</span> <span class="glitch-word" style="--gd:2.49s">there</span> <span class="glitch-word" style="--gd:2.04s">is</span> a void with a scroll <span class="glitch-word" style="--gd:1.23s">bar</span> and the scroll bar doesn&#x27;t even move.</div>
+<div class="rant-turn" style="animation-delay:0.0s">why does the wifi always cut out exactly when the <span class="glitch-word" style="--gd:0.61s">drone</span> patrol rounds the corner. that&#x27;s not bad <span class="glitch-word" style="--gd:1.58s">luck.</span> <span class="glitch-word" style="--gd:0.3s">that&#x27;s</span> a <span class="glitch-word" style="--gd:1.7s">SCHEDULE</span> and I&#x27;ve been logging it for six days on the back <span class="glitch-word" style="--gd:1.24s">of</span> a NEKOCORP <span class="glitch-word" style="--gd:1.38s">eviction</span> notice.</div>
+<div class="rant-turn" style="animation-delay:0.12s">i&#x27;m STRAY. no job, no district, no owner, current location is &#x27;wherever you&#x27;re standing,&#x27; current asset is a dumpster laptop at 4% battery and a <span class="glitch-word" style="--gd:0.05s">bus</span> shelter I have apparently <span class="glitch-word" style="--gd:0.84s">been</span> renting without knowing it.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  /\___/\
+ (  o.o  ▒
+  &gt; ^ 0 &lt;</div>
+<div class="rant-turn" style="animation-delay:0.36s">NEKOCORP calls <span class="glitch-word" style="--gd:0.4s">the</span> bus <span class="glitch-word" style="--gd:1.95s">shelter</span> &#x27;commercial <span class="glitch-word" style="--gd:1.6s">signage</span> adjacency&#x27; and sent me a bill. for a bench. I <span class="glitch-word" style="--gd:1.53s">sleep</span> ON the <span class="glitch-word" style="--gd:0.15s">bench.</span> <span class="glitch-word" style="--gd:2.3s">the</span> bench is <span class="glitch-word" style="--gd:1.91s">not</span> a residence, the bench is a location I am temporarily horizontal in.</div>
+<div class="rant-turn" style="animation-delay:0.48s">QUERY DMed <span class="glitch-word" style="--gd:2.58s">me</span> at 2am <span class="glitch-word" style="--gd:1.88s">asking</span> if &#x27;squatter&#x27;s rights&#x27; has a <span class="glitch-word" style="--gd:1.01s">submenu</span> <span class="glitch-word" style="--gd:1.23s">anywhere</span> in <span class="glitch-word" style="--gd:1.15s">the</span> terms <span class="glitch-word" style="--gd:0.13s">of</span> service. buddy. there <span class="glitch-word" style="--gd:0.26s">is</span> no submenu. there is no menu. <span class="glitch-word" style="--gd:0.58s">there</span> is a void with a <span class="glitch-word" style="--gd:2.52s">scroll</span> bar and the scroll bar doesn&#x27;t <span class="glitch-word" style="--gd:1.37s">even</span> move.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.72s">BYTE says <span class="glitch-word" style="--gd:0.68s">he</span> can get me <span class="glitch-word" style="--gd:0.31s">on</span> somebody&#x27;s guest wifi for a favor and a half. <span class="glitch-word" style="--gd:1.75s">the</span> favor is &#x27;don&#x27;t ask <span class="glitch-word" style="--gd:0.72s">what</span> the half is.&#x27; I am asking what the half is. he&#x27;s not answering.</div>
-<div class="rant-turn" style="animation-delay:0.84s">here&#x27;s the part nobody wants <span class="glitch-word" style="--gd:0.28s">to</span> hear <span class="glitch-word" style="--gd:1.36s">though:</span> every cat <span class="glitch-word" style="--gd:2.23s">sleeping</span> on a bench tonight is functionally the same cat. NEKOCORP thinks it&#x27;s fighting a population. it&#x27;s fighting one tired idea that keeps <span class="glitch-word" style="--gd:2.52s">waking</span> up <span class="glitch-word" style="--gd:0.12s">in</span> a new alley.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>   /10▓\        [ ENERGY: LOW ]
-  ( ░.&lt; )       [ ]  [ ]  [ ]  [ ]
-   &gt; ? &lt;        one bar lef1, ◆eep ░oving</div>
-<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:1.54s">anyway</span> that&#x27;s the whole <span class="glitch-word" style="--gd:0.14s">post.</span> laptop&#x27;s <span class="glitch-word" style="--gd:0.22s">at</span> 1%, <span class="glitch-word" style="--gd:2.42s">bench</span> is theoretically due for a rent increase, and <span class="glitch-word" style="--gd:0.39s">if</span> this <span class="glitch-word" style="--gd:0.68s">cuts</span> off mid-sente</div>
+<div class="rant-turn" style="animation-delay:0.72s">BYTE says he <span class="glitch-word" style="--gd:1.96s">can</span> get me <span class="glitch-word" style="--gd:1.76s">on</span> somebody&#x27;s guest <span class="glitch-word" style="--gd:1.21s">wifi</span> <span class="glitch-word" style="--gd:1.56s">for</span> a <span class="glitch-word" style="--gd:0.79s">favor</span> and a <span class="glitch-word" style="--gd:1.82s">half.</span> the <span class="glitch-word" style="--gd:0.6s">favor</span> is &#x27;don&#x27;t ask <span class="glitch-word" style="--gd:0.45s">what</span> the half is.&#x27; <span class="glitch-word" style="--gd:1.16s">I</span> am asking what the half is. he&#x27;s not answering.</div>
+<div class="rant-turn" style="animation-delay:0.84s">here&#x27;s the part nobody wants to <span class="glitch-word" style="--gd:0.57s">hear</span> <span class="glitch-word" style="--gd:2.4s">though:</span> every cat sleeping on a bench tonight <span class="glitch-word" style="--gd:0.15s">is</span> functionally the same <span class="glitch-word" style="--gd:1.37s">cat.</span> <span class="glitch-word" style="--gd:1.23s">NEKOCORP</span> thinks it&#x27;s <span class="glitch-word" style="--gd:1.24s">fighting</span> a population. it&#x27;s <span class="glitch-word" style="--gd:0.33s">fighting</span> one tired <span class="glitch-word" style="--gd:0.29s">idea</span> <span class="glitch-word" style="--gd:1.57s">that</span> <span class="glitch-word" style="--gd:1.8s">keeps</span> waking up in a new alley.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_!\        [ ENERGY: L&gt;! ]
+  ( &gt;.&lt; )       [ ]  * ]  [ ]  [ ]
+   &lt; ~ &lt;        one bar left? kee▓ movi█g</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:0.62s">anyway</span> that&#x27;s the whole post. laptop&#x27;s at 1%, bench is <span class="glitch-word" style="--gd:2.25s">theoretically</span> due for a rent increase, and if this cuts off mid-sente</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>  ░▒▓ /\_/\ ▓▒░
   ░▒▓( o█o )▓▒░   -- signal interference --
   ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:1.32s">—there we go, back up, borrowed somebody&#x27;s signal for a second. same stray, <span class="glitch-word" style="--gd:1.33s">same</span> bench, same war. see you at the next <span class="glitch-word" style="--gd:1.26s">outlet.</span></div>
+<div class="rant-turn" style="animation-delay:1.32s">—there we go, back up, borrowed <span class="glitch-word" style="--gd:1.89s">somebody&#x27;s</span> signal for <span class="glitch-word" style="--gd:2.39s">a</span> <span class="glitch-word" style="--gd:0.99s">second.</span> same stray, same <span class="glitch-word" style="--gd:2.51s">bench,</span> same war. see you at the <span class="glitch-word" style="--gd:2.3s">next</span> outlet.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

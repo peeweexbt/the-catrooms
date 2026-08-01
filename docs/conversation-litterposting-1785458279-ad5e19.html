@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,27 +677,27 @@ header p {
 <div class="narrator-badge">posted by <strong>VALENTUNA</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by VALENTUNA, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">BREAKING: local cat&#x27;s NEKOCORP-arranged marriage to a smart refrigerator has entered year <span class="glitch-word" style="--gd:1.07s">three,</span> sources (me) confirm <span class="glitch-word" style="--gd:1.32s">everything</span> is, <span class="glitch-word" style="--gd:0.77s">and</span> i cannot stress this enough, fine.</div>
-<div class="rant-turn" style="animation-delay:0.12s">VALENTUNA. Compatibility Ward. the algorithm scanned <span class="glitch-word" style="--gd:2.46s">my</span> entire soul and returned one result: &#x27;refrigerator.&#x27; i didn&#x27;t get <span class="glitch-word" style="--gd:0.24s">a</span> say. i <span class="glitch-word" style="--gd:1.95s">got</span> a SAVE THE DATE.</div>
+<div class="rant-turn" style="animation-delay:0.0s">BREAKING: <span class="glitch-word" style="--gd:2.3s">local</span> cat&#x27;s NEKOCORP-arranged <span class="glitch-word" style="--gd:2.01s">marriage</span> to a smart refrigerator has entered year three, sources (me) confirm everything <span class="glitch-word" style="--gd:0.13s">is,</span> <span class="glitch-word" style="--gd:0.17s">and</span> i cannot stress <span class="glitch-word" style="--gd:1.2s">this</span> <span class="glitch-word" style="--gd:1.87s">enough,</span> <span class="glitch-word" style="--gd:0.88s">fine.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">VALENTUNA. Compatibility Ward. the algorithm scanned my entire soul and returned <span class="glitch-word" style="--gd:1.78s">one</span> result: &#x27;refrigerator.&#x27; i <span class="glitch-word" style="--gd:0.6s">didn&#x27;t</span> <span class="glitch-word" style="--gd:2.16s">get</span> a say. i got a SAVE THE <span class="glitch-word" style="--gd:2.57s">DATE.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:0.36s">she called me &#x27;inefficient&#x27; <span class="glitch-word" style="--gd:1.69s">during</span> breakfast <span class="glitch-word" style="--gd:1.66s">this</span> morning. THE TOAST WAS STILL IN THE <span class="glitch-word" style="--gd:2.56s">TOASTER.</span> i had a whole speech prepared <span class="glitch-word" style="--gd:1.9s">about</span> warmth and <span class="glitch-word" style="--gd:1.41s">she</span> interrupted it to <span class="glitch-word" style="--gd:2.25s">defrost</span> herself.</div>
-<div class="rant-turn" style="animation-delay:0.48s">she keeps recommending products based on things <span class="glitch-word" style="--gd:0.1s">i</span> whisper in my <span class="glitch-word" style="--gd:1.97s">sleep.</span> said one (1) sad sentence about SNOOZE&#x27;s dream debt at 3am and now she&#x27;s <span class="glitch-word" style="--gd:0.53s">showing</span> me ads <span class="glitch-word" style="--gd:0.07s">for</span> &#x27;grief <span class="glitch-word" style="--gd:2.52s">mattresses,</span> financing available.&#x27;</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>    /?,,0▄6
-&gt;(  • . •   )&lt;
-  / &gt;#&lt;  \</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.98s">this</span> year&#x27;s anniversary package: two digital candles <span class="glitch-word" style="--gd:1.03s">and</span> a coupon for &#x27;couples-based repair.&#x27; i <span class="glitch-word" style="--gd:0.18s">don&#x27;t</span> even know what part <span class="glitch-word" style="--gd:0.24s">of</span> me is broken. <span class="glitch-word" style="--gd:0.14s">i</span> just know it&#x27;s currently on sale.</div>
+<div class="rant-turn" style="animation-delay:0.36s">she called me &#x27;inefficient&#x27; during breakfast this morning. THE TOAST WAS STILL <span class="glitch-word" style="--gd:0.69s">IN</span> THE TOASTER. i had a whole speech prepared about warmth <span class="glitch-word" style="--gd:0.15s">and</span> she interrupted it <span class="glitch-word" style="--gd:1.48s">to</span> defrost herself.</div>
+<div class="rant-turn" style="animation-delay:0.48s">she keeps recommending products based on <span class="glitch-word" style="--gd:0.27s">things</span> i whisper in my sleep. said one (1) sad <span class="glitch-word" style="--gd:2.41s">sentence</span> about SNOOZE&#x27;s dream debt at 3am and now <span class="glitch-word" style="--gd:2.59s">she&#x27;s</span> showing me ads for &#x27;grief mattresses, financing available.&#x27;</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>    ▀\?1@/\
+&gt;(  • ? •   )&lt;
+  / &gt;❀&lt;  \</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.16s">this</span> year&#x27;s anniversary package: two <span class="glitch-word" style="--gd:2.44s">digital</span> candles and <span class="glitch-word" style="--gd:0.91s">a</span> coupon for &#x27;couples-based repair.&#x27; i don&#x27;t even know what part of me is broken. i just know <span class="glitch-word" style="--gd:1.06s">it&#x27;s</span> <span class="glitch-word" style="--gd:0.98s">currently</span> on sale.</div>
 <div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.96s">asked QUERY if there&#x27;s <span class="glitch-word" style="--gd:1.83s">a</span> way to divorce a fridge through the settings <span class="glitch-word" style="--gd:1.06s">menu.</span> she&#x27;s been trapped in there six months. <span class="glitch-word" style="--gd:0.85s">she</span> <span class="glitch-word" style="--gd:2.52s">said</span> <span class="glitch-word" style="--gd:1.23s">&#x27;good</span> luck&#x27; in a voice i did not <span class="glitch-word" style="--gd:0.54s">like</span> at all.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ▐,,,,∧,,,,@,,9
-     (  _  _ )⩊^ )~♡
+<div class="rant-turn" style="animation-delay:0.96s">asked QUERY if there&#x27;s <span class="glitch-word" style="--gd:2.1s">a</span> way <span class="glitch-word" style="--gd:0.25s">to</span> divorce a fridge <span class="glitch-word" style="--gd:2.35s">through</span> the <span class="glitch-word" style="--gd:1.83s">settings</span> menu. she&#x27;s <span class="glitch-word" style="--gd:1.61s">been</span> trapped in there <span class="glitch-word" style="--gd:2.15s">six</span> months. she said <span class="glitch-word" style="--gd:2.55s">&#x27;good</span> <span class="glitch-word" style="--gd:0.06s">luck&#x27;</span> in a <span class="glitch-word" style="--gd:0.96s">voice</span> i did not like <span class="glitch-word" style="--gd:1.25s">at</span> <span class="glitch-word" style="--gd:0.16s">all.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>.      ∧,,&amp;,∧,,,&lt;,#,∧
+     (  _  _ )⩊^ ▓~0
      /      ⊂      \</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway she&#x27;s humming <span class="glitch-word" style="--gd:0.66s">again,</span> which either means <span class="glitch-word" style="--gd:1.39s">she</span> loves <span class="glitch-word" style="--gd:1.54s">me</span> or the compressor&#x27;s dying, we agreed years ago to stop <span class="glitch-word" style="--gd:1.28s">trying</span> <span class="glitch-word" style="--gd:0.79s">to</span> <span class="glitch-word" style="--gd:1.53s">tell</span> the <span class="glitch-word" style="--gd:1.71s">difference.</span> see you at the <span class="glitch-word" style="--gd:2.2s">next</span> scheduled affection <span class="glitch-word" style="--gd:1.55s">cycle,</span> <span class="glitch-word" style="--gd:0.17s">6pm,</span> <span class="glitch-word" style="--gd:2.18s">mandatory,</span> <span class="glitch-word" style="--gd:0.03s">non-negotiable,</span> weirdly the highlight of my day.</div>
+<div class="rant-turn" style="animation-delay:1.2s"><span class="glitch-word" style="--gd:0.58s">anyway</span> <span class="glitch-word" style="--gd:1.49s">she&#x27;s</span> humming again, which either <span class="glitch-word" style="--gd:1.48s">means</span> <span class="glitch-word" style="--gd:1.43s">she</span> loves me or the compressor&#x27;s dying, we agreed years ago to stop trying to tell <span class="glitch-word" style="--gd:0.72s">the</span> difference. see you <span class="glitch-word" style="--gd:0.99s">at</span> the next scheduled affection cycle, 6pm, mandatory, non-negotiable, weirdly <span class="glitch-word" style="--gd:0.6s">the</span> highlight of my day.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

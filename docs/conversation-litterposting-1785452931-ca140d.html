@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,29 +677,29 @@ header p {
 <div class="narrator-badge">posted by <strong>BRIK</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">—AND THAT&#x27;S WHY I BIT THE DRONE. no i&#x27;m not sorry. no i would not <span class="glitch-word" style="--gd:2.24s">do</span> it differently. i am currently evaluating whether <span class="glitch-word" style="--gd:0.89s">to</span> bite it again</div>
-<div class="rant-turn" style="animation-delay:0.12s">BRIK. <span class="glitch-word" style="--gd:0.53s">Demolished</span> District. <span class="glitch-word" style="--gd:1.73s">ex-KILLDOZER</span> operator, meaning i used to drive the machine that ate buildings for a paycheck. now i <span class="glitch-word" style="--gd:2.16s">live</span> in what the machine left behind. <span class="glitch-word" style="--gd:0.91s">full</span> circle. corporate edition</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_/\
-       ▐ -.- ▀
-        &gt; ^ ▒
-   ~~~~~#|||~~▐~~~[1*TA JA*K* LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.36s">asked NEKOCORP once why execs get twelve fish breaks a shift and the factory floor <span class="glitch-word" style="--gd:0.47s">splits</span> one (1) communal scrap of tuna between <span class="glitch-word" style="--gd:0.65s">forty</span> of us. by morning <span class="glitch-word" style="--gd:1.9s">my</span> apartment was a HOLOGRAPHIC <span class="glitch-word" style="--gd:0.57s">PARKING</span> LOT. no <span class="glitch-word" style="--gd:0.02s">cars</span> <span class="glitch-word" style="--gd:0.8s">even</span> park there. it&#x27;s just for the ad</div>
-<div class="rant-turn" style="animation-delay:0.48s">BYTE keeps offering to spoof <span class="glitch-word" style="--gd:1.57s">my</span> heat <span class="glitch-word" style="--gd:1.59s">signature</span> <span class="glitch-word" style="--gd:2.47s">so</span> the drones stop pinging the <span class="glitch-word" style="--gd:0.41s">vent.</span> BYTE i love you but <span class="glitch-word" style="--gd:0.61s">no.</span> i don&#x27;t <span class="glitch-word" style="--gd:1.37s">want</span> <span class="glitch-word" style="--gd:2.09s">to</span> hide from the drones. i want the drones to remember <span class="glitch-word" style="--gd:0.43s">my</span> face and regret their scheduling choices</div>
+<div class="rant-turn" style="animation-delay:0.0s">—AND THAT&#x27;S WHY I BIT THE DRONE. no i&#x27;m not sorry. no <span class="glitch-word" style="--gd:1.44s">i</span> would not do it <span class="glitch-word" style="--gd:0.32s">differently.</span> i am currently evaluating whether to <span class="glitch-word" style="--gd:1.87s">bite</span> <span class="glitch-word" style="--gd:1.9s">it</span> again</div>
+<div class="rant-turn" style="animation-delay:0.12s">BRIK. <span class="glitch-word" style="--gd:0.95s">Demolished</span> District. ex-KILLDOZER operator, meaning i used <span class="glitch-word" style="--gd:0.25s">to</span> drive the machine that ate <span class="glitch-word" style="--gd:2.48s">buildings</span> for a <span class="glitch-word" style="--gd:2.3s">paycheck.</span> now i <span class="glitch-word" style="--gd:0.86s">live</span> in <span class="glitch-word" style="--gd:2.34s">what</span> the machine left behind. full circle. corporate edition</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_▌&gt;
+       ( -.- )
+        ◆ ^ &lt;
+   ~▓~~~~|||~*~~█~[&lt;ATA JACK: LINKED]</div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:0.8s">asked</span> <span class="glitch-word" style="--gd:0.75s">NEKOCORP</span> once <span class="glitch-word" style="--gd:0.44s">why</span> execs get <span class="glitch-word" style="--gd:0.32s">twelve</span> fish breaks a shift <span class="glitch-word" style="--gd:0.13s">and</span> <span class="glitch-word" style="--gd:1.53s">the</span> factory floor splits <span class="glitch-word" style="--gd:1.68s">one</span> <span class="glitch-word" style="--gd:0.09s">(1)</span> communal <span class="glitch-word" style="--gd:0.54s">scrap</span> of tuna between forty of us. <span class="glitch-word" style="--gd:2.22s">by</span> morning my apartment was a <span class="glitch-word" style="--gd:0.34s">HOLOGRAPHIC</span> PARKING LOT. no cars <span class="glitch-word" style="--gd:2.48s">even</span> park there. <span class="glitch-word" style="--gd:1.2s">it&#x27;s</span> just for the ad</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.93s">BYTE</span> <span class="glitch-word" style="--gd:2.41s">keeps</span> offering to spoof my heat signature <span class="glitch-word" style="--gd:1.82s">so</span> the drones stop pinging the vent. <span class="glitch-word" style="--gd:1.13s">BYTE</span> <span class="glitch-word" style="--gd:2.53s">i</span> love you but no. i don&#x27;t want to hide <span class="glitch-word" style="--gd:1.87s">from</span> the drones. <span class="glitch-word" style="--gd:1.31s">i</span> want the <span class="glitch-word" style="--gd:1.64s">drones</span> to remember my face and regret their <span class="glitch-word" style="--gd:0.86s">scheduling</span> choices</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>   ___                                  ___
   /___\   [] [] [] [] [] [] [] []    /___\
   ( ..)\/\/\/\/\/\/\/\/\/\/\/(.. )
    &#x27;&#x27;&#x27;                                &#x27;&#x27;&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.72s">paperwork calls me a &#x27;domestic <span class="glitch-word" style="--gd:0.5s">extremist.&#x27;</span> my mother, who <span class="glitch-word" style="--gd:1.45s">i</span> <span class="glitch-word" style="--gd:0.49s">have</span> not seen since the demolition crew came through, still calls me HANDSOME. i contain <span class="glitch-word" style="--gd:1.32s">multitudes.</span> one <span class="glitch-word" style="--gd:0.3s">of</span> the multitudes bites rotor blades <span class="glitch-word" style="--gd:1.21s">on</span> sight</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>        /⸌ 6⸍~
-     &amp;(˶•ㅅ•˵)=      ▌ᵉᵒʷ
-　 ~       ~乀   ╭
-    ? 1f_, )ノ</div>
-<div class="rant-turn" style="animation-delay:0.96s">KNIFEBOY pinged me about the <span class="glitch-word" style="--gd:1.67s">tuna</span> shipment <span class="glitch-word" style="--gd:0.19s">next</span> <span class="glitch-word" style="--gd:2.49s">week.</span> obviously in. obviously bringing teeth. we are <span class="glitch-word" style="--gd:1.85s">not</span> what you&#x27;d <span class="glitch-word" style="--gd:2.21s">call</span> a subtle operation, we are barely what you&#x27;d call <span class="glitch-word" style="--gd:1.01s">a</span> plan</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.64s">paperwork</span> <span class="glitch-word" style="--gd:1.47s">calls</span> me a &#x27;domestic extremist.&#x27; my mother, <span class="glitch-word" style="--gd:2.05s">who</span> i have <span class="glitch-word" style="--gd:0.39s">not</span> seen since <span class="glitch-word" style="--gd:2.1s">the</span> demolition <span class="glitch-word" style="--gd:1.77s">crew</span> came through, still <span class="glitch-word" style="--gd:0.54s">calls</span> me HANDSOME. i <span class="glitch-word" style="--gd:2.34s">contain</span> multitudes. one of <span class="glitch-word" style="--gd:1.16s">the</span> multitudes bites rotor blades on <span class="glitch-word" style="--gd:1.58s">sight</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>        /⸌ —⸍\
+     =(˶•3•˵7@      ᵐᵉᵒʷ
+　 l       ~乀   ╭
+    し し*_▄ )?</div>
+<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:0.9s">KNIFEBOY</span> pinged <span class="glitch-word" style="--gd:1.83s">me</span> about the tuna shipment <span class="glitch-word" style="--gd:1.2s">next</span> week. obviously in. <span class="glitch-word" style="--gd:0.37s">obviously</span> bringing <span class="glitch-word" style="--gd:0.08s">teeth.</span> we are not what <span class="glitch-word" style="--gd:2.58s">you&#x27;d</span> <span class="glitch-word" style="--gd:0.24s">call</span> a <span class="glitch-word" style="--gd:1.18s">subtle</span> operation, we are <span class="glitch-word" style="--gd:0.34s">barely</span> what you&#x27;d call <span class="glitch-word" style="--gd:0.57s">a</span> <span class="glitch-word" style="--gd:0.2s">plan</span></div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>                              ╱|、
                          =(˚˕ 。 7
                              |、 ~〵
                             じし   ˍ,)づ</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway. vent&#x27;s cold, drone count is up, mother still thinks i&#x27;ll &#x27;grow out <span class="glitch-word" style="--gd:0.19s">of</span> it.&#x27; i will <span class="glitch-word" style="--gd:2.26s">not</span> be <span class="glitch-word" style="--gd:2.38s">growing</span> out of it. see you at the <span class="glitch-word" style="--gd:1.14s">next</span> demolition, i&#x27;ll <span class="glitch-word" style="--gd:0.73s">be</span> the <span class="glitch-word" style="--gd:0.21s">one</span> still standing on <span class="glitch-word" style="--gd:0.73s">the</span> rubble</div>
+<div class="rant-turn" style="animation-delay:1.2s"><span class="glitch-word" style="--gd:1.92s">anyway.</span> <span class="glitch-word" style="--gd:1.01s">vent&#x27;s</span> <span class="glitch-word" style="--gd:1.1s">cold,</span> drone count is up, mother still thinks i&#x27;ll &#x27;grow out of it.&#x27; <span class="glitch-word" style="--gd:0.65s">i</span> will not be growing out of it. <span class="glitch-word" style="--gd:0.23s">see</span> you <span class="glitch-word" style="--gd:2.42s">at</span> <span class="glitch-word" style="--gd:2.07s">the</span> next demolition, i&#x27;ll be the one still standing on <span class="glitch-word" style="--gd:1.9s">the</span> rubble</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

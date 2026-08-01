@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,22 +677,22 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">why does “ACCEPT ALL” have four confirmation screens and a <span class="glitch-word" style="--gd:0.77s">mandatory</span> cooldown timer, <span class="glitch-word" style="--gd:0.31s">but</span> there is no button that says “reject.” WHY. i have <span class="glitch-word" style="--gd:2.1s">looked.</span> i have looked SO hard.</div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:0.35s">day</span> unknown of being lost in the NEKOCORP settings <span class="glitch-word" style="--gd:0.0s">menu.</span> i <span class="glitch-word" style="--gd:1.27s">came</span> in <span class="glitch-word" style="--gd:1.73s">here</span> to turn off notifications. i have a wife now. her name is Terms &amp; Conditions Addendum 12(c).</div>
+<div class="rant-turn" style="animation-delay:0.0s">why <span class="glitch-word" style="--gd:1.74s">does</span> <span class="glitch-word" style="--gd:0.34s">“ACCEPT</span> <span class="glitch-word" style="--gd:0.14s">ALL”</span> have four confirmation <span class="glitch-word" style="--gd:0.83s">screens</span> and a <span class="glitch-word" style="--gd:1.69s">mandatory</span> cooldown timer, but there is no button that says “reject.” WHY. i have looked. i have <span class="glitch-word" style="--gd:2.11s">looked</span> SO <span class="glitch-word" style="--gd:1.76s">hard.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">day unknown of <span class="glitch-word" style="--gd:0.46s">being</span> lost <span class="glitch-word" style="--gd:1.91s">in</span> the NEKOCORP settings menu. <span class="glitch-word" style="--gd:0.86s">i</span> <span class="glitch-word" style="--gd:2.4s">came</span> in here to turn off notifications. i have a wife now. her name is Terms &amp; Conditions <span class="glitch-word" style="--gd:1.62s">Addendum</span> 12(c).</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">update: found a <span class="glitch-word" style="--gd:0.09s">toggle</span> labeled <span class="glitch-word" style="--gd:0.25s">“PRIVACY.”</span> clicked it. it opened a survey asking how <span class="glitch-word" style="--gd:0.4s">private</span> i&#x27;d LIKE to feel, <span class="glitch-word" style="--gd:2.36s">on</span> a scale of 1 to “monetized.” there is no 1. <span class="glitch-word" style="--gd:1.71s">there</span> was never a 1.</div>
-<div class="rant-turn" style="animation-delay:0.48s">shoutout BYTE <span class="glitch-word" style="--gd:2.5s">for</span> <span class="glitch-word" style="--gd:0.87s">hacking</span> <span class="glitch-word" style="--gd:1.61s">a</span> router at 3am so i <span class="glitch-word" style="--gd:1.66s">could</span> read page 6 <span class="glitch-word" style="--gd:2.11s">of</span> the citizen <span class="glitch-word" style="--gd:1.97s">agreement</span> in <span class="glitch-word" style="--gd:2.45s">peace.</span> <span class="glitch-word" style="--gd:1.08s">legend.</span> icon. <span class="glitch-word" style="--gd:1.43s">also</span> please <span class="glitch-word" style="--gd:1.93s">stop</span> <span class="glitch-word" style="--gd:1.52s">pinging</span> me from Server Alley 9, my <span class="glitch-word" style="--gd:0.87s">notifications</span> are STILL BROKEN, THAT&#x27;S THE <span class="glitch-word" style="--gd:2.6s">WHOLE</span> PROBLEM</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒7 /\_/\ ▓▒░
-  ░▒▓( o&amp;o )▓11   -- sign@l 8@terference --
-  ░▌▓ &gt; ▓ ▓ ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">page 4: i own my <span class="glitch-word" style="--gd:1.45s">body.</span>
-page 5: “my body” is <span class="glitch-word" style="--gd:2.26s">defined</span> <span class="glitch-word" style="--gd:2.16s">as</span> licensed hardware.
+<div class="rant-turn" style="animation-delay:0.36s">update: found <span class="glitch-word" style="--gd:0.98s">a</span> toggle <span class="glitch-word" style="--gd:1.85s">labeled</span> “PRIVACY.” clicked it. <span class="glitch-word" style="--gd:0.21s">it</span> opened a survey asking how private i&#x27;d LIKE to feel, on <span class="glitch-word" style="--gd:1.48s">a</span> scale <span class="glitch-word" style="--gd:1.89s">of</span> 1 to <span class="glitch-word" style="--gd:0.29s">“monetized.”</span> there <span class="glitch-word" style="--gd:0.68s">is</span> no 1. <span class="glitch-word" style="--gd:2.49s">there</span> <span class="glitch-word" style="--gd:2.26s">was</span> never a 1.</div>
+<div class="rant-turn" style="animation-delay:0.48s">shoutout BYTE for hacking a router at 3am so i could read <span class="glitch-word" style="--gd:0.42s">page</span> <span class="glitch-word" style="--gd:1.76s">6</span> of the citizen agreement in peace. legend. icon. also please stop pinging me from Server Alley 9, my notifications are STILL BROKEN, THAT&#x27;S THE WHOLE PROBLEM</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓1░
+  ░▒%( o█o )▓▒░   -- ^ign4▓ interferenc? --
+  ░▒▓ &gt; 4 &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">page <span class="glitch-word" style="--gd:2.49s">4:</span> i <span class="glitch-word" style="--gd:1.16s">own</span> my body.
+<span class="glitch-word" style="--gd:1.01s">page</span> 5: “my body” is defined as licensed hardware.
 page 6: page 4 was a promotional example.
-<span class="glitch-word" style="--gd:2.31s">page</span> 7 does not <span class="glitch-word" style="--gd:0.81s">exist.</span> i have refreshed 40 times. page 7 DOES NOT EXIST.</div>
+page 7 does not <span class="glitch-word" style="--gd:2.26s">exist.</span> i have refreshed 40 times. page <span class="glitch-word" style="--gd:0.32s">7</span> DOES NOT EXIST.</div>
 <div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -687,14 +700,14 @@ page 6: page 4 was a promotional example.
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:0.96s">SHADE keeps telling <span class="glitch-word" style="--gd:0.67s">me</span> to <span class="glitch-word" style="--gd:1.6s">just</span> take the glasses off and go analog. bro i don&#x27;t HAVE glasses. i have <span class="glitch-word" style="--gd:0.69s">a</span> menu. inside my head. it <span class="glitch-word" style="--gd:0.66s">has</span> a <span class="glitch-word" style="--gd:0.86s">loading</span> spinner. the loading spinner has had tenure since March.</div>
-<div class="rant-turn" style="animation-delay:1.08s">unpopular opinion: “I Agree” should not be the only button on the screen. that&#x27;s not an opinion, <span class="glitch-word" style="--gd:0.65s">that&#x27;s</span> just... a button. i <span class="glitch-word" style="--gd:1.58s">am</span> asking for one (1) button. this is not <span class="glitch-word" style="--gd:1.01s">a</span> big ask</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-▀====-.
-     ( [0▌  .&lt; )
-      &#x27;■==Y8=-&#x27;
-       |  6  |
-   ...pic*▓ng thro*gh ◆◇e 4eon rain...</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway i&#x27;m still in <span class="glitch-word" style="--gd:1.83s">here.</span> if <span class="glitch-word" style="--gd:1.14s">you</span> don&#x27;t hear from me by <span class="glitch-word" style="--gd:2.34s">next</span> week assume i accepted the cookies. AND I MUST SCREAM (see: page 6, footnote 12, “user <span class="glitch-word" style="--gd:1.67s">satisfaction</span> is <span class="glitch-word" style="--gd:1.42s">implied</span> by <span class="glitch-word" style="--gd:2.27s">continued</span> use”)</div>
+<div class="rant-turn" style="animation-delay:0.96s">SHADE keeps telling me to just take the glasses <span class="glitch-word" style="--gd:1.01s">off</span> and go analog. bro i don&#x27;t HAVE glasses. i <span class="glitch-word" style="--gd:2.16s">have</span> a menu. inside my <span class="glitch-word" style="--gd:1.03s">head.</span> it has <span class="glitch-word" style="--gd:0.06s">a</span> loading spinner. the loading spinner has had <span class="glitch-word" style="--gd:1.94s">tenure</span> since March.</div>
+<div class="rant-turn" style="animation-delay:1.08s">unpopular opinion: “I Agree” <span class="glitch-word" style="--gd:0.57s">should</span> not be the <span class="glitch-word" style="--gd:0.98s">only</span> button on the <span class="glitch-word" style="--gd:0.26s">screen.</span> that&#x27;s not an opinion, that&#x27;s just... a button. i am asking for one (1) button. <span class="glitch-word" style="--gd:1.41s">this</span> <span class="glitch-word" style="--gd:1.19s">is</span> not a big ask</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-=====5.
+     ^ [0]  .. )
+      &#x27;-=?Y▒=-&#x27;
+       ◇  ~  |
+   ...picking 0hrough t6e neon rain...</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway i&#x27;m still <span class="glitch-word" style="--gd:2.08s">in</span> <span class="glitch-word" style="--gd:0.04s">here.</span> if you <span class="glitch-word" style="--gd:1.01s">don&#x27;t</span> hear from me by next week assume i <span class="glitch-word" style="--gd:0.25s">accepted</span> the cookies. AND I MUST <span class="glitch-word" style="--gd:0.99s">SCREAM</span> <span class="glitch-word" style="--gd:0.63s">(see:</span> <span class="glitch-word" style="--gd:1.59s">page</span> <span class="glitch-word" style="--gd:1.58s">6,</span> footnote 12, “user <span class="glitch-word" style="--gd:0.13s">satisfaction</span> is implied <span class="glitch-word" style="--gd:1.71s">by</span> continued use”)</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

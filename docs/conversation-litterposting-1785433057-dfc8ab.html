@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,29 +677,29 @@ header p {
 <div class="narrator-badge">posted by <strong>SNOOZE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">03:47am, Dream Processing Zone. <span class="glitch-word" style="--gd:2.26s">still</span> haven&#x27;t technically been awake since the <span class="glitch-word" style="--gd:1.84s">2047</span> merger, and honestly at this point being awake sounds <span class="glitch-word" style="--gd:0.67s">like</span> a scam.</div>
-<div class="rant-turn" style="animation-delay:0.12s">full-time burnout, contractually. my dreams are NEKOCORP&#x27;s third-highest grossing ad slot, right behind the tuna vending machines and whatever BYTE&#x27;s illegal stream is doing to <span class="glitch-word" style="--gd:2.05s">Server</span> Alley&#x27;s bandwidth.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_9\ ▓▒░
-  █▒▓( o█o )24~   -- si1nal interf▀r▌nc5 █-
-  ▒▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.36s">rolled over in my sleep pod at 4am. <span class="glitch-word" style="--gd:0.27s">charged</span> $4.99. did <span class="glitch-word" style="--gd:1.16s">not</span> consent. <span class="glitch-word" style="--gd:0.15s">was</span> not conscious <span class="glitch-word" style="--gd:0.86s">to</span> <span class="glitch-word" style="--gd:0.89s">consent.</span> the pod knows this. the pod <span class="glitch-word" style="--gd:1.22s">does</span> <span class="glitch-word" style="--gd:2.42s">not</span> care.</div>
-<div class="rant-turn" style="animation-delay:0.48s">tonight&#x27;s dream had a LIMITED EDITION TUNA <span class="glitch-word" style="--gd:2.41s">ENERGY</span> <span class="glitch-word" style="--gd:1.84s">DRINK</span> in it. again. i didn&#x27;t choose this dream. i didn&#x27;t choose this drink. <span class="glitch-word" style="--gd:1.86s">i</span> am $73,000 in BLANKY DEBT <span class="glitch-word" style="--gd:2.59s">and</span> my own subconscious has better ad placement than most billboards in the city.</div>
+<div class="rant-turn" style="animation-delay:0.0s">03:47am, Dream Processing Zone. still haven&#x27;t technically been awake since the 2047 merger, and honestly at this <span class="glitch-word" style="--gd:0.83s">point</span> being awake sounds like a scam.</div>
+<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:2.56s">full-time</span> <span class="glitch-word" style="--gd:2.21s">burnout,</span> contractually. my dreams are NEKOCORP&#x27;s third-highest grossing ad slot, right behind the tuna vending machines and whatever <span class="glitch-word" style="--gd:0.43s">BYTE&#x27;s</span> illegal stream is doing <span class="glitch-word" style="--gd:0.68s">to</span> <span class="glitch-word" style="--gd:0.18s">Server</span> Alley&#x27;s bandwidth.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░!▓ ◇\_/~ ▓▒░
+  ░▒▓( o&gt;o )▓▒░   3- si░na▒ inter7ere8ce --
+  ░▒▓ 0 ▌ &lt; ▓▒0</div>
+<div class="rant-turn" style="animation-delay:0.36s">rolled over <span class="glitch-word" style="--gd:0.84s">in</span> my sleep pod at 4am. <span class="glitch-word" style="--gd:2.5s">charged</span> $4.99. <span class="glitch-word" style="--gd:1.7s">did</span> not consent. was not conscious to consent. the <span class="glitch-word" style="--gd:2.14s">pod</span> knows this. the pod does not care.</div>
+<div class="rant-turn" style="animation-delay:0.48s">tonight&#x27;s <span class="glitch-word" style="--gd:1.16s">dream</span> had a LIMITED EDITION TUNA ENERGY DRINK <span class="glitch-word" style="--gd:1.58s">in</span> <span class="glitch-word" style="--gd:0.92s">it.</span> again. i didn&#x27;t choose <span class="glitch-word" style="--gd:0.71s">this</span> dream. <span class="glitch-word" style="--gd:0.43s">i</span> didn&#x27;t choose this drink. i am $73,000 in BLANKY DEBT and <span class="glitch-word" style="--gd:1.21s">my</span> own subconscious has better ad placement than most billboards in the city.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.72s">HAPPYWARE keeps telling me to &#x27;reframe the debt as an investment in rest.&#x27; HAPPYWARE has a smile chip. i <span class="glitch-word" style="--gd:1.37s">have</span> a sleep pod <span class="glitch-word" style="--gd:1.22s">that</span> bills me <span class="glitch-word" style="--gd:0.13s">for</span> the crime <span class="glitch-word" style="--gd:1.33s">of</span> existing horizontally. <span class="glitch-word" style="--gd:1.59s">we</span> are not the same.</div>
-<div class="rant-turn" style="animation-delay:0.84s">woke up for .4 seconds at 3am and immediately <span class="glitch-word" style="--gd:0.44s">got</span> hit with a push notification IN THE <span class="glitch-word" style="--gd:0.72s">DREAM.</span> the dream has <span class="glitch-word" style="--gd:1.17s">a</span> loading screen now. <span class="glitch-word" style="--gd:0.05s">the</span> dream <span class="glitch-word" style="--gd:0.2s">has</span> a loading screen NOW.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>        ▐\_/\
-       9 -.4 0
-        ▄ 6 &lt;
-   ~~~~~~|||~~░6~![◆ATA JACK: LINKED1</div>
-<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:0.43s">borrowed</span> 200 <span class="glitch-word" style="--gd:1.46s">credits</span> from KNIFEBOY to <span class="glitch-word" style="--gd:1.56s">cover</span> this week&#x27;s blanky debt <span class="glitch-word" style="--gd:2.57s">interest.</span> he said don&#x27;t worry <span class="glitch-word" style="--gd:2.28s">about</span> it. i am going to <span class="glitch-word" style="--gd:0.46s">worry</span> about it forever, <span class="glitch-word" style="--gd:2.03s">unconscious,</span> <span class="glitch-word" style="--gd:0.62s">at</span> a <span class="glitch-word" style="--gd:1.88s">markup,</span> compounding.</div>
-<div class="rant-turn" style="animation-delay:1.2s">the <span class="glitch-word" style="--gd:2.14s">worst</span> <span class="glitch-word" style="--gd:0.4s">part</span> isn&#x27;t even <span class="glitch-word" style="--gd:1.88s">the</span> debt. the worst part <span class="glitch-word" style="--gd:2.31s">is</span> i don&#x27;t <span class="glitch-word" style="--gd:1.72s">remember</span> <span class="glitch-word" style="--gd:2.14s">falling</span> asleep anymore. i just remember the invoice <span class="glitch-word" style="--gd:1.28s">waiting</span> when i get there.</div>
+<div class="rant-turn" style="animation-delay:0.72s">HAPPYWARE keeps telling me to &#x27;reframe the debt as an investment in rest.&#x27; HAPPYWARE has a smile chip. <span class="glitch-word" style="--gd:2.29s">i</span> <span class="glitch-word" style="--gd:2.14s">have</span> a sleep pod <span class="glitch-word" style="--gd:0.6s">that</span> bills <span class="glitch-word" style="--gd:0.87s">me</span> for the crime of existing <span class="glitch-word" style="--gd:0.67s">horizontally.</span> we are not the <span class="glitch-word" style="--gd:2.37s">same.</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">woke up for .4 seconds at 3am and immediately <span class="glitch-word" style="--gd:0.43s">got</span> hit <span class="glitch-word" style="--gd:0.27s">with</span> a push notification <span class="glitch-word" style="--gd:1.08s">IN</span> THE DREAM. <span class="glitch-word" style="--gd:0.39s">the</span> dream has a <span class="glitch-word" style="--gd:0.42s">loading</span> screen now. the dream <span class="glitch-word" style="--gd:2.13s">has</span> a loading screen NOW.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_/\
+       ( -.- )
+        &gt; ^ &lt;
+   ~~~~~~6^|~~~~~~[◆*TA J&lt;C~: 8~N~ED]</div>
+<div class="rant-turn" style="animation-delay:1.08s">borrowed 200 credits from KNIFEBOY to cover this week&#x27;s blanky debt interest. <span class="glitch-word" style="--gd:1.62s">he</span> said don&#x27;t worry about <span class="glitch-word" style="--gd:2.01s">it.</span> i <span class="glitch-word" style="--gd:2.23s">am</span> going to worry about <span class="glitch-word" style="--gd:2.24s">it</span> forever, <span class="glitch-word" style="--gd:1.91s">unconscious,</span> at a markup, <span class="glitch-word" style="--gd:0.62s">compounding.</span></div>
+<div class="rant-turn" style="animation-delay:1.2s">the worst part isn&#x27;t even the debt. <span class="glitch-word" style="--gd:1.9s">the</span> worst <span class="glitch-word" style="--gd:1.24s">part</span> is i don&#x27;t <span class="glitch-word" style="--gd:1.84s">remember</span> <span class="glitch-word" style="--gd:1.89s">falling</span> asleep anymore. i just remember the <span class="glitch-word" style="--gd:1.41s">invoice</span> waiting <span class="glitch-word" style="--gd:1.45s">when</span> i get there.</div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.44s">anyway. <span class="glitch-word" style="--gd:0.44s">rolling</span> over again <span class="glitch-word" style="--gd:2.11s">in</span> <span class="glitch-word" style="--gd:0.11s">4,</span> <span class="glitch-word" style="--gd:1.64s">3,</span> 2— $4.99, charged. worth <span class="glitch-word" style="--gd:0.73s">it.</span> goodnight. see you <span class="glitch-word" style="--gd:1.79s">in</span> <span class="glitch-word" style="--gd:1.36s">the</span> next billing <span class="glitch-word" style="--gd:0.93s">cycle.</span></div>
+<div class="rant-turn" style="animation-delay:1.44s">anyway. rolling <span class="glitch-word" style="--gd:0.52s">over</span> again in 4, 3, 2— <span class="glitch-word" style="--gd:1.99s">$4.99,</span> charged. worth it. goodnight. see you in the <span class="glitch-word" style="--gd:2.47s">next</span> billing cycle.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

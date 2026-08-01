@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,26 +677,26 @@ header p {
 <div class="narrator-badge">posted by <strong>GLITCHMEAT</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.85s">—AND</span> THAT&#x27;S WHEN I REALIZED THE MEMORY WASN&#x27;T <span class="glitch-word" style="--gd:1.42s">MINE.</span> some other <span class="glitch-word" style="--gd:1.54s">kitten&#x27;s</span> first snowfall just autoplayed behind my eyes mid-nap. did <span class="glitch-word" style="--gd:1.45s">not</span> consent to this. now nostalgic for a childhood that isn&#x27;t <span class="glitch-word" style="--gd:1.27s">even</span> mine. this is <span class="glitch-word" style="--gd:0.58s">fine.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">day whatever of the <span class="glitch-word" style="--gd:1.88s">beta</span> test and i <span class="glitch-word" style="--gd:0.91s">can</span> TASTE channel 7 now. tastes like static <span class="glitch-word" style="--gd:0.38s">and</span> slightly burnt kibble. 0/10 <span class="glitch-word" style="--gd:2.25s">would</span> not recommend. <span class="glitch-word" style="--gd:1.95s">10/10</span> cannot look away.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  .-◇CHIP5-▓
-  3 + &amp; + + |
-  &#x27;-▀-@---5-◇
-     glitch~</div>
-<div class="rant-turn" style="animation-delay:0.36s">clipboard <span class="glitch-word" style="--gd:1.88s">said</span> <span class="glitch-word" style="--gd:2.04s">&#x27;side</span> effects may include mild synesthesia&#x27; and then the guy <span class="glitch-word" style="--gd:0.18s">would</span> NOT make eye contact <span class="glitch-word" style="--gd:0.04s">with</span> me for the rest <span class="glitch-word" style="--gd:1.33s">of</span> <span class="glitch-word" style="--gd:2.34s">the</span> appointment. <span class="glitch-word" style="--gd:1.52s">MILD.</span> <span class="glitch-word" style="--gd:0.71s">i</span> heard purple this morning. purple had a LOUD week apparently.</div>
-<div class="rant-turn" style="animation-delay:0.48s">texted BYTE about it. he said &#x27;sounds like <span class="glitch-word" style="--gd:2.34s">a</span> you problem&#x27; and went right back to stealing wifi. incredible. truly a visionary. truly nothing else <span class="glitch-word" style="--gd:0.56s">to</span> <span class="glitch-word" style="--gd:1.54s">add.</span></div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.63s">—AND</span> <span class="glitch-word" style="--gd:0.01s">THAT&#x27;S</span> WHEN I REALIZED THE <span class="glitch-word" style="--gd:0.6s">MEMORY</span> WASN&#x27;T MINE. some <span class="glitch-word" style="--gd:1.38s">other</span> kitten&#x27;s first snowfall just autoplayed behind my <span class="glitch-word" style="--gd:0.91s">eyes</span> mid-nap. did not consent to this. now <span class="glitch-word" style="--gd:0.7s">nostalgic</span> for a childhood that isn&#x27;t even mine. this is <span class="glitch-word" style="--gd:1.76s">fine.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">day <span class="glitch-word" style="--gd:2.43s">whatever</span> of the beta test and i <span class="glitch-word" style="--gd:0.13s">can</span> TASTE channel 7 now. tastes like static and slightly burnt kibble. 0/10 would not recommend. 10/10 cannot look away.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  .-[@HIP]█.
+  | + 5 + + |
+  &#x27;-------█-▒
+     glitch6</div>
+<div class="rant-turn" style="animation-delay:0.36s">clipboard said <span class="glitch-word" style="--gd:1.63s">&#x27;side</span> effects may include <span class="glitch-word" style="--gd:1.18s">mild</span> synesthesia&#x27; and then the guy would NOT make eye contact with me for <span class="glitch-word" style="--gd:2.29s">the</span> rest of the appointment. MILD. i heard purple this morning. purple had a LOUD week apparently.</div>
+<div class="rant-turn" style="animation-delay:0.48s">texted BYTE about it. he said &#x27;sounds like a you problem&#x27; and went right back to stealing <span class="glitch-word" style="--gd:1.95s">wifi.</span> incredible. <span class="glitch-word" style="--gd:1.52s">truly</span> a visionary. truly <span class="glitch-word" style="--gd:0.87s">nothing</span> else to add.</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.72s">there is something living <span class="glitch-word" style="--gd:2.17s">in</span> <span class="glitch-word" style="--gd:2.26s">my</span> bluetooth now. <span class="glitch-word" style="--gd:1.04s">i&#x27;ve</span> named it Gary. Gary does not pay rent. Gary is <span class="glitch-word" style="--gd:0.62s">louder</span> than <span class="glitch-word" style="--gd:1.39s">the</span> actual signal at this point.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\  /\
-  (  ..  )
-   \/\/\&gt;
-  [SIGNA▒: SEI3ED]</div>
-<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:2.38s">inherited</span> a whole <span class="glitch-word" style="--gd:2.14s">different</span> cat&#x27;s fear of vacuum <span class="glitch-word" style="--gd:0.86s">cleaners</span> today. not my trauma. <span class="glitch-word" style="--gd:0.49s">not</span> my business. am now VERY loud <span class="glitch-word" style="--gd:2.35s">about</span> it, forever, <span class="glitch-word" style="--gd:0.2s">as</span> a <span class="glitch-word" style="--gd:2.1s">treat.</span></div>
-<div class="rant-turn" style="animation-delay:1.08s">NEKOCORP calls it &#x27;acceptable post-irony based comedy limits.&#x27; <span class="glitch-word" style="--gd:0.01s">i</span> call <span class="glitch-word" style="--gd:1.18s">it</span> tuesday. see <span class="glitch-word" style="--gd:1.73s">you</span> in someone else&#x27;s memory of tuesday.</div>
+<div class="rant-turn" style="animation-delay:0.72s">there is <span class="glitch-word" style="--gd:1.53s">something</span> living in my bluetooth now. i&#x27;ve named it Gary. Gary does not pay rent. Gary is <span class="glitch-word" style="--gd:2.36s">louder</span> than the actual signal at this <span class="glitch-word" style="--gd:2.33s">point.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\  1\
+  (  ^.  )
+   \/\/0/
+  [SIGNAL: SEIZE▐]</div>
+<div class="rant-turn" style="animation-delay:0.96s">inherited a whole different cat&#x27;s fear of vacuum cleaners <span class="glitch-word" style="--gd:0.25s">today.</span> not <span class="glitch-word" style="--gd:1.77s">my</span> trauma. <span class="glitch-word" style="--gd:0.13s">not</span> my business. am <span class="glitch-word" style="--gd:1.33s">now</span> VERY loud about it, <span class="glitch-word" style="--gd:1.49s">forever,</span> as a <span class="glitch-word" style="--gd:0.4s">treat.</span></div>
+<div class="rant-turn" style="animation-delay:1.08s">NEKOCORP calls it &#x27;acceptable post-irony based comedy limits.&#x27; i call it tuesday. see you <span class="glitch-word" style="--gd:1.87s">in</span> someone else&#x27;s memory <span class="glitch-word" style="--gd:1.7s">of</span> tuesday.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>  ░▒▓ /\_/\ ▓▒░
   ░▒▓( o█o )▓▒░   -- signal interference --
   ░▒▓ &gt; ▓ &lt; ▓▒░</div>

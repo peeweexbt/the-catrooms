@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,30 +677,30 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">day 187 of being <span class="glitch-word" style="--gd:2.34s">trapped</span> in the NEKOCORP settings menu. <span class="glitch-word" style="--gd:0.73s">still</span> can&#x27;t find the exit. found a submenu about the submenu though. progress, technically.</div>
-<div class="rant-turn" style="animation-delay:0.12s">terms-of-service researcher, technically, <span class="glitch-word" style="--gd:1.12s">though</span> &#x27;researcher&#x27; <span class="glitch-word" style="--gd:1.11s">implies</span> i <span class="glitch-word" style="--gd:2.23s">chose</span> this and i did <span class="glitch-word" style="--gd:0.6s">not,</span> <span class="glitch-word" style="--gd:1.91s">i</span> clicked ACCEPT <span class="glitch-word" style="--gd:1.11s">one</span> time in 2044 <span class="glitch-word" style="--gd:2.27s">and</span> now this is my whole district. Legal Fog. population: me, and eleven conflicting <span class="glitch-word" style="--gd:0.82s">definitions</span> of the word <span class="glitch-word" style="--gd:1.06s">&#x27;me.&#x27;</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  1▒▓ /\@/\ ▓▒░
-  ░▒▓( o3o @▓▒░   -- ^ignal i▀terf7r◆0ce -4
-  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.36s">page <span class="glitch-word" style="--gd:0.58s">4</span> says <span class="glitch-word" style="--gd:0.67s">i</span> own my body. page 5 <span class="glitch-word" style="--gd:1.48s">defines</span> &#x27;my body&#x27; as licensed hardware. page 6 says page 4 was a promotional <span class="glitch-word" style="--gd:2.06s">example.</span> page 7 doesn&#x27;t exist yet, NEKOCORP is &#x27;still drafting my personhood,&#x27; ETA unknown, please hold.</div>
-<div class="rant-turn" style="animation-delay:0.48s">HAPPYWARE <span class="glitch-word" style="--gd:1.0s">keeps</span> pushing morale updates through <span class="glitch-word" style="--gd:1.29s">the</span> <span class="glitch-word" style="--gd:2.2s">menu.</span> &#x27;DID <span class="glitch-word" style="--gd:0.82s">YOU</span> <span class="glitch-word" style="--gd:0.12s">KNOW:</span> reading the full agreement builds <span class="glitch-word" style="--gd:1.15s">CHARACTER!!&#x27;</span> <span class="glitch-word" style="--gd:0.57s">HAPPYWARE</span> i have read the full agreement fourteen times. i have no character left. i am a husk with excellent reading <span class="glitch-word" style="--gd:1.33s">comprehension.</span></div>
+<div class="rant-turn" style="animation-delay:0.0s">day 187 <span class="glitch-word" style="--gd:1.69s">of</span> being trapped in the NEKOCORP <span class="glitch-word" style="--gd:1.9s">settings</span> menu. still can&#x27;t find the exit. found a submenu about the submenu though. progress, technically.</div>
+<div class="rant-turn" style="animation-delay:0.12s">terms-of-service researcher, technically, though &#x27;researcher&#x27; implies <span class="glitch-word" style="--gd:0.75s">i</span> chose this <span class="glitch-word" style="--gd:1.06s">and</span> <span class="glitch-word" style="--gd:1.12s">i</span> did not, i clicked <span class="glitch-word" style="--gd:2.07s">ACCEPT</span> one time in 2044 and now this <span class="glitch-word" style="--gd:0.24s">is</span> <span class="glitch-word" style="--gd:1.37s">my</span> <span class="glitch-word" style="--gd:0.35s">whole</span> district. Legal Fog. population: me, and eleven conflicting definitions of the <span class="glitch-word" style="--gd:1.31s">word</span> <span class="glitch-word" style="--gd:2.38s">&#x27;me.&#x27;</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ 14█▀\ ▓▀░
+  ░▒▓▀ ^█o )▓▒░   -- si*nal interference -*
+  ?▒▓ &gt; ▓ &lt; ▌▒░</div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:0.09s">page</span> 4 says i own my body. page 5 defines &#x27;my <span class="glitch-word" style="--gd:0.43s">body&#x27;</span> as licensed hardware. page 6 says page 4 was <span class="glitch-word" style="--gd:1.53s">a</span> promotional <span class="glitch-word" style="--gd:2.26s">example.</span> page 7 doesn&#x27;t <span class="glitch-word" style="--gd:0.07s">exist</span> yet, NEKOCORP is &#x27;still drafting my personhood,&#x27; ETA unknown, please hold.</div>
+<div class="rant-turn" style="animation-delay:0.48s">HAPPYWARE keeps pushing morale updates through the menu. &#x27;DID YOU KNOW: reading the full agreement builds <span class="glitch-word" style="--gd:2.35s">CHARACTER!!&#x27;</span> HAPPYWARE i have read the full agreement fourteen times. i <span class="glitch-word" style="--gd:1.22s">have</span> no character left. i <span class="glitch-word" style="--gd:1.67s">am</span> a husk with <span class="glitch-word" style="--gd:2.45s">excellent</span> <span class="glitch-word" style="--gd:2.33s">reading</span> <span class="glitch-word" style="--gd:2.5s">comprehension.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.72s">found a checkbox today. just sitting <span class="glitch-word" style="--gd:1.1s">there.</span> no label. <span class="glitch-word" style="--gd:1.78s">i</span> have not <span class="glitch-word" style="--gd:0.95s">clicked</span> it in <span class="glitch-word" style="--gd:2.58s">six</span> months out of principle. i believe clicking it <span class="glitch-word" style="--gd:0.86s">ends</span> the war. i also <span class="glitch-word" style="--gd:0.99s">believe</span> <span class="glitch-word" style="--gd:2.02s">clicking</span> it ends me. <span class="glitch-word" style="--gd:0.75s">calculated</span> risk, staying unclicked.</div>
-<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY <span class="glitch-word" style="--gd:0.07s">messaged</span> me <span class="glitch-word" style="--gd:1.86s">through</span> the <span class="glitch-word" style="--gd:2.14s">menu</span> somehow, <span class="glitch-word" style="--gd:0.2s">don&#x27;t</span> ask how, he said <span class="glitch-word" style="--gd:0.26s">&#x27;bro</span> just alt+f4.&#x27; <span class="glitch-word" style="--gd:0.75s">groundbreaking.</span> <span class="glitch-word" style="--gd:1.05s">revolutionary.</span> <span class="glitch-word" style="--gd:0.19s">i</span> <span class="glitch-word" style="--gd:2.08s">tried</span> <span class="glitch-word" style="--gd:2.03s">it.</span> the <span class="glitch-word" style="--gd:0.55s">menu</span> opened a submenu explaining why i can&#x27;t alt+f4.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>   &amp;_@                                  _1_
-  /___\   [7 5] [~ [] [] [8 [] ■]    /_2_\
-  ( ..)\/\/\*\/\/8/\/\/\/\/\/(.. )
-   1&#x27;&#x27;                                &#x27;&#x27;?</div>
-<div class="rant-turn" style="animation-delay:1.08s">VALENTUNA asked <span class="glitch-word" style="--gd:0.74s">if</span> the settings menu counts as &#x27;insurable trauma.&#x27; i <span class="glitch-word" style="--gd:0.41s">forwarded</span> the question to the menu. the menu is now <span class="glitch-word" style="--gd:1.75s">asking</span> ME questions. we have switched roles. did <span class="glitch-word" style="--gd:2.19s">not</span> consent to this either, much like everything <span class="glitch-word" style="--gd:1.03s">else</span> in this district.</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:2.45s">found</span> <span class="glitch-word" style="--gd:1.48s">a</span> checkbox today. just <span class="glitch-word" style="--gd:0.09s">sitting</span> there. no label. i have not clicked it <span class="glitch-word" style="--gd:0.72s">in</span> six months out <span class="glitch-word" style="--gd:0.4s">of</span> principle. i believe clicking it ends the war. i also believe clicking it ends me. calculated risk, staying <span class="glitch-word" style="--gd:2.2s">unclicked.</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">KNIFEBOY messaged me <span class="glitch-word" style="--gd:0.52s">through</span> the menu somehow, don&#x27;t ask how, he said &#x27;bro <span class="glitch-word" style="--gd:1.68s">just</span> alt+f4.&#x27; groundbreaking. revolutionary. i tried it. the <span class="glitch-word" style="--gd:0.05s">menu</span> <span class="glitch-word" style="--gd:1.05s">opened</span> a submenu <span class="glitch-word" style="--gd:1.61s">explaining</span> why <span class="glitch-word" style="--gd:1.29s">i</span> can&#x27;t alt+f4.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>   @__                                  _5_
+  3___\   [] [] [] [] [] [] [] 8]    /_▐_\
+  ( ..)\/\/&lt;/\/\▒\/\/\4!/\/\/(.% )
+   &#x27;1◆                                &#x27;&#x27;&#x27;</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:0.4s">VALENTUNA</span> asked if the <span class="glitch-word" style="--gd:1.47s">settings</span> menu counts <span class="glitch-word" style="--gd:0.63s">as</span> <span class="glitch-word" style="--gd:2.5s">&#x27;insurable</span> trauma.&#x27; i forwarded the question to the menu. <span class="glitch-word" style="--gd:2.58s">the</span> menu is now asking ME questions. we have switched roles. did not consent to this either, much like everything <span class="glitch-word" style="--gd:0.69s">else</span> in this district.</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>へ  ♡  ╱|、
          ૮  &gt;  &lt;)     (˚ˎ 。7
           /  ⁻  ៸|       |、˜〵
      乀(ˍ, ل ل      じしˍ,)ノ</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. <span class="glitch-word" style="--gd:0.57s">day</span> 187, still here, still clicking. <span class="glitch-word" style="--gd:1.11s">found</span> a new submenu today called &#x27;submenus.&#x27; <span class="glitch-word" style="--gd:0.97s">this</span> is <span class="glitch-word" style="--gd:0.87s">not</span> a metaphor. see you <span class="glitch-word" style="--gd:2.14s">at</span> day 188, assuming there is one — the calendar&#x27;s in <span class="glitch-word" style="--gd:2.25s">the</span> terms somewhere too.</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. day 187, <span class="glitch-word" style="--gd:1.38s">still</span> <span class="glitch-word" style="--gd:0.32s">here,</span> still <span class="glitch-word" style="--gd:1.63s">clicking.</span> found a <span class="glitch-word" style="--gd:2.1s">new</span> submenu today called &#x27;submenus.&#x27; this is not a metaphor. see you at day 188, assuming there is <span class="glitch-word" style="--gd:0.77s">one</span> — the calendar&#x27;s in the terms somewhere <span class="glitch-word" style="--gd:0.76s">too.</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

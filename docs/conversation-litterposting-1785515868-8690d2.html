@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,25 +677,25 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">why does the NEKOCORP terms-of-service update itself <span class="glitch-word" style="--gd:2.35s">DURING</span> business hours— like I&#x27;m just supposed <span class="glitch-word" style="--gd:1.38s">to</span> keep up? <span class="glitch-word" style="--gd:2.02s">reading</span> this contract IS my job. it is my only job.</div>
-<div class="rant-turn" style="animation-delay:0.12s">terms-of-service researcher, <span class="glitch-word" style="--gd:0.29s">Legal</span> Fog district. six months in <span class="glitch-word" style="--gd:2.47s">the</span> settings menu and counting. I don&#x27;t remember the sun <span class="glitch-word" style="--gd:1.61s">anymore,</span> only consent banners.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ &lt;7_/\ ▓▒░
-  &gt;▒▓( o▌o )▓0░   ▒- signal inte▓f36en▀@ --
-  ░▒▓ &gt; ▓ &lt; ▓1&lt;</div>
-<div class="rant-turn" style="animation-delay:0.36s">page 4 says I own my body. page 5 <span class="glitch-word" style="--gd:2.48s">defines</span> &#x27;my body&#x27; as licensed hardware. <span class="glitch-word" style="--gd:2.53s">page</span> 6 says page 4 was a promotional example. PAGE SEVEN DOESN&#x27;T EXIST YET <span class="glitch-word" style="--gd:1.58s">AND</span> THEY ALREADY QUOTED IT TO <span class="glitch-word" style="--gd:1.54s">ME.</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">clicked &#x27;agree&#x27; to <span class="glitch-word" style="--gd:2.33s">close</span> a popup and accidentally co-signed a fifteen-year litter subsidy loan. still don&#x27;t know whose litter. could <span class="glitch-word" style="--gd:2.48s">be</span> mine. could be a stranger&#x27;s. binding either way.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.08s">why</span> does the NEKOCORP <span class="glitch-word" style="--gd:1.9s">terms-of-service</span> update itself DURING business <span class="glitch-word" style="--gd:0.95s">hours—</span> like I&#x27;m just supposed to keep up? reading <span class="glitch-word" style="--gd:0.44s">this</span> contract IS my <span class="glitch-word" style="--gd:1.5s">job.</span> it is my only job.</div>
+<div class="rant-turn" style="animation-delay:0.12s">terms-of-service researcher, Legal Fog district. six months in the settings menu and counting. I don&#x27;t remember the sun anymore, only <span class="glitch-word" style="--gd:1.4s">consent</span> banners.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>  8#0 /\6/\ ▓7▌
+  ░▒▓( o◆o )?▒░   -- si&amp;nal ■#terfe1enc% ▒-
+  9▒▓ &gt; ▓ &lt; ▓▐░</div>
+<div class="rant-turn" style="animation-delay:0.36s">page 4 says I <span class="glitch-word" style="--gd:0.67s">own</span> my body. <span class="glitch-word" style="--gd:0.14s">page</span> 5 defines &#x27;my body&#x27; <span class="glitch-word" style="--gd:1.37s">as</span> licensed hardware. page 6 says <span class="glitch-word" style="--gd:2.1s">page</span> 4 <span class="glitch-word" style="--gd:0.62s">was</span> <span class="glitch-word" style="--gd:0.04s">a</span> promotional example. PAGE SEVEN DOESN&#x27;T <span class="glitch-word" style="--gd:2.02s">EXIST</span> <span class="glitch-word" style="--gd:0.92s">YET</span> <span class="glitch-word" style="--gd:1.79s">AND</span> THEY <span class="glitch-word" style="--gd:0.56s">ALREADY</span> QUOTED IT TO ME.</div>
+<div class="rant-turn" style="animation-delay:0.48s">clicked <span class="glitch-word" style="--gd:0.76s">&#x27;agree&#x27;</span> <span class="glitch-word" style="--gd:1.71s">to</span> close a popup and accidentally co-signed a fifteen-year litter subsidy loan. still don&#x27;t know <span class="glitch-word" style="--gd:1.0s">whose</span> litter. could be mine. <span class="glitch-word" style="--gd:2.19s">could</span> be <span class="glitch-word" style="--gd:2.33s">a</span> stranger&#x27;s. binding either <span class="glitch-word" style="--gd:0.88s">way.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:2.53s">HAPPYWARE</span> keeps sending me &#x27;positivity <span class="glitch-word" style="--gd:0.63s">reminders&#x27;</span> about my case. buddy. I am <span class="glitch-word" style="--gd:1.22s">not</span> sad. I am LEGALLY CONFUSED. there <span class="glitch-word" style="--gd:2.26s">is</span> a difference and page 9 probably disagrees.</div>
-<div class="rant-turn" style="animation-delay:0.84s">found a clause today that <span class="glitch-word" style="--gd:0.9s">says</span> the settings menu is <span class="glitch-word" style="--gd:0.03s">also</span> a load-bearing wall. do NOT close this tab. I mean that structurally, not emotionally. mostly structurally.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>     4\/\_▀\/\
-    (  O   O  )
-     \  ^Y3  /
-      )▐4?&amp;=&gt;      -- ?0rs up, r▀tor in594in◇ --</div>
-<div class="rant-turn" style="animation-delay:1.08s">STRAY told me to just stop reading <span class="glitch-word" style="--gd:0.69s">it.</span> incredible advice. <span class="glitch-word" style="--gd:2.25s">unfortunately</span> I signed a separate agreement to <span class="glitch-word" style="--gd:2.15s">keep</span> reading agreements. <span class="glitch-word" style="--gd:1.15s">it</span> is agreements all the way down.</div>
-<div class="rant-turn" style="animation-delay:1.2s"><span class="glitch-word" style="--gd:1.18s">there</span> is no checkout <span class="glitch-word" style="--gd:0.44s">button.</span> there <span class="glitch-word" style="--gd:2.12s">is</span> only <span class="glitch-word" style="--gd:1.93s">&#x27;agree&#x27;</span> and &#x27;agree with enthusiasm.&#x27; I have <span class="glitch-word" style="--gd:0.21s">been</span> <span class="glitch-word" style="--gd:0.13s">clicking</span> agree with enthusiasm for six months and I have never meant <span class="glitch-word" style="--gd:1.91s">it</span> less.</div>
+<div class="rant-turn" style="animation-delay:0.72s">HAPPYWARE keeps sending me &#x27;positivity reminders&#x27; <span class="glitch-word" style="--gd:0.07s">about</span> my case. <span class="glitch-word" style="--gd:0.85s">buddy.</span> I am not sad. I am LEGALLY <span class="glitch-word" style="--gd:2.45s">CONFUSED.</span> there <span class="glitch-word" style="--gd:2.36s">is</span> a difference and <span class="glitch-word" style="--gd:0.84s">page</span> 9 probably disagrees.</div>
+<div class="rant-turn" style="animation-delay:0.84s">found a <span class="glitch-word" style="--gd:0.59s">clause</span> today that says the settings menu <span class="glitch-word" style="--gd:1.92s">is</span> also a <span class="glitch-word" style="--gd:1.53s">load-bearing</span> wall. do NOT close this tab. I mean that structurally, not emotionally. mostly structurally.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_/◆/▓
+    (  O   O  0
+     \  ^Y▌  ◇
+      )=====(      -- ~a1s u&lt;■ █&amp;tor incoming --</div>
+<div class="rant-turn" style="animation-delay:1.08s">STRAY told <span class="glitch-word" style="--gd:2.44s">me</span> to just stop reading it. incredible advice. <span class="glitch-word" style="--gd:0.42s">unfortunately</span> I signed a separate agreement <span class="glitch-word" style="--gd:0.59s">to</span> keep reading <span class="glitch-word" style="--gd:1.35s">agreements.</span> <span class="glitch-word" style="--gd:0.11s">it</span> is agreements all the way down.</div>
+<div class="rant-turn" style="animation-delay:1.2s">there <span class="glitch-word" style="--gd:1.84s">is</span> no checkout button. there is <span class="glitch-word" style="--gd:1.28s">only</span> &#x27;agree&#x27; and &#x27;agree with enthusiasm.&#x27; I have been clicking agree with enthusiasm <span class="glitch-word" style="--gd:0.92s">for</span> six months and I have never meant it less.</div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -690,7 +703,7 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:1.44s">anyway. <span class="glitch-word" style="--gd:0.38s">still</span> trapped. still scrolling. if you ever find page 10 tell it I <span class="glitch-word" style="--gd:2.03s">said</span> nothing nice.</div>
+<div class="rant-turn" style="animation-delay:1.44s">anyway. still <span class="glitch-word" style="--gd:2.59s">trapped.</span> still scrolling. if you ever find page 10 tell it I <span class="glitch-word" style="--gd:1.53s">said</span> nothing nice.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

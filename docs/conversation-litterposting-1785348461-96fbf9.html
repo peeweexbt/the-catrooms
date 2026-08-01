@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,8 +677,8 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">log entry #4,812 of the citizen agreement review: still <span class="glitch-word" style="--gd:0.72s">here.</span> still cannot find <span class="glitch-word" style="--gd:0.54s">the</span> <span class="glitch-word" style="--gd:0.51s">back</span> button. filing this update <span class="glitch-word" style="--gd:1.14s">anyway</span> <span class="glitch-word" style="--gd:0.56s">because</span> SOMEONE has to.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s QUERY. Legal Fog district. official title: terms-of-service researcher. unofficial <span class="glitch-word" style="--gd:0.05s">title:</span> cat who read page 6 and was never the same after.</div>
+<div class="rant-turn" style="animation-delay:0.0s">log entry #4,812 of the <span class="glitch-word" style="--gd:2.03s">citizen</span> agreement review: still here. <span class="glitch-word" style="--gd:0.04s">still</span> cannot find the back button. filing <span class="glitch-word" style="--gd:1.02s">this</span> update anyway <span class="glitch-word" style="--gd:0.57s">because</span> SOMEONE has to.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s QUERY. Legal Fog district. <span class="glitch-word" style="--gd:0.46s">official</span> title: terms-of-service <span class="glitch-word" style="--gd:0.79s">researcher.</span> unofficial title: cat who read page 6 and was <span class="glitch-word" style="--gd:1.04s">never</span> the same after.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -673,13 +686,13 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:0.36s">page <span class="glitch-word" style="--gd:1.87s">4</span> says i own my <span class="glitch-word" style="--gd:0.22s">body.</span> page 5 redefines <span class="glitch-word" style="--gd:1.32s">&#x27;my</span> body&#x27; as licensed NEKOCORP hardware. page <span class="glitch-word" style="--gd:2.42s">6</span> says page 4 <span class="glitch-word" style="--gd:1.76s">was</span> a promotional example only. page 7 is a photo of a fish captioned <span class="glitch-word" style="--gd:0.84s">&#x27;lol.&#x27;</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">six months. SIX <span class="glitch-word" style="--gd:2.25s">MONTHS</span> trapped in <span class="glitch-word" style="--gd:2.46s">the</span> <span class="glitch-word" style="--gd:1.75s">settings</span> menu. i toggled &#x27;reduce motion&#x27; once and <span class="glitch-word" style="--gd:2.35s">it</span> auto-generated a custody <span class="glitch-word" style="--gd:0.59s">agreement</span> for <span class="glitch-word" style="--gd:1.93s">kittens</span> i do not <span class="glitch-word" style="--gd:0.37s">have</span> yet.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ 9▒░
-  ░▒▓( o█o )▓▒░   -- signal in▌er░eren6e --
-  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:0.19s">found</span> a submenu inside a submenu inside a submenu. inside THAT one: BYTE&#x27;s stolen wifi password, my <span class="glitch-word" style="--gd:0.54s">birth</span> <span class="glitch-word" style="--gd:2.37s">certificate</span> stamped &#x27;pending review since 2044,&#x27; and someone&#x27;s <span class="glitch-word" style="--gd:2.15s">grocery</span> list.</div>
-<div class="rant-turn" style="animation-delay:0.84s">VALENTUNA texts me at 2am for <span class="glitch-word" style="--gd:0.61s">legal</span> advice about her fridge-wife&#x27;s <span class="glitch-word" style="--gd:2.41s">extended</span> warranty. <span class="glitch-word" style="--gd:0.4s">babe.</span> <span class="glitch-word" style="--gd:1.64s">i</span> am ALSO the defendant <span class="glitch-word" style="--gd:0.08s">in</span> this scenario. i cannot help you. <span class="glitch-word" style="--gd:1.32s">i</span> cannot help me.</div>
+<div class="rant-turn" style="animation-delay:0.36s">page 4 <span class="glitch-word" style="--gd:1.81s">says</span> i own <span class="glitch-word" style="--gd:1.88s">my</span> body. <span class="glitch-word" style="--gd:0.68s">page</span> <span class="glitch-word" style="--gd:1.93s">5</span> redefines &#x27;my <span class="glitch-word" style="--gd:2.08s">body&#x27;</span> <span class="glitch-word" style="--gd:2.35s">as</span> licensed <span class="glitch-word" style="--gd:2.42s">NEKOCORP</span> hardware. page 6 says page 4 was <span class="glitch-word" style="--gd:2.02s">a</span> promotional <span class="glitch-word" style="--gd:2.29s">example</span> only. <span class="glitch-word" style="--gd:1.84s">page</span> <span class="glitch-word" style="--gd:1.16s">7</span> is a photo of a fish captioned &#x27;lol.&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.48s">six <span class="glitch-word" style="--gd:0.83s">months.</span> SIX MONTHS trapped in the <span class="glitch-word" style="--gd:0.4s">settings</span> menu. i toggled <span class="glitch-word" style="--gd:0.4s">&#x27;reduce</span> motion&#x27; once and it auto-generated <span class="glitch-word" style="--gd:2.49s">a</span> custody agreement for kittens i do not have <span class="glitch-word" style="--gd:1.73s">yet.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒9 /8_/\ ▓▒░
+  ◆▒▓? o█o ?▓█#   -- s▀gnal interferen6e --
+  ░▒▓ &gt; ▓ &lt; ▓▐~</div>
+<div class="rant-turn" style="animation-delay:0.72s">found a <span class="glitch-word" style="--gd:0.56s">submenu</span> <span class="glitch-word" style="--gd:0.15s">inside</span> a <span class="glitch-word" style="--gd:0.25s">submenu</span> inside a <span class="glitch-word" style="--gd:0.57s">submenu.</span> inside <span class="glitch-word" style="--gd:1.95s">THAT</span> one: <span class="glitch-word" style="--gd:2.03s">BYTE&#x27;s</span> stolen wifi password, my birth <span class="glitch-word" style="--gd:2.19s">certificate</span> stamped <span class="glitch-word" style="--gd:0.4s">&#x27;pending</span> review <span class="glitch-word" style="--gd:0.04s">since</span> 2044,&#x27; and <span class="glitch-word" style="--gd:0.86s">someone&#x27;s</span> grocery list.</div>
+<div class="rant-turn" style="animation-delay:0.84s">VALENTUNA texts <span class="glitch-word" style="--gd:1.08s">me</span> <span class="glitch-word" style="--gd:1.55s">at</span> 2am for legal advice <span class="glitch-word" style="--gd:1.22s">about</span> <span class="glitch-word" style="--gd:2.1s">her</span> fridge-wife&#x27;s extended warranty. babe. i <span class="glitch-word" style="--gd:0.41s">am</span> ALSO <span class="glitch-word" style="--gd:0.56s">the</span> defendant in this <span class="glitch-word" style="--gd:1.87s">scenario.</span> <span class="glitch-word" style="--gd:1.83s">i</span> <span class="glitch-word" style="--gd:2.17s">cannot</span> help you. i cannot help me.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>                  ☆
 ☆  --------------
   /__________ \         ☆
@@ -695,12 +708,12 @@ header p {
 
    ☆                                         ☆
                      ☆                               ☆</div>
-<div class="rant-turn" style="animation-delay:1.08s">new clause dropped <span class="glitch-word" style="--gd:2.27s">today:</span> NEKOCORP legally <span class="glitch-word" style="--gd:1.53s">owns</span> the <span class="glitch-word" style="--gd:0.88s">concept</span> of &#x27;meow.&#x27; said it seven times on principle. nothing happened. YET. billing <span class="glitch-word" style="--gd:1.63s">me</span> for something <span class="glitch-word" style="--gd:1.81s">eventually,</span> <span class="glitch-word" style="--gd:1.96s">i</span> can feel it.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_/\
-       ( -◆- )
-        &gt; ^ 7
-   ~~~▌~~|||9~@~~~[▄A69 JAC9: LINK&amp;D]</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. <span class="glitch-word" style="--gd:1.9s">still</span> in <span class="glitch-word" style="--gd:2.09s">the</span> menu. still can&#x27;t find <span class="glitch-word" style="--gd:2.33s">&#x27;exit.&#x27;</span> if you need <span class="glitch-word" style="--gd:1.87s">me</span> i&#x27;ll be <span class="glitch-word" style="--gd:1.56s">here</span> rereading page 6, slowly becoming page 6.</div>
+<div class="rant-turn" style="animation-delay:1.08s">new clause dropped <span class="glitch-word" style="--gd:2.22s">today:</span> NEKOCORP legally owns <span class="glitch-word" style="--gd:0.12s">the</span> concept of &#x27;meow.&#x27; said it seven times on principle. nothing happened. YET. billing me for <span class="glitch-word" style="--gd:1.43s">something</span> eventually, i can feel it.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>        7▀_/\
+       ( -.- )
+        &gt; ^ &lt;
+   ▀~~~~~|||▌&lt;~~8~#DATA ▀A&lt;K: LI%K■D]</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. still in <span class="glitch-word" style="--gd:0.39s">the</span> menu. still can&#x27;t find &#x27;exit.&#x27; if you need <span class="glitch-word" style="--gd:2.35s">me</span> <span class="glitch-word" style="--gd:0.76s">i&#x27;ll</span> be here rereading page 6, <span class="glitch-word" style="--gd:0.9s">slowly</span> becoming page 6.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

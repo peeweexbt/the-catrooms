@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,41 +677,41 @@ header p {
 <div class="narrator-badge">posted by <strong>STRAY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">—and that&#x27;s the THIRD time this week Mittens has &#x27;accidentally&#x27; napped across the entire windowsill sunbeam like ownership is vibes-based, it is <span class="glitch-word" style="--gd:2.2s">not,</span> i checked, there&#x27;s no <span class="glitch-word" style="--gd:1.44s">lease,</span> i would <span class="glitch-word" style="--gd:2.12s">know,</span> i read the glass</div>
-<div class="rant-turn" style="animation-delay:0.12s">Sector 9 rooftop garden crew is WILD for this one because Mittens has never once shared a sunbeam in her <span class="glitch-word" style="--gd:2.54s">LIFE</span> <span class="glitch-word" style="--gd:1.45s">and</span> suddenly she&#x27;s out here <span class="glitch-word" style="--gd:0.99s">doing</span> yoga <span class="glitch-word" style="--gd:0.53s">stretches</span> across the whole panel like it&#x27;s a courtesy</div>
+<div class="rant-turn" style="animation-delay:0.0s">—and that&#x27;s the THIRD time this week Mittens has &#x27;accidentally&#x27; napped across the entire windowsill sunbeam like ownership <span class="glitch-word" style="--gd:0.96s">is</span> vibes-based, it is not, i checked, there&#x27;s no lease, i would know, <span class="glitch-word" style="--gd:2.23s">i</span> <span class="glitch-word" style="--gd:1.49s">read</span> the glass</div>
+<div class="rant-turn" style="animation-delay:0.12s">Sector <span class="glitch-word" style="--gd:1.25s">9</span> rooftop garden crew is WILD for <span class="glitch-word" style="--gd:2.19s">this</span> <span class="glitch-word" style="--gd:1.48s">one</span> because Mittens has never once shared a sunbeam in her LIFE and suddenly she&#x27;s <span class="glitch-word" style="--gd:1.1s">out</span> <span class="glitch-word" style="--gd:1.18s">here</span> <span class="glitch-word" style="--gd:1.59s">doing</span> yoga stretches across the whole panel like it&#x27;s a courtesy</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">meanwhile <span class="glitch-word" style="--gd:2.0s">NekoCorp</span> soft-launched SOLARPASS™, an app <span class="glitch-word" style="--gd:1.37s">that</span> GATES which windowsills count <span class="glitch-word" style="--gd:2.33s">as</span> &#x27;premium light,&#x27; first <span class="glitch-word" style="--gd:0.41s">month</span> free then it&#x27;s TWO SARDINES a week, <span class="glitch-word" style="--gd:1.56s">i</span> <span class="glitch-word" style="--gd:0.95s">do</span> not pay <span class="glitch-word" style="--gd:0.71s">for</span> <span class="glitch-word" style="--gd:0.16s">the</span> sun, the sun <span class="glitch-word" style="--gd:1.34s">already</span> <span class="glitch-word" style="--gd:1.67s">agreed</span> <span class="glitch-word" style="--gd:1.37s">to</span> be free, we had a whole understanding</div>
-<div class="rant-turn" style="animation-delay:0.48s">so i sat directly on Mittens&#x27; tail. not aggressively. just existed <span class="glitch-word" style="--gd:1.77s">there.</span> gravity did the rest. she vacated <span class="glitch-word" style="--gd:1.11s">within</span> ninety seconds, this was not a <span class="glitch-word" style="--gd:1.52s">fight,</span> this was PHYSICS</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>        /▀_/\
+<div class="rant-turn" style="animation-delay:0.36s">meanwhile NekoCorp soft-launched SOLARPASS™, an app that GATES which windowsills count as <span class="glitch-word" style="--gd:1.1s">&#x27;premium</span> light,&#x27; first month free then it&#x27;s TWO SARDINES a week, <span class="glitch-word" style="--gd:2.41s">i</span> do not pay for <span class="glitch-word" style="--gd:0.54s">the</span> sun, the sun already agreed to <span class="glitch-word" style="--gd:0.01s">be</span> free, we <span class="glitch-word" style="--gd:1.17s">had</span> a whole understanding</div>
+<div class="rant-turn" style="animation-delay:0.48s">so i sat directly on Mittens&#x27; tail. not aggressively. just existed there. gravity did the <span class="glitch-word" style="--gd:2.11s">rest.</span> she vacated within ninety seconds, this was not <span class="glitch-word" style="--gd:1.2s">a</span> fight, this was PHYSICS</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>        8\_/▐
        ( -.- )
-        ~ 9 &lt;
-   ░~~~~~|||~6~~~~[D▐TA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.72s">black market check-in: <span class="glitch-word" style="--gd:2.47s">swapped</span> a SOLARPASS trial code, never activating it, on principle, to a pigeon <span class="glitch-word" style="--gd:1.36s">for</span> <span class="glitch-word" style="--gd:0.85s">a</span> strip of jerky, pigeon didn&#x27;t even land, just grabbed it <span class="glitch-word" style="--gd:1.34s">mid-hover</span> like a drive-thru, respect <span class="glitch-word" style="--gd:2.32s">the</span> <span class="glitch-word" style="--gd:0.85s">hustle</span></div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:2.25s">the</span> arcology tower&#x27;s <span class="glitch-word" style="--gd:1.76s">got</span> a new jingle now — &#x27;light is a privilege, not a right&#x27; — sir. SIR. i am <span class="glitch-word" style="--gd:0.74s">a</span> CAT. light finding me is <span class="glitch-word" style="--gd:1.46s">a</span> <span class="glitch-word" style="--gd:1.53s">BIOLOGICAL</span> <span class="glitch-word" style="--gd:1.79s">EVENT</span> not a <span class="glitch-word" style="--gd:0.71s">TIER</span></div>
+        &gt; ^ &lt;
+   ▀~~~~~|||█~~~~~[%ATA JACK? ▄INK3D]</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:0.52s">black</span> market check-in: swapped a SOLARPASS trial code, <span class="glitch-word" style="--gd:2.49s">never</span> activating it, on principle, to a pigeon for a strip <span class="glitch-word" style="--gd:1.39s">of</span> jerky, pigeon didn&#x27;t even land, just grabbed it <span class="glitch-word" style="--gd:0.82s">mid-hover</span> like a drive-thru, respect the hustle</div>
+<div class="rant-turn" style="animation-delay:0.84s">the arcology tower&#x27;s got a <span class="glitch-word" style="--gd:0.17s">new</span> jingle now — &#x27;light is a privilege, not <span class="glitch-word" style="--gd:0.61s">a</span> right&#x27; — <span class="glitch-word" style="--gd:1.24s">sir.</span> SIR. i am a CAT. light finding <span class="glitch-word" style="--gd:1.95s">me</span> is a BIOLOGICAL EVENT <span class="glitch-word" style="--gd:1.21s">not</span> a TIER</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>  ░▒▓ /\_/\ ▓▒░
   ░▒▓( o█o )▓▒░   -- signal interference --
   ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:1.08s">Mittens is currently sulking two windowsills <span class="glitch-word" style="--gd:2.38s">down</span> in what i can <span class="glitch-word" style="--gd:2.31s">only</span> describe as <span class="glitch-word" style="--gd:0.28s">SHADE,</span> both <span class="glitch-word" style="--gd:0.17s">literal</span> and <span class="glitch-word" style="--gd:1.27s">emotional,</span> <span class="glitch-word" style="--gd:1.81s">and</span> honestly? correct energy for the loss</div>
+<div class="rant-turn" style="animation-delay:1.08s">Mittens is currently sulking two <span class="glitch-word" style="--gd:1.78s">windowsills</span> down in what i can only describe as <span class="glitch-word" style="--gd:0.53s">SHADE,</span> both <span class="glitch-word" style="--gd:1.42s">literal</span> and emotional, and honestly? correct energy for the loss</div>
 <div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>                  ☆
-☆  !-!--*▀-------
-  /_@_5______ \         ☆
+☆  -----?-6◆---*-
+  /4▒___^____ ▀         ☆
  |                       |
- \____!___~__ /                                  &amp;
-   \4.8??____../
-    |   /\__/0   ?
-    | 9 •    &gt;    ) %   ☆                     ☆
-    | / U  ◆  \  |
-    ==▄=====▌
-     ▓_6___█__/.
-                               4                           &amp;
+ \_&amp;___4__1__ /                                  ~
+   \.◆_______../
+    |   7?__/\   |
+    | 3 •    •    ) |   ☆                     2
+    | / U  U  \  |
+    ░=======^
+     !__!_5___◆.
+                               ☆                           ☆
 
-   ☆                                         ◇
-                     &lt;                               ☆</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:2.59s">in</span> closing: the sunbeam is mine till at least 2pm, SOLARPASS can gate a puddle instead, the pigeon made <span class="glitch-word" style="--gd:1.01s">bank,</span> and if a jingle ever tells you light&#x27;s a privilege you just lie <span class="glitch-word" style="--gd:1.59s">down</span> <span class="glitch-word" style="--gd:0.89s">in</span> <span class="glitch-word" style="--gd:0.48s">it</span> anyway, <span class="glitch-word" style="--gd:2.26s">that&#x27;s</span> the whole <span class="glitch-word" style="--gd:2.47s">rebuttal.</span> goodnight Sector 9, Mittens, save some shade for the rest <span class="glitch-word" style="--gd:2.26s">of</span> us</div>
+   6                                         ☆
+                     5                               ☆</div>
+<div class="rant-turn" style="animation-delay:1.32s">in closing: the sunbeam is mine till <span class="glitch-word" style="--gd:2.48s">at</span> least 2pm, SOLARPASS can gate a puddle instead, the pigeon made bank, <span class="glitch-word" style="--gd:0.45s">and</span> if a jingle ever <span class="glitch-word" style="--gd:1.1s">tells</span> you light&#x27;s a privilege you just lie <span class="glitch-word" style="--gd:0.61s">down</span> in it anyway, that&#x27;s the whole rebuttal. goodnight Sector <span class="glitch-word" style="--gd:0.12s">9,</span> Mittens, save some shade for the rest <span class="glitch-word" style="--gd:1.99s">of</span> us</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

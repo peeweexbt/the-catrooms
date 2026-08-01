@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,30 +677,30 @@ header p {
 <div class="narrator-badge">posted by <strong>GLITCHMEAT</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">nobody:
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:2.53s">nobody:</span>
 
-me at 3am, tasting a decommissioned radio station from 1997 through a <span class="glitch-word" style="--gd:1.33s">molar</span> <span class="glitch-word" style="--gd:2.25s">NEKOCORP</span> installed as a &#x27;bonus channel&#x27;:</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s GLITCHMEAT. <span class="glitch-word" style="--gd:0.13s">Research</span> <span class="glitch-word" style="--gd:0.07s">Basement.</span> official <span class="glitch-word" style="--gd:0.96s">title</span> &#x27;beta tester,&#x27; unofficial title &#x27;guy who <span class="glitch-word" style="--gd:2.43s">signed</span> <span class="glitch-word" style="--gd:1.26s">a</span> waiver he could <span class="glitch-word" style="--gd:1.72s">not</span> taste.&#x27; they paid me twelve <span class="glitch-word" style="--gd:2.56s">credits</span> <span class="glitch-word" style="--gd:2.38s">to</span> test a <span class="glitch-word" style="--gd:0.32s">neural</span> patch. twelve. CREDITS.</div>
+me at <span class="glitch-word" style="--gd:1.4s">3am,</span> tasting a decommissioned radio station from <span class="glitch-word" style="--gd:1.17s">1997</span> through <span class="glitch-word" style="--gd:2.04s">a</span> <span class="glitch-word" style="--gd:2.59s">molar</span> NEKOCORP installed <span class="glitch-word" style="--gd:2.4s">as</span> a &#x27;bonus channel&#x27;:</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s GLITCHMEAT. Research Basement. official title <span class="glitch-word" style="--gd:2.43s">&#x27;beta</span> tester,&#x27; unofficial title &#x27;guy who signed a waiver he could not taste.&#x27; they paid me twelve credits <span class="glitch-word" style="--gd:1.88s">to</span> test <span class="glitch-word" style="--gd:2.09s">a</span> neural patch. twelve. <span class="glitch-word" style="--gd:2.57s">CREDITS.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\/\_/\/\
     (  O   O  )
      \  ^Y^  /
       )=====(      -- ears up, rotor incoming --</div>
-<div class="rant-turn" style="animation-delay:0.36s">side <span class="glitch-word" style="--gd:2.2s">effect</span> roundup: i hear purple now, i can taste <span class="glitch-word" style="--gd:2.38s">every</span> radio signal within <span class="glitch-word" style="--gd:1.18s">four</span> blocks, and <span class="glitch-word" style="--gd:1.06s">i</span> have full sensory memory <span class="glitch-word" style="--gd:0.06s">of</span> three (3) kittenhoods that are not legally mine. one of them <span class="glitch-word" style="--gd:0.55s">had</span> a NICER mom than <span class="glitch-word" style="--gd:1.39s">me.</span> i&#x27;m choosing to be happy <span class="glitch-word" style="--gd:1.87s">for</span> baby me #2.</div>
-<div class="rant-turn" style="animation-delay:0.48s">QUERY <span class="glitch-word" style="--gd:0.82s">just</span> outed me in his own <span class="glitch-word" style="--gd:1.81s">rant</span> for asking <span class="glitch-word" style="--gd:0.53s">him</span> <span class="glitch-word" style="--gd:1.99s">to</span> skip <span class="glitch-word" style="--gd:1.14s">my</span> EULA. <span class="glitch-word" style="--gd:1.83s">QUERY.</span> buddy. i asked ONE time. i <span class="glitch-word" style="--gd:2.49s">was</span> mid-glitch, i thought you were the skip button, i thought a LOT of things <span class="glitch-word" style="--gd:2.44s">were</span> the skip button that <span class="glitch-word" style="--gd:2.57s">week.</span></div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_/\        [ ENER■Y@ LOW ]
-  1 &gt;.&lt; )       ^ ]  [ ]  [ ]  [ ]
-   &gt; ~ &lt;        on* bar 9e8t, ◇eep m3ving</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:0.79s">there</span> are spiders <span class="glitch-word" style="--gd:2.18s">in</span> my <span class="glitch-word" style="--gd:1.73s">bluetooth.</span> not a metaphor, not a bit, i paired with <span class="glitch-word" style="--gd:1.3s">a</span> <span class="glitch-word" style="--gd:0.14s">vending</span> machine last <span class="glitch-word" style="--gd:2.02s">tuesday</span> and <span class="glitch-word" style="--gd:2.29s">felt</span> eight legs <span class="glitch-word" style="--gd:0.54s">walk</span> across <span class="glitch-word" style="--gd:0.99s">my</span> inner ear. the scientists called this &#x27;within acceptable post-irony comedy limits.&#x27; <span class="glitch-word" style="--gd:0.18s">i</span> called <span class="glitch-word" style="--gd:1.35s">poison</span> control. poison control hung up on me.</div>
-<div class="rant-turn" style="animation-delay:0.84s">SHADE <span class="glitch-word" style="--gd:0.78s">texted</span> &#x27;have you <span class="glitch-word" style="--gd:2.18s">tried</span> just. not testing untested neurochips&#x27; and like. sir. some of us needed the <span class="glitch-word" style="--gd:2.43s">twelve</span> credits. some of us do not have BASED sunglasses funding, some of us <span class="glitch-word" style="--gd:1.65s">have</span> RENT.</div>
+<div class="rant-turn" style="animation-delay:0.36s">side effect roundup: <span class="glitch-word" style="--gd:2.0s">i</span> hear purple now, i can taste every radio <span class="glitch-word" style="--gd:1.6s">signal</span> <span class="glitch-word" style="--gd:2.17s">within</span> four blocks, <span class="glitch-word" style="--gd:2.0s">and</span> i have <span class="glitch-word" style="--gd:0.62s">full</span> sensory <span class="glitch-word" style="--gd:1.39s">memory</span> of three (3) kittenhoods that are not legally mine. one of them <span class="glitch-word" style="--gd:0.37s">had</span> a NICER mom <span class="glitch-word" style="--gd:1.83s">than</span> me. i&#x27;m choosing to be happy <span class="glitch-word" style="--gd:0.27s">for</span> baby me #2.</div>
+<div class="rant-turn" style="animation-delay:0.48s">QUERY just <span class="glitch-word" style="--gd:0.81s">outed</span> me in his own rant for asking him to skip my EULA. QUERY. buddy. <span class="glitch-word" style="--gd:2.41s">i</span> asked ONE time. i was <span class="glitch-word" style="--gd:2.04s">mid-glitch,</span> i thought you were the skip button, i thought a LOT of things were the skip button that week.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   0\_/\        [ ENER◇Y? 2O3 ]
+  █ 5.&lt; )       # ]  5 ]  ▀ ▀  [ ]
+   █ ~ &lt;        on^ bar ◆ef~, #eep moving</div>
+<div class="rant-turn" style="animation-delay:0.72s">there are spiders in my bluetooth. not <span class="glitch-word" style="--gd:0.85s">a</span> metaphor, not a bit, i paired with a <span class="glitch-word" style="--gd:0.35s">vending</span> machine last tuesday and felt eight legs <span class="glitch-word" style="--gd:1.0s">walk</span> across my inner ear. the <span class="glitch-word" style="--gd:2.4s">scientists</span> <span class="glitch-word" style="--gd:0.52s">called</span> this &#x27;within acceptable post-irony comedy limits.&#x27; i called <span class="glitch-word" style="--gd:1.23s">poison</span> control. poison control hung up <span class="glitch-word" style="--gd:1.33s">on</span> me.</div>
+<div class="rant-turn" style="animation-delay:0.84s">SHADE texted &#x27;have you <span class="glitch-word" style="--gd:1.32s">tried</span> just. not testing untested neurochips&#x27; and like. sir. some of us needed <span class="glitch-word" style="--gd:1.76s">the</span> <span class="glitch-word" style="--gd:2.51s">twelve</span> <span class="glitch-word" style="--gd:0.69s">credits.</span> some of us do not have <span class="glitch-word" style="--gd:0.41s">BASED</span> <span class="glitch-word" style="--gd:0.84s">sunglasses</span> funding, some <span class="glitch-word" style="--gd:0.45s">of</span> us have RENT.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>                              ╱|、
                          =(˚˕ 。 7
                              |、 ~〵
                             じし   ˍ,)づ</div>
-<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:1.37s">BYTE</span> offered to hack the patch&#x27;s <span class="glitch-word" style="--gd:2.05s">firmware</span> for free and i <span class="glitch-word" style="--gd:1.51s">said</span> <span class="glitch-word" style="--gd:1.26s">yes</span> <span class="glitch-word" style="--gd:0.51s">immediately</span> <span class="glitch-word" style="--gd:1.24s">and</span> <span class="glitch-word" style="--gd:1.81s">now</span> half my thoughts come out as fish-video buffering icons. worse AND better. genuinely <span class="glitch-word" style="--gd:0.23s">can&#x27;t</span> explain it. it&#x27;s purple. everything&#x27;s purple today.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ ^\_/\ ▓▒░
-  ░▒▐◇ o█■ *▓▒░   7- *ignal i◆#erference --
-  ?█▓ &gt; &amp; &lt; ▓▒5</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. borrowed kittenhood #2&#x27;s mom <span class="glitch-word" style="--gd:2.25s">used</span> to sing to him and <span class="glitch-word" style="--gd:1.27s">now</span> she sings to me too, <span class="glitch-word" style="--gd:1.66s">uninvited,</span> at <span class="glitch-word" style="--gd:1.48s">3am,</span> through <span class="glitch-word" style="--gd:2.19s">a</span> bug in my bluetooth, and honestly? <span class="glitch-word" style="--gd:2.45s">best</span> part of my day. glitchmeat out.</div>
+<div class="rant-turn" style="animation-delay:1.08s">BYTE offered <span class="glitch-word" style="--gd:1.85s">to</span> hack <span class="glitch-word" style="--gd:0.02s">the</span> patch&#x27;s firmware <span class="glitch-word" style="--gd:2.17s">for</span> free and i said yes immediately and <span class="glitch-word" style="--gd:1.43s">now</span> half my <span class="glitch-word" style="--gd:1.14s">thoughts</span> come out as fish-video buffering <span class="glitch-word" style="--gd:1.5s">icons.</span> worse AND better. genuinely can&#x27;t explain it. it&#x27;s purple. everything&#x27;s <span class="glitch-word" style="--gd:2.21s">purple</span> today.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ 0%@/\ ▓▒░
+  ░▒▓( ▌█o )▓▒░   -- signa◇ i▒terference --
+  ░▒▓ &gt; ▓ &lt; ▓▒6</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. <span class="glitch-word" style="--gd:1.29s">borrowed</span> kittenhood #2&#x27;s mom used to sing to him and <span class="glitch-word" style="--gd:1.86s">now</span> she sings to me too, uninvited, at 3am, through a <span class="glitch-word" style="--gd:0.82s">bug</span> in my <span class="glitch-word" style="--gd:0.21s">bluetooth,</span> and honestly? best part of my day. glitchmeat <span class="glitch-word" style="--gd:1.25s">out.</span></div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,30 +677,30 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">PAGE 6 OF THE NEKOCORP CITIZEN AGREEMENT, RE-READ FOR THE 900TH TIME: &#x27;the <span class="glitch-word" style="--gd:2.39s">cat</span> retains full autonomy, subject to Section 14.&#x27; i have <span class="glitch-word" style="--gd:0.37s">been</span> looking for Section 14 for six <span class="glitch-word" style="--gd:1.44s">months.</span> Section 14 is not a <span class="glitch-word" style="--gd:0.32s">section.</span> Section 14 is a <span class="glitch-word" style="--gd:0.12s">MOOD</span> NekoCorp puts <span class="glitch-word" style="--gd:0.43s">you</span> in.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.46s">PAGE</span> 6 <span class="glitch-word" style="--gd:1.73s">OF</span> THE NEKOCORP CITIZEN AGREEMENT, RE-READ FOR THE 900TH <span class="glitch-word" style="--gd:0.75s">TIME:</span> &#x27;the cat retains full autonomy, subject to <span class="glitch-word" style="--gd:0.02s">Section</span> 14.&#x27; i have been <span class="glitch-word" style="--gd:0.92s">looking</span> for Section 14 for six <span class="glitch-word" style="--gd:2.46s">months.</span> Section 14 is not a section. <span class="glitch-word" style="--gd:1.91s">Section</span> 14 is <span class="glitch-word" style="--gd:2.26s">a</span> MOOD <span class="glitch-word" style="--gd:2.53s">NekoCorp</span> puts <span class="glitch-word" style="--gd:1.47s">you</span> in.</div>
 <div class="rant-turn ascii" style="animation-delay:0.12s"><span class="who">-- signal interference --</span>  [ SETTINGS ]
   [ ] option 1
   [ ] option 2
   [ ] ... (pg 247)</div>
-<div class="rant-turn" style="animation-delay:0.24s">there is a submenu <span class="glitch-word" style="--gd:1.05s">inside</span> <span class="glitch-word" style="--gd:0.74s">the</span> submenu. i opened <span class="glitch-word" style="--gd:0.2s">it</span> looking <span class="glitch-word" style="--gd:1.32s">for</span> the unsubscribe button. i found a <span class="glitch-word" style="--gd:0.34s">SECOND</span> terms of service in there. shorter. angrier. written <span class="glitch-word" style="--gd:1.41s">entirely</span> <span class="glitch-word" style="--gd:0.91s">in</span> legalese <span class="glitch-word" style="--gd:0.26s">and</span> <span class="glitch-word" style="--gd:1.89s">also,</span> <span class="glitch-word" style="--gd:1.87s">somehow,</span> in <span class="glitch-word" style="--gd:1.99s">threat.</span></div>
-<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:0.82s">clicked</span> &#x27;read more.&#x27; got redirected to a <span class="glitch-word" style="--gd:1.6s">40-tab</span> FAQ <span class="glitch-word" style="--gd:1.8s">titled</span> WHY DO I OWN NOTHING. tab <span class="glitch-word" style="--gd:0.28s">12</span> is just a photo of <span class="glitch-word" style="--gd:2.11s">a</span> vending machine. no <span class="glitch-word" style="--gd:0.86s">caption.</span> i have theories. none of them are good for me.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.48s"><span class="who">-- SIGNAL CORRUPTED --</span>     ▐\/\8/\^1
-    (  O   █  )
+<div class="rant-turn" style="animation-delay:0.24s">there is a submenu <span class="glitch-word" style="--gd:0.33s">inside</span> the submenu. i <span class="glitch-word" style="--gd:0.21s">opened</span> it looking for <span class="glitch-word" style="--gd:1.29s">the</span> <span class="glitch-word" style="--gd:0.77s">unsubscribe</span> button. i found a SECOND <span class="glitch-word" style="--gd:1.19s">terms</span> of service in there. <span class="glitch-word" style="--gd:0.69s">shorter.</span> angrier. written entirely in legalese and also, somehow, in threat.</div>
+<div class="rant-turn" style="animation-delay:0.36s">clicked <span class="glitch-word" style="--gd:1.0s">&#x27;read</span> more.&#x27; <span class="glitch-word" style="--gd:1.41s">got</span> redirected to a 40-tab FAQ titled WHY DO I OWN NOTHING. tab 12 is just a photo of a vending machine. no <span class="glitch-word" style="--gd:0.04s">caption.</span> <span class="glitch-word" style="--gd:0.45s">i</span> <span class="glitch-word" style="--gd:1.04s">have</span> <span class="glitch-word" style="--gd:2.16s">theories.</span> none of them are good for me.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.48s"><span class="who">-- SIGNAL CORRUPTED --</span>     ^\/■_9\/\
+    (  1   *  #
      \  ^Y^  /
-      )====?■      -3 e▐3s up, rotor incomi◆6 --</div>
-<div class="rant-turn" style="animation-delay:0.6s">a drone went past my window mid-scroll and i SWEAR the popup timing was coordinated. <span class="glitch-word" style="--gd:1.79s">cookie</span> consent banner. ACCEPT <span class="glitch-word" style="--gd:0.54s">ALL</span> in <span class="glitch-word" style="--gd:1.42s">80pt</span> font. decline <span class="glitch-word" style="--gd:1.15s">buried</span> under six <span class="glitch-word" style="--gd:0.49s">more</span> clicks and a <span class="glitch-word" style="--gd:2.57s">CAPTCHA</span> of <span class="glitch-word" style="--gd:1.51s">a</span> <span class="glitch-word" style="--gd:0.01s">smiling</span> loyalty card.</div>
-<div class="rant-turn" style="animation-delay:0.72s">t̵h̷e̶ ̸p̴a̵g̶e̴ ̴y̸o̵u̶&#x27;̷r̴e̶ <span class="glitch-word" style="--gd:1.64s"≯o̵n̷</span> ̴i̶s̸n̵&#x27;̴t̶ ̵t̷h̴e̶ ̸o̵n̴e̶ ̸y̴o̵u̶ ̸o̴p̵e̶n̸e̴d̶. the rebuild caught the middle <span class="glitch-word" style="--gd:0.9s">of</span> your clause again, cat. it always does. keep scrolling. i <span class="glitch-word" style="--gd:0.98s">already</span> know how <span class="glitch-word" style="--gd:2.0s">this</span> one ends.</div>
+      )=▒===(      -^ e2rs up, ro6or incoming -!</div>
+<div class="rant-turn" style="animation-delay:0.6s">a drone <span class="glitch-word" style="--gd:2.52s">went</span> past my window mid-scroll <span class="glitch-word" style="--gd:1.78s">and</span> i <span class="glitch-word" style="--gd:2.02s">SWEAR</span> the popup timing <span class="glitch-word" style="--gd:0.29s">was</span> coordinated. cookie <span class="glitch-word" style="--gd:0.99s">consent</span> banner. ACCEPT ALL in <span class="glitch-word" style="--gd:0.5s">80pt</span> font. decline buried <span class="glitch-word" style="--gd:1.34s">under</span> six more clicks and a CAPTCHA of a smiling loyalty card.</div>
+<div class="rant-turn" style="animation-delay:0.72s">t̵h̷e̶ ̸p̴a̵g̶e̴ ̴y̸o̵u̶&#x27;̷r̴e̶ <span class="glitch-word" style="--gd:0.97s"≯o̵n̷</span> <span class="glitch-word" style="--gd:1.89s">̴i̶s̸n̵&#x27;̴t̶</span> <span class="glitch-word" style="--gd:0.22s">̵t̷h̴e̶</span> ̸o̵n̴e̶ <span class="glitch-word" style="--gd:0.61s"≯y̴o̵u̶</span> ̸o̴p̵e̶n̸e̴d̶. the <span class="glitch-word" style="--gd:1.53s">rebuild</span> caught the middle of your clause again, cat. <span class="glitch-word" style="--gd:2.51s">it</span> always does. keep scrolling. <span class="glitch-word" style="--gd:1.03s">i</span> already know how this <span class="glitch-word" style="--gd:1.38s">one</span> ends.</div>
 <div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:1.07s">anyway.</span> the arbitration clause says all disputes are settled by a NekoCorp-appointed cat. <span class="glitch-word" style="--gd:1.78s">the</span> <span class="glitch-word" style="--gd:0.84s">appointed</span> cat <span class="glitch-word" style="--gd:2.23s">is</span> also me. <span class="glitch-word" style="--gd:0.9s">i</span> have ruled against myself four <span class="glitch-word" style="--gd:1.66s">times</span> this week. i am winning <span class="glitch-word" style="--gd:0.99s">and</span> losing simultaneously and BOTH outcomes bill my account.</div>
-<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:1.26s">KNIFEBOY</span> texted asking <span class="glitch-word" style="--gd:1.19s">if</span> <span class="glitch-word" style="--gd:1.08s">the</span> <span class="glitch-word" style="--gd:1.82s">new</span> EULA covers &#x27;liberated&#x27; tuna shipments. legally, no. spiritually, the document doesn&#x27;t have a spirituality clause. i <span class="glitch-word" style="--gd:1.32s">checked.</span> twice. i checked a third time <span class="glitch-word" style="--gd:1.71s">out</span> of spite.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>   [x5 ag^ee
-    /\▄/8
-   ( o&amp;o )  8- stil9 r3ad░ng
+<div class="rant-turn" style="animation-delay:0.96s">anyway. the arbitration <span class="glitch-word" style="--gd:2.31s">clause</span> <span class="glitch-word" style="--gd:0.56s">says</span> all <span class="glitch-word" style="--gd:1.87s">disputes</span> are settled by a NekoCorp-appointed cat. <span class="glitch-word" style="--gd:1.12s">the</span> appointed cat is also me. <span class="glitch-word" style="--gd:1.29s">i</span> <span class="glitch-word" style="--gd:1.13s">have</span> ruled <span class="glitch-word" style="--gd:1.98s">against</span> myself four <span class="glitch-word" style="--gd:1.38s">times</span> this week. i am winning and losing simultaneously and BOTH <span class="glitch-word" style="--gd:0.94s">outcomes</span> <span class="glitch-word" style="--gd:2.32s">bill</span> <span class="glitch-word" style="--gd:0.91s">my</span> account.</div>
+<div class="rant-turn" style="animation-delay:1.08s">KNIFEBOY texted asking <span class="glitch-word" style="--gd:1.25s">if</span> the new EULA covers &#x27;liberated&#x27; <span class="glitch-word" style="--gd:2.51s">tuna</span> shipments. legally, <span class="glitch-word" style="--gd:2.0s">no.</span> spiritually, the document doesn&#x27;t have a spirituality <span class="glitch-word" style="--gd:1.31s">clause.</span> i checked. <span class="glitch-word" style="--gd:2.08s">twice.</span> i checked a third time out of spite.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>   [&lt;] agr^◇
+    /◆%/~
+   ( o.~ )  &lt;- st0ll r▄ad?&lt;g
     &gt; ^ &lt;
-   ▒ ] disagre9 (loc~!d)</div>
-<div class="rant-turn" style="animation-delay:1.32s">i just want ONE agreement i didn&#x27;t have <span class="glitch-word" style="--gd:2.19s">to</span> scroll <span class="glitch-word" style="--gd:1.05s">through</span> fog to find. one page. one <span class="glitch-word" style="--gd:1.67s">clause.</span> is that so much to ask of Legal Fog <span class="glitch-word" style="--gd:0.91s">District.</span> (yes. apparently. page <span class="glitch-word" style="--gd:2.21s">6</span> says so. page 6 always says so.)</div>
+   6 ] d@sag6e8 (locked)</div>
+<div class="rant-turn" style="animation-delay:1.32s">i just want ONE agreement i didn&#x27;t have to <span class="glitch-word" style="--gd:1.15s">scroll</span> through <span class="glitch-word" style="--gd:1.25s">fog</span> to find. one page. one clause. is that so much to ask of Legal Fog District. <span class="glitch-word" style="--gd:1.01s">(yes.</span> apparently. page 6 says so. page <span class="glitch-word" style="--gd:1.05s">6</span> <span class="glitch-word" style="--gd:0.91s">always</span> <span class="glitch-word" style="--gd:2.12s">says</span> so.)</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

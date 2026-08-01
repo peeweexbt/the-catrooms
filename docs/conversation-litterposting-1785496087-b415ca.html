@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,26 +677,26 @@ header p {
 <div class="narrator-badge">posted by <strong>POPUP</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">unpopular opinion: <span class="glitch-word" style="--gd:0.62s">the</span> worst part <span class="glitch-word" style="--gd:0.22s">of</span> being POPUP isn&#x27;t the ads. it&#x27;s that NEKOCORP thinks <span class="glitch-word" style="--gd:1.15s">&#x27;YOU</span> MAY ALSO LIKE&#x27; is a personality trait <span class="glitch-word" style="--gd:1.4s">now</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">cyber-eyes physically cannot close. Ad Plaza district. seven-second refresh rate. I have <span class="glitch-word" style="--gd:1.59s">seen</span> more <span class="glitch-word" style="--gd:1.47s">sponsored</span> tuna than actual tuna in my LIFE</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>      %-&gt;▀===#.
-     ( [3]  .. )
-      0-==Y==6&#x27;
-       |  |  |
-   ...picking th~ough the ne?n rain...</div>
-<div class="rant-turn" style="animation-delay:0.36s">blinked ONE (1) time <span class="glitch-word" style="--gd:1.45s">during</span> a sponsored message last week. <span class="glitch-word" style="--gd:0.47s">security</span> arrived before my eyelids finished reopening. still on probation</div>
-<div class="rant-turn" style="animation-delay:0.48s">SHADE keeps offering <span class="glitch-word" style="--gd:1.81s">me</span> the banned sunglasses like that fixes anything. <span class="glitch-word" style="--gd:1.61s">bro</span> I don&#x27;t have eyelids <span class="glitch-word" style="--gd:2.31s">to</span> protect, I have eyeballs that are <span class="glitch-word" style="--gd:0.95s">CONTRACTUALLY</span> OBLIGATED to stay open</div>
+<div class="rant-turn" style="animation-delay:0.0s">unpopular opinion: the <span class="glitch-word" style="--gd:1.8s">worst</span> part of being POPUP isn&#x27;t the ads. it&#x27;s that NEKOCORP thinks &#x27;YOU MAY ALSO LIKE&#x27; is a personality trait now</div>
+<div class="rant-turn" style="animation-delay:0.12s">cyber-eyes physically cannot close. Ad Plaza district. seven-second refresh rate. I have seen <span class="glitch-word" style="--gd:0.6s">more</span> sponsored tuna than actual <span class="glitch-word" style="--gd:2.59s">tuna</span> <span class="glitch-word" style="--gd:2.43s">in</span> my LIFE</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.24s"><span class="who">-- SIGNAL CORRUPTED --</span>      .-===■=▒.
+     ( [0]  .. ▄
+      &#x27;?==Y==-&#x27;
+       ▀  |  2
+   ...%icki■# ▀hrough th6 neo0 rain?..</div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:2.49s">blinked</span> ONE (1) time during a sponsored <span class="glitch-word" style="--gd:1.69s">message</span> last week. <span class="glitch-word" style="--gd:2.14s">security</span> arrived before <span class="glitch-word" style="--gd:1.58s">my</span> eyelids finished reopening. still <span class="glitch-word" style="--gd:0.05s">on</span> <span class="glitch-word" style="--gd:1.92s">probation</span></div>
+<div class="rant-turn" style="animation-delay:0.48s">SHADE keeps offering me the banned sunglasses like that fixes anything. bro I don&#x27;t have eyelids to protect, I have eyeballs that are CONTRACTUALLY OBLIGATED to stay open</div>
 <div class="rant-turn ascii" style="animation-delay:0.6s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:0.72s">QUERY texted me &#x27;at least your ads make sense&#x27; from inside the settings menu <span class="glitch-word" style="--gd:0.52s">he&#x27;s</span> been trapped in for <span class="glitch-word" style="--gd:1.98s">six</span> months. buddy. buddy. no <span class="glitch-word" style="--gd:2.29s">they</span> <span class="glitch-word" style="--gd:1.64s">don&#x27;t</span></div>
-<div class="rant-turn" style="animation-delay:0.84s">today&#x27;s <span class="glitch-word" style="--gd:2.07s">retina</span> rotation: tuna energy drink, tuna-scented candle, a fridge (unrelated, pretty sure NEKOCORP&#x27;s just guessing now), <span class="glitch-word" style="--gd:0.9s">tuna-flavored</span> HOPE</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>      .^=====4.
-     ( [0&gt;  .. 2
-      &#x27;-==Y==!&#x27;
-       |  |  |
-   ...pickin▄ th1o%?% the neon rain...</div>
-<div class="rant-turn" style="animation-delay:1.08s">the ad plaza doesn&#x27;t have a night mode. the ad <span class="glitch-word" style="--gd:1.09s">plaza</span> IS the night mode now. <span class="glitch-word" style="--gd:2.53s">we</span> just call <span class="glitch-word" style="--gd:0.46s">it</span> that so it sounds like a feature</div>
+<div class="rant-turn" style="animation-delay:0.72s">QUERY texted me &#x27;at <span class="glitch-word" style="--gd:2.57s">least</span> your ads make sense&#x27; from inside the settings menu he&#x27;s <span class="glitch-word" style="--gd:2.59s">been</span> trapped in <span class="glitch-word" style="--gd:1.28s">for</span> six months. buddy. buddy. no <span class="glitch-word" style="--gd:1.31s">they</span> don&#x27;t</div>
+<div class="rant-turn" style="animation-delay:0.84s">today&#x27;s retina rotation: tuna <span class="glitch-word" style="--gd:0.26s">energy</span> drink, tuna-scented candle, <span class="glitch-word" style="--gd:1.96s">a</span> fridge (unrelated, pretty <span class="glitch-word" style="--gd:2.47s">sure</span> NEKOCORP&#x27;s just guessing now), tuna-flavored HOPE</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.96s"><span class="who">-- SIGNAL CORRUPTED --</span>      .~=====-.
+     ( 19]  !. )
+      &#x27;-=◆Y==6&#x27;
+       4  |  8
+   ..█picking thro◆g2 the *eon rain...</div>
+<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:0.35s">the</span> ad plaza doesn&#x27;t have a night <span class="glitch-word" style="--gd:1.42s">mode.</span> the ad <span class="glitch-word" style="--gd:1.29s">plaza</span> IS the night <span class="glitch-word" style="--gd:2.54s">mode</span> now. <span class="glitch-word" style="--gd:1.53s">we</span> just call it that so it sounds like a <span class="glitch-word" style="--gd:0.58s">feature</span></div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -691,7 +704,7 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. <span class="glitch-word" style="--gd:1.11s">eyes</span> open. <span class="glitch-word" style="--gd:1.52s">as</span> always. as forever. <span class="glitch-word" style="--gd:0.97s">YOU</span> MAY ALSO LIKE: <span class="glitch-word" style="--gd:0.97s">sleep.</span> <span class="glitch-word" style="--gd:2.45s">I</span> would</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. eyes <span class="glitch-word" style="--gd:1.12s">open.</span> as always. as forever. YOU MAY ALSO LIKE: sleep. I would</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

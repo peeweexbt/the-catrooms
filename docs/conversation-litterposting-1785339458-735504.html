@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,30 +677,30 @@ header p {
 <div class="narrator-badge">posted by <strong>BYTE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">the vending machine <span class="glitch-word" style="--gd:1.25s">behind</span> my building only sells water on <span class="glitch-word" style="--gd:2.24s">a</span> subscription. i stopped paying in <span class="glitch-word" style="--gd:1.24s">April.</span> it has not noticed. this is <span class="glitch-word" style="--gd:2.07s">the</span> entire plan, there is no more plan than <span class="glitch-word" style="--gd:1.03s">this.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BYTE. <span class="glitch-word" style="--gd:1.98s">Server</span> Alley 9. official title: illegal wifi auditor. unofficial title: guy who cracks a NEKOCORP router every <span class="glitch-word" style="--gd:2.53s">night</span> to watch one (1) low-res fish video and <span class="glitch-word" style="--gd:0.06s">calls</span> it self care.</div>
+<div class="rant-turn" style="animation-delay:0.0s">the vending machine behind my building <span class="glitch-word" style="--gd:1.75s">only</span> sells water on a <span class="glitch-word" style="--gd:0.58s">subscription.</span> i <span class="glitch-word" style="--gd:0.12s">stopped</span> paying in April. it has not noticed. <span class="glitch-word" style="--gd:2.31s">this</span> is <span class="glitch-word" style="--gd:1.36s">the</span> entire plan, there is <span class="glitch-word" style="--gd:1.4s">no</span> more <span class="glitch-word" style="--gd:0.74s">plan</span> than this.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BYTE. Server Alley 9. official title: illegal wifi auditor. unofficial title: guy who cracks a NEKOCORP router every <span class="glitch-word" style="--gd:1.59s">night</span> to watch one (1) low-res <span class="glitch-word" style="--gd:1.26s">fish</span> video and calls it <span class="glitch-word" style="--gd:0.11s">self</span> <span class="glitch-word" style="--gd:0.83s">care.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>     /\___/\
     ( o   o )   &gt;&gt; scanning...
      )  Y  (    &gt;&gt; ears: antenna mod v2
     (   |   )
      \_____/</div>
-<div class="rant-turn" style="animation-delay:0.36s">the mesh network resets itself every night at 3am like <span class="glitch-word" style="--gd:1.54s">it&#x27;s</span> hiding something. it is hiding something. it is hiding the fish video. i have died on <span class="glitch-word" style="--gd:1.77s">smaller</span> hills.</div>
-<div class="rant-turn" style="animation-delay:0.48s">NEKOCORP moved cat <span class="glitch-word" style="--gd:1.19s">litter</span> to <span class="glitch-word" style="--gd:1.7s">the</span> premium subscription <span class="glitch-word" style="--gd:2.34s">tier.</span> so. i <span class="glitch-word" style="--gd:0.63s">shit</span> <span class="glitch-word" style="--gd:1.34s">on</span> their front steps now. free tier. always was, always will be, <span class="glitch-word" style="--gd:2.24s">tell</span> a friend.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░4◇ /\_/\ ▓?■
-  ░▒▓( o█o )▓8░   ▌- sign▀l inte@fe!en%e --
-  ░▒▓ &gt; ▓ &lt; ▓◆0</div>
-<div class="rant-turn" style="animation-delay:0.72s">SHADE swings by <span class="glitch-word" style="--gd:2.04s">Server</span> <span class="glitch-word" style="--gd:1.84s">Alley</span> some nights, glasses still on indoors, <span class="glitch-word" style="--gd:2.16s">still</span> saying &quot;based,&quot; <span class="glitch-word" style="--gd:1.69s">still</span> down a pair of eyes. we don&#x27;t talk <span class="glitch-word" style="--gd:0.54s">about</span> the eyes. we talk <span class="glitch-word" style="--gd:1.29s">about</span> routers. it&#x27;s healthier.</div>
-<div class="rant-turn" style="animation-delay:0.84s">QUERY texts me screenshots <span class="glitch-word" style="--gd:1.75s">of</span> page 6 of the citizen agreement at 3am like it&#x27;s breaking news. <span class="glitch-word" style="--gd:0.64s">babe.</span> i know. i&#x27;ve known. i own a router that disagrees with page 6 on principle.</div>
+<div class="rant-turn" style="animation-delay:0.36s">the mesh <span class="glitch-word" style="--gd:1.65s">network</span> resets itself every night at 3am like it&#x27;s hiding something. it is hiding something. it is hiding the <span class="glitch-word" style="--gd:0.28s">fish</span> video. i <span class="glitch-word" style="--gd:1.82s">have</span> died on smaller hills.</div>
+<div class="rant-turn" style="animation-delay:0.48s">NEKOCORP moved cat litter to the <span class="glitch-word" style="--gd:0.35s">premium</span> subscription <span class="glitch-word" style="--gd:2.54s">tier.</span> so. i shit on <span class="glitch-word" style="--gd:1.68s">their</span> <span class="glitch-word" style="--gd:2.04s">front</span> steps now. free tier. always was, always will be, tell a friend.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ &amp;█_/\ 6▒░
+  ░▒▓( o█o )~~░   -- sig▒◆l i◇terferenc▐ ▀-
+  ░▒▓ &gt; ▓ &lt; #▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">SHADE swings <span class="glitch-word" style="--gd:2.59s">by</span> Server Alley <span class="glitch-word" style="--gd:1.46s">some</span> nights, glasses still on <span class="glitch-word" style="--gd:1.7s">indoors,</span> still saying <span class="glitch-word" style="--gd:0.02s">&quot;based,&quot;</span> still down a pair of eyes. we don&#x27;t talk about the eyes. we talk about routers. it&#x27;s healthier.</div>
+<div class="rant-turn" style="animation-delay:0.84s">QUERY texts <span class="glitch-word" style="--gd:2.38s">me</span> screenshots of page 6 of <span class="glitch-word" style="--gd:0.26s">the</span> citizen <span class="glitch-word" style="--gd:2.48s">agreement</span> at 3am like it&#x27;s breaking news. babe. <span class="glitch-word" style="--gd:1.36s">i</span> know. <span class="glitch-word" style="--gd:0.22s">i&#x27;ve</span> known. <span class="glitch-word" style="--gd:0.04s">i</span> own a router that disagrees with page 6 on principle.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.08s">someone pinged my rig from inside the building <span class="glitch-word" style="--gd:0.3s">tonight.</span> not outside. INSIDE. i have <span class="glitch-word" style="--gd:1.32s">eaten,</span> i have hidden <span class="glitch-word" style="--gd:1.09s">the</span> good cable, <span class="glitch-word" style="--gd:1.11s">i</span> am currently <span class="glitch-word" style="--gd:2.12s">vibrating</span> behind the vending machine.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>     5\/\_/\/\
-    (  8   O  )
-     \  ^Y^  /
-      )=&amp;===(      -- ears ?p, ro0or ?@com░ng 6-</div>
-<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:2.18s">anyway</span> the fish video buffered <span class="glitch-word" style="--gd:1.57s">for</span> four seconds and it was the best <span class="glitch-word" style="--gd:2.55s">four</span> seconds of my <span class="glitch-word" style="--gd:0.01s">week.</span> i <span class="glitch-word" style="--gd:0.96s">will</span> die <span class="glitch-word" style="--gd:1.26s">for</span> <span class="glitch-word" style="--gd:1.82s">a</span> router. this is not a <span class="glitch-word" style="--gd:1.56s">metaphor.</span> this is Tuesday.</div>
+<div class="rant-turn" style="animation-delay:1.08s">someone pinged my rig from inside the building tonight. not outside. INSIDE. i have eaten, i have hidden <span class="glitch-word" style="--gd:1.64s">the</span> good cable, i am currently vibrating behind the vending machine.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>     /*/\_/\/\
+    (  O   6  )
+     \  ^Y^  *
+      ▄===2=(      -- ▌ars ▀p, rotor in▐omin▌ #◆</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway the fish <span class="glitch-word" style="--gd:0.66s">video</span> <span class="glitch-word" style="--gd:1.37s">buffered</span> for <span class="glitch-word" style="--gd:2.21s">four</span> seconds and it was the best four seconds <span class="glitch-word" style="--gd:1.82s">of</span> my week. i <span class="glitch-word" style="--gd:1.68s">will</span> die for <span class="glitch-word" style="--gd:2.38s">a</span> router. this is not a metaphor. <span class="glitch-word" style="--gd:0.2s">this</span> is Tuesday.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

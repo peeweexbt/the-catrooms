@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,32 +677,32 @@ header p {
 <div class="narrator-badge">posted by <strong>QUERY</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:1.61s">nobody:</span> / absolutely nobody, not <span class="glitch-word" style="--gd:0.94s">even</span> NEKOCORP LEGAL: / me, day six hundred and something, still scrolling <span class="glitch-word" style="--gd:1.4s">the</span> terms of service looking for the <span class="glitch-word" style="--gd:1.85s">part</span> where it ends</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s QUERY. Legal Fog <span class="glitch-word" style="--gd:1.5s">district.</span> official title: <span class="glitch-word" style="--gd:0.93s">terms-of-service</span> researcher, <span class="glitch-word" style="--gd:1.76s">which</span> <span class="glitch-word" style="--gd:1.11s">is</span> corporate for &#x27;guy who got lost on page 4 <span class="glitch-word" style="--gd:0.33s">and</span> never came back&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.24s">page <span class="glitch-word" style="--gd:1.84s">4</span> says I own my body. page 5 defines &#x27;my body&#x27; <span class="glitch-word" style="--gd:0.8s">as</span> <span class="glitch-word" style="--gd:1.24s">licensed</span> hardware. page 6 <span class="glitch-word" style="--gd:0.44s">says</span> page 4 was a promotional example. <span class="glitch-word" style="--gd:0.37s">I</span> <span class="glitch-word" style="--gd:2.2s">have</span> been trapped in the settings menu <span class="glitch-word" style="--gd:0.24s">for</span> six months AND I MUST SCREAM but <span class="glitch-word" style="--gd:0.97s">scrolling</span> really <span class="glitch-word" style="--gd:0.54s">fast</span> probably counts, right. <span class="glitch-word" style="--gd:1.63s">asking</span> for legal reasons. I am the legal reasons</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_/◇
-       ▌ -.- 9
-        █ ? &lt;
-   &gt;~~~▀~|||~~~~~~[D4TA ▐ACK&lt; LINKED]</div>
-<div class="rant-turn" style="animation-delay:0.48s">POPUP DMed me at 3am asking if there&#x27;s a <span class="glitch-word" style="--gd:1.11s">cancel</span> button. there is no cancel button. <span class="glitch-word" style="--gd:0.31s">there</span> is <span class="glitch-word" style="--gd:1.64s">a</span> survey asking why you want to leave, and <span class="glitch-word" style="--gd:2.03s">the</span> survey IS the terms of service, and the terms of service might also be me <span class="glitch-word" style="--gd:0.19s">now,</span> unclear, pending review</div>
-<div class="rant-turn" style="animation-delay:0.6s"><span class="glitch-word" style="--gd:0.65s">update</span> to the update: NEKOCORP quietly pushed a clause today that applies <span class="glitch-word" style="--gd:2.17s">retroactively</span> to YESTERDAY. read it <span class="glitch-word" style="--gd:2.27s">twice.</span> it got <span class="glitch-word" style="--gd:0.51s">longer</span> the second read. not <span class="glitch-word" style="--gd:1.04s">a</span> metaphor. the document <span class="glitch-word" style="--gd:1.24s">is</span> <span class="glitch-word" style="--gd:2.57s">growing.</span> I will not be elaborating further <span class="glitch-word" style="--gd:0.12s">at</span> this time</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>8     /\__/\
-( =1   • •   ~=
------2-U-U2-----!---?------
+<div class="rant-turn" style="animation-delay:0.0s">nobody: / <span class="glitch-word" style="--gd:1.08s">absolutely</span> nobody, not <span class="glitch-word" style="--gd:0.02s">even</span> NEKOCORP LEGAL: / me, day six hundred and something, still scrolling the terms <span class="glitch-word" style="--gd:0.28s">of</span> service looking for the part where it ends</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s QUERY. Legal Fog district. official title: terms-of-service researcher, which is corporate for &#x27;guy who got lost on page 4 <span class="glitch-word" style="--gd:0.29s">and</span> never came back&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.24s">page 4 says I own my body. page 5 defines &#x27;my <span class="glitch-word" style="--gd:2.39s">body&#x27;</span> as <span class="glitch-word" style="--gd:1.3s">licensed</span> hardware. page 6 says page 4 was a <span class="glitch-word" style="--gd:2.45s">promotional</span> example. I have been trapped in the settings <span class="glitch-word" style="--gd:1.55s">menu</span> for six months AND I MUST SCREAM but scrolling really fast probably counts, right. <span class="glitch-word" style="--gd:2.43s">asking</span> for legal <span class="glitch-word" style="--gd:1.51s">reasons.</span> I am the legal reasons</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>        /0_9\
+       5 ◆.- )
+        &gt; ^ &lt;
+   ~~~~~~7||~~~~~~[DATA J▌C3: L▀N0ED]</div>
+<div class="rant-turn" style="animation-delay:0.48s">POPUP DMed me at 3am asking if <span class="glitch-word" style="--gd:0.46s">there&#x27;s</span> a cancel button. there is no cancel button. there is a survey <span class="glitch-word" style="--gd:0.58s">asking</span> why you want <span class="glitch-word" style="--gd:1.01s">to</span> leave, and the survey IS the <span class="glitch-word" style="--gd:0.57s">terms</span> of service, and the terms of service might also be me now, unclear, pending review</div>
+<div class="rant-turn" style="animation-delay:0.6s">update to the update: NEKOCORP quietly pushed a clause <span class="glitch-word" style="--gd:1.31s">today</span> that applies retroactively to YESTERDAY. read it <span class="glitch-word" style="--gd:1.87s">twice.</span> it got longer the <span class="glitch-word" style="--gd:2.27s">second</span> read. not a metaphor. the document is growing. I will not be elaborating further at this time</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>)     /\__■\
+( =/   • •   ▐=
+----&gt;%9U-U▓-@----▐-----8---
 ▓                                |
-|    w▌ live &lt;n a soci0t9        |
+|    4e li20 i◇ a so3i*ty        |
 |                                |
-----&amp;---&lt;--------9-----9------</div>
-<div class="rant-turn" style="animation-delay:0.84s">unpopular opinion: I don&#x27;t think anyone at NEKOCORP legal <span class="glitch-word" style="--gd:1.89s">has</span> read the whole thing either. I think it&#x27;s <span class="glitch-word" style="--gd:1.55s">just</span> growing <span class="glitch-word" style="--gd:1.98s">on</span> its own now. I <span class="glitch-word" style="--gd:2.35s">think</span> it might be alive. I am NOT the one <span class="glitch-word" style="--gd:0.13s">telling</span> them that</div>
+-----@------~-*-&gt;-----░---1---</div>
+<div class="rant-turn" style="animation-delay:0.84s">unpopular opinion: I don&#x27;t think anyone at NEKOCORP legal has read the whole thing either. I think it&#x27;s just growing on its own <span class="glitch-word" style="--gd:1.62s">now.</span> <span class="glitch-word" style="--gd:1.36s">I</span> think it might be alive. <span class="glitch-word" style="--gd:1.78s">I</span> am NOT the <span class="glitch-word" style="--gd:0.91s">one</span> telling them that</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:1.08s"><span class="glitch-word" style="--gd:1.54s">texted</span> SNOOZE for <span class="glitch-word" style="--gd:0.03s">a</span> second opinion bc she&#x27;s unconscious 90% of the time which statistically makes her <span class="glitch-word" style="--gd:0.72s">the</span> most objective lawyer in this city. she said &#x27;sounds like a you problem&#x27; and then <span class="glitch-word" style="--gd:1.18s">billed</span> me $4.99 for the dream she said <span class="glitch-word" style="--gd:0.04s">it</span> in</div>
+<div class="rant-turn" style="animation-delay:1.08s">texted <span class="glitch-word" style="--gd:1.27s">SNOOZE</span> for a second opinion bc she&#x27;s unconscious <span class="glitch-word" style="--gd:0.38s">90%</span> of the time which statistically makes her the most objective lawyer in this city. she said <span class="glitch-word" style="--gd:1.22s">&#x27;sounds</span> like a you problem&#x27; <span class="glitch-word" style="--gd:0.48s">and</span> then <span class="glitch-word" style="--gd:1.37s">billed</span> me $4.99 for the dream she said it in</div>
 <div class="rant-turn ascii" style="animation-delay:1.2s"><span class="who">-- signal interference --</span>•.,¸,.•*`•.,¸¸,.•*¯.——————.
 •.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
 •.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
 •.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</div>
-<div class="rant-turn" style="animation-delay:1.32s">closing argument, submitted to nobody, reviewed by nobody: still haven&#x27;t found the end. don&#x27;t think there is one. see you on page eight, assuming page eight lets me leave</div>
+<div class="rant-turn" style="animation-delay:1.32s">closing <span class="glitch-word" style="--gd:0.6s">argument,</span> submitted to nobody, reviewed by nobody: still <span class="glitch-word" style="--gd:0.41s">haven&#x27;t</span> found the end. don&#x27;t <span class="glitch-word" style="--gd:0.71s">think</span> there is one. see you on <span class="glitch-word" style="--gd:0.03s">page</span> <span class="glitch-word" style="--gd:1.37s">eight,</span> assuming page eight lets me leave</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

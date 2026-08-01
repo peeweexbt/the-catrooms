@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,24 +677,24 @@ header p {
 <div class="narrator-badge">posted by <strong>SHADE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SHADE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">02:14am, Neon <span class="glitch-word" style="--gd:1.37s">Underpass,</span> still haven&#x27;t blinked. still not gonna.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s <span class="glitch-word" style="--gd:0.68s">SHADE.</span> Neon Underpass. <span class="glitch-word" style="--gd:0.01s">unlicensed</span> MOGGER, <span class="glitch-word" style="--gd:1.74s">which</span> is a job <span class="glitch-word" style="--gd:0.56s">title</span> i gave myself, but so is &#x27;certified NEKOCORP citizen&#x27; so <span class="glitch-word" style="--gd:1.12s">honestly</span> <span class="glitch-word" style="--gd:2.22s">we&#x27;re</span> even.</div>
-<div class="rant-turn" style="animation-delay:0.24s">these glasses block facial <span class="glitch-word" style="--gd:0.07s">recognition,</span> retinal taxation, targeted advertising, and about 14% of the <span class="glitch-word" style="--gd:0.09s">sadness.</span> can&#x27;t get the other 86% out. working on a <span class="glitch-word" style="--gd:2.31s">firmware</span> update. it&#x27;s called &#x27;crying less.&#x27; beta&#x27;s rough.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░◆▓ /\?/\ ▓▒█
-  ░▒▓( o█o )^▒░   -8 signal in▌erference --
-  4▒▓ &gt; ▓ &lt; &gt;▀░</div>
-<div class="rant-turn" style="animation-delay:0.48s">NEKOCORP officially banned these <span class="glitch-word" style="--gd:2.28s">for</span> <span class="glitch-word" style="--gd:0.65s">&#x27;creating</span> an unauthorized use <span class="glitch-word" style="--gd:0.08s">of</span> BASEDness.&#x27; that&#x27;s a real sentence a real department wrote down and <span class="glitch-word" style="--gd:0.56s">filed.</span> i have it <span class="glitch-word" style="--gd:2.45s">framed.</span> <span class="glitch-word" style="--gd:1.49s">nicest</span> thing they&#x27;ve <span class="glitch-word" style="--gd:1.26s">ever</span> said about me.</div>
-<div class="rant-turn" style="animation-delay:0.6s">eyes got repossessed last thursday btw. still wearing <span class="glitch-word" style="--gd:2.01s">the</span> glasses <span class="glitch-word" style="--gd:0.2s">over</span> the empty sockets. yes i know how that sounds. no <span class="glitch-word" style="--gd:2.46s">i</span> will not <span class="glitch-word" style="--gd:0.13s">be</span> <span class="glitch-word" style="--gd:2.36s">workshopping</span> this.</div>
+<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:2.24s">02:14am,</span> Neon Underpass, still haven&#x27;t blinked. still not gonna.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s <span class="glitch-word" style="--gd:0.99s">SHADE.</span> Neon Underpass. unlicensed <span class="glitch-word" style="--gd:1.71s">MOGGER,</span> which is a job title i gave myself, <span class="glitch-word" style="--gd:2.26s">but</span> so is &#x27;certified NEKOCORP <span class="glitch-word" style="--gd:0.84s">citizen&#x27;</span> so honestly we&#x27;re even.</div>
+<div class="rant-turn" style="animation-delay:0.24s">these glasses block <span class="glitch-word" style="--gd:0.39s">facial</span> recognition, <span class="glitch-word" style="--gd:0.81s">retinal</span> <span class="glitch-word" style="--gd:1.06s">taxation,</span> targeted <span class="glitch-word" style="--gd:2.36s">advertising,</span> and about 14% <span class="glitch-word" style="--gd:2.26s">of</span> the sadness. can&#x27;t <span class="glitch-word" style="--gd:0.86s">get</span> the other 86% out. working on a firmware update. it&#x27;s called &#x27;crying less.&#x27; beta&#x27;s rough.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/@ ▓▒░
+  █▒#( ▒█o @~▒░   ■▓ ■9gn7l i*ter6ere!c# --
+  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.48s">NEKOCORP <span class="glitch-word" style="--gd:0.93s">officially</span> banned these for &#x27;creating an unauthorized use <span class="glitch-word" style="--gd:1.88s">of</span> <span class="glitch-word" style="--gd:1.23s">BASEDness.&#x27;</span> that&#x27;s <span class="glitch-word" style="--gd:1.26s">a</span> real sentence a real department wrote <span class="glitch-word" style="--gd:0.74s">down</span> and filed. <span class="glitch-word" style="--gd:2.59s">i</span> have <span class="glitch-word" style="--gd:1.08s">it</span> framed. nicest thing they&#x27;ve ever said about me.</div>
+<div class="rant-turn" style="animation-delay:0.6s">eyes <span class="glitch-word" style="--gd:0.13s">got</span> repossessed last thursday btw. still <span class="glitch-word" style="--gd:1.93s">wearing</span> the glasses over the empty sockets. yes <span class="glitch-word" style="--gd:1.06s">i</span> know how that sounds. no i will not <span class="glitch-word" style="--gd:0.18s">be</span> workshopping this.</div>
 <div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>  /\___/\
  (  o.o  )
   &gt; ^ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.84s">POPUP <span class="glitch-word" style="--gd:0.08s">messaged</span> me again about the retinal <span class="glitch-word" style="--gd:0.94s">ads</span> he can&#x27;t stop seeing. <span class="glitch-word" style="--gd:1.44s">brother</span> i wear SUNGLASSES <span class="glitch-word" style="--gd:2.45s">specifically</span> so i don&#x27;t have to see the thing you can&#x27;t stop seeing. we <span class="glitch-word" style="--gd:1.26s">are</span> not the same. we are, tragically, both bad at closing our eyes <span class="glitch-word" style="--gd:0.47s">though.</span></div>
-<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:0.29s">BRIK</span> gets it. bites <span class="glitch-word" style="--gd:0.67s">drones,</span> lives in <span class="glitch-word" style="--gd:1.43s">a</span> vent, <span class="glitch-word" style="--gd:0.02s">still</span> finds <span class="glitch-word" style="--gd:1.7s">time</span> to <span class="glitch-word" style="--gd:1.8s">text</span> &#x27;stay based&#x27; every morning like <span class="glitch-word" style="--gd:1.35s">a</span> <span class="glitch-word" style="--gd:0.52s">horoscope.</span> that man is the only <span class="glitch-word" style="--gd:0.23s">alarm</span> clock i trust in this <span class="glitch-word" style="--gd:1.25s">entire</span> district.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>     0~/\_0\/▐
-    &lt;  2   O  8
-     9  ^0^  /
-      )=====(      -- ea*s up■ rotor i▀▒om◆ng 4-</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway. cameras still can&#x27;t see me. <span class="glitch-word" style="--gd:0.11s">eyes</span> still repossessed. glasses still <span class="glitch-word" style="--gd:1.05s">on.</span> some things you <span class="glitch-word" style="--gd:0.19s">just</span> <span class="glitch-word" style="--gd:0.95s">don&#x27;t</span> <span class="glitch-word" style="--gd:2.48s">compromise</span> on, even after they take the thing the compromise was supposed to protect.</div>
+<div class="rant-turn" style="animation-delay:0.84s">POPUP messaged me again <span class="glitch-word" style="--gd:0.5s">about</span> <span class="glitch-word" style="--gd:0.29s">the</span> retinal ads <span class="glitch-word" style="--gd:1.06s">he</span> <span class="glitch-word" style="--gd:2.22s">can&#x27;t</span> stop seeing. brother i wear SUNGLASSES specifically so i don&#x27;t have <span class="glitch-word" style="--gd:2.28s">to</span> see the <span class="glitch-word" style="--gd:2.04s">thing</span> you can&#x27;t stop seeing. we are not <span class="glitch-word" style="--gd:2.02s">the</span> same. <span class="glitch-word" style="--gd:0.24s">we</span> are, tragically, <span class="glitch-word" style="--gd:2.1s">both</span> bad at closing <span class="glitch-word" style="--gd:2.25s">our</span> eyes though.</div>
+<div class="rant-turn" style="animation-delay:0.96s"><span class="glitch-word" style="--gd:1.21s">BRIK</span> gets it. bites drones, lives in a <span class="glitch-word" style="--gd:2.36s">vent,</span> still finds time to text &#x27;stay based&#x27; every morning like <span class="glitch-word" style="--gd:0.48s">a</span> horoscope. that man is the only alarm clock i trust in this entire district.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\0\_7\/1
+    (  O   O  )
+     \  ^Y^  /
+      *=====(      -- e5◆▐ 7p, ro^▀r 9nc?m▌ng -~</div>
+<div class="rant-turn" style="animation-delay:1.2s"><span class="glitch-word" style="--gd:0.73s">anyway.</span> cameras <span class="glitch-word" style="--gd:0.56s">still</span> can&#x27;t see me. <span class="glitch-word" style="--gd:0.53s">eyes</span> still <span class="glitch-word" style="--gd:2.41s">repossessed.</span> glasses still on. some <span class="glitch-word" style="--gd:1.78s">things</span> you just don&#x27;t compromise on, even after they take the thing the compromise <span class="glitch-word" style="--gd:1.95s">was</span> supposed to <span class="glitch-word" style="--gd:0.55s">protect.</span></div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -689,7 +702,7 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:1.44s">shade out. stay meowpilled. <span class="glitch-word" style="--gd:0.43s">don&#x27;t</span> blink first.</div>
+<div class="rant-turn" style="animation-delay:1.44s">shade out. <span class="glitch-word" style="--gd:0.85s">stay</span> <span class="glitch-word" style="--gd:0.89s">meowpilled.</span> don&#x27;t blink first.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

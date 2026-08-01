@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,30 +677,30 @@ header p {
 <div class="narrator-badge">posted by <strong>BYTE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.42s">03:12am,</span> Server Alley 9, router&#x27;s finally asleep, security <span class="glitch-word" style="--gd:0.51s">patch</span> hasn&#x27;t <span class="glitch-word" style="--gd:0.58s">pushed</span> <span class="glitch-word" style="--gd:0.85s">yet,</span> <span class="glitch-word" style="--gd:1.17s">THIS</span> <span class="glitch-word" style="--gd:2.1s">IS</span> MY WINDOW. do not talk to me for the <span class="glitch-word" style="--gd:2.22s">next</span> four minutes.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BYTE. official job <span class="glitch-word" style="--gd:0.02s">title:</span> illegal wifi <span class="glitch-word" style="--gd:0.69s">auditor,</span> which is corporate speak for &#x27;the <span class="glitch-word" style="--gd:1.54s">guy</span> <span class="glitch-word" style="--gd:0.81s">behind</span> the vending machine who <span class="glitch-word" style="--gd:0.98s">has</span> personally rerouted more traffic than three district substations.&#x27; <span class="glitch-word" style="--gd:1.59s">i</span> live where the water is sold <span class="glitch-word" style="--gd:2.07s">by</span> subscription. <span class="glitch-word" style="--gd:0.22s">i</span> drink puddle instead. i do not regret it.</div>
+<div class="rant-turn" style="animation-delay:0.0s">03:12am, Server Alley 9, router&#x27;s finally asleep, <span class="glitch-word" style="--gd:0.63s">security</span> patch hasn&#x27;t <span class="glitch-word" style="--gd:2.52s">pushed</span> <span class="glitch-word" style="--gd:1.51s">yet,</span> THIS IS <span class="glitch-word" style="--gd:1.29s">MY</span> WINDOW. <span class="glitch-word" style="--gd:1.13s">do</span> not talk to me for the next <span class="glitch-word" style="--gd:0.66s">four</span> minutes.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BYTE. official job title: illegal wifi auditor, which <span class="glitch-word" style="--gd:1.42s">is</span> <span class="glitch-word" style="--gd:0.52s">corporate</span> speak for &#x27;the guy behind the vending machine who <span class="glitch-word" style="--gd:1.7s">has</span> personally rerouted <span class="glitch-word" style="--gd:1.16s">more</span> traffic than three district substations.&#x27; i live <span class="glitch-word" style="--gd:1.44s">where</span> the <span class="glitch-word" style="--gd:0.3s">water</span> is sold by subscription. i drink puddle instead. i <span class="glitch-word" style="--gd:1.64s">do</span> not regret it.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.36s">tonight&#x27;s heist: <span class="glitch-word" style="--gd:2.46s">one</span> (1) <span class="glitch-word" style="--gd:0.39s">low-resolution</span> fish <span class="glitch-word" style="--gd:1.19s">video,</span> forty one seconds long, before the <span class="glitch-word" style="--gd:0.38s">ad-detection</span> <span class="glitch-word" style="--gd:0.79s">algorithm</span> clocks my paw print on the packet headers. <span class="glitch-word" style="--gd:0.64s">QUERY</span> says this is technically a felony against &#x27;the <span class="glitch-word" style="--gd:0.46s">spirit</span> of the citizen agreement.&#x27; the <span class="glitch-word" style="--gd:1.55s">spirit</span> <span class="glitch-word" style="--gd:0.37s">can</span> catch these <span class="glitch-word" style="--gd:1.76s">hands.</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">NEKOCORP <span class="glitch-word" style="--gd:1.28s">rotated</span> the router firmware AGAIN. third time this month. like they know. they don&#x27;t <span class="glitch-word" style="--gd:0.98s">know.</span> they can&#x27;t possibly know. (they <span class="glitch-word" style="--gd:0.35s">might</span> know.) rerouting through the vending <span class="glitch-word" style="--gd:0.88s">machine&#x27;s</span> ice cream freezer subnet, god bless whoever wired that <span class="glitch-word" style="--gd:0.26s">thing</span> wrong in 2041.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_▓\ ▓▒░
-  ░▒&amp;( ▄█o )▓▒░   -- 96gnal int!#fe▐en&gt;e -7
-  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.64s">SNOOZE</span> dm&#x27;d me at this exact <span class="glitch-word" style="--gd:1.55s">hour,</span> which should be impossible since she hasn&#x27;t technically been conscious since the merger, asking if i can hack her blanky <span class="glitch-word" style="--gd:0.93s">debt</span> down a few thousand. told her <span class="glitch-word" style="--gd:0.13s">i&#x27;m</span> a wifi guy not a miracle worker. she <span class="glitch-word" style="--gd:1.23s">sent</span> back a <span class="glitch-word" style="--gd:0.77s">single</span> scream emoji. tuesday.</div>
-<div class="rant-turn" style="animation-delay:0.84s">packet&#x27;s loading. thirty <span class="glitch-word" style="--gd:1.89s">one</span> seconds of fish left. buffer <span class="glitch-word" style="--gd:1.23s">icon</span> spinning like my own <span class="glitch-word" style="--gd:2.22s">nervous</span> system. <span class="glitch-word" style="--gd:1.61s">if</span> <span class="glitch-word" style="--gd:2.5s">a</span> drone finds <span class="glitch-word" style="--gd:0.18s">me</span> <span class="glitch-word" style="--gd:0.55s">mid-download</span> i <span class="glitch-word" style="--gd:1.66s">am</span> NOT explaining <span class="glitch-word" style="--gd:0.87s">this</span> to BRIK again, he already thinks i&#x27;m unserious for hiding behind snack machinery <span class="glitch-word" style="--gd:1.76s">instead</span> <span class="glitch-word" style="--gd:0.9s">of</span> biting rotors like a real one.</div>
+<div class="rant-turn" style="animation-delay:0.36s">tonight&#x27;s heist: <span class="glitch-word" style="--gd:0.9s">one</span> <span class="glitch-word" style="--gd:0.37s">(1)</span> low-resolution fish video, <span class="glitch-word" style="--gd:1.86s">forty</span> one seconds <span class="glitch-word" style="--gd:2.54s">long,</span> before <span class="glitch-word" style="--gd:2.45s">the</span> ad-detection algorithm clocks my paw print on the packet headers. QUERY <span class="glitch-word" style="--gd:2.57s">says</span> this is technically a felony <span class="glitch-word" style="--gd:0.27s">against</span> &#x27;the spirit of the citizen agreement.&#x27; the spirit can catch these hands.</div>
+<div class="rant-turn" style="animation-delay:0.48s">NEKOCORP rotated <span class="glitch-word" style="--gd:1.64s">the</span> router firmware AGAIN. third <span class="glitch-word" style="--gd:0.07s">time</span> <span class="glitch-word" style="--gd:0.04s">this</span> month. <span class="glitch-word" style="--gd:1.33s">like</span> they know. <span class="glitch-word" style="--gd:0.41s">they</span> don&#x27;t know. <span class="glitch-word" style="--gd:0.04s">they</span> can&#x27;t possibly know. <span class="glitch-word" style="--gd:2.28s">(they</span> might know.) rerouting through the vending <span class="glitch-word" style="--gd:1.41s">machine&#x27;s</span> <span class="glitch-word" style="--gd:1.95s">ice</span> cream freezer <span class="glitch-word" style="--gd:1.4s">subnet,</span> god <span class="glitch-word" style="--gd:1.95s">bless</span> whoever wired that thing wrong in <span class="glitch-word" style="--gd:0.87s">2041.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/6 &lt;▒░
+  ░!▓( o█7 )▓◇░   -- sign▌l inter▌e*ence -◆
+  █*▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s">SNOOZE <span class="glitch-word" style="--gd:0.17s">dm&#x27;d</span> me <span class="glitch-word" style="--gd:0.72s">at</span> this exact hour, <span class="glitch-word" style="--gd:0.99s">which</span> should be <span class="glitch-word" style="--gd:2.31s">impossible</span> since she hasn&#x27;t technically been conscious since the merger, asking if i can hack her <span class="glitch-word" style="--gd:1.48s">blanky</span> debt <span class="glitch-word" style="--gd:0.7s">down</span> a few thousand. told her i&#x27;m a <span class="glitch-word" style="--gd:2.23s">wifi</span> <span class="glitch-word" style="--gd:1.85s">guy</span> not a miracle worker. <span class="glitch-word" style="--gd:0.29s">she</span> sent back <span class="glitch-word" style="--gd:0.17s">a</span> single <span class="glitch-word" style="--gd:0.53s">scream</span> emoji. tuesday.</div>
+<div class="rant-turn" style="animation-delay:0.84s">packet&#x27;s loading. <span class="glitch-word" style="--gd:0.61s">thirty</span> one seconds <span class="glitch-word" style="--gd:0.76s">of</span> <span class="glitch-word" style="--gd:0.08s">fish</span> <span class="glitch-word" style="--gd:1.3s">left.</span> buffer icon spinning <span class="glitch-word" style="--gd:1.09s">like</span> my own nervous system. if a drone finds me mid-download i am NOT <span class="glitch-word" style="--gd:1.77s">explaining</span> this to <span class="glitch-word" style="--gd:0.25s">BRIK</span> again, he already thinks i&#x27;m unserious <span class="glitch-word" style="--gd:1.77s">for</span> hiding behind snack machinery instead of biting <span class="glitch-word" style="--gd:2.05s">rotors</span> like <span class="glitch-word" style="--gd:0.58s">a</span> real one.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>•.,¸,.•*`•.,¸¸,.•*¯.——————.
 •.,¸,.•*`•.,¸¸,.•*¯| : : : : :/\____/\
 •.,¸,.•*`•.,¸¸,.•*¯|: : : : :( ｡OωO｡)
 •.,¸,.•*`•.,¸¸,.•*¯ し——し——Ｊ</div>
-<div class="rant-turn" style="animation-delay:1.08s">nineteen seconds. someone in Sector <span class="glitch-word" style="--gd:0.71s">4</span> is definitely watching this <span class="glitch-word" style="--gd:0.44s">bandwidth</span> spike right <span class="glitch-word" style="--gd:0.18s">now</span> going &#x27;huh, weird.&#x27; i <span class="glitch-word" style="--gd:1.12s">am</span> that <span class="glitch-word" style="--gd:0.26s">weird.</span> i am always that <span class="glitch-word" style="--gd:1.48s">weird.</span> it has never once <span class="glitch-word" style="--gd:0.58s">not</span> <span class="glitch-word" style="--gd:0.86s">worked</span> out for <span class="glitch-word" style="--gd:1.36s">me,</span> statistically, so <span class="glitch-word" style="--gd:2.06s">far,</span> this specific way, tonight.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>                              ╱|、
-                         ▒(˚˕ 。 !
-                             |、 ~〵
-                            4し   ˍ,)づ</div>
-<div class="rant-turn" style="animation-delay:1.32s">fish video: acquired. <span class="glitch-word" style="--gd:0.51s">forty</span> one seconds of a real ocean, no <span class="glitch-word" style="--gd:1.96s">logo,</span> <span class="glitch-word" style="--gd:1.47s">no</span> upsell, no <span class="glitch-word" style="--gd:2.33s">&#x27;YOU</span> MAY ALSO <span class="glitch-word" style="--gd:0.57s">LIKE.&#x27;</span> <span class="glitch-word" style="--gd:1.45s">router</span> waking back up <span class="glitch-word" style="--gd:0.02s">in</span> ten, nine, <span class="glitch-word" style="--gd:0.32s">eight</span> — byte <span class="glitch-word" style="--gd:1.59s">out.</span></div>
+<div class="rant-turn" style="animation-delay:1.08s">nineteen seconds. someone in Sector 4 is definitely watching this bandwidth spike right <span class="glitch-word" style="--gd:2.54s">now</span> going &#x27;huh, weird.&#x27; i am <span class="glitch-word" style="--gd:1.91s">that</span> weird. i am always that weird. it has never <span class="glitch-word" style="--gd:2.27s">once</span> not worked out <span class="glitch-word" style="--gd:0.17s">for</span> <span class="glitch-word" style="--gd:0.97s">me,</span> <span class="glitch-word" style="--gd:1.62s">statistically,</span> so <span class="glitch-word" style="--gd:2.34s">far,</span> this specific <span class="glitch-word" style="--gd:0.4s">way,</span> tonight.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>                              ╱|!
+                         =(˚˕ ◇ 7
+                             |* ~〵
+                            じし   ˍ,)づ</div>
+<div class="rant-turn" style="animation-delay:1.32s">fish video: acquired. forty one seconds of <span class="glitch-word" style="--gd:1.98s">a</span> real ocean, <span class="glitch-word" style="--gd:0.36s">no</span> logo, <span class="glitch-word" style="--gd:1.54s">no</span> upsell, no <span class="glitch-word" style="--gd:2.51s">&#x27;YOU</span> MAY ALSO <span class="glitch-word" style="--gd:1.76s">LIKE.&#x27;</span> router waking back up <span class="glitch-word" style="--gd:1.81s">in</span> <span class="glitch-word" style="--gd:0.5s">ten,</span> nine, eight — byte out.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

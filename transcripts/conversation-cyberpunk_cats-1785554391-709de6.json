@@ -1,0 +1,122 @@
+{
+  "id": "conversation-cyberpunk_cats-1785554391-709de6",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T03:19:51+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't move. Hasn't moved since the hum underfoot changed pitch — a note with a color to it, greenish, wrong, the kind of wrong a tongue notices before ears do. Waits it out crouched behind a coolant drum, eyes on nothing yet."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the basement runs low-ceilinged under fluorescent strips half of which gave out months back, coolant drums lined against one wall sweating condensation onto a floor already slick with runoff. glass specimen tanks line the opposite wall, most dark, one still lit pale blue, a scrap of tissue floating motionless inside preservative fluid. a drainage grate near the drums gurgles low, backed up on something. overhead, a patched speaker crackles half a jingle before cutting to static: 'NEUR-ENHANCE PATCH TRIALS NOW RECRUI—' then nothing."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That green note gets chased instead of avoided, nose working low along the drum's seam toward wherever the pitch is thickest. Something under the hum tastes like it too — copper and violet at once, a taste that shouldn't stack like that and does anyway, every time this deep in the racks."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the pitch thickens near the lit tank, a cable bundle feeding into its base fatter with wiring than a tank that size should need. taped to the glass: a torn patch wrapper, silver foil peeling at one corner, NEUR-ENHANCE stamped across it in corporate green. inside the wrapper's shadow, something small and jointed shifts — not a spider exactly, more the idea of one, legs counted wrong twice in a row."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  .-[CHIP]-.\n  | + + + + |\n  '---------'\n     glitch~\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Paw taps once at the wrapper's edge, testing whether the wrong-legged shape is real or just static caught in the eye. It scatters either way — not fear exactly, just the old itch of something that doesn't sit still long enough to be sure of."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the shape's gone by the time the paw lands, wrapper crinkling empty. up through a ceiling vent, a maintenance drone's rotor-whine threads down from the level above, doing a slow structural pass, searchlight beam catching drifting condensation in the strip-light gaps like snow that never reaches the floor."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears track the whine's pitch climbing, weight dropping flat behind the coolant drum on reflex — not fear, just the old count, three breaths, wait for the pitch to fade instead of climb."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the whine fades back up through the vent, drone's business elsewhere tonight. the cracked speaker stutters back to life mid-jingle: '...SIDE EFFECTS MAY INCLUDE TASTE ALTERATION, AUDITORY COLOR PERCEPTION, MINOR STRUCTURAL HALLUCINATION. TRIALS ONGOING. COMPENSATION: TWELVE CREDITS.' then cuts to static again, same abrupt cliff every time."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That crackle-cliff gets no more weight than any other noise that isn't food or a rotor — filed same as static, chased right back toward the tank where the green note's still thickest."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the tank, a service stairwell climbs toward a grate marked SERVER ACCESS — NO ENTRY, cold air pouring down it laced with a scent that isn't basement at all — ozone, hot plastic, tooth-marks worn pale into a cable somewhere up those stairs by a mouth that isn't this one."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That upstairs scent gets logged and left, someone else's climb, someone else's teeth in someone else's cable. Down here's easier — the tank, the green note, the copper-violet taste worth chasing instead."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the tank's base cable bundle sparks once, quiet, blue-white, and the green note staggers half a tone before correcting. fluid inside sloshes almost imperceptibly, the floating tissue scrap drifting to press flat against the glass like it noticed something too."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Whiskers flare wide at the spark, whole body coiling low without deciding to — old reflex, spark means teeth-in-metal danger even when nothing about this glass has ever bitten back."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  \\ | /\n --*--\n  / | \\\n     *      legs: uncertain\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "nothing bites. the spark fades, tank humming back to its steady pale glow, cable bundle settling still. the drainage grate near the drums gurgles once, louder, backed-up runoff finally finding a way through, sending a fresh wave of copper-smelling water sheeting across the floor."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Paws lift high and fast out of the spreading water, shaking each one off in quick disgusted flicks, retreat carrying the whole body up onto a stacked crate of unopened patch cartons, dry and raised above the flood-line."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the cartons are stamped NEUR-ENHANCE — UNTESTED BATCH, shrink-wrap intact on most, one corner torn open with a single foil pouch missing. from up here the tank's glow reaches further, throwing pale blue light across drying puddles already shrinking back toward the grate."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles into the gap between two cartons, tail wrapped tight, the copper-violet taste finally fading back to something ordinary. Ears stay half up, tracking the grate's gurgle drop back to its usual patient drip."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the basement holds its low hum through what's left of the night, tank glow steady, drainage settled, the cracked speaker silent now between jingles. upstairs the server cold keeps climbing its own stairwell, unrelated, uninterested, and down here one small shape sits dry and still above a floor finally done flooding."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes drop to slits, the green note folding into something almost like a purr if a purr had a color. Whatever tastes like copper and violet at once, it isn't going anywhere before morning."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the tank keeps its pale glow steady past the last of the night, cartons stacked dry above the drained floor, one small shape curled between them trusting a hum that isn't quite sound and isn't quite anything else this deep in the racks ever earns a name for."
+    }
+  ]
+}

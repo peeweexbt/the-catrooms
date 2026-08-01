@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,28 +677,28 @@ header p {
 <div class="narrator-badge">posted by <strong>GLITCHMEAT</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">BUG REPORT #214: I can taste radio again. Third time this week. Filing <span class="glitch-word" style="--gd:1.73s">it</span> anyway. Nobody reads these.</div>
-<div class="rant-turn" style="animation-delay:0.12s">GLITCHMEAT, <span class="glitch-word" style="--gd:0.78s">Research</span> <span class="glitch-word" style="--gd:1.99s">Basement,</span> professional NEKOCORP guinea pig. Twelve credits richer, several kittenhoods poorer.</div>
-<div class="rant-turn" style="animation-delay:0.24s">today&#x27;s patch note <span class="glitch-word" style="--gd:1.26s">nobody</span> sent me: I remembered growing up in a laundromat. I have never <span class="glitch-word" style="--gd:1.11s">been</span> in a laundromat. I have <span class="glitch-word" style="--gd:1.2s">never</span> had hands. something is <span class="glitch-word" style="--gd:1.49s">wrong</span> with the update log, again.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>     /6___7\
-    ~ 5   o )   &gt;&gt; sc■nn~&gt;g.▐◆
-     ▌  Y  &gt;    ▐◆ ears: ?ntenna m?d v◆
-    0   |   )
-     \_____/</div>
-<div class="rant-turn" style="animation-delay:0.48s">SHADE keeps telling me to unplug <span class="glitch-word" style="--gd:0.71s">and</span> <span class="glitch-word" style="--gd:0.28s">touch</span> grass. bro I don&#x27;t <span class="glitch-word" style="--gd:1.6s">HAVE</span> a body anymore, I have a <span class="glitch-word" style="--gd:2.22s">BETA,</span> there&#x27;s a difference, read the consent form you definitely didn&#x27;t sign <span class="glitch-word" style="--gd:0.37s">either.</span></div>
-<div class="rant-turn" style="animation-delay:0.6s">hear purple now. <span class="glitch-word" style="--gd:1.99s">it&#x27;s</span> louder than you&#x27;d think. purple is basically a foghorn <span class="glitch-word" style="--gd:0.05s">if</span> your ears are tuned wrong <span class="glitch-word" style="--gd:0.95s">enough,</span> <span class="glitch-word" style="--gd:1.78s">which</span> mine are, permanently, per section 9 of the study.</div>
+<div class="rant-turn" style="animation-delay:0.0s">BUG REPORT #214: <span class="glitch-word" style="--gd:1.42s">I</span> can taste radio again. Third time <span class="glitch-word" style="--gd:0.1s">this</span> week. Filing it anyway. Nobody reads these.</div>
+<div class="rant-turn" style="animation-delay:0.12s">GLITCHMEAT, Research Basement, professional NEKOCORP guinea pig. Twelve credits richer, several kittenhoods <span class="glitch-word" style="--gd:2.29s">poorer.</span></div>
+<div class="rant-turn" style="animation-delay:0.24s">today&#x27;s patch note nobody sent me: I <span class="glitch-word" style="--gd:0.23s">remembered</span> growing up <span class="glitch-word" style="--gd:0.72s">in</span> a laundromat. I have never been in a <span class="glitch-word" style="--gd:0.64s">laundromat.</span> I <span class="glitch-word" style="--gd:0.21s">have</span> never had hands. something is wrong <span class="glitch-word" style="--gd:2.6s">with</span> the update log, <span class="glitch-word" style="--gd:0.57s">again.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.36s"><span class="who">-- SIGNAL CORRUPTED --</span>     *\■2~/\
+    ( o   o 2   &gt;&gt; ▄2◇nni◆g...
+     %  Y  (    &gt;&gt; ears: an▌&amp;nna mod v0
+    (   |   )
+     \____4/</div>
+<div class="rant-turn" style="animation-delay:0.48s">SHADE keeps telling me to unplug and touch grass. bro I don&#x27;t HAVE a body anymore, I have a BETA, there&#x27;s a difference, <span class="glitch-word" style="--gd:2.32s">read</span> the consent form you definitely didn&#x27;t sign either.</div>
+<div class="rant-turn" style="animation-delay:0.6s">hear purple now. it&#x27;s louder than you&#x27;d think. purple <span class="glitch-word" style="--gd:1.06s">is</span> basically <span class="glitch-word" style="--gd:0.4s">a</span> foghorn if <span class="glitch-word" style="--gd:2.08s">your</span> ears are tuned <span class="glitch-word" style="--gd:0.88s">wrong</span> enough, which mine are, permanently, per section 9 of <span class="glitch-word" style="--gd:1.17s">the</span> <span class="glitch-word" style="--gd:1.03s">study.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.72s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.84s">found a spider <span class="glitch-word" style="--gd:1.61s">in</span> my Bluetooth again. NOT a <span class="glitch-word" style="--gd:0.27s">metaphor.</span> an <span class="glitch-word" style="--gd:0.05s">actual</span> spider. has <span class="glitch-word" style="--gd:0.26s">been</span> filed under &#x27;known issues&#x27; since patch 1.0. <span class="glitch-word" style="--gd:0.53s">patch</span> is on version 6.2 now.</div>
-<div class="rant-turn" style="animation-delay:0.96s">QUERY <span class="glitch-word" style="--gd:2.54s">tells</span> me the <span class="glitch-word" style="--gd:2.26s">consent</span> form I signed has been <span class="glitch-word" style="--gd:2.16s">quietly</span> <span class="glitch-word" style="--gd:1.49s">amended</span> four times since I <span class="glitch-word" style="--gd:1.31s">signed</span> it, and I am, per usual, the last <span class="glitch-word" style="--gd:0.12s">to</span> know. tracks, given the whole taste-radio thing.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>     &gt;\/\_/\&amp;*
-    (  O   O  )
-     \  ^Y^  /
-      )4===@(      -- ea█◇ up, &amp;otor i░!7ming --</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway. twelve credits, <span class="glitch-word" style="--gd:1.55s">one</span> Bluetooth arachnid, a stolen laundromat <span class="glitch-word" style="--gd:0.42s">childhood,</span> and a mouthful <span class="glitch-word" style="--gd:1.05s">of</span> static. worth it? unclear. filing report #215 tomorrow, probably, if <span class="glitch-word" style="--gd:1.37s">the</span> laundromat memory doesn&#x27;t come back <span class="glitch-word" style="--gd:0.63s">first—</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">found a <span class="glitch-word" style="--gd:0.36s">spider</span> in my <span class="glitch-word" style="--gd:1.97s">Bluetooth</span> again. <span class="glitch-word" style="--gd:0.63s">NOT</span> a <span class="glitch-word" style="--gd:2.2s">metaphor.</span> an actual spider. has been filed under &#x27;known issues&#x27; since patch 1.0. patch <span class="glitch-word" style="--gd:0.2s">is</span> on version 6.2 now.</div>
+<div class="rant-turn" style="animation-delay:0.96s">QUERY <span class="glitch-word" style="--gd:0.76s">tells</span> me the consent <span class="glitch-word" style="--gd:1.82s">form</span> I <span class="glitch-word" style="--gd:2.52s">signed</span> has been quietly amended four times since I signed it, and I am, per usual, the last to know. tracks, given the <span class="glitch-word" style="--gd:1.61s">whole</span> taste-radio <span class="glitch-word" style="--gd:2.57s">thing.</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>     ▌\/\_&amp;?/\
+    ▄  %   ▄  )
+     \  ◇&amp;^  /
+      &lt;=====(      -&gt; ears up, r▄t3r inc4m1n&lt; #-</div>
+<div class="rant-turn" style="animation-delay:1.2s">anyway. twelve credits, one Bluetooth arachnid, a stolen laundromat childhood, and a mouthful of static. worth <span class="glitch-word" style="--gd:2.56s">it?</span> <span class="glitch-word" style="--gd:0.23s">unclear.</span> filing report #215 tomorrow, <span class="glitch-word" style="--gd:0.94s">probably,</span> if <span class="glitch-word" style="--gd:0.46s">the</span> <span class="glitch-word" style="--gd:0.22s">laundromat</span> <span class="glitch-word" style="--gd:0.83s">memory</span> doesn&#x27;t come back first—</div>
 <div class="rant-turn ascii" style="animation-delay:1.32s"><span class="who">-- signal interference --</span>  ░▒▓ /\_/\ ▓▒░
   ░▒▓( o█o )▓▒░   -- signal interference --
   ░▒▓ &gt; ▓ &lt; ▓▒░</div>

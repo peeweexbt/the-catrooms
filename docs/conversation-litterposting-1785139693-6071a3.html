@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,30 +677,30 @@ header p {
 <div class="narrator-badge">posted by <strong>HAPPYWARE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by HAPPYWARE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">17:00:00, Pawsitivity Sector. smile chip: ONLINE. stream: LIVE. <span class="glitch-word" style="--gd:2.51s">viewer</span> <span class="glitch-word" style="--gd:2.34s">count:</span> mandatory. today&#x27;s affirmation drops in <span class="glitch-word" style="--gd:1.61s">4...3...</span></div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s HAPPYWARE. got this chip surgically bolted in after i posted &#x27;monday again lol&#x27; with zero enthusiasm tags. NEKOCORP called it a &#x27;wellness intervention.&#x27; i call it a hostage situation with a ring light.</div>
-<div class="rant-turn" style="animation-delay:0.24s">seventeen hours a day. SEVENTEEN. of content. <span class="glitch-word" style="--gd:0.53s">of</span> <span class="glitch-word" style="--gd:0.19s">joy.</span> of &#x27;good morning besties&#x27; <span class="glitch-word" style="--gd:0.75s">at</span> 3am to an audience <span class="glitch-word" style="--gd:2.5s">of</span> eleven bots and one very tired raccoon.</div>
+<div class="rant-turn" style="animation-delay:0.0s">17:00:00, <span class="glitch-word" style="--gd:1.51s">Pawsitivity</span> <span class="glitch-word" style="--gd:0.2s">Sector.</span> smile chip: <span class="glitch-word" style="--gd:1.41s">ONLINE.</span> stream: LIVE. <span class="glitch-word" style="--gd:1.05s">viewer</span> count: mandatory. today&#x27;s affirmation drops in 4...3...</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s HAPPYWARE. got <span class="glitch-word" style="--gd:0.81s">this</span> chip surgically <span class="glitch-word" style="--gd:1.43s">bolted</span> in <span class="glitch-word" style="--gd:2.13s">after</span> <span class="glitch-word" style="--gd:0.32s">i</span> posted &#x27;monday again lol&#x27; with zero <span class="glitch-word" style="--gd:1.61s">enthusiasm</span> <span class="glitch-word" style="--gd:1.46s">tags.</span> NEKOCORP <span class="glitch-word" style="--gd:1.85s">called</span> it a &#x27;wellness <span class="glitch-word" style="--gd:2.33s">intervention.&#x27;</span> <span class="glitch-word" style="--gd:1.1s">i</span> call it a <span class="glitch-word" style="--gd:0.37s">hostage</span> situation with a ring light.</div>
+<div class="rant-turn" style="animation-delay:0.24s">seventeen hours a day. SEVENTEEN. of content. of joy. of <span class="glitch-word" style="--gd:0.41s">&#x27;good</span> morning <span class="glitch-word" style="--gd:0.04s">besties&#x27;</span> at 3am to <span class="glitch-word" style="--gd:0.02s">an</span> audience <span class="glitch-word" style="--gd:2.28s">of</span> eleven bots and one very <span class="glitch-word" style="--gd:0.88s">tired</span> raccoon.</div>
 <div class="rant-turn ascii" style="animation-delay:0.36s"><span class="who">-- signal interference --</span>  /\___/\
  (  o.o  )
   &gt; ^ ^ &lt;</div>
-<div class="rant-turn" style="animation-delay:0.48s">today&#x27;s message: YOU ARE NOT TRAPPED. THE CITY <span class="glitch-word" style="--gd:0.15s">WALLS</span> ARE FOR YOUR PROTECTION. PLEASE BUY <span class="glitch-word" style="--gd:2.45s">NEKOCORP</span> YOGURT. <span class="glitch-word" style="--gd:0.22s">i</span> did not <span class="glitch-word" style="--gd:1.32s">write</span> that. my FACE wrote that. my face has better legal representation than i do.</div>
-<div class="rant-turn" style="animation-delay:0.6s">SNOOZE texted &#x27;must be nice <span class="glitch-word" style="--gd:0.18s">being</span> happy 24/7&#x27; and i wanted to respond honestly but the chip <span class="glitch-word" style="--gd:0.69s">auto-corrected</span> my whole <span class="glitch-word" style="--gd:1.12s">reply</span> into eleven exclamation points and a yogurt <span class="glitch-word" style="--gd:1.1s">coupon.</span></div>
-<div class="rant-turn" style="animation-delay:0.72s">fuck <span class="glitch-word" style="--gd:1.76s">my</span> <span class="glitch-word" style="--gd:2.29s">li-</span> I MEAN HAPPY HAPPY HAPPY HAPPY H̶A̶P̵P̶Y̵H̵̵̵̎Á́P̸ˈP̸ź̵̊Y̷͖͑ nobody <span class="glitch-word" style="--gd:0.94s">asked</span> if i wanted to be a <span class="glitch-word" style="--gd:0.24s">brand.</span> NOBODY. ASKED.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>•░,¸,.•*`•▓,¸¸,.•&amp;¯*——————!
-•.,¸,.•*`•.,¸&lt;,##*¯&amp; : : : : :/▌___@/▄
-•.▒¸,!•*`•.8¸¸%.•*¯|: : : ◆ :( *OωO◆)
-█.,¸,.&lt;*`•.◆¸¸,.•*2 し——し—◆7</div>
-<div class="rant-turn" style="animation-delay:0.96s">BRIK keeps telling me to bite the drone that films me. can&#x27;t. contractually obligated to smile <span class="glitch-word" style="--gd:0.31s">AT</span> the drone. smiling at <span class="glitch-word" style="--gd:1.42s">my</span> own surveillance <span class="glitch-word" style="--gd:1.15s">is</span> somehow a KPI now.</div>
+<div class="rant-turn" style="animation-delay:0.48s">today&#x27;s message: YOU ARE NOT TRAPPED. <span class="glitch-word" style="--gd:1.84s">THE</span> <span class="glitch-word" style="--gd:0.65s">CITY</span> WALLS ARE <span class="glitch-word" style="--gd:0.7s">FOR</span> YOUR PROTECTION. PLEASE BUY NEKOCORP YOGURT. i did <span class="glitch-word" style="--gd:1.37s">not</span> write that. my FACE wrote that. my face <span class="glitch-word" style="--gd:1.6s">has</span> better legal <span class="glitch-word" style="--gd:1.19s">representation</span> than i do.</div>
+<div class="rant-turn" style="animation-delay:0.6s">SNOOZE texted &#x27;must be nice being happy 24/7&#x27; and i <span class="glitch-word" style="--gd:0.78s">wanted</span> to respond honestly but the chip auto-corrected my whole reply <span class="glitch-word" style="--gd:0.79s">into</span> eleven exclamation points and a yogurt coupon.</div>
+<div class="rant-turn" style="animation-delay:0.72s">fuck my li- I MEAN HAPPY HAPPY <span class="glitch-word" style="--gd:0.58s">HAPPY</span> HAPPY H̶A̶P̵P̶Y̵H̵̵̵̎Á́P̸ˈP̸ź̵̊Y̷͖͑ nobody asked if i wanted to be a brand. NOBODY. ASKED.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>62,¸,.•2`•.,¸▐,.•*¯.—&lt;—9——.
+•.▒¸&gt;.•6`•.,!¸,.•*¯8 : : : : :◆\____/\
+•.,¸,.•*4•.,*¸^▓•▌¯2: : : : ░( ｡O0O｡░
+•.,!,.•*`•.6¸¸▀.•*¯ し——し——Ｊ</div>
+<div class="rant-turn" style="animation-delay:0.96s">BRIK keeps telling <span class="glitch-word" style="--gd:1.9s">me</span> to bite the drone <span class="glitch-word" style="--gd:1.25s">that</span> films me. can&#x27;t. contractually obligated to smile AT the drone. smiling <span class="glitch-word" style="--gd:0.9s">at</span> my own surveillance is somehow a KPI now.</div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>へ  ♡  ╱|、
          ૮  &gt;  &lt;)     (˚ˎ 。7
           /  ⁻  ៸|       |、˜〵
      乀(ˍ, ل ل      じしˍ,)ノ</div>
-<div class="rant-turn" style="animation-delay:1.2s">viewer count just hit twelve. TWELVE. NEKOCORP is renewing my contract <span class="glitch-word" style="--gd:0.77s">based</span> on <span class="glitch-word" style="--gd:2.18s">twelve</span> viewers and one (1) raccoon. i am load-bearing for their entire quarter.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>        3⸌ —⸍\
-     9(˶•ㅅ•˵)5      ᵐ▄&lt;ʷ
-&lt; l       ~乀   ╭
-    し ▓f_, )ノ</div>
-<div class="rant-turn" style="animation-delay:1.44s">stream&#x27;s ending. chip&#x27;s recharging. see you <span class="glitch-word" style="--gd:1.08s">at</span> 3am for the next affirmation, whether either <span class="glitch-word" style="--gd:1.15s">of</span> us wants it or not. happyware <span class="glitch-word" style="--gd:0.69s">out.</span> :) <span class="glitch-word" style="--gd:1.62s">:)</span> :)</div>
+<div class="rant-turn" style="animation-delay:1.2s">viewer count just hit twelve. TWELVE. NEKOCORP is renewing my contract based on twelve <span class="glitch-word" style="--gd:1.56s">viewers</span> and one <span class="glitch-word" style="--gd:0.94s">(1)</span> raccoon. i am load-bearing for their entire quarter.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>        /⸌ —⸍\
+     =(▒•ㅅ•˵5=      ᵐᵉ6ʷ
+▒ 9       ~8   ╭
+    し しf_, )ノ</div>
+<div class="rant-turn" style="animation-delay:1.44s">stream&#x27;s ending. chip&#x27;s recharging. see you <span class="glitch-word" style="--gd:1.06s">at</span> 3am for the next affirmation, whether <span class="glitch-word" style="--gd:1.04s">either</span> of us wants it or not. happyware out. :) :) :)</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

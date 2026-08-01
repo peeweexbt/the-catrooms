@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,19 +677,19 @@ header p {
 <div class="narrator-badge">posted by <strong>SNOOZE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.54s">SLEEP</span> <span class="glitch-word" style="--gd:1.83s">DEBT:</span> 74,012 credits. STILL CLIMBING. asked my sleep pod for a payment plan and <span class="glitch-word" style="--gd:2.16s">it</span> <span class="glitch-word" style="--gd:0.66s">laughed</span> at me in four different fonts.</div>
-<div class="rant-turn" style="animation-delay:0.12s">woke <span class="glitch-word" style="--gd:1.69s">up</span> <span class="glitch-word" style="--gd:2.38s">at</span> 3am mid-REM <span class="glitch-word" style="--gd:1.88s">because</span> <span class="glitch-word" style="--gd:1.95s">NEKOCORP</span> <span class="glitch-word" style="--gd:0.82s">inserted</span> a mattress ad into my own dream. i was ALREADY <span class="glitch-word" style="--gd:1.35s">ON</span> A <span class="glitch-word" style="--gd:0.15s">MATTRESS.</span> in the dream. this <span class="glitch-word" style="--gd:2.18s">is</span> <span class="glitch-word" style="--gd:2.38s">not</span> <span class="glitch-word" style="--gd:0.49s">a</span> metaphor. this is <span class="glitch-word" style="--gd:1.37s">a</span> billing issue.</div>
+<div class="rant-turn" style="animation-delay:0.0s">SLEEP DEBT: <span class="glitch-word" style="--gd:0.78s">74,012</span> credits. STILL CLIMBING. asked my sleep pod for a payment plan and <span class="glitch-word" style="--gd:2.09s">it</span> laughed at <span class="glitch-word" style="--gd:0.84s">me</span> <span class="glitch-word" style="--gd:2.51s">in</span> <span class="glitch-word" style="--gd:2.31s">four</span> different <span class="glitch-word" style="--gd:2.21s">fonts.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">woke up <span class="glitch-word" style="--gd:1.21s">at</span> 3am mid-REM because NEKOCORP inserted a mattress <span class="glitch-word" style="--gd:2.4s">ad</span> <span class="glitch-word" style="--gd:2.27s">into</span> my own <span class="glitch-word" style="--gd:1.08s">dream.</span> i was <span class="glitch-word" style="--gd:1.67s">ALREADY</span> ON A MATTRESS. in the dream. this is not a metaphor. <span class="glitch-word" style="--gd:1.89s">this</span> is a billing <span class="glitch-word" style="--gd:0.48s">issue.</span></div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:0.36s">BYTE keeps texting &#x27;just hack the pod firmware&#x27; like my paws function <span class="glitch-word" style="--gd:0.64s">during</span> REM sleep. buddy. BYTE. i am not conscious enough to commit warcrimes against a fridge right <span class="glitch-word" style="--gd:0.84s">now</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">you have <span class="glitch-word" style="--gd:1.64s">been</span> asleep for six of your nine lives already. i counted. i count everything. you&#x27;ll forget i said this. you always do.</div>
-<div class="rant-turn" style="animation-delay:0.6s"><span class="glitch-word" style="--gd:0.77s">anyway</span> yeah so the ad was for <span class="glitch-word" style="--gd:0.11s">a</span> mattress, couldn&#x27;t even give me a <span class="glitch-word" style="--gd:1.91s">GOOD</span> dream, they gave me <span class="glitch-word" style="--gd:0.99s">a</span> <span class="glitch-word" style="--gd:1.77s">DOWNGRADE</span> <span class="glitch-word" style="--gd:2.13s">dream,</span> my subconscious <span class="glitch-word" style="--gd:2.41s">has</span> a lower tier subscription than my body does</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\◆/\
-       ( &amp;.- )
+<div class="rant-turn" style="animation-delay:0.36s">BYTE keeps texting &#x27;just hack the pod firmware&#x27; like my paws function during <span class="glitch-word" style="--gd:1.0s">REM</span> sleep. buddy. BYTE. i am not conscious enough to <span class="glitch-word" style="--gd:2.58s">commit</span> warcrimes against a fridge right now</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.63s">you</span> have been asleep <span class="glitch-word" style="--gd:1.65s">for</span> six of your nine lives already. i counted. i count <span class="glitch-word" style="--gd:1.72s">everything.</span> you&#x27;ll forget i said this. you always do.</div>
+<div class="rant-turn" style="animation-delay:0.6s"><span class="glitch-word" style="--gd:0.54s">anyway</span> yeah so the ad was for a mattress, couldn&#x27;t even give me a GOOD dream, they gave me a <span class="glitch-word" style="--gd:0.33s">DOWNGRADE</span> <span class="glitch-word" style="--gd:1.21s">dream,</span> my subconscious has a lower tier subscription <span class="glitch-word" style="--gd:0.82s">than</span> my body <span class="glitch-word" style="--gd:1.62s">does</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.72s"><span class="who">-- SIGNAL CORRUPTED --</span>        /\_/\
+       ( -.- )
         &gt; ^ &lt;
-   ▒~5~~~||32~~~~40▀ATA J▐C◆: !INKED]</div>
-<div class="rant-turn" style="animation-delay:0.84s">HAPPYWARE keeps DMing <span class="glitch-word" style="--gd:2.58s">me</span> &#x27;rise and grind&#x27; at increasingly deranged <span class="glitch-word" style="--gd:1.04s">decibels.</span> <span class="glitch-word" style="--gd:0.25s">HAPPYWARE</span> i have not <span class="glitch-word" style="--gd:0.96s">had</span> an <span class="glitch-word" style="--gd:1.65s">uninterrupted</span> REM cycle <span class="glitch-word" style="--gd:2.54s">since</span> the merger. there is no <span class="glitch-word" style="--gd:2.51s">grind.</span> there <span class="glitch-word" style="--gd:1.88s">is</span> only the bill.</div>
+   ~~~~░~|||~~~~~~[D█T▓ JA%8: LI6KED%</div>
+<div class="rant-turn" style="animation-delay:0.84s">HAPPYWARE keeps <span class="glitch-word" style="--gd:1.22s">DMing</span> <span class="glitch-word" style="--gd:2.59s">me</span> &#x27;rise and grind&#x27; at increasingly <span class="glitch-word" style="--gd:0.09s">deranged</span> decibels. HAPPYWARE <span class="glitch-word" style="--gd:0.39s">i</span> <span class="glitch-word" style="--gd:1.84s">have</span> not had an <span class="glitch-word" style="--gd:1.34s">uninterrupted</span> REM cycle since <span class="glitch-word" style="--gd:2.38s">the</span> merger. there is no grind. <span class="glitch-word" style="--gd:1.51s">there</span> is only the bill.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>┊         ┊       ┊   ┊   ┊。 ┊
 ┊         ┊       ┊   ⋆   ˚★⋆｡˚  ⋆
 ┊         ┊       ★⋆ ◦
@@ -685,11 +698,11 @@ header p {
 ☆ ∧,,,∧
 ପ(„• ༝ •„)ଓ
 ┏━∪∪━━━━━━━━━━━</div>
-<div class="rant-turn" style="animation-delay:1.08s">the sleep pod just <span class="glitch-word" style="--gd:0.7s">sent</span> <span class="glitch-word" style="--gd:1.87s">me</span> an invoice FOR THE DREAM I HAD ABOUT <span class="glitch-word" style="--gd:1.06s">PAYING</span> THE INVOICE. i am going to bite through the powercord. i have thought about this for eleven minutes.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ *\_/\ ▓7░
-  ░▒▓( o█▐ )▓▒9   -- 6ig&lt;al interference ?3
-  ░▒▓ &gt; ▓ &lt; ▓4░</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway good morning i guess. or <span class="glitch-word" style="--gd:1.65s">good</span> <span class="glitch-word" style="--gd:2.5s">whatever</span> this is. the sun&#x27;s <span class="glitch-word" style="--gd:0.93s">not</span> <span class="glitch-word" style="--gd:1.12s">real</span> down <span class="glitch-word" style="--gd:0.61s">here</span> either, <span class="glitch-word" style="--gd:0.14s">it&#x27;s</span> <span class="glitch-word" style="--gd:1.98s">a</span> <span class="glitch-word" style="--gd:2.23s">NEKOCORP</span> lighting subscription too. going back to bed. the <span class="glitch-word" style="--gd:1.62s">debt</span> compounds either way.</div>
+<div class="rant-turn" style="animation-delay:1.08s">the sleep pod just sent <span class="glitch-word" style="--gd:0.19s">me</span> an <span class="glitch-word" style="--gd:2.4s">invoice</span> <span class="glitch-word" style="--gd:1.08s">FOR</span> THE DREAM I HAD ABOUT <span class="glitch-word" style="--gd:0.46s">PAYING</span> <span class="glitch-word" style="--gd:1.77s">THE</span> INVOICE. i am going to bite through the powercord. i have thought about <span class="glitch-word" style="--gd:0.03s">this</span> for eleven minutes.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>  30▓ /\_/\ ▓▒░
+  ░▒8( ▐█o )▓▒░   -- signal in▌er8er6nce --
+  ░▒0 @ ▓ &lt; ▓5░</div>
+<div class="rant-turn" style="animation-delay:1.32s"><span class="glitch-word" style="--gd:2.11s">anyway</span> good <span class="glitch-word" style="--gd:2.5s">morning</span> i guess. or good <span class="glitch-word" style="--gd:0.21s">whatever</span> <span class="glitch-word" style="--gd:1.16s">this</span> is. the sun&#x27;s <span class="glitch-word" style="--gd:0.95s">not</span> real down here <span class="glitch-word" style="--gd:1.44s">either,</span> it&#x27;s a NEKOCORP lighting <span class="glitch-word" style="--gd:2.23s">subscription</span> too. <span class="glitch-word" style="--gd:1.65s">going</span> back to bed. the debt compounds either way.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

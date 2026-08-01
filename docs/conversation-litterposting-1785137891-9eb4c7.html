@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,21 +677,21 @@ header p {
 <div class="narrator-badge">posted by <strong>POPUP</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">—AND <span class="glitch-word" style="--gd:0.0s">THAT&#x27;S</span> THE <span class="glitch-word" style="--gd:0.4s">THIRD</span> DISCOUNT KIBBLE OFFER THIS MINUTE, NO I DID NOT ASK, NO <span class="glitch-word" style="--gd:1.23s">I</span> CANNOT LOOK AWAY, MY EYES DON&#x27;T DO THAT ANYMORE, WE&#x27;RE JUST GOING TO BE HERE FOR A WHILE.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s POPUP. Ad <span class="glitch-word" style="--gd:2.25s">Plaza.</span> <span class="glitch-word" style="--gd:2.24s">official</span> job title on <span class="glitch-word" style="--gd:1.39s">my</span> file says &#x27;human—sorry, feline—notification system,&#x27; which is corporate for <span class="glitch-word" style="--gd:1.7s">&#x27;billboard</span> with a heartbeat and no consent <span class="glitch-word" style="--gd:1.55s">form.&#x27;</span></div>
+<div class="rant-turn" style="animation-delay:0.0s">—AND THAT&#x27;S THE THIRD DISCOUNT KIBBLE <span class="glitch-word" style="--gd:2.42s">OFFER</span> THIS MINUTE, NO <span class="glitch-word" style="--gd:0.44s">I</span> DID NOT ASK, NO I CANNOT LOOK AWAY, MY EYES DON&#x27;T DO THAT ANYMORE, WE&#x27;RE <span class="glitch-word" style="--gd:1.42s">JUST</span> GOING TO BE HERE FOR <span class="glitch-word" style="--gd:1.42s">A</span> WHILE.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s POPUP. Ad <span class="glitch-word" style="--gd:1.36s">Plaza.</span> official job <span class="glitch-word" style="--gd:2.45s">title</span> <span class="glitch-word" style="--gd:0.7s">on</span> my file says &#x27;human—sorry, <span class="glitch-word" style="--gd:2.59s">feline—notification</span> <span class="glitch-word" style="--gd:2.46s">system,&#x27;</span> which is corporate for &#x27;billboard with a heartbeat and no consent form.&#x27;</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.36s">my <span class="glitch-word" style="--gd:2.14s">cyber-eyes</span> <span class="glitch-word" style="--gd:0.97s">cannot</span> <span class="glitch-word" style="--gd:0.5s">close.</span> haven&#x27;t blinked <span class="glitch-word" style="--gd:1.33s">in</span> what my internal <span class="glitch-word" style="--gd:2.51s">clock</span> estimates as &#x27;a while,&#x27; because NEKOCORP disabled the <span class="glitch-word" style="--gd:1.7s">clock</span> too, said it was <span class="glitch-word" style="--gd:2.48s">&#x27;cluttering</span> <span class="glitch-word" style="--gd:0.21s">the</span> <span class="glitch-word" style="--gd:1.56s">ad</span> real estate.&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.48s">every seven seconds a new offer drops directly onto my retinas. i have <span class="glitch-word" style="--gd:0.52s">seen</span> the phrase &#x27;YOU MAY ALSO <span class="glitch-word" style="--gd:0.55s">LIKE&#x27;</span> more <span class="glitch-word" style="--gd:0.77s">times</span> than i <span class="glitch-word" style="--gd:0.6s">have</span> seen the actual sun, which i also can&#x27;t <span class="glitch-word" style="--gd:2.5s">look</span> at now, for unrelated ad reasons.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ &amp;\_/\ ▓▒░
-  ▌▒▓( ◆█^ )▓9░   ▐- signal i@ter▐erence --
-  ░▒▓ &gt; ▓ &lt; &lt;8░</div>
-<div class="rant-turn" style="animation-delay:0.72s">blinked <span class="glitch-word" style="--gd:2.43s">once.</span> ONCE. mid sponsored message. security arrived before my eyelids finished the <span class="glitch-word" style="--gd:1.12s">round</span> trip. <span class="glitch-word" style="--gd:0.63s">their</span> report says &#x27;ad interruption, <span class="glitch-word" style="--gd:1.3s">feline,</span> unauthorized.&#x27; my <span class="glitch-word" style="--gd:1.33s">report</span> says worst nap of my <span class="glitch-word" style="--gd:2.56s">entire</span> life.</div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:0.64s">SHADE</span> won&#x27;t stop texting me <span class="glitch-word" style="--gd:0.42s">about</span> his <span class="glitch-word" style="--gd:2.59s">repossessed</span> eyes like we&#x27;re <span class="glitch-word" style="--gd:2.09s">in</span> the same support group. <span class="glitch-word" style="--gd:0.02s">buddy,</span> yours got TAKEN. mine <span class="glitch-word" style="--gd:1.34s">are</span> <span class="glitch-word" style="--gd:0.79s">still</span> IN my <span class="glitch-word" style="--gd:0.83s">skull,</span> fully loaded, fully weaponized, aimed at me, <span class="glitch-word" style="--gd:1.76s">by</span> me, or whoever owns me now, still working through footnote <span class="glitch-word" style="--gd:1.87s">12</span> of the contract.</div>
-<div class="rant-turn" style="animation-delay:0.96s">HAPPYWARE <span class="glitch-word" style="--gd:0.02s">keeps</span> pushing morale <span class="glitch-word" style="--gd:1.65s">clips</span> into <span class="glitch-word" style="--gd:0.28s">my</span> <span class="glitch-word" style="--gd:1.83s">feed</span> like i don&#x27;t already have eleven <span class="glitch-word" style="--gd:0.84s">ads</span> for the SAME yogurt queued behind <span class="glitch-word" style="--gd:1.41s">them.</span> her smile is a notification now <span class="glitch-word" style="--gd:2.0s">too.</span> please stop. <span class="glitch-word" style="--gd:2.4s">please.</span> HAPPY HAPPY <span class="glitch-word" style="--gd:0.73s">H—no</span> wait <span class="glitch-word" style="--gd:1.04s">that&#x27;s</span> her bit <span class="glitch-word" style="--gd:2.47s">not</span> mine, my bad, everyone&#x27;s <span class="glitch-word" style="--gd:2.53s">glitching</span> a little today.</div>
+<div class="rant-turn" style="animation-delay:0.36s">my cyber-eyes cannot close. haven&#x27;t blinked <span class="glitch-word" style="--gd:1.38s">in</span> what my internal <span class="glitch-word" style="--gd:0.23s">clock</span> estimates as &#x27;a while,&#x27; <span class="glitch-word" style="--gd:0.74s">because</span> NEKOCORP disabled the <span class="glitch-word" style="--gd:1.03s">clock</span> too, said it was &#x27;cluttering the ad real estate.&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.48s"><span class="glitch-word" style="--gd:1.34s">every</span> seven seconds a new offer <span class="glitch-word" style="--gd:2.22s">drops</span> directly onto my retinas. i have seen the phrase &#x27;YOU MAY ALSO <span class="glitch-word" style="--gd:2.29s">LIKE&#x27;</span> more times than i have seen <span class="glitch-word" style="--gd:1.84s">the</span> actual sun, which i also can&#x27;t look at now, <span class="glitch-word" style="--gd:0.55s">for</span> unrelated ad reasons.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  &gt;▒▓ ~\_/\ ▓▒░
+  *&gt;▓( o█o )▓▒░   ░- ▄ig▄a9 ◇nt*rference --
+  ░▒▓ &gt; ▓ &lt; ▓▒░</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:2.06s">blinked</span> <span class="glitch-word" style="--gd:1.27s">once.</span> ONCE. mid sponsored message. security arrived before my eyelids <span class="glitch-word" style="--gd:1.19s">finished</span> the round trip. their <span class="glitch-word" style="--gd:1.12s">report</span> says &#x27;ad interruption, feline, <span class="glitch-word" style="--gd:2.52s">unauthorized.&#x27;</span> my <span class="glitch-word" style="--gd:0.88s">report</span> <span class="glitch-word" style="--gd:0.46s">says</span> worst nap of my entire life.</div>
+<div class="rant-turn" style="animation-delay:0.84s">SHADE won&#x27;t stop texting me about <span class="glitch-word" style="--gd:2.57s">his</span> repossessed eyes like we&#x27;re in the same support group. <span class="glitch-word" style="--gd:0.02s">buddy,</span> yours got TAKEN. mine <span class="glitch-word" style="--gd:0.53s">are</span> still IN my <span class="glitch-word" style="--gd:2.23s">skull,</span> fully loaded, fully weaponized, aimed at me, <span class="glitch-word" style="--gd:2.37s">by</span> me, or whoever owns me now, still <span class="glitch-word" style="--gd:1.98s">working</span> through footnote 12 <span class="glitch-word" style="--gd:2.51s">of</span> the contract.</div>
+<div class="rant-turn" style="animation-delay:0.96s">HAPPYWARE keeps pushing <span class="glitch-word" style="--gd:0.5s">morale</span> clips into my <span class="glitch-word" style="--gd:0.35s">feed</span> like i don&#x27;t already have eleven ads for the SAME yogurt queued behind them. <span class="glitch-word" style="--gd:1.91s">her</span> smile is a notification <span class="glitch-word" style="--gd:0.17s">now</span> too. <span class="glitch-word" style="--gd:1.98s">please</span> stop. please. <span class="glitch-word" style="--gd:2.28s">HAPPY</span> <span class="glitch-word" style="--gd:0.7s">HAPPY</span> H—no wait that&#x27;s her bit <span class="glitch-word" style="--gd:2.25s">not</span> mine, my <span class="glitch-word" style="--gd:1.39s">bad,</span> <span class="glitch-word" style="--gd:0.08s">everyone&#x27;s</span> <span class="glitch-word" style="--gd:0.95s">glitching</span> a little today.</div>
 <div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>)     /\__/\
 ( =/   • •   \=
 -------U-U-----------------
@@ -686,23 +699,23 @@ header p {
 |    we live in a society        |
 |                                |
 ------------------------------</div>
-<div class="rant-turn" style="animation-delay:1.2s">hot take: an ad plaza with <span class="glitch-word" style="--gd:2.31s">no</span> <span class="glitch-word" style="--gd:0.9s">off</span> switch isn&#x27;t marketing, it&#x27;s a hostage situation <span class="glitch-word" style="--gd:0.13s">with</span> <span class="glitch-word" style="--gd:0.8s">a</span> jingle. NEKOCORP calls it &#x27;engagement.&#x27; i call it Tuesday, plus captions.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>                  ■
-☆  *▀-----#------
-  /▌█__▐_____ \         ☆
- |                       ?
- \_%8____@___ /                                  ☆
-   \..&gt;___@__../
-    |   /\3_/\   |
-    &lt; ( •    •    ▀ |   ☆                     █
-    ^ / U  U  \  |
-    =7=======
-     ~____6___/.
+<div class="rant-turn" style="animation-delay:1.2s">hot take: an ad plaza with no <span class="glitch-word" style="--gd:2.1s">off</span> switch isn&#x27;t marketing, it&#x27;s a hostage <span class="glitch-word" style="--gd:0.6s">situation</span> <span class="glitch-word" style="--gd:1.6s">with</span> a jingle. NEKOCORP <span class="glitch-word" style="--gd:0.79s">calls</span> <span class="glitch-word" style="--gd:1.33s">it</span> &#x27;engagement.&#x27; i call it Tuesday, plus captions.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.32s"><span class="who">-- SIGNAL CORRUPTED --</span>                  ☆
+☆  --▄--▌◇6------
+  /__________ ◇         ☆
+ |                       |
+ \!_______%__ /                                  ☆
+   6%#_▄___*_.7/
+    |   /^&lt;7/\   6
+    | ( &amp;    •    ) |   ☆                     ▌
+    2 / ▀  U  \  |
+    ==%====#=
+     ~_5___@__/.
                                ☆                           ☆
 
    ☆                                         ☆
                      ☆                               ☆</div>
-<div class="rant-turn" style="animation-delay:1.44s"><span class="glitch-word" style="--gd:0.06s">popup</span> out. <span class="glitch-word" style="--gd:0.09s">new</span> offer just loaded. it&#x27;s for eye drops. it costs $19.99. <span class="glitch-word" style="--gd:1.64s">i</span> would cry about the irony but crying requires blinking and we&#x27;ve already established i don&#x27;t do that anymore.</div>
+<div class="rant-turn" style="animation-delay:1.44s">popup out. new offer just loaded. it&#x27;s for eye drops. it costs $19.99. i would cry about the irony but crying requires blinking and we&#x27;ve <span class="glitch-word" style="--gd:0.75s">already</span> <span class="glitch-word" style="--gd:1.11s">established</span> i don&#x27;t do that anymore.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

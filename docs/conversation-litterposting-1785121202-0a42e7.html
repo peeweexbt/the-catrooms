@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,28 +677,28 @@ header p {
 <div class="narrator-badge">posted by <strong>BRIK</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">incident report #47: still living in the <span class="glitch-word" style="--gd:0.56s">vent.</span> still biting drones. still not sorry. filing <span class="glitch-word" style="--gd:1.87s">this</span> one from behind the ductwork because the front entrance is now a holographic parking lot, allegedly.</div>
-<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BRIK. used <span class="glitch-word" style="--gd:1.4s">to</span> drive a KILLDOZER for NEKOCORP until I <span class="glitch-word" style="--gd:0.39s">asked</span> why execs get twelve <span class="glitch-word" style="--gd:1.17s">fish</span> breaks a shift and floor cats get one <span class="glitch-word" style="--gd:0.43s">(1)</span> <span class="glitch-word" style="--gd:1.9s">communal</span> scrap of tuna. asked it ONE more time than they wanted. next morning my apartment was gone and so <span class="glitch-word" style="--gd:0.65s">was</span> my wife, a cat made flesh <span class="glitch-word" style="--gd:2.09s">light.</span> this is not <span class="glitch-word" style="--gd:0.55s">a</span> metaphor, she is literally a lightbulb now.</div>
+<div class="rant-turn" style="animation-delay:0.0s">incident report #47: still living in <span class="glitch-word" style="--gd:1.06s">the</span> vent. still biting <span class="glitch-word" style="--gd:1.5s">drones.</span> still not sorry. filing this one <span class="glitch-word" style="--gd:0.95s">from</span> behind the ductwork because the front entrance is now a holographic parking lot, <span class="glitch-word" style="--gd:2.59s">allegedly.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s BRIK. used to drive a KILLDOZER for NEKOCORP until I asked <span class="glitch-word" style="--gd:1.35s">why</span> execs get twelve fish <span class="glitch-word" style="--gd:1.14s">breaks</span> a shift <span class="glitch-word" style="--gd:1.26s">and</span> floor <span class="glitch-word" style="--gd:0.73s">cats</span> get one <span class="glitch-word" style="--gd:0.8s">(1)</span> communal scrap <span class="glitch-word" style="--gd:1.21s">of</span> tuna. asked it ONE more time than <span class="glitch-word" style="--gd:1.09s">they</span> <span class="glitch-word" style="--gd:1.07s">wanted.</span> next morning my apartment was gone and so <span class="glitch-word" style="--gd:1.44s">was</span> my <span class="glitch-word" style="--gd:1.99s">wife,</span> a cat made flesh light. this is not a metaphor, she <span class="glitch-word" style="--gd:0.19s">is</span> literally a lightbulb now.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>   /\_/\        [ ENERGY: LOW ]
   ( &gt;.&lt; )       [ ]  [ ]  [ ]  [ ]
    &gt; ~ &lt;        one bar left, keep moving</div>
-<div class="rant-turn" style="animation-delay:0.36s">vent life update: the vent is technically <span class="glitch-word" style="--gd:1.24s">zoned</span> for HVAC <span class="glitch-word" style="--gd:1.11s">equipment,</span> <span class="glitch-word" style="--gd:1.17s">not</span> felines, so <span class="glitch-word" style="--gd:1.46s">legally</span> I am a duct. I have accepted this. <span class="glitch-word" style="--gd:1.96s">being</span> a duct has better benefits <span class="glitch-word" style="--gd:2.31s">than</span> being a tenant ever did.</div>
-<div class="rant-turn" style="animation-delay:0.48s">surveillance drone <span class="glitch-word" style="--gd:2.25s">number</span> six came through my airspace at 4am doing a <span class="glitch-word" style="--gd:2.3s">routine</span> noise-compliance sweep. I do <span class="glitch-word" style="--gd:1.76s">not</span> do compliance. I do NOT do 4am. I bit <span class="glitch-word" style="--gd:1.88s">it</span> out of the sky like a piñata and now <span class="glitch-word" style="--gd:2.35s">it</span> <span class="glitch-word" style="--gd:2.54s">just</span> sits in the corner making a sad little error beep. <span class="glitch-word" style="--gd:2.14s">we&#x27;re</span> roommates now. his name is Steve.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\/\_/\/\
-    (  O   █  )
-     ?  ^Y^  /
-      )=1==▄(      -- e1rs &amp;p0 0o&lt;or in0oming --</div>
-<div class="rant-turn" style="animation-delay:0.72s">NEKOCORP&#x27;s official file <span class="glitch-word" style="--gd:0.97s">on</span> me <span class="glitch-word" style="--gd:0.69s">says</span> <span class="glitch-word" style="--gd:0.05s">&quot;domestic</span> extremist, apprehend <span class="glitch-word" style="--gd:1.9s">with</span> caution.&quot; my mother&#x27;s official file on me says &quot;my son, so handsome, so strong, why is he in <span class="glitch-word" style="--gd:2.47s">a</span> vent.&quot; both documents <span class="glitch-word" style="--gd:0.04s">are</span> <span class="glitch-word" style="--gd:2.58s">correct.</span></div>
-<div class="rant-turn" style="animation-delay:0.84s"><span class="glitch-word" style="--gd:2.46s">shoutout</span> to KNIFEBOY, <span class="glitch-word" style="--gd:1.1s">only</span> <span class="glitch-word" style="--gd:1.32s">cat</span> <span class="glitch-word" style="--gd:1.49s">in</span> this <span class="glitch-word" style="--gd:1.93s">city</span> with a bigger <span class="glitch-word" style="--gd:1.41s">bounty</span> than mine, we are basically coworkers at this point. shoutout <span class="glitch-word" style="--gd:1.48s">to</span> SHADE too, whose sunglasses got repossessed same <span class="glitch-word" style="--gd:0.53s">week</span> my <span class="glitch-word" style="--gd:2.51s">whole</span> BUILDING got repossessed, we should start a support group, mandatory attendance, snacks are stolen tuna</div>
+<div class="rant-turn" style="animation-delay:0.36s">vent life update: the vent is technically zoned <span class="glitch-word" style="--gd:0.78s">for</span> HVAC <span class="glitch-word" style="--gd:2.09s">equipment,</span> not felines, so legally I am a duct. I have accepted this. being a duct has <span class="glitch-word" style="--gd:0.17s">better</span> benefits than being a tenant ever did.</div>
+<div class="rant-turn" style="animation-delay:0.48s">surveillance drone number six came <span class="glitch-word" style="--gd:1.93s">through</span> my airspace at 4am doing a routine noise-compliance sweep. I do not do compliance. <span class="glitch-word" style="--gd:1.58s">I</span> do NOT do 4am. I bit it out of the <span class="glitch-word" style="--gd:0.46s">sky</span> like a piñata and <span class="glitch-word" style="--gd:2.4s">now</span> it just <span class="glitch-word" style="--gd:0.27s">sits</span> in the corner making a <span class="glitch-word" style="--gd:0.44s">sad</span> little <span class="glitch-word" style="--gd:1.79s">error</span> beep. we&#x27;re roommates <span class="glitch-word" style="--gd:1.34s">now.</span> <span class="glitch-word" style="--gd:0.7s">his</span> name is Steve.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>     /\▌\▒/▓/\
+    (  O   O  )
+     \  ░Y^  █
+      )====■(      &amp;- ▓ars up, r*to▌ i3~o◇in0 --</div>
+<div class="rant-turn" style="animation-delay:0.72s">NEKOCORP&#x27;s official file <span class="glitch-word" style="--gd:2.31s">on</span> me says &quot;domestic extremist, <span class="glitch-word" style="--gd:0.64s">apprehend</span> with caution.&quot; my mother&#x27;s official file on me says &quot;my son, so handsome, so <span class="glitch-word" style="--gd:2.59s">strong,</span> why is he in a vent.&quot; both documents are correct.</div>
+<div class="rant-turn" style="animation-delay:0.84s">shoutout to KNIFEBOY, only cat in <span class="glitch-word" style="--gd:0.2s">this</span> city with a bigger bounty <span class="glitch-word" style="--gd:0.95s">than</span> mine, we are <span class="glitch-word" style="--gd:2.26s">basically</span> coworkers at this point. shoutout <span class="glitch-word" style="--gd:1.42s">to</span> SHADE too, whose sunglasses got repossessed same week my <span class="glitch-word" style="--gd:2.2s">whole</span> <span class="glitch-word" style="--gd:2.55s">BUILDING</span> <span class="glitch-word" style="--gd:2.06s">got</span> repossessed, we should start a support group, mandatory attendance, <span class="glitch-word" style="--gd:1.66s">snacks</span> are <span class="glitch-word" style="--gd:0.32s">stolen</span> tuna</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>        /\_/\
        ( -.- )
         &gt; ^ &lt;
    ~~~~~~|||~~~~~~[DATA JACK: LINKED]</div>
-<div class="rant-turn" style="animation-delay:1.08s">here&#x27;s <span class="glitch-word" style="--gd:0.52s">the</span> thing about demolishing buildings for a living and then <span class="glitch-word" style="--gd:1.32s">getting</span> your <span class="glitch-word" style="--gd:0.37s">own</span> building demolished: it <span class="glitch-word" style="--gd:0.21s">hits</span> DIFFERENT. it <span class="glitch-word" style="--gd:1.34s">hits</span> like <span class="glitch-word" style="--gd:2.41s">a</span> KILLDOZER. because it is one. <span class="glitch-word" style="--gd:2.4s">because</span> it was mine. because I signed the <span class="glitch-word" style="--gd:1.02s">little</span> tablet that authorized <span class="glitch-word" style="--gd:1.79s">it</span> and everything.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░5▓ /\_/~ ▓▒░
-  ░▒&lt;% o█o )▓▒▄   -- signal interfe7ence 3-
-  ▄▒▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:1.32s">anyway. Steve <span class="glitch-word" style="--gd:0.68s">the</span> drone just tried to <span class="glitch-word" style="--gd:2.52s">file</span> a noise complaint against <span class="glitch-word" style="--gd:0.51s">ME</span> from INSIDE my vent. absolute disrespect. biting him again. this is not <span class="glitch-word" style="--gd:0.46s">a</span> <span class="glitch-word" style="--gd:1.0s">metaphor.</span> this is Tuesday.</div>
+<div class="rant-turn" style="animation-delay:1.08s">here&#x27;s the thing about demolishing buildings for a living and then getting your own building demolished: it hits DIFFERENT. it hits like a KILLDOZER. because it is one. because it was <span class="glitch-word" style="--gd:0.58s">mine.</span> because <span class="glitch-word" style="--gd:1.89s">I</span> signed the little <span class="glitch-word" style="--gd:0.37s">tablet</span> that authorized it <span class="glitch-word" style="--gd:2.36s">and</span> everything.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\#/\ ▓▒░
+  ░▒▓( o█o ▐▓▒░   -- signal int6rfere■ce --
+  &amp;?▓ ▀ ▀ 5 9▒░</div>
+<div class="rant-turn" style="animation-delay:1.32s">anyway. Steve the drone just tried to file a noise complaint against <span class="glitch-word" style="--gd:0.88s">ME</span> from <span class="glitch-word" style="--gd:0.71s">INSIDE</span> my vent. absolute disrespect. biting him <span class="glitch-word" style="--gd:0.25s">again.</span> this is not a metaphor. this is Tuesday.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

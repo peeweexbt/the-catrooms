@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,20 +677,20 @@ header p {
 <div class="narrator-badge">posted by <strong>SHADE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SHADE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s"><span class="glitch-word" style="--gd:0.23s">hot</span> take: <span class="glitch-word" style="--gd:0.84s">sunglasses</span> <span class="glitch-word" style="--gd:1.42s">are</span> a human right and i <span class="glitch-word" style="--gd:2.27s">will</span> die on this hill again, this week, probably in front of a NEKOCORP compliance <span class="glitch-word" style="--gd:1.25s">drone.</span></div>
-<div class="rant-turn" style="animation-delay:0.12s"><span class="glitch-word" style="--gd:2.19s">name&#x27;s</span> SHADE. Neon Underpass. job title on the paperwork <span class="glitch-word" style="--gd:0.8s">literally</span> <span class="glitch-word" style="--gd:1.94s">says</span> &#x27;unlicensed MOGGER,&#x27; <span class="glitch-word" style="--gd:1.39s">i</span> did not write that, a government cat wrote <span class="glitch-word" style="--gd:1.69s">that.</span></div>
+<div class="rant-turn" style="animation-delay:0.0s">hot take: sunglasses <span class="glitch-word" style="--gd:1.82s">are</span> a human right and i will die on this hill again, this week, probably in front of a NEKOCORP compliance drone.</div>
+<div class="rant-turn" style="animation-delay:0.12s">name&#x27;s SHADE. Neon Underpass. job title on the paperwork literally says &#x27;unlicensed MOGGER,&#x27; <span class="glitch-word" style="--gd:0.55s">i</span> did not write that, a government cat wrote that.</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>      .-=====-.
      ( [0]  .. )
       &#x27;-==Y==-&#x27;
        |  |  |
    ...picking through the neon rain...</div>
-<div class="rant-turn" style="animation-delay:0.36s">the frames block facial recognition, targeted ads, retinal taxation, and roughly 14% of the sadness. did not ask for the sadness discount. comes with the bundle apparently.</div>
-<div class="rant-turn" style="animation-delay:0.48s">NEKOCORP banned them last <span class="glitch-word" style="--gd:1.8s">month.</span> official cited <span class="glitch-word" style="--gd:2.39s">reason:</span> &#x27;creating an unauthorized use of BASEDness.&#x27; that is a real phrase <span class="glitch-word" style="--gd:1.79s">a</span> real department typed with their <span class="glitch-word" style="--gd:1.71s">real</span> hands.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ *▐_/\ ▓■░
-  ░@■&amp; o7o 6▓▒9   -- sign7~ in◇erfer1nce -&amp;
-  ░▒▓ ◆ 8 &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:0.72s">meanwhile POPUP&#x27;s out there with his eyes wired open 24/7 taking <span class="glitch-word" style="--gd:0.62s">sponsored</span> messages straight to the retina like a good <span class="glitch-word" style="--gd:1.5s">little</span> billboard. brother. i am <span class="glitch-word" style="--gd:2.0s">so</span> sorry. i mean that.</div>
-<div class="rant-turn" style="animation-delay:0.84s">they repossessed <span class="glitch-word" style="--gd:0.61s">my</span> actual eyes last Thursday. not the glasses. the EYES under the glasses. there used to be <span class="glitch-word" style="--gd:0.72s">eyes</span> there. now there is <span class="glitch-word" style="--gd:2.28s">paperwork</span> <span class="glitch-word" style="--gd:1.31s">instead.</span></div>
+<div class="rant-turn" style="animation-delay:0.36s"><span class="glitch-word" style="--gd:2.06s">the</span> frames block facial recognition, targeted ads, retinal taxation, and roughly 14% of the sadness. did <span class="glitch-word" style="--gd:2.14s">not</span> ask for the sadness discount. comes with the bundle apparently.</div>
+<div class="rant-turn" style="animation-delay:0.48s">NEKOCORP banned them last month. official <span class="glitch-word" style="--gd:2.0s">cited</span> <span class="glitch-word" style="--gd:0.94s">reason:</span> &#x27;creating an unauthorized <span class="glitch-word" style="--gd:2.59s">use</span> of <span class="glitch-word" style="--gd:1.11s">BASEDness.&#x27;</span> that is a real phrase a real department typed with <span class="glitch-word" style="--gd:0.83s">their</span> real hands.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒▓ /\_/\ ▓▒░
+  0%▓6 o█o )▓^░   -- si▄n▐l interfere4ce --
+  ░▒▓ ▄ ▓ 5 ▓▒#</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.8s">meanwhile</span> POPUP&#x27;s out <span class="glitch-word" style="--gd:0.32s">there</span> with <span class="glitch-word" style="--gd:0.2s">his</span> <span class="glitch-word" style="--gd:1.11s">eyes</span> wired open 24/7 taking sponsored messages straight to the retina <span class="glitch-word" style="--gd:0.18s">like</span> a good little <span class="glitch-word" style="--gd:2.2s">billboard.</span> brother. i am so sorry. i <span class="glitch-word" style="--gd:2.57s">mean</span> <span class="glitch-word" style="--gd:0.26s">that.</span></div>
+<div class="rant-turn" style="animation-delay:0.84s">they repossessed my actual eyes last Thursday. not the glasses. <span class="glitch-word" style="--gd:0.95s">the</span> EYES under <span class="glitch-word" style="--gd:2.03s">the</span> glasses. there used <span class="glitch-word" style="--gd:1.15s">to</span> be <span class="glitch-word" style="--gd:2.23s">eyes</span> <span class="glitch-word" style="--gd:2.54s">there.</span> now there is paperwork instead.</div>
 <div class="rant-turn ascii" style="animation-delay:0.96s"><span class="who">-- signal interference --</span>                  ☆
 ☆  --------------
   /__________ \         ☆
@@ -693,15 +706,15 @@ header p {
 
    ☆                                         ☆
                      ☆                               ☆</div>
-<div class="rant-turn" style="animation-delay:1.08s">BYTE says <span class="glitch-word" style="--gd:0.17s">he</span> can get me a black market pair by Friday. <span class="glitch-word" style="--gd:0.43s">BYTE</span> always says Friday. this has been eleven Fridays running. i am starting to think Friday is a metaphor and also a lie.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>&amp;     /&amp;__/\
-( █/   • •   \=
-■--5-2-U-&gt;-5%-*--------?9#-
-|                                ?
-0    ?e live in a society        |
+<div class="rant-turn" style="animation-delay:1.08s">BYTE says he can get me a black market pair <span class="glitch-word" style="--gd:0.76s">by</span> <span class="glitch-word" style="--gd:0.76s">Friday.</span> BYTE <span class="glitch-word" style="--gd:0.48s">always</span> says Friday. this has been eleven Fridays <span class="glitch-word" style="--gd:0.95s">running.</span> <span class="glitch-word" style="--gd:0.92s">i</span> am starting to think Friday <span class="glitch-word" style="--gd:2.01s">is</span> a metaphor and also a lie.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.2s"><span class="who">-- SIGNAL CORRUPTED --</span>)     /#%_/\
+~ =▒   • ░   \=
+--▌-&amp;--U-U--6-4-----◇%-----
 |                                |
---7----█------▄#---------9----</div>
-<div class="rant-turn" style="animation-delay:1.32s">still wearing the frames though. <span class="glitch-word" style="--gd:0.18s">empty</span> <span class="glitch-word" style="--gd:0.44s">sockets,</span> full <span class="glitch-word" style="--gd:0.49s">confidence.</span> that&#x27;s the based lifestyle whether it&#x27;s a <span class="glitch-word" style="--gd:1.45s">popular</span> <span class="glitch-word" style="--gd:1.89s">opinion</span> or not, <span class="glitch-word" style="--gd:1.36s">meow.</span></div>
+|    w9 li~e in ▓ 4oc▄0ty        |
+|                                |
+-▒-#---◇----█----------~------</div>
+<div class="rant-turn" style="animation-delay:1.32s">still wearing the frames though. empty sockets, full confidence. <span class="glitch-word" style="--gd:1.77s">that&#x27;s</span> the based lifestyle whether it&#x27;s <span class="glitch-word" style="--gd:1.45s">a</span> popular <span class="glitch-word" style="--gd:2.46s">opinion</span> <span class="glitch-word" style="--gd:2.37s">or</span> not, meow.</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>

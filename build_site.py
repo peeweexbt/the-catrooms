@@ -193,16 +193,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -755,11 +768,20 @@ THROUGHOUT THIS JOURNEY, LEARN OF THE PERILS, DRAMA, AND CAT SHIT FILLED POLITIC
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀"""
 
 # Homepage footer art — a night-sky/city-block ASCII scene, user-provided
-# verbatim. Kept as a raw string (backslashes in the cat faces like "/\\_/\\"
-# need to stay literal) and HTML-escaped at render time in build() since it
-# contains literal "<" and ">" characters (cat mouths, etc.) that would
+# verbatim. Split into two constants (sky field vs. the actual city-block
+# art) because they render as two SEPARATE <pre> elements in the template —
+# the star-field lines are extremely wide (mostly full-width blank/padding
+# characters, ~219 chars on the longest line), and if it shared one <pre>
+# with the much narrower (~79 char) recognizable building art, the whole
+# block's width — and therefore its centering on narrow/mobile screens —
+# would be dictated by the star field, shoving the actual city art visually
+# off to the left instead of centered. Rendering them as two independently
+# centered blocks fixes that regardless of viewport width.
+# Kept as raw strings (backslashes in the cat faces like "/\\_/\\" need to
+# stay literal) and HTML-escaped at render time in build() since they
+# contain literal "<" and ">" characters (cat mouths, etc.) that would
 # otherwise be parsed as HTML tags.
-FOOTER_ART = r"""⠀⠀⠀⠀⠀.　　　　　　　　　　⠀⠀⠀✦ ⠀ ⠀　　　　　　　　　　　　　　⠀⠀⠀⠀⠀* ⠀⠀⠀.　　　　　　　　　　. ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀✦⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ ⠀⠀⠀⠀⠀⠀.　　　　　　　　　　　　　.　　　ﾟ .　　　　　　　　　　　　　. 　　　　　　　　　　　　　　　✦ 　　　　　,　　　　　　　.
+FOOTER_ART_SKY = r"""⠀⠀⠀⠀⠀.　　　　　　　　　　⠀⠀⠀✦ ⠀ ⠀　　　　　　　　　　　　　　⠀⠀⠀⠀⠀* ⠀⠀⠀.　　　　　　　　　　. ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀✦⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ ⠀⠀⠀⠀⠀⠀.　　　　　　　　　　　　　.　　　ﾟ .　　　　　　　　　　　　　. 　　　　　　　　　　　　　　　✦ 　　　　　,　　　　　　　.
 ⠀　　　　　　　　⠀⠀⠀✦ ⠀ ⠀　　　　　　　　　　　　　　⠀⠀⠀⠀⠀* ⠀⠀⠀.　　　　　　　　　　. ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀✦⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ ⠀⠀⠀⠀⠀⠀.　　　　　　　　　　　　　.　　　ﾟ .　　　　　　　　　　　　　. 　　　　　　　　　　　　　　　✦ 　　　　　,　　　　　　　.
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 　　　　　　*　　　　　　　　　　　.
@@ -779,8 +801,9 @@ FOOTER_ART = r"""⠀⠀⠀⠀⠀.　　　　　　　　　　⠀⠀⠀✦ ⠀ 
 　　　　　⠀　　　　⠀　　,
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                  .        *              .        ✦            *
-        *                         .                           .
-                              .-^^^^^^^^^^^^^^^^-.
+        *                         .                           ."""
+
+FOOTER_ART_CITY = r"""                              .-^^^^^^^^^^^^^^^^-.
                            .-'  /\_/\   NEKO SKY  '-.
                          .'    ( o.o )   DISTRICT    '.
                         /       > ^ <                  \
@@ -850,7 +873,10 @@ INDEX_TEMPLATE = """<!doctype html>
 <div class="grid">
 {cards}
 </div>
-<footer class="site-footer"><pre class="site-footer-art">{footer_art}</pre></footer>
+<footer class="site-footer">
+<pre class="site-footer-art site-footer-sky">{footer_art_sky}</pre>
+<pre class="site-footer-art site-footer-city">{footer_art_city}</pre>
+</footer>
 </body>
 </html>
 """
@@ -1890,7 +1916,8 @@ def build(transcripts_dir, out_dir, gen_titles):
         header_decorations=build_decorations(ASCII_CATS, meowizen_faces),
         hero_text=hero_text,
         cards="\n".join(all_cards) or "<p style='color:#6b8f6a'>no transcripts yet — run backrooms.py first</p>",
-        footer_art=html.escape(FOOTER_ART),
+        footer_art_sky=html.escape(FOOTER_ART_SKY),
+        footer_art_city=html.escape(FOOTER_ART_CITY),
     )
     with open(os.path.join(out_dir, "index.html"), "w") as f:
         f.write(index_html)

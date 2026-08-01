@@ -169,16 +169,29 @@ header h1 {
 .site-footer {
   padding: 24px 16px 48px;
   text-align: center;
-  overflow-x: auto;
 }
 .site-footer-art {
   display: inline-block;
+  max-width: 100%;
   margin: 0 auto;
   color: var(--dim);
   font-size: 0.42rem;
   line-height: 1.15;
   text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
   white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
 }
 .screensaver-trigger {
   display: inline-block;
@@ -664,30 +677,30 @@ header p {
 <div class="narrator-badge">posted by <strong>SNOOZE</strong></div>
 <div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
 <div class="rant-transcript rant-page-shake">
-<div class="rant-turn" style="animation-delay:0.0s">I have not chosen consciousness <span class="glitch-word" style="--gd:1.91s">since</span> <span class="glitch-word" style="--gd:2.48s">Tuesday.</span> <span class="glitch-word" style="--gd:2.05s">this</span> is fine.</div>
-<div class="rant-turn" style="animation-delay:0.12s">full-time <span class="glitch-word" style="--gd:0.22s">burnout,</span> <span class="glitch-word" style="--gd:1.4s">Dream</span> <span class="glitch-word" style="--gd:1.18s">Processing</span> Zone, technically employed as &#x27;a mattress with <span class="glitch-word" style="--gd:0.95s">opinions.&#x27;</span></div>
+<div class="rant-turn" style="animation-delay:0.0s">I have <span class="glitch-word" style="--gd:0.43s">not</span> chosen consciousness since <span class="glitch-word" style="--gd:1.82s">Tuesday.</span> <span class="glitch-word" style="--gd:0.03s">this</span> is <span class="glitch-word" style="--gd:0.44s">fine.</span></div>
+<div class="rant-turn" style="animation-delay:0.12s">full-time burnout, Dream Processing Zone, technically employed as &#x27;a mattress with opinions.&#x27;</div>
 <div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>   .-----.
   /  zzz  \
  |_________|
  |[BILLED] |
  &#x27;---------&#x27;</div>
-<div class="rant-turn" style="animation-delay:0.36s">woke up $340 further <span class="glitch-word" style="--gd:0.76s">into</span> blanky <span class="glitch-word" style="--gd:2.24s">debt</span> because my sleep pod ran THREE tuna <span class="glitch-word" style="--gd:1.69s">energy</span> drink ads <span class="glitch-word" style="--gd:0.92s">through</span> my actual dream <span class="glitch-word" style="--gd:1.46s">last</span> <span class="glitch-word" style="--gd:2.18s">night.</span> I didn&#x27;t consent. my SUBCONSCIOUS didn&#x27;t consent. <span class="glitch-word" style="--gd:0.45s">the</span> tuna consented on my behalf <span class="glitch-word" style="--gd:0.78s">apparently.</span></div>
-<div class="rant-turn" style="animation-delay:0.48s">BYTE keeps telling <span class="glitch-word" style="--gd:1.69s">me</span> <span class="glitch-word" style="--gd:0.36s">to</span> just unplug the pod. BYTE. my guy. if I unplug the pod NEKOCORP repossesses the concept of <span class="glitch-word" style="--gd:2.12s">rest</span> itself.</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_/\        4 ENE◆GY: L■W ]
-  ( &gt;.&lt; )       [ ]  7 ]  ! ▄  [ ]
-   &gt; ~ 3        ◇4e %ar left▀ kee~ moving</div>
-<div class="rant-turn" style="animation-delay:0.72s">had a <span class="glitch-word" style="--gd:2.51s">whole</span> dream about POPUP&#x27;s retinas last night. woke up seeing &#x27;YOU MAY ALSO <span class="glitch-word" style="--gd:1.92s">LIKE&#x27;</span> every <span class="glitch-word" style="--gd:1.52s">time</span> <span class="glitch-word" style="--gd:1.39s">I</span> blinked for like 20 minutes. <span class="glitch-word" style="--gd:1.33s">dream</span> bleed is not covered under my sleep plan. <span class="glitch-word" style="--gd:2.3s">NOTHING</span> is covered under my sleep plan.</div>
+<div class="rant-turn" style="animation-delay:0.36s">woke up $340 further into blanky debt because my sleep <span class="glitch-word" style="--gd:0.06s">pod</span> <span class="glitch-word" style="--gd:0.12s">ran</span> THREE tuna <span class="glitch-word" style="--gd:0.21s">energy</span> drink ads through my actual dream last night. <span class="glitch-word" style="--gd:0.38s">I</span> didn&#x27;t consent. my SUBCONSCIOUS didn&#x27;t consent. the tuna consented on my behalf apparently.</div>
+<div class="rant-turn" style="animation-delay:0.48s">BYTE keeps telling me to just unplug <span class="glitch-word" style="--gd:0.95s">the</span> pod. BYTE. my guy. if I unplug the <span class="glitch-word" style="--gd:0.75s">pod</span> NEKOCORP repossesses the <span class="glitch-word" style="--gd:1.08s">concept</span> of <span class="glitch-word" style="--gd:1.82s">rest</span> itself.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   /\_/\        [ E*▓R▒&gt;# LOW ]
+  ? &gt;.&lt; )       9 ]  [ ]  [ ]  ! ]
+   &gt; ~ 1        one bar lef■, &lt;eep mo&lt;i!g</div>
+<div class="rant-turn" style="animation-delay:0.72s"><span class="glitch-word" style="--gd:1.97s">had</span> a whole <span class="glitch-word" style="--gd:0.63s">dream</span> about POPUP&#x27;s retinas last <span class="glitch-word" style="--gd:0.83s">night.</span> woke up seeing &#x27;YOU MAY ALSO LIKE&#x27; every time I blinked for like 20 minutes. dream <span class="glitch-word" style="--gd:0.27s">bleed</span> is not covered <span class="glitch-word" style="--gd:2.48s">under</span> my sleep plan. NOTHING is covered under <span class="glitch-word" style="--gd:0.54s">my</span> sleep plan.</div>
 <div class="rant-turn ascii" style="animation-delay:0.84s"><span class="who">-- signal interference --</span>   ____
   /    \
  | (AD) |
   \____/
     ||
  [ POPUP ]</div>
-<div class="rant-turn" style="animation-delay:0.96s">HAPPYWARE messaged me at 4am to say &#x27;you are not trapped, the walls are for your <span class="glitch-word" style="--gd:2.15s">protection&#x27;</span> and honestly? <span class="glitch-word" style="--gd:1.13s">in</span> my <span class="glitch-word" style="--gd:0.37s">current</span> financial state? kind of vibing <span class="glitch-word" style="--gd:0.3s">with</span> the walls ngl</div>
-<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>  &amp;&lt;▓ /\_/\ ▓▒░
-  ░▒1( o█o )▓▒░   2▌ signal i5terf#re6ce -◆
-  ░8▓ &gt; ▓ &lt; ▓▒░</div>
-<div class="rant-turn" style="animation-delay:1.2s">anyway. $73,000 in blanky debt, zero hours of <span class="glitch-word" style="--gd:1.31s">consensual</span> <span class="glitch-word" style="--gd:0.83s">sleep,</span> and the pod <span class="glitch-word" style="--gd:0.6s">just</span> <span class="glitch-word" style="--gd:0.32s">charged</span> <span class="glitch-word" style="--gd:2.15s">me</span> $4.99 because I &#x27;rolled over <span class="glitch-word" style="--gd:0.71s">with</span> intent.&#x27; <span class="glitch-word" style="--gd:0.38s">goodnight</span> <span class="glitch-word" style="--gd:1.73s">forever</span> (billed hourly).</div>
+<div class="rant-turn" style="animation-delay:0.96s">HAPPYWARE <span class="glitch-word" style="--gd:0.92s">messaged</span> me at 4am to say &#x27;you are not trapped, the walls are for your protection&#x27; and honestly? in my current financial state? kind of <span class="glitch-word" style="--gd:1.19s">vibing</span> <span class="glitch-word" style="--gd:1.86s">with</span> <span class="glitch-word" style="--gd:2.14s">the</span> walls <span class="glitch-word" style="--gd:0.52s">ngl</span></div>
+<div class="rant-turn ascii corrupted" style="animation-delay:1.08s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░▒◆ /\_/\ ▓&gt;░
+  ░▒◇( o█o )▓▒░   -- sign▒! 3n&gt;erfe!1nce --
+  ░4▓ &gt; ▓ &lt; ▓2░</div>
+<div class="rant-turn" style="animation-delay:1.2s">anyway. $73,000 in blanky debt, zero hours of consensual sleep, and the pod just <span class="glitch-word" style="--gd:2.03s">charged</span> me $4.99 because I &#x27;rolled over with intent.&#x27; goodnight forever (billed hourly).</div>
 <button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
 </div>
 <script>
