@@ -31,6 +31,7 @@ Usage:
     python3 post_to_x.py --dry-run                # prints what would currently be picked/tweeted, ignoring the time window; no post, no state change
     python3 post_to_x.py --now                    # ignore the 3-6hr window and post immediately if there's something new
     python3 post_to_x.py --now --narrator STRAY   # ignore the window AND force the pick to a STRAY-narrated post (skips the weighted pick entirely)
+    python3 post_to_x.py --dry-run --narrator STRAY --random   # preview a random eligible STRAY post instead of always the newest one; rerun to see a different one
 
 State is tracked in x_post_state.json: the set of already-tweeted
 transcript ids (so nothing gets posted twice, regardless of which category
@@ -117,31 +118,38 @@ def load_all_litterposting():
     return items
 
 
-def pick_transcript(tweeted_ids, narrator_filter=None):
+def pick_transcript(tweeted_ids, narrator_filter=None, random_pick=False):
     """Weighted pick among untweeted litterposting rants: usually the
     newest untweeted STRAY-narrated one, occasionally the newest untweeted
     one from a named Meowizen instead — falling back to whichever category
     actually has candidates if the preferred one is empty.
 
     If narrator_filter is given (e.g. "STRAY"), skip the weighting entirely
-    and just return the newest untweeted post from that exact narrator, or
-    None if there isn't one."""
+    and just consider posts from that exact narrator, or None if there
+    isn't one.
+
+    Normally the newest eligible candidate is returned. If random_pick is
+    True, a random one among the eligible candidates is returned instead —
+    handy for manually previewing a different post each time you rerun."""
     untweeted = [t for t in load_all_litterposting() if t["id"] not in tweeted_ids]
     if not untweeted:
         return None
 
     if narrator_filter:
         matches = [t for t in untweeted if (t.get("narrator") or "STRAY") == narrator_filter]
-        return matches[0] if matches else None
+        if not matches:
+            return None
+        return random.choice(matches) if random_pick else matches[0]
 
     stray_posts = [t for t in untweeted if (t.get("narrator") or "STRAY") == "STRAY"]
     named_posts = [t for t in untweeted if (t.get("narrator") or "STRAY") != "STRAY"]
 
     prefer_stray = random.random() < STRAY_TWEET_WEIGHT
     primary, fallback = (stray_posts, named_posts) if prefer_stray else (named_posts, stray_posts)
-    if primary:
-        return primary[0]
-    return fallback[0] if fallback else None
+    chosen = primary if primary else fallback
+    if not chosen:
+        return None
+    return random.choice(chosen) if random_pick else chosen[0]
 
 
 def build_tweet_text(transcript):
@@ -209,6 +217,7 @@ def main():
     parser.add_argument("--whoami", action="store_true", help="read-only auth check against X's API; doesn't touch transcripts or state")
     parser.add_argument("--now", action="store_true", help="ignore the 3-6hr window and post immediately if there's something new")
     parser.add_argument("--narrator", help="force the pick to this exact narrator (e.g. STRAY) instead of the usual weighted pick; no-ops if nothing untweeted matches")
+    parser.add_argument("--random", action="store_true", help="pick a random eligible candidate instead of always the newest one; combine with --dry-run to preview different options by rerunning")
     args = parser.parse_args()
 
     if args.whoami:
@@ -225,7 +234,7 @@ def main():
     )
 
     if args.dry_run:
-        transcript = pick_transcript(state["tweeted_ids"], narrator_filter=args.narrator)
+        transcript = pick_transcript(state["tweeted_ids"], narrator_filter=args.narrator, random_pick=args.random)
         if transcript is None:
             print(no_match_msg)
             return 0

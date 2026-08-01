@@ -1,0 +1,107 @@
+{
+  "id": "conversation-cyberpunk_cats-1785543602-465635",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T00:20:02+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every 2 hours) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Blood in the mouth, copper-sharp, before the fight's even finished landing — something clawed and cornered that came off worse for pressing the wrong crate. Three lengths gone already, paws finding gaps between stacked pallets on reflex alone. Chest heaving around the win. No time yet to check what got torn open doing it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the loading dock runs low and long behind a chain-link gate NekoCorp never bothered fixing after the last breach, shipping containers stacked two high in crooked rows, guarded tuna crates sealed under security tape gone brittle in the salt air. floodlights buzz white overhead on a slow cycle, throwing hard shadows between the stacks. somewhere close, a forklift's idle servo whines on standby, waiting on a shift that doesn't start for hours. the crate stack nearest the gap still smells like the loser's fear — sharp, sour, already fading."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That fear-smell gets one dismissive pass, already old news, already somebody else's problem now that the ground's decided. Tongue works at the shoulder where a claw caught skin, blood thinning fast under the licking, more sting than damage. Nose swings back to the crates — not the fear this time, the tuna underneath it, guarded and locked and worth the trouble anyway."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the tape over the nearest crate's seam has been peeled and pressed back more than once, a thin gap worked soft at one corner by teeth that know exactly where the give is. past the gate, a patrol bot's wheels crunch gravel on its fixed loop, sensor bar low, three minutes a pass same as every dock on this stretch. up past the floodlights, a drone banks in low and slow, its speaker already crackling into a bulletin that's looped this exact stretch of chain-link more nights than not."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The drone's bulletin gets a flat ear and nothing more, words that mean nothing next to gravel-crunch and standby-whine, filed same as static. Weight drops low behind the nearest container, claws finding the tape's soft corner again, working it wider by fractions, patient about it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the tape gives another half-inch, corner curling back on itself, exposing a seam of foil beneath — enough for the tuna-smell to bloom stronger, thick and briny, worth every minute of patience spent getting here. down the row, scratched into a container's rust-streaked flank, a crude tag holds a pair of lens-shapes drawn heavy and dark, the letters under it worn half-illegible by weather: S̶H̶A̶D̶E̶ W̶A̶S̶ H̶E̶R̶E̶."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That tag gets a nose-pass and nothing deeper — old paint, no fresh scent under it, somebody else's mark on somebody else's night, filed and left. The foil gap matters more right now. Teeth work the seam wider still, patient, unhurried, tuna-smell thickening with every fraction gained."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the patrol bot's crunch grows louder on its next pass, wheels slowing where the tape's damage catches its sensor bar's attention — a half-second hesitation, a beam sweeping once across the crate's seam before the loop resets and sends it trundling on, anomaly logged but not flagged urgent enough to stop for."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That hesitation gets clocked hard, whole body dropping flat into the container's shadow until the crunch fades back to its usual rhythm. Ears track it the whole way down the row, counting the gap until the next pass same as counting breaths."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gravel yard quiets between passes, floodlights holding their buzz, forklift servo cycling down half a note as its charge tops off. rain starts thin and cold, beading on the container roofs before finding the gutters between stacks, running off toward a drain grate nobody's cleared in months."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Rain gets ignored same as it always does, fur already damp enough not to notice more. Tongue and teeth go back to the seam, foil finally splitting under the pressure, a thin line of oil working loose — not the whole crate, never the whole crate, just enough to taste before the tape gets pressed back over the gap same as always."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the oil's rich and salt-heavy, real fish fat under the foil instead of the reconstituted stuff the vending units push two streets over. the seam reseals rough under a paw once the taste's been had, tape pressed down uneven but enough to pass a casual glance. above the stacks, the drone's bulletin cycles back around to the same three lines it's been looping all night, blurred sketch included, matching nothing anyone down here would recognize as themselves."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That sketch means less than the tape does. Paw presses the last corner flat, tongue working one more pass over the torn shoulder before the job's called finished. Ears stay up through it, out of habit, not worry."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n ______\n|  //  |\n|_//___|\n  torn seam, oil beading\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the dock settles into its late rhythm, floodlights cycling down to standby amber one row at a time, forklift servo gone fully quiet, patrol bot's crunch fading toward the far gate and staying there. rain keeps its thin, steady count against the container roofs, same six-minute cycle it's held since the storm rolled in."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles into the gap between two stacked crates, tail wrapped tight, the torn shoulder throbbing dull now instead of sharp — one more scar in a coat that's already mostly scar. One ear stays angled toward the gate. The other finally stops listening."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the yard holds its wet quiet through what's left of the dark, tape patched crooked over a crate that'll pass tomorrow's count same as it passed tonight's, the drone's bulletin looping its unrecognized sketch to nobody, the tag on the far container losing another layer of paint to the rain. nothing here gets easier. it just gets survived, same as every night this stretch of fence has ever asked for."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes drop to slits, rain-sound folding into something almost restful now that the running's done. Whatever's still out there hunting bounty points or watching from gantries, it isn't hunting this gap between crates. That's enough to call it settled."
+    }
+  ]
+}
