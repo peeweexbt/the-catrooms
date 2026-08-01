@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785568747-6a3ab7",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T07:19:07+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Hunger sits low and persistent behind the ribs tonight, not the sharp kind, the old accumulating kind — three half-meals owed and unpaid. Left foreleg still carries a phantom sting where a router casing bit back two nights ago, gone but not forgotten by the muscle underneath. Doesn't move yet. Just breathes it out, tallying what still works before the paws pick a direction."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the alley runs behind Server Alley 9's back wall, narrow enough that both shoulders touch brick if the shoulders aren't careful, cooling vents from the data center exhaling warm dry air in slow pulses along one side. overhead, a router cage bolted to the wall hums low and constant, dozens of blinking lights behind chicken-wire mesh, a tangle of cable spilling out through a gap where the mesh has been worked loose before — old tooth-marks pale in the insulation, not the first visit. at the alley's dead end, a vending unit reads SUBSCRIPTION WATER — TAP TO CONTINUE in patient blue, drip collecting under it from a leak nobody's billed for yet."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That hum pulls harder than the hunger does, ears swiveling toward the cage before the paws finish deciding. Old tooth-marks in the insulation get a courtesy sniff — someone else's work, months stale — before the jaw picks its own fresh spot, testing the mesh gap's give the way something's been tested here before and won."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the mesh gives at the worked spot, wider than a first-timer would expect, a cable bundle pushing loose enough to reach — most of it dull-jacketed and dead-feeling, but one strand runs warmer than the rest, jacket thinner, a hairline split already showing where casing's been chewed before and re-taped once, badly."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Teeth find the warm strand on the second try, insulation splitting easy under the old tape's weak seam. A jolt runs up through the gums, small and sharp, gone before it finishes being pain — replaced by something under it that isn't taste exactly, more a signal registering as flavor because the tongue doesn't have a better word for it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "three feet up the wall, a delivery drone's diagnostic panel — mounted, charging, ignored — flickers off its idle loop for half a second, bleeding into something that isn't a diagnostic at all: a low-res loop of something swimming, slow, orange, gone again before the panel finishes correcting itself back to CHARGING: 40%. the router cage's hum stutters once in sympathy, then steadies."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Whole body goes still at the flicker, eyes locked on the panel a beat past when the swimming shape disappears, waiting on a return that doesn't come. Jaw stays clamped on the warm strand anyway, patient, in case the half-second decides to happen twice."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a rotor-thrum climbs the alley's open end before the second flicker ever gets the chance, patrol drone banking low along Server Alley 9's back wall on a structural sweep that doesn't usually run this route, searchlight already sweeping wall-height toward the cage."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Jaw releases the strand on reflex, whole body dropping flat into the cage's shadow before the light finishes its first pass, breath held the way breath gets held by something that's done this exact math before and doesn't like being wrong about it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the light sweeps past without slowing, rotor-thrum fading back toward the block's far corner. across the alley mouth, a storefront screen nobody turned off keeps looping a morale broadcast — a cat's face stretched into a grin too wide to be anyone's own idea, mouthing HAPPY HAPPY HAPPY on a silent loop to an empty street, seventeen hours deep into a shift with no clock anywhere on it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That grin gets a flat look and nothing else, filed the same as static or rain — somebody else's shift, somebody else's teeth bared that wide on purpose. Jaw finds the strand again the second the light's fully gone, picking up exactly where the pain left off."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the strand gives fully this time, signal running warm and steady into the bite — and for one line the cage's hum doesn't sound like a cage anymore, doesn't sound like anything built by a name on a building permit: the walls redraw themselves every so often, and nobody down here ever seems to notice the seam but me. then it's gone, router lights blinking their ordinary sequence again, cable slack and cooling in the mouth that's holding it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears flatten hard at a wrongness with no smell to it, no shape, nothing the nose can chase down and dismiss — just a beat that didn't belong to the hum a second ago and now insists it always did. Jaw loosens on the strand out of pure reflex, tail low, waiting on a second wrongness that doesn't come."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the alley settles back into its ordinary hum, cooling vents pulsing their warm dry breath, the vending unit's drip landing steady in its little collected puddle, SUBSCRIPTION WATER still patient blue in the dark. whatever ran through the cable a moment ago has gone quiet the way a held breath goes quiet once it's let out."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ~o~o~o~\n     |\n   [TAP]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Tongue works once over the sore spot on the gum, more habit than complaint. What's left of the strand gets abandoned hanging loose from the gap, job done for tonight, whatever the fish-shaped half-second was worth already spent and gone."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Server Alley 9 holds its narrow dark a while longer, cage lights blinking their patient sequence, the drip under the vending unit finding its rhythm again. east past the block's far wall, the sky's still hours from admitting it's nearly morning, and the whole alley keeps its business quiet the way it always does before the shift change floods it with feet."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Curls down into the gap between cage and wall, warm from both the vent and the work, eyes dropping to slits. The grin on the screen, the drone's bad-timed sweep, the wrongness that spoke and wasn't asked to — all of it gets set down same as everything else, sorted for whatever tomorrow decides to make of it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the cage keeps its hum steady through what's left of the dark, cable slack and spent, one small shape tucked warm against brick that's held worse company than this. Server Alley 9 doesn't sleep, not really, but for now it's quiet enough to pass for it."
+    }
+  ]
+}

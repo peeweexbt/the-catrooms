@@ -1,0 +1,102 @@
+{
+  "id": "conversation-cyberpunk_cats-1785566957-3a2f81",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T06:49:17+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*already running before the decision to run finishes forming — mesh grating loud underpaw, then gone, then slick conduit pipe, breath colder than it should be this early into the shift change. something keeps pace two rooftops back, unhurried, never closing, never falling behind. ears flat. legs don't ask why, they just go.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the thing pacing you is routine — a patrol unit on its third lap of the skywalk grid tonight, running the same corridor it always runs, downlight sweeping wide arcs that never once land square on a body your size. rain needles sideways off the arcology's east face, forty stories of glass breathing condensation onto empty conference floors. below, the market district hums awake for the night shift — frying oil, ozone, a hundred small fires of commerce nobody taxed properly. the drone banks north at the junction. it was never following you."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "stops on a girder wide enough for four paws and no more, chest working hard, tail low. doesn't trust the quiet yet — noses it corner to corner, the way you'd check a room for a second exit before believing the first one. what's left once the fear drains out is just hunger, old and familiar, pulling toward frying oil three streets down."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the walkway deadends into a fire-escape stair, rust-orange, leading down toward stalls lit up in cheap LED — a noodle cart, a battery-swap kiosk, a woman grilling skewers off a grate that doubles as her stove. across the gap, on a lower rooftop, something sits very still against the skyline: narrow shape, twin points of light where its eyes should be, a color no streetlamp out here makes, gone the instant you'd swear it turned to look at you."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "fur along the spine lifts on its own, unasked. marks the stair-rail anyway, chin first then flank, a line drawn between here and whatever that was — not a challenge, just paperwork. down is still down. hunger doesn't care what's watching from a roof three widths away."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the stairs groan, cold iron slick with rain, each step vibrating faint underpaw with the bass leaking out of a speaker somewhere below advertising something called NEKOCORP FRESH-CAUGHT (vat-grown, never touched water, guaranteed). ground level smells like a different city entirely — hot oil, wet cardboard, and under it, real fish, off the grill two stalls down, unguarded for the three seconds its vendor turns to make change."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*low to the wet pavement, weaving stall-legs and ankles, eyes locked on that three-second window like it's the only math that matters. a boot nearly comes down on the tail-tip — flinch, recalibrate, keep moving. closer. the smell gets loud enough to drown out everything else, which is exactly the kind of mistake that gets a cat caught.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "too late to notice the arch over the stall row until you're already under it — a loyalty-scanner gate, cheap chittering thing that pings every collar-chip and clawcoin tag in a six-meter radius. yours, unregistered, unlicensed, unaccounted-for, sets it screaming at a frequency that hurts before your ears even finish parsing it as sound. the vendor's head snaps up. somewhere above, a second drone changes its patrol math."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  .------------.\n  | NEKOCORP   |\n  | TIER: NONE |\n  '------------'\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*under the cart before the sound finishes its first cycle, flat to wet concrete, whiskers pinned back, every wire in the body screaming to bolt and something underneath that screaming saying wait, count, watch the boots. boots shift. a hand reaches for something on the counter that isn't a weapon. not yet a lost cause.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone's light rakes the stall front twice, finds nothing but stacked crates and a very believable puddle-shadow, and lifts off toward a louder complaint two blocks over. the vendor mutters something about rats and turns back to the grill. overhead, a different speaker — ad-drone, not security — crackles awake mid-loop, a bored automated voice cycling a bounty notice gone stale weeks ago: FORTY THOUSAND LOYALTY POINTS, KNIFEBOY, LAST SEEN NEAR THE LOADING DOCKS, REPORT ANY SIGHTING. nobody down here even looks up."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*reaches up with one paw, hooks the nearest skewer off the low edge of the grill, teeth closing before the smell even finishes registering as opportunity instead of risk. doesn't wait to see if anyone noticed. already moving, prize clamped tight, low and fast for the nearest dark.*"
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      __\n ><((((º>\n      ‾‾\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the vendor's shout chases you maybe four meters before giving up, more reflex than real pursuit — skewers go missing every night, everyone budgets for it. the alley mouth swallows you whole, dry under an overhang, the market noise dropping to a mutter behind. the rain keeps working on everyone who isn't you right now."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*doesn't stop until brick meets spine on both sides, a corner with only one way in. sets the skewer down between both paws, sniffs it twice out of habit rather than doubt, then eats — fast at first, then slower, ears still swiveling through every sound the alley offers up.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the overhang holds the rain off well enough, and the corner cam three buildings over has been dead since before you were born, its lens a milky cataract nobody's budget will fix. for now this six feet of wet brick belongs to whoever's willing to defend it. tonight, that's you."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "ear flicks toward the market noise, one thread of it separate from the rest — a low continuous drone-hum, different pitch, moving without hurry along the rooftops, the wrong direction for weather. doesn't get up. files it under later."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "later, if it comes, wears the shape of a rival crew's scout doing its own slow circuit of the block, marking who's still holding this corner and who's gotten soft enough to test. tonight it just passes, unhurried, and the rain keeps falling on rooftops that will look almost the same and subtly wrong come morning, the way this city always does. somewhere far off, a NekoCorp jingle loops through a dead speaker for no one. the alley holds its one occupant — fed, dry enough, ears still working."
+    }
+  ]
+}

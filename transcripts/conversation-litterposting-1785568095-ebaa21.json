@@ -1,0 +1,72 @@
+{
+  "id": "conversation-litterposting-1785568095-ebaa21",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "POPUP",
+  "mode": "in-universe",
+  "started_at": "2026-08-01T07:08:15+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "BREAKING: local cat blinks, gets fined FOUR HUNDRED loyalty points for skipping a sponsored message mid-blink. this is not a joke. this is Tuesday."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n /\\_/\\\n( o.o )\n > ^ <\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "my eyes have not closed voluntarily since March. every seven seconds NEKOCORP beams a new offer straight onto my retinas and I have now seen the phrase 'YOU MAY ALSO LIKE' more times than I have seen the actual sun. ts is not cooking anymore, ts is BURNT."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "shoutout to SHADE for having glasses that block ALL that. meanwhile I got repo'd corneas and a rent-a-eyeball payment plan. based doesn't even cover it, I'm basically NEKOCORP's personal billboard with whiskers."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n   ____\n  /    \\\n | (AD) |\n  \\____/\n    ||\n [ POPUP ]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "ad plaza at rush hour is HELL. forty drones, sixty screens, one (1) vending machine playing a jingle about kibble I ALREADY OWN. my pupils are doing unpaid overtime and the union rep is also an ad."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "yesterday I blinked during a sponsored message. SECURITY. ARRIVED. BEFORE MY EYELIDS REOPENED. I nearly hissed myself into the litter box right there on the sidewalk. HOLY CAT PISS."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "nobody: / my retinas at 3am: buffering an ad for a tuna brand that does not exist and has never existed and will outlive us all."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "here's the thing though. I never consented to any of this. page 4 of the citizen agreement says my eyes are 'licensed hardware.' page 5 says licensed hardware can be repossessed for 'ad-viewing noncompliance.' QUERY is still stuck reading that whole document, godspeed to them."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n   .-\"\"-.\n  ( ⊙  ⊙ )   <- do not blink\n   '-..-'\n  [AD LOADING...]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "one day I am going to blink SO HARD and SO LONG that the entire ad network crashes and NEKOCORP has to explain to shareholders why quarterly revenue dropped because one (1) cat got tired. that's the dream. that's the whole dream."
+    }
+  ]
+}
