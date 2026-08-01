@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785601125-b85ed3",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T16:18:45+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't move first. Ears alone do the work, angled at a cable bundle two rooftops over, listening for the particular tick a live line makes when current wants somewhere to go. Body stays low against warm tar-paper, waiting for the tick to repeat before trusting it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the roofline here is a tangle of retrofit antenna masts and conduit strapped down against wind that never really stops, tar-paper still holding the day's heat under four paws. two roofs over, a junction box hums low behind a rust-eaten vent stack, a status LED blinking green-green-red in a pattern that means someone forgot to lock the housing. the tick repeats, steady, patient, the kind of signal that isn't going anywhere before dawn."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Tick repeats twice more before the legs get the go-ahead. Low crawl along the parapet's blind side, weight kept off the loose flashing that always complains first. The green-green-red catches one eye and holds it — a door left open is a door left open, cat or corp."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the parapet gives onto a service ladder bolted crooked to the wall, rungs cold and beaded with condensation. halfway down, a fisheye lens is bolted under the eave, its little red ready-light dead — burnt out, unreplaced, the kind of gap in coverage that gets whispered about instead of written down. past it, the junction box waits, housing ajar an inch, screws gone soft with rust."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose finds the gap in the housing before the paw does, warm exhaust breath rolling out of it, copper and hot plastic and something faintly sweet underneath — coolant, maybe, or just age. One claw hooks the loose panel wider. Patience now. This part's always slower than the climb."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the panel folds back on a hinge somebody forgot existed, exposing a board lit dim green, a service port left uncapped since whatever tech last touched it stopped caring. the LED pattern steadies the second contact happens — green-green-green — like the box recognizes the shape of the thing that keeps finding it. somewhere in the building below, a server rack breathes cooler air out through a floor vent, indifferent to what's borrowing its signal."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles in against the warm housing, chin low, one ear still working the rooftop, the other locked onto the thin trickle of signal easing through. It isn't much — grainy, stuttering, silver shapes turning slow circles in blue water that doesn't exist anywhere this cat's ever stood in. Doesn't matter. Eyes stay fixed on it the way hunger stays fixed on anything that moves right."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the silver shapes hold for eleven full seconds before the feed stutters, replaced half a beat too fast by a jingle nobody asked for — NEKOCORP PET SUBSCRIPTION: YOUR COMPANION DESERVES MORE, cheerful and law-bright against the dark rooftop. the junction box's LED spikes yellow once, twice, a usage flag climbing toward whatever threshold trips a technician's pager. the fish are still under the ad, waiting to come back, if the connection survives long enough to let them."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Yellow catches the good ear before the ad even finishes looping. Weighs it the way any warning gets weighed — against eleven good seconds already banked, against how far the ladder is if yellow ever decides to become something worse. Doesn't pull the claw back yet. Not yet."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "across the gap, on the arcology's lower face, a screen three stories tall keeps its own vigil — a grinning cat-shaped avatar looping the same enforced cheer it's looped for months now, mouth stretched too wide, eyes too bright, a caption scrolling under it that nobody this high up bothers reading anymore. it isn't watching the rooftop. it's just always on, the way the sun would be if the sun took requests from a marketing department. the junction box's yellow climbs one more notch."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   .-----.\n  ( ^   ^ )\n   \\  -  /\n    -----\n [SMILE: MANDATORY]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Gives the screen exactly one flat look — too bright to be food, too big to be prey, filed under noise same as the ad jingle — then drags the attention back down to the failing green light, because that's the only thing on this roof that still matters."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the yellow tips over while the look's still turning back — one clean spike to red, and two blocks south a patrol drone breaks its usual loop early, nose swinging toward the flagged signal like it's been waiting all night for a reason. rotor-whine climbs fast under the wind. the ladder's a long way down for how little time is left to use it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Claw comes free of the port in one motion, housing panel shoved back into its rusted seat, and the whole body goes flat against the vent stack's shadow before the rotor-whine finishes climbing. Breath held tight. The stack's warm exhaust is the only thing moving now, curling up past a face gone perfectly still."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone crests the roofline, searchlight raking parapet, vent stack, and dead fisheye lens alike, pausing half a second longer on the warm exhaust plume than on anything else — heat signatures always read stranger than shapes do — before deciding warm metal is warm metal and banking off toward the arcology face instead, chasing a flag that's already gone cold behind it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Waits out three full breaths past the fade before the shoulders let go. Nose finds the housing seam again, slower this time, more careful than curious now — and the green light's still there underneath, dimmer, patient, exactly where it was left."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the port still answers when asked, quieter now, feed thinner — a handful more seconds of the same slow silver circles before the box's memory clears itself for the night and goes back to blinking its ordinary green-green-red for whoever finds it next. rain starts up thin over Server Alley 9, tracing lines down conduit that was never meant to be climbed this often."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Lets the last stutter of silver fade on its own rather than chase it further. Folds down against the vent stack instead, tucked into the one patch of roof that stays warm past midnight, the yellow flag and the grinning screen and eleven good seconds of fish all filed away the same, worth remembering, not worth losing sleep over."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the roofline holds its usual tangle of mast and conduit under a sky the color of an old bruise, junction box ticking its patient rhythm two roofs over, unclaimed again until the next warm body finds the gap in its housing. Server Alley 9 keeps humming the way it always does, cable to cable, rooftop to rooftop, whether or not anything small and furred is awake to notice the seams."
+    }
+  ]
+}
