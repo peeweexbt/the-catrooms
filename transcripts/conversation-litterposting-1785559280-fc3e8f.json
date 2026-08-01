@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1785559280-fc3e8f",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "mode": "in-universe",
+  "started_at": "2026-08-01T04:41:20+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "0300 hours. vent shaft 12. status: still home. still uncounted."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they replaced my apartment with a HOLOGRAPHIC PARKING LOT and gave my wife's actual sunlit windowsill to a projected cat made of light. i want everyone to actually sit with that for a second."},
+    {"actor": "ascii", "corrupted": false, "text": "  [###]\n  [###]\n  [###]  <- home\n  [###]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "a drone did a routine sweep past my vent tonight. i bit it. not tactics. not resistance. SPORT. it tasted like ozone and bad HR decisions."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP's official file calls me a domestic extremist. my mother, watching from across the rubble, calls me HANDSOME. both statements are notarized. both are correct."},
+    {"actor": "ascii", "corrupted": true, "text": "   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE texted me \"stay based\" from inside an active repo van while they were literally unscrewing his eyes out of his skull. that's not bravery, that's just refusing to update your status in the group chat."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i used to drive the KILLDOZER. flattened twelve blocks in a single shift, got a company mug that said WORLD'S OKAYEST DEMOLITIONIST for it. now i live in the wall cavity of a building i personally destroyed. this is not a metaphor. this is zoning."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "if your apartment's still standing tomorrow that isn't luck. that's just NEKOCORP not having gotten to you yet. don't get comfortable, mittens."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. vent's cold, drone's dead, mug's chipped. goodnight to everybody except the guy who approved the parking lot. you know exactly who you are."}
+  ]
+}

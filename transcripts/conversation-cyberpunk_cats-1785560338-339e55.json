@@ -1,0 +1,122 @@
+{
+  "id": "conversation-cyberpunk_cats-1785560338-339e55",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T04:58:58+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Another cat crosses the plaza's open glare-line and doesn't look away first — small thing, rare thing, the kind of held stare a body remembers longer than it should. This body's eyes don't get the luxury of looking away either, not ever, not even to make a point of it. Ears flatten anyway. Some contests still get fought without blinking, whether the eyes had a choice in it or not."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Ad Plaza opens wide and shadowless, six jumbotrons ringing a dead fountain, every screen throwing the same cat-food coupon in staggered loops so the plaza never goes fully dark between them. retinal beacon posts stand knee-height along the walkways, spaced every twenty paces, each one due to fire in a count that isn't yours to keep — but something in the air always seems to know anyway. the other cat holds its ground three widths off, tail low, eyes narrowed the ordinary way eyes narrow, and something about that ordinary squint reads almost like an insult from here."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "No squint to offer back, so the ears do the talking instead — one swivel, unhurried, the kind of dismissal that doesn't need eyelids to land. Paws carry forward past the fountain's dry basin, putting the other cat behind rather than settling anything with teeth."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "eight paces past the fountain a beacon post ticks over — the numberless count finally landing — and light floods straight up from knee height into everything at head height, an ad for a mattress-integrity subscription blooming huge and pink across the wet stone, wide enough to swallow half the plaza's light for the four seconds it insists on existing."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The pink flood lands directly on both eyes at once, full and unfiltered, no lid dropping to cut it by half the way it would for anything else down here. Ears pin instead, the only piece of the body that still gets to flinch. Four seconds reads long when there's no looking away from any of it."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   ____\n  /    \\\n | (AD) |\n  \\____/\n    ||\n [ POPUP ]\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the second beacon post, a public terminal kiosk hums against the plaza wall, screen scrolled deep into some settings menu nobody's touched in months, six options greyed down to one, that one spinning on a loading icon that never quite finishes loading. somebody's paw-prints, small and old, are pressed into the dust at its base in a tight worn circle, like a lot of waiting happened there once."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That kiosk's stuck loop gets one flat look and no more — somebody else's fight, filed same as everything else that isn't tonight's problem. Down the row, one beacon post stands dark where the others glow standby-dim, casing cracked, and the eyes go there on reflex, drawn to the one gap in the plaza that isn't scheduled to hurt."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the dead post throws no light at all, a full body-length of true dark in a plaza that otherwise never fully commits to any. good instinct, bad timing — a patrol drone banks in low over the jumbotrons at the same moment, running a standard integrity sweep, its scan already trained on exactly the kind of gap this post has become."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Every muscle goes still at once, weight dropped low into the dead post's shadow, eyes staying open through the whole pass same as they always do — no choice in it, but for once the lack of choice reads useful instead of cruel. The trick isn't hiding the eyes. It's hiding everything else."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  .------.\n ( O  •  )\n  '------'\n   (no lid to drop)\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone's scan catches the post's outage and logs it as hardware, not a body — a small mercy that eyes wide open and giving nothing to flinch at scatter the beam clean instead of catching it. it banks off toward the fountain, disinterested, chasing whatever routine anomaly its checklist actually wants tonight."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Breath goes out slow through the nose, the only exhale this body still gets to perform properly. Paws carry on past the dead post, plaza glare picking back up half a beacon later, nose already working toward something greasy two rows over."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the smell traces to a vending unit recessed under the nearest jumbotron's shadow, screen looping NEKOCORP LOYALTY — TIER: NONE in slow red, a scuff worn pale at its base where paws smaller than these have tried the same gap before. grease pools thin under the grille where something already got what it came for and left the rest."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  .------------.\n  | NEKOCORP   |\n  | TIER: NONE |\n  '------------'\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose finds the grille's gap first, then a paw, patient about the working of it the way patience gets learned by anyone who eats only when something breaks in their favor. A thin curl of grease comes loose, more smell than substance, but real."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the grease is thin but honest under the tongue, better than the reconstituted stuff two districts over. overhead the jumbotrons cycle through the mattress ad again, pink flooding the plaza on schedule, catching everything at head height same as always — everything except the gap behind the dead beacon post, still holding its stripe of true dark two rows back."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That gap gets remembered on purpose this time instead of found by luck, feet carrying straight back to it once the grease is gone. Curls down into the one true dark this plaza has to offer, back to the cracked casing, facing out toward the glow instead of into it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the dead post holds its cracked dark steady, the plaza's six screens looping their coupon and their mattress pitch in staggered rounds around it, none of the light finding its way this far into the gap. three rows off, the other cat from the fountain's stare has moved on to its own patch of shadow, business concluded without a single tooth bared over it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes stay open the way they always do, no version of closed on offer, but for once open doesn't mean exposed — just watching from somewhere the light doesn't reach instead of somewhere it does. Ears settle flat against the skull, off duty for the first time since the fountain."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the plaza keeps its loop going through what's left of the night, six screens agreeing and disagreeing with each other in half-second staggers, beacon posts firing their count down the walkway same as they will every twenty paces till someone bothers to fix the one that doesn't. one gap stays dark. one shape stays in it, eyes open, same as always, watching the glow do its work on everyone still out in it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Whatever the count is on that one dead post, it isn't ticking toward anything tonight. That's enough of a subscription to trust for now, no fine print required to renew it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the city keeps its accounts elsewhere, meters running on sleepers and screens and drones alike, and for a few hours the one line item nobody's billing is a small shape sitting still in a dead post's shadow, unblinking, unbothered, off the ledger entirely."
+    }
+  ]
+}
