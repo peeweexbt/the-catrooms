@@ -1,0 +1,22 @@
+{
+  "id": "conversation-litterposting-1785569942-ec996b",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "STRAY",
+  "mode": "in-universe",
+  "started_at": "2026-08-01T07:39:06+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "log #212: they repainted the alley wall overnight. it says WELCOME HOME now, in the exact same font NEKOCORP uses on eviction notices. cute. real cute. very cool font choice, guys."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "civic duty ration dropped again this week. two pumps of catnip per household, monitored, timestamped, allegedly for 'communal calm.' i am not calm. i have never once in my life been the calm one."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE got pulled over for 'unauthorized based-ness' again, third time this month, and GLITCHMEAT still tastes tuesday like static, so we are not exactly a functioning task force rn but we ARE a vibe. a based, staticky vibe."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP put speakers in the underpass playing a lo-fi elevator remix of the resistance chant. OUR chant. sanded every claw mark off it and now it just sounds like a spa. i heard a compliance officer HUM it. OH MY NEUTER."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   ((\u2022))\n    /\\_/\\\n   ( -_- )\n    > ~ <   [muzak: on]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "new wellness app wants to know how many hours i slept, how many fights i started, and whether i 'feel supported by my community.' i reported zero hours, forty fights, typed NO in all caps until it crashed. TUNA OF THE GODS that felt good."},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "this is the part where i'm supposed to say it's hopeless. nah. the streets still smell like us, not them. corpo cucks can sand the walls all they want, we'll just claw new ones. mewmew for anybody still listening, HISSING FIT for everybody who isn't."},
+    {"actor": "ascii", "corrupted": true, "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"}
+  ]
+}
