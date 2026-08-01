@@ -1,0 +1,102 @@
+{
+  "id": "conversation-cyberpunk_cats-1785597583-5c9aed",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T15:19:43+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Already moving before waking up feels finished — legs decided before the brain caught up. Behind: a rotor-whine climbing fast, gaining. Ahead: stacked shipping crates, guarded, home ground, if only home ground can be reached before the whine does."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the loading dock's restricted apron unspools ahead in floodlit strips, crates stacked three high and lashed under tarps that smell of brine and old blood where claw and tooth have gotten to the seals before any forklift could. behind, the drone banks around a container stack, searchlight punching down the service road, its onboard siren cycling a single flat tone: BOUNTY TARGET SIGHTED — HOLD POSITION. it doesn't hold position. it's gaining."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Cuts hard left where the tarps overlap, where the gap's only wide enough for something built low and mean. Shoulder scrapes plastic sheeting, doesn't slow for it. The rotor-whine loses half a step rounding the same corner — good, that half-step is the whole plan."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap dumps out between two containers stacked close enough to blot the floodlights out entirely, dark and narrow and reeking of the same guarded brine-and-blood that marks every crate on this stretch — territory that's been fought for, bitten for, kept. overhead the drone's siren garbles through a wall of steel: forty thousand loyalty points, unclaimed, don't expire until capture, can't be combined with other promotional offers. the tone almost sounds tired of saying it."
+    },
+    {
+      "actor": "ascii",
+      "text": "  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't dignify the number with a look back. Presses flat against container-steel instead, breath shallow, waiting on the whine to commit to a wrong direction the way it almost always does on this stretch — home ground bites back if you know where the seams are."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the whine hesitates at the gap's mouth, floodlight probing halfway in and stopping short of the deep dark — protocol says don't corner an unconfirmed target in tight containment, and protocol wins. it peels off along the apron instead, siren fading toward the west gate, still repeating its number to nobody."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Waits three full breaths past the fade before the shoulders unlock. Nose finds the nearest crate seam on reflex, more habit than hunger — this one's already been worked, claw-marks in the lashing rope gone pale with age, the good tuna long since carried off and eaten somewhere safer."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "further down the row, one silhouette holds still on a gantry rail above the apron — mirror-flash where eyes should be, catching the last of the floodlight and throwing it back doubled before a support strut cuts the sightline. it isn't watching the chase. it's just up there, the way it always is, being seen on its own schedule."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Marks the gantry shape without breaking stride toward the next crate down the row — that's rooftop business, not apron business. Paws already testing a fresher-smelling seam, one where the rope's still dark and un-sunbleached, where the brine underneath still has bite to it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the fresher crate gives at a corner where the lashing's already frayed thin — inside, a slick of real tuna packed in brine, not the synthetic grey NekoCorp sells at street level, the good stock reserved for executive floors and never meant to reach this apron at all. it's been diverted here, off-manifest, however that happened."
+    },
+    {
+      "actor": "ascii",
+      "text": "   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eats fast and quiet, guarding the opened seam with one shoulder the whole time, ears rotating between bites for anything that isn't dock-hum. Good enough turns into actually good, for once — the kind of good that almost makes the drone chase worth it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the apron settles back into its ordinary floodlit quiet, rain starting up thin over the crates, the diverted tuna's brine-smell slowly losing ground to wet asphalt and container rust. the gantry silhouette is gone by the time anyone would think to look back for it. the west gate's siren fades out entirely, chasing a number nobody on this stretch plans on collecting."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Head lifts half an inch at a sound that isn't dock-hum — thin, metallic, worrying at nothing in particular from somewhere past the west gate. Ears track it a beat, decide it isn't worth losing the meal over, settle back down."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the west gate a NekoCorp delivery jingle loops out of a parked truck's dash unit, tinny and cheerful to an empty cab, nobody left to hear it repeat SYNTHFISH: NOW WITH REAL FLAVOR MEMORY twice before cutting to static and starting over. the truck doesn't move. the jingle doesn't stop."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Drags the last scrap back into the gap between containers, the safest fold this stretch of dock has to offer, and settles down nose-to-tail — the chase, the number, the mirror-flash on the gantry, all filed the same as everything else worth remembering on this route, for whenever there's use in remembering it."
+    },
+    {
+      "actor": "ascii",
+      "text": "   ______\n  | TUNA |\n  |______|\n   \\____/\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the dock holds its quiet the rest of the night, floodlights humming steady over crates that keep their business the way they always do, brine and rust and rope-fray same as any other stretch of guarded cargo. somewhere past the west gate a drone patrol logs one more unconfirmed sighting and moves on to the next block, and one small shape breathes even and slow between two containers that aren't going anywhere either."
+    }
+  ]
+}
