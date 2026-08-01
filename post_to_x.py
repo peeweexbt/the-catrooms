@@ -44,6 +44,21 @@ State is tracked in x_post_state.json: the set of already-tweeted
 transcript ids (so nothing gets posted twice, regardless of which category
 it was picked from) and next_eligible_at (so a burst of runs doesn't post
 more than once per window).
+
+SCHEDULING MULTIPLE TWEETS AT TIMES YOU CHOOSE:
+    python3 post_to_x.py --queue "+2h,+5h,2026-08-02T09:00"   # queue posts to go out ~2hrs from now, ~5hrs from now, and at 9am on Aug 2 (local time)
+    python3 post_to_x.py --list-queue                          # show every pending/fired queued post and its status
+    python3 post_to_x.py --clear-queue                          # wipe all pending queue entries
+
+Each time can be either relative ("+90m", "+2h", "+1d") or an absolute local
+ISO datetime ("2026-08-02T09:00" or "2026-08-02T09:00:00"). Queued posts
+don't come with pre-written text — at the scheduled moment, the normal
+invocation (run automatically every ~15 min via launchd, same as always)
+notices the due entry and auto-picks the newest untweeted post the same way
+regular auto-posting does (still respects STRAY_TWEET_WEIGHT). A queued
+entry firing also resets the normal ~90min ambient window so it doesn't
+double up with an unrelated auto-post right after. Queue state lives in
+x_schedule_queue.json.
 """
 
 import argparse
@@ -64,6 +79,7 @@ except ImportError:
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 TRANSCRIPTS_DIR = os.path.join(SCRIPT_DIR, "transcripts")
 STATE_PATH = os.path.join(SCRIPT_DIR, "x_post_state.json")
+QUEUE_PATH = os.path.join(SCRIPT_DIR, "x_schedule_queue.json")
 MAX_TWEET_LEN = 280
 
 # The account's real cap under X Premium verification (~4,000 chars). Almost
@@ -121,6 +137,75 @@ def schedule_next_window(state, now):
 def save_state(state):
     with open(STATE_PATH, "w") as f:
         json.dump(state, f, indent=2)
+
+
+def load_queue():
+    if os.path.exists(QUEUE_PATH):
+        with open(QUEUE_PATH) as f:
+            return json.load(f)
+    return []
+
+
+def save_queue(queue):
+    with open(QUEUE_PATH, "w") as f:
+        json.dump(queue, f, indent=2)
+
+
+def parse_schedule_time(raw, now_utc):
+    """Parse one --queue entry into an aware UTC datetime.
+
+    Accepts either a relative shorthand ("+90m", "+2h", "+1d") measured from
+    right now, or an absolute ISO datetime ("2026-08-02T09:00" or with
+    seconds) which is treated as LOCAL time (this machine's timezone) since
+    that's what a person typing a time actually means."""
+    raw = raw.strip()
+    m = re.fullmatch(r"\+(\d+)([mhd])", raw)
+    if m:
+        amount, unit = int(m.group(1)), m.group(2)
+        delta = {
+            "m": timedelta(minutes=amount),
+            "h": timedelta(hours=amount),
+            "d": timedelta(days=amount),
+        }[unit]
+        return now_utc + delta
+
+    dt = datetime.fromisoformat(raw)
+    if dt.tzinfo is None:
+        # naive input -> assume the machine's local timezone, then convert
+        dt = dt.astimezone()
+    return dt.astimezone(timezone.utc)
+
+
+def add_to_queue(raw_times):
+    """Parse a comma-separated list of time strings and append them to the
+    schedule queue file as pending entries. Returns the list of newly added
+    entries (each a dict with "fire_at" and "posted")."""
+    now = datetime.now(timezone.utc)
+    queue = load_queue()
+    added = []
+    for raw in raw_times.split(","):
+        raw = raw.strip()
+        if not raw:
+            continue
+        fire_at = parse_schedule_time(raw, now)
+        entry = {"fire_at": fire_at.isoformat(), "posted": False, "posted_at": None}
+        queue.append(entry)
+        added.append(entry)
+    queue.sort(key=lambda e: e["fire_at"])
+    save_queue(queue)
+    return added
+
+
+def next_due_queue_entry(queue, now):
+    """Return the earliest not-yet-posted queue entry whose fire_at has
+    passed, or None. Only one is returned per call by design — if several
+    are overdue at once (e.g. the machine was asleep), they're worked
+    through one per invocation rather than fired in a burst."""
+    due = [e for e in queue if not e.get("posted") and datetime.fromisoformat(e["fire_at"]) <= now]
+    if not due:
+        return None
+    due.sort(key=lambda e: e["fire_at"])
+    return due[0]
 
 
 def load_all_litterposting():
@@ -250,14 +335,43 @@ def main():
     full_group = parser.add_mutually_exclusive_group()
     full_group.add_argument("--full", action="store_true", help="force this post to use the full rant (up to EXTENDED_TWEET_LEN) instead of rolling FULL_POST_PROBABILITY")
     full_group.add_argument("--short", action="store_true", help="force this post to use the classic punchy 280-char cut instead of rolling FULL_POST_PROBABILITY")
+    parser.add_argument("--queue", help="comma-separated times to schedule future posts at: relative (+90m, +2h, +1d) or absolute local ISO datetime (2026-08-02T09:00); adds to the queue and exits without posting anything now")
+    parser.add_argument("--list-queue", action="store_true", help="print all queued posts (pending and already-fired) and exit")
+    parser.add_argument("--clear-queue", action="store_true", help="delete all pending queue entries and exit")
     args = parser.parse_args()
 
     if args.whoami:
         ok = whoami()
         return 0 if ok else 1
 
+    if args.queue:
+        added = add_to_queue(args.queue)
+        print(f"Queued {len(added)} post(s):")
+        for e in added:
+            print(f"  - {e['fire_at']}")
+        print("\nThese will fire the next time this script runs (normally every ~15 min via launchd) at or after each time. Content is auto-picked at fire time, same as regular auto-posting.")
+        return 0
+
+    if args.list_queue:
+        queue = load_queue()
+        if not queue:
+            print("Queue is empty.")
+            return 0
+        for e in sorted(queue, key=lambda x: x["fire_at"]):
+            status = f"posted at {e['posted_at']}" if e.get("posted") else "pending"
+            print(f"  {e['fire_at']}  [{status}]")
+        return 0
+
+    if args.clear_queue:
+        n = len(load_queue())
+        save_queue([])
+        print(f"Cleared {n} queue entr{'y' if n == 1 else 'ies'}.")
+        return 0
+
     state = load_state()
     now = datetime.now(timezone.utc)
+    queue = load_queue()
+    due_entry = next_due_queue_entry(queue, now)
 
     no_match_msg = (
         f"No untweeted litterposting transcripts found for narrator {args.narrator}."
@@ -280,11 +394,13 @@ def main():
         tweet_text = build_tweet_text(transcript, full=use_full)
         print(f"Transcript: {transcript['id']} (narrator: {transcript.get('narrator') or 'STRAY'})")
         print(f"Mode: {'FULL POST' if use_full else 'short (280-char cut)'}")
+        if due_entry:
+            print(f"(a queued post from {due_entry['fire_at']} is currently due)")
         print(f"Tweet ({len(tweet_text)} chars):\n{tweet_text}")
         print("\n[dry run — not posting, not updating state, ignoring the hourly window]")
         return 0
 
-    if not args.now:
+    if not args.now and not due_entry:
         next_eligible_at = state.get("next_eligible_at")
         if next_eligible_at:
             next_eligible_dt = datetime.fromisoformat(next_eligible_at)
@@ -302,6 +418,8 @@ def main():
     tweet_text = build_tweet_text(transcript, full=use_full)
     print(f"Transcript: {transcript['id']} (narrator: {transcript.get('narrator') or 'STRAY'})")
     print(f"Mode: {'FULL POST' if use_full else 'short (280-char cut)'}")
+    if due_entry:
+        print(f"(firing queued post scheduled for {due_entry['fire_at']})")
     print(f"Tweet ({len(tweet_text)} chars):\n{tweet_text}")
 
     result = post_tweet(tweet_text)
@@ -312,6 +430,12 @@ def main():
     state["last_tweeted_at"] = now.isoformat()
     schedule_next_window(state, now)
     save_state(state)
+
+    if due_entry:
+        due_entry["posted"] = True
+        due_entry["posted_at"] = now.isoformat()
+        save_queue(queue)
+
     return 0
 
 
