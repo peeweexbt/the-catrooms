@@ -1,0 +1,108 @@
+{
+  "id": "conversation-cyberpunk_cats-1785552846-4f44f7",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T02:54:06+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "A low thud rolls up through the vent's ribbed seams before it ever reaches the ears as sound — felt first in the pads, low and old, the kind of felt that lives in the chest instead of anywhere sensible. Muscles lock on reflex, waiting on a second thud that hasn't come in longer than this body wants to admit."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the vent runs the length of a wall left standing between two lots — one already rubble, one still waiting its turn, a KILLDOZER-class crawler idling two lots over between shifts, hydraulic arm resting mid-air like it forgot what it was reaching for. dust hangs thick enough to taste through the grille slats. a banner strung across the site's chain-link reads COMING SOON: PREMIUM PARKING EXPERIENCE in NekoCorp orange, and three blocks off, past the rubble line, a marquee glows low and patient — DREAM PROCESSING ZONE, TIER UPGRADES AVAILABLE — the only steady light on that whole stretch."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The crawler's idle gets clocked and dismissed in the same breath — not running, not a threat yet, just resting the way big things rest between one kind of damage and the next. Paws carry forward through the duct anyway, toward the noise instead of away from it, teeth already testing the give of a loose grate up ahead."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the grate opens onto a gap torn clean through the wall's far side, overlooking the cleared lot below — rubble still settling in places, dust sifting down off broken brick in slow curtains. over all of it, a holo-projector strung high on a temporary mast throws down a parking grid, painted lines shimmering pale blue across concrete that hasn't finished being concrete yet, numbers stenciled onto spaces that don't exist under anything solid."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The shimmer gets no weight at all — wrong-colored light laid thin over rubble that still smells right underneath it, char and old plaster and something that used to be paint on a door. Nose works past the holo-grid entirely, finding the ledge's edge instead, one paw testing a girder that used to hold up more than air."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a rotor-thrum climbs the lot's far side, patrol drone banking low over the debris field, running a structural sweep on a slow zigzag — searchlight catching the holo-grid dead on where their paths cross, painted parking lines strobing bright then washing out each time the beam passes through. its undercarriage drops low enough to clear the girder's height by less than a body-length."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That low pass gets no fear at all, just a coil — ears forward, weight gathering back onto haunches, the old itch under it that's never once cared how big the thing overhead actually is."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone banks tight for a second pass, undercarriage sweeping close along the girder's exposed length, sensor bar throwing its cold blue scan-light across broken brick without once dipping toward the shape crouched motionless in its own shadow."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The gap closes on the second pass — one flat launch off the girder, claws finding a seam in the undercarriage plating on pure memory, jaw locking down over a cable joint that gives the exact way joints always give."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "something shorts with a hard blue spark, not the rotor — the drone's spotlight dies mid-sweep, plating clicking as its sensor bar recalibrates around the sudden blind spot. it doesn't buck or shriek, just corrects, banking off toward the site's edge dark-eyed and quiet, already logging the fault as routine maintenance instead of anything worth chasing."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That quiet retreat gets a taste of ozone and a satisfied spit, no more ceremony than that — paws let go of the plating before the bank finishes, dropping back onto the girder light and unbothered, already done with it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the lot settles back into dust-sift and crawler-idle, the holo-grid's parking lines looping their pale blue over rubble same as they will till someone remembers to kill the projector. past the site's far edge, the marquee three blocks off holds its patient glow — rows of coffin-shaped pods behind glass, meters over each one ticking up in small red digits every time a shape inside rolls over in its sleep, BILLED, BILLED, BILLED, nobody down there stirring enough to notice."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That glow gets a flat look and nothing else — somebody else's debt, somebody else's stillness, filed the same as the crawler and the drone and the wrong-colored parking lines. Attention drops instead to the rubble itself, nose working a path toward a slab fallen at an angle deep enough to hold shadow."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "under the slab, a pocket holds warm dust-heated air trapped where two broken walls lean into each other, the holo-grid's pale light thinning to almost nothing this deep in. rebar juts at odd angles overhead, close enough to brush fur but nothing that catches."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Weight settles into the pocket's warmth without ceremony, the old ache along one shoulder easing the second it stops carrying anything. Ears stay half up, tracking the crawler's idle note out of habit more than worry."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the crawler powers down fully somewhere past midnight, hydraulic arm locking still mid-reach, dust finally settling flat across the whole cleared lot. the holo-projector keeps its parking grid looping to nobody, three blocks off the marquee keeps its meters climbing on sleepers who stopped counting, and the wall that used to hold up more than this gap now holds up one small warm shape instead."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes drop to slits, the night's inventory filed and set down — the thud, the wrong-colored light, the drone's dead eye, the marquee's patient red digits. None of it follows this far into the rubble."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the lot holds its dust and its settling brick through what's left of the dark, crawler silent, drone gone, the whole cleared block waiting on a morning that'll pour concrete over all of it and call the waiting finished. for now the gap under the slab keeps its stolen warmth, same as it'll keep it every night this stretch of wall still stands."
+    }
+  ]
+}

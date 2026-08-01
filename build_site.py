@@ -190,6 +190,20 @@ header h1 {
   margin: 0;
   text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
 }
+.site-footer {
+  padding: 24px 16px 48px;
+  text-align: center;
+  overflow-x: auto;
+}
+.site-footer-art {
+  display: inline-block;
+  margin: 0 auto;
+  color: var(--dim);
+  font-size: 0.42rem;
+  line-height: 1.15;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
+  white-space: pre;
+}
 .screensaver-trigger {
   display: inline-block;
   margin: 18px auto 0;
@@ -740,6 +754,68 @@ THROUGHOUT THIS JOURNEY, LEARN OF THE PERILS, DRAMA, AND CAT SHIT FILLED POLITIC
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀"""
 
+# Homepage footer art — a night-sky/city-block ASCII scene, user-provided
+# verbatim. Kept as a raw string (backslashes in the cat faces like "/\\_/\\"
+# need to stay literal) and HTML-escaped at render time in build() since it
+# contains literal "<" and ">" characters (cat mouths, etc.) that would
+# otherwise be parsed as HTML tags.
+FOOTER_ART = r"""⠀⠀⠀⠀⠀.　　　　　　　　　　⠀⠀⠀✦ ⠀ ⠀　　　　　　　　　　　　　　⠀⠀⠀⠀⠀* ⠀⠀⠀.　　　　　　　　　　. ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀✦⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ ⠀⠀⠀⠀⠀⠀.　　　　　　　　　　　　　.　　　ﾟ .　　　　　　　　　　　　　. 　　　　　　　　　　　　　　　✦ 　　　　　,　　　　　　　.
+⠀　　　　　　　　⠀⠀⠀✦ ⠀ ⠀　　　　　　　　　　　　　　⠀⠀⠀⠀⠀* ⠀⠀⠀.　　　　　　　　　　. ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀✦⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ ⠀⠀⠀⠀⠀⠀.　　　　　　　　　　　　　.　　　ﾟ .　　　　　　　　　　　　　. 　　　　　　　　　　　　　　　✦ 　　　　　,　　　　　　　.
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+　　　　　　*　　　　　　　　　　　.
+.　　　　　　　　　　　　　. 　　✦⠀　   　　　,　　　　　　　　　*
+　　　　　⠀　　　　⠀　　,
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                 .        *              .        ✦            *
+        *                         .                           .
+　　　　　.　　　　　　　　　　⠀✦
+　˚　　　　　　　　　　　　　　*
+.⠀ 　　　　　　　　　　.　　　　　　　　.
+　　　　　✦⠀　   　　　,　　    　　　　　　　　.
+⠀⠀⠀⠀⠀⠀.　　　　　　　　　　⠀⠀⠀✦ ⠀ ⠀　　　　　　　　　　　　　　⠀⠀⠀⠀⠀* ⠀⠀⠀.　　　　　　　　　　. ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀✦⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ ⠀⠀⠀⠀⠀⠀.　　　　　　　　　　　　　.　　　ﾟ .　　　　　　　　　　　　　. 　　　　　　　　　　　　　　　✦ 　　　　　,　　　　　　　.
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+　　　　　　*　　　　　　　　　　　.
+.　　　　　　　　　　　　　. 　　✦⠀　   　　　,　　　　　　　　　*
+　　　　　⠀　　　　⠀　　,
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                 .        *              .        ✦            *
+        *                         .                           .
+                              .-^^^^^^^^^^^^^^^^-.
+                           .-'  /\_/\   NEKO SKY  '-.
+                         .'    ( o.o )   DISTRICT    '.
+                        /       > ^ <                  \
+                       /________________________________\
+
+              ║║                ║║                ║║                ║║
+          ╔═══╬╬═══╗        ╔═══╬╬═══╗        ╔═══╬╬═══╗        ╔═══╬╬═══╗
+          ║ █ █ █ ║        ║ █ █ █ ║        ║ █ █ █ ║        ║ █ █ █ ║
+          ║ █ █ █ ║        ║ █^ω^█ ║        ║ █ █ █ ║        ║ █↟█↟█ ║
+          ║ █ █ █ ║        ║ ████ █║        ║ █ █ █ ║        ║ █ █ █ ║
+          ║ █ █ █ ║        ║ ████ █║        ║ █ █ █ ║        ║ █ █ █ ║
+      ╔═══╩═══════╩═══╗╔═══╩═══════╩═══╗╔═══╩═══════╩═══╗╔═══╩═══════╩═══╗
+      ║  CATBYTE-09   ║║  PURRTRON HQ  ║║  NEKOCORP LED ║║   MIDNITE PAW ║
+      ║ ▣ ▣ ▣ ▣ ▣ ▣   ║║ ▣ ▣ =^.^= ▣ ▣ ║║ ▣ ▣ ▣ ▣ ▣ ▣   ║║ ▣ ▣ ▣ ▣ ▣ ▣   ║
+      ║ ▣ ▣ ▣ ▣ ▣ ▣   ║║ ▣ ▣ (___) ▣ ▣ ║║ ▣ ▣ ▣ ▣ ▣ ▣   ║║ ▣ ▣ ▣ ▣ ▣ ▣   ║
+      ║ ▣ ▣ ▣ ▣ ▣ ▣   ║║ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ║║ ▣ ▣ ▣ ▣ ▣ ▣   ║║ ▣ ▣ ▣ ▣ ▣ ▣   ║
+      ║ ▣ ▣ ▣ ▣ ▣ ▣   ║║ ▣ ▣ ▣ ▣ ▣ ▣ ▣ ║║ ▣ ▣ ▣ ▣ ▣ ▣   ║║ ▣ ▣ ▣ ▣ ▣ ▣   ║
+  ╔═══╩═══════════════╩╩═══════════════╩╩═══════════════╩╩═══════════════╩═══╗
+  ║  ███  ███  ███  ███  ███  ███  ███  ███  ███  ███  ███  ███  ███  ███  ║
+  ║  ███  ███  ███  ███  ███  ███  ███  ███  ███  ███  ███  ███  ███  ███  ║
+  ║═══════════════════════════════════════════════════════════════════════════║
+  ║     /\_/\            .-----.             /\_/\\          [ N E O N ]    ║
+  ║    ( o.o )          /|_||_\`\          =( °w° )=         CAT LOUNGE      ║
+  ║     > ^ <          (   _    _\            > ^ <                           ║
+  ╚═══════════════════════════════════════════════════════════════════════════╝
+            ||                    ||                     ||             ||
+============||====================||=====================||=============||========
+      ____        ______________________        ____________________        ____
+  ___/|_[]\___   |  TAXI-9   =^.^=     |      |  METRO // CATLINE |    __/[] \__
+ | _  CYBR   _|  |_____________________|      |____________________|   |  _CAR_  |
+ '-(_)----(_)-'     O              O               O            O       '-(o--o)-'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ the cats of neko city - dance upon the cyber-enhanced moonlight - [nekocorp approved]"""
+
 INDEX_TEMPLATE = """<!doctype html>
 <html lang="en">
 <head>
@@ -774,6 +850,7 @@ INDEX_TEMPLATE = """<!doctype html>
 <div class="grid">
 {cards}
 </div>
+<footer class="site-footer"><pre class="site-footer-art">{footer_art}</pre></footer>
 </body>
 </html>
 """
@@ -1813,6 +1890,7 @@ def build(transcripts_dir, out_dir, gen_titles):
         header_decorations=build_decorations(ASCII_CATS, meowizen_faces),
         hero_text=hero_text,
         cards="\n".join(all_cards) or "<p style='color:#6b8f6a'>no transcripts yet — run backrooms.py first</p>",
+        footer_art=html.escape(FOOTER_ART),
     )
     with open(os.path.join(out_dir, "index.html"), "w") as f:
         f.write(index_html)
