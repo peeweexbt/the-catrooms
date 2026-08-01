@@ -15,10 +15,10 @@ rant; occasionally it instead looks for the newest untweeted rant from one
 of the ten named Meowizens. Either way it reads the transcript's top-level
 "narrator" field (also shown on the live site) rather than guessing.
 
-Runs are rate-limited to roughly every 3-6 hours (randomized each time, not
-a fixed interval) via a next_eligible_at timestamp kept in state — so this
-script is meant to be invoked frequently (e.g. every 15-30 min via launchd)
-and will just no-op most of those times until the window opens.
+Runs are rate-limited to roughly once every 90 minutes via a
+next_eligible_at timestamp kept in state — so this script is meant to be
+invoked frequently (e.g. every 15 min via launchd) and will just no-op most
+of those times until the window opens.
 
 This is a LOCAL script, meant to run from your own machine (via its own
 launchd job, same pattern as auto_push.sh) — NOT from a Cowork scheduled
@@ -27,9 +27,9 @@ same way it blocks direct model API calls; this only works from a machine
 with normal internet access.
 
 Usage:
-    python3 post_to_x.py                          # posts if the 3-6hr window has opened and there's something new
+    python3 post_to_x.py                          # posts if the ~90min window has opened and there's something new
     python3 post_to_x.py --dry-run                # prints what would currently be picked/tweeted, ignoring the time window; no post, no state change
-    python3 post_to_x.py --now                    # ignore the 3-6hr window and post immediately if there's something new
+    python3 post_to_x.py --now                    # ignore the 90min window and post immediately if there's something new
     python3 post_to_x.py --now --narrator STRAY   # ignore the window AND force the pick to a STRAY-narrated post (skips the weighted pick entirely)
     python3 post_to_x.py --dry-run --narrator STRAY --random   # preview a random eligible STRAY post instead of always the newest one; rerun to see a different one
     python3 post_to_x.py --dry-run --full         # preview with the full untruncated rant forced on (requires X Premium verification to actually post at this length)
@@ -85,8 +85,8 @@ FULL_POST_PROBABILITY = 0.4
 # generation task uses — X is meant to be much more STRAY-dominant.
 STRAY_TWEET_WEIGHT = 0.9
 
-MIN_HOURS_BETWEEN_POSTS = 3
-MAX_HOURS_BETWEEN_POSTS = 6
+MIN_HOURS_BETWEEN_POSTS = 1.42   # ~85 min
+MAX_HOURS_BETWEEN_POSTS = 1.58   # ~95 min
 
 
 def _entry_sort_key(data):
@@ -112,7 +112,7 @@ def load_state():
 
 
 def schedule_next_window(state, now):
-    """Pick a random point 3-6 hours from now and stash it in state as the
+    """Pick a random point ~90 minutes from now and stash it in state as the
     next time this script is allowed to post."""
     next_at = now + timedelta(hours=random.uniform(MIN_HOURS_BETWEEN_POSTS, MAX_HOURS_BETWEEN_POSTS))
     state["next_eligible_at"] = next_at.isoformat()
@@ -244,7 +244,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="print what would be tweeted right now, ignoring the time window; don't post or touch state")
     parser.add_argument("--whoami", action="store_true", help="read-only auth check against X's API; doesn't touch transcripts or state")
-    parser.add_argument("--now", action="store_true", help="ignore the 3-6hr window and post immediately if there's something new")
+    parser.add_argument("--now", action="store_true", help="ignore the hourly window and post immediately if there's something new")
     parser.add_argument("--narrator", help="force the pick to this exact narrator (e.g. STRAY) instead of the usual weighted pick; no-ops if nothing untweeted matches")
     parser.add_argument("--random", action="store_true", help="pick a random eligible candidate instead of always the newest one; combine with --dry-run to preview different options by rerunning")
     full_group = parser.add_mutually_exclusive_group()
@@ -281,7 +281,7 @@ def main():
         print(f"Transcript: {transcript['id']} (narrator: {transcript.get('narrator') or 'STRAY'})")
         print(f"Mode: {'FULL POST' if use_full else 'short (280-char cut)'}")
         print(f"Tweet ({len(tweet_text)} chars):\n{tweet_text}")
-        print("\n[dry run — not posting, not updating state, ignoring the 3-6hr window]")
+        print("\n[dry run — not posting, not updating state, ignoring the hourly window]")
         return 0
 
     if not args.now:

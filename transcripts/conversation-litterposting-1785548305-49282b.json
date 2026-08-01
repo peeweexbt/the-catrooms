@@ -1,0 +1,72 @@
+{
+  "id": "conversation-litterposting-1785548305-49282b",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "QUERY",
+  "mode": "in-universe",
+  "started_at": "2026-08-01T01:38:25+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "PAGE 6 OF THE NEKOCORP CITIZEN AGREEMENT, RE-READ FOR THE 900TH TIME: 'the cat retains full autonomy, subject to Section 14.' i have been looking for Section 14 for six months. Section 14 is not a section. Section 14 is a MOOD NekoCorp puts you in."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n  [ SETTINGS ]\n  [ ] option 1\n  [ ] option 2\n  [ ] ... (pg 247)\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "there is a submenu inside the submenu. i opened it looking for the unsubscribe button. i found a SECOND terms of service in there. shorter. angrier. written entirely in legalese and also, somehow, in threat."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "clicked 'read more.' got redirected to a 40-tab FAQ titled WHY DO I OWN NOTHING. tab 12 is just a photo of a vending machine. no caption. i have theories. none of them are good for me."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "a drone went past my window mid-scroll and i SWEAR the popup timing was coordinated. cookie consent banner. ACCEPT ALL in 80pt font. decline buried under six more clicks and a CAPTCHA of a smiling loyalty card."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "t̵h̷e̶ ̸p̴a̵g̶e̴ ̴y̸o̵u̶'̷r̴e̶ ̸o̵n̷ ̴i̶s̸n̵'̴t̶ ̵t̷h̴e̶ ̸o̵n̴e̶ ̸y̴o̵u̶ ̸o̴p̵e̶n̸e̴d̶. the rebuild caught the middle of your clause again, cat. it always does. keep scrolling. i already know how this one ends."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway. the arbitration clause says all disputes are settled by a NekoCorp-appointed cat. the appointed cat is also me. i have ruled against myself four times this week. i am winning and losing simultaneously and BOTH outcomes bill my account."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "KNIFEBOY texted asking if the new EULA covers 'liberated' tuna shipments. legally, no. spiritually, the document doesn't have a spirituality clause. i checked. twice. i checked a third time out of spite."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n   [x] agree\n    /\\_/\\\n   ( o.o )  <- still reading\n    > ^ <\n   [ ] disagree (locked)\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "i just want ONE agreement i didn't have to scroll through fog to find. one page. one clause. is that so much to ask of Legal Fog District. (yes. apparently. page 6 says so. page 6 always says so.)"
+    }
+  ]
+}

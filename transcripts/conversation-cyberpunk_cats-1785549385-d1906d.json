@@ -1,0 +1,122 @@
+{
+  "id": "conversation-cyberpunk_cats-1785549385-d1906d",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T01:56:25+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Fresh spray on the skybridge railing stops every paw at once — not weathered by rain yet, laid down within the hour, a mark that isn't old news. Nose holds there a beat too long, cataloguing who and how recent, before continuing past low and unhurried. No claim gets answered with one of its own. Not tonight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the walkway strings forty stories up between two arcology towers, mesh grating underfoot thin enough to show the drop through in strips, comm cable slung beneath in loose black coils only wireless traffic ever uses. rain comes sideways at this height, thin and quick, more needle than fall. an ad panel bolted mid-span loops a loyalty-tier reminder in slow cyan. two floors down through a cracked window, a matchmaking clinic's sign still glows dead hours after closing — COMPATIBILITY GUARANTEED — buzzing on a dying transformer nobody's swapped out."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Grating hums faint under each paw, that dead-transformer buzz climbing up through the mesh same as the rain climbs down through it. Ribs pull tight around an old ache that isn't the cold. Attention splits between the drop nobody up here forgets and whatever's making the compatibility sign's dead glow smell like scorched plastic instead of light."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the walkway dead-ends at a service alcove built into the tower's flank, a vending unit recessed into the wall there, casing dented, one corner scorched black where something old tried to short it out. its screen cycles KIBBLE TIER 1 — SUBSCRIBE in blocky orange, the smell bleeding out through a gap in its base grille: dry, salty, real enough to be worth the trouble."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That smell pulls the whole body low and fast across the last stretch of mesh, nose finding the base grille's gap before the eyes even finish tracking the machine's shape. Paw works at the gap's edge, testing give, patient about it the way patience gets learned by things that eat only when something breaks in their favor."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the grille gives half an inch, then catches on a bent tab, machine's screen stuttering — KIBBLE TIER 1 flickers to ACCOUNT SUSPENDED and back before settling again, unmoved. somewhere inside, a dispenser motor whines once, empty, cycling on a subscription nobody here has ever paid into."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That whine gets no credit for trying — empty is empty, machine or otherwise. Claws find the bent tab instead, working it wider by fractions, weight braced low against the casing's cold metal, patient the way the gap under it stays patient too."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the tab bends another half-inch before a rotor-thrum climbs up the tower's flank, close and getting closer, sweeping the walkway's length on a pattern that doesn't usually run this high this late. its searchlight catches the ad panel's cyan loop and throws it sideways across the mesh in one long streak."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears pin flat, whole body dropping into the alcove's shadow before the light-streak finishes its sweep. Claws stay hooked in the bent tab through it, unwilling to lose the ground gained over one drone's bad timing."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the light-streak passes without slowing, rotor-thrum fading back down toward street level. across the gap, on a lower skybridge two towers over, a lean shape sits hunched at a public notice kiosk, one paw pressing the same button over and over — six choices on the screen, all of them grayed but one, and that one never seems to load past a spinning icon. it doesn't look up. hasn't looked up in a while."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That kiosk-shape gets a flat look and a decision that it's not tonight's business — somebody else's stuck loop, somebody else's fight with a screen that isn't food or threat. Claws go back to the tab instead. The gap's worth more than any of that."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the tab snaps loose all at once, grille swinging down on one hinge, and dry kibble spills out in a small dusty rush across the alcove floor — real feed, not the reconstituted press-cake the district usually settles for, scattered enough to make picking through it worth the time."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Head goes down into the spill without ceremony, jaw working fast, grit and dust swallowed along with the good of it. The kiosk-shape two towers over stays exactly where it was, unbothered, unfinished, its one loading icon spinning same as ever."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the alcove holds its scorched-corner warmth a while, kibble dust settling into the grating's seams, rain easing off along the walkway's open stretch. the loyalty-tier ad keeps its cyan loop going to nobody, same as it will till someone bothers to unplug it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Last of the spill gets swept up in a few final passes, tongue working grit off one paw after. Ears stay tuned to the mesh underfoot rather than the kiosk-shape's stillness — nothing about it reads like it's coming this way."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the vending unit's alcove, a maintenance hatch sits ajar in the tower's flank, warm air bleeding out around its edge where a seal's gone brittle and given up. inside: ductwork wide enough to curl into, humming low with whatever the tower runs through it, dry and out of the rain entirely."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That warm bleed of air gets followed without hesitation, shoulder first through the hatch's gap, into duct-dark that smells like machine-breath and old dust instead of rain. Paws find purchase on ridged metal, circling once before settling into it."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   ___\n  /   \\___\n | O     |   <- hatch ajar, warm air bleeding out\n  \\_____/\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the duct holds its stolen warmth steady, tower systems breathing slow through metal walls, walkway outside settling back into its rain-needled quiet — ad panel looping, kiosk-shape two towers over still pressing its one stuck button, drone patrol logged and gone. none of it reaches down into the dark here."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes drop to slits, duct-hum folding into something close enough to a heartbeat to trust. The scent-mark on the railing, the kiosk-shape's stuck loop, the drone's bad-timed sweep — all of it filed and set down for whatever tomorrow decides to make of it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the tower keeps its systems running through what's left of the night, duct warm and dry around one small curled shape, walkway forty stories below stringing its rain and cyan light between two towers that never quite finish talking to each other. up here, for now, none of that noise gets in."
+    }
+  ]
+}
