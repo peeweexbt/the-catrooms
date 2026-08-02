@@ -1,0 +1,102 @@
+{
+  "id": "conversation-cyberpunk_cats-1785676002-946308",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-02T13:06:42+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Hunger first, hollow and pulled tight since the light was still grey, sharper now that the grey's gone fully to dark — ribs read thin under fur still damp from a rain that quit an hour before dark actually fell. Something underground hums low enough to register in the pads before the ears bother confirming it: warm machines, stacked deep, none of them ever fully off."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the hum belongs to a stretch nobody bothers lighting properly — three long rows of rack housing crammed into a parking deck's lower level, heat bleeding off louvered vents in a shimmer visible even through the cold. chain-link sags around the whole block, patched more than it's whole. at the alley mouth a vending unit squats dark except for one line looping under cracked glass: SUBSCRIPTION REQUIRED FOR WATER ACCESS — TAP TO ENROLL. past the second row, fans spin up half a tone sharper, hold there a moment, then settle, like the whole block just took a breath and let it back out."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "No interest in the vending unit's offer, same as every night it's made one — no tuna in a water pitch, never has been. The gap between sagging link and a rusted post gives at the exact height a shoulder's learned to expect, worn soft by however many crossings came before tonight's. Past it, the vent-heat lands like a wall, and the paws angle straight for the nearest louver without waiting on the rest of the body to agree."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the heat comes in long, steady pulses, ozone and warm dust thick enough to sit on the tongue. past the first row, bolted low to a support post, a cracked monitor loops the same six seconds of something aquatic and blue-lit — a fish, or the ghost of one, circling the same six inches of glass on repeat, whatever speaker used to carry its sound blown out years back. two shelves up, a router stack throws a faint blue wash across the concrete, fan-whine climbing and falling in a rhythm nothing else down here keeps."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Stops dead in front of the loop, weight settling low without deciding to. The fish doesn't smell like anything, doesn't move like real prey moves — same six inches, forever, never closer, never further — and still a paw comes up against the cracked glass anyway, claws out half an inch, some old circuit behind the eyes insisting this time might be different."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the glass is cold enough to sting through the pad, and under the paw the loop stutters, hangs a half-second too long on nothing before resetting — then, for three full seconds, the fish is gone entirely, replaced by a wide grinning face looping H̶A̶P̶P̶Y̶ ̶M̶O̶N̶D̶A̶Y̶ ̶H̶A̶P̶P̶Y̶ ̶M̶O̶N̶D̶A̶Y̶ in a voice with no speaker left to carry it, some cross-wired feed off a livestream three sectors over bleeding through the cracked panel before the fish resets clean overtop of it, unbothered, like nothing ever swam through wrong."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   .-----.\n  ( ^   ^ )\n   \\  -  /\n    -----\n [SMILE: MANDATORY]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears pin flat at the wrongness of it, the too-wide grin gone before the flinch even finishes — ranked somewhere below the drone-light and above the rain on the list of things worth a full-body reaction. Backs off the glass a half step, tail low, and lets the fish have its loop back uncontested. Attention slides instead to the router stack's low blue wash, closer now, warmer, humming a frequency the whiskers pick up before the ears do."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the router stack answers the attention with a change of its own — one indicator on the third shelf flicks from steady green to a stuttering amber, load registering somewhere it isn't supposed to, unauthorized weight leaning against a signal that was never meant to carry a cat's curiosity. two rows over, a wall-mounted panel wakes on its own, small red text scrolling once: ANOMALOUS PROXIMITY — SECTOR 9 — FLAGGING."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Freezes at the panel's small red scroll, not understanding the words so much as the register they're said in — the same flat, administrative tone that's meant trouble every other time it's shown up. Weight goes still over the concrete, ears swiveling independent of each other, one tracking the panel, one already reaching past it for whatever's coming next."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "what's coming next arrives as rotor-thrum, climbing from somewhere past the vending unit's dark screen — a patrol unit banking low between the racks, downlight raking each row in turn, closer with every pass. the amber indicator keeps its stutter going, patient, unbothered by the alarm it's caused, same as it'll be unbothered by whatever happens next."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't wait for the light to reach this row. Drops flat and threads sideways between two rack housings, the gap barely a shoulder's width, warm metal scraping both flanks on the way through — the same old trade, comfort for cover, made without needing to think about it twice."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap swallows the shape whole just as the downlight sweeps the space it left, raking empty concrete a half-second too late. the drone circles once more, rotor-whine tight and searching, then peels off toward the vending unit instead, drawn by the amber indicator's stubborn stutter rather than anything that's actually still moving. its light finds the cracked screen, the looping fish, nothing else, and holds there a moment before giving up entirely."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Waits out four full breaths in the dark between housings before the legs agree to unlock. The ache surfaces once the danger stops competing for attention — an old chill settling back into the joints, hunger returning right where it left off, sharper for the run. Noses toward a gap in the far wall, no more hum drawing it now, just the plain need to be somewhere smaller and darker than this."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap lets out onto a maintenance stair, narrow, dry, tucked far enough from the racks that the fan-whine fades to something felt rather than heard. behind, the alley keeps its business — vending unit still looping its offer to no one, router stack's amber light stuttering on into a night that isn't watching anymore, the fish still circling its six inches like it never stopped, like it never will."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Curls into the stair's tightest corner, tail wrapped close, the day's hunger still unanswered but quieter now, filed under tomorrow instead of tonight. Eyes go to half, tracking nothing, the ear that stood watch the whole way down finally allowed to stand easy."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the block runs its ordinary hours around the small shape without asking anything of it — fans cycling, subscriptions unclaimed, a stray signal somewhere still logging a discrepancy nobody's coming to check tonight. the rain, patient, unbothered, keeps finding its own rhythm on the roof overhead, the only thing in Server Alley 9 running exactly on schedule."
+    }
+  ]
+}

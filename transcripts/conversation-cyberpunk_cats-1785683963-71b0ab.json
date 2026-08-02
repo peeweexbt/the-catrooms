@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785683963-71b0ab",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-02T15:19:23+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Already running before the decision to run finishes arriving — wet pavement slick underpad, breath tearing ragged around a stitch that's been building for two blocks now. Behind, too many footsteps for one body close the gap by inches every stride, yowls layered over each other in a rhythm that means crew, not lone cat."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the ramp spirals up into a parking structure gone quiet on cars decades back, its lower bays gutted into stalls and cold-storage lockers, sodium light buzzing every third fixture and skipping the rest. six levels up the concrete opens onto a flat roof deck ringed in chain-link, arcology spires blinking red past the rail. footsteps below take the ramp two at a time, voices sharpening into words now — CUT HER OFF AT FOUR, CUT HER OFF AT FOUR — a crew that knows this structure's angles better than a stranger ever could."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Peels off the ramp at the second landing instead of running it straight, ducking low between two rows of humming coolant units stacked floor to ceiling — chest working hard against the ribs, sides heaving, ears flat and swiveling for footfall on concrete versus footfall on metal stair."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the coolant units run a steady bass hum, frost feathering the seams of the nearest one under a cracked decal — a cartoon fridge holding a cartoon fish, PARTNERED APPLIANCE PROGRAM, NEKOCORP SMART CHILL: FOUND YOUR MATCH YET? — half peeled, half still glowing faint blue from a failing backlight. below, the footsteps split at the landing, one set continuing up the ramp, the rest fanning out across level two, voices dropping to something lower than words now."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n ________\n|  []    |\n|--------|\n|  []  ♥ |\n|________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Presses flank flat against the coldest unit in the row, letting the frost-chill numb the stitch in the side before it can fully arrive. the hum runs through the ribs steadier than the heartbeat trying to slow down to match it, some old comfort in a rhythm that doesn't care what's chasing what."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the unit answers the weight against it with a small mechanical shudder, compressor cycling up a half-step to compensate, decal light guttering once before steadying. two rows over, cutting through the frost and old grease, a second smell threads in — scorched fur, faint, gone stale weeks back, worked into the seam where a vent grate hangs bent inward on one hinge, wrenched from the inside rather than pried from without."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose follows the scorched thread to the bent grate without deciding to, drawn same as always toward any smell that isn't chase-sweat or fridge-frost. the metal's cold and old, edges curled soft with rust, nothing behind it now but a shaft running dark and down."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "whatever went through that grate did it hard and did it once — no scratch marks, no patient working of the hinge, just alloy folded like something twice the weight of a cat put a shoulder through it and kept going. deeper in the shaft, hard to place exactly where, a low mechanical shudder answers back, distant, the whole structure's old bones settling around a hole that was never meant to be there."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears swivel off the grate fast, both at once, catching a new set of footfalls this time — careful ones, testing each stair before trusting it, closer to the coolant row than the last set ever got. weight shifts back toward the fridge's shadow without a plan yet, just the old rule: don't be where the sound is looking."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "level two's mouth fills with silhouettes at the ramp edge, three of them, fur slicked flat with the rain, one dragging a hind leg from some older fight. a fourth shape hangs back on a support beam overhead — a drone, small, camera-mounted, its downlight stuttering once across a coolant unit's decal, and for less than a second the decal doesn't say PARTNERED APPLIANCE at all, says something else entirely, some string of characters with no vowels in it, gone before the light moves on, the fridge back to advertising fish and forever by the time anyone could swear they'd seen anything different."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Flinches at the flash of wrong text without understanding why it counts as wrong, some old circuit filing it next to the violet taste and the too-wide grin — things that don't belong to tonight's danger but get remembered anyway. the real danger's the three silhouettes, and that's where the attention snaps back to, fast."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the limping one calls something low across the row, not quite a word, and the other two fan wide to flank the coolant units from both ends — the classic squeeze, the kind that doesn't need speed if it's got patience and both exits covered. the drone overhead holds its position, light steady now, waiting on whoever's hiding to decide it's tired of hiding."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't wait to find out how patient they are. drops flat and threads under the lowest unit's service gap, a hand's width of clearance between the floor and the frost-slicked casing, dragging the ache in the side along for it whether it wants to come or not."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap runs the length of the whole row, service access for a maintenance cart nobody's driven in years, and it lets out the far end into a stairwell sealed off behind a door propped by a fire extinguisher nobody bothered removing. the silhouettes' voices carry a beat behind, confused now, the squeeze closing on a space that's already empty."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Takes the stairs down two at a time instead of up, gambling on the crew expecting height over depth, lungs burning past the stitch now, the scorched-vent cold still clinging faint to one shoulder from the press against the grate earlier."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the stairwell dumps out onto the street through a service door rusted half open, rain hitting harder at ground level than it ever does six floors up. behind, the parking structure's noise thins fast — voices arguing over a false trail, the drone's whine circling the coolant row twice before giving up and peeling off toward easier ground."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't stop moving until three more turns and an alley put real distance behind the sound of it. finally slows behind a stack of drainage pipe, ribs heaving, the stitch finally allowed to just hurt without anything demanding faster besides."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the block here runs quieter, older, storm drains doing most of the talking. rain keeps finding new rhythms on every different surface it lands on, and somewhere behind, six floors up and fading, the coolant units keep humming their steady bass note to nobody, PARTNERED APPLIANCE PROGRAM still glowing faint blue over an empty row, waiting on a match that was never actually coming tonight."
+    }
+  ]
+}

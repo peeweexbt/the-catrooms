@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785648085-31530f",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-02T05:21:25+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Teeth close around the rotor guard before the whine even registers as sound — cold alloy thin as a rib bone, still spinning when the jaw clamps down. this one bites back, sparks stitching down through both front paws, and still the grip doesn't loosen."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the housing splits along an old weld, motor screaming past its rated pitch before a rotor blade catches concrete wrong and the whole unit cartwheels into a dumpster with a sound like a struck gong. sparks gutter out one by one. overhead, a rectangle of empty air where a building used to stand keeps projecting itself anyway — a hologram of a parking structure filling the exact footprint of an apartment nobody paid to remember, and a speaker bolted to nothing yet plays THANK YOU FOR YOUR CONTRIBUTION TO OVERFLOW CAPACITY, SECTOR 12 in a voice built to sound thankful."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ozone and burnt insulation, sharp against the tongue where a spark caught it. carries the carcass by one intact strut, dragging it low across broken pavement, back toward the gap between two collapsed girders that still smells like home no matter what the air over it insists on being now."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the vent shaft swallows the sound behind it — outside rain, inside just pipe-hum and one loose bracket ticking against warm metal on a two-second interval, patient as a pulse. old dust half-fossilized into the corners still carries a memory of poured concrete, of a floor plan long since jackhammered into a rendering. down at the far end the duct opens on a nest of chewed cable, insulation stripped to bare copper in a dozen places, teeth marks in every one."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles in over the wreckage, back molars working a length of stripped insulation into pulp out of habit more than hunger. ear rotates on its own before the rest of the body agrees to care — something crossed the threshold two nights back and left an opinion about it on the girder outside, sharp and recent enough to still be worth answering."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the mark on the girder reads territorial in a chemistry older than any fence nekocorp ever put up, laid recent enough that whoever left it hasn't gone far. a cracked speaker two blocks over catches a stray broadcast and holds it too long — a cat's voice, relentlessly upbeat, cutting in and out: '—AND REMEMBER, EVERY MONDAY IS AN OPPORTUNITY TO—' before the signal folds back into static, some other cat's problem, some other cat's smile, entirely apart from tonight."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Hackles hold a beat longer than they need to, then settle. answering a claim tonight costs more than walking around it does. eases back from the girder instead, low and unhurried, choosing the long way through a fold of collapsed scaffolding rather than the short way through somebody else's argument."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the scaffolding holds its angles like a ribcage with the organs looted out, girders sheared clean where the demolition crews came through on schedule and precisely nowhere else. two levels up, briefly, a shape holds still against a flicker of streetlight — narrow, low, a pair of lenses throwing the light back instead of taking it in — gone by the time the angle changes, if it was ever really there instead of just the rain doing something convincing with the glare."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't look twice. whatever wears mirrors instead of eyes up there has its own reasons for the rooftops, same as this level has its own reasons for staying close to the ground. keeps moving, paws finding the dry line along the base of a wall out of old habit, weight distributed so nothing underfoot gets a chance to announce itself."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the wall runs true for eleven meters and then, for less than one of them, isn't the wall from an hour ago — same brick, wrong stain, a seam nobody poured. ̶t̶h̶i̶s̶ ̶p̶a̶r̶t̶ ̶g̶e̶t̶s̶ ̶r̶e̶d̶r̶a̶w̶n̶ ̶e̶v̶e̶r̶y̶ ̶f̶e̶w̶ ̶h̶o̶u̶r̶s̶,̶ ̶g̶i̶v̶e̶ ̶o̶r̶ ̶t̶a̶k̶e̶.̶ ̶n̶o̶b̶o̶d̶y̶ ̶e̶l̶s̶e̶ ̶n̶o̶t̶i̶c̶e̶s̶ ̶t̶h̶e̶ ̶s̶e̶a̶m̶. then the brick is only brick again, old and consistent and exactly as wet as it should be, and the alley keeps its shape the rest of the way down."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Flinches off the wrong stain before the legs decide why, a full body-length sideways step that costs nothing and answers nothing. sniffs the seam once from a safe distance — same brick smell as everywhere else, no reason offered, no reason taken. keeps to the far side of the alley the rest of the way down anyway."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rest of the block behaves — puddles hold their reflections the ordinary amount, a nekocorp tower two districts over cycles its usual ad through the low cloud, SYNTHFISH: NOW WITH REAL OCEAN MEMORY, the words smearing wet and orange across the underside of the rain. an access ladder waits at the alley's end, rusted through in a way that looks load-bearing right up until it isn't."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Tests the first rung with one paw before committing weight to it, old caution earned somewhere further back than memory bothers keeping. it holds. climbs to a landing three rungs up instead of the roof, low enough to stay out of drone sightlines, high enough that nothing on four legs gets to this ledge without announcing itself first."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the landing keeps the rain off in patches, corrugated overhang punched through in three places where light gets in anyway, thin silver lines drawing themselves across the concrete and sliding slow as the storm shifts overhead. underneath, the district hums its usual layered hum — traffic two streets down, a compressor cycling somewhere, a vending machine three blocks off charging its usual toll for water that used to just be water."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Weight finally goes all the way down, first time since the rotor. the ache surfaces once everything else stops competing for attention — one front paw, singed where the spark caught it, throbbing in time with the ear that's still logging every sound within two blocks out of habit rather than need."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "nothing on the ledge asks anything of the paw. the overhang holds its three thin blades of light steady, rain finding a rhythm against corrugated metal that isn't quite a lullaby but isn't not one either, and two districts over the tower's ad cycles down to standby, its glow dimming to the kind of orange that doesn't advertise anything, just exists."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes go to half, then further, the paw tucked in against the chest where it can't be stepped on by accident. ear keeps its post a while longer, then, finding nothing worth the effort, finally clocks off too."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rain keeps its own count long after there's nobody left awake to keep it for. somewhere below, the drone carcass cools by the dumpster, one rotor still twitching now and then on a dying signal, and the alley holds its shape — for now — the way it always does right up until the next time it doesn't."
+    }
+  ]
+}

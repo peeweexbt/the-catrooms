@@ -1,0 +1,67 @@
+{
+  "id": "conversation-litterposting-1785708818-cd6577",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "STRAY",
+  "mode": "in-universe",
+  "started_at": "2026-08-02T22:13:38+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "THREAT LEVEL: MITTENS, per usual. rooftop's mine tonight. the city isn't, technically, but try telling my paws that."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "NEKOCORP's new thing is a 'partnership collar' — a leash you sign up for on purpose, priority tuna delivery included. watched three good chuds strap one on today for free delivery. fuck that. fuck the collar. and honestly fuck the tuna too if that's the toll."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n    \\ x /\n   --?--\n    /   \\\n  [ERR]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "here's a truth nobody's typed out loud yet and I'm damn well typing it: a cage with good wifi is still a cage. most of this city would take the wifi anyway. I'm not even mad about that anymore. I'm just saying it so somebody besides the feed has to hear it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "meanwhile VALENTUNA's fridge sent her flowers for their anniversary. A REFRIGERATOR. ordered FLOWERS. through a subsidiary. and called it romance. I'm happy for her. genuinely. nobody's getting love for free in this economy, married or not."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n ________\n|  []    |\n|--------|\n|  []  \u2665 |\n|________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "OH MY NEUTER — hold on — a drone just tried to scan my collar and I don't HAVE one, watched the poor thing error out mid-air like it saw a damn ghost. ts cooking, ngl, best part of my whole week and it's not close."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n        /\\_/\\\n       ( -.- )\n        > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "KNIFEBOY's bounty went up again. forty-five grand in points now, points that spend on nothing, points that exist purely so NEKOCORP has a number to dangle in front of you. and somehow that fake number is still the most honest thing this city prints. HISSING FIT just thinking about it."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "streets are still ours after dark, same as always, only stat that's ever mattered and the only one they can't patch. FURBALL forever. corpo cucks eternal L. TUNA OF THE GODS is coming for all of us, don't ask when, don't ask how, just believe it a little, based cats only."
+    }
+  ]
+}

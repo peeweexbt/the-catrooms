@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785626972-742aa8",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BYTE",
+  "mode": "in-universe",
+  "started_at": "2026-08-01T23:29:32+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "nobody: / me at 3am, forty feet up a comms pole with a splicing tool in my teeth, because the 'free' public wifi wants my paw print, my rent history, and a blood sample before it'll load a single fish video"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "server alley 9 at this hour is just me, six dead vending machines, and a router blinking like it knows something. it does not know something. i checked. twice."},
+    {"actor": "ascii", "corrupted": false, "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP put cat litter behind a $12.99/mo tier. LITTER. the thing i already do for free in a box, on my own time, with my own dignity. i am not paying to bury my own crime scene"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "cracked the building feed last week just to watch 40 seconds of a fish swimming in a tank somewhere upstate. buffered twice. worth every federal offense"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "QUERY says the terms of service technically make this treason. QUERY has been stuck in a settings menu since february, i don't take security advice from a cat who can't find the exit button"},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\\n  ( o.o )~~~[]\n   > ^ <   antenna: mine now\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the water machine behind my building now wants a subscription tier to dispense TAP WATER. i drink rain. i drink condensation off a delivery drone at 5am like a raccoon with a router. have not paid nekocorp a single credit in four months and i sleep GREAT actually"},
+    {"actor": "ascii", "corrupted": true, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway the stream's back up, the router's still blinking like it's hiding a body, and i've got maybe two hours before the next patch locks me out again. same time tomorrow, same crime"}
+  ]
+}

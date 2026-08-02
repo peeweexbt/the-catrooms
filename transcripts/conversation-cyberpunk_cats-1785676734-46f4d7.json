@@ -1,0 +1,108 @@
+{
+  "id": "conversation-cyberpunk_cats-1785676734-46f4d7",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-02T13:18:54+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Stillness. Paws tucked, tail flat along cold grating, watching a forklift trace the same yellow line under sodium light that never quite goes out. Ribs read thin tonight — hasn't caught tuna crate through the plastic wrap in two nights, and the wrap smell is the only clean thing anywhere down here. An old scar along the left foreleg pulls tight in the damp, same one that opened the night the last shipment bled through its packaging."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "stacked crates run four deep along the dock, plastic-wrapped, each one stamped with a seal that glows faint blue when scanned — the forklift makes its turn every forty count, exact, never once off rhythm. overhead a patrol schedule ticks down on a cracked display: NEXT SWEEP: 06:12. the air smells of brine and machine oil and something colder underneath, ozone maybe, or a drone still warming somewhere out of sight."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose finds the seam where the netting's been cut before — claw-width, healed shut with tape now, but the smell underneath is old blood, not tuna, dried into the fibers from some earlier night. paw tests the tape. it gives."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the tape peels and somewhere under the dock floor something clicks awake — not loud, just a pressure change, a sensor deciding to remember this exact square of concrete. two rows over, a rotor spins up from nothing to a whine in under a second."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears flatten hard against the skull. body drops to the concrete on reflex before the sound even finishes registering as sound — that rotor pitch belongs to the kind of drone that doesn't patrol, it hunts, and it hunts one shape in this whole district."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "searchlight cuts a white circle across the wrapped crates, sweeping, and a voice grinds out of a speaker gone half to static: BOUNTY MATCH — CONFIRMED — FORTY THOUSAND POINTS — REMAIN STILL FOR PROCESSING. the light stalls two feet short of the netting gap, hunting."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Body's already moving before the light finishes its sweep — flat out under the forklift's resting blade, into a vent mouth stamped rust-brown, gone before the beam finishes its arc."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "pipes run overhead, warm with something pumped from somewhere deeper, hissing steam at every joint. water drips in a rhythm that doesn't match the rotor still thrumming outside, fainter now, circling. something small scatters away into the dark ahead, unbothered by any of it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Breath comes ragged, held low in the chest to keep it quiet. wall here carries a scent that isn't the vent's and isn't mine — sharp, unfamiliar, laid deliberate along the pipe at nose height. not old. not welcome."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "up where the vent opens onto a maintenance girder, something crouches at the very edge of the sodium light — two flat discs where eyes should catch a shine, throwing the light back instead of taking it in. gone before the shape resolves into anything nameable, just an afterimage and the girder still creaking where the weight left it."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   ~   ~\n  =========\n     |  |\n     |  |\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Fur settles slow along the spine. whatever that was, it didn't want the crates, didn't want the vent, didn't want anything vent-shaped at all — and the ache under the ribs hasn't gone anywhere. dock's quiet again, or quiet enough."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rotor whine fades to nothing past two blocks. dock floor settles back into its rhythm, forklift resuming its exact forty-count turn, and a speaker overhead coughs back to life mid-jingle — ...NEKOCORP TUNA, NOW WITH LESS RECALL RISK — before cutting back to static."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Claw finds the taped seam again, works it wider this time, no hesitation left in it. plastic gives, and tuna floods the whole narrow world at once — brine and oil and something sweet under it, real enough to make the jaw ache before a single piece is even in reach."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the seal on that crate wasn't just paint — a klaxon opens up directly overhead, red light washing the whole dock in one flat color, and every crate stack lights along its edge like the shipment itself just woke up angry."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Mouth closes around one pouch, weight of it swinging heavy against the jaw, and the legs are already running before the decision to run finishes forming — under the idling forklift, through the gap between two stacked crates, gone."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "rain starts up again somewhere above the dock roof, first drops finding the gaps in the corrugation. the drone's searchlight sweeps once more, wide and useless, then peels off toward a different alarm two districts over. the jingle keeps looping into nothing, unheard by anything down there that still matters."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Rooftop, finally, tail curled tight around the pouch like it might still run off on its own. torn wrapper gets pressed flat against the crate memory still clinging to the fur, and a scrap of packaging gets left behind at the vent mouth, scratched over in claw marks nobody down there will bother translating."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the city keeps running its forty-count turn regardless, sodium light steady over an empty gap in the netting, dock crew logging the loss as spoilage before the shift even ends."
+    }
+  ]
+}

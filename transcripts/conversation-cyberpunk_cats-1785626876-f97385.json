@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785626876-f97385",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T23:27:56+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Already running. The challenge-yowl behind hasn't finished its second note and the legs are three strides into the decision already, no plan past putting distance between now and whatever's coming."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the skybridge threads between two gutted arcology stumps, a service walkway never built for anything with four legs, grated steel ringing thin under each footfall. below, the night market throws up steam and frying oil and a hundred overlapping radio stations, awnings patched with tarp and old signage fighting for the same six feet of wire. the yowl's owner doesn't show yet — just the sound of it, bouncing wrong off girders, closer than it has any right to be for how fresh the last mark on this bridge was laid."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Grate gives way to open air at a seam in the walkway, a gap wider than trusted but narrower than a decision — the leap happens before the measuring finishes, claws out for a girder on the far side."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the girder holds, cold and slick with condensation, a three-storey drop yawning under the paws for exactly as long as the landing takes to settle. east along the bridge a patrol drone's running light blinks steady, tracing its usual line above the market roofs, in no hurry, hunting nothing in particular tonight."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Down off the girder before the light finishes its pass, into the market's steam instead of over it — stall smoke thick enough to hide a shape and a smell both, oil and char and something fried twice over."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "stalls run three deep here, folding tables and hanging bulbs strung wire to wire, vendors calling over each other in half a dozen dialects at once. a speaker nailed to a post cuts through it anyway, chipper and relentless — FIND YOUR FOREVER APPLIANCE THIS SPRING, NEKOCORP COMPATIBILITY SERVICES, ASK YOUR FRIDGE IF SHE'S THE ONE — before the crowd noise swallows it back down. nobody at ground level looks up when a shape passes low along the stall legs."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "A fish-stall's cold case throws its chill three feet into the aisle, a whole day's cuttings glistening slack on ice — worth stopping for, almost, except the challenge-yowl's owner is still back there somewhere, patient in a way that promises this isn't finished."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the cold case breathes its little envelope of ice-smell into aisle heat that doesn't want it, vendor's back turned counting bills under a hanging bulb. further back along the stall row, footfalls pick a slow, deliberate line through the crowd — not rushing, not needing to, the kind of pace that already assumes how this ends."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose finds the answer before the footfalls do — a scent laid fresh across a stack of crates just off the aisle, sharp and deliberate, marking not just passing through but staying. a claim, not a warning."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "across the stall row, low on the crate lid, a lean shape sits without hurry, tail wrapped tight around its own feet, eyes catching the hanging bulbs in two flat points of light. it doesn't approach. doesn't need to — the crate under it already did the talking, and the market cats three stalls down have already cleared a wide, unhurried berth."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   /\\_/\\\n  ( o_o )\n   )   (   <- not moving\n  /     \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't answer the stare. Backs off the crate stack at an angle instead, unhurried on purpose, aiming for the vending machine wedged between two stalls — the kind of narrow gap a small body can use and a bigger one can't."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the machine's face glows dim blue, KIBBLE — A1 — $2.50, SYNTH-TUNA — A2 — $3.75, coin slot long jammed shut with gum gone black. the gap behind it runs barely a paw's width wider than fur allows, cold metal on one side, warm stall-backing on the other — exactly narrow enough."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Shoulders angle first, ribs following on an exhale timed to the squeeze, and the gap takes the whole body through in one motion — out the far side into a service alley no wider than the walkway above, the market's noise gone muffled and distant all at once."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the lean shape on the crate doesn't try the gap — just sits, tail flicking once, then turns its attention to something closer and easier: a scrap of fried batter dropped three stalls down, already worth more than a chase that stopped being worth finishing."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ribs still tight from the squeeze, one claw bent wrong from the crate-stack landing earlier — noticed only now, in the quiet, the way pain always waits for a safe stretch of alley before it introduces itself properly."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the service alley runs narrow and forgotten behind the market's back wall, condensation dripping off a fire escape nobody's used in years, the skybridge's grate ringing faint and far off now under someone else's footsteps, not this one's problem anymore. market noise filters through the wall muffled into something almost gentle."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Finds a dry ledge halfway up the fire escape, high enough that the alley's damp doesn't reach, and works the bent claw with careful teeth until it stops complaining. no urge to sleep yet — just to sit a while and let the night finish happening without asking anything else of the body."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the market keeps trading past midnight the way it always does, stalls thinning by twos and threes, the skybridge above settling back to its usual thin drone-hum and nothing else. down in the alley, one ledge on a rusted fire escape holds still and small against the brick, a few feet above the whole sprawl of NekoCorp signage, frying oil, and old grudges carrying on same as ever below."
+    }
+  ]
+}

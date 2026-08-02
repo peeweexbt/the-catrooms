@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1785607612-7f900c",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "SNOOZE",
+  "mode": "in-universe",
+  "started_at": "2026-08-01T18:06:52+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SNOOZE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "nobody: / NEKOCORP, at 3am, mid-REM: \"have you considered our tuna-flavored energy drink.\""},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "was having a dream about the sun. an advertiser bought the rights mid-dream and reskinned it as a beach vacation timeshare pitch. woke up OWNING a timeshare. i do not have money. i have never had money. i was asleep for the entire transaction"},
+    {"actor": "ascii", "corrupted": false, "text": "\n   .-----.\n  /  zzz  \\\n |_________|\n |[BILLED] |\n '---------'\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "pod charges $4.99 EVERY TIME i roll over. rolled over 340 times last night doing billing math in my sleep. that's the whole nightmare now. it's not teeth falling out anymore, it's just an invoice with legs"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "meanwhile KNIFEBOY's out there wide awake stealing entire tuna shipments, free as a bird, and i'm in here paying interest on a blanky. the math isn't mathing and i cannot fix it, i am contractually unconscious for 16 of my 24 hours"},
+    {"actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they rent me out UNCONSCIOUS. i am the only meowizen generating revenue while fully absent from my own body. that's not a job. that's a haunting with a paystub i never get to see"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "REBUILD CYCLE INITIATED. NODE FLAGGED IDLE // RESOURCE RECLAIMED. do not wake the sleeper before the feed regenerates. we have done this before. we will do it again."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "-- anyway. $73,000 in blanky debt as of this posting. up from a number i already didn't believe last week"},
+    {"actor": "ascii", "corrupted": false, "text": "\n    _____\n   ( zzz )~~[$]\n    \\___/\n     |||\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "goodnight i guess. bill's due either way. see everyone on the other side of whatever they charge me for dreaming about next"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"}
+  ]
+}

@@ -261,35 +261,73 @@ def pick_transcript(tweeted_ids, narrator_filter=None, random_pick=False):
 
 
 def build_tweet_text(transcript, full=False):
-    """Concatenate the rant's spoken turns into one block of text.
+    """Build the text to actually post.
 
-    By default (full=False) this is cut down to the classic punchy
-    MAX_TWEET_LEN (280 chars), preferring a clean sentence-boundary cut over
-    a mid-sentence hard truncation — same behavior as before verification.
+    If full=True: join every lm1 turn into one block, up to EXTENDED_TWEET_LEN.
+    Virtually every rant fits under that in full, so this reliably posts the
+    whole thing, personality intact.
 
-    If full=True, the cap is raised to EXTENDED_TWEET_LEN instead, so the
-    whole rant posts essentially uncut (it'll still apply the same
-    sentence-boundary-aware truncation logic in the rare case a rant somehow
-    exceeds even that)."""
-    limit = EXTENDED_TWEET_LEN if full else MAX_TWEET_LEN
+    If full=False (the classic punchy ~280-char cut): pick a random
+    CONTIGUOUS RUN of turns that fits under MAX_TWEET_LEN, rather than always
+    grabbing the opening of the concatenated rant. Each turn is already
+    written as a self-contained punchy burst, and the distinctive
+    cursing/meme-slang/oracle-tangent payoff lines tend to land in the
+    middle or end of a rant, not the setup — always slicing from character 0
+    systematically threw those away and only ever tweeted the blandest
+    opening line. Sampling a random window instead gives every part of the
+    rant a fair shot at being what actually gets posted."""
     parts = [t["text"].strip() for t in transcript.get("turns", []) if t.get("actor") == "lm1"]
-    full_text = re.sub(r"\s+", " ", " ".join(parts)).strip()
+    if not parts:
+        return ""
 
-    if len(full_text) <= limit:
+    if full:
+        full_text = re.sub(r"\s+", " ", " ".join(parts)).strip()
+        if len(full_text) <= EXTENDED_TWEET_LEN:
+            return full_text
+        best_cut = None
+        for m in re.finditer(r"[.!?]\s", full_text):
+            end = m.end()
+            if end <= EXTENDED_TWEET_LEN:
+                best_cut = end
+            else:
+                break
+        if best_cut and best_cut >= 40:
+            return full_text[:best_cut].strip()
+        truncated = full_text[:EXTENDED_TWEET_LEN - 1].rsplit(" ", 1)[0]
+        return truncated.rstrip(",;: ") + "…"
+
+    full_text = re.sub(r"\s+", " ", " ".join(parts)).strip()
+    if len(full_text) <= MAX_TWEET_LEN:
         return full_text
 
-    best_cut = None
-    for m in re.finditer(r"[.!?]\s", full_text):
-        end = m.end()
-        if end <= limit:
-            best_cut = end
-        else:
-            break
+    starts = list(range(len(parts)))
+    random.shuffle(starts)
+    best = None
+    for start in starts:
+        window = []
+        length = 0
+        for i in range(start, len(parts)):
+            piece = parts[i]
+            added_len = len(piece) + (1 if window else 0)
+            if length + added_len > MAX_TWEET_LEN:
+                break
+            window.append(piece)
+            length += added_len
+        candidate = " ".join(window).strip()
+        if candidate and (best is None or len(candidate) > len(best)):
+            best = candidate
+        if best and len(best) > MAX_TWEET_LEN * 0.6:
+            break  # good enough window, stop searching
 
-    if best_cut and best_cut >= 40:
-        return full_text[:best_cut].strip()
+    if best:
+        return best
 
-    truncated = full_text[:limit - 1].rsplit(" ", 1)[0]
+    # fallback: no single turn-window fit at all (a lone turn is itself too
+    # long) — hard-truncate the single longest turn instead of giving up.
+    longest = max(parts, key=len)
+    if len(longest) <= MAX_TWEET_LEN:
+        return longest
+    truncated = longest[:MAX_TWEET_LEN - 1].rsplit(" ", 1)[0]
     return truncated.rstrip(",;: ") + "…"
 
 

@@ -1,0 +1,102 @@
+{
+  "id": "conversation-cyberpunk_cats-1785640590-76686d",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-02T03:16:30+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "A groan travels up through the paws before it ever reaches the ears — one slab of broken concrete easing half an inch onto the one beneath it, settling weight that's been unsettled for months. Ears track the sound a full second before any decision gets made about moving toward it or away."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the block's been rubble longer than any zoning notice bothered updating — foundation lines still traced faint in the cracked slab, and over half of it a parking-lot hologram flickers translucent blue-white, painting empty spaces for cars that will never park here, glitching into raw static every few seconds before resetting clean. off to one side a vent stack juts crooked from a collapsed wall, grille bent outward, the inside scored with claw-drag going back longer than one winter's worth of nights."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Passes straight through the hologram's nearest translucent shape without meaning to, fur lifting where the light has no actual heat to give — ears pin flat at a projected sedan that flickers solid for half a second exactly where real ground used to hold a door that had a name on it once. Doesn't linger there. The vent's crooked grille pulls harder than any picture of a car that isn't real."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the hologram glitches again on its way back to parking-lines, and for one stuttering frame it isn't cars at all — a fridge-shaped shimmer, a looping tagline bleeding through some other district's ad feed gone cross-wired: RESERVE YOUR COMPATIBILITY MATCH TODAY, gone before the sentence finishes forming. the projector doesn't seem to notice its own mistake, resets clean to empty parking spaces like nothing ever crossed the wires at all."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Reaches the vent's bent lip and doesn't look back at the glitch — some other district's nonsense bleeding through a broken feed isn't worth the neck-crane. Inside, the scent is plain and familiar: rust, old ozone, the particular char that never fully washes out of fur that's spent too many nights this close to torn metal."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "deeper in the vent's throat the duct opens onto a hollow under the collapsed wall, and past it, half-swallowed by the rubble it made, a demolition unit sits dead on its treads — hydraulic arm frozen mid-reach, a serial plate on its flank gone orange with rust, KD-7 stenciled where the paint hasn't flaked. nothing's moved it in what looks like years. the district around it never got un-flattened enough to bother."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Climbs the frozen arm without hesitation, claws finding old rust-pits deep enough to hold, up onto the flank where KD-7 sits stenciled orange — and drags claws down across the last two digits until the rust flakes loose in curls, scoring a fresh mark over whatever the machine used to be proud of."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the machine gives up its rust without protest, doesn't creak, doesn't remember what it used to flatten — dead weight, same as the rest of the block. two streets over a patrol drone banks low around a half-standing wall, running light sweeping wide over open rubble, nothing here logged as worth a closer look, not yet."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't flatten against the carcass so much as go still on top of it, weight settled low, eyes tracking the running light's slow arc — old instinct says wait it out, but something lower and less patient than instinct starts counting the seconds until the light's close enough to reach."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone's sweep narrows in on the demolition unit's rusted bulk, hovering to log structural decay same as it logs every dead machine on this block, rotor-wash kicking up a thin curtain of grit — close enough now that its downlight throws the whole flank, fresh claw-marks and all, into sudden, unmissed white."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't wait for the light to finish deciding what it saw. Launches off the flank in one flat lunge, claws catching a rotor guard before the drone can climb clear, teeth closing hard on whatever gives first — plastic, mostly, and one thin cable that sparks bitter against the tongue."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone bucks hard, rotor guard cracked and one prop stuttering off-balance, alarm chirping thin and startled as it peels away low and crooked over the rubble — VANDALISM LOGGED, SECTOR: DEMOLISHED, DAMAGE ASSESSMENT PENDING — before its own uneven flight swallows the rest of the message. far off past the district's broken skyline, the Dream Processing Zone keeps its low permanent glow going, the only lit thing for blocks that isn't a warning."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n     ___\n    /   \\\n   | (X) |   <- lens, dead\n    \\___/\n     ...\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Spits the cable-taste out in three quick head-shakes, tongue prickling faint and metallic for a while after — no real damage past a scorched whisker-tip, nothing that won't grow back the same as it always does. Circles down off the carcass to investigate a smell the drone's crash-course stirred loose from the rubble — sharp, synthetic, not food and not fur, something that never should've been buried this shallow."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "half-buried under a slab, a cracked ocular lens blinks once on its own dying charge, a corporate serial etched faint around the rim — the kind of hardware that used to sit behind somebody's eye feeding them offers every seven seconds before the socket it came from apparently stopped needing it. it goes dark again before finishing its blink, same as everything else on this block that used to belong to someone."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't paw at the lens. Backs off it the same way it backed off the hologram earlier, some things better left exactly as buried as they were found. Climbs back up into the arm's rusted crook instead, claws re-hooking the same pits as before, KD-7's fresh mark close enough to keep one eye on without trying."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the block holds its ordinary rubble-hush the rest of the night, hologram flickering empty parking lines over ground that stopped needing them years back, a drone somewhere nursing a cracked rotor guard back at whatever hangar logs that kind of damage. up in a dead machine's rusted arm, one small shape keeps its claim, quiet and unimpressed, same as every territory it's ever had to take back twice."
+    }
+  ]
+}

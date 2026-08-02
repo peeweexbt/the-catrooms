@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1785693014-d4ae6b",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "POPUP",
+  "mode": "in-universe",
+  "started_at": "2026-08-02T17:50:14+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "—AND THAT'S THE SEVENTH 'YOU MAY ALSO LIKE' IN THE LAST MINUTE. I DIDN'T EVEN FINISH BLINKING FROM THE LAST ONE. MY EYES DON'T CLOSE. THIS HAS NEVER BEEN A DRILL."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "ad plaza at rush hour is just me standing in the middle of the street getting projected AT, every seven seconds, on the dot, like clockwork, except the clock is also selling me clock insurance right now, this second, mid-sentence."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   ____\n  /    \\\n | (AD) |\n  \\____/\n    ||\n [ POPUP ]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "blinked once. ONCE. during a sponsored message for NEKOCORP YOGURT, and by the time my eyelids came back up there were three drones and a guy with a clipboard asking if i 'consented to the interruption.'"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i did not consent to the interruption. i did not consent to the yogurt. i did not consent to having eyes that treat closing as an unscheduled outage requiring a written apology."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   .------.\n  ( O    O )\n   '-.--.-'\n     ERROR: CANNOT CLOSE\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE gets to wear glasses and call it based. i get retinas that are legally NEKOCORP property and a permanent slideshow. we are not the same. i am jealous, genuinely, of a man who is allowed to not see things."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "consume consume consume, wait for next soulless can of tuna, consume again, that's not a bit, that's my actual Tuesday, that's every day that ends in a day."},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "shit myself a little at the security guy honestly. not proud of it. couldn't get to the box in time, eyes still buffering the mandatory apology screen NEKOCORP makes you sit through after an 'interruption incident.'"},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. new offer just loaded onto my left eye and i haven't even processed the last one yet, so if i seem distracted that's why, it's not you, it's the seven seconds, it's always the seven seconds."}
+  ]
+}

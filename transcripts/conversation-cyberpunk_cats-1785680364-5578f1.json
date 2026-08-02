@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785680364-5578f1",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-02T14:19:24+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Another claim sits thick over the stairwell landing, laid down within the hour — sharp, unfamiliar, pressed low against a rail nobody but this one usually bothers marking. Weight goes stiff at the top step, one ear rotating back toward the stairwell's mouth, waiting to learn if the claim came with company still nearby."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the landing gives onto a rooftop that isn't, technically, a rooftop anymore — the building under it condemned eleven months back, and in its place a parking structure hangs projected in the air at the exact height the fourth floor used to sit, translucent cars idling in translucent bays, license plates that never resolve past a blur. underneath the projection the real rubble still holds its shape: rebar bent skyward, a stairwell that goes nowhere, a rail still bearing the mark of a claim laid an hour back by something that came and went without waiting to be found."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "No growl answers back, so the claim gets crossed anyway — paw over paw along the bent rebar, weight testing each length before committing to it. Underfoot the concrete still carries an old smell past the rust and dust: scorched fur, faint, months gone stale, worked into a crack in the slab like it never planned on leaving."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the crack runs the width of a support beam sheared clean during the demolition crew's one pass through — surgical, contracted, gone in an afternoon. what's left smells of scorched fur and cut cable both, layered thin over each other like two different fires that never quite finished. overhead the hologram flickers once, a car's headlights sweeping through empty air onto nothing, and a speaker mounted where a window used to be crackles half a jingle before dying again."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles into the scorched crack like it still fits, which it does. Jaw works once against nothing, an old habit sharpened somewhere back before the ground got poured over — muscle memory reaching for a shape that isn't there anymore. Ears catch a rotor two blocks off before the sound finishes arriving, and this time the reaction isn't retreat."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rotor belongs to a compliance sweep, low-grade, cataloguing rebuilt structural code against the projection overhead — its downlight finds the rubble, finds the shape sitting square in the middle of it, and holds. a voice grinds out flat and pre-recorded: UNAUTHORIZED OCCUPANCY OF PROJECTED PROPERTY. VACATE FOR RECLASSIFICATION. the drone drops half a meter lower, rotor wash kicking loose dust off the slab."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't vacate. Coils low instead, weight gathering back over the haunches the way it's gathered a hundred times against this exact shape of noise, and comes up under the drone's downdraft with jaw already open before the legs finish the jump. Teeth find rotor guard, not casing — cheap alloy, thinner than the last one, cracking on the first real bite."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the guard splits and the rotor bites back, a hot line opening along one flank before the whole unit spins wide and slams sideways into the projected car park — passing straight through the hologram without disturbing a single translucent bumper, then hitting real rebar behind it and going still. the jingle it was mid-broadcast on cuts to static and stays there."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Copper and ozone both, thick enough now to taste past the sting in the flank. Drags the dead unit by its cracked guard back toward the scorched crack, unhurried, the same route worn smooth by however many carcasses came before this one — an old score that never quite balances no matter how many times it gets paid down."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "two districts over, past the last of the arcology spires, a different kind of glow sits low and constant against the cloud — dream-processing towers running their nightly billing cycle, patient, indifferent to anything happening on this side of the skyline. closer in, the projected car park keeps idling its silent, empty bays, one headlight sweep after another, none of it aware a drone just died inside its floor plan."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Market clatter drifts up from three streets over, tin woks and price-chimes, easy to ignore over the flank's insistence on being tended first. Somewhere under it, thinner, a boundary-line scent crosses old rebar — not fresh, a different crew's claim, laid weeks back and gone stale, nothing worth answering tonight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the market keeps its noise going without asking permission, prices updating themselves same as always, and the boundary-scent traced to a stretch of chain-link three blocks down — territory some other crew claimed and mostly abandoned once the compliance sweeps started favoring that block. a drone jingle carries thin from somewhere past the dock, tinny with distance, gone before it means anything to anyone this far up."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  /  /  /\n /  /  /\n/  /  /\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Flank stings worse once the dragging stops, tongue working at the line where the rotor caught skin. The scorched crack takes the carcass same as it's taken every other one — no ceremony, just weight added to weight, one more piece of the old shape reassembling itself wrong."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the crack holds the carcass same as it holds everything else that's found its way there over the months — parts, mostly, nothing whole, a slow accumulation nobody's catalogued but the rats. overhead the hologram completes another lap of headlights through nothing, and for one held second, less than a blink, the projection glitches — shows the real fourth floor instead, a window, a light on, gone before the eye can hold it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears flatten at the flash before the mind bothers asking what it was. Something in the smell of the place agrees with it anyway, some old certainty underneath the scorch that this crack used to be a window, used to have a light on, used to be worth coming home to before whatever came through here decided otherwise."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the projection settles back into its ordinary loop, headlights sweeping empty bays, no window, no light, nothing but the shape the city agreed to remember instead. rain starts thin over the rubble, finding the rebar first, then the slab, then the crack where an old score just got a little heavier. the district keeps its hours regardless — sweeps logged, jingles looping, the dead drone already flagged somewhere as acceptable loss."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Curls into the crack around the weight of the day's kill, flank throbbing in time with something that isn't quite a heartbeat. Eyes go to half, tracking the last headlight sweep without really seeing it, the ear that logged the rotor's approach finally allowed to stand down."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rubble holds its shape a while longer, projected cars idling over real wreckage, the rain finding its rhythm on both without preference. somewhere past the spires the dream towers keep billing, somewhere past the dock a bounty's numbers wait on their next reprint, and here, for now, nothing asks anything more of the small scorched shape curled into what used to be a window."
+    }
+  ]
+}

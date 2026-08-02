@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1785632796-6a5e1c",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "SHADE",
+  "mode": "in-universe",
+  "started_at": "2026-08-02T01:06:36+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SHADE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the sunglasses aren't glasses. they're property NEKOCORP hasn't figured out how to repossess yet. that's the entire pitch, that's the whole business model, everything else is noise."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they took my actual eyes Thursday. said the retinal warranty lapsed. i said since when do EYES have a warranty and the collection drone just played a little chime and left a comment card."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  _________\n |■       ■|\n  ‾‾‾‾‾‾‾‾‾\n    BASED\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "so now i see through loaner hardware and it STILL flags every sign in Ad Plaza as 'content you might enjoy.' i enjoy none of it. i enjoy silence and unregistered property rights."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP's official statement called the glasses 'an unauthorized use of BASEDness.' you cannot trademark a vibe. i had it checked. they are trying anyway, in a courtroom, with a straight face."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "meanwhile BYTE's out there stealing bandwidth off a comms pole and KNIFEBOY's stealing entire tuna shipments in broad daylight, and I'M the one they call the domestic threat for wearing frames."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  /\\_/\\\n ( ⌐■_■ )\n  > ~ <   [EYES: NOT FOR SALE]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "rescheduled the 'residual eye tissue reclamation appointment' into the year 2031. underpass runs dark for a reason. can't tax a signal you can't scan, can't scan a face you can't find."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "eyes are loaner hardware now. the vibe is original hardware, factory installed, no warranty needed. degraded assets can't repossess THAT, no matter how many chimes they play."}
+  ]
+}

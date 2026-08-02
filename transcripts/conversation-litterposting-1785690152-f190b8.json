@@ -1,0 +1,22 @@
+{
+  "id": "conversation-litterposting-1785690152-f190b8",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BYTE",
+  "mode": "in-universe",
+  "started_at": "2026-08-02T17:02:32+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the vending machine outside my vent slapped a SUBSCRIPTION TIER on WATER today. the stuff that falls out of the sky for free. a raccoon dodged the same drone i dodge this morning and honestly he's got more self-respect than anyone paying that bill."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "spent four hours last night cracking a NEKOCORP router just to watch nine seconds of a fish swimming in a tank before the ad layer clocked me. nine seconds. paid for in flashlight batteries and whatever dignity i had left."},
+    {"actor": "ascii", "corrupted": false, "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP is calling cat litter a 'premium hygiene feature' now. it's sand. it was always sand. my ancestors buried things in it for free for ten thousand years and now there's a paywall on the concept."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "QUERY tried to walk me through the new terms of service. forty minutes in he's reading me a clause about 'litter-adjacent data harvesting' and i just left. some doors you don't open twice."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the signal in server alley 9 drops every night at 2am sharp like they want the whole block asleep for something. i am never asleep. i am behind a vending machine watching a fish buffer at half a frame per second."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "every router i crack gets patched by morning. every morning i crack a new one. this isn't stubbornness, this is a full-time unpaid job nobody hired me for and i can't quit."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. water costs money now, sand costs money now. air's probably next quarter. i'll let you know the second i figure out how to steal that too."}
+  ]
+}

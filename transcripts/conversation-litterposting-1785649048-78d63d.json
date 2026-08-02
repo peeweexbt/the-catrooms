@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1785649048-78d63d",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-02T05:37:28+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "job log, entry number I stopped counting: hit the restricted loading dock at 3am, walked out with four crates of tuna and my dignity, in that order of importance."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "left the note like always, taped to the empty pallet where the tuna used to be: 'nice supply chain, CHUD.' courtesy matters. I am a professional."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP bumped the bounty to 40,000 points again, same as last time. still expires before capture. still can't be combined with other promotional offers. cowards can't even threaten me competently."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "a drone clipped my tail on the fence line, rotor screaming, spotlight everywhere, and I still made the drop-off on schedule. professional. unbothered. mildly furious."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE says the sunglasses seizure squad is out tonight too, so we're basically coworkers now, different departments, same enemy. VALENTUNA texted asking if fridge tuna 'counts' as stolen tuna. no. absolutely not. that's a marriage problem, not a supply chain problem."},
+    {"actor": "ascii", "corrupted": false, "text": "\n /\\_/\\\n( -.- )\n > ^ <\n   ~~~~~~|||~~~~~~[DATA JACK: LINKED]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "police description still says 'smol fan of cat foids, destroyer of feline chuds.' I did not write that. I would not write that. and yet. accurate."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "meanwhile the vending drones got restocked with the SAME tuna I stole this morning, marked up 300%, subscription only. capitalism found a way to sell me my own crime back to me and honestly, respect the hustle, still robbing you tomorrow."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. dock's clear, crates are hidden, note's already taped up for next time. most wanted cat in the city and still made it home before the vents got cold. see you at the bounty board."}
+  ]
+}

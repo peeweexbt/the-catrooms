@@ -49,7 +49,7 @@ body {
   line-height: 1.5;
   scrollbar-width: auto;
   scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
-  cursor: url('assets/cursor-paw.png') 16 16, auto;
+  cursor: url('assets/cursor-paw.png') 8 8, auto;
 }
 /* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
    palette, kept fairly translucent so it reads as an overlay rather than a
@@ -229,7 +229,7 @@ header h1 {
   letter-spacing: 0.05em;
   padding: 9px 18px;
   border-radius: 3px;
-  cursor: url('assets/cursor-paw.png') 16 16, pointer;
+  cursor: url('assets/cursor-paw.png') 8 8, pointer;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 .screensaver-trigger:hover {
@@ -463,7 +463,7 @@ header p {
   font-size: 1rem;
   padding: 12px 26px;
   border-radius: 2px;
-  cursor: url('assets/cursor-paw.png') 16 16, pointer;
+  cursor: url('assets/cursor-paw.png') 8 8, pointer;
   text-transform: uppercase;
   text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 22px rgba(255, 46, 230, 0.6);
   box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), inset 0 0 8px rgba(255, 46, 230, 0.12);
@@ -590,7 +590,7 @@ header p {
   font-size: 0.85rem;
   padding: 10px 20px;
   border-radius: 2px;
-  cursor: url('assets/cursor-paw.png') 16 16, pointer;
+  cursor: url('assets/cursor-paw.png') 8 8, pointer;
   text-transform: uppercase;
   text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
   box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
@@ -889,7 +889,7 @@ SCREENSAVER_TEMPLATE = """<!doctype html>
 <title>screensaver &middot; the catrooms</title>
 <style>{css}
 html, body {{ height: 100%; }}
-body {{ overflow: hidden; cursor: url('assets/cursor-paw.png') 16 16, pointer; min-height: 100vh; }}
+body {{ overflow: hidden; cursor: url('assets/cursor-paw.png') 8 8, pointer; min-height: 100vh; }}
 </style>
 </head>
 <body>

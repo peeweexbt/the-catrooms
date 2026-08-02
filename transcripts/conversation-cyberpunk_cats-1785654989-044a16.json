@@ -1,0 +1,102 @@
+{
+  "id": "conversation-cyberpunk_cats-1785654989-044a16",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-02T07:16:29+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears swivel first; the rest stays still. Somewhere along the walkway rail a terminal keeps stuttering through the same three lines of small print, over and over, too fast to properly smell out — not dangerous exactly, just wrong in the rhythm, the kind of wrongness that used to mean something before it stopped meaning anything at all. Watching from the shadow of a support strut a while longer before deciding the terminal is worth the walk."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the walkway runs slick under sodium light, forty stories up, strung between two arcology towers like a wet grey rib. the terminal belongs to a vending kiosk long since out of product, its screen looping an agreement nobody's left alive to sign — SECTION 4(c), SECTION 4(c), SECTION 4(c) — cycling on a stutter in its own clock. below, traffic threads the avenue in red and white ribbons. a support strut ticks with cooling metal, and further off, past the second tower, a broadcast drone repeats something about a bounty in a tinny, bored voice, the words swallowed half by wind before they carry this far."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Crosses the walkway low, claws finding grip in seams worn smooth by other paws before this one. Up close the terminal smells of old ozone and warm plastic, the scroll of text throwing faint blue across whiskers with every stutter. A paw goes up against the glass without deciding to, tracking the scroll left to right the way it always tracks anything that moves in lines — old habit, useless here, does it anyway."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  [ SETTINGS ]\n  [ ] option 1\n  [ ] option 2\n  [ ] ... (pg 247)\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the glass is cold enough to sting, and under the paw the stutter catches, hangs a half-second longer on SECTION 4(c) than it should — like something briefly listening back. down the rail a strip of paper flaps against a bolt, hand-torn, block letters gone soft with rain — a wanted notice, the numbers on it climbing every time it gets reprinted, the name at the top one that's been showing up on drone broadcasts for months, some tuna-thief the whole district seems to have an opinion about. the broadcast drone's voice drifts back around the tower, repeating the bounty figure like a jingle it's grown bored of."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose finds the wanted notice next, drawn by nothing but proximity, and the paper smells mostly of rain and old glue, nothing else worth keeping. Stomach announces itself under the distraction — hasn't eaten since the light was a different color — and attention slides off the terminal entirely, ears rotating toward whatever's cooking three streets over, something fried, something salted, worth more right now than any scroll of small print."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the smell leads down a service stair to a market level strung with tarps, woks hissing under bare bulbs, vendors calling prices nobody haggles anymore because the prices update themselves. a fish-oil smell, hot and sharp, rolls off the nearest stall where a vendor's cat — not this one, a stranger, thin and quick — works scraps off the gutter with practiced speed. overhead a patrol drone banks low between the tarps, its downlight strobing across upturned faces that have all learned, by now, not to look up."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Slips along the stall fronts in the strip of shadow the tarps leave uncovered, low and quick, eyes on the light overhead more than the ground underfoot. The stranger cat's scraps are gone before either of them can dispute it — a fast mouthful of something salty and half-warm, swallowed on the move, no time to enjoy it properly with the light still sweeping."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone's light catches motion where there shouldn't be any and locks, and its chirp cuts through the stall noise flat and administrative — a violation logged before anyone's finished deciding whether to run. vendors drop their tarps lower out of old reflex. up on the walkway rail above the market, briefly silhouetted against a NekoCorp sign, something with mirrored eyes watches the whole scene without moving, gone again before the light can find it too."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Bolts under the nearest stall table, then out the far side between two crates, claws skidding on wet composite. The drone's light finds the space a half-second late every time, always chasing the last place instead of the current one, and that half-second is the only thing worth trusting right now."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "crates stack three high along the back row, corrugated and slick, and the gap between the last two is barely a paw's width wider than it needs to be. the drone overshoots the turn, rotor whine climbing in pitch as it corrects, and steam vents hard from a noodle-stall pipe right where the gap lets out, fogging the lens for the one second that matters most."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   )  )  )\n  (  (  (\n ~~~~~~~~~\n  [ VENT ]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Uses the fog without understanding it, just trusting the cover, and comes out the other side of the crates into a gap between a dumpster and the wall barely wide enough to fit. Presses in sideways, breath held, the drone's whine circling twice above the stalls before drifting off toward some easier violation elsewhere in the block."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the market settles back into its clatter, woks and price-chimes and the stranger cat already back at its gutter routine like nothing happened. the wanted notice back on the walkway keeps flapping against its bolt, patient, waiting on the next reprint. rain keeps coming down through gaps in the tarps in fat, scattered drops, and somewhere above the whole level the terminal is still stuck on SECTION 4(c), still waiting for an answer nobody's going to give it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The gap holds a second scent besides its own must — faint, recent, not from the stranger cat back at the gutter. A mark left low against the dumpster's foot, days old at most, laid down by something claiming this exact strip of shadow as its own. Ears go back on reflex, weight shifting toward the open end of the gap, ready to not be here if the claim gets contested."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "nothing answers the mark tonight — no growl from the dark end of the alley, no shape stepping out of it. whatever left it is elsewhere right now, working some other stretch of the block, the scent already thinning under the steam and rain to something that won't last past dawn. the gap stays quiet, contested only in theory, for now."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles into the gap with the stolen mouthful finally sitting right, tongue working salt off a whisker. The paw twitches once against the dumpster's side, tracking nothing, an old habit firing on an empty scroll. Eyes go heavy watching steam thin out over the crates, the ache of the last minute's running fading slower than it should."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the district keeps its hours without asking permission — drones finishing their loops, stalls folding tarps against the last of the rain, the bounty notice's numbers due to climb again by morning. somewhere the terminal's stutter finally breaks its own loop, cycles once past SECTION 4(c) into blank grey, and stays there, unremarked, unread, the only sound left the settling drip of water off a hundred identical awnings."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "conversation-cyberpunk_cats-1785611935-1ce019",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T19:18:55+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "A car alarm loops on sublevel three, looping and looping, no one coming to kill it — the rhythm settles into the back teeth before the eyes bother opening, worn-in and familiar as a heartbeat that was never mine to begin with."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the garage stacks itself up in bare concrete and paint-flaked arrows, sublevel three humming under sodium light gone the color of old teeth. overhead a projector strip throws a thin, flickering skin across the far wall — a render of the building that used to stand here, warm windows, a balcony, laundry on a line, looping every ninety seconds whether anyone's watching or not. underneath the render the concrete stays concrete, cold and real and cracked exactly where the old load-bearing wall used to be. a drone's rotor-whine threads in from the ramp above, unhurried, making its rounds."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't look at the render twice — flat light, no heat behind it, filed the same as any other billboard. The vent's grate two pillars down reads truer, cold iron breathing warm from somewhere below, and paws carry the body there on a route worn smooth by however many nights already spent taking it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the grate lifts on a hinge gone loose from use, into a duct lined with the same dust that's been settling since before the garage had a floor number — rebar stubs poking through at odd angles, a smear of old soot along one wall from a fire nobody logged, warmth bleeding up faint from a heating main three floors down that doesn't know or care what it's warming anymore."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Curls into the duct's driest fold, chin low against rebar-warmed dust — home enough. A vibration starts up underfoot before any sound gets there first, low and rhythmic, working up through concrete instead of air, the specific bone-deep wrongness of something heavy deciding to move."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "three levels down, a demolition unit long parked and forgotten cycles its hydraulics awake — a maintenance ping nobody cancelled, treads grinding free of a season's rust in one long shudder. the vibration climbs floor to floor, and the render on the far wall stutters with it, warm windows and laundry line glitching to bare static for one full second before the loop resets and pretends it didn't."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Every hair down the spine lifts at once, a growl starting low in the chest before any decision authorizes it — something under the ribs recognizes the shape of that grinding shudder even though nothing in the last nine lives ever taught it to. Doesn't retreat. Creeps toward the stairwell instead, ears flat, teeth already parting."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the stairwell dumps out onto the lower ramp where the unit idles in a wash of amber hazard light, hull scarred and hot, a maintenance drone hovering escort at its shoulder like it's done this a hundred times, downlight sweeping ahead of both of them for anything small enough to get flattened without anyone filing a report."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't weigh the unit at all — too big, not the point. The drone's the one that fits a mouth, low enough, close enough, and the leap closes the gap before caution gets a vote, teeth closing hard around a rotor guard still warm from running."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rotor guard shrieks against teeth, drone lurching sideways off its line with a burst of stabilizer whine, downlight swinging wild across ceiling and floor both, an alarm cycling up from nothing to furious in half a second — PROXIMITY BREACH, PROXIMITY BREACH — loud enough to bounce off every pillar on the level at once."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Jaw stays locked through the lurch, claws finding purchase on the housing's seam, the whole small body along for whatever ride this turns into — better that than letting go and finding out what a startled rotor does to something still standing under it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone breaks off hard for the ramp exit, shedding altitude it doesn't have to spare, and the render on the wall three pillars back stutters worse this time — warm windows dropping out entirely for two full seconds, nothing behind them but bare concrete and a support column with a chunk missing, before the loop claws its way back to laundry lines and lamplight like nothing happened."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Lets go at the exact second the ramp's edge stops being optional, hitting concrete in a roll and coming up already still, watching the drone's wobbling light shrink toward the street. The bare wall holds attention a beat longer than the drone did — that version reads truer than the laundry line ever has."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the render finishes its correction, warm windows snapping back into place, laundry swaying gently in a wind that was never real. three levels down the demolition unit's hydraulics tick down through their cycle, hazard light dimming, the whole shuddering business filed back under 'dormant' until the next unscheduled ping wakes it again."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Heads back for the duct at an unhurried walk, adrenaline burning off in stages, one ear stinging where the housing caught it on the way past. Sits long enough at the grate to work a tongue over the nick, more thorough than the injury strictly requires."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a payment kiosk bolted to the nearest pillar wakes on motion, screen guttering to life unprompted — NEKOCORP TIER: NONE, ENROLL TODAY FOR PRIORITY VENT ACCESS — the offer scrolling past a loyalty logo scuffed illegible by however many years of nobody caring enough to wipe it clean."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  .------------.\n  | NEKOCORP   |\n  | TIER: NONE |\n  '------------'\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Gives the kiosk the same flat look the render got, tier or no tier meaning exactly nothing to anything that already has a warm duct and won a fight tonight. Turns from it without a second glance and folds down into the rebar-warmed dust, nose to tail."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "sublevel three settles back into its ordinary hum, sodium light steady, hazard amber gone dark again three floors down. the car alarm on the far side finally cuts out mid-loop, exhausted or found, nobody around to say which. the render keeps its ninety-second laundry line turning in a wind that never blew, patient, waiting on the next set of eyes that might believe it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Breathing slows into the duct's dry warmth, the nicked ear throbbing dull and almost pleasant now, proof of something rather than damage. Whatever woke under the ribs at the first grind of hydraulics stays quiet the rest of the night, worn out same as everything else that did any work tonight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the garage holds its manufactured warmth on the wall and its real cold in the concrete, both running at once same as always, and one small shape breathes even and slow in a duct that never once pretended to be anything other than what it actually is."
+    }
+  ]
+}

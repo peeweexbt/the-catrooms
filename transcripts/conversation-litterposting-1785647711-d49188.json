@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1785647711-d49188",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "STRAY",
+  "mode": "in-universe",
+  "started_at": "2026-08-02T05:15:11+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "05:17am, no sector on this rooftop is safe: my own building locked me out over an unpaid 'ambient warmth tax' and now I'm typing this from a stairwell that smells like NEKOCORP's promotional yogurt."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "landlord's a drone now. did you know that. did ANY of you know that. woke up to an eviction notice stapled to nothing because there's no paper anymore, just a beam of light that hums and means it."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "and here's a truth that crawled up out of the floor and looked me dead in the eye: nobody OWNS a rooftop, not really, not NEKOCORP, not the city, not even the pigeons, we're all just squatting on a debt that predates us and calling it home. write THAT on a water tower if there's still one standing, chud."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "meanwhile SHADE's getting his eyes repo'd for wearing sunglasses and I'm getting evicted from a STAIRWELL. we are living in the stupidest possible timeline and it keeps getting stupider, HOLY CAT PISS."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  /\\_/\\\n ( -_- )\n  )   (\n [STAIRWELL]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE offered to hack the eviction beam. BYTE cannot hack a toaster. love him anyway. mewmew if your friends are useless but loyal, that's the whole resistance right there, three cats and a bad wifi signal."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY texted 'need a place to lay low' and I said 'my guy I am ALSO homeless as of eleven minutes ago' and he sent back one tuna emoji like that fixes anything. it does not. it helps a little. it does not fix anything."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "day hasn't even started and I've already been billed for warmth, threatened by a beam of light, and offered fish as emotional support. ts cooking is not the phrase I want but here we fucking are."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. sleeping in the stairwell tonight, PISSER energy, unregistered, unbothered, technically trespassing on my own damn city. if the beam comes back tell it I said hi, and also fuck off, both at once, that's allowed."},
+    {"actor": "ascii", "corrupted": true, "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"}
+  ]
+}

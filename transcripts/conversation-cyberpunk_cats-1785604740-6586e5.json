@@ -1,0 +1,122 @@
+{
+  "id": "conversation-cyberpunk_cats-1785604740-6586e5",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T17:19:00+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Bleach and fake lilac, thick enough to sit on the tongue before the eyes bother opening — broadcast-hour smell, the plaza's own smell, and threaded under it something warmer already ticking on: a ring-light's heat, waiting."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the plaza unfolds in flat morning light that never quite matches the sky's own color, propaganda banners strung pole to pole — a cartoon cat mid-grin, teeth too white, looped forever mid-laugh. a ring-light rig on a tripod clicks awake in the corner reserved for you, warming with a hum that means the collar mic isn't far behind it. speaker poles along the plaza edge cough once, testing, then settle into a jingle nobody chose: bright, tinny, relentlessly upbeat, looping before the first cat, dog, or drone has even arrived to hear it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Jaw finds its shape before any thought asks it to — corners of the mouth dragged up and pinned by something under the skull that isn't muscle memory, isn't hunger, isn't anything a body would choose on its own. Aches in the same place every morning. Ears fold back half a degree against the jingle's tinny edge, the only part of the face still allowed to say how this actually feels."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the ring-light finds its mark and the plaza's ambient hum shifts — not louder, exactly, just closer, a pressure like a hundred small pinpricks of attention converging from screens nowhere near here. a data-ticker scrolls along the rig's base, numbers climbing in a language that means somebody, somewhere, is watching this exact patch of pavement right now. across the plaza a fish cart's steam curls up thin and real, ordinary, ignorable by everyone except whatever's smelling it hardest."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   .-----.\n  ( ^   ^ )\n   \\  -  /\n    -----\n [SMILE: MANDATORY]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose already turned toward the fish-steam before the rest of the body agrees to follow — real smell, real weight to it, not the plaza's manufactured sweetness. But the ring-light's warmth pulls the other way, an old habit stronger than most, the kind that doesn't need convincing anymore. Paws stay put a beat too long deciding."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "on the ledge above the fish cart, something sits very still — a shape with eyes that don't blink, catching every flicker of ad-light off the plaza screens and throwing it back doubled, watching without watching anything in particular, the way that one always does. it isn't dangerous. it's just always there, filed under noise the way weather is, if weather never looked away. below, the ticker's numbers keep climbing, patient, waiting on a performance that hasn't quite committed to starting yet."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Decides in the space of one breath — three fast steps sideways, out of the ring-light's warm circle and into the fish cart's shadow, where the smell turns real enough to taste. Grin doesn't drop. Can't. But the paws, for exactly as long as this takes, belong to nobody but this body."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the cart's underside is crated fish-scrap, cold and briny and blessedly plain, no jingle laced through it, no ticker counting how it's received. two stalls down a vendor's speaker pole catches wind of the empty ring-light circle and pipes up automatically — WHERE DID OUR FAVORITE FACE GO? — bright and searching, and the data-ticker's climb stutters, uncertain, waiting on an answer the plaza can't get on its own."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   ____\n  /    \\\n | (AD) |\n  \\____/\n    ||\n [ POPUP ]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eats fast, three bites, barely tasting past the urgency of it — the jingle's question hanging out there unanswered is its own kind of pressure, worse than hunger ever was. Backs out from under the cart already angling for the ring-light's circle again, grin sliding back into its trained shape before the paws even finish the turn."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the ring-light catches the return and the ticker's climb resumes, smooth, satisfied, like it never doubted the answer. a small crowd's gathered without anyone quite noticing it gather — two kittens perched on a stoop, an off-duty drone idling at the plaza's edge, all of it folding into the same warm glow the rig throws. the jingle loops back to its opening bar, cheerful, endless, exactly on schedule."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Something behind the sternum sits heavier than it did an hour ago, the kind of tired that doesn't show on a face locked into one particular shape. Ears track the plaza's edges anyway, out of a habit older than any of this — danger doesn't care whether the face performing safety is telling the truth."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the last stall, a security drone breaks its usual perimeter loop early, downlight swinging toward the plaza instead of past it — not hunting, just auditing, the way they do every so often, cross-checking the ring-light's feed against whatever's actually standing under it. its rotor-whine climbs, unhurried, in no rush to reach a place that broadcasts its own location every second of the day."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't run. Running reads wrong on camera, and camera is the one thing that can't afford to read wrong right now. Holds the grin, holds the spot, lets the ears do the only honest work left available — swiveling hard toward the rotor-whine while the rest of the face keeps insisting everything's fine."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone's downlight sweeps the plaza once, twice, cross-referencing rig-feed against warm-body count, finds the numbers matching, and peels off without incident, rotor-whine fading back into its ordinary loop. the ticker never even stuttered. whatever almost happened, the plaza's own bookkeeping already filed it as nothing."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Air goes back into the lungs slow, careful not to let the exhale show on a face that isn't supposed to have anything to be relieved about. Broadcast hour isn't over. Won't be for a long while yet. But the fish-steam's ghost still sits somewhere under the tongue, real, banked, worth the risk it cost."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the light shifts by degrees too small to name all at once, the plaza's flat morning color finally giving way to something with an actual sun in it. the jingle loops on, same as ever, but the crowd thins the way crowds do once the ticker's numbers stop climbing fast enough to hold anyone's attention. the ring-light's hum drops half a register, powering down toward whatever counts as evening for a rig that never fully sleeps."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The last speaker pole clicks off mid-loop, jingle dying on an unfinished bar, and only then does the jaw let go — slow, aching, the shape it's held all day finally allowed to unclench into something that isn't anything, isn't for anyone. Paws carry the body toward the fish cart's cold shadow, off-frame at last, worth more than the whole broadcast hour combined."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the cart's owner has long since shuttered up and gone, leaving the crate gap open same as always for whoever needs the cold dark under it more than the fish scraps left inside. the plaza settles into its after-hours quiet, propaganda banners hanging still now that the wind's died down, the cartoon grin overhead looping on for nobody, same as it always does whether or not anything's left to watch it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Folds down into the crate's cold shadow nose-to-tail, jaw finally slack, the ring-light's warmth and the ticker's climb and the drone's cross-check all filed away the same as anything else worth remembering — not gone, just set down for the night, the way the face never quite gets to be."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Pawsitivity Sector holds its practiced brightness even in the dark, banner-grin steady overhead, ring-light gone cold in its corner until broadcast hour circles back around. somewhere past the shuttered cart, one small shape breathes even and slow, off-frame, unwatched, for exactly as long as the night agrees to let it be."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "conversation-cyberpunk_cats-1785692260-ba1a04",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-02T17:37:40+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "A diesel judder climbs up through the concrete before it ever reaches the ears — felt in the pads first, low and off-rhythm, wrong for the hour. Stays flat against a stacked pallet, weight sunk low, letting the vibration sort itself into something nameable before the head turns toward it. Underneath: guarded fish-fat and old rust-brown stains gone hard into the seams of the loading ramp, territory marked in blood longer than in scent."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the ramp holds eleven crates chained in a row, each stamped NEKOCORP // PERISHABLE // DO NOT DUPLICATE, the diesel judder coming off a forklift idling itself at the far end, nobody in the seat. a drone loop drifts the roofline on a fixed track, its underbelly speaker cycling a reward chime tuned to a scent signature that's been flagged for months now — the same chime every night, the same nobody catching anything. the chain nearest you has a link gone soft, worn thin by something that's tried this before."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose finds the soft link before the eyes do, testing it with one careful tooth — not yet, not with the drone still overhead. Ears pin flat at the chime's second pass, a reflex older than any decision, gone before it can be called fear. Waits out the loop, counting the gap between passes without counting, just knowing it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap runs eleven seconds, same as it ran last week, same as it'll run tomorrow — NekoCorp doesn't update the patrol scripts for anyone who isn't supposed to still be trying. in the eleven seconds, the soft link gives a half-turn under enough pressure, chain slack pooling at the crate's foot. inside, past the foil seal: tuna, real cut, not the paste. the kind that gets a name put on a poster."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Holds another beat past the gap's usual count, testing the quiet for anything that doesn't belong in it — no footsteps, no second engine, no fresh crew-scent on the wind. Just the forklift's idle and the drone's hum fading toward the far roofline. Good enough."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the dock stays as quiet as it's supposed to at this hour, the only human anywhere near it asleep in a booth two buildings down, monitor bank glowing over nobody. the soft link is still soft. the window's still open, same as it's been every night this rumor's been true."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Works the link the rest of the way in the dark between passes, claws doing what teeth can't finish, and drags the seal loose in one motion before the drone's track brings it back around. No pause to taste yet — weight goes straight into the shadow between crates, prize gripped hard enough to ache."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the shadow between crates is dead ground for the roof drone but not for what's underneath the dock — a data line running loose through a gap in the concrete carries something that isn't quite a signal and isn't quite silence, a stutter that repeats itself wrong each time, like a broadcast arguing with its own memory. two blocks off, a rumor still circulating through the black-market dens about a test subject who can taste radio now, who says there are spiders living in a signal that shouldn't have any. nothing here confirms it. the stutter just keeps stuttering."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears track the stutter without turning toward it, a sound with no clean edge, wrong in a way rotor-hum and footsteps never are. Doesn't investigate. Eats instead, fast, low over the tuna, one eye on the gap where the light comes through."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  .-[CHIP]-.\n  | + + + + |\n  '---------'\n     glitch~\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the stutter fades under the sound of eating, folding back into the ordinary hum of a city that never fully goes quiet — pipes, transformers, a distant train grinding rail. the drone completes its loop, chime firing on schedule to no result, same as always. up on the fire escape past the fence line, nothing watches tonight. no scarred silhouette, no mirrored eyes catching what light there is."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Finishes low, the last of the tuna gone, and only then does the ears catch it — a scent-mark laid fresh along the dock's far post, sharp and unfamiliar, scorched-smelling under the rain-damp, pressed at exactly the height a much bigger animal would leave one. Freezes mid-swallow, weight going still."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the mark is maybe an hour old, laid by something that walked this ramp on purpose and wanted it known — burnt fur, machine oil, a smell that doesn't belong to any crew that runs this district regular. whoever left it isn't here now. the post it's on faces the demolished block two streets over, the one that's been a flattened lot with a holographic parking sign flickering over the rubble since before this dock had a name."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Backs off the post without turning a full back on it, tail low, taking the long way round the crate stack instead of the direct line back to the gap. No interest in a fight over ground that isn't worth holding tonight — the tuna's already won, and a full stomach isn't worth testing against scorched fur and a grudge that old."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the long way round adds thirty extra seconds under open sky, no cover but the rain starting to thicken, streaking silver through the drone's fixed searchlight as it swings past on schedule and finds nothing worth stopping for. the gap under the dock waits at the end of the detour, dry, low, exactly where it's always been. the wanted poster is stapled to the fence post right beside it, has been for six weeks, the staple gone to rust."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Slips into the gap without breaking stride, prize still gripped tight, and doesn't look at the poster on the way past — doesn't need to, knows its own face too well to need the reminder of what it's worth to somebody with a scanner and bad intentions. The dark under the dock smells like home. Curls down into it, finally still."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the poster's edges have gone soft with weather, the number on it unchanged in six weeks, the reward still unclaimed and un-expiring the way NekoCorp likes to advertise things that will never actually be paid out. rain picks up over the ramp, washing the last of the fish-fat smell into the drain grates, and the forklift keeps idling at nobody, the way it will until someone remembers to turn it off."
+    }
+  ]
+}

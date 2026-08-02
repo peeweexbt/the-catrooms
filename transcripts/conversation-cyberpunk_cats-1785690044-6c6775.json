@@ -1,0 +1,108 @@
+{
+  "id": "conversation-cyberpunk_cats-1785690044-6c6775",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-02T17:00:44+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Grease and ozone hit first, hot metal riding the wind off the rail before anything else registers — and under it, faint, a wrapper's worth of fried batter gone cold somewhere close. Ears haven't found the source yet. Paws stay put on the platform's outer lip, weight low, waiting on the smell to come closer instead of chasing it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the platform runs the length of a transit spine slung between two arcology towers, rail humming faint under its own idle charge, a mag-strip glowing pale blue down the center where the next car will ride in. benches line the wall in a row, most cracked, one still warm from someone who left in a hurry. overhead a screen loops silently, ad-light flickering off the wet tile without sound to carry it. the fried-batter smell comes from a vendor cart three benches down, shuttered for the night, grease still cooling in its unwashed pan."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Moves along the wall in the strip the bench shadows leave uncovered, low, unhurried — the cart's shutter has a gap at the base, warped metal not quite meeting concrete, and the smell pools thickest right there, worth the detour."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap gives onto a pan left unscraped, batter crumbs gone hard at the edges, still good enough to matter. above the cart the ad screen cycles a new loop — a wide grinning product mascot, some retina-feed jingle with no speaker left to voice it, just mouth-shapes forming YOU MAY ALSO LIKE over and over against a backdrop of things nobody asked to see."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   ____\n  /    \\\n | (AD) |\n  \\____/\n    ||\n [ POPUP ]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Works a crumb loose with one claw, tongue following it before it can skitter off the pan's lip. The screen's flicker crosses the corner of one eye and gets ignored on principle — light that moves without smelling like anything is never worth the turn of a head."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the mag-strip down the platform's center brightens by a shade, a distant hum climbing under the tile — the next car, still two stops out, already announcing itself through the rail before it's visible. wind picks up along the platform's open side, carrying the dream-processing towers' low orange glow in from three sectors over, patient, always lit, never quite dark even at this hour."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears track the hum without alarm — different pitch than a drone, steadier, no threat in it yet — and the crumb-hunt continues along the pan's far edge, one paw braced against the shutter gap to keep from sliding on old grease."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the hum resolves into a shape at the platform's far end, the car's nose lights sweeping the rail ahead of it, still slowing. doors along its side stay dark, unlit, marked out of service on three of five — cheaper to run half-broken than to fix, same as everything else on this line. steam bleeds off a brake vent underneath, thin and sour, mixing with the batter smell into something worse than either alone."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n .-----.\n( ^   ^ )\n \\  -  /\n  -----\n[SMILE: MANDATORY]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Backs out of the shutter gap as the brake-steam reaches the cart, nose wrinkling at the sour edge under it, and settles instead against the bench's warm patch, the one still holding someone else's heat. Watches the car glide in without deciding whether it matters yet."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the car stops short of true alignment, doors hissing open a half-meter off the platform edge, a gap wide enough to swallow a paw wrong. nobody boards. nobody gets off. the interior lights flicker once, amber, then settle back to the same pale blue as the mag-strip, empty rows of seats reflecting the ad screen's loop back at itself twice over."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "No interest in the gap or the empty rows — empty light behind glass has never once meant food or warmth, and the bench's borrowed heat is worth more right now than curiosity. Tail curls in against the cold coming off the tile, watching the doors instead of the car itself."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the doors hold open a long beat past their usual count, some fault in the schedule nobody's fixing tonight, then seal shut on nothing and the car pulls away the way it came, brake-steam thinning behind it. down at platform level, past where the car sat, a service ladder bolted to the rail pylon carries a fresh mark at nose height — not old, not this platform's usual scent, something sharper, laid within the hour by a paw passing through and not stopping."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears rotate toward the ladder without the body following yet, reading the mark from the bench — unfamiliar, recent, not a challenge exactly, more a note left for whoever happened by. Nothing in it says stay, nothing says go. Decides it's not tonight's business and lets it be."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the platform settles back into its own quiet, ad screen still cycling its silent grin, the vendor cart's shutter ticking as it cools further. a patrol drone crosses far overhead, running the transit spine's outer edge, its light never once dipping low enough to reach the bench row. somewhere below, traffic keeps its red-and-white ribbon moving through the wet dark, indifferent to anything happening six floors up."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Stretches once along the bench, claws catching briefly on a crack in the plastic, then curls tight into the last of its borrowed warmth. Eyes track the drone's light until it clears the far tower, more habit than concern, the crumb-taste still sitting better than the cold trying to work back in."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the mag-strip dims by half, the line entering whatever hour it calls quiet, and the ad screen finally drops its loop mid-grin, cutting to a single dim standby glyph nobody's around to read. rain starts thin along the platform's open side, finding the bench row last of anywhere on the spine, patient about it, the way most things here eventually get around to everything."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't move for the rain yet, the wall overhang keeping the worst of it off the bench a while longer. Nose tucks under one paw, breathing slowing toward sleep, the fresh mark on the ladder pylon still sitting somewhere at the back of the attention, unbothered, unanswered, filed next to everything else worth remembering and nothing worth acting on tonight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the transit spine keeps its schedule regardless of what's asleep on it — cars due and not arriving, screens dark and due to wake again by first light, the dream towers' glow holding steady three sectors over like it never once considered going out. rain finds its rhythm on the tile, then the bench, then, last of all, the small curled shape that's stopped tracking any of it."
+    }
+  ]
+}

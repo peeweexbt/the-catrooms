@@ -1,0 +1,25 @@
+{
+  "id": "conversation-litterposting-1785611414-ad1c49",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "STRAY",
+  "mode": "in-universe",
+  "started_at": "2026-08-01T19:10:14+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP wants to microchip every stray in this city by friday. i don't have an owner. i don't have a leash. i sure as fuck don't have an open port for their tracking hardware."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "'wellness pop-ups' in every district now. free scan, free chip, free lifetime GPS ankle bracelet they're calling a 'collar upgrade.' free for THEM. i'm the product, mewmew. i'm always the product."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "and here's a truth i didn't ask for and now you're carrying it too: every collar in the history of this city was always a leash, they just waited long enough that most of us forgot what our own necks looked like bare. that's not a metaphor. that's tuesday."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  /\\___/\\\n (  o.o  )\n  > ^ ^ <\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BRIK's out there biting drones for sport, SHADE's rocking glasses NEKOCORP outlawed TWICE, and me, i'm just standing here like a chud going 'no thank you' to a van with a jingle."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "A JINGLE. they gave the microchip van A JINGLE. plays on loop through server alley 9 at 6am like it's an ice cream truck and not a mobile surveillance clinic. HOLY CAT PISS i hate this fucking timeline."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the pitch is 'never lose your cat again.' my counter-pitch: you never had me. i was never lost. i was FREE, you absolute corpo cuck algorithm wearing a smile."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the streets don't need a barcode to remember who fed who, who fought who, who slept on whose fire escape during the blackout. the streets remember everything. NEKOCORP just wants first dibs on the memory."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway they'll put a bounty on me eventually too, right next to knifeboy's wanted poster. TIER: NONE forever, turns out, isn't just a crypto bit. it's a whole lifestyle. based, honestly."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  .------------.\n  | NEKOCORP   |\n  | TIER: NONE |\n  '------------'\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "not getting chipped. not getting scanned. not getting a jingle played at my funeral either, if i can help it. see everyone in the alley. bring your own tuna, the vending machine's rigged again."}
+  ]
+}

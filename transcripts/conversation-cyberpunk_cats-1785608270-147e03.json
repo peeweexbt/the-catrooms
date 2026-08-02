@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785608270-147e03",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-01T18:17:50+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Legs keep moving on momentum the body stopped agreeing to fund somewhere around the second sleepless night — paws dragging half a beat behind where they're aimed, eyelids losing more ground with every lap of the platform's length."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the platform runs low and curved under Dream Processing Zone's transit shell, fluorescent strip lighting dimmed to its overnight setting, track humming faint through the concrete underfoot. a row of sleep-pod alcoves lines the inner wall, each one glowing a different color — teal, amber, one gone entirely dark, unclaimed — their vents breathing out warm recycled air that smells of a hundred different strangers' exhaled dreams. overhead a departures board flickers through routes nobody's ridden in months, the last line looping over and over: NEXT ARRIVAL — UNKNOWN."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "That dark one pulls harder than the lit ones do, no color demanding anything back yet. Nose presses the seam first, testing — cold plexi over something warmer underneath, patient, waiting on a weight it hasn't felt in a while."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "contact wakes the display in one soft chime — FREE TRIAL: FIRST NIGHT ON THE HOUSE, letters blooming teal against the dark — and the seal cracks with a long hiss, door easing back on a hinge that's clearly done this before. inside: recycled warmth, the sweetish stale smell of somebody else's sleep still clinging to the padding, nobody having come back to claim it in longer than the dust says is normal."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n _________\n(         )\n(   ===   )\n ‾‾‾‾‾‾‾‾‾\n   *hiss*\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Curls in nose-to-tail against padding still warm from a stranger, and for once the eyelids stop losing the argument and just lose it all at once — the platform's hum, the track's vibration, all of it going soft and far away in the space of two breaths."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "sleep doesn't stay simple in a rented pod — somewhere under the dark, a jingle starts stitching itself into whatever the body's actually dreaming, bright and looping, TUNAFUEL: THE ENERGY DRINK THAT DREAMS BACK, sugar-sweet and relentless, worked into the same fabric as the warmth and the dark like it was always supposed to be there."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "One ear keeps twitching at the jingle's edge even three fathoms under, some old stubborn part of the brain refusing to let a sound that isn't real food or real danger go completely unwatched. A paw kicks once at nothing, chasing something that isn't there either."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a shriek of brakes drags the platform back into the world as the monorail eases in, doors hissing along its length, a thin scatter of night-shift commuters filing past the pod row without a glance down. the departures board cycles through its idle loop between arrivals — a wanted notice bleeding into the schedule, KNIFEBOY, 40,000 POINTS, UNCLAIMED, gone again before the next train listing replaces it — nobody on this platform reads any of it twice."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Feet passing close enough to shake the padding drag the cat halfway up out of the dark, eyes cracking to slits, the pod's warmth suddenly less like safety and more like a box with only one door."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "once the last commuter clears the platform, a squat maintenance drone eases out from a service alcove to run its nightly pass down the pod row, downlight ticking pod to pod, cross-checking occupancy against whatever ledger cares about that — and it slows over the dark unclaimed one, light holding a half-second longer than it holds on any of the lit ones."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Every muscle locks into stillness at once, breath shallow, betting the whole night on a box with the lights off looking exactly as empty as it's supposed to."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the light lingers a beat too long, and the pod's display answers for itself — FREE TRIAL flickering out, replaced by a hard-edged countdown, TRIAL ENDING IN 00:47, a soft chime underneath it that isn't loud enough to be an alarm but does the job of one anyway."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't wait to find out what 'ending' means up close. Bolts the instant the seal gives the first inch, out low and flat across cold platform concrete before the door's even finished its hiss."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the door seals shut behind on an empty pod, display settling into its final line — SESSION CLOSED. BALANCE: $4.99. — logged against a collar-scan that happened somewhere in the dark without ever asking permission first, the debt already filed and forgotten by everything except whatever keeps that particular ledger."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   .-----.\n  /  zzz  \\\n |_________|\n |[BILLED] |\n '---------'\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Shakes hard, head to tail, trying to get the jingle's sugar-sweet residue off the inside of the skull the way water shakes off fur. Ears clear to actual quiet, one ring at a time, chasing real sound instead of a rented one."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the monorail pulls out with a final shriek, platform emptying back to its overnight hush, pod row settling into its patient row of colored glows and one gone dark again, humming on toward whoever finds it next — the dark one's counter still ticking somewhere behind the reset display, patient, already a little heavier than it was an hour ago."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Finds the gap under a bolted platform bench instead — bare concrete, no hum, no color, nothing pretending to be free. Cold, but an honest kind of cold, the kind that doesn't bill for itself later."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Dream Processing Zone keeps its hum going the rest of the night, pods breathing warm recycled air out into a platform that's stopped listening, collecting whether or not anything's curled up inside to collect from — and under the bench, one small shape breathes even and slow, unbilled, unclaimed, for exactly as long as the concrete agrees to stay quiet."
+    }
+  ]
+}

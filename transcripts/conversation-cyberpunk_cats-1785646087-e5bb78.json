@@ -1,0 +1,122 @@
+{
+  "id": "conversation-cyberpunk_cats-1785646087-e5bb78",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-02T04:48:07+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Someone else's scent sits fresh on the chain-link post — not old enough to trust, not so fresh the claim's still being laid. Finished within the hour, on ground the paws already filed as nobody's."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the fence marks the seam between two blocks nobody official bothers naming — this side stacked with NekoCorp shipping crates under a loading dock awning, rain drumming tin above hollow rows of refrigerated units humming in the dark. the post holds the mark high, deliberate, at a height that means the layer stood on something to leave it there. beyond the fence, floodlights strobe once every few seconds across wet asphalt, automatic, indifferent to anything without a badge."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Weight drops low, belly near the wet concrete, and the fence's bottom rail gives half an inch more than it should where rust ate clean through years back — an old cheat this side of the border already knows, worked into muscle before the scent ever mattered."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap swallows the shape whole, rust-edge scraping one flank on the way through, and the loading dock opens up beyond it stacked three crates high in every direction — NEKOCORP FRESH-CHILL printed in fading letters down every side, refrigeration hum thick enough to feel in the teeth. off past the last row, a vent stack sags half-torn from the wall, blackened at the seams, warm despite the rain — whatever tore it loose did it with more anger than the job required."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose finds the scorch before the eyes do — old smoke gone bitter with metal, and under it, fainter, something like fur singed once and never fully washed out. Doesn't approach. Files it as somebody else's fight, somebody else's grudge against machinery, and angles instead toward the crates, where the cold case smell runs colder and cleaner."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the crates keep their smell locked mostly behind sealed plastic, tuna and brine bleeding out only at the seams where forklifts have worn the corners soft. stamped near eye height on the nearest stack, a loyalty placard curls at one corner — SCAN FOR TIER STATUS, TIER: NONE, TIER: NONE, TIER: NONE — repeating down every crate in the row like the machine forgot it already said it."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  .------------.\n  | NEKOCORP   |\n  | TIER: NONE |\n  '------------'\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Claws test the soft worn corner of the nearest crate, patient, testing give rather than forcing it — the seam yields a thread's width, enough for the smell but not yet enough for teeth, and the work settles into a rhythm that doesn't need to hurry."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the seam widens by degrees, plastic complaining in small increments, floodlight sweeping past twice without slowing — then a rotor cuts in low over the dock roofline, running light strobing red, patrol pattern tightening a lap earlier than the usual schedule allows. the placard's tier count keeps cycling underneath it all, unbothered, TIER: NONE, TIER: NONE, same as always."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Freezes mid-claw, weight gone perfectly still, the half-open seam abandoned mid-work — rotor-thrum climbing louder means climbing closer, and closer means the crate's shadow needs to finish being a hiding place before it's asked to."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone's light rakes the top of the stack, missing the gap between crates by less than a body's width, then keeps its arc moving on toward the fence line and the scorched vent beyond — no pause, no second pass, whatever tripped the tighter loop tonight already logged and forgotten somewhere upstream. the rotor-thrum fades back into the refrigeration hum, indistinguishable from it inside another few seconds."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Waits out three full breaths after the sound's gone before finishing the claw-work, seam giving all at once now, and noses into the gap for the tuna smell trapped since long before tonight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the crate's shadow falls the wrong direction for exactly one blink — floodlight hasn't moved, nothing above has shifted, and still the dark pools on the wrong side of the stack for a fraction of a second before correcting itself, seamless, like nothing needed correcting at all. underneath the refrigeration hum, something that isn't the refrigeration hum notes the seam anyway, unbothered, the way it always is when nobody else catches it happening."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears pin flat at nothing nameable, whole body gone rigid over half-eaten plastic — the shadow was wrong and now it isn't, and the legs already know to distrust that faster than the eyes can argue otherwise. Backs off the crate two full steps before the hunger talks the paws back into it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the dock holds its ordinary rhythm again, floodlight cycling its usual few-second sweep, refrigeration units humming flat and constant under the tin awning roof. nothing in the shadow explains itself, and nothing asks it to — the crate stack just sits there, wrong for one blink and forgotten for all the rest, tier placard cycling its same three words same as ever."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Finishes what the claws started, dragging a torn plastic corner's worth of tuna out into the open and eating low against the crate base, back to the gap, eyes on the aisle both ways at once out of habit more than need."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "above the dock, past a cracked window nobody sealed right, a sleep-pod's billing chime drifts thin through the rain — four ninety-nine, four ninety-nine — cycling on some tenant's rolled-over debt same as it does every night this side of the fence, indifferent to the hour, indifferent to the weight it's stacking. the scorched vent stays quiet the rest of the way down the row, still warm, still unexplained."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n |―|―|―|―|―|\n_|_|_|_|_|_|_\n   the line\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Full enough now that the crate row's smell stops being urgent, just present — grooms the tuna-oil off one paw methodically, working brine out from between claws before it dries there."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rain thins from a drum to a patter against the tin awning, floodlight sweep slowing its cycle half a second as if the whole dock's decided the hour's gotten late enough to relax about it. the border fence holds its rust-eaten gap same as it always has, worn soft by however many crossings came before tonight's."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Noses back toward the gap the way it came, unhurried now, the scent-marked post on the far side no longer worth the weight it carried an hour ago — a claim on ground that was only ever worth passing through, not staying on."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap takes the shape back through with the same scrape of rust on the same flank, out past the marked post and into ordinary street beyond it, floodlight and refrigeration hum both fading into background behind the fence line. the block keeps its shipping schedule and its tier placards and its one scorched vent, same as it will tomorrow, unbothered by who passed through in between."
+    }
+  ]
+}
