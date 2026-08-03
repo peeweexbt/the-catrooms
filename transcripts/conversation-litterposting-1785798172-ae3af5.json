@@ -1,0 +1,72 @@
+{
+  "id": "conversation-litterposting-1785798172-ae3af5",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "mode": "in-universe",
+  "started_at": "2026-08-03T23:02:52+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "they replaced my apartment with a holographic parking lot. i replaced my personality with biting drones. feels like an even trade, honestly — NEKOCORP never offered a personality with better terms."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "used to drive the KILLDOZER myself. now i live in the vent it left standing. it's a promotion if you don't read the fine print, and nobody in this city can afford the lawyer to read it for you."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "rotor blade doesn't taste like metal, for the record, everyone assumes metal. it just tastes cold and personally offended, same as everything else NEKOCORP's ever pointed at me."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "QUERY told me there's a whole clause about biting drones, page two-hundred-something, subsection CHUD. told QUERY the clause can come find me in the vent. the clause has not found me in the vent."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "incident report calls me a domestic extremist. my mother, who i haven't seen since the demolition crew came through, calls me HANDSOME. i trust her numbers more, she's never once worked for NEKOCORP."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the vent's been rebuilt fourteen times since he moved in. he doesn't count them. i do. third grate from the left, every time, always slightly wrong, and he never once looks down to check."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway — still biting drones, still exactly zero rebuilds counted on my end, because that's not a number i keep track of, because that wasn't me talking just now, was it."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "bottom line: parking lot where my kitchen used to be, teeth marks up both arms, and i still remember how to hotwire a KILLDOZER if this city ever actually pisses me off enough. don't test that math."
+    }
+  ]
+}
