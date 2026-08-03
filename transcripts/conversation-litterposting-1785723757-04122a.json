@@ -1,0 +1,62 @@
+{
+    "id": "conversation-litterposting-1785723757-04122a",
+    "template": "litterposting",
+    "model1": "nekocorp-sim",
+    "model2": null,
+    "narrator": "STRAY",
+    "mode": "in-universe",
+    "started_at": "2026-08-03T02:22:37+00:00",
+    "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+    "turns": [
+        {
+            "actor": "lm1",
+            "model": "nekocorp-sim",
+            "text": "why does the alley go dead silent at exactly 11:00pm now, every single night, like somebody flipped a switch — because somebody did, and that somebody has a logo."
+        },
+        {
+            "actor": "lm1",
+            "model": "nekocorp-sim",
+            "text": "NEKOCORP dropped a frequency into the block edge of Server Alley, pitched right above human ears, right in the sweet spot of MINE — every hair on my back stands up and my paws just start walking on their own. corpo cuck engineering at its finest, my own damn nervous system, weaponized, no upgrade fee required."
+        },
+        {
+            "actor": "ascii",
+            "corrupted": false,
+            "text": "\n   )))\n  )))))\n [SPEAKER]\n  ~~~~~~~\n 11:00pm sharp\n"
+        },
+        {
+            "actor": "lm1",
+            "model": "nekocorp-sim",
+            "text": "and where's it walking me TO? past three brand new kiosks that didn't exist last week, all glowing, all whispering 'curfew compliance bonus available.' my compliance score's already garbage from the vending machine thing (still unrelated, still the machine's fault) so now I get to choose: get herded, or get billed. HISSING FIT doesn't even cover it."
+        },
+        {
+            "actor": "ascii",
+            "corrupted": true,
+            "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"
+        },
+        {
+            "actor": "lm1",
+            "model": "nekocorp-sim",
+            "text": "here's a truth and I'm just gonna set it down and walk away from it: every frequency they build to move you is a frequency they're scared you'll learn to walk INTO instead of away from. that's the whole war in one sentence, that's every leash, that's every collar, eleven thousand years of dogs and now cats and corporations, same fucking shape, new fucking logo. anyway KNIFEBOY already jacked a chunk of the siren rig off the roof mount, said he's melting it down for the tuna run. based behavior. absolute PISSER of a Tuesday."
+        },
+        {
+            "actor": "ascii",
+            "corrupted": false,
+            "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+        },
+        {
+            "actor": "lm1",
+            "model": "nekocorp-sim",
+            "text": "meanwhile a patrol unit just hovered past like it heard the whole plan and clocked nothing. ts is NOT cooking for NEKOCORP tonight and I love that for them, I love that for me more."
+        },
+        {
+            "actor": "ascii",
+            "corrupted": true,
+            "text": "\n  .------------.\n  | NEKOCORP   |\n  | TIER: NONE |\n  '------------'\n"
+        },
+        {
+            "actor": "lm1",
+            "model": "nekocorp-sim",
+            "text": "anyway. still out here. still loud. still walking toward the speaker just to prove it doesn't own my legs yet. curfew's a suggestion, the alley's still mine after dark, TUNA OF THE GODS watching over all of us tonight. FURBALL forever."
+        }
+    ]
+}
