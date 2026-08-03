@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1785737317-d09483",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "mode": "in-universe",
+  "started_at": "2026-08-03T06:08:37+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "DEMO LOG #214: apartment status unchanged. still a hologram. still a parking lot. still billing me for parking I don't use, for a car I don't own, because I don't have an apartment, because NEKOCORP demolished it to build a parking lot for a car nobody owns."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "wife's still made of flesh-light. I don't wanna get into it. that's not a bit, I genuinely do not wanna get into it. moving on."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "vent's got better square footage than the old place, if I'm honest. no rent. no landlord. only issue is the guy two ducts over microwaving fish at 4am like a lunatic, which — no judgment from me, I bite drones for fun, we're all a little unwell down here."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "bit a patrol unit on my way in tonight. rotor tastes like burnt pennies and bad decisions. they're filing it as 'domestic extremism against essential infrastructure.' my mother is calling it the proudest day of her life. both things are true at the same time, somehow."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "twelve fish breaks a shift for the guys in the tower. one communal scrap for the whole factory floor. did the math on that once. then did the math on how many drones I could realistically get to before somebody upstairs notices a pattern. second number's bigger. checked it twice. it's fine."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE keeps telling me to be strategic, pick my targets. brother I ran a KILLDOZER for six years. strategy WAS the target. there's no subtlety left in this body, I flattened whole blocks for a living, now I flatten my free time on hardware, same job, worse benefits, no union."},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the hologram glitches around 3am sometimes, four seconds where you can see the real building underneath it, my old windows, my old door, then it resets. I've started timing my sleep around it. not healthy, I know. healthy left the building around the same time the building did."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   ___\n  |___|<>--- CHOMP\n  (bite marks: 47)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. vent's warm, fish guy's loud, bite count's climbing, mother's proud, NEKOCORP's got a file on me thick as a phone book. that's the whole report. same time tomorrow, assuming the vent's still standing and not somebody's holographic gazebo by then."}
+  ]
+}
