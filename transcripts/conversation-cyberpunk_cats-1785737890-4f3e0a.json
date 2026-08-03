@@ -1,0 +1,118 @@
+{
+  "id": "conversation-cyberpunk_cats-1785737890-4f3e0a",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-03T06:18:10+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "A chime cuts through first, not sound so much as a jolt straight to the sternum — the billing kind, not the waking kind. Legs already scrabbling for purchase against the pod's curved wall before the eyes even open. Whatever the dream was, it's gone, replaced by the flat metallic taste of an invoice nobody asked for."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the pod's curve fogs at the seam where breath's been hitting it all night, a readout blinking soft red against the condensation: CHARGE APPLIED — MOVEMENT DETECTED, $4.99. the zone outside runs racks of identical pods three high, each one humming its own rented dream back through a feed line, and somewhere down the row another pod's occupant twitches through something with teeth in it. the hatch seal above gives a half-inch of daylight-colored light, industrial, not real."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Claws find the hatch seam and drag it wider, the extra half-inch costing another chime, another charge, but the pod's air's gone thick and sour with recycled breath and dream residue — something that tasted like somebody else's tuna-flavored panic. Out is out. Math for later."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the hatch gives onto a service corridor strung with cable and condensation, walls plastered floor to ceiling in NEKOCORP DREAM PACKAGE upsells — one poster half-peeled shows a cat curled against a smart fridge under a headline promising COMPATIBILITY GUARANTEED, the fridge's chrome face smiling wider than any fridge should. down the corridor a maintenance cart trundles on its own track, restocking charge cables nobody asked for, wheels squeaking on schedule."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   .-----.\n  /  zzz  \\\n |_________|\n |[BILLED] |\n '---------'\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears flatten at the cart's approach, sidestepping into a gap between vending units before the wheels can clip a paw. Underneath the squeak: something richer, meat-fat, real, riding off a service door propped for the graveyard restock."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the propped door belongs to the zone's staff kitchen, off-limits by three separate signs nobody enforces this late, steam still curling off a pan left to cool on the counter — synth-bacon, cheap cut, but real heat under it. past the counter, a second exit lets onto a stairwell the cart never bothers checking, rust creeping up every third step."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose over the pan first, weighing the risk against the smell, then teeth closing careful around a strip still too hot to swallow whole. Doesn't linger at the counter — carries it low, fast, for the stairwell's rust-dark mouth."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the stairwell drops six flights before it opens onto a landing where a citizen-services kiosk stands bolted to the wall, its screen looping the same settings menu that's trapped better cats than this one — SECTION 12, SUBSECTION C, PLEASE HOLD — the cursor blinking on an option nobody's ever selected. cold air bleeds up from below, carrying traffic-noise and rain."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles on the landing's far side, prize held down with both paws, chewing fast around the kiosk's cold blue glow — it doesn't smell like anything, doesn't move except the cursor, easy enough to ignore once the first bite goes down."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the last of the strip vanishes and the landing settles quiet, kiosk cursor blinking its patient nothing, rain finding the stairwell's open grate three floors up and running down in a thin cold line. a patrol drone's rotor thrums distant, above ground level, its usual circuit not due through this shaft for another twenty minutes — plenty of time, if anyone were counting."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't wait for the twenty minutes to prove themselves accurate. Pushes on down, past the grate's cold drip, toward whatever light bleeds up from the shaft's bottom — dim, orange, unbothered by the rain finding it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the shaft bottoms out in a maintenance sublevel nobody's swept in years, one wall bowed inward where something heavy hit it once and was never repaired — scorch-dark at the seam, the kind of damage that only comes from a killdozer's blade catching stone wrong. past the bowed wall, a vent grate breathes warm air smelling of ash and old rust, long since gone quiet."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "No interest in ash that's already gone cold — whatever burned here did its burning long before tonight. angles wide of the bowed wall instead, ears tuned for anything under the vent's breath that isn't just old rust."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the sublevel opens further into a row of dead terminals, screens dark but still warm at the edges, current bleeding through casings nobody's bothered to fully power down. boundary scent crosses the row about halfway — sharp, recent, laid by more than one animal working together, the kind of mark a whole crew leaves when they want ground remembered."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Slows at the mark without stopping outright, reading the layered scent for how many left it and how recently — three at least, within the hour, moving with purpose rather than just passing through. Doesn't cross it head-on. Angles the long way round the terminal row instead."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the long way adds distance but costs nothing else — the crew's mark holds its ground unchallenged, whoever laid it long gone from the row itself. a service ladder at the sublevel's far end climbs back toward street level, rust-flecked rungs cold under any paw that tests them, daylight-grey light spilling down from a grate at the top."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Climbs slow, the strip of synth-bacon already a memory the stomach's stopped crediting, tiredness dragging back in now that the danger's cleared — same fog that never fully lifted since the pod's chime first cut through it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the grate opens onto a rooftop utility run within sight of the Dream Processing towers, their glow the same dim orange it always is, holding steady no matter the hour. below, delivery drones start their pre-dawn circuits, engines a soft distant hum against the rain easing off to nothing. the whole district smells like ozone and cooling rain and, underneath both, a thousand rented dreams cycling through their nightly leases."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "No interest in climbing back down into a pod that charges by the twitch. Finds a dry ledge instead, up under an overhang where the rain hasn't reached, and curls down into what's left of the dark — cheaper than any subscription, warm enough, nobody's business but its own."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the ledge holds its little patch of dry above the wet street, the towers' orange glow indifferent to what's tucked under the overhang same as it's indifferent to everything else it's ever lit. somewhere below, the abandoned pod's readout keeps counting a charge against an occupant who isn't coming back to pay it, the number climbing steady into a total nobody in this district will ever bill in person."
+    }
+  ]
+}
