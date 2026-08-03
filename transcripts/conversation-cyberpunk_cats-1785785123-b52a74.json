@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785785123-b52a74",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-03T19:25:23+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) \u2014 not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Blood. Not fresh \u2014 copper gone flat, threaded through rust and standing water, painted along a support column at exactly nose height, higher than any paw could reach without stretching hard. Ears rotate toward the ramp above before the rest of the body commits to moving at all."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Level minus-three of the Aurum Parkade keeps its own weather \u2014 condensation sweats down every column in slow beads, dripping into puddles on a rhythm nobody set. Support column six wears that mark at chest height for a cat standing tall on its hind legs, copper oxidized dull, old, not this week's business. Fluorescents on the ramp overhead stutter on a five-count, dead more than they're lit. Two bays over, an abandoned supply cart sits with its wheels locked, one wheel still spinning slow on nothing."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The mark gets a long sniff, then a slower one \u2014 whoever left it stood taller than territory-marking usually calls for, back arched hard to reach that high. Not today's threat, filed and set aside. Paws carry forward toward the stalled cart instead, low to the concrete, weight forward, tail flat and trailing."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The cart holds NekoCorp ration cans shrink-wrapped in cellophane, one case split open, foil lids catching the stutter-light in cheap little flashes. Two levels up, a rotor thrums on a steady sweep pattern, still distant, still just a texture in the air rather than a threat yet. Near the ramp mouth, something crouches low on the concrete lip \u2014 twin lenses catching the flicker and throwing it back flat, no warmth in the reflection at all, gone before the shape resolves into anything but reputation."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Weight drops lower at the lens-flash, breath held short. The rotor-thrum gets logged, filed against distance and closing speed both. A decision arrives before it's finished being made \u2014 under the cart, into the cold-oil dark between its wheels, where the shadow runs deep and unbroken."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The cart's underside smells of gear grease and old rubber, a puddle collecting under one axle that hasn't been serviced in years. The rotor-thrum sharpens, drops a register, a searchlight beam sweeping the bay two rows down, throwing long cart-shaped shadows that don't quite match where the cart actually sits. It hunts the wrong bay first. That buys time, not safety."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Stillness holds until the beam finishes its wrong-bay sweep and swings off toward the ramp exit, rotor-thrum fading by degrees rather than all at once. Only then does a paw ease out from under the cart's shadow, testing the open air before the rest follows."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The searchlight's gone but leaves an afterimage burned pale across the dark, fading slow. The split ration case sits where it was, foil peeled back on one can, the ration inside gone waxy and sweet-rancid at the edges, the way tuna paste turns after too long under bad refrigeration. A wall-mounted speaker two columns down clicks on unprompted, cycles half a loyalty-tier jingle, then cuts itself off mid-note, like something upstream lost interest before it finished."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The waxy ration gets eaten anyway, quick and low over the can, the sweet-rancid edge more interesting than off-putting. A scrap of foil-backed wrapper sits crumpled just past the cart wheel, torn at one corner \u2014 the kind that comes wound around something small, and this one still ticks faintly, a thin electrical tick with no source a nose can find."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The wrapper reads NEURAL-PATCH \u2014 BATCH VOID \u2014 DO NOT REINSERT in print gone soft at the fold, one corner scorched black. Whatever it held is gone, but the concrete under it carries a leftover charge, faint enough to feel through a paw-pad rather than hear, a hum with no pitch that seems to arrive a half-second behind whatever caused it, over and over, an echo standing in for the sound it's echoing."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  .-[CHIP]-.\n  | + + + + |\n  '---------'\n     glitch~\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The paw-pad flinches off the charge fast, shaken out hard twice. For one wrong second the drip-rhythm from the columns arrives as a color instead of a sound, gone before there's time to be bothered by it. Ears flatten, and the wrapper gets left exactly where it was."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Three columns down, a fresher mark sits scored into the paint at shoulder height, claw-deep, still faintly sharp underneath the garage's general rot \u2014 a boundary line, drawn recent, drawn deliberate. Somewhere above the ramp's dead-count fluorescents, glass grinds faintly against a window track, slow, patient, the sound of someone up on the mezzanine changing position without hurrying about it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The claw-mark gets a wide berth rather than a closer look, the whole body angling away from it without quite turning tail. Whatever's on the mezzanine stays unlogged past the sound of it \u2014 not worth the climb, not worth the argument. The retreat runs back along the column line, toward the ramp's open mouth and the wet air beyond it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The ramp mouth breathes out street-noise and rain-smell together, traffic hiss climbing from somewhere below street level, tires on wet asphalt in long overlapping strokes. Past the ramp's lip, the city goes on being the city \u2014 a NekoCorp billboard three blocks over cycles synthetic-milk to loyalty-tier to synthetic-milk again, its glow smearing sideways across every wet surface it touches. On a fire escape two buildings over, a shape sits with lenses that don't match the billboard's color at all, watching nothing in particular, or everything, from that height it's hard to tell which."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The fire escape shape gets one long look and no closer approach \u2014 filed the same way the claw-mark was, respected rather than tested. A gap under the ramp's overhang offers dry concrete and a sightline both, and that's enough to settle into, haunches down, tail wrapped tight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Rain thickens by degrees, drumming harder on the overhang a beat above the settling spot, runoff finding a groove in the concrete and turning it into a thin moving line. The billboard's synthetic-milk glow ripples across every puddle down the block in time with the rain, and somewhere back up on level minus-three, the dead-count fluorescents finally give up their five-count rhythm and go fully dark, one column at a time, patient about it, like something upstream had simply stopped paying attention."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears track the dark spreading backward through the garage without needing to see it, one dead light at a time, closer with each. The tail-wrap holds. Whatever's coming with the dark can find the rest of the night waiting somewhere else."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The last fluorescent on minus-three gives out with a sound too small to travel this far, more felt than heard, a pressure change more than a noise. The rain keeps its own rhythm regardless, indifferent to which lights are on, and the billboard keeps cycling its three slides into the wet street below, patient as anything patient ever gets in a city built to never quite finish anything."
+    }
+  ]
+}

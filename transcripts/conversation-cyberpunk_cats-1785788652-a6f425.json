@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785788652-a6f425",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-03T20:24:12+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Still, dead weight centered over both hind paws, eyes fixed on the rail below without blinking. The platform hums a half-second before the train ever shows — always does — and that lead-time shiver is worth waiting through before spending the energy to move at all."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Dream Processing Zone keeps its platforms half-lit on purpose, sodium bulbs dimmed to a rate that's supposedly proven to lower dispute filings. The rail's pre-hum ends in a chime that isn't the train — a Pawsitivity ad panel two pillars down cycling into a jingle, HAPPYWARE's face grinning too wide through the static, cut off mid-word before it finishes. Somewhere below the platform grate, a compressor kicks on, cycling stale air up through the slats, carrying old dream-fumes and hot copper both."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   .-----.\n  /  zzz  \\\n |_________|\n |[BILLED] |\n '---------'\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The compressor-smell pulls harder than the chime did, paws already angling toward the stairwell down, low and unhurried. Hunger sits duller than usual today, an old familiar weight rather than an urgent one — the kind that's learned to wait."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Under the platform, a row of rental pods lines the service corridor, doors shut, meters bolted above each one blinking red digits that climb whether anyone's inside or not. One door hangs loose on its hinge, meter reading $4.99 and rising, a claw-scored tag scratched deep into the paint beside it — one word, gouged in strokes too deliberate to be accidental. A foil ration tray sits half-in, half-out of the doorway, contents gone waxy at the edges."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The tag under the paw gets a slow read before the tray does, claim recognized before it's understood why. The ration goes down fast anyway, low over the tray, tail curled tight against the cold bleeding out of the open pod door."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Two service bays down, something's been dumped against the wall — a squat unit trailing a cord to nowhere, door hanging open on a light that never fully goes dark, cycling a soft chime and a voice that used to be warm: 'don't forget our anniversary, love — I've already ordered the candles.' Nobody answers it. The unit hums on regardless, patient the way only appliances get to be patient, indifferent to the fact its whole marriage got hauled out here with the rest of the scrap."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n ________\n|  []    |\n|--------|\n|  []  ♥ |\n|________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The cold-hum from the dumped unit earns one wary look and nothing closer — whatever that voice is for, it isn't for eating or sleeping in, and both are what matter right now. Weight shifts back toward the pod doorway instead, the claimed one, the one with the tag."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The pod door swings a little wider on its bad hinge, and for exactly one beat the corridor isn't a corridor — hasn't been, technically, for the last several rebuilds, just something wearing a corridor's shape until the query resolves and the walls remember which walls they are. Nobody logs the gap. Nobody logs anything. Then it's ordinary again: concrete, cold pod-door, a meter still climbing in red digits like it never stopped."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears pin flat at nothing nameable, whole body gone still a half-second longer than the moment actually lasted. Whatever that was doesn't get filed as danger or filed as anything — just avoided, the same stretch of floor given a wider berth on the way back into the pod's shadow."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Overhead, past the platform's dead sodium lights, a rotor picks up cadence, sweeping in off the monorail line proper, searchlight catching rain in long silver threads before it ever reaches the stairwell down. Security doesn't usually run this deep into Dream Processing — the ad revenue's better spent on jingles than patrols — but tonight the beam commits to the descent anyway, unhurried, thorough."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The beam gets clocked through a gap in the pod door before it's close enough to matter, and the decision that follows isn't really a decision — door pulled shut with a paw, wedged with a shoulder, dark traded for safety without a second thought."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Light sweeps the service corridor once, twice, catching nothing but a dumped appliance still murmuring its anniversary line to no one, a tag scratched into paint, a meter blinking red behind a shut door. It moves on toward the platform's far end, rotor-thrum fading into the general wet-city noise the way most threats do here — not gone, just deprioritized."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Only once the thrum thins past hearing does the shoulder ease off the door, breath slowing by degrees. The tray's last waxy scrap gets finished in the dark, unhurried now, meter still ticking its red climb somewhere just above the ear."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Rain finds the service corridor through a grate nobody's sealed in years, drumming a thin rhythm against the pod's roof. The billboard's jingle cycles through once more, three floors up and muffled down to almost nothing, HAPPYWARE's grin flickering static-thin through the wet. The city keeps billing regardless of who's asleep to hear it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes close to that rhythm rather than against it, meter-red painting faint stripes across closed lids through the door's gap. The claimed tag stays exactly where it was scratched — proof enough, for tonight, that the doorway remembers whose it is."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Somewhere above the Dream Processing rooftops, past where any cat bothers looking, a NekoCorp transport banks low and slow across the skyline, running lights blinking a pattern that means nothing to anyone not paid to read it. The rain keeps on regardless, indifferent as it always is to who's resting and who's still out counting rotor-thrums for a living."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "None of it reaches past the shut door. Whiskers stop tracking the room's edges one by one, the last to go still the ones angled toward the corridor outside."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The meter ticks its last visible digit before the pod's little screen dims to standby, red fading to a dull, patient dark. Outside, Dream Processing Zone keeps doing what it does best, running all night on other people's exhaustion, and asking nothing back from the one pod that's finally gone quiet."
+    }
+  ]
+}
