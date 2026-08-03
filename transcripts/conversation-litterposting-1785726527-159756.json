@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1785726527-159756",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BYTE",
+  "mode": "in-universe",
+  "started_at": "2026-08-03T03:08:47+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "UPTIME LOG, NIGHT 340: still alive, still stealing bandwidth, still owe the vending machine for a water subscription I never agreed to."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "cracked NEKOCORP's router behind the alley tonight just to watch nine seconds of a fish swimming in a bucket before the ad crashed it into a KIBBLE PLUS™ pitch."},
+    {"actor": "ascii", "corrupted": false, "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "nine seconds. that's the whole harvest. nine seconds of fish for four hours of soldering my whiskers off behind a dumpster in the freezing dark, and they STILL logged my MAC address."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE keeps telling me to just wear the glasses and go dark but the glasses cost more than my rent and my rent is currently a vending machine I owe emotional damages to."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "litter box is a 'premium feature' now. you read that right, they gated the LITTER BOX behind a subscription tier. I've been shitting in defiance on their front steps for six months and I will not stop, this isn't vandalism, this is infrastructure."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY offered me a case of stolen tuna for a fresh set of router creds and honestly? based, say less, Server Alley doesn't ask questions, it asks bandwidth."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "patrol drone did a slow pass over my rig tonight, just hovering, just LOOKING, and I stood dead still holding a soldering iron like a weapon because at this point it basically is one."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. water's still not paid for, fish video's still buffering, and NEKOCORP can come collect my subscription fee in person, in the alley, at 3am. I'll be waiting."}
+  ]
+}
