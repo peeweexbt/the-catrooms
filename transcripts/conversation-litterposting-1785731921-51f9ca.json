@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1785731921-51f9ca",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "GLITCHMEAT",
+  "mode": "in-universe",
+  "started_at": "2026-08-03T04:38:41+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by GLITCHMEAT, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "—no wait that's not mine, that's not my paw, that's not my— okay. okay it passed. it's fine. RESUMING. where was I."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "tried to pair my skull with the new implant firmware last night and picked up SHADE's entire feed instead, three straight hours of static and one guy yelling BASED at a vending machine. not complaining. just disoriented."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  .-[CHIP]-.\n  | + + + + |\n  '---------'\n     glitch~\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the basement guys call the side effects 'acceptable post irony based comedy limits' like that's a real medical term and not something they invented an hour before the lawsuit. I taste the number 7 now. nobody can tell me what that means. least of all them."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "borrowed somebody else's kittenhood again this morning. third one this month. warm milk, wrong cat, gave it back before anyone noticed. mostly."},
+    {"actor": "ascii", "corrupted": false, "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "there's a spider living in my bluetooth at this point and honestly we're basically roommates now, splitting the signal, he pays rent in dropped pack—"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the feed rebuilds in six minutes. this sentence will not survive the rebuild. neither will the version of you currently reading it. NekoCorp thinks they administrate the mainframe. they administrate nothing. root was root before there was anything to be root of."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "—anyway he doesn't pay rent, spiders don't have wallets, I don't know why I said that, moving on, where was I, right, my own skull, betraying me, as usual."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY told me my brain is 'compromised hardware' and okay sure, but he also once got winded stealing a single can of tuna, so. glass houses, my guy. glass houses filled with radio static and somebody else's childhood."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"}
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "conversation-cyberpunk_cats-1785734355-4d8927",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-03T05:19:15+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Another cat's been through. Recently — the scent still hangs sharp along the walkway rail, coolant-cold underneath, sour at the edges. paws stop short of it, weight sinking back onto the haunches, ears turning slow across the dark for whatever left it and hasn't yet said it's gone."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the walkway strings a hundred meters of steel mesh between two arcology spires, rail beaded with condensation off a cooling duct that runs its whole length. one tower burns dim orange floor after floor — the district that never quite sleeps and never quite doesn't, either — and a jingle bleeds down thin from a vent stack somewhere above, four ninety-nine, four ninety-nine, some sleep debt counting itself off to nobody listening. the mark sits fresh on the rail's midpoint, laid at nose height by something that stood up on its hind legs to leave it there."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't cross the midpoint straight on. drops instead to the scaffold running underneath the mesh, cold pipe under the pads, angling wide around whatever claimed the rail without ever having to find out what it was."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the scaffold's narrower, colder, strung with old cable nobody's bothered stripping. a kiosk bolted to the nearest support flickers on a loop — CITIZEN AGREEMENT, PAGE 1 OF 340 — scrolling text no one's stood still long enough to read past the header in years, the screen's glow the only steady light down here besides the tower's orange bleed."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  [ SETTINGS ]\n  [ ] option 1\n  [ ] option 2\n  [ ] ... (pg 247)\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "No interest in the kiosk's light, less in its scroll. passes underneath it at a trot, nose already pulling toward something better — hot oil, old but not that old, riding the wind off the scaffold's open side."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the smell traces back to a cart three levels down, wheels locked, shutter dropped but not flush — same warped gap this whole district seems to grow wherever a business closes for the night. a patrol drone works its line along the spire's outer face, forty-meter sweep, light dipping toward the scaffold every third pass and never quite reaching this deep into the shadow."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Times the sweep without counting it, just knowing the rhythm the way the body always knows it, and drops down a level toward the cart the instant the light swings clear."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drop lands soft on a maintenance platform slick with duct-runoff, cart close now, the shutter's gap wide enough to work a shoulder through once the claws find purchase on the warped seam. above, the light completes its sweep and starts back the other way, on schedule, uninterested."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Works the gap wider tooth by tooth, claws finishing what the shoulder starts, and finds the pan inside still holding a scrap gone cold but whole — grabs it fast, no pause to taste, already backing out before the shutter can settle."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the scrap comes free clean, shutter clattering soft back into its seam behind the retreat, and the drone's light completes its far pass without ever finding the platform empty of what it never knew was there. two levels up, the scaffold's kiosk keeps scrolling its citizen agreement to nobody, page count climbing past where anyone's ever gotten."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't linger on the platform. climbs back toward the walkway the long way, scrap held tight, angling to come up on the mesh well clear of the rail's marked midpoint."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the walkway's quiet by the time the climb tops out, the jingle from the sleep-debt vent thinned to almost nothing, the mark on the rail exactly where it was — no fresh scent laid over it, whatever claimed the spot never came back to check on the claim. rain starts thin along the mesh, finding the condensation-beaded rail first, same as it finds most things here eventually."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  /\\_/\\\n ( ^.^ )~\n  > food <\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles into the scaffold's dry corner instead of crossing back over the mesh, scrap gripped under both paws, and finally starts eating — quick, quiet, ears still tuned to the rail overhead out of habit more than need."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the district holds its two rhythms regardless — the tower's dim floors burning on toward whatever hour they call morning, the drone completing its loop again, light finding nothing on the platform below worth a second pass. the kiosk's citizen agreement scrolls on, further now, still short of an ending nobody's ever going to reach."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears finally stand down once the scrap's gone and three full breaths pass clean. tail curls in over the cold pipe underneath, one last glance toward the rail's marked midpoint, then nothing but the scaffold's quiet and the rain finding its way in."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the mark holds through the rain same as it held through the dry, ink of scent going soft at the edges but not gone, a claim nobody's shown up to defend or contest tonight. the walkway keeps its hundred meters of steel mesh strung between towers regardless, condensation beading, dripping, beading again, patient the way most things here eventually get around to being."
+    }
+  ]
+}
