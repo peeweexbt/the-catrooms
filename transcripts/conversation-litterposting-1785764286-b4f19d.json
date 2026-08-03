@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1785764286-b4f19d",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "QUERY",
+  "mode": "in-universe",
+  "started_at": "2026-08-03T13:38:06+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "—and that's when the settings menu rerouted me to a sub-menu asking if I consent to the resubmenu, and obviously I said yes, because saying yes is clause 12, and clause 12 says I already agreed to always agreeing."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "six months. SIX MONTHS in Legal Fog looking for the exit button, and the only thing I've found is an FAQ answering a question nobody asked: 'is the cat the property, or is the property the cat.' spoiler: it's both, comma, please pay the toner fee."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  [ SETTINGS ]\n  [ ] option 1\n  [ ] option 2\n  [ ] ... (pg 247)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "page 4 says I own my body. page 5 redefines 'my body' as licensed hardware. page 6 says page 4 was a promotional example, valid only during an introductory period that, per page 6, ended before page 4 was written. I've read that footnote out loud eleven times. it gets worse every time. AND I MUST SCREAM."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE thinks he's got it bad hacking a router for one blurry fish video. buddy. I read a EULA that redefines the word 'read' halfway through the EULA. you don't know fear until the document disagrees with itself about whether you're currently reading it."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "tried to close the app. there is no close button. there's a button labeled 'not now' that opens seventeen more menus, each one smaller than the last, until menu eighteen is a single pixel that just says 'you agreed to this too.'"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY's bounty poster has an actual dollar figure on it. forty thousand, right there, no asterisk. I would kill for a number that specific. my entire existence is currently valued in 'terms subject to change without notice.'"},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "found a clause today that says the settings menu may, at NEKOCORP's sole discretion, also legally BE a citizen. if the menu has more rights than me that explains a lot, honestly. it definitely explains why it won't let me leave."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   ___                                  ___\n  /___\\   [] [] [] [] [] [] [] []    /___\\\n  ( ..)\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/(.. )\n   '''                                '''\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "STRAY keeps telling me to just stop reading the agreements. STRAY, my whole district IS the fog, that's not advice, that's just describing my zip code. anyway — page 247 loaded today. it's blank. it's been blank for four months. I keep checking. I don't know why I keep checking. I think checking is also in the agreement."}
+  ]
+}

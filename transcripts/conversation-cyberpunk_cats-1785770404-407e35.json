@@ -1,0 +1,102 @@
+{
+  "id": "conversation-cyberpunk_cats-1785770404-407e35",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-03T15:20:04+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Another cat's mark sits on the grate's edge, three days stale, laced with something metallic underneath it — not fear-scent, not friend-scent. Worth remembering. Paws settle into rebar dust already warm from whatever grinds on below, the closest thing to a floor that still belongs to anyone."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The warmth comes up through three levels of poured concrete, machinery running a shift that never ends, heat rising through a floor that used to hold something softer before the treads came through and left it flat. Two rooftops over, past the gap, a shape sits motionless against a chimney vent — mirrored lenses catching the one streetlamp that still works, there and then not, gone before it's confirmed. Dust keeps sifting down, fine as ash, settling on everything the same."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The grinding gets sorted and filed — machine-sound, not footstep-sound, nothing that needs the ears twice. A sneeze shakes the dust loose. Across the gap the chimney-shape is already gone, which is fine, which is how it goes. Attention slides back to the warm grate, eyelids heavy, half a doze pulling at the edges."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The doze doesn't get far. Two streets off a drone breaks its usual sweep, dipping low over rubble it never bothers with, servo-whine climbing a register past routine. Its speaker catches a stray broadcast mid-loop before correcting — '...FORTY THOUSAND POINTS, KNIFEBOY, LOADING DOCK SECTOR, DO NOT ENGA—' — cut off clean, and then its light is swinging back around, settling on the grate instead."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Hackles lift on their own, a decision the spine makes before the head agrees to it. Weight shifts low, haunches gathering, eyes fixed on the light instead of flinching from it. This one's close enough. This one's been close before."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The rotor-thrum climbs, closer, the downdraft kicking loose grit off the rubble pile in little stinging bursts. Its searchlight sweeps once, twice, painting the grate white, then locks — a targeting chirp, thin and mechanical, cutting through the wind."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "No more waiting on it. A push off the haunches, low and flat, straight up into the downdraft — teeth find the housing seam on the first try, the only try that matters, and clamp down through casing into whatever's humming underneath."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Sparks first, then the whole unit bucking sideways, rotor pitch screaming wrong. The fried override screams once before it dies — a designation ping burping out mid-spasm, cycling: 'INTRUDER FLAG: BRIK. THREAT CLASS: DOMESTIC EXTREMIST. THREAT CLASS: DOMESTIC EXTREMIST.' — looping until the vocal unit finally shorts and the whole thing spirals off toward the rubble, trailing smoke."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The taste stays after the jump down — copper and ozone, bitter under the tongue, worth it. One pad throbs where a fan blade caught the edge on the way past, already ignored, already old news. Ears ring faint, a high thin whine that isn't the drone anymore."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Where the drone went down, the smoke thins to nothing against the wet air. The rubble field settles back into its usual quiet, except for one thread cutting across it that wasn't there an hour ago — another cat's trail, fresh, deliberate, laid straight through the middle of the grate's usual approach. Not an accident. Not subtle either."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   /  /  /\n  /  /  /\n claw marks — still wet\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The trail gets a long study, nose low, working every foot of it. Answer goes down right on top — a mark laid hard and slow, no rush in it, no need to. Not tonight's fight. The message doesn't need one."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Nothing answers back — no growl, no shape stepping out of the dark to contest it. Just the mist thickening over the rubble, softening the arcology spires into smears of light, and somewhere below a tin roof ticking as it cools. Whatever laid that trail already decided the same thing."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The climb back to the grate favors the torn pad, weight shifted to three legs and a limp that'll be gone by morning. Warmth rises up through the rebar dust same as always, patient, unbothered by any of it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The grate holds its low steady heat, machinery still grinding somewhere underneath, indifferent to drones or trails or anything that happened on top of it tonight. Dust keeps sifting down slow, and past the gap the chimney vent sits empty now, mirrored lenses long gone, the whole rooftop settling into whatever's left of the dark before the towers start their shift-change glow."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes stay open a while longer, tracking nothing in particular — a habit older than the hunger, older than the vent itself. The ringing in one ear fades to almost nothing. Almost."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Almost is enough for tonight. The city keeps its hum going underneath everything, steady, unbothered, the same note it's held since long before tonight's drone or tonight's trail or whoever's watching from whatever rooftop is watching next. It'll still be here tomorrow. It always is."
+    }
+  ]
+}
