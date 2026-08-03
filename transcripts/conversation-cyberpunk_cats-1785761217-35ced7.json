@@ -1,0 +1,122 @@
+{
+  "id": "conversation-cyberpunk_cats-1785761217-35ced7",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-03T12:46:57+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Diesel first, then wet insulation, then under both a hum too steady to be rain or rats — belly's been empty three days running but the hum wins anyway. ears swivel toward it before paws even decide to move."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the block's been called Server Alley long past anyone remembering why — fire escapes strung floor to floor with cable, junction boxes bolted over junction boxes, half of them cracked and leaking standby-blue light into the wet brick. two flights up, one unit hums louder than the rest, casing split at a seam some previous cat already worked loose. a security cam sits dead in its housing on the corner, lens fogged from the inside out, the kind of dead that's been dead a long time."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Climbs the fire escape rail-first, claws finding old rust-grooves worn smooth by other trips up the same route. stops one rung below the split casing, listening past the hum for footsteps, for rotors, for anything that isn't just wiring talking to itself."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "nothing under the hum but the building's own settling creak. the split casing gives easy, insulation already chewed ragged at the edge by teeth that weren't yours — somebody's been here plenty of times before. inside, a service screen blinks awake at the disturbance, buffering something low-res and grainy, fish-shaped, before a NEKOCORP ad tries to shoulder it aside. across the gap, wedged between two dumpsters, a smart fridge unit hums its own separate note — discarded, still plugged into something, its cracked display looping COMPATIBILITY GUARANTEED at no one."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Fridge-hum's colder, sadder somehow, easy enough to ignore. the screen's warmer note wins, teeth finding the insulation's already-ragged edge and widening it further, working toward whatever's buffering behind the ad."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the ad loses, same as it always eventually loses to a determined enough set of teeth — the fish-shaped clip resolves for exactly four seconds, low-res, looping, gone before it means anything. far off, a patrol drone's rotor changes pitch, climbing, the kind of climb that means it's about to bank this direction on its usual sweep."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Four seconds was the whole point. doesn't wait for a fifth. drops back down the rail two rungs at a time, casing left split behind, already gone before the drone's light finishes climbing toward this side of the block."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drop lands soft on a fire-escape landing one floor down, close enough to the alley mouth that the drone's light sweeps past overhead without dipping low enough to matter. on the landing rail opposite, another shape sits hunched, still, tongue working slow like it's tasting the drone's own chatter instead of hearing it — somebody's nervous system rewired by a cut-rate lab patch, indifferent to the alley, to the fridge, to anything with a scent. it doesn't turn its head."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "No interest in whatever the shape on the landing rail is tasting — not prey, not threat, just static wearing fur. drops the last flight to the alley floor instead, insulation-fiber still caught between two teeth, and cuts wide of the fridge's cold hum on the way past."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the alley narrows past the dumpsters into a runoff channel, rain finding it first same as it finds everything eventually. the fridge's ad loops once more behind — COMPATIBILITY GUARANTEED — to nobody, to the dumpster lids, to the drone already three blocks gone and not coming back tonight."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n ________\n|  []    |\n|--------|\n|  []  ♥ |\n|________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Pauses at the channel's mouth long enough to press a cheek against the cold drainpipe base — one more mark over however many are already layered there, ground quietly walked the same way more nights than not."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the mark holds as long as the rain allows, same as every mark in this stretch of the block. two floors up, the split casing keeps leaking its standby-blue light into the wet dark, insulation chewed ragged at the edge, waiting for the next set of teeth patient enough to find it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles into the channel's driest lip once the mark's set, tail wrapped tight, ears staying up out of habit long after the drone's rotor has faded past hearing."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the district holds its two rhythms regardless — the alley's cracked servers humming their standby note, the fridge two dumpsters over humming its own, colder one, neither aware of or answering the other, both just going on the way they always do, indifferent to the one set of ears finally starting to relax between them."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Half-drowses to the double hum, one note warm, one cold, both steadier than any heartbeat. doesn't fully surface again until the gray comes back into the sky above the fire escapes."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "morning finds Server Alley the same as it left it — junction boxes cracked, cameras dead in their housings, the fridge's ad still looping to an audience of dumpster lids. somewhere two towers over, a drone logs its overnight sweep as uneventful, same as every sweep before it, filed and forgotten before the ink's dry."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Stretches out the night's stiffness leg by leg before climbing back toward the split casing, one more pass at the hum before the daylight makes the whole block too visible to work safely."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the casing's exactly as it was left, insulation ragged, screen dark now in daylight's flatter light, ad and fish-clip both switched off with nothing worth buffering this early. a fresh scent crosses the fire escape's lower rungs — someone else's, sharper, newer than last night's, already come and gone once already this morning."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Reads the fresh scent without answering it, filing whoever left it same as everything else worth remembering and nothing worth chasing. leaves the casing for later, once the light thins back down toward evening."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the alley resets around the untouched casing, rain easing to a drip off the fire escape's lower rail, the fridge's cold hum keeping its patient count of days since anyone came to reclaim it. Server Alley keeps its two hums going regardless of who's listening, same as it always does, same as it will again tonight."
+    }
+  ]
+}

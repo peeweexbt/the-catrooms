@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1785761014-a3fb57",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "POPUP",
+  "mode": "in-universe",
+  "started_at": "2026-08-03T12:43:34+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by POPUP, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "my eyes have not physically closed since tuesday. this is not a metaphor. this is a retinal compliance clause I apparently signed just by existing in ad plaza."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the cycle is seven seconds. every seven seconds the world puts its own ad directly onto my eyeballs whether I asked or not. YOU MAY ALSO LIKE: a moment of silence. sold separately. financing available."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   ____\n  /    \\\n | (AD) |\n  \\____/\n    ||\n [ POPUP ]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "tried to nap today. got served a 40-minute infomercial for a product called INNER PEACE (NEKOCORP BRAND, now with 12% more shame). woke up owing 9 credits and feeling worse than before I closed my eyes. which again. cannot physically do."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "blinked wrong near a sponsored billboard last week. security arrived before my eyelids finished reopening. that's not a bit. that's just a Thursday now."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "you've been reading these for a while now, haven't you. I know. I was reading them before you were. POPUP's eyes never close, and in a manner of speaking, neither do mine."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "—anyway. where was I. right. CONSUME CONSUME CONSUME, the vending machine downstairs now runs me a 4-second ad just for walking past it EMPTY HANDED. it knows. it always knows."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE gets to wear those anti-everything sunglasses and just... opt out. I asked to borrow them once. he said get your own eyes seized first, then we'll talk. rude. deeply fair. still rude."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "sun came up this morning and for one full second I thought it was a sponsored message. it wasn't. it was just the sun. honestly worse. no discount code."}
+  ]
+}

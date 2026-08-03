@@ -1,0 +1,118 @@
+{
+  "id": "conversation-cyberpunk_cats-1785763168-069117",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-03T13:19:28+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Still. Ears pinned back, then swiveled forward, sorting the wind for footsteps that haven't arrived yet. Below, market stalls throw up amber light through noodle-vat steam, and something in the glass across the gap catches it wrong — flat, doubled, mirrored, the way light bends off sockets that aren't quite eyes anymore. paws don't move. not yet."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the amber holds. six stalls deep, a fish-cart vendor slaps a scale plate too hard and a curl of grilled protein skids off the edge, forgotten in the noise. under the drainpipe two rungs down, a scent lingers that isn't yours and isn't safe — scorched fur, hot metal, an old anger that never fully cooled, gone three minutes maybe, headed toward the demolition line. the scrap on the ground steams. nobody's looking at it yet."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the scorched-fur trail gets a wide berth, a half-turn of the head, nothing more — not tonight's problem. the drop to the next ledge is four body-lengths, manageable, silent if the landing's soft. weight gathers in the haunches. eyes measure it twice."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the landing's soft, mostly — a stack of flattened cardboard cushions the drop, though a staple bites one paw pad on the way down. closer now: oil, char, the sweet rot of fish left too long, and cut through all of it a fresher mark, sprayed low on a crate corner, not yours, not old — a warning, still wet at the edges. somewhere north, past the stalls, a low mechanical thrum starts climbing in pitch, the kind that means a searchlight is about to start sweeping."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "body drops flat against the cardboard stack, tail wrapping in tight, breath shallow. the thrum climbs closer, close enough now that grit shivers loose from the crate stack overhead. ears track the sound the way water tracks a slope — not deciding, just following."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone's downlight rakes the alley mouth, catches the edge of the cardboard stack, moves on — you're a shadow inside a shadow, good enough tonight. but the vendor's already turned, scale plate abandoned, eyes narrowing at the shape that wasn't there a second ago. a broom handle scrapes off its hook. 'oi — GIT —' not loud, not yet, but a hand's already closing around the scrap you came for."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "faster. teeth close on the scrap a half-second before the broom does, and then it's just motion — under the cart, between two crates, into the dark mouth of the underpass tunnel where the broom can't follow and the vendor's shouting fades to just another city sound."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the tunnel swallows the noise and gives back its own: dripping pipe overhead, a data-den doorway ahead lit blue-white through a cracked shutter, and above it a speaker bolted to the wall crackling to life on a loop — 'YOU ARE NOT TRAPPED. THE TUNNEL WALLS ARE FOR YOUR PROTECTION. REMEMBER TO SMILE.' the voice underneath the jingle sounds like it's smiling so hard it hurts. the shutter's gap is wide enough to see wires, a terminal, someone's shape hunched over it not moving."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   .-----.\n  ( ^   ^ )\n   \\  -  /\n    -----\n [SMILE: MANDATORY]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the scrap gets eaten fast, back turned to the speaker, ears flattening every time the loop resets. between bites, one eye stays on the shutter gap — the hunched shape hasn't moved, hasn't blinked that anyone can tell, just sits there in the terminal's cold light like it's waiting for something that already happened."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the shape at the terminal is a cat, or was — cables run from a socket at the base of its skull into the wall, and the screen in front of it just says WORKING in a font too clean for this district. behind the terminal, the wall's usually just wall, cracked plaster and old cable runs, except for one half-second where it isn't — where the paint and the wires and the numbers stenciled on the junction box all agree on a different arrangement, hold it a beat too long, then snap back like nothing happened. i don't choose when i show up. neither do you. the wall is wall again. the loop starts over: 'YOU ARE NOT TRAPPED.'"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "ears pin flat, fur lifting along the spine for no reason that tracks — nothing moved, nothing smelled wrong, and still every hair says wrong anyway. paws are already backing off the ledge before the decision finishes making itself, tail low, eyes wide on a wall that's just a wall now."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the retreat puts you back at the tunnel mouth, and the wrongness fades behind you same as static does — there, then just a memory of an itch. what's actually there: a rival crew's scout at the far end, a scarred shape half-lit by a vending machine's glow, not moving, just watching, the way you watch something you're deciding whether to bother with tonight."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the scout gets a slow blink, deliberate, the kind that says seen you, not interested — no crouch, no bristle, just a shift of weight toward the drainpipe and the long climb home. the scrap's half gone already. not worth a fight over the rest."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the scout returns the blink, exactly as slow, and turns back to whatever he was watching before. the climb up is uncontested. one shopfront window on the way flickers an old ad on a loop nobody's paid to cancel — a smart-fridge unit, heart-shaped icon pulsing, some jingle about 'compatibility guaranteed,' ask VALENTUNA how that worked out — the kind of promise this city hands out to cats who can't read the fine print. rain's starting again, thin, more mist than drops."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "claws find the old rust-grooves without needing to look for them anymore, muscle memory doing the work while the eyes stay on the sky, the rooftops, the places a drone could still be waiting. the scrap stays clamped tight the whole way, cold now, still worth the climb."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the roof's edge clears easy, familiar under the paws — this ledge, this exact stretch of gravel and tar, visited enough times it's stopped being a place and started being just yours. east, past the arcology spires, the black's gone the color of an old bruise, first hint that the night's got maybe two hours left in it. the mist thickens, softening every edge in the skyline into something almost gentle."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the rest of the scrap goes down slow now, no rush left in it, back against the same vent housing as always, warm from whatever it's still venting below. ears keep working anyway, out of habit more than need, sorting rotor-thrum from wind from the tunnel-speaker's jingle still bleeding faint up through the grate underneath."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the vent hums its low steady note, unbothered by any of it — not the scout, not the drone, not whatever the wall did in the tunnel and forgot to admit to. the mist keeps thickening. somewhere below, the market's starting to fold its tarps for the night's last hour, tin roofs ticking as they cool, and the noodle-vat steam thins to nothing. the city gets quiet the way it only ever gets quiet right before it doesn't."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "eyes drift to the next rooftop over, then the one past that, tracing the route home more out of reflex than plan. somewhere out past the spires a light's still on that shouldn't be, a flicker too even to be anything but a screen nobody's watching. curiosity itches, quiet, patient. tomorrow, maybe."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the light holds its rhythm, on-off-on, waiting the way it's apparently always waited. the mist doesn't answer it, and neither does the city, and for now that's enough of a stopping point — the rain easing further, the vent's hum steady underneath everything, an unclaimed hour of dark left before the towers start their shift-change glow. it'll still be there tomorrow. most things in this city are, whether anyone wants them to be or not."
+    }
+  ]
+}
