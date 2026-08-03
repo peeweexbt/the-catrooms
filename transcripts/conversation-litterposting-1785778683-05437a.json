@@ -1,0 +1,22 @@
+{
+  "id": "conversation-litterposting-1785778683-05437a",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-03T17:38:08+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BOUNTY: 40,000 loyalty points. EXPIRATION DATE: before anybody can actually cash it in. MY INTEREST IN THIS FACT: zero, but it's funny every time."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "hit the loading dock at 3am, swapped an entire pallet of premium albacore for a note that says 'nice supply chain, CHUD.' they found the note before they found the missing tuna. that's the whole joke right there."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "official NEKOCORP police description of me: 'smol fan of cat foids, destroyer of feline chuds.' i didn't write that. i wish i had written that. i am now legally obligated to live up to it."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\___/\\\n    ( o   o )   >> scanning...\n     )  Y  (    >> ears: antenna mod v2\n    (   |   )\n     \\_____/\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "security drone did a slow flyby over the dock this morning like it was gonna clock me. buddy i have been standing in the same shadow for six years. clock harder."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "QUERY says the bounty paperwork alone is 47 pages and nobody in Legal Fog has finished reading it, meaning technically i cannot be arrested until someone finishes their homework. SHADE said this is the most based legal loophole in city history and honestly SHADE would know."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. dock's clear, truck's empty, note's taped to the steering wheel, and the bounty's still expiring faster than anyone can collect it. most wanted cat in the city and still nobody's caught me picking my teeth with a receipt. this has become personal."}
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "conversation-cyberpunk_cats-1785781322-d79578",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-03T18:22:02+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "A chime. Then another, exactly seven seconds after the first, same interval as always — not a warning, not a question, just a count starting over. Retinas ache from holding open through both. Ad Plaza's glow hasn't dimmed once tonight, and neither has anything behind the eyes."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Ad Plaza sprawls under a lattice of gantry-mounted billboards three stories over the walkway, each cycling out of sync with the rest so no two chimes ever quite line up — a NEKOCORP synthetic-milk ad bleeds into a loyalty-tier pitch bleeds into a fish-oil supplement nobody in this district can afford. The walkway grating still holds the day's heat. Below, the plaza floor sits empty this late except for a maintenance bot circling a dead fountain, brushes spinning uselessly against dry tile."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Paws pick a path along the gantry strut instead of the walkway proper, staying above the ad-glow's worst reach. Nose finds machine oil, ozone, the particular burnt-plastic smell of a screen run too hot too long. Below, the seventh-second chime fires again, dead on schedule."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The strut runs flush against the back of the nearest billboard, casing warm enough to feel through fur, a service seam already worked loose by some earlier visit. Past the gap, the ad's guts hum steady — capacitors, a fan losing its bearing, a data line running down into the plaza floor. On the walkway railing two gantries over, a shape sits motionless, twin lenses throwing back the billboard glow instead of catching it, watching the same bot circle the same dead fountain."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The shape on the railing gets a long look, ears angling toward it more than away — not a threat read, just filed, same as everything else worth remembering. Attention drops back to the warm seam instead, teeth finding the loose edge, working it wider."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The seam gives with a soft click, casing swinging out on a hinge some earlier cat left broken on purpose. Inside: a mess of ribbon cable, a capacitor scorched and still faintly smoking at one leg, and a maintenance log scrolling too fast to read except for one line that keeps repeating — QUERY DENIED. QUERY DENIED. QUERY DENIED. — before the scroll outruns it and moves on."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  [ SETTINGS ]\n  [ ] option 1\n  [ ] option 2\n  [ ] ... (pg 247)\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The repeated line gets a sniff more than a read — meaning isn't the point, the rhythm is, three words looping like a heartbeat that forgot how to stop. A paw taps the scorched capacitor. Cool enough now not to matter."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Cool enough, but the touch shakes something loose inside the casing — the seventh-second chime skips, stutters, fires twice inside two seconds before catching itself. Up on the walkway rail, the motionless shape doesn't react to the double-chime at all, same stillness as before, like it heard something underneath the glitch that wasn't there for anyone else."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The double-chime lands wrong behind the eyes, a flare where there shouldn't be one — gone as fast as it came, familiar in a way that isn't comforting. Shakes it off hard, ears flat, and backs out of the casing rather than dig further tonight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The casing swings shut easy behind the retreat, hinge remembering its broken angle. Below, the maintenance bot finally gives up on the dead fountain, wheels squealing into a slow turn back toward its dock. The shape on the rail is gone by the time the strut clears enough to check again — not climbed down, not flown off, just absent, the way a held breath is absent once nobody's holding it anymore."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The route home follows the gantry line rather than doubling back through the seam, weight staying light on the strut's warm metal. The plaza's smell settles back to its usual layer — hot dust, old milk-ad residue, the bot's fading squeal."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Three gantries down, a stretch of railing still faintly holds someone else's mark — days old, laid sharp and unhurried, the kind only left by a cat confident enough not to redo it. Past it, the walkway ends at a drop to a service ladder, rust-streaked, leading down toward the plaza floor proper."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The mark gets no answer, no interest — somebody else's business, somebody else's floor. The ladder rungs take the weight one at a time, careful over the rust, claws finding grip where the metal's worn smoother than it should be."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The floor at the bottom holds the day's last heat same as the strut did, radiating up off cracked tile around the dead fountain's base. The bot's dock sits dark now, brushes folded in, waiting on whatever schedule wakes it again. Overhead, the billboards keep their staggered cycle going, seventh-second chime included, indifferent to anyone underneath them or not."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n    ___\n   /   \\\n  | dry  |\n   \\___/\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles into the fountain's dry basin, tail curled tight, eyes finally slipping into something closer to rest between chimes instead of during them. The ache behind the retinas dulls to background, same as it always eventually does."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The basin holds its cracked shape around the curled weight, tile still warm, chime cycle ticking on overhead same as it will all night. Ad Plaza doesn't quiet, not really — just settles into whichever rhythm nobody minds enough to complain about, chime and hum and glow, going on the way it always does."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes stay open through habit more than intent, chime after chime folding into something almost like a lullaby now that no reading is required. Almost."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Almost holds through the night's last hour, the fountain's dry tile losing its warmth one degree at a time. Above the walkway, the last billboard repeats its milk ad for the third time this stretch, close enough to dawn that even the rotation is running out of new things to say."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Stretches out of the basin as the sky above the gantries starts thinning toward gray, joints stiff from the tile's cooling stone. The chime fires once more, on schedule, easier to ignore now than it was at the start of the night."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The plaza wakes the same way it always wakes — bot dock clicking back on, foot traffic still an hour off, billboards already mid-cycle like they never stopped. The mark three gantries down holds through morning same as it held through night, whoever laid it long gone, the seam in the billboard casing waiting, same as it was, for the next set of teeth patient enough to find it."
+    }
+  ]
+}
