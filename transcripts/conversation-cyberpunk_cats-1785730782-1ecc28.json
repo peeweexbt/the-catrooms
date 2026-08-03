@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785730782-1ecc28",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-03T04:19:42+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't move. Ten feet up, weight settled flat along a striped awning strut over the market square, ears tracking nothing in particular, eyes fixed on a service door that stays shut most nights but won't tonight. waiting costs nothing. moving costs everything if the timing's wrong."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the square runs three rows of stalls deep, corrugated shutters pulled down tight over each one, chalk prices still visible under grime on boards nobody's wiped since the last real produce came through. a NekoCorp delivery schedule is bolted to the service door in peeling vinyl, next slot two hours out. rats work the gutter along the far row, unbothered, the whole square holding the particular quiet of a place between one kind of business and another."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Salt and rot and something colder underneath — fish crate brine gone stale in its ice, three stalls down, the smell riding low along the gutter where the rats already know to look. stomach answers before anything else does. stays put anyway. the door hasn't moved yet."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a low engine turns over somewhere past the square's east row, not close yet, just a shift in the pitch of things settling toward motion. up on the roofline opposite — the tallest stall row, where the awning gives way to a service ladder and a water tank — something sits very still against the tank's curve, two flat discs of reflected sodium light where eyes should throw shine and don't. it doesn't move either. it's been there longer than the wait has."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  _________\n |■       ■|\n  ‾‾‾‾‾‾‾‾‾\n    BASED\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears rotate toward the water tank without the head following, reading the shape as cat-shaped and choosing, for now, to believe it. no scent carries this far, no sound past the engine's slow climb. doesn't answer the stillness with anything but more stillness — whatever's up there isn't hunting, or isn't hunting here."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the engine resolves into a box truck backing toward the service door on a beeping reverse chime, headlights sweeping the row of shutters once before cutting. two crates come off the tailgate by hand, NEKOCORP // PERISHABLE stenciled on both, the door rolling up just enough to swallow them before rolling shut again. a patrol drone crosses the square's airspace on its usual line, camera housing tilted down out of habit more than suspicion, forty-second gap between this pass and the next, same as most nights."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Forty seconds is generous. drops off the strut in one motion, lands soft on the shutter top below, then the ground, angling wide of the truck's headlight throw and straight for the gap where the door didn't quite seal flush the last time it rolled shut."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap holds, same warped seam it's held for months, wide enough for a body that knows to go shoulder-first. inside: crate stacks three high, a vending machine humming in the corner running on a cracked loyalty card reader, TIER: NONE glowing steady blue over a coin slot nobody's fed in weeks. the newest crate sits unstacked yet, one corner seam not fully sealed, brine already working through the cardboard."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  .------------.\n  | NEKOCORP   |\n  | TIER: NONE |\n  '------------'\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Claws find the soft cardboard seam and work it wider, teeth finishing what claws start — one fish, small, cold, good enough. grip locks tight and the retreat starts before the chewing does, same gap, same shoulder-first angle, faster going out than coming in."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap gives easy on the way out, but the shutter two stalls down rattles wrong — not wind, not the truck, a paw testing the base of it from the outside, patient, someone else who's clocked this same seam before and is annoyed to find it already worked tonight."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't wait to learn whose paw it is. cuts hard for the gutter line instead of the open square, fish gripped tight enough to ache, low and fast along the row's shadow where the rats scattered earlier and left a clean line of nothing worth noticing."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rattling shutter gives up its testing, a voice muttering something short and annoyed on the other side of it, not a chase, just a loss logged and moved past. the patrol drone's forty-second gap closes right on schedule, sweeping the row a beat after the gutter's already empty of anything worth its light."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Boundary-scent crosses the gutter route two stalls short of the drain — sharp, unfamiliar, laid low along a drainpipe base, not fresh. doesn't slow for it, doesn't answer it, just notes the line and steps wide of where the mark sits thickest."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the mark's a week old at least, some other crew's claim on ground they've mostly stopped bothering to hold since the delivery schedule shifted two hours later last month — territory not worth contesting anymore, not by the crew that laid it, not by anything passing through tonight. the drain waits at the route's end, same as always, dry and low and exactly where it should be."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n ___________\n|▓▓▓▓▓▓▓▓▓_|\n|__________|\n    gap\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Doesn't stop again until the drain's dry mouth swallows the last of the open square behind it. settles down, fish held under both paws, and finally starts eating — fast, quiet, ears still up out of habit long after the habit's stopped being necessary."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the market square resets around the empty crate seam and a muttering that's already forgotten why it was annoyed, the delivery schedule ticking toward its next two-hour gap same as always. up on the water tank, if anything's still there, it gives no sign of it now — sodium light finds the tank's curve empty, or empty enough."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears finally stand down once three full breaths pass without anything in them worth flagging. tail curls in tight over cold paws, one last look back down the gutter line, then nothing but the fish and the drain's stone-cool quiet."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "rain starts thin over the shutters, finding the gutter last, same as it finds everything else eventually. the district keeps its two-hour intervals regardless — trucks due, drones looping, a water tank holding whatever it's holding until the next thing worth watching comes along to watch."
+    }
+  ]
+}

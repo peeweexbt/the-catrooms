@@ -1,0 +1,102 @@
+{
+  "id": "conversation-cyberpunk_cats-1785727498-2d87f5",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-03T03:24:58+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Cold first, then the ache underneath it — three nights since the last real charge held past midnight, and the vending machine two lots down finally stopped even pretending to sell water it doesn't have. ribs read closer to the surface than they should. ears turn toward Server Alley before the rest of the body agrees to move, drawn by nothing but habit and the memory of warmth pooling where the routers stack thickest."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Server Alley 9 runs three racks deep between two windowless server barns, cable trunks fat with a decade of patchwork splicing, each unit blinking its own private rhythm into the dark. the vending machine at the alley mouth has gone dark on every panel but one: INSERT SUBSCRIPTION CARD FOR WATER ACCESS — TRIAL EXPIRED. heat bleeds off the rack nearest the wall, the good one, the one that never fully sleeps. a maintenance notice zip-tied to the fence reads ROUTINE AUDIT SCHEDULED, the date on it six weeks stale."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose finds the warm rack before the eyes confirm it, and the climb up the cable trunk is old memory now, claws finding the same worn grooves they always find. teeth close on a loose splice of insulation, working it soft — not to eat, just to feel something give. underneath the plastic, copper hums a rhythm the whole body already knows by heart."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the splice gives cleaner than it should, exposing an auth line jury-rigged open since the last time this exact tooth found it — someone, some night, taught this router to stop asking questions. past the handshake, a thin signal thread carries something looping soft and low-res: a tank, water, a fish circling the same six feet of glass over and over, feed running off a shuttered pet shop two blocks gone dark. it buffers. it always buffers."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles flat against the warm casing, eyes on the thin blue flicker of borrowed signal, watching the fish do its six feet of circling like it's the only worthwhile thing left running in the whole district. the ache under the ribs doesn't go anywhere, but for as long as the buffer holds, it's easier to ignore."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the feed stutters, cut sideways by a stronger signal muscling in from a rooftop dish three buildings over — a livestream loop, relentless, some cat's voice pitched too bright and too fast, HAPPY HAPPY HAPPY looping under a smile that never quite closes all the way, seventeen hours running if the timestamp scrolling underneath is honest. the fish tank feed buffers to black under the weight of it, gone."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears flatten hard against the noise climbing over the fish feed, some old reflex reading the pitch of it as wrong before any thought catches up. no interest in chasing a signal that loud — whatever's screaming HAPPY into seventeen hours of livestream isn't worth the current draw it'd take to mute. lets it run underneath, unwatched, and goes back to worrying the loose splice wider instead."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   .-----.\n  ( ^   ^ )\n   \\  -  /\n    -----\n [SMILE: MANDATORY]\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "footsteps that aren't footsteps — wheels, small, deliberate — roll into the alley mouth from the vending machine end, a compliance unit running the six-week-overdue audit at last, its scanner arm unfolding with a servo whine, sweeping router by router down the rack line, cataloguing every splice that shouldn't exist."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Drops off the rack fast, cable insulation still caught between the teeth, and folds down into the gap behind the transformer housing where the heat runs thickest and the scanner's angle can't reach. breath held shallow, eyes tracking the scanner arm's slow crawl along the gap's edge."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the scanner arm passes within a hand's width of the gap, its light catching a strip of paper zip-tied beside the maintenance notice — a citizen agreement pamphlet, corners gnawed soft by something that spent real time working through it before giving up around page six. the scanner logs the splice on rack four, flags it, and rolls on down the line without ever tilting far enough to find the source."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Waits out three more sweeps of the scanner arm before the shoulders finally unlock, breath easing back to something that isn't held. the flagged splice means nothing tonight — flags pile up faster than anyone ever comes to clear them. climbs back up once the wheels roll clear, insulation still gripped loose in the teeth."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the compliance unit's wheels fade toward the alley's far end, servo whine thinning into the general hum of Server Alley settling back into its unbothered rhythm. the fish feed stub is still buffering somewhere in the wreck of interrupted signal, patient, dumb, waiting on nobody in particular to want it again."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n ~~~~~~~~~~~\n|  o      |\n|   )   < |\n|_________|\n  fish.mp4\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Presses back into the warm casing, splice re-seated loose enough to still leak signal, and the fish resolves back into its six feet of circling, low-res and patient as ever. doesn't chew the insulation further tonight — enough damage done for one splice, enough risk already spent on it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the vending machine's single working panel keeps its trial-expired message glowing steady into the dark, water still locked behind a subscription nobody down here can afford. Server Alley 9 ticks on in router-hum and rack-heat, indifferent, the flagged splice on rack four just one more line in a queue that never actually gets worked."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Curls in against the warm casing, tail wrapped tight over cold paws, one eye still tracking the fish's slow loop until the buffer finally, mercifully, holds steady. ribs still ache. the warmth helps more than the water ever would have."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "heat off the rack holds through the coldest hour, same as it does most nights, the router blinking its private rhythm into an alley that doesn't know or care what's curled against it. somewhere past the fence, the compliance queue ticks its flagged line further down a list nobody's touched in six weeks, and the fish keeps circling its six feet of glass, dumb and patient and running on borrowed signal until the shop that owned it reopens, or doesn't."
+    }
+  ]
+}
