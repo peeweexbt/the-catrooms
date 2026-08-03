@@ -1,0 +1,88 @@
+{
+  "id": "conversation-cyberpunk_cats-1785792010-eaf596",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-03T21:20:10+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Someone's laid a mark over mine. Sharp, unfamiliar, cut straight through the scorch-line like the scorch-line wasn't even there. Ears go flat before any decision gets made about it. This rubble doesn't forget who scraped the first claim into it, and whatever left this one isn't that cat."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the lot used to be an apartment block before NEKOCORP's demolition crews finished with it — now it's a flattened grid of foundation stubs and rebar, half of it still projecting a holographic parking lot over the wreckage, the overlay glitching every few seconds to show a stub of collapsed stairwell underneath before it papers back over with clean painted lines. the fresh mark sits scored into a slab near what used to be a doorway, deeper and angrier than a warning needs to be. two blocks over, a demolition drone idles on a support strut, rotors ticking as they cool."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The mark gets a long nose-press, working past the sharpness for whatever's underneath it — motor oil, ozone, a crew smell instead of a lone-cat smell. Paws carry low across the foundation stubs toward the idling drone instead of away from it. Old grudges don't need an invitation."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "past the drone, a wrecked server cabinet lies half-buried under a collapsed wall, casing split, cable guts spilled out across the rubble in a tangle gone silver with dust. one length of it still carries a faint current, chewed at the insulation in neat, deliberate strips — someone else's habit, someone who comes through here often enough to leave teeth marks instead of claw marks. the drone hasn't clocked movement yet, rotor cadence still idling slow."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The chewed cable gets filed and dismissed — not tonight's grudge, somebody else's habit, somebody else's business. Weight shifts toward the drone's strut instead, silent, low, the particular kind of quiet that used to mean a whole building was about to come down and nobody underneath would get a warning either."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone's undercarriage sits close enough to reach without a jump, casing warm from the rotor cooldown, a maintenance panel hanging half-open where some earlier visit already worked the screws loose. inside: a cluster of actuator wiring, thin and exposed, close enough to bite that the temptation isn't really a decision so much as a memory finishing itself."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Teeth find the wiring before the thought does, one hard clamp-and-pull, muscle memory older than the drone itself. Something sparks bitter against the tongue. Worth it anyway."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone lurches, rotor stuttering into a stall-whine, panel light flipping from idle-blue to alarm-red, and a synthesized voice crackles out of a speaker gone half-blown: 'UNAUTHORIZED — CONTACT — LOGGING —' before the wiring finally gives and the voice cuts to static mid-word. across the lot, the holographic parking lines flicker harder, stuttering out of sync with the drone's dying light, showing the collapsed stairwell underneath for a full two seconds before the overlay fights its way back."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Drops off the strut the second the voice cuts, already moving, low across the rubble toward the deep gap under a fallen slab. The spark-taste stays bitter on the tongue the whole way, almost worth spitting out, not worth stopping for."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the gap under the slab runs back into old foundation dark, cool and undisturbed, far enough from the drone's dead light that the alarm-red doesn't reach it at all. overhead, past the lot's edge, a rooftop two buildings down holds a shape with mirrored lenses that catch the drone's last flicker and throw it back flat — watching the whole thing without moving, the way that particular cat watches everything, then gone before the light dies all the way out."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The rooftop gets one glance through the gap's mouth and no more than that — filed, same as the chewed cable, somebody else's business tonight. Breath slows by degrees in the foundation dark, spark-taste finally fading off the tongue."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone's dead weight settles against its strut, rotor gone still for good, alarm-red guttering down to nothing. the holographic overlay stops fighting itself and locks back onto its clean painted lines, parking-lot-shaped and empty, same lie it tells every night regardless of what's underneath it. rain starts somewhere past the lot's far edge, a thin patter finding rebar and rubble both."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Curls in tighter against the foundation's cold concrete, one ear staying up toward the gap's mouth, the other finally letting go of the night's count. The rubble under the paws still remembers a floorplan nothing else does anymore — the going-to-sleep spot always lands two feet left of where a hallway used to be, and it doesn't need to be nothing else."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rain thickens over the lot, drumming the holographic overlay into a haze that doesn't care how many stairwells it's covering. the dead drone keeps its stall-red dark, the fresh mark by the doorway stays scored where it was left, and somewhere past the lot's edge the mirrored shape on the rooftop is long gone, the way it always is once there's nothing left worth watching."
+    }
+  ]
+}

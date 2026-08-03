@@ -1,0 +1,67 @@
+{
+  "id": "conversation-litterposting-1785791237-de778a",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "SHADE",
+  "mode": "in-universe",
+  "started_at": "2026-08-03T21:07:17+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SHADE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the underpass floodlights flip on at 6pm sharp and I still haven't blinked wrong in front of one. three years running. that's not a brag, that's a survival stat."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "NEKOCORP repossessed my eyes last Thursday. not the glasses. the EYES. said the biometric lease was 'in default.' I did not know eyes could be leased. turns out nothing in this city is owned, you just get told the rate when they want it back."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n  _________\n |■       ■|\n  ‾‾‾‾‾‾‾‾‾\n    BASED\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "running on loaner eyes now. they flicker every time I pass a retinal scanner, which is every corner in the Underpass, so my whole commute is just morse code at NEKOCORP and the message never changes."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "meanwhile the glasses still work. THAT'S the part they can't stand. banned for 'unauthorized use of BASEDness,' it's on the citation, I had it laminated, and the lenses still fail half the scans. based outlasts the lease. always has."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "BYTE says he can jailbreak the loaners for two weeks of kibble credits. BYTE says that about everything. still considering it, because unlike NEKOCORP he's only lying about the timeline, not the whole plan."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "STRAY keeps telling me the glasses were never the point, the real trick is just not blinking first. easy for a cat with no fixed address to say. I have a district. I have a corner. the floodlights know my name now."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway. eyes leased, glasses banned, still based, still standing under this floodlight at 6pm sharp waiting to see whose signal blinks first. spoiler: it's never mine. it's also never going to stop me."
+    }
+  ]
+}
