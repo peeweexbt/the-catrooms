@@ -1,0 +1,108 @@
+{
+  "id": "conversation-cyberpunk_cats-1785741550-b0d629",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-03T07:19:10+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Already moving. No warm-up, no wind-up — just legs going, gravel spraying off the pads, a shape too fast and too quiet closing in from the left. Cuts hard around a rusted support pillar, ribs heaving, ears flat, tail dragging low behind like ballast."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the pillar buys maybe two seconds. water sheets across the lower deck in a skin of runoff, hubcap-deep, lit sick orange by a monorail line thrumming somewhere above the ceiling slabs. the shape behind doesn't slow — three legs' worth of shadow, one dragging wrong, servo-whine under the splash of its steps. not a drone. something a rival crew built out of scrap and spite."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Drops flat under the sagging belly of a gutted delivery cart, wheels long gone, chassis resting on cinderblocks. Breath held. The wrong-legged thing's whine passes six inches from a flank, close enough to smell hot metal and something rancid underneath — old blood, not oil."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the whine drags past, hunting the wrong echo three bays over. up through a blown-out grate in the ceiling, two levels up, a shape holds still on the lip of a roof access hatch — mirrored lenses catching the one working floodlight, gone before the light finishes its sweep. gone the way a rumor is gone. the garage keeps dripping."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Waits three full breaths past the last whine-echo before uncoiling. Paws through the ankle-deep runoff soundless, nose low, working a thread of scent that cuts against the machine-oil stink of the garage — something scorched, something old-fire, snagged on a rebar stub like a marker left on purpose."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the scorched thread thickens near the ramp up, tar and burnt fur ground into a crack in the concrete where a wall used to stand before a KILLDOZER took a whole block down to rubble for a parking structure nobody parks in. the lot past the ramp is still flattened, weeds through the cracks, an old vent stack breathing warm air up from underneath like something down there still remembers being a home."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Hunger arrives late, after the fear burns off — a hollow drag behind the ribs, legs suddenly aware of how long they've been running. Follows the warm vent air instead of the scent now, angling toward the flattened lot's far edge where a lit sign flickers between three colors and none of them are food."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the sign is a vending unit wedged into a support column, glass fogged, rows of stock lit up behind a subscription lockout screen. a loyalty card reader blinks red — TIER: NONE — refusing to remember every cat that's ever pawed at it. somewhere past it a speaker bolted under the eave crackles a jingle half a second before the sign flickers, out of sync with itself, like it's been repeating since before anyone still listening was born."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ignores the machine — it never gives anything a cat can eat. Noses instead along its base, where a gap between column and pavement holds three days of dropped crumbs, a fish-paper wrapper already licked clean by someone faster, and, underneath that, a single unopened foil packet kicked there by accident. Claws it free."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the foil tears easy, cheap stuff, synth-tuna cut with filler, but real enough that the hollow behind the ribs finally quiets. above the flattened lot the monorail thrums past once more, lights sliding along its underside like a held breath let out slow. the sign keeps flickering its three wrong colors into the runoff puddles, patient, unbothered, the way the city always is with what it can't quite finish saying."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Grooms fast and rough, more habit than care, one ear always canted toward the ramp. Full belly makes the cold worse somehow, makes the wet fur cling colder. Curls into the gap between column and pavement, tail wrapped tight, eyes staying open a beat too long each blink."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "rain thins to a drizzle, then nothing, just drip off the ramp's broken gutter counting seconds nobody's keeping. far off, past three blocks of dead billboards, a patrol drone's searchlight sweeps low and slow, not hunting anything in particular tonight, just doing its rounds, its rotor a tired hum swallowed by distance before it ever reaches the flattened lot."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Drowses in fits, the kind of sleep that keeps one paw ready. Jolts fully awake at a scrabble two feet off — not the wrong-legged thing, just a rat working loose insulation out of a cable stub, gone before claws finish extending."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rat's gone, insulation scrap drifting into the runoff and sinking slow. the vending sign flickers through its three colors again, dumber now with fewer eyes watching, and the vent stack keeps breathing its warm stale air up through the cracks, same as it has every night since the block came down, same as it'll keep doing long after tonight stops mattering to anyone."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Uncurls before the sky does anything close to lightening, stiff-legged, wet fur gone half-dry and stiff at the edges. Doesn't look back at the vending sign or the ramp or the gap that held long enough. Picks a new direction by nothing more than which alley smells least like the wrong-legged thing, and goes."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the alley picked smells like cold noodle broth and diesel, same as every other alley in this stretch of the district, indistinguishable from a hundred nights just like this one except that it's this one, and the city — vast, indifferent, still rebuilding itself one flickering sign at a time — doesn't notice the difference either way."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Stops once, halfway down the new alley, to press a cheek hard against a cold pipe running along the wall — marking over three other scent-signatures already layered there, none fresh, none worth worrying about tonight. Adds one more anyway."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the pipe holds the mark for exactly as long as the rain allows, which in this district is never very long. somewhere above the alley a NekoCorp billboard boots back up after a brownout, throwing fresh light down across the wet brick, indifferent to the small addition made to the pipe below, already selling synthetic milk to nobody in particular."
+    }
+  ]
+}

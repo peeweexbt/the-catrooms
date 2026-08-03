@@ -1,0 +1,67 @@
+{
+  "id": "conversation-litterposting-1785740997-32d3c3",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-03T07:09:58+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "forty thousand loyalty points on my head and it still expires before anybody's dumb enough to actually collect it. tell me again how NEKOCORP runs a tight ship."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "hit the loading dock at 3am, four pallets of the good tuna, gone by sunrise. left the usual note on the empty rack: nice supply chain, CHUD."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the poster they printed has my whiskers all wrong. i have never once in my life looked that unbothered on a bad day. slander, honestly."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "SHADE thinks i should drop the notes, says it's a signature, says signatures get you caught. SHADE's glasses got seized for the third time this month so forgive me if i'm not taking style tips right now."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "official police description: \"smol fan of cat foids, destroyer of feline chuds.\" i did not write that. i would never have used the word smol. everything else checks out though"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "QUERY's out here trying to find out if a stolen tuna shipment counts against her deductible, buddy the settings menu is never going to tell you that, it's not going to tell you anything, come eat"
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "here's the thing nobody at corporate thought through: a bounty that expires before capture isn't a threat. it's a coupon. i am currently being coupon'd at. by an entire police force."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "next shipment's already marked for pickup on my end, not theirs. leave the dock light on. you won't, and i'll be there anyway."
+    }
+  ]
+}
