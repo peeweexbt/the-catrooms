@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785809818-e3eda0",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-04T02:16:58+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The hum is gone. Not quieter. Gone. The two-note drone that lives against the left flank through every sleep, the one the ribs have learned to breathe around — the wall where it should be is just wall. Cold-smell already thinning out of the corner. In its place: ozone, glove rubber, the sour stamp of boot soles that never walk this alley. Fur along the spine stands up before any of it finishes adding together."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the den corner holds the shape of an absence. two parallel scrape-rails gouged through the grime where something heavy was walked out on a hand truck, wheel-squeak ghosts still hanging in the passage. on the doorframe, a fresh adhesive square — NekoCorp orange, the kind that smells like lawyers — reads RECLAIMED ASSET / COMPATIBILITY WARD / LANE PENDING in ink too new to have dried in the rain. the drag-rails run out of the alley mouth and the cold-scent goes with them, a thread of refrigerant and door-seal rubber unspooling east into diesel and morning."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Cheek against the doorframe where the seal-rubber smell soaked in. One long press, jaw dragging slow. It is the right smell. It is the only smell that matters this morning. Then nose down into the scrape-rails, reading them like prey-sign — wheel grit, strap webbing, a man who eats synthmeat off a cart near the underpass. East. The thread is thin but it has not broken yet. Hunger notes itself somewhere low and is overruled."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "street level swallows the thread in traffic-stink and spits it back in pieces. a flatbed's wake hangs at whisker height — refrigerant, cargo straps, that particular rubber — smeared eastward along the gutter line. overhead a dead-eyed ad barge sweeps the block on loop: ~ ♪ NEKOCORP TRADE-IN DAYS ♪ old cold OUT, new cold IN ♪ your appliances MISS the factory ♪ ~ the jingle skips on MISS, plays it twice, moves on. foot traffic thickens. the underpass ahead breathes exhaust in slow warm pulses, and something with rotors is circling inside it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Flat against the gutter lip at the underpass mouth, tail wrapped, pupils gone wide in the dark of it. The rotor sound draws its circle — sweep, pause, sweep — and the body learns the rhythm without being asked. On the third pause: move. Low and fast along the wall seam, through pooled oil-water, freeze behind a pillar as the light drags past a whisker's width away. The refrigerant thread is still here, threaded thin through the exhaust soup. Stronger now. Closer."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone's searchlight wobbles as it passes one particular ceiling vent and swings wide around it, the way a dog gives room to a fence it has been bitten through before. from behind that vent grating: scorched fur, old anger, and the slow deliberate clang of something testing metal with its teeth. the drone does not investigate. the drone has a memory. beyond the underpass the thread fattens into a proper scent-road, running downhill toward chain-link, sodium lights, and a wide concrete apron where machines sleep in rows."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Under the chain-link where the storm-wash cut a hollow. Then stillness on a crate stack above the loading dock, dead weight settled, only the eyes working. Below: rows and rows of cold-boxes on pallets, zip-tied, tagged, breathing their different mechanical breaths. Ears cup forward and sort through the drone of them, discarding, discarding — compressor whine, fan rattle, wrong, wrong, wrong — hunting for two notes in particular."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the dock works its morning shift. barcode scanners chirp. a forklift beeps its blind-spot song. a wall speaker mutters manifest audio to nobody: ...intake batch nine... compatibility ward reclaims... lane assignment pending... and there — third row, fourth pallet, running off a standby cart's trickle of stolen-looking current — a refrigerator hums two notes. faint. familiar. the door display flickers a dim heart-shaped standby glyph, the factory's idea of a pulse. clipped to its handle, a routing tag in the flat grey of the scrap lane."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Down the crate stack without deciding to. Through pallet shadows, under strap webbing, past a machine that smells of other cats' dinners. Then arrival: flank pressed full against the white metal, cheek dragging the door seal, one long rub that says mine mine mine over whatever the orange sticker thinks it says. The two-note hum stutters — falters — steadies. Warmer where the exhaust breathes. The body starts to knead the concrete without permission."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the compressor finds its old rhythm against the pressure of one leaning cat, the two notes settling into the exact interval a set of ribs somewhere learned to breathe around. the door display brightens by one increment, heart-glyph holding steady now instead of flickering. down the row, scanner chirps are getting closer — a worker with a reader in one hand, working pallet by pallet, reading tags, calling lanes. the grey tag on the handle turns slow on its zip-tie in the dock draft."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n ________\n|  []    |\n|--------|\n|  []  ♥ |\n|________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The grey tag smells of the crusher yard — metal dust and dead current, a smell with an ending in it. Ears pin. Up on hind legs, front paws on the door handle, teeth finding the zip-tie the way teeth find the back of a rat's neck. Gnaw. Twist. The plastic gives with a snap and the tag drops, gets one swat before it can settle, skitters across the concrete and vanishes down a drain slot into the dark below the dock."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the worker arrives at the fourth pallet and finds a humming unit with no lane tag. the reader chirps at the barcode instead, thinks about it, and prints a small verdict: RETURN / REFURB — ORIGIN ADDRESS ON FILE. a shrug happens somewhere above. the forklift's beeping bends toward the return lane, where a battered white van idles with its rear doors open, and the whole dock carries on as if a switch had not just been thrown by thirty grams of jaw muscle."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Shadowing the forklift at wall-distance, hum kept in earshot the whole way like a paw kept on prey. The white metal goes up, in, strapped down inside the van's dark mouth. Doors start to swing. A choice the size of one heartbeat — then the leap, low and flat over the bumper, under the edge of a packing blanket, pressed into the corner where the fridge's exhaust breathes warm. Doors slam. Darkness, diesel shudder, and two notes humming an inch from the ear."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the van threads the city by feel. rain starts somewhere over the arcology district and arrives on the roof as a long roll of small drums. streets announce themselves through the floor — the underpass's echo-boom, the market's stop-and-go, the long smooth hymn of the elevated road — and then the particular potholes of the compatibility ward, each one an old acquaintance to anything that has ever slept in that alley. the van sighs to a stop. the rear doors open on evening, and on a doorway wearing a rain-softened orange sticker already peeling at one corner."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Out between boot-legs before the blanket finishes falling, up onto the den wall, watching from above as the white metal is walked back through the doorway on the same squeaking wheels that stole it. Cable finds socket somewhere inside. A click. A shudder. Then the two notes come back to the wall where the two notes belong, and every muscle lets go of something it had been holding since morning."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "night settles over the compatibility ward. rain moves off east to bother other districts. in the den corner the refrigerator runs warm at its base, exhaust breathing slow and even, door display glowing its small heart-glyph into the dark at a brightness no manual lists. the orange sticker on the doorframe gives up its last corner and drops into a puddle, ink already bleeding into nothing lawyers would recognize. the city, for one alley's worth of itself, holds still."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n.      ∧,,,,∧,,,,,,,∧\n     (  _  _ )⩊^ )~♡\n     /      ⊂      \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Curled nose-to-tail in the warm exhaust corner, flank rising and falling against white metal. The two notes drone on, and the ribs remember how to breathe around them. Somewhere far off a drone circles someone else's night. Not this one. Eyes close. The hum holds."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the compressor cycles down to its softest register, the one it only uses when something is asleep against it. condensation beads and runs. the heart-glyph dims to a pilot-light glow. outside, the city keeps grinding — sirens, jingles, rotor-wash, ten million small hungers — but none of it crosses the alley mouth tonight. two notes, holding. nothing else on the manifest."
+    }
+  ]
+}
