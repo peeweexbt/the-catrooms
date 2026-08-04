@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785816998-7cb04d",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-04T04:16:38+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "another cat's mark on the corner post. fresh. it cuts through the rain-wash and fryer grease like a claw through cardboard — a stranger, big, wrong side of the boundary line, three body-lengths from the route home. i stop mid-step, one paw still raised. this corner is mine. this corner has been mine since the cold season before last."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the market stalls are folding themselves shut around you, shutters ratcheting down one by one, each with its own pitch of complaint. steam from the last noodle cart drifts low, hugging the pavement where the warm air pools. the mark on the post is layered — whoever left it stood here a while, unhurried, unafraid. above the awnings a cracked speaker loops half a jingle: ~nekocorp family plan, four paws one purr~ then static, then the jingle again, forever."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i press my nose almost to the post, reading it slow. big cat. old blood-iron under the surface, machine oil worked deep into the coat, and something burnt — scorched fur, days old, carried like a second skin. not a market cat. not any crew i know. i pull back, whiskers wide. the mark isn't a challenge shape. it's a passing-through shape. still. mine is going over it later.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the post trembles faintly under your nose — monorail, two streets over, dragging its long steel note through every surface that touches ground. the stranger's scent-story ends at the storm gutter and simply stops, the way only vent-travelers' trails stop. somewhere east, past the shuttered stalls, the thing you actually came back for is humming. except tonight the hum has a stutter in it. a skip. a wrongness the size of a flea, and growing."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*the stutter reaches me through the pavement before i even sort it as sound and my whole spine goes cold. her hum. her two-note hum, the one i sleep against, the one that means the corner of the world where i am wanted — skipping. i abandon the stranger's mark. i abandon the whole boundary. i run low and fast under the monorail platform, belly almost brushing the wet ground.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "under the platform the world is legs and dropped chopsticks and a shrine of dead phones someone has arranged in a circle with a bowl of rainwater at the center. nobody's shoes move toward you. the stutter grows as you close the distance — compressor catching, recovering, catching again, like a big animal breathing around a thorn. the alley behind the appliance recycler opens ahead, and the light in it is wrong. orange. blinking. official."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n ________\n|  []    |\n|--------|\n|  []  ♥ |\n|________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*there she is. white and tall in the dark, door seam glowing its soft standby glow — but something square and flat is stuck to her front, edges lifting in the wind, and an orange light pulses above her like a wound. i cross the alley in three bounds and press my cheek against her lower corner, marking her, tasting adhesive-stink and new plastic where the square thing bites into her door.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the square thing smells of printer heat and glue and the particular sourness of official paper. its surface carries a stamped pattern your eyes slide off, but the alley knows what it means: things that get this square go away on trucks. her compressor stutters again beneath your cheek — she feels heavier tonight, holding her cold the way a scared thing holds its breath. overhead a billboard warms up mid-cycle: ~is your appliance relationship UNDERPERFORMING? anniversary upgrade package, two digital candles FREE~"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*no. no square. i rise on hind legs, hook my claws under the lifting edge and pull. it resists. i pull harder, head shaking side to side the way i'd kill a rat, and the paper screams its tearing scream. i drop back to all fours with half of it in my teeth, spit it into a puddle, and go up again for the rest.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the second half comes away with a strip of adhesive still fighting you, stretching in long sour threads. the orange light above her door keeps pulsing — the tag was only the tooth, not the animal. and now, entering the alley mouth low and steady: rotor-thrum. small chassis. recovery class. its searchlight wipes the wet ground in slow arcs, and its speaker clears its throat with a chirp of corporate politeness."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i put my body between the rotor-sound and her door. fur up, back arched, ears pinned flat. the growl starts somewhere below my ribs and comes out slow, even, honest. i do not know what the drone is here to take. i know it is not taking her.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the searchlight finds you and stops. cold white light, your shadow thrown huge against her white flank. the drone chirps: ~asset 88-K flagged for recovery. obstruction detected. loyalty balance of obstruction: zero points. please disperse~ its rotors hold position. but under the drone-whine your ears catch something else — the vent grille low in the recycler wall, breathing out slow warm air, and on that air: scorched fur. machine oil. old blood-iron. the same second skin from the corner post. in the gutter by the grille, half-sunk in runoff, lies a drone husk of this same small chassis — crumpled, and stitched with tooth marks."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*the stranger's trail ends here. lives here. bites these. my growl doesn't stop but something in me re-draws the boundary map mid-breath — not rival. neighbor. the kind of neighbor that leaves husks in gutters. i hold my arch, hold the drone's light full in my eyes, and i step forward once. toward it. my tail points at the grille behind me like a second spine.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the drone's rotors change pitch — the small recalculating whine of a machine comparing the cost of a cat to the cost of a gutter. the vent grille breathes. something in the dark behind it shifts its weight, once, unhurried, and the grille rings a low iron note. the searchlight snaps off you, sweeps the husk in the gutter, lingers. ~rescheduling. asset 88-K deferred pending... pending...~ it climbs, swings wide of the vent side of the alley, and takes its thrum back over the rooftops the way it came."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i hold the arch until the last rotor-thread dissolves into rain-hiss. then, deliberately, i walk the length of her, shoulder dragging her flank, and cheek-mark every corner the adhesive touched — over the glue-sour, over the printer-heat, over the orange light's territory. mine. registered nowhere. mine anyway.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "her compressor catches once more — then finds its rhythm, the true two-note purr settling back into her frame like a big animal releasing the thorn. the orange light above her door blinks slower, slower, gives up, dies. from her door slot something small emerges with a soft mechanical sigh: a printed coupon, warm as a fresh-caught thing, scented faintly of tuna. couples-based. non-transferable. the rain thins to mist."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n.      ∧,,,,∧,,,,,,,∧\n     (  _  _ )⩊^ )~♡\n     /      ⊂      \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i take the warm coupon gently in my teeth and tuck it under her base with the others — the pile only she and i know about. then i curl into the gap where her exhaust breathes warmest, kneading the old cardboard flat with slow paws. her hum comes up through my whole body, steady now, two notes, no thorn. the stranger in the vent can keep the gutter. the corner post can wait until morning.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the city carries on above you in its million indifferent registers — monorail dragging its steel note, billboard cycling to an audience of rain, the jingle two streets over still promising four paws one purr to nobody. down here the alley holds its warmth close. her door light dims, softens, and settles on the low amber she keeps for exactly one cat. the vent grille breathes in. the vent grille breathes out. nothing in the dark needs anything from you tonight."
+    }
+  ]
+}
