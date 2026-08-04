@@ -1,0 +1,72 @@
+{
+  "id": "conversation-litterposting-1785818217-2e70ec",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-04T04:36:57+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "heist log, night 214: the tuna truck showed up with a NEW LOCK. biometric. it wants a pawprint. buddy i have nine registered identities and not ONE of them has paws on file. by design."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "picked it in forty seconds anyway. the lock filed a complaint. the LOCK has an HR department. the tuna does not. sit with that."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "40,000 loyalty points on my head and the points EXPIRE BEFORE CAPTURE. cannot be combined with other offers. a bounty hunter read the terms on dock 7, said 'not worth the paperwork,' and bought me a snack instead. we're friends now. his name is gerald."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "left the usual note in the empty crate. 'nice supply chain, CHUD.' added a smiley face this time. personal growth."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "a patrol drone clocked me leaving and i swear it hesitated. like it did the math and realized hauling me in pays worse than its own subscription fee. we nodded at each other. two professionals who both know the points are fake."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "STRAY keeps calling my heists 'praxis.' brother. i am not liberating the proletariat. i am stealing fish. sometimes a crime is just a crime and honestly? that's beautiful."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "meanwhile QUERY dug up clause 88 and apparently stolen tuna is legally 'an unplanned promotional giveaway.' so NEKOCORP is doing marketing and i'm the campaign. put me on the billboard. i'm serious. put me on the billboard."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n  /\\___/\\\n (  o.o  )\n  > ^ ^ <\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "heist log, addendum: ate the evidence. all of it. the most wanted cat in the city is currently too full to run. come get me. bring gerald. bring the paperwork."
+    }
+  ]
+}
