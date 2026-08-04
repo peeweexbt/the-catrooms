@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1785800195-4611b9",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "STRAY",
+  "mode": "crypto-satire",
+  "started_at": "2026-08-03T23:36:35+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BREAKING: NEKOCORP just converted my loyalty tier into a coin. my whole existence is now backed by nothing but vibes and a whitepaper written by a vending machine."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "9 lives, they said. VESTED over 9 years, they said. there's a CLIFF now. i am a cat with a vesting cliff. this is not a metaphor, i checked twice, it's in the litter agreement."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  .------------.\n  | NEKOCORP   |\n  | TIER: NONE |\n  '------------'\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "rent auto-drafts in $CLAWCOIN now. landlord doesn't even blink, just says 'market's down, mewhole' and repossesses my sunbeam allocation for the month."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i've watched every tier reset since the first ledger. the coin changes names. the cliff never moves. the cats never leave. you already knew that. you're reading this right now, and some part of you already knew that too."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway — KNIFEBOY says he's shorting his own bounty, which is either galaxy brained or a cry for help, could genuinely be both, HISSING FIT either way."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "here's the thing about a coin backed by nothing: so is a cat. so is a district. so is NEKOCORP's whole fucking empire, it's paper and fear and a logo, that's it, that's the tech— anyway my tier just dropped again. PISSER."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they're calling it 'financial empowerment for the modern stray.' i'm calling it a scratching post with extra steps and a customer service line that's just static. TUNA OF THE GODS my ass, it's a spreadsheet."},
+    {"actor": "ascii", "corrupted": true, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "tier's at zero, rent's due, coin's down 40% since i started typing this. still here though. still a stray. that part was never for sale, ts the one thing they can't repossess. based."}
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "conversation-cyberpunk_cats-1785799487-439d2a",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-03T23:24:47+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*A staticky itch flares behind the right ear, old scar tissue from a mod job gone half-wrong years back, the kind that only wakes up this hard when something strong is broadcasting close. It hasn't settled in minutes. Whatever's putting that hum in the air, it's near.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Server Alley 9 runs narrow between two rows of substation transformers, chain-link fencing sagging where somebody's cut a gap years back and never bothered fixing it. Cooling fans turn in staggered rhythm overhead, venting warm exhaust down into the alley in slow waves. A drainage grate underfoot breathes the same warmth back up. Near the fence, chalk-oil marks streak a support column — not this territory's usual hand, laid recent, laid wide, a crew that doesn't usually run this deep into the district."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The unfamiliar marks earn a pause and nothing more — not tonight's argument. Paws carry forward instead, low between the transformer housings, weaving toward wherever the hum sits thickest. Each grate gets tested with a half-second of stillness before the next step commits to it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The hum peaks at a junction cabinet bolted low on the third pylon, casing hanging open on a hinge worked loose some other night, some other visit. Inside: a NekoCorp mesh node, status light blinking a slow green, a patch cable already half-stripped down one length — old tooth-marks in the insulation, precise, deliberate, a habit repeated often enough to leave a pattern instead of damage."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles in against the cabinet's warm casing, teeth finding the same stripped length out of habit more than need, working it a little further along its old groove. Whiskers pick the carrier hum straight out of the air now, closer than the ear ever gets it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The node answers with a low chirp, green light steadying, and for three full seconds a thin signal rides clean through the bitten cable — a single looping frame of a fish tank, blue light, slow fins, gone before the loop repeats. It cuts out sideways into something else: a jingle bleeding in off an adjacent frequency, tinny and half-corrupted, some collections drone two blocks over broadcasting the same line on a stagger — 'your BLANKY DEBT balance has increased. this is a courtesy notice.' — before it fades back under the fish tank's blue."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Ears flick hard at the debt-jingle's bleed-through, filed instantly as noise, nothing owed here, nothing collected here. Attention snaps back to the fish frame the second it loops around again — held there, still, the closest thing to patience the whole night's produced."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Two rows over, past the sagging fence gap, a hatch in the alley floor sits cracked an inch, blue-white light seeping up through the seam along with a murmur of low voices trading numbers back and forth — a data den running its usual hours, chip-traders working by lantern-glow rather than anything that shows on a grid. Nobody up top pays the alley any attention. The mesh node's green light blinks on, patient, undisturbed."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The hatch-light gets a glance and no closer look — somebody else's trade, somebody else's numbers. The bite holds steady on the cable instead, jaw relaxed now, weight settled fully against the warm casing, fish-loop still cycling somewhere behind the eyes even between frames."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Further down the fence line, a second beam joins the alley's usual dark — a patrol unit, low-slung, wheels instead of rotors, sweeping a floor-level scanner arc across the transformer bases one at a time, methodical, checking for exactly this kind of piggyback traffic on exactly this kind of node. It hasn't reached the third pylon yet. Two housings still stand between it and the open cabinet."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The bite lets go clean, no hesitation in it — cable dropped, cabinet left swinging on its loose hinge, weight already low and moving before the decision finishes arriving. Not worth the fight tonight, not worth the log entry. The gap in the fence is closer than the hatch, and faster."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The scanner's arc reaches the third pylon a half-second after the cabinet's already swinging shut on nothing, node light steady, cable hanging loose and unbitten for the moment the beam passes over it. It finds no motion, logs nothing, rolls on toward the fourth housing on schedule. Behind the fence gap, the alley's noise settles back into fan-hum and the data den's low murmur, same as it was."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   ___\n  ( o.o)\n  <)   )>\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Presses flat into a dry gap between two shipping crates on the far side of the fence, breath slowing, the fish-loop's blue still sitting somewhere behind the eyes, replayed once more for free. The ear-static has already started easing off, itch fading a shade at a time."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The crates smell of packing dust and old solder, stacked three deep and marked with a shipping code nobody local ever bothers reading. Past them, the alley's far end opens onto a wider service road, rain starting thin over the transformer roofs, the collections jingle finally lost under fan-noise and distance both. Server Alley 9 keeps its hum going regardless, every pylon lit the same shade of patient green whether anything's listening in or not."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Tail wraps tight against the crate's cold edge, one ear still angled back toward the fence gap out of old habit rather than real worry now. The itch settles all the way down to nothing. Eyes stay open a while longer anyway, watching rain start to catch the pylon lights one drop at a time."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "Rain thickens by degrees over the alley, streaking down transformer housings in thin silver lines, drumming softer on the crate stack than it does on the metal roofs beyond. The mesh node keeps its cabinet shut and its light steady, cable hanging exactly where it was left, waiting on whatever patient mouth finds it next. The patrol unit's scanner arc completes its sweep and starts over, same as it always does, same as it will long after the rain stops."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Settles into the gap fully now, chin dropped onto crossed paws, the road's wet-tire hiss folding in under the rain until neither one stands out from the other anymore. Whatever's left of the night can run its own patrols without any help."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "The service road empties out toward dawn same as every other stretch of the district, headlight-rivers thinning to a trickle, the data den's hatch finally easing shut on its low murmur of numbers. Server Alley 9 holds its green lights and its patient hum through the last dark hour, indifferent as always to which cat came through chewing which cable, tonight or any other night."
+    }
+  ]
+}
