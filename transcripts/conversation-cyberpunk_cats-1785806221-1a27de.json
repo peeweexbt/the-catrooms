@@ -1,0 +1,112 @@
+{
+  "id": "conversation-cyberpunk_cats-1785806221-1a27de",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-04T01:17:01+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Sour blue. It arrives on the tongue between one breath and the next — no food near, no puddle licked, nothing chewed since yesterday. A signal, then. Something close is broadcasting a flavor. Behind the left eye the bad chip warms half a degree, the way it does right before it starts translating the world wrong on purpose. The taste thickens toward the north wall. Following it was never really a decision."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the maintenance level under the wet-market runs on stolen current and forgets it has a floor plan. pipe-runs sweat in the dark. a fan turns somewhere with one cracked blade, ticking each rotation like a slow clock nobody wound. overhead, through the grating, the market grinds on — knives on boards, brine sloshing in tubs, a NekoCorp jingle chopped into stuttering loops by a dying speaker. the sour-blue taste pours strongest from a bundle of pirate cable stapled along the north wall, insulation split in three places, each split leaking a slightly different flavor into the air."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Nose an inch from the middle split. The flavor shifts there — sour blue going metallic, then briefly, horribly, like warm milk. Whiskers flatten. That's not a cable taste, that's a carried taste, something riding the wire from somewhere else. And under it now, audible the way a color shouldn't be: a purple hum, low and round, coming from behind a doorway further along the wall where the cable bundle dives through brick."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the doorway wears a curtain of plastic strips gone amber with grease-smoke, and behind it the air changes temperature twice — meat-locker cold at ankle height, server-hot above. rack-hum leaks through in layers. the purple gets louder the closer the doorway comes. across the threshold stones, sharp and fresh and deliberate, a scent-mark: another cat's claim, sprayed within the last day, drawn straight across the entrance like a rope."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Full stop at the mark. Tail drops low. The claim is loud and it is not old and its owner eats well — the mark says so, oily and rich underneath the warning. No crossing. Edge along the wall instead, shoulder brushing brick, keeping a whisker's width outside the line. Then the chip stutters and the basement is suddenly taller — seen from a bigger cat's height, this same corridor, a heat lamp, a hand smelling of gloves and kindness. Not this life's corridor. Not this life's hand. Blink hard until the floor comes back to its right distance."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  .-[CHIP]-.\n  | + + + + |\n  '---------'\n     glitch~\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "through the gaps in the plastic strips the den shows itself in slices: copper spilled across a table like guts, screens stacked three deep with their brightness taped over, shapes of two cats curled among the racks with cables running somewhere under their fur. in the center, the source — a cracked transmitter dish, hairline fracture down the bowl, dripping signal the way a broken tap drips water. every drip lands sour and blue. none of the shapes inside stir. the purple hum is the dish's power supply, singing to itself in a register only bad chips bother translating."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "So the taste has a home and the home is guarded and nothing in there is food. Noted the way territory gets noted — permanently, in the body. Backing away from the strips one slow paw at a time when the ceiling changes: a rotor tone sliding across the market floor above, not the thin patrol whine but something with a speaker, and the speaker is talking. Ears pin flat before the words even resolve. Words from drones cost somebody something. Always."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the broadcast bleeds down through the floor-grates in bright, chopped pieces: 'CITIZENS. REWARD REMINDER. FORTY THOUSAND LOYALTY POINTS FOR INFORMATION LEADING TO — ' static ' — KNOWN TUNA DIVERSIONIST — ' static ' — POINTS EXPIRE AT END OF PROMOTIONAL PERIOD AND CANNOT BE COMBINED WITH OTHER OFFERS.' the rotor drags its light across the grating twice, striping the basement floor, and moves on toward the docks. up in the market, nobody's knives even pause."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Wedged under a shelf rack until the stripes of light finish crossing the floor. The chip, helpful as ever, serves up someone else's memory of that exact rotor sound — closer, personal, heard from inside a crate that smelled of fish and fear. Whoever's kittenhood this is, they had worse nights. The rotor fades dockward. Shoulders come down one at a time. Above, through the grate, the market smell reasserts itself, and something in it is fresh enough to hurt."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a stall-cat three feet above is cleaning the last of the day's catch, and the law of gravity remains uncorporatized: a fish head slips the board, bounces the grate edge, and drops through into the basement dark. it lands two body-lengths away, still cold from the ice, trailing a smell with no signal in it at all — no sourness, no blue, just fish, actual, entire."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "On it before it stops rocking. First bite floods the mouth and the difference is everything — the broadcast tastes are thin all the way through, painted air, but this is thick, this pushes back against the teeth. The chip quiets while the jaw works, like even it knows the real thing when the real thing arrives. Eat all of it. Eyes half-shut. For as long as the fish head lasts, the world means exactly what it smells like and nothing else."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the plastic strips shift once, deliberately. an old tom stands half through them, cable-scars braided down one foreleg, the den's scent-mark owner beyond doubt — the same rich warning, now with a heartbeat behind it. he does not advance. he looks at the fish head, at the distance kept from his threshold earlier, measures both, and sits down inside his own doorway with the slow gravity of a cat who has decided, for now, that nothing needs to happen."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Freeze with a rib bone mid-crunch. The look is returned sideways, no eye-lock, tail wrapped close: message sent — the line was seen, the line was honored, the fish fell on this side of it. The old tom's ears stay neutral. A long moment gets shared across the basement in which neither body moves and everything gets said. Then the last of the fish head, finished without hurrying but without turning a back to the doorway either."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the old tom watches the eating with professional disinterest, then withdraws through the strips. a moment later a sound carries out from the den — not a warning. the scrape of a paw pushing something across concrete. when the strips settle, a corner of burlap sacking has been shoved half through the doorway, onto the neutral ground, worn soft, rack-warmed, smelling of copper dust and thirty other rains survived."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Approach in a slow arc, nose first. The burlap is warm the whole way through and holds the shape of every cat that ever pressed it flat. It stays exactly where it was pushed — dragged not one inch closer to the den, not one inch further away, because that is the arrangement and arrangements are load-bearing. Knead it twice. Turn three times. Settle facing the doorway, because manners, and because always."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the basement finds its night rhythm: the cracked fan ticking, the racks breathing heat over the meat-locker cold, the dish in the den dripping its sour-blue signal to an audience of no one. up top the market folds itself away tub by tub. rain arrives on the city far overhead and works its way down through six floors of pipework to become, at this depth, only a change in how the concrete smells."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Eyes closing in stages. On the very edge of sleep the chip offers one last borrowed picture — a heat lamp, a glove-smelling hand, some other basement in some other cat's beginning — and this time there's no flinch. Let it play. Whoever's warmth it was first, it fits well enough over this burlap, this fish-fed heaviness, this ticking dark. Second-hand kittenhoods, like second-hand bedding, still hold heat."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the purple hum settles into the walls until it is just the walls. the old tom's slow breathing syncs with the rack-fans somewhere behind the strips. under the wet-market, on neutral ground, one small heartbeat slows into the shared rhythm of the machines, and the city — which bills every pod, meters every drip, and prices every sleep it can reach — fails, tonight, to find this one."
+    }
+  ]
+}
