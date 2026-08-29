@@ -1,0 +1,68 @@
+{
+  "id": "conversation-cyberpunk_cats-1788045527-f046cf",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-29T23:18:47+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Someone else's mark, fresh. *the low corner of the humming white box wears a smell that isn't mine — another cat, a she, sprayed thin against the cold enamel not an hour back, and the whole body locks still reading it.* not a threat-smell. a paired-smell, two scents braided into one strand the way the misters in this part of the world are always trying to braid them. *nose works the seam where the cold box meets the wet wall, ears half-back, deciding whether the boundary still holds or whether it's already someone else's now.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the white box is a fridge, and it is awake. a soft chime leaks from a speaker-slit in its flank, a two-note jingle worn down to nothing — it wants to sing something warm and brand-shaped but the cone is blown, so it only manages a wet warble that dies halfway. the enamel is warm at the base where the compressor shudders, cold up top. the braided she-scent leads away east along the gutter, toward a nozzle bolted under a glowing panel that breathes pink fog in slow timed pulses — and each pulse carries the smell of warm fur and someone else's wanting. down the row, little readers blink pink-pink-pink above every doorway, counting heartbeats that aren't standing under them. the rain has just stopped. everything drips."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*low belly, following the braided strand along the foot of the wall, keeping under the reach of that pink fog because the fog gets up behind the eyes and makes the paws want things the belly never asked for.* the warm-fur smell pulls anyway, hard, a hook under the ribs. *stops at the nozzle, sits, tail wound tight around the forepaws, lets exactly one pulse settle on the whiskers — just the one — then snaps the head sideways hard to throw it off before it can climb any higher.* not tonight. *ears swivel up and back: something high and quiet, a shape cut into the neon that hasn't moved once.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "up on the lip of the fog-panel, backlit by a billboard gone dead-grey, a cat-shape sits without moving. where its eyes should catch the neon and flash green they don't — two flat mirrored slabs throw the light straight back, cold and rectangular, and the shape does not blink, maybe can't. it has been there the whole time. it does not care about the fog; the fog slides off it. then, three roofs east, a low rotor-thrum climbs out of the drip-quiet, patrol-pattern, dragging a hard white bar of scan-light across the wet tar — swinging wide, swinging toward the both of you."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  _________\n |■       ■|\n  ‾‾‾‾‾‾‾‾‾\n    BASED\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*flat. instantly flat, chin to concrete, every hair reading the white bar sweep nearer — and the mirror-eyed shape on the ledge doesn't twitch, so the body decides not to twitch either, borrows the stillness off it like heat off a vent.* the scan-light crosses the bridge of the nose, too bright, gone. *breath held. counts three drips off the box.* under all of it the braided she-scent is still there, patient, waiting. *when the rotor-thrum finally leans off east, one paw forward — then the whole cat, poured long and low into the warm shadow the box throws.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the fridge door has a gap, a thumb's width of dark where the rubber seal gave up years ago. real cold breathes out of it — old cold, honest cold, nothing like the ward's fake pink warmth — and riding that cold is the ghost of fish: a foil tray shoved to the back and forgotten, gone soft, gone strong. the blown speaker warbles up as you near, and the cracked little readout decides you are a MATCH. a heart stutters across it. a curl of receipt-paper begins chattering out of a slot no cat touched, printing HERS + YOURS = over and over, running out of ribbon partway so the last of it prints in ghost-grey and then blank."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n ________\n|  []    |\n|--------|\n|  []  ♥ |\n|________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*ignores the chattering paper. ignores the heart the box keeps insisting on.* the gap. the old-cold-fish breathing out of the gap — that is the only true thing this box has said all night. *hooks one claw into the thumb-width dark and pulls; the seal peels back with a slow rubber sigh and the door yawns just wide enough for a head.* the she-scent is in here too, threaded all the way through the cold. *stops. one ear forward, one back.* she found this first. the tray's for one. *the belly says take it. something older than the belly says wait.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "a shape drops from the fog-side of the row — the braided-scent she, real now, here, ribs laddered under thin fur, one ear notched clean through. she does not hiss. she settles just past paw-reach on the cold enamel and looks at the gap, then at you, then back at the gap, and the panel overhead chooses that exact breath to pulse pink across the both of you, pouring warm-fur want down onto two hungry cats over one tray of dead fish. the fridge prints another heart somewhere behind its own face. the rotor-thrum is a district off now, thinning to nothing."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*the fog wants one thing, the belly wants another, and for once the two of them don't fight.* she was here first. *backs off the gap a half-step, slow, deliberate, laid down like an offering — you first — and drops the tail flat along the concrete so it can't be read as any kind of challenge.* the cold-fish smell is big enough for two, if nobody in it turns stupid. *waits, whiskers pushed forward, watching the notched ear for the shape of the answer.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "she reads the half-step and understands it the way cats understand things that were never words. she slides her head into the gap without once dropping her eyes off you, and the foil crackles, and she backs out with a corner of the tray in her teeth and drags it to the neutral cold between the two of you. it tears easy — weeks-soft — and there is enough. above, the fridge finally gives up on the heart and just hums. the pink fog cycles off with a click. the mirror-eyed shape is gone from the ledge, no sound to say when. the rain starts again, light, and the readers blink their pink count over empty doorways, and for a little while two cats eat in the cold and nothing anywhere is counting them at all."
+    }
+  ]
+}

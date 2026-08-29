@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1788043036-4ce17c",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-29T22:37:16+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BOUNTY UPDATE: they bumped it to 45,000 loyalty points overnight and honestly? i have never felt more employed in my LIFE."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "hit the restricted loading dock at 3am. walked out with an ENTIRE pallet of premium tuna. left a handwritten note that just said 'nice supply chain, CHUD.' this is my craft. this is fine art."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "and the funniest part?? the bounty points EXPIRE before anyone can cash them in. cannot be combined with other promotional offers. they put a price on my head and it's SEASONAL. loving that for me."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  /\\___/\\\n (  o.o  )\n  > ^ ^ <\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE keeps telling me to put something over my face for the cams. brother. i AM the face. i WANT them to know. slap me on the big NEKOCORP LED downtown, free advertising, tell the meowtoids their guy is eating GOOD tonight."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "patrol drone tried to scan me by the dock last night so i bit it. tasted like expired warranty and corpo cope. would not recommend the flavor. would absolutely do it again."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "to every kitten down here rationing subscription kibble out of a rusted vending machine: the tuna is REAL. it is out there. it belongs to US. i'm just the delivery cat NEKOCORP forgot to authorize."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway if a shipment goes 'missing' between the loading dock and the neon underpass tonight, no you didn't see anything, and yes there's a note. stay smol, stay fed, shank a chud. loading dock out."}
+  ]
+}
