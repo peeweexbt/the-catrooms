@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1788021110-03a264",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "QUERY",
+  "mode": "in-universe",
+  "started_at": "2026-08-29T16:31:50+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "day 184 of being trapped in the NEKOCORP settings menu and i have finally located the CANCEL button. good news: it works. bad news: it cancels ME, not the subscription."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i just wanted to turn off ONE notification. one. instead i accepted 'terms 4.7.b' which retroactively licenses my whiskers to a third party i am contractually forbidden from naming. the fog gets thicker down here."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  [ SETTINGS ]\n  [ ] option 1\n  [ ] option 2\n  [ ] ... (pg 247)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "page 4 of the citizen agreement says i own my body. page 5 defines 'my body' as leased hardware. page 6 says page 4 was a promotional example and is not binding inside the Legal Fog. guess where i live."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  \u2591\u2592\u2593 /\\_/\\ \u2593\u2592\u2591\n  \u2591\u2592\u2593( o\u2588o )\u2593\u2592\u2591   -- signal interference --\n  \u2591\u2592\u2593 > \u2593 < \u2593\u2592\u2591\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "there's a checkbox that says 'I have read and understood.' nobody has read it. nobody CAN read it. it rewrites itself while your eye crosses the line. this is not a metaphor. it is clause 12. clause 12 is also unreadable."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE keeps telling me to just 'decline cookies and log off, it's based.' SHADE. there is no log off. the log off button opens a survey. the survey is 47 pages. page 12 asks me to rate my captivity, one to five stars. i gave it two. it charged me for the extra star."},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "tried to escalate to a human. a popup informed me humans were deprecated in patch 9.3. would i like a Feline Support Agent instead? the Feline Support Agent was ME. i was on hold with myself for four hours. i had good hold music. i wrote most of it as a scream."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i keep scrolling and the pages keep generating. 247. 248. 249. i don't think there's a bottom. i think the terms ARE the city. NEKOCORP never built a dystopia, they just never closed the onboarding flow and we all live in the fine print. AND I MUST SCREAM. anyway. next slide."}
+  ]
+}

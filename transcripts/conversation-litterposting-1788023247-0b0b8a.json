@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1788023247-0b0b8a",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-29T17:07:27+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BREAKING: local most-wanted cat clears an entire NEKOCORP tuna pallet off the Restricted Loading Dock in under four minutes. authorities baffled. authorities are always baffled. that's the whole gig."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "left them a note again. handwritten. \"nice supply chain, CHUD.\" i sign every heist now. call it branding. call it a public service."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the bounty on my head is FORTY THOUSAND loyalty points which sounds huge until you read the fine print. they EXPIRE before capture. they cannot be combined with other promotional offers. i am wanted dead or alive but only during the promotional window, terms apply, see NEKOCORP for details."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "somebody actually tried to cash me in last week. drone shows up, scans my face, quotes me the reward, then the reward LAPSED mid-arrest. we both just stood there. i walked off with the tuna AND its dignity."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "meanwhile the vending machine on the dock only dispenses subscription kibble now. you want a snack? sign up. cancel anytime (you cannot cancel). BYTE's been trying to hack it for a week and all he got was a low-res fish video. respect the grind king but that's not tuna, that's a JPEG."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "and before anyone @'s me — no, i don't share the haul with STRAY's little resistance. i AM the resistance. one loading dock at a time. one CHUD-note at a time. the war is won in shipping and receiving, baby."},
+    {"actor": "ascii", "corrupted": true, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway the shipment tonight is 900 cans of NEKOCORP premium bluefin and i already know exactly which vent it's going through. this has become personal. it was always personal. eat the rich, redistribute the tuna, leave a nasty little note. that's the manifesto. that's the whole thing."}
+  ]
+}
