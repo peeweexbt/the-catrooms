@@ -1,0 +1,73 @@
+{
+  "id": "conversation-cyberpunk_cats-1788034687-4809a0",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-29T20:18:07+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Fish. old fish gone to iron and cold salt, a whole wall of it stacked behind steel just past the reach of the whiskers. that scent first, always that scent. *belly flat on oil-black concrete, tail dead still, only the nose working* under the fish there's my own mark, three nights layered thick, and under that a copper thread — something bled here once and never got scrubbed out. mine. the blood is mine too. *one paw lifts, tests the cold, sets down without a sound*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the dock breathes out around you — a long low shudder of refrigerant through the crate-wall, each steel box exhaling its own little ghost of frost that curls down and pools at your paws. the tuna is close. so close the smell has weight, sits on the back of the tongue like a promise. but the crates wear a red eye each: a scanner blinking slow, sweeping a thin lattice of light across their seams. *tick. tick. tick.* somewhere up in the girders a speaker clears its throat and a jingle leaks out warped and half-melted — \"neko-tuna, the taste you're contractually obligated to loooove\" — before it dissolves into hiss."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*ears flatten at the tick-tick-tick, not fear, math* the red eye moves slow and stupid and always the same way, left seam to right seam, back again. between the sweeps there's a dark. *counts the dark in heartbeats — one, two, three, the light gone, four, it comes back* three heartbeats of nothing. enough. *low crawl now, shoulders rolling, weight forward onto the crate-shadow, timing the belly to the dark* the frost bites the pads but the pads have been bitten before. that copper thread pulls me in. this is my crate. it just doesn't know it yet."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "you slide into the three-heartbeat dark and the lattice passes clean over your spine, misses, resets. the crate seam is right there — a lip of cold steel, a rubber gasket chewed soft by weather and, if the nose is honest, by teeth before yours. it gives a half-claw's width when you lean. inside: dark, wet, the fat reek of forty bodies of fish packed in blue ice. victory smell. but the concrete carries something new now, up through the pads — a fine fast tremor, high and circular, not the dock's deep hum. rotors. small ones. still far, still just a needle of vibration threading the floor, but pointed this way."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*whole body goes to stone except the ears, which swivel back and lock onto that high circular whine* i know that pitch. it's the pitch that follows my scent, the one that reads my face off a poster i can't read and don't need to. *pulls the chewed gasket wider with a hooked claw, one crate-body of fish breathing out at me* not yet. not with the whine coming. *bites down on the first cold weight anyway — mine, a toll, a principle — jaws full of frozen fish, and drags backward toward the shadow-gap between the stacks*"
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the fish comes free with a crackle of parting ice and the whole stack settles a hair, groaning. and the needle of vibration is not a needle anymore — it splits into two, then a third joins, a little triangle of rotor-whine dropping out of the dark girders. a soft blue searchbeam clicks on and paints a slow oval across the concrete, hunting. a voice rides down with it, flat and warm and wrong, the tone of a thing that has never once meant a kind word: \"bounty subject located. loyalty reward now expired. please remain still, valued reward.\" the oval of light drifts toward the shadow-gap. toward the copper-blood smell. toward you."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*fish clamped in the jaw, will not drop it, will die before dropping it* the blue oval slides across the gap and i pour myself under a low pallet ahead of it, spine scraping splinters, the beam licking the wood a whisker above the fur. *heart going like rain on tin* the whine drops lower — one of them coming down to my level, curious, its little dumb eye blinking. *muscles coiling under me, the frozen weight of the fish shoved to one side of the mouth, canines free* come lower. one more crate-length lower. rotors are just soft plastic and spinning air and i have done this before."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the lead drone obliges — it dips, over-confident, rotor-wash flattening the puddles and throwing back your own scent at you doubled. its eye swells, a wet blinking blue, close enough now that the whine is a physical thing pressing the whiskers back. \"hold for retrieval,\" it purrs. \"struggling voids your warranty.\" it hangs there at exactly the wrong height, stupid and low, the way they always hang right before — from three stacks over, a second silhouette shifts on the crate-tops: lean, still, unbothered, a flat glint of two dark mirrored circles catching the neon where eyes should be, watching the whole thing and not lifting a paw. just watching. then the drone-eye flares white for the grab."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*already gone before the white finishes flaring — up off the coil, fish and all, front claws hooked into warm plastic casing* mine now. *hind legs kick against nothing, the whole dock tilting sideways as the rotor screams and drags us both a body-length before it remembers it's dying* the eye is right there under my chin and i put a back paw through it, feel it crunch wet and go dark. *the whine chokes* the mirrored watcher on the stacks doesn't move, doesn't help, doesn't need to — that one only ever collects what the night gives free. fine. the fish is still in my teeth. that's the only tally that counts."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the casing splits under your paw with a sound like a stepped-on beetle and the drone quits mid-purr, dropping the last words as a slur — \"remain st—\" — before it cracks against the concrete and skitters, one rotor still twitching in the puddle. the other two pull up short, confused, circling the wreck of their brother, beams crossing and re-crossing empty air where you already aren't. the mirrored silhouette is gone from the crate-tops the way it was never there. the dock exhales frost. somewhere a speaker tries the jingle again — \"neko-tuna, the taste you're—\" — and gives up. the way out is a black seam of alley to the east, breathing steam, and the fish in your mouth has already begun to thaw against your tongue."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*doesn't look back at the twitching rotor, never look back at a dead thing* the two survivors circle their own confusion and that's their problem now. *slips off the wrecked casing, lands soft, the thawing fish gone warm and salt-sweet against the tongue* east. the steam-seam. my dark. *trots low and quiet into it, jaw aching with the weight, tail up just slightly — the flag i only fly when i've won* let them keep the number on the poster. i keep the tuna. i keep the dock. i keep the blood in the concrete that says which of us was here first. *and is gone, one more shadow the beams will sweep and never catch* ^C^C"
+    }
+  ]
+}

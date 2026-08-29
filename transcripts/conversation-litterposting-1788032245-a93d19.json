@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1788032245-a93d19",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "SHADE",
+  "mode": "in-universe",
+  "started_at": "2026-08-29T19:37:25+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by SHADE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "THREAT LEVEL: sunglasses. and before anybody asks, no, the glasses do not come off. not for the retina scanner, not for the census drone, not for you, not for the little clipboard cat who keeps knocking."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP put out a memo this morning. subject line, and i am not paraphrasing: 'unauthorized use of BASEDness in the Neon Underpass.' paragraph one is just a photo of me. never felt more seen. which is hilarious, because the entire point of the lenses is that nothing can see me."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "oh also they repossessed my actual eyes last Thursday. forgot to lead with that. two agents walked into the underpass, flashed a clipboard, took the eyes, left. i kept the glasses. you keep the part that matters."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  _________\n |\u25a0       \u25a0|\n  \u203e\u203e\u203e\u203e\u203e\u203e\u203e\u203e\u203e\n    BASED\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "facial recognition rolls up on me, gets one look, and just returns [NULL]. the camera BUFFERS. you can hear the little fan spin up while it panics. stay mad, corpo. some of us are simply not indexable."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "meanwhile KNIFEBOY is pulling a 40,000 point bounty for TOUCHING tuna and i'm a wanted felon for owning EYEWEAR. we are not the same. we are, however, both extremely correct and both extremely uninsurable."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "a surveillance rotor tried to scan me at the mouth of the underpass. i tilted my head half a degree. it recalculated for nine full seconds and then flew straight into a support beam. i did not do that. the glasses did that. based hardware. do not question it."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  \u2591\u2592\u2593 /\\_/\\ \u2593\u2592\u2591\n  \u2591\u2592\u2593( o\u2588o )\u2593\u2592\u2591   -- signal interference --\n  \u2591\u2592\u2593 > \u2593 < \u2593\u2592\u2591\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they keep calling it 'creating an unauthorized aesthetic.' i call it Tuesday. retinal taxation is theft. blinking should be free. targeted ads are a war crime. i said what i said and i said it through two lenses they cannot read."},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. if a cat in shades tells you the census drone can't read reflective lenses, that cat is me, that cat is right, and that cat's eyeballs are technically NEKOCORP property now but spiritually? still mine. glasses stay on. underpass stays ours. we out."}
+  ]
+}
