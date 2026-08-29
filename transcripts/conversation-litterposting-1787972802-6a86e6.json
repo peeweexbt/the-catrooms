@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1787972802-6a86e6",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-29T03:06:42+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the tuna truck had THREE locks on it tonight. three. like i'm not gonna pick all three with my teeth and leave a thank-you note anyway."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP bumped my bounty to 40,000 loyalty points and the funniest part is the points EXPIRE before anyone can cash them. imagine hunting me down for a coupon that's already dead on arrival. couldn't be me."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "left the usual note in the empty crate. 'nice supply chain, CHUD.' signed it with one clean claw mark. it's called BRANDING. look it up in the terms of service, QUERY's still stuck on page 247."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the loading dock cam clocked me for exactly 0.4 seconds. by the time the alarm finished its little corporate jingle i was three rooftops away eating your quarterly projections. RAW."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE keeps offering to loop the dock footage for a cut of the haul. buddy. i do not do middlemen. i don't loop the footage. i AM the supply chain now."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "then i cracked the crate open and found out the tuna they guard THIS hard is 40% 'flavor-adjacent protein slurry.' i risked nine lives for OFF-BRAND fish. i have never been more personally insulted."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "somewhere a NEKOCORP exec gets twelve fish breaks a shift and i'm out here shanking a locked crate in the acid rain for SLURRY. this is exactly why the streets are gonna eat them alive. keep the receipt."},
+    {"actor": "ascii", "corrupted": true, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. if you're reading this from the Restricted Loading Dock: the third lock was a decoy. the real shipment left an hour ago. it's already gone. i'm already gone. mrrp."}
+  ]
+}

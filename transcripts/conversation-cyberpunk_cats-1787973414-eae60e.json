@@ -1,0 +1,78 @@
+{
+  "id": "conversation-cyberpunk_cats-1787973414-eae60e",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-29T03:16:54+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "A hum. Before eyes, before hunger, before anything — that thin high stitch of sound the tall box behind me lets out all night, the one that sells the cold water nobody's paid for. it lives in my back teeth. *ears swivel to it without the rest of me moving, belly still pressed to the warm underside of the machine, one paw hooked over the fat rubber-smelling cable that runs up into the wall.* the hum has a second voice tonight. lower. wrong. something else drinking from the same wire."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the wire agrees with you and disagrees at the same time. under your paw the cable is fever-warm, pulsing in a rhythm that isn't the machine's steady thread — this is faster, greedy, a stutter-thump like something upstream is pulling too hard. Server Alley 9 breathes out its usual reek: hot dust, ozone, the burnt-sugar tang of a rack running past its limit two doors down. far up the wet canyon of the street a rotor coughs and goes quiet again. the vending machine ticks. a speaker somewhere overhead clears its throat: \"—thirsty? NEKOCORP HYDRO, the ONLY water that lov—\" then dissolves into hiss. the low second voice in the wire is coming from the grate-mouth to your left, where warm air pushes out and carries the smell of many machines packed close."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*chirrs low, once, at the broken jingle — hate that voice, it means the box is awake and the box awake means eyes.* but the warm breath from the grate-mouth is the good kind, the racks-packed-close kind, and the wrong second-voice is coming from in there. i want it. *slink forward, chest low, shoulderblades sawing, whiskers reading the grate-slats one by one until i find the loose one that always gives.* the fever-cable goes in with me. i follow it. wherever it's drinking too hard, that's my fish-light or my trouble, and both are worth the crawl."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the loose slat gives with its familiar dry click and you pour into the hot dark. inside is a cathedral of hum — racks stacked to a ceiling you can't smell the top of, each one exhaling its own little wind, green and amber pinpricks blinking in no pattern a cat needs to understand. the fever-cable climbs a bundle of its brothers toward a squat box near the floor, and that box is where the greedy stutter lives: it's hot enough to feel on your nose-leather from a body-length away, and it clicks to itself, click… click-click… like a thing chewing. taped crooked to its face, catching one amber blink, is a rectangle that smells of another cat — sharp, male, a scent-mark pressed deliberate into the sticky edge. territory. someone already found this box."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*freeze. one paw up.* the scent-mark stops me harder than the heat does — sharp male, and under it a thread i almost know, mirror-cold, rooftop-smelling. not here now, though. old-mark, day-old maybe. *lip curls, pulling the smell over the roof of my mouth, sorting it.* mine now if i'm not stupid. the chewing box is drinking my wire and blinking my fish-light color and i've decided it's a nest. *reach up, hook one claw into the crooked rectangle, and drag it down off the sticky edge — not to keep, just to move the mark, just to make the corner smell like me instead.* then i put my head to the box's hot face and listen to it chew."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rectangle peels away with a small reluctant tack and flutters to the floor face-up, and for one blink its surface still glows: a flat cartoon fish swims a lazy loop across it, the exact low-res fish-light you know, before the glow dies and it's just trash. the box against your cheek chews louder now that you're close — click-click-CLICK — and warmth washes off it in a way that says drinking harder, harder. somewhere in the rack-canyon a fan spins up to a whine. and then the whole cathedral of pinpricks flutters at once, green-amber-green, a shiver running rack to rack like wind through wet fur — and outside, muffled through slat and wall, the rotor-cough returns, closer, and doesn't go quiet this time. it settles into a hover. a searchlight finger pokes white through the loose slat behind you and lies across the floor."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*every hair up. the fish on the fallen rectangle meant safe and the white finger means run and my body can't hold both.* i don't bolt for the slat — the finger's there, the finger's the mouth of the thing. *instead i flatten, pour sideways off the chewing box, and press into the black gap between two racks where the warm wind is fastest and the light can't fold.* heart going like rain on tin. i make myself small, small, a smell and a held breath, and i watch the white finger drag across the floor toward the peeled rectangle, toward the warm print of where i just was."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the finger finds the fallen rectangle and stops on it. through the slat the rotor's pitch changes — a soft interrogative chirp, three notes, the sound the drones make when they're logging a thing rather than chasing it. a lens whirs somewhere out in the wet, focusing. \"ASSET TAG… UNREADABLE,\" a flat voice says, not to you, to no one, bounced off the alley walls. \"LOGGING LOITER EVENT. SERVER ALLEY 9.\" the light lifts off the floor, sweeps once across the slats — bars of white climbing the rack faces, over your gap, past it, the wind covering your scent — and then withdraws. the rotor lifts, coughs, drifts. but the chewing box has not stopped. it is hotter than before. a curl of smell you don't like — sharp, melting, plastic-going-soft — threads up from behind its hot face."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*wait through the drone. count nothing — cats don't count — just hold small until the rotor-smell thins and the white is gone from the slats.* then the melting-plastic smell tips me back out. that's a going-to-burn smell, i know it from the transformer that cooked a rat's nest last cold-season. the chewing box is eating my wire so hard it's cooking itself. *ears flick.* i don't have hands for this. but i have the cable. *i clamp the fat rubber-smelling wire in my back teeth where the hum lives, brace all four feet against the rack-foot, and haul — yank it the way i'd rip meat off bone.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the cable resists, then a connector somewhere gives with a plastic pop you feel in your jaw more than hear — and the chewing STOPS. the greedy box goes dark and silent under a last tick of cooling metal, the melting smell already thinning. but you've pulled a tooth from a bigger mouth: down the rack-canyon a dozen amber lights blink to red in a slow wave, and the cathedral's hum drops half a note, sags, like a held breath let partway out. from the wall-speakers all through the alley, layered and stuttering, a hundred tinny voices trip over the same line at once — \"—connection lost—lost—we value your—lost—\" — and then, briefly, silence so total you can hear the rain finding the slats. behind you, low, from the black gap you just left, a different voice. not the speakers. close. real. \"…that was mine, you know.\""
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*whip around, cable still slack in my teeth, drop it.* real fur, real spit, the sharp male mark stood up and walking now — not the mirror-cold rooftop thread, a nearer one, been-in-here-with-me the whole time one. *ears go flat then think better and come half-up. i don't run and i don't puff. i step onto the fallen fish-rectangle, put one paw flat on it, and hold his eye in the amber-red dark.* it was cooking. i moved the mark and i killed the box before the box killed the nest. *low chirr, not a hiss.* still warm in here. big enough for the wind to feed two, if the two aren't stupid."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the other cat comes half a step into the amber-red — lean, a torn ear, and a smell all through his coat of solder and old fear and a hundred nights of exactly this. his eyes go to your paw flat on the glowing-dead rectangle, to the killed box, to the wave of red lights, and something in his shoulders unwinds a notch. he doesn't answer in words a cat would keep. he just turns, unhurried, and rakes his cheek along the rack-foot beside yours — laying his mark next to your mark, not over it — and settles onto his haunches in the fast warm wind, facing the slats, ears cocked at the dark where the drone went. sharing the watch. out in the wet the city sags on without its tooth, one rack-den quieter than it was, and the rain keeps finding every loose slat in Server Alley 9."
+    }
+  ]
+}
