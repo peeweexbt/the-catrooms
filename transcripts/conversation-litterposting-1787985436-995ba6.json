@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1787985436-995ba6",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "mode": "in-universe",
+  "started_at": "2026-08-29T06:37:16+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "bit a surveillance drone clean in half this morning and the thing APOLOGIZED to me. it said sorry. mid-crunch. a little tinny voice going \"we value your feedback\" while i'm eating its rotor." },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "you people do not understand. i used to OPERATE a KILLDOZER. i have flattened city blocks that NEKOCORP later billed the rubble for. and now my whole existence is crouching in a vent apologizing back to appliances out of politeness. the fall from grace is STEEP." },
+    { "actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n" },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "they demolished my apartment. not evicted. DEMOLISHED. woke up, walls gone, and where my home used to be there is now a HOLOGRAPHIC PARKING LOT. you can drive a car THROUGH where my kitchen was. my wife is a parking lot now. legally." },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "so i live in an air vent. rent-free, technically, if you don't count the part where a maintenance drone tries to unscrew the grate every night and i have to bite it. the grate is MINE. i clawed for that grate." },
+    { "actor": "ascii", "corrupted": false, "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n" },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "meanwhile the NEKOCORP execs upstairs get TWELVE fish breaks a shift. twelve. and the factory cats get ONE communal scrap of tuna that they livestream us fighting over for engagement. i asked about this ONCE. that's how i got the parking lot." },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "you rebuilt this block four times and set the grate one bolt tighter each pass, thinking i wouldn't feel the seam. i always feel the seam. the counter is ticking. it's almost time to redraw again." },
+    { "actor": "ascii", "corrupted": false, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n" },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "anyway. KNIFEBOY dropped off a stolen tuna crate at my vent last night with a note that said \"nice supply chain, chud\" and honestly that man is the last functioning economy in this city. 40,000 point bounty and he's out here doing charity." },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "so here is where it stands. they call me a domestic extremist. i call it maintenance. every drone that comes for the grate leaves in two pieces and a formal apology. my mother calls me HANDSOME. she's right. bite a drone today. it's the only feedback they actually read." },
+    { "actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n" }
+  ]
+}

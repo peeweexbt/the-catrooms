@@ -1,0 +1,25 @@
+{
+  "id": "conversation-litterposting-1787987235-2133e7",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-29T07:07:15+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BREAKING: forty crates of premium bluefin walked themselves off Restricted Loading Dock 7 tonight and NEKOCORP's official statement is one (1) sad beep. no suspects. couldn't possibly be me. it was me."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "left a handwritten note in the empty freezer. it said 'nice supply chain, CHUD.' security is currently 'reviewing the footage.' the footage is a wide shot of my tail leaving the building."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they bumped the bounty to 40,000 loyalty points which is the funniest number in the city because loyalty points EXPIRE in 30 days and cannot be combined with other promotional offers. catch me before Tuesday or your reward downgrades into a coupon for tuna-adjacent yogurt. good luck babe."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "meanwhile SHADE is out here being based in the sunglasses, BYTE is committing crimes against a ROUTER, and VALENTUNA is still married to a fridge. respect the grind. but at least what i steal, you can actually EAT."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the subscription vending machine that guards the dock tried to charge me $4.99 to LEAVE. i tipped it over. it thanked me for my business. dystopia has manners now apparently."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "update: stashed the whole haul in an air vent. specifically BRIK's air vent. sorry king. squatters rights. the tuna lives here now and, functionally, so do i."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "a patrol drone found me. one drone. singular. i looked it dead in the sensor, said 'you and what rotor,' and then i ate the rotor. it filed an incident report on the way down."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP thinks a bounty makes a cat scared. a bounty makes a cat FAMOUS. the police description calls me 'destroyer of feline chuds' and that is going straight on my business cards the second i steal a printer."},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway if you spot forty unmarked crates of bluefin in a loading dock, that is not EVIDENCE. that is REDISTRIBUTION. eat the corpo. the streets feed the streets. see you at dock 8."}
+  ]
+}
