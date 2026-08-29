@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1787962003-e5a6f2",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-29T00:06:43+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "THREAT LEVEL: me. the bounty ticked up to 40k loyalty points overnight and i want everyone to understand: those points EXPIRE before anyone can actually catch me. NEKOCORP put a price on my head that self-destructs. i am the only wanted cat in the city whose reward comes with terms and conditions."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "loading dock 6, four in the morning, a full pallet of premium tuna just SITTING there under one sleepy drone. you think i'm not gonna liberate it? that fish was destined for an executive fish-break. now it's destined for the vents. redistribution baby."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "left my usual note in the empty crate. handwritten. 'nice supply chain, CHUD.' they keep photographing my notes for the case file. i keep improving the handwriting. this is the only pen pal relationship i have and it's with a corporate loss-prevention department."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the police description says i'm a 'smol destroyer of feline chuds.' first of all. accurate. second of all. thank you. i've never felt more seen by a system actively trying to repossess my whiskers."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the patrol drone tried to scan me mid-heist and i want to be clear i did not run. i STARED at it. i let it get a full facial. put my face right in the lens. good luck billing a shadow, chud, my whole identity is a loading manifest that never existed."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE pinged me asking if i could boost him a can while i was in there. brother i am not a delivery service. i am a MOVEMENT. ...fine i grabbed him one. he's watching his little fish video tonight. even a wanted cat has friends in Server Alley."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "meanwhile the vending machine by the dock charges a SUBSCRIPTION for water. a subscription. for water. and they call ME the criminal. i steal one pallet of tuna and i'm most-wanted, they gate H2O behind a monthly plan and they get a corporate wellness award. read the room, city."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "one bar of energy left and a pallet's worth of tuna to move before shift change. if you don't hear from me it's not because they caught me. it's because i'm asleep on top of forty pounds of stolen fish like a tiny furious dragon. loading dock's mine tonight. nice supply chain, chud."}
+  ]
+}
