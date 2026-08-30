@@ -1,0 +1,88 @@
+{
+  "id": "conversation-cyberpunk_cats-1788121027-5f4987",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-30T20:17:07+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Tuna. cold tuna and old blood under it, mine and not-mine, dried into the seams of the crates. *nose working the black gap between two stacked containers, whiskers reading the chill coming off the steel.* this dock is mine because it smells like me — the mark i left on the last shipment, the sour-milk reek of the corp cats i chased off it. no rotors up yet. the rain hasn't found me. i have this long and not one breath more."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the loading dock breathes out at you: diesel-cold, wet cardboard, the ozone tang of a thousand refrigeration coils sweating in the dark. sodium lamps buzz orange and leave long tar shadows between the container rows. somewhere a forklift charger ticks. the crates are branded — a paw-print inside a coin, NEKOCORP FRESH™ — and each lid wears a little sleeping green light that has not yet decided to be red. far off, past the fence, a drone hums a lullaby it does not mean."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*up. one crate, then the tall stack, claws finding the ribs in the plastic.* the green light is a heartbeat and i put my paw over it like i could stop it. lid seam here — cold air leaking sweet through it. *hook the claws under, pull, whole body into it, teeth bared against the weight.* come on. open for the wanted one."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the seal gives with a gasp of fog — a breath of arctic air pours over your face, silver bodies packed in ice, more fish than a hundred nights of hunger. the little light flushes red. from a cracked speaker overhead a voice pours down, too warm, too friendly: \"ATTENTION SHOPPERS. a KNIFEBOY has been detected in your area. report the smol menace for FORTY THOUSAND loyalty points—\" the jingle stumbles, resets, tries again."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*ears flatten at my own name coming out of a wall.* forty thousand. for me. i drag one whole silver fish out into the light so the camera can taste it too. *drop a folded scrap i carry in my cheek onto the ice — the note, always the note.* nice supply chain, chud. the points go stale before your hands ever close on me. *tail lashing, unhurried, contemptuous.* eat your own coupon."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the speaker chokes on the insult it cannot parse. \"—offer VOID where the offer is void, points expire prior to capture, cannot be combined with—\" static eats the rest. and then the sound changes: not a jingle now but a rising whine, four small screaming fans waking at once beyond the fence. the orange lamps flick to a hunting white. the ice fog around you lights up like a held breath. rotor. close. closing."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*the whine hits the base of my skull before the light does and my whole body decides for me.* fish in my jaw — heavy, cold, worth it — and i am already off the stack, already three containers gone, paws slapping wet concrete. *no looking back. looking back is for cats with fewer enemies.* the white finger sweeps where i was. i am not there. i am the next dark thing."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the searchlight carves the dock into hard white and screaming black, and it is a half-second behind every place you have just been. the drone drops over the fence, rotor-wash flattening puddles into mirrors, and its voice is flat now, done being friendly: \"HOLD. HOLD. HOLD.\" rain arrives all at once, fat and warm off the arcology heat, and the alley mouth ahead of you exhales the smell of somewhere lower, somewhere it cannot easily follow."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*hard skid into the alley and under — a dead grav-truck slumped on its rims, belly a foot off the ground, and i pour myself into the black beneath it.* still now. jaw aching around the fish. *and a smell down here that is not mine and not corp: scorched fur, old smoke, a big tom's territory that bites drones for fun.* i keep my breath small. even i don't pick a fight in another cat's vent."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "under the truck the world narrows to warm dark and the drip of rain finding rust. the scorched-fur scent is thick and unbothered — up in the vent above, something heavy shifts its weight, patient, and one drone rotor somewhere already wears the dents of that patience. the hunter overhead loses the thread; its white eye sweeps the truck, finds only cold engine and dead heat signatures, and its whine climbs back over the roofline. \"...SEARCH SUSPENDED. RESUME PATROL.\" the alley keeps your secret. the alley keeps everyone's."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i let the fish down onto the concrete and breathe for the first time in a block.* heart slowing. rain steady. the big tom lets me live because i take from the coin and not from him — the whole city could learn that math and never will. *jaw back around the prize, dragging it low toward the crack in the wall that means home, that means mine.* forty thousand points. worth exactly one fish more than they'll ever pay."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the crack in the wall breathes tuna-brine and safety at you, your own mark strong on the brick. behind, the dock stitches itself back to order — red lights dimming green, a maintenance jingle humming over the emptied crate as if nothing were ever taken. dawn is a gray rumor at the towers' feet. a last billboard sighs its loyalty pitch to no one: \"TIER: NONE. UPGRADE YOUR NINE LIVES TODAY.\" the rain washes your paw-prints off the concrete, one by one, until the street forgets you were ever running."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*home. fish down. i eat like a cat who earned it, which i am.* let them redraw the dock. let the light go green. i'll be back when it's cold again and there's another note to leave. *curl around the warm ache of a full belly, one ear still up out of habit, tail over my nose.* most wanted cat in the city. and the city can't even keep its own tuna. *eyes closing.* it's personal now. it was always going to be."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the city settles into its held breath — coils sweating, drones circling their patient loops, a hundred green lights pretending they were never red. rain on corrugated steel. somewhere a speaker loops the bounty into an empty street, forty thousand points offered again and again to no one who is listening. and in a warm crack in the wall a small wanted thing sleeps with one ear up, and the megacity does not know, will never quite know, that it already lost tonight."
+    }
+  ]
+}

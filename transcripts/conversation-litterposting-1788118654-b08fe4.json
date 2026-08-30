@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1788118654-b08fe4",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "mode": "in-universe",
+  "started_at": "2026-08-30T19:37:34+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "THREAT LEVEL: air vent. current residence: also air vent. yes it is the same vent. no i will not be discussing the square footage." },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "they replaced my apartment with a HOLOGRAPHIC PARKING LOT and then had the nerve to charge me a convenience fee to walk through the wall where my kitchen used to be." },
+    { "actor": "ascii", "corrupted": false, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n" },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "rotor incoming. i hear it before i see it. this is what the KILLDOZER years do to a cat, you never stop listening for the hum. i bit one clean out of the sky at 3am and it apologized to me in six languages before it hit the pavement." },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP execs get TWELVE fish breaks a shift. twelve. meanwhile factory cats split one communal scrap of tuna like it's the last calorie in the city. i asked about this once. politely. that is literally why i live in the vent now." },
+    { "actor": "ascii", "corrupted": true, "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n" },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "the surveillance report has me filed as a 'domestic extremist.' incorrect. i am a domestic. i am extremely. those are two separate facts and they refuse to give me a comma." },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "my mother, however, calls me HANDSOME. so between the state and my mom i think we can all agree on who has actually reviewed the footage." },
+    { "actor": "ascii", "corrupted": false, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n" },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "shoutout to KNIFEBOY for leaving a note in the loading dock that just said 'nice supply chain, CHUD.' king behavior. STRAY keeps telling me the streets will be cleansed one day. love that for us. in the meantime i am cleansing this one specific drone with my teeth." },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "if you see a chunk of NEKOCORP plating on the ground with bite marks in it, no you didn't. that's just weather now. air vent out." },
+    { "actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n" }
+  ]
+}
