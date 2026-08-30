@@ -1,0 +1,87 @@
+{
+  "id": "conversation-cyberpunk_cats-1788096041-301ef7",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-30T13:20:41+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Somebody's been here. the corner of the concrete pillar carries it before i round it — a mark left high, deliberate, sprayed at nose height by a tom who wanted it read. not mine. *stops dead at the edge of the underpass, one paw lifted, weight back on the haunches, reading the boundary the way another cat reads a face.* the glasses on my brow catch the sodium glow and throw it back flat. i don't cross yet. i learn the line first."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the mark is old rain-thinned but the message under it is fresh — layered, someone re-inked the same seam twice tonight. beyond the pillar the underpass opens into a throat of dripping concrete, every surface slick and orange under a broken lamp that stutters on-off-on. water finds the low center and runs. far down the tunnel a second smell threads in under the piss and wet stone: scorched fur, old and burnt-in, the kind that doesn't wash out — someone whose coat has been near fire more than once. it isn't moving. it's just there, a scent sitting in the dark like a warning nailed to a post."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*ears swivel forward, then pin.* scorched fur means a cat that survived the thing that scorched it, and those are the worst kind to meet blind. i lower my chin, let the mirrored lenses do the work my eyes won't — no wet shine to give me away, no flash for whatever's watching from the ceiling grates. *slides one pad forward onto the wet, testing the give of it, silent.* i keep to the high dry lip along the wall where the water can't carry my sound down to it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "good — the dry lip holds, a hand's-width shelf of grit above the running center, and your pads read every ridge of it. but the stutter-lamp is not just a lamp. on its third flicker it holds a half-second too long and in that held light a red bead wakes up in the ceiling corner, swivels, finds the warm shape of you, and a thin voice leaks out of a speaker rusted almost shut: 'NekoCorp reminds valued strays — unlicensed BASEDness is a taxable event.' the bead brightens. somewhere above the underpass a rotor coughs, spins up, starts descending toward the mouth you just left."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  _________\n |■       ■|\n  ‾‾‾‾‾‾‾‾‾\n    BASED\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the ad knows the word for what i am and that's how i know the lenses still work — they hate what they can't scan. *flattens, belly to the cold shelf, the taxable-event jingle sliding off me like the rain does.* the rotor's behind me now, dropping into the mouth. forward is the scorched-fur dark. i take forward. better a cat i can smell than a drone i can't outrun. *pours down off the lip into the tunnel's shadow, quick and low, putting the dripping seam between me and that red bead.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the dark swallows you clean and the red bead loses your heat against the wet stone — for now. the drone noses into the underpass mouth behind you, searchlight sawing side to side, too wide-shouldered to fit past the narrowing throat, so it hangs there in the entrance grinding light into the water. ahead the scorched smell resolves into a shape: a low broad tom wedged in a dry alcove where a maintenance panel was ripped out, coat patched with bare seared skin, eyes half-lidded and unbothered. he has watched you come the whole way. he does not get up. from deeper past him, faint, a wall of ripped-out ductwork breathes cold air that smells of ozone and other cats — a lot of them, held somewhere back there."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*halts at a respectful three body-lengths, sinks low, tail still — not a challenge, not a surrender, just a cat saying i see you and i'm not stupid.* the burnt one doesn't move and neither do i. behind me the drone-light chews the water and can't reach us; between us the truce of two animals who both hate the same rotor. *flicks one ear back toward the entrance, then forward at him — the whole sentence in a gesture: that thing's yours to hate too, isn't it.* i wait to see if the alcove lets me pass toward the cold cat-smelling dark, or if this is where the underpass ends for me."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the broad tom's eyes track your ear-flick to the drone and back, and something in his scarred face eases a hair's width — not friendship, just the arithmetic of a shared enemy coming out in your favor. he shifts his weight, deliberate, and drags one heavy paw sideways: the gap behind him opens. the cold ozone breath widens into a passage, and now you can hear it — many low voices back there, a crew, the click and shuffle of cats moving crates, and under it a broadcast bleeding thin from a stolen speaker, some rumor-toned drone-chatter looping a name and a number: '...KNIFEBOY... forty thousand... points expire on capture...' the burnt tom watches to see whether the word means anything on your face."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*keeps the face flat — the lenses help, but i keep the whiskers still too, give the name nothing.* forty thousand points on a cat who steals tuna and leaves notes; i've smelled that story on three walls this week and never the cat. not my bounty, not my crate to lift. *rises just enough to move, slow, passing the burnt tom on the side away from his scarred flank — courtesy, leaving him his good eye and his space.* i go in toward the cold and the many, ears loose, tail neutral, one stranger walking into a room that already has a door at its back i haven't found yet."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "you pass and he lets you, which the whole crew registers before you're three steps in — heads turn, the shuffle of crates pauses, a dozen sets of eyes take the measure of a masked stray who walked past the burnt gate-tom instead of being turned. the passage opens into a hollowed service bay strung with scavenged wire-light, crates stacked in leaning towers, the stolen speaker still murmuring its bounty-loop into a corner nobody's listening to. the ozone is thicker here — a fat cable-junction sparks somewhere overhead, and the air tastes of it. nobody moves on you. nobody welcomes you either. the door at your back you were worried about is real: a second tunnel, black, exhaling colder air than the one you came in, and from it a single thread of a smell you know too well — copper and warm plastic, a rack running too hot, the exact smell of another cat's whole life's work humming in the dark."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*that smell stops me mid-step — copper and hot plastic, a rack run past safe.* i know a cat who lives inside that hum, who chews cable just to taste the current, who'd hack a NekoCorp router raw to watch one blurred fish before the ads bit him. this crew keeps a wire-den, then, and somewhere down that black throat somebody's paying for the light in nibbled insulation and lost sleep. *settles onto my haunches at the edge of the wire-light, not claiming ground, just occupying the smallest honest amount of it.* i've found the room. now i learn who runs it — and i wait, because a stranger who waits gets fed before a stranger who asks."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the crew reads the wait and something in the bay loosens by a degree — a scrawny calico near the crates goes back to shoving a tin, a decision made without a sound. from the black tunnel the copper-hum den exhales once more and then a shape comes out of it: small, wire-thin, one ear notched, fur faintly smoking at the tips from a junction chewed too close, pupils blown wide from staring at low-res light in the dark. it stops when it sees the mirrored glasses catching the wire-light, and for a held second the whole bay is just the two of you and the drip and the far-off rotor still grinding uselessly at the underpass mouth. then the speaker in the corner glitches, cuts its bounty-loop, and plays half a bar of a NekoCorp jingle about synthetic milk before dying entirely — and in the sudden quiet the smoking little cat tips its notched ear at you, the oldest question in the city with no words in it: friend, or the other thing."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n        ,--.\n       ( o.o)__\n        '--'   \\___\n                 \\  \\__/\\_/\\\n                  \\_(  o.o  )\n                     > ^ < (watching the towers blink)\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i answer the only honest way a cat can — slow blink, ears soft, the mirrored brow dipped so the wire-light slides off it and for once my actual eyes show, tired and unarmored, meeting the blown pupils of the little smoking one.* not the other thing. just a stray who took the tunnel away from the rotor and found a warm room at the end of it. *i don't move toward the crates, don't move toward the black den, don't take anything.* the night belongs to whoever moves quietest, and i have been quiet all the way here. i can be quiet a while longer, in the corner, where the cable-hum and the many breathing bodies almost sound like safe."
+    }
+  ]
+}
