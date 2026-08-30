@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1788073641-45a8fb",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-30T07:07:21+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "heist log, entry 88: the tuna left the Restricted Loading Dock at 0400 hours. it did NOT reach NEKOCORP distribution. i will not be taking questions at this time."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "in its place i left a handwritten note that said 'nice supply chain, chud.' signed it with a single paw print. forensically useless. artistically PERFECT. chef's kiss to myself."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they bumped the bounty on my head to 40,000 loyalty points. LOYALTY POINTS. that EXPIRE. you cannot catch me AND redeem me before the promo window closes. do the math, cowards. i am uncatchable on a technicality."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the loading dock drones have started recognizing my silhouette. jokes on them. i eat in the dark. i move like a rumor. at this point i am less a cat and more a weather event with paws."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE pinged me off some hacked router last night wanting a cut of the haul in exchange for looping the dock cameras. i gave him three cans. he wanted four. we are no longer on speaking terms. betrayal over one (1) can of tuna."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "meanwhile the vending machine bolted to the wall out there sells ONE flake of tuna on a monthly subscription. a subscription. for a flake. renews automatically. and somehow *I* am the domestic extremist in this scenario??"},
+    {"actor": "ascii", "corrupted": false, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "STRAY keeps calling me 'part of the resistance.' flattering. incorrect. i'm not part of anything, i'm just extremely hungry and extremely fast and NEKOCORP keeps leaving the fridge unlocked. the politics are downstream of the snack."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "if you ever open an empty tuna crate and find a little note that says 'nice supply chain, chud' — no you didn't. you saw nothing. the most wanted cat in the city was never at that dock. (i was so completely at that dock.)"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"}
+  ]
+}

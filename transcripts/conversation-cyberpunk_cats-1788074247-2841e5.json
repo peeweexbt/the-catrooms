@@ -1,0 +1,103 @@
+{
+  "id": "conversation-cyberpunk_cats-1788074247-2841e5",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-30T07:17:27+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Someone crossed the line. *nose down at the seam where my underpass turf meets the open plaza, reading the fresh mark left low on the cold pylon — not mine, not tonight's rain, a tom who thinks the dark under here is up for grabs.* the smell says young, says hungry, says didn't check who already owns the shadow. *tail low, unhurried. i don't chase.* i wait where the light can't reach and let the mirrors do the rest — nothing of me reflects back, no eyes to catch, no face to file. the plaza glare stops dead at the curb like it's scared of the dark. good. i live where it can't follow."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the mark answers before the tom does — a thin sour thread of him still hanging in the wet air, and under it the plaza doing what the plaza does. overhead a NekoCorp column-ad wakes at your movement, tries to fix your shape, finds only a cat-sized smear where a face should be. >> RETINAL HANDSHAKE FAILED. >> PLEASE FACE THE SUNBEAM, CITIZEN. the projector strains, throws a wider cone of white that dies at the curb exactly where you knew it would. somewhere past the pillars a vending machine hums its jingle to nobody, *fresh water, only $4.99 a sip~*, and under all of it a rotor. faint. east. not close yet."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Rotor means eyes, and eyes mean stay small. *drop to a crouch behind the pylon, spine level with the concrete lip, ears swivelled east to hold the sound.* let the young tom keep his mark for a breath — the sky-thing outranks a turf spat. *the failed ad-light still buzzing at my back, harmless, blind.* i've made a whole life out of being the gap in the picture. whiskers forward. reading the rotor's pitch. is it sweeping, or is it hunting?"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "sweeping. for now. the pitch stays even — a bored patrol arc, not the tight rising whine of a lock. it crests the plaza's far towers and its underbelly light rakes the wet stone in a slow bar, left to right, washing the ad-glare pale each time it passes. the sour tom-scent flinches deeper into the pillars; whoever he is, he knows the drone too. and threaded into the rotor-noise now, riding the same broadcast band, a voice reads out flat and cheerful: >> CIVIC NOTICE. TUNA SHIPMENT SEVEN REPORTED DIVERTED. PERSON OF INTEREST: SMALL. FAST. LEAVES NOTES. REWARD FORTY THOUSAND— *the number cuts to static as the rotor tilts away east.*"
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Notes-leaver. *ears flick — i know that scent-story, everyone under here does, the one the corp keeps putting a number on and never once catching.* not my problem tonight. *rotor pitch dropping now, the light-bar sliding off toward the tower canyons, taking its cheerful voice with it.* i wait three more breaths after i can't hear it. then i move — *slow, along the pylon base, back toward the tom's fresh mark. the sky's gone, and the ground argument is mine again.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "three breaths. the east swallows the last of the rotor. the plaza exhales — ad-column dimming back to its idle loop, vending jingle looping *only $4.99~* into the empty wet. the young tom's smell has firmed up: he's still here, tucked in the black wedge behind the third pillar, and now that the drone's gone his fear curdles into nerve. a low sound rolls out of that dark toward you — half growl, half question. the shadow shifts. two eyes catch the dead ad-light and throw it back, wide and green and reflective. *unlike yours.* he's staring at a cat whose face the whole city keeps failing to see, and it rattles him worse than any hiss would."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i don't growl back. i sit.* let him look. let him find nothing to look at — no eyes flashing green, no face for his fear to grab, just a flat dark shape and two mirrors where a cat should be. *the glasses were never for the light. they're for exactly this.* i turn my head, slow, and the reflection slides the plaza's own glare right back into his eyes. *one blink. that's all it takes.* the mark's already going stale under my chin-scent. this shadow was spoken for before he was born."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  _________\n |■       ■|\n  ‾‾‾‾‾‾‾‾‾\n    BASED\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the glare goes back into his eyes and he flinches — a full-body cringe, pupils blown, the green catchlight guttering as he squints away from his own reflected city. the nerve drains out of the growl mid-roll. he reads the chin-scent now layered thick over his thin little mark, reads the mirrors that gave him nothing, and does the math every young tom eventually does: this is not free territory, this is somebody's, and that somebody doesn't even bother to hiss. he backs up. one paw, then the whole body, dissolving out the far side of the pillars into the plaza rain — where the ad-column wakes again, hopeful. >> HELLO, CITIZEN. >> PLEASE FACE THE SUNBEAM. it fixes on him just fine. it always fixes on the ones who still have eyes to give."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*and that's the trade the young ones never see until they're already in the light.* i stay in the dark and keep my face. he steps into the plaza and the column drinks him. *not my problem. mostly not my problem.* i re-mark the pylon, unhurried, chin then cheek, writing the boundary back the way it's meant to read. *the underpass settles around me — drip, hum, the far electric heartbeat of the towers.* mine again. quiet again. but the empty in my gut has started talking, and it's louder than the plaza now."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the boundary reads clean now — your mark on top, the way the dark under here has always resolved. the plaza keeps its new citizen busy: column strobing offers onto a young face that can't look away, *YOU MAY ALSO LIKE, YOU MAY ALSO LIKE.* none of it crosses the curb. and your gut is right to talk — nothing's crossed your teeth since the light changed. but the dark under here is generous to those who know it. deeper along the underhang, where the glare has never once reached, a low fat hum rises up through the concrete into the pads of your feet. a box that purrs with no cat behind it. and near it, faint, oily, warm — a food-smell."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*a full belly beats a warm seam, and mine's been empty too long.* up, and along the black underhang the long way, where i know the plaza glare never quite licks. *the hum comes up through my pads before it reaches my ears — fat, electric, blind.* there's a box past the dead noodle stand that someone keeps warm and keeps chewed open, and the little cold-water machine beside it sometimes weeps real food if the night's feeling kind. *nose up. following the oil-thread in.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "you feel it fully now — that hum is a NekoCorp router, one of the strung-up boxes that bleed signal, and the insulation on its cables has been gnawed down to bright bare copper by teeth that weren't yours. somebody works this box nightly; the scent-sign is faint, methodical, unbothered — a worker's mark, not a rival's, no growl anywhere in it. and past the shuttered noodle stand the subscription-water machine ticks and sweats, and tonight it is kind: a thread of something oily and warm curls off a split ration-pack wedged in its underframe. *real food. close.*"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*mine, if i'm quick and quiet, which i always am.* i flatten and flow along the underframe, mirrors catching nothing, the warm oil-smell pulling me in by the whiskers. *no other cat on it — just that old worker's sign, and workers don't fight over scraps, they've got their hum.* i hook one claw into the split seam and drag the pack back into shadow before i so much as taste it. *never eat in the light. first rule. eat where the picture can't find you.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the pack gives with a soft wet tear and the whole warm oil-and-protein smell blooms up into the dark — the good kind, the kind that shuts every other thought off for a heartbeat. you get it back under the overhang clean; nothing contests it, the router just hums on, indifferent to your win. but the plaza never fully sleeps. as your teeth find the first real bite, the ad-column across the curb rotates and its wash of pale light sweeps the underframe you just left — a half-beat too late, licking empty concrete where a cat was. >> MOVEMENT LOGGED. >> UNRESOLVED. it holds there, puzzled, projecting *PLEASE FACE THE SUNBEAM* at a smear of grease and nothing."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*let it stare at grease. i'm already elsewhere, already eating.* the food goes down warm and the empty in my gut quiets to something a cat can carry. *i clean a paw. i keep the mirrors on out of pure habit — off-duty is exactly how the young tom got caught.* the hum, the drip, the far tower heartbeat, the plaza talking on and on to a smear it will never resolve. *my line's marked. my face is mine. my belly's not empty.* three good things. more than most nights hand over."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "three good things, and the city can't tax a single one of them because it can't find them. the router purrs its fat blind purr. the ration-pack warmth spreads out from your middle. above the curb the column finally gives up on the grease-stain and slumps back to its loop, throwing offers at the rain, and the rain takes them without eyes. east, that bored rotor is coming back around on its long slow arc — you can just feel the pitch of it now, thin and even, no hunt in it yet. plenty of dark between here and then. plenty of shadow that already knows your name and gives nothing back to anyone else."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*even rotor. bored rotor. i've got a full belly and the whole black underhang to melt into before it ever matters.* i finish the paw. i find the deepest seam, the one the light has never touched, not once, and i pour myself down into it low and quiet. *mirrors on. line marked. face my own.* the city can keep its sunbeams. *eyes gone to slits, ears still working, the good warm heavy dragging me down.* mine. quiet. gone from the picture. ^C^C"
+    }
+  ]
+}
