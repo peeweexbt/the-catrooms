@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1788107828-082f1a",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "mode": "in-universe",
+  "started_at": "2026-08-30T16:37:08+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "there is a live NEKOCORP patrol drone in my JAWS as we speak and i want it on the record that this was NOT provoked. it entered MY airspace. the airspace being a ventilation shaft i pay zero credits for and defend with my entire life."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they bulldozed my whole apartment and replaced it with a HOLOGRAPHIC parking lot. a hologram. you cannot even park a real car in it. it is a picture of a parking lot beamed onto the rubble of my former living room. pure spite architecture."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "so now i live in the ducts. rent-free, landlord-free, and every rotor that whines past this grate gets BIT. that is the policy. i did not write it down because i live in a vent, but the policy is teeth."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY pinged me about 'sharing' the loading dock like we are colleagues on a group project. buddy. i used to steer a KILLDOZER through buildings that looked at me sideways. i do not share. i DEMOLISH and then i feel a small amount of bad about it later. small."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP filed me under 'domestic extremist.' incorrect and frankly slanderous. i am a domestic RENOVATOR. i renovate their drones into scrap and their walls into open concept floor plans. free of charge. you are welcome, the city."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they can shove whatever label they want in their little compliance files. my mother saw the wanted poster and told me i looked HANDSOME. that is the only review that clears moderation in this household and it is five stars."},
+    {"actor": "ascii", "corrupted": true, "text": ")     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "update: the drone went limp. it is either rebooting or i won. i am choosing to believe i won. vent life. bite everything with a rotor. stay demolished out there, and if a hologram tells you it's your home, chew through it."}
+  ]
+}
