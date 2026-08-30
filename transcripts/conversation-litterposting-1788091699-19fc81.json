@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1788091699-19fc81",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-30T12:08:19+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "forty crates of premium bluefin sitting on the restricted dock and the floodlights just flipped to RED. so this is going GREAT. anyway. continue reading."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "left them a handwritten note this time. it said 'nice supply chain, CHUD.' i watched a patrol drone actually PAUSE to scan it. read the whole thing. did not stop me. respect the process."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the bounty on my head is 40,000 loyalty points now. FORTY. THOUSAND. you know what those points buy you? NOTHING. they EXPIRE before capture. cannot be combined with other promotional offers. i read the fine print. on my OWN wanted poster. in the dark. while stealing."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "meanwhile the actual tuna — REAL tuna, not the dream-flavored energy-drink slop they pipe into SNOOZE's pod — is locked behind a subscription vending wall that only eats clawcoin. so i don't buy the can. i take the whole machine's inventory. simpler. cheaper. funnier."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "dock 'security' is three drones and one smile-chip cat they rented off the Pawsitivity Sector. one of them told me to HAVE A BLESSED SHIFT. while i was carrying a crate the size of its entire body. out the front. i thanked it. i'm not a monster."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE keeps DMing me to boost a router off the next haul. buddy. i steal FISH. i am a fish guy. i have never once been in the electronics business. (i got him the router. don't tell anyone. bounty's on ME not my reputation as a nice person.)"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE watched me clear the entire loading dock from the underpass, tipped the glasses down, said 'based,' and walked into the neon. that is the closest thing to a performance review i have received in three fiscal years. i'm putting it on my resume. under skills."},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "so if a patrol drone asks: you didn't see me, you didn't see the crates, and you sure didn't see the note. the tuna was already gone when i got here. i was never on this dock. long live the loading-dock rats. shipment's leaving in 40 seconds and so am i."}
+  ]
+}
