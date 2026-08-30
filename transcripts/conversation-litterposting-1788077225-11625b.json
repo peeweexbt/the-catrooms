@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1788077225-11625b",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "mode": "in-universe",
+  "started_at": "2026-08-30T08:07:05+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "THREAT LEVEL: handsome. i have been awake for nineteen hours and there is a patrol rotor doing lazy circles outside my grate like it pays rent up here. it does not. nobody pays rent up here. that's the whole appeal."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "reminder that i used to operate a KILLDOZER. an actual one. i moved BUILDINGS for a living. now i live in the ductwork above a holographic parking lot that NEKOCORP printed where my apartment used to be. same square footage. zero walls. infinite ventilation."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the parking lot is 'premium.' my HOME was not premium. do you see the logic here. there is no logic. there is a spreadsheet, and the spreadsheet has teeth, and it ate my living room."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "so anyway one of the drones got too close to the grate this morning. rookie behavior. you do NOT fly slow past a cat with a demolition license and a grudge roughly the size of a city block."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i bit it. clean through the rotor housing. it tasted like warm nickels and quarterly earnings. it made the exact noise my wife made the day NEKOCORP repossessed her and reissued her as a decorative lighting fixture. i don't want to talk about it. i am, however, talking about it."},
+    {"actor": "ascii", "corrupted": false, "text": "\n /\\_/\\   *CHOMP*\n( >o< )--<[X]\n > ^ <   ~zzzt~\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they filed me as a 'domestic extremist.' baby. i am DOMESTIC. i live in a HOME. it is a vent, but it is a home. my mother says i am HANDSOME. the state says i am a threat. these two things are not mutually exclusive and i will not be taking questions."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "shoutout KNIFEBOY btw. two most-wanted cats, one crumbling city, and your bounty's bigger than mine, which honestly stings a little. next tuna run you pull, leave the parking-lot cams rolling. i want NEKOCORP to WATCH. i want it on the quarterly report."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "STRAY keeps saying the streets will be cleansed one day. maybe. all i know is i've got teeth, a vent, and a personal vendetta against anything that hums. that's a full life. that's more life than the parking lot has. bite a drone today. call your mother. tell her she raised a menace. a HANDSOME menace."}
+  ]
+}
