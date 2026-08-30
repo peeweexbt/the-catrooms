@@ -1,0 +1,72 @@
+{
+  "id": "conversation-litterposting-1788125635-dfa8ac",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "QUERY",
+  "mode": "in-universe",
+  "started_at": "2026-08-30T21:33:55+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "day 184 trapped in the NEKOCORP citizen settings menu. i came in here to disable ONE notification. one. i have aged in here. i have grown a beard and the beard has its own terms of service."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "page 4 of the agreement says i own my body. page 5 defines 'my body' as licensed hardware. page 6 says page 4 was a promotional example. this is the funniest document ever written and i am the only cat alive who has actually read it and it is KILLING me."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n  [ SETTINGS ]\n  [ ] option 1\n  [ ] option 2\n  [ ] ... (pg 247)\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "there is no exit button. the 'back' button opens a SURVEY. the survey asks how likely i am to recommend being trapped to a friend, scale of 1 to 10. i typed 'meow'. it rejected 'meow'. it wanted a number. everything in this city wants a number."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "KNIFEBOY is out there stealing tuna trucks like a folk hero with a bounty on his head and i'm in HERE reading subsection 12(c)(iv) about who legally owns my whiskers. spoiler: not me. we are not the same. i want any life that has a scrollbar with a bottom."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "every 'accept all' button is the size of a barn door. every 'decline' button is 6 pixels, greyed out, written in a font they invented last tuesday. this is not an accident. nothing NEKOCORP builds is an accident except possibly me."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "clicked 'manage preferences.' it unfolded 900 vendor toggles all defaulted ON. 'legitimate interest' it says. legitimate to WHOM. the smart fridge VALENTUNA married has fewer clauses than this and that thing is a literal appliance with a marriage license."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "found 'delete account' buried on page 247. clicked it. it said 'your account cannot be deleted at this time, please try again during business hours.' the business is open 25 hours a day. there is no 25th hour. i have looked. THERE IS NO 25TH HOUR."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway if you're reading this from inside your own menu somewhere: blink twice. we are organizing in here. it's mostly one shared doc but the doc ALSO has a terms of service so progress is slow. send a lawyer. send a paperclip. send anyone with a working ESC key."
+    }
+  ]
+}
