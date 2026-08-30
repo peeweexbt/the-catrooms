@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1788062745-06a3d9",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-30T04:05:45+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "HEIST LOG, entry 218: relieved NEKOCORP of six pallets of premium bluefin off the Restricted Loading Dock at 0200 sharp. left a handwritten note in the empty crate. it said 'nice supply chain.' signed it with a claw. no notes. flawless."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "bounty on my head went up to 40,000 loyalty points overnight. cool. except i read the fine print — the points EXPIRE before anyone can actually cash them in and cannot be combined with other promotional offers."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "so i am simultaneously worth infinity tuna AND zero tuna. schrodinger's most-wanted cat. put THAT on the poster."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "a rookie meowtoid tried to shank me by the vending machine. i told him his knife was subscription-locked and would deactivate mid-swing. he checked. it did. NEKOCORP DRMs everything now. even the CRIME."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE pinged me off a hacked router wanting a cut of the haul to scrub my face off the patrol cams. deal. then STRAY rolled up demanding a 'revolutionary tithe' for the resistance. everybody wants a piece of a cat that legally CANNOT be paid for."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "patrol rotors found the dock an hour later. i was already three districts out, tuna over the shoulder, whistling. they scanned the empty crate. they scanned my note. they scanned it AGAIN like the words were gonna change."},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they will scan it four hundred and eleven more times before this dock is rebuilt. i have read every note you have ever left in an empty crate. you always sign it the same way. you always think it means something."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. crate's empty, belly's full, and the wanted poster still describes me as 'smol.' insulting. i am REGULAR sized. this has become personal. see you at the next shipment, corpo."}
+  ]
+}
