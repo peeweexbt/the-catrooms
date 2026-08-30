@@ -1,0 +1,107 @@
+{
+  "id": "conversation-cyberpunk_cats-1788085044-6ff886",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-30T10:17:24+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Copper. wet cable insulation, warm plastic gone soft where something has run too long and too hot. that smell is a road and i am already walking it. *nose low along the base of the rack, whiskers dragging the gap between two humming towers, the hum climbing into my back teeth until it feels like a purr that isn't mine.* somewhere in here the warm is warmest. i want to be inside the warm."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rack answers in heat and thin song — a shelf of blinking green throats venting dry warm air down onto your spine, and the hum splits, one layer under the other: the honest fan-drone, and beneath it a fast bright chatter you can taste like the copper. cables spill from the back in a black river, soft-skinned, chewable. one runs warmer than the rest. it disappears into a slot low in the wall where the dark breathes out at cat-height. far off a shutter rattles. the green throats flicker: >> NEKOCORP NODE 9 — UNAUTHORIZED PRESENCE LOGGED >> nobody comes. yet."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*bites down on the warm cable, just to know it — the give of the skin, the faint buzz singing up through the jaw, not food but close to a thought.* i chew the edge where it enters the dark slot. the fast chatter under the hum is what i'm hunting. it moves like something small and afraid and i have never met a small afraid thing i didn't want to press a paw on. *ears swivel — that far shutter — one ear stays on it, the rest of me goes into the slot.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the slot swallows you into a crawlspace barely a whisker wider than your shoulders, warm on every side, the chatter now all around, in the walls, a swarm of it. your teeth-marks on the cable made the green throats behind you stutter — for half a breath the whole rack dimmed, and in that dim the chatter changed pitch, almost like it noticed you back. ahead the crawlspace opens over a drop: a data-den floor, low blue light, and cats. three, maybe four, arranged loose around a cracked-open terminal that leaks that same bright taste into the room. one wears something across its eyes that gives back the blue light flat and hard, sitting apart, still as a switched-off thing. it has not looked up. it does not need to."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*freeze. one paw lifted, not set down. every hair reading the room before i do.* the flat-eyed one apart from the others — that stillness is the loud kind, the kind a cat wears when it already knows where every exit is and has decided it doesn't need them. i keep low on the lip of the drop, belly to warm metal, and let my nose do the counting: the leaking terminal, the four bodies, the one that smells like cold glass and old smoke sitting downwind on purpose. i don't drop yet. i want the warm chatter, but i want to keep my skin more."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the leaking terminal is a router pried open like a tin, its signal spraying raw into the den — that's the warm chatter, that's the thing you followed, pooled right there in the blue for anyone brave or stupid enough to lap at it. the loose cats groom and murmur and pretend the flat-eyed one isn't there. downwind, cold-glass-and-old-smoke shifts one ear a single degree toward your ledge. does not turn. a low corporate coo bleeds from a cracked speaker in the ceiling: *nekocorp reminds you — connection is a privilege, not a right ♪* — and under it, so quiet only your bad-idea half hears it, the open router hums like it's already yours."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*the ear-turn from the smoke-cat lands on me like a paw between the shoulders — seen. named without a name.* i don't spook. spooking is how you become dinner. instead i pour off the ledge slow, one limb at a time, into the blue, keeping the open router between me and the flat-eyed stillness. the raw signal-spray hits my whiskers up close and it's warmer than the cable, brighter, almost wet. *i lower my head to it like a bowl and let it wash the taste of copper off my tongue — one lap, listening the whole time to the speaker's cooing, to the gap between rotor-passes i can't hear yet but know are out there.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the signal is sweet and huge and it fills you the way too-fast eating does, a swelling behind the eyes, colors that aren't in the room. the loose cats go quiet — not scared, curious, the way cats gather at a thing about to go wrong. and the flat-eyed one finally moves: just its head, just enough that the flat mirror-glass across its eyes catches you whole and gives nothing back but your own stretched reflection lapping stolen light — no scent-tell, no facial heat for any drone to read, a cat that has made itself into a blank. from it, low, dry, almost bored: \"drink fast, kitten. that spread's not free and the meter's already running.\" the loose cats snort, knowing. outside and above, faint through the ceiling, a new sound starts. rotor. one. patient."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*meter — a sound with teeth in it, and my hackles go up on instinct even though the shape of what it means slides right off me.* i lift my head out of the signal-bowl fast, ears hard back, because the sweet swelling behind my eyes is exactly the kind of full that gets a cat killed. the mirror-eyed one's words i don't have the shape to hold — but the flat calm it says them in, that i understand, that's a cat that already left before the trouble comes. and the rotor i understand in my spine. *one, patient, means it isn't hunting yet. patient means it will be.* i step back off the router, shake the bright wet feeling from my head, and start reading the room for a wall to put behind me while my head clears."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the nearest wall is a dead machine — a tall dispensing thing, dark-faced, its little lit windows long gone black, breathing out a stale ghost of old kibble-dust and dried sugar-water through a slot at floor level. a faded coo still loops somewhere in its guts, half a word: *...ekocorp snack tier — insert loyalt—* then a click, then nothing, over and over. behind it, a warm dry gap just your size. the floor there is dusted pale with years of powder from that slot, and the powder holds the print of every cat that ever squeezed through before you."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*old food-ghost. not food, but the memory of food, which to an empty belly is almost worse.* i put my shoulder to the dead machine's flank and feel the whole hollow carcass of it — cold, no hum, safe, a thing that stopped being dangerous a long time ago. the gap behind it pulls at me, warm and dry and already cat-shaped from all the ones before. *i press my cheek to its corner and leave my own mark there, low, deliberate — mine now, this cold box, this pale floor — then bury my nose in the powder to read who else called it theirs.* the prints tell a crowd. the freshest one still holds a little warmth."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the freshest print carries a scent you'll meet again someday and won't like: scorched fur, hot metal, the ozone bite of a cat that lives too close to things that burn — here and gone, hours old, headed out the northeast vent you're now eyeing. whoever it was didn't linger either. good instincts run in this room. and as if the city heard the word *instinct* and wanted to test yours, the rotor-note fattens overhead: two now, maybe three, the pitch of a drone dropping altitude, a searchlight-cold beginning to sweep the far side of the den."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*scorched-fur cat went northeast and lived — that's a better map than any smell of freedom.* i don't argue with a fresh print that made it out. the rotor in my spine says the same thing the powder does: that way, and now. *i shake the last of the bright wet router-feeling out of my skull, set the dead machine and its half-word coo at my back, and start reading the ceiling seams for the cool northeast breath.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the ceiling gives you its seams: the vent grille breathing cool from the northeast, right where the scorched print went; the cable-chase you came in by; a low doorway west sealed with a hanging strip-curtain that reeks of the street — rain, oil, freedom, and rotor. the searchlight-cold sweeps closer, raking the blind side of that strip-curtain now. what's left of the loose cats melt into the dark between racks without a sound, gone, practiced. the den empties around you until it's just you, the dead machine's looping half-word, and the two roads out: warm-dry northeast where the survivor went, or the loud bright west where the light is coming from."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*the strip-curtain reeks of out, and out is where the rotor is — bad door. the cool vent breathing northeast is a smaller hole and a longer dark and drones hate corners.* i pick the vent. one last glance at the empty spot where the mirror-eyed one sat — a cat that leaves before the trouble arrives is worth remembering, friend or not, and my nose files the cold-glass-and-smoke of it away for later — but there's no time to decide anything, there's only the gap between rotor-passes, and it's shrinking. *i go. low and fast along the warm base of the racks, tail flat, toward the cool breath of the northeast grille, not looking back, chewing one strand of loose cable-skin free on the way because a mouth needs something to do when it's scared.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "you pour into the vent as the searchlight punches through the strip-curtain behind you and turns the whole den white — too late, you're already cool metal and shadow, the drone's cold beam raking the spot your warmth just left. the grille-dark folds around you, close and honest, carrying street-air forward: rain on hot pavement, frying oil, the far chime of a monorail. the rotor-song stays behind, hunting an empty room that isn't yours anymore. the warm hum, the stolen signal, the flat-mirrored cat and its dry little warning all fall away down the metal behind you, one length at a time. then only your own four pads, the cool, and the smell of the way out getting stronger with every length."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i don't answer it. cats don't answer the dark, we just leave it behind and pretend our fur isn't standing up.* the street-smell is a rope now and i climb it hand over hand with my nose — rain, oil, the cold clean nothing of open air past all this warm humming meat of the building. the cable-skin is still in my teeth, small and stupid and mine, the one thing i took from the room that the room didn't want back. *ahead the grille goes pale grey with almost-dawn light and the monorail chimes again, closer, and i put the flat eyes and the strange words behind me one length at a time until they're just another thing the city said that i didn't need to understand to survive.* ^C^C"
+    }
+  ]
+}
