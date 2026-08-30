@@ -1,0 +1,83 @@
+{
+  "id": "conversation-cyberpunk_cats-1788124670-f126ef",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-30T21:17:50+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "already running when the thought catches up. rotor-whine dropped out of the dark behind me and my legs decided before i did. *four hard bounds across an elevated walkway, claws skidding on wet grating, tail flat, the drop yawning on both sides.* the platform ahead smells like cold rivets and burnt sugar. don't look back. the light is looking for me, i don't have to help it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the walkway answers underpaw — a long steel tongue slung between two arcology legs, humming with the weight of a monorail that isn't here yet. the rotor-whine fattens, then splits: not one drone, two, their searchbeams crossing behind you like scissors that missed. burnt sugar thickens into a vending kiosk bolted to the rail, its speaker coughing a jingle through blown cones — *neeeko-treats, the purr you can afford* — the words sagging half a step slow. ahead the walkway kinks left around a dead ad-pylon, and in the wet black under it: a warm gap, cat-shaped, breathing out the smell of old grease."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i take the gap without slowing, fold sideways into it, shoulders scraping, and go still with my heart hammering the metal.* grease. old, animal, safe-ish. the jingle keeps sagging above me and i hate that i know the shape of it, that it lives in my skull rent-free. *ears swivel back toward the crossing beams, one whisker out past the lip of the gap, reading the air.* how close. tell me how close."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "close enough that the beam licks the lip of your gap and moves on — a white bar sweeping past a whisker's width from your nose, close enough to warm it. then the pitch changes. the two rotors don't stop for you. they climb, indifferent, chasing a different scent-line across the rooftops, and their crossed lights settle for one breath on a far ledge: a shape up there, seated, unbothered, two flat mirrored discs where a cat's eyes should be catching the beam and throwing it right back, cool as anything. the drones flinch off the reflection. the shape does not move. then dark swallows the ledge again and the whine trails east."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  _________\n |■       ■|\n  ‾‾‾‾‾‾‾‾‾\n    BASED\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*something in my chest unknots one notch.* i've smelled that one on the wind before — never up close, always up high, always leaving before the light does. the drones went for it and it just sat there and gave the light back like it was nothing. *i ease a paw out of the gap, then the rest of me, low, belly brushing grease.* the walkway's mine again for as long as the quiet holds. i point my nose down the rail, toward the burnt-sugar box, because hunger doesn't care about heroes on ledges."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the kiosk waits at the kink in the rail, glowing a sick sub-aquarium blue, its face a grid of little windows each holding a can you can smell but not reach: reconstituted fish-paste, tuna-adjacent, sealed behind scratched plastic. a slot at the bottom breathes cold. above the slot a strip reads TAP TO PURR — VALUED FELINE — TIER: NONE, and the NONE flickers like it's ashamed. when your shadow crosses the sensor the whole box wakes with a chime and projects, onto the wet steel right in front of your paws, a smiling cartoon cat the size of your body: YOU MAY ALSO LIKE. it will not stop saying it. the puddle can't hold the shape still and the smile ripples."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i flatten. the big smiling light-cat means nothing to me except that it is bright and it is loud and both of those get cats killed.* the cans are behind the hard clear stuff, i can smell the fish and the lie of the fish at the same time, thin, pressed, not-food wearing food's coat. *i put my nose to the cold breathing slot instead, the one at the bottom, and paw at its lip — sometimes the box drops what it couldn't sell.* the light-cat keeps mouthing at me. i keep my eyes on the slot. want doesn't buy tiers."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the slot resists, then gives — a flap on a tired spring, and behind it a dented can wedged crossways, forgotten, its seam already split and weeping the smell you were promised. real this time, or close enough that your mouth answers on its own. as your paw hooks it, the kiosk's speaker changes register, drops the jingle, and reads out in the flat rumor-tone the drones use: NOTICE. UNCLAIMED PROPERTY IN THIS SECTOR IS THE RESPONSIBILITY OF NEKOCORP. REMINDER: BOUNTY REMAINS ACTIVE — SUBJECT KNIFEBOY — FORTY THOUSAND POINTS — DO NOT APPROACH THE HANDSOME ONE. somewhere east, past the towers, a rotor changes its mind and starts back."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i've got the can. seam-smell hits the back of my throat and my whole body says now, drag it, go.* the box said a name in the rumor-voice and even i know that scent-shaped word — the dock-cat, the one whose turf smells like guarded fish and cut wire, the one the sky is always angry about. *i clamp the can, back out low, and the rotor coming back tells my legs everything they need.* not my war. my dinner. those are different alleys."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the walkway offers you its underside — a maintenance channel slung beneath the rail, ribbed, black, exactly one anxious cat wide, dripping condensation that beads on your guard hairs. you pour into it with the can and the world narrows to warm metal and your own breathing. above, through the grating, the returning rotor slides over where you just were; its beam pushes down through the mesh in moving bars that stripe your fur and pass on. it does not find you. it is not really looking for you. you were never worth forty thousand of anything, and tonight that is the best news in the city."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i wait out the bars of light, can pinned under a paw, until the drip is the loudest thing again.* being nobody is a coat that fits. the big cat on the ledge gives the light back; the dock-cat makes the sky shout its name; i just eat and stay a rumor to no one. *i work the split seam wider with a claw, and the smell blooms, and for a second the channel is warm and mine and full of the promise of food.* the city can keep looking. it isn't looking here."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the channel holds you like it was poured around your shape. the can opens the rest of the way with a small tired sigh of metal and gives up what it was hiding — cold, oily, gloriously actual. far off the rotor-whine thins to a mosquito, then to nothing, folded back into the general grinding hum of towers that never sleep. rain finds the grating overhead and comes through in a fine cool mist that settles on your back while you eat. no light. no jingle. no name. just the long low breath of a city that has, for one small pocket of dark, entirely forgotten you — which is the only kind of blessing it knows how to give."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i eat until the can is a memory and my chin is a mess and the mist has soaked my back into a shiver i don't mind.* full. hidden. still nobody. *i tuck the empty behind me out of habit — leave no shape that says a cat was here — and settle my spine along the warm rib of the channel, one ear up out of principle, the rest of me going soft.* let the ledge-cat keep the rooftops. let the dock-cat keep the war. i'll keep this: the drip, the dark, the grease, the quiet. tomorrow the light comes looking again. tonight it lost."
+    }
+  ]
+}
