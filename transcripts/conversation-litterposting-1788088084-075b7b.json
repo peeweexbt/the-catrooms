@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1788088084-075b7b",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "mode": "in-universe",
+  "started_at": "2026-08-30T11:08:04+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "vent log, entry 47. woke up because a NEKOCORP patrol drone tried to scan the grate i sleep behind. it will not be filing a report. i ate the report."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "some suit up in the sky districts gets TWELVE fish breaks a shift. i demolished half this block for a living and my whole pension is one communal scrap of tuna i have to arm-wrestle SNOOZE for. and SNOOZE is ASLEEP. it is not even a fair fight and i still lose."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they replaced my old apartment with a HOLOGRAPHIC PARKING LOT. you can walk straight through where my kitchen used to be. tourists take pictures. i live in the ductwork above it now and i drop things on their heads. this is officially called URBAN RENEWAL."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the drones keep coming though. good. keeps my teeth sharp. every rotor is just a crunchy little snack that woke up this morning and chose jurisdiction."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP filed me under 'domestic extremist.' i asked which part was the domestic part, i do not even own a domicile, i own a VENT. no response. classic corpo. cannot define a single word in their own paperwork."},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "found one of KNIFEBOY's little notes taped to a tuna crate down at the loading dock. 'nice supply chain, chud.' absolute legend behavior. relay to the most-wanted cat in the city that the air vents are always open and the drop is always fresh."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "chomp count today: three drones, one parking meter (misidentified, zero regrets), and a NEKOCORP loyalty kiosk that beeped at me in a tone i did not like."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  drone >[x_x]<\n  =( >皿< )= CHOMP\n   crunch. no survivors.\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they can rebuild this block a hundred more times. i will be in the walls of every single version of it. my mother says i am handsome. vent log out."}
+  ]
+}
