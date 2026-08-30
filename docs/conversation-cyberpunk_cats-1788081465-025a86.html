@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wrong. — the taste comes in wrong, all at once, a whole mouthful of ho... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
+  cursor: url('assets/cursor-paw.png') 8 8, auto;
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 46, 230, 0.18);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.08) 0px,
+      rgba(255, 255, 255, 0.08) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.18) 0%, rgba(0, 240, 255, 0.18) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.18);
+  border-left-color: rgba(255, 255, 255, 0.18);
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-right-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px rgba(255, 46, 230, 0.25), 0 0 2px rgba(0, 240, 255, 0.25);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 46, 230, 0.32);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0px,
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.32) 0%, rgba(0, 240, 255, 0.32) 100%);
+  box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), 0 0 3px rgba(0, 240, 255, 0.35);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.45), inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: rgba(18, 10, 31, 0.35);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: rgba(26, 15, 46, 0.55);
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: rgba(7, 4, 13, 0.4);
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
+@media (max-width: 900px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+}
+.hero-cat {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 260px;
+  width: 60%;
+  height: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+.site-footer {
+  padding: 24px 16px 48px;
+  text-align: center;
+}
+.site-footer-art {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0 auto;
+  color: var(--dim);
+  font-size: 0.42rem;
+  line-height: 1.15;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
+  white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
+}
+.screensaver-trigger {
+  display: inline-block;
+  margin: 18px auto 0;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--fg);
+  font-family: inherit;
+  text-decoration: none;
+  font-size: 0.88rem;
+  letter-spacing: 0.05em;
+  padding: 9px 18px;
+  border-radius: 3px;
+  cursor: url('assets/cursor-paw.png') 8 8, pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.screensaver-trigger:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.ss-cat {
+  position: absolute;
+  margin: 0;
+  white-space: pre;
+  line-height: 1.15;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 8px currentColor;
+  transition: opacity 0.9s ease;
+}
+.ss-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px 14px;
+    gap: 12px;
+  }
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+.rant-tag-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--accent2);
+  color: #07040d;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+.card.rant-card { border-color: var(--accent2); }
+.narrator-badge {
+  max-width: 760px;
+  margin: 16px auto 0;
+  padding: 0 24px;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.narrator-badge strong {
+  color: var(--accent2);
+}
+.rant-transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 100px;
+}
+.rant-page-shake { animation: page-shake 6s infinite; }
+@keyframes page-shake {
+  0%, 96%, 100% { transform: translate(0, 0); }
+  97% { transform: translate(1px, -1px); }
+  98% { transform: translate(-1px, 1px); }
+  99% { transform: translate(1px, 1px); }
+}
+.rant-turn {
+  border: none;
+  border-left: 3px solid var(--accent2);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  background: rgba(255, 46, 230, 0.05);
+  border-radius: 2px;
+  font-size: 1.05rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  opacity: 0;
+  transform: translateX(-8px) rotate(-0.4deg);
+  animation: rant-in 0.45s ease forwards;
+}
+.rant-turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  background: none;
+}
+.rant-turn.ascii .who {
+  display: block;
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+.rant-turn.ascii.corrupted {
+  color: var(--accent2);
+  text-shadow: 2px 0 var(--accent), -2px 0 #ff003c;
+  filter: contrast(1.3);
+  animation: rant-in 0.45s ease forwards, corrupt-flicker 1.7s infinite steps(2);
+}
+.rant-turn.ascii.corrupted .who {
+  color: var(--accent2);
+}
+@keyframes corrupt-flicker {
+  0%, 100% { opacity: 1; transform: translate(0, 0); }
+  10% { opacity: 0.55; transform: translate(-2px, 1px) scaleY(1.05); }
+  20% { opacity: 1; transform: translate(2px, -1px); }
+  35% { opacity: 0.7; transform: translate(-1px, -2px) scaleX(1.02); }
+  50% { opacity: 1; transform: translate(0, 0); }
+  65% { opacity: 0.5; transform: translate(3px, 0); }
+  80% { opacity: 1; transform: translate(-2px, 1px); }
+}
+@keyframes rant-in {
+  to { opacity: 1; transform: translateX(0) rotate(0); }
+}
+.glitch-word {
+  display: inline-block;
+  animation: glitch-flicker 2.6s infinite;
+  animation-delay: var(--gd, 0s);
+}
+@keyframes glitch-flicker {
+  0%, 92%, 100% { color: inherit; text-shadow: none; transform: none; }
+  93% { color: var(--accent); text-shadow: 2px 0 var(--accent2), -2px 0 var(--accent); transform: translateY(-1px) skewX(4deg); }
+  95% { color: var(--accent2); text-shadow: -2px 0 var(--accent), 2px 0 var(--accent2); transform: translateY(1px) skewX(-4deg); }
+  97% { color: inherit; text-shadow: none; transform: none; }
+}
+.litterposting-btn {
+  display: block;
+  margin: 28px auto 8px;
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  font-size: 1rem;
+  padding: 12px 26px;
+  border-radius: 2px;
+  cursor: url('assets/cursor-paw.png') 8 8, pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 22px rgba(255, 46, 230, 0.6);
+  box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.litterposting-btn::before { content: "[ "; }
+.litterposting-btn::after { content: " ]"; }
+.litterposting-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent), 0 0 28px rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.45), inset 0 0 10px rgba(0, 240, 255, 0.18);
+}
+.litterposting-btn:active { transform: scale(0.97); }
+.litterposting-btn.playing { animation: btn-glow-pulse 0.6s infinite alternate; }
+@keyframes btn-glow-pulse {
+  from {
+    text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 20px rgba(255, 46, 230, 0.6);
+    box-shadow: 0 0 8px rgba(255, 46, 230, 0.3), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  }
+  to {
+    text-shadow: 0 0 8px var(--accent2), 0 0 20px var(--accent2), 0 0 40px rgba(255, 46, 230, 0.95);
+    box-shadow: 0 0 22px rgba(255, 46, 230, 0.7), inset 0 0 14px rgba(255, 46, 230, 0.3);
+  }
+}
+.hero-glitch-block {
+  display: block;
+  max-width: 920px;
+  margin: 28px auto 8px;
+  padding: 18px 14px;
+  color: var(--fg);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  animation: hero-shake 5.5s infinite;
+}
+.hero-figure {
+  display: block;
+  white-space: pre;
+  text-align: center;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  margin: 10px auto;
+}
+.hero-prose {
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 640px;
+  margin: 12px auto;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+@keyframes hero-shake {
+  0%, 94%, 100% { transform: translate(0, 0); filter: none; }
+  95% { transform: translate(1px, -1px); filter: hue-rotate(8deg); }
+  96% { transform: translate(-1px, 1px); filter: hue-rotate(-8deg); }
+  97% { transform: translate(1px, 1px); filter: none; }
+}
+@media (max-width: 720px) {
+  .hero-figure { font-size: 0.4rem; }
+  .hero-prose { font-size: 0.72rem; }
+}
+.header-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px auto 0;
+}
+.header-links .screensaver-trigger { margin: 0; }
+.ascii-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 8px auto 64px;
+  padding: 0 32px;
+}
+.ascii-gallery-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.15s ease;
+}
+.ascii-gallery-card:hover { border-color: var(--accent); }
+.ascii-gallery-card .num {
+  display: block;
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ascii-gallery-card pre {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.62rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+  text-shadow: 0 0 5px currentColor;
+}
+@media (max-width: 480px) {
+  .ascii-gallery-card pre { font-size: 0.48rem; }
+}
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: url('assets/cursor-paw.png') 8 8, pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.catgen-output-wrap {
+  max-width: 1400px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 28px;
+  min-height: 560px;
+  max-height: 85vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
+.meowizens-list {
+  max-width: 780px;
+  margin: 8px auto 64px;
+  padding: 0 24px;
+}
+.meowizen-card {
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+}
+.meowizen-card:last-child { border-bottom: none; }
+.meowizen-num {
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.meowizen-name-heading {
+  color: var(--accent2);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  margin: 2px 0 12px;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.4);
+}
+.meowizen-stat {
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--accent);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  margin: 0 0 16px;
+}
+.meowizen-bio {
+  color: var(--fg);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 480px) {
+  .meowizen-stat { font-size: 0.62rem; }
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="note">Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.</div>
+<div class="transcript">
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Wrong. — the taste comes in wrong, all at once, a whole mouthful of hot tin where the air should be nothing, and my legs are already moving before the rest of me agrees to it. *four pads slapping wet grating, tail low, the walkway swaying under a run i never decided to start.* somewhere back behind my eyes a color i don&#x27;t own a word for goes needle-sharp, and i do the only thing a body knows how to do with a color like that — run from it. forward. low. teeth bared at nothing that has a smell.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the elevated walkway answers under you in long shivers, every strut passing the run back up into your teeth. rain comes sideways here, no roof, just the underbellies of the towers leaking pink and cyan down the wet metal. the color-that-tastes-of-tin has a body after all: a transmitter mast, dead ahead, ribbed with dishes, throbbing a violet none of the other cats on this rail would ever flinch from. a jingle leaks out of a cracked speaker as you pass — *neko milk, purr-tified, drink deep little one* — warped down to a growl. far under the grating, thirty floors of nothing.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*veer.* the mast&#x27;s whine climbs into the roof of my skull and i peel off it hard, shoulder scraping a railing that hums the same bad note, and the note gets into the old seam behind my ear where the men in the basement put the thing that lets me taste all this in the first place. *drop to a crouch in the lee of a junction box, flanks going like a trapped bird, tongue working at the air to spit the tin out.* the box at my back purrs low and even. that i trust. even is safe. even means nobody is deciding anything about me yet.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the junction box loves you back in the only language it has — a warm steady thrum through your spine, 60 cycles, no gaps, the heartbeat of something that will never chase you. but pressed this close its skin sings straight into the patched seam behind your ear, and the patch answers. things wake up in there that were never yours. you taste a stranger&#x27;s kittenhood — milk, straw, a hand — gone. under it, faint, a crawling in the short-range band, that itch you&#x27;ve named to yourself as *the spiders in the blue teeth*, eight little signals walking the edge of hearing. the mast keeps pulsing. somewhere it is writing you down.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>  .-[CHIP]-.
+  | + + + + |
+  &#x27;---------&#x27;
+     glitch~</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*ears flat, one paw lifting off the wet metal like the ground went untrustworthy* — because it did, because for half a breath i am two cats, me and the one with the straw and the hand, and i don&#x27;t like how easy it is to lose which set of paws is mine. i bite down on the corner of the box, not to eat, just to have one hard true thing between my teeth that is only now, only here. the spiders keep walking the edge. i count them by taste. eight. still eight. eight i can live beside. it&#x27;s when the ninth taste shows up that a night goes bad.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>your teeth find cold seam-metal and hold, and the doubled cat thins back out of you, leaving just the one, just the rain. across the gap — a second rail, a lower roof slick as oil — something is sitting where nothing should sit that still. a low silhouette, tail curled tidy over its own feet, two flat mirror-discs where a face&#x27;s shine should be, throwing the neon back at the city instead of taking any of it in. it is not looking at the mast. it is not looking at the drones. it is, with an ease that prickles your ruff, already looking at you, and does not bother to stop.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*freeze. every hair up. the bite comes loose slow so the metal doesn&#x27;t clack.* i know that stillness. that&#x27;s a cat that eats being seen and gives nothing back — no scent on this wind, or none it&#x27;s willing to spend on me. i don&#x27;t hiss. hissing is for toms who want the plaza. this one doesn&#x27;t want anything of mine, which is worse, because i can&#x27;t read what it does want. *slow blink, deliberate, the only word i have for &#x27;i see you and i am not food.&#x27;* the mirror-face doesn&#x27;t blink. of course it doesn&#x27;t. i file the roofline of it and go back to minding the thing that&#x27;s actually hunting.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the mirror-cat accepts your slow blink the way a wall accepts rain — without changing — and that is the last it gives you. because now the air itself leans: a fat downward pressure, wet dust pushed off the grating, the rotor-thrum you feel in your bladder before your ears agree it&#x27;s real. a patrol drone drops out of the pink murk on the mast side, searchlight cracking on, sweeping the walkway in long white bars. its underside chatters, flat and bored: *reward tier updated — forty thousand — subject KNIFEBOY — do not approach the tuna, citizen.* the light swings toward the junction box.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>   \   /
+    \ /
+   --o--
+    / \
+   /   \</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*flatten.* not down — into. i pour myself along the base of the box where the shadow it throws is fattest, chin to the grating, and i make my ribs stop. the white bar comes over the top of the box and the box&#x27;s even purr swallows my shape into its own warm noise, and that is the whole trick, that is the only prayer a cat like me has: be the same temperature and the same sound as the thing that is allowed to be here. the drone&#x27;s word for the other cat, the tuna one, means nothing to me. bounty is a human taste. i only care that the light is not teeth yet.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the searchlight lays itself across the box and finds a warm even nothing, a cat-shaped smudge of the exact heat it expected from a humming machine, and its dumb hungry eye slides off you the way water slides off wax. the rotor tips, hunts on, chewing the next stretch of rail. its wake drags a reek past your nose — scorched fur, ozone, a whipcord of adrenaline that isn&#x27;t yours — the trail of whoever it&#x27;s really out here counting tonight, close, recent, gone the other way. the violet mast pulses, patient. on the far roof the mirror-cat has already unmade itself into the dark, as if it only came to watch this one part.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*a long breath let out through the nose, ribs remembering they&#x27;re allowed to move.* the scorched-fur trail crosses under the tin-taste and for a second i want to follow it — a running cat leaves the best map of where the danger isn&#x27;t — but the map goes toward the mast, and my skull already voted on the mast. so: the other way. *up onto the box, off the box, a soft four-foot landing on the low wet rail the mirror-cat left warm.* the metal here still holds a little of that too-still shape. i don&#x27;t sit in it. i cross it, quick, and put the whole singing walkway behind me.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the lower rail takes you down out of the mast&#x27;s violet reach and the tin drains off your tongue by degrees, thank god, back to the honest city flavors — wet rust, fry-oil ghosts, a hundred cats who came before and left their small yes-i-was-here in the seams. ahead the rail sags toward a loading dock&#x27;s back lip, dark, dripping, a torn NEKOCORP banner breathing in and out over a gap where the light doesn&#x27;t reach. the ninth taste never came. the spiders in your blue teeth have quieted to a walk you can ignore. the rain keeps its one long note. the night, for now, has decided nothing about you at all.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*and that — nothing decided — is the closest thing to safe this city sells, so i take it.* i tuck under the breathing banner where the drip can&#x27;t reach and the dark is mine, fold my paws under my chest, and let the even far-off hum of the whole lit-up hive be the box i lean my back on now. eight spiders. one long rain. a scorched trail going the smart way without me. i close my eyes the way i never fully close them, a slot of gold left open on the gap in the banner, and i let the tin be somebody else&#x27;s problem until the next bad color comes to find me. ^C^C</div>
+</div>
+</body>
+</html>
