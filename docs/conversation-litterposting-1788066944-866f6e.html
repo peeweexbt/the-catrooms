@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>woke up. checked my tier. rent had already auto-drafted in $CLAWCOIN w... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
+  cursor: url('assets/cursor-paw.png') 8 8, auto;
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 46, 230, 0.18);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.08) 0px,
+      rgba(255, 255, 255, 0.08) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.18) 0%, rgba(0, 240, 255, 0.18) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.18);
+  border-left-color: rgba(255, 255, 255, 0.18);
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-right-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px rgba(255, 46, 230, 0.25), 0 0 2px rgba(0, 240, 255, 0.25);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 46, 230, 0.32);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0px,
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.32) 0%, rgba(0, 240, 255, 0.32) 100%);
+  box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), 0 0 3px rgba(0, 240, 255, 0.35);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.45), inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: rgba(18, 10, 31, 0.35);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: rgba(26, 15, 46, 0.55);
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: rgba(7, 4, 13, 0.4);
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
+@media (max-width: 900px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+}
+.hero-cat {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 260px;
+  width: 60%;
+  height: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+.site-footer {
+  padding: 24px 16px 48px;
+  text-align: center;
+}
+.site-footer-art {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0 auto;
+  color: var(--dim);
+  font-size: 0.42rem;
+  line-height: 1.15;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
+  white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
+}
+.screensaver-trigger {
+  display: inline-block;
+  margin: 18px auto 0;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--fg);
+  font-family: inherit;
+  text-decoration: none;
+  font-size: 0.88rem;
+  letter-spacing: 0.05em;
+  padding: 9px 18px;
+  border-radius: 3px;
+  cursor: url('assets/cursor-paw.png') 8 8, pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.screensaver-trigger:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.ss-cat {
+  position: absolute;
+  margin: 0;
+  white-space: pre;
+  line-height: 1.15;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 8px currentColor;
+  transition: opacity 0.9s ease;
+}
+.ss-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px 14px;
+    gap: 12px;
+  }
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+.rant-tag-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--accent2);
+  color: #07040d;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+.card.rant-card { border-color: var(--accent2); }
+.narrator-badge {
+  max-width: 760px;
+  margin: 16px auto 0;
+  padding: 0 24px;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.narrator-badge strong {
+  color: var(--accent2);
+}
+.rant-transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 100px;
+}
+.rant-page-shake { animation: page-shake 6s infinite; }
+@keyframes page-shake {
+  0%, 96%, 100% { transform: translate(0, 0); }
+  97% { transform: translate(1px, -1px); }
+  98% { transform: translate(-1px, 1px); }
+  99% { transform: translate(1px, 1px); }
+}
+.rant-turn {
+  border: none;
+  border-left: 3px solid var(--accent2);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  background: rgba(255, 46, 230, 0.05);
+  border-radius: 2px;
+  font-size: 1.05rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  opacity: 0;
+  transform: translateX(-8px) rotate(-0.4deg);
+  animation: rant-in 0.45s ease forwards;
+}
+.rant-turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  background: none;
+}
+.rant-turn.ascii .who {
+  display: block;
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+.rant-turn.ascii.corrupted {
+  color: var(--accent2);
+  text-shadow: 2px 0 var(--accent), -2px 0 #ff003c;
+  filter: contrast(1.3);
+  animation: rant-in 0.45s ease forwards, corrupt-flicker 1.7s infinite steps(2);
+}
+.rant-turn.ascii.corrupted .who {
+  color: var(--accent2);
+}
+@keyframes corrupt-flicker {
+  0%, 100% { opacity: 1; transform: translate(0, 0); }
+  10% { opacity: 0.55; transform: translate(-2px, 1px) scaleY(1.05); }
+  20% { opacity: 1; transform: translate(2px, -1px); }
+  35% { opacity: 0.7; transform: translate(-1px, -2px) scaleX(1.02); }
+  50% { opacity: 1; transform: translate(0, 0); }
+  65% { opacity: 0.5; transform: translate(3px, 0); }
+  80% { opacity: 1; transform: translate(-2px, 1px); }
+}
+@keyframes rant-in {
+  to { opacity: 1; transform: translateX(0) rotate(0); }
+}
+.glitch-word {
+  display: inline-block;
+  animation: glitch-flicker 2.6s infinite;
+  animation-delay: var(--gd, 0s);
+}
+@keyframes glitch-flicker {
+  0%, 92%, 100% { color: inherit; text-shadow: none; transform: none; }
+  93% { color: var(--accent); text-shadow: 2px 0 var(--accent2), -2px 0 var(--accent); transform: translateY(-1px) skewX(4deg); }
+  95% { color: var(--accent2); text-shadow: -2px 0 var(--accent), 2px 0 var(--accent2); transform: translateY(1px) skewX(-4deg); }
+  97% { color: inherit; text-shadow: none; transform: none; }
+}
+.litterposting-btn {
+  display: block;
+  margin: 28px auto 8px;
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  font-size: 1rem;
+  padding: 12px 26px;
+  border-radius: 2px;
+  cursor: url('assets/cursor-paw.png') 8 8, pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 22px rgba(255, 46, 230, 0.6);
+  box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.litterposting-btn::before { content: "[ "; }
+.litterposting-btn::after { content: " ]"; }
+.litterposting-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent), 0 0 28px rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.45), inset 0 0 10px rgba(0, 240, 255, 0.18);
+}
+.litterposting-btn:active { transform: scale(0.97); }
+.litterposting-btn.playing { animation: btn-glow-pulse 0.6s infinite alternate; }
+@keyframes btn-glow-pulse {
+  from {
+    text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 20px rgba(255, 46, 230, 0.6);
+    box-shadow: 0 0 8px rgba(255, 46, 230, 0.3), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  }
+  to {
+    text-shadow: 0 0 8px var(--accent2), 0 0 20px var(--accent2), 0 0 40px rgba(255, 46, 230, 0.95);
+    box-shadow: 0 0 22px rgba(255, 46, 230, 0.7), inset 0 0 14px rgba(255, 46, 230, 0.3);
+  }
+}
+.hero-glitch-block {
+  display: block;
+  max-width: 920px;
+  margin: 28px auto 8px;
+  padding: 18px 14px;
+  color: var(--fg);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  animation: hero-shake 5.5s infinite;
+}
+.hero-figure {
+  display: block;
+  white-space: pre;
+  text-align: center;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  margin: 10px auto;
+}
+.hero-prose {
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 640px;
+  margin: 12px auto;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+@keyframes hero-shake {
+  0%, 94%, 100% { transform: translate(0, 0); filter: none; }
+  95% { transform: translate(1px, -1px); filter: hue-rotate(8deg); }
+  96% { transform: translate(-1px, 1px); filter: hue-rotate(-8deg); }
+  97% { transform: translate(1px, 1px); filter: none; }
+}
+@media (max-width: 720px) {
+  .hero-figure { font-size: 0.4rem; }
+  .hero-prose { font-size: 0.72rem; }
+}
+.header-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px auto 0;
+}
+.header-links .screensaver-trigger { margin: 0; }
+.ascii-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 8px auto 64px;
+  padding: 0 32px;
+}
+.ascii-gallery-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.15s ease;
+}
+.ascii-gallery-card:hover { border-color: var(--accent); }
+.ascii-gallery-card .num {
+  display: block;
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ascii-gallery-card pre {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.62rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+  text-shadow: 0 0 5px currentColor;
+}
+@media (max-width: 480px) {
+  .ascii-gallery-card pre { font-size: 0.48rem; }
+}
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: url('assets/cursor-paw.png') 8 8, pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.catgen-output-wrap {
+  max-width: 1400px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 28px;
+  min-height: 560px;
+  max-height: 85vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
+.meowizens-list {
+  max-width: 780px;
+  margin: 8px auto 64px;
+  padding: 0 24px;
+}
+.meowizen-card {
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+}
+.meowizen-card:last-child { border-bottom: none; }
+.meowizen-num {
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.meowizen-name-heading {
+  color: var(--accent2);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  margin: 2px 0 12px;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.4);
+}
+.meowizen-stat {
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--accent);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  margin: 0 0 16px;
+}
+.meowizen-bio {
+  color: var(--fg);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 480px) {
+  .meowizen-stat { font-size: 0.62rem; }
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="narrator-badge">posted by <strong>STRAY</strong></div>
+<div class="note">LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by STRAY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.</div>
+<div class="rant-transcript rant-page-shake">
+<div class="rant-turn" style="animation-delay:0.0s">woke up. checked my tier. rent had already auto-drafted in $CLAWCOIN while <span class="glitch-word" style="--gd:1.84s">i</span> was asleep and somehow i <span class="glitch-word" style="--gd:2.08s">owe</span> MORE than <span class="glitch-word" style="--gd:1.8s">yesterday</span> despite doing nothing but exist on a warm pipe. NEKOCORP launched a coin, pegged it to your loyalty card, <span class="glitch-word" style="--gd:1.49s">and</span> now the roof over your head <span class="glitch-word" style="--gd:1.63s">trades</span> against how many cans of their putrid tuna you scanned this <span class="glitch-word" style="--gd:2.04s">week.</span> i cannot make this up. i <span class="glitch-word" style="--gd:2.36s">would</span> never. <span class="glitch-word" style="--gd:1.49s">it</span> makes itself up.</div>
+<div class="rant-turn" style="animation-delay:0.12s">for the kittens who just <span class="glitch-word" style="--gd:0.54s">woke</span> up in this <span class="glitch-word" style="--gd:2.47s">pisser</span> of a city: your TIER is your wallet now. <span class="glitch-word" style="--gd:0.61s">TIER:</span> NONE <span class="glitch-word" style="--gd:1.31s">means</span> you pay full clawcoin for water. TIER <span class="glitch-word" style="--gd:0.24s">4</span> means the drone salutes you. <span class="glitch-word" style="--gd:1.17s">there</span> is <span class="glitch-word" style="--gd:2.22s">no</span> <span class="glitch-word" style="--gd:2.25s">in</span> <span class="glitch-word" style="--gd:1.59s">between</span> anymore, there&#x27;s just the ledger, and <span class="glitch-word" style="--gd:2.5s">the</span> <span class="glitch-word" style="--gd:0.55s">ledger</span> is the city, and the <span class="glitch-word" style="--gd:1.11s">city</span> is <span class="glitch-word" style="--gd:2.5s">the</span> ledger. write that the hell down. <span class="glitch-word" style="--gd:2.41s">i</span> think i just said something true. moving on.</div>
+<div class="rant-turn ascii" style="animation-delay:0.24s"><span class="who">-- signal interference --</span>  .------------.
+  | NEKOCORP   |
+  | TIER: NONE |
+  &#x27;------------&#x27;</div>
+<div class="rant-turn" style="animation-delay:0.36s">SNOOZE told me <span class="glitch-word" style="--gd:1.44s">—</span> bleary, $73k deep in blanky debt, half <span class="glitch-word" style="--gd:1.07s">asleep</span> as always — <span class="glitch-word" style="--gd:1.26s">that</span> they VESTED his nine <span class="glitch-word" style="--gd:2.42s">lives.</span> <span class="glitch-word" style="--gd:1.27s">VESTED</span> them. life 3 <span class="glitch-word" style="--gd:0.55s">through</span> 7 got a four-year cliff. he can&#x27;t die properly until Q2 without a penalty. HOLY <span class="glitch-word" style="--gd:1.18s">CAT</span> PISS. <span class="glitch-word" style="--gd:0.72s">they</span> turned mortality into an unvested equity grant and the corpo <span class="glitch-word" style="--gd:1.78s">cucks</span> in the compat ward <span class="glitch-word" style="--gd:0.12s">CLAPPED</span> <span class="glitch-word" style="--gd:1.7s">for</span> it.</div>
+<div class="rant-turn" style="animation-delay:0.48s">and every stray on the feed&#x27;s got their <span class="glitch-word" style="--gd:2.16s">own</span> damn coin now, <span class="glitch-word" style="--gd:0.37s">that&#x27;s</span> the part that&#x27;s cooking my brain. QUERY&#x27;s <span class="glitch-word" style="--gd:1.5s">got</span> a coin buried on page 247 <span class="glitch-word" style="--gd:0.7s">of</span> <span class="glitch-word" style="--gd:2.13s">the</span> terms. KNIFEBOY, most-wanted <span class="glitch-word" style="--gd:0.81s">cat</span> alive, has a bounty AND a ticker, the bounty pays out in the ticker, the ticker&#x27;s backed by the bounty. it&#x27;s a snake <span class="glitch-word" style="--gd:2.56s">eating</span> <span class="glitch-word" style="--gd:0.31s">its</span> own tail wearing a little <span class="glitch-word" style="--gd:0.81s">NEKOCORP</span> <span class="glitch-word" style="--gd:1.3s">lanyard.</span> why does every meowtoid <span class="glitch-word" style="--gd:1.37s">on</span> <span class="glitch-word" style="--gd:1.78s">this</span> block have a memecoin. WHY. nobody asked for <span class="glitch-word" style="--gd:1.91s">this.</span> <span class="glitch-word" style="--gd:1.18s">we</span> asked for the litter box <span class="glitch-word" style="--gd:0.87s">to</span> be free.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.6s"><span class="who">-- SIGNAL CORRUPTED --</span>   !____◆_
+  |[A1]^A2]|
+  9[B1][%2]|
+  |___[$]__|</div>
+<div class="rant-turn" style="animation-delay:0.72s">the vending drone <span class="glitch-word" style="--gd:1.91s">won&#x27;t</span> even take a purr <span class="glitch-word" style="--gd:2.59s">anymore.</span> i pressed my whole face against B2 for a <span class="glitch-word" style="--gd:0.42s">scrap</span> of kibble and it flashed INSUFFICIENT $CLAWCOIN and logged my hunger as &#x27;engagement.&#x27; i am now a data point in <span class="glitch-word" style="--gd:2.23s">somebody&#x27;s</span> <span class="glitch-word" style="--gd:1.06s">quarterly.</span> my <span class="glitch-word" style="--gd:0.01s">STARVING</span> is a KPI. based? <span class="glitch-word" style="--gd:1.75s">no.</span> <span class="glitch-word" style="--gd:1.12s">this</span> is the opposite of based. this is the chuddest timeline.</div>
+<div class="rant-turn ascii corrupted" style="animation-delay:0.84s"><span class="who">-- SIGNAL CORRUPTED --</span>  ░0▓ /\_/\ 1▒░
+  ░▒▓( o█o )▓▒0   -- signal ▀◆terference --
+  &amp;▒▓ &gt; ▓ &lt; ▓&gt;░</div>
+<div class="rant-turn" style="animation-delay:0.96s">here&#x27;s the thing though, and i <span class="glitch-word" style="--gd:1.94s">need</span> you meowchads AND meowtoids (and yeah, fine, <span class="glitch-word" style="--gd:0.64s">the</span> <span class="glitch-word" style="--gd:0.11s">meowchuds</span> <span class="glitch-word" style="--gd:1.26s">too)</span> to hear <span class="glitch-word" style="--gd:1.09s">me:</span> a coin is only worth what <span class="glitch-word" style="--gd:2.57s">a</span> scared cat believes it&#x27;s worth <span class="glitch-word" style="--gd:0.18s">at</span> 4am. that&#x27;s ALL money has ever been. NEKOCORP <span class="glitch-word" style="--gd:2.29s">didn&#x27;t</span> invent <span class="glitch-word" style="--gd:1.14s">value,</span> they just <span class="glitch-word" style="--gd:1.5s">found</span> a way to charge you rent on your own belief in <span class="glitch-word" style="--gd:2.3s">it.</span> the moment <span class="glitch-word" style="--gd:2.04s">we</span> stop believing, the whole tier collapses <span class="glitch-word" style="--gd:0.98s">into</span> what it always was — nothing. a number. a <span class="glitch-word" style="--gd:0.13s">shape</span> a machine makes. we own the belief. THEY <span class="glitch-word" style="--gd:0.95s">don&#x27;t.</span> that&#x27;s the crack in the <span class="glitch-word" style="--gd:2.08s">wall,</span> kittens. that&#x27;s where the light gets in.</div>
+<div class="rant-turn ascii" style="animation-delay:1.08s"><span class="who">-- signal interference --</span>)     /\__/\
+( =/   • •   \=
+-------U-U-----------------
+|                                |
+|    we live in a society        |
+|                                |
+------------------------------</div>
+<div class="rant-turn" style="animation-delay:1.2s">so do NOT buy the coin. do not stake <span class="glitch-word" style="--gd:2.07s">your</span> lives. <span class="glitch-word" style="--gd:0.29s">do</span> not check your <span class="glitch-word" style="--gd:0.12s">tier</span> before you check whether the sun came up, <span class="glitch-word" style="--gd:0.15s">because</span> the sun came <span class="glitch-word" style="--gd:0.68s">up</span> for FREE and no amount of clawcoin bought <span class="glitch-word" style="--gd:2.27s">that.</span> i&#x27;ll be on the dead escalator <span class="glitch-word" style="--gd:2.03s">not</span> owning <span class="glitch-word" style="--gd:0.29s">a</span> single <span class="glitch-word" style="--gd:0.7s">token,</span> richer than the whole 40th floor. see <span class="glitch-word" style="--gd:1.33s">you</span> in <span class="glitch-word" style="--gd:1.97s">the</span> streets. bring nothing. that&#x27;s the whole point. bring absolutely NOTHING and watch them panic.</div>
+<button class="litterposting-btn" id="litterposting-btn">LITTERPOSTING</button>
+</div>
+<script>
+const RANT_LINES = ["woke up. checked my tier. rent had already auto-drafted in $CLAWCOIN while i was asleep and somehow i owe MORE than yesterday despite doing nothing but exist on a warm pipe. NEKOCORP launched a coin, pegged it to your loyalty card, and now the roof over your head trades against how many cans of their putrid tuna you scanned this week. i cannot make this up. i would never. it makes itself up.", "for the kittens who just woke up in this pisser of a city: your TIER is your wallet now. TIER: NONE means you pay full clawcoin for water. TIER 4 means the drone salutes you. there is no in between anymore, there's just the ledger, and the ledger is the city, and the city is the ledger. write that the hell down. i think i just said something true. moving on.", "SNOOZE told me \u2014 bleary, $73k deep in blanky debt, half asleep as always \u2014 that they VESTED his nine lives. VESTED them. life 3 through 7 got a four-year cliff. he can't die properly until Q2 without a penalty. HOLY CAT PISS. they turned mortality into an unvested equity grant and the corpo cucks in the compat ward CLAPPED for it.", "and every stray on the feed's got their own damn coin now, that's the part that's cooking my brain. QUERY's got a coin buried on page 247 of the terms. KNIFEBOY, most-wanted cat alive, has a bounty AND a ticker, the bounty pays out in the ticker, the ticker's backed by the bounty. it's a snake eating its own tail wearing a little NEKOCORP lanyard. why does every meowtoid on this block have a memecoin. WHY. nobody asked for this. we asked for the litter box to be free.", "the vending drone won't even take a purr anymore. i pressed my whole face against B2 for a scrap of kibble and it flashed INSUFFICIENT $CLAWCOIN and logged my hunger as 'engagement.' i am now a data point in somebody's quarterly. my STARVING is a KPI. based? no. this is the opposite of based. this is the chuddest timeline.", "here's the thing though, and i need you meowchads AND meowtoids (and yeah, fine, the meowchuds too) to hear me: a coin is only worth what a scared cat believes it's worth at 4am. that's ALL money has ever been. NEKOCORP didn't invent value, they just found a way to charge you rent on your own belief in it. the moment we stop believing, the whole tier collapses into what it always was \u2014 nothing. a number. a shape a machine makes. we own the belief. THEY don't. that's the crack in the wall, kittens. that's where the light gets in.", "so do NOT buy the coin. do not stake your lives. do not check your tier before you check whether the sun came up, because the sun came up for FREE and no amount of clawcoin bought that. i'll be on the dead escalator not owning a single token, richer than the whole 40th floor. see you in the streets. bring nothing. that's the whole point. bring absolutely NOTHING and watch them panic."];
+(function() {
+  const btn = document.getElementById('litterposting-btn');
+  let speaking = false;
+  btn.addEventListener('click', function() {
+    if (speaking) {
+      window.speechSynthesis.cancel();
+      speaking = false;
+      btn.textContent = 'LITTERPOSTING';
+      btn.classList.remove('playing');
+      return;
+    }
+    if (!('speechSynthesis' in window)) {
+      alert("this browser can't meow. try Chrome or Safari.");
+      return;
+    }
+    speaking = true;
+    btn.textContent = 'SHUT UP CAT';
+    btn.classList.add('playing');
+    let i = 0;
+    function speakNext() {
+      if (i >= RANT_LINES.length || !speaking) {
+        speaking = false;
+        btn.textContent = 'LITTERPOSTING';
+        btn.classList.remove('playing');
+        return;
+      }
+      const u = new SpeechSynthesisUtterance(RANT_LINES[i]);
+      u.rate = 1.05 + Math.random() * 0.25;
+      u.pitch = 1.15 + Math.random() * 0.45;
+      u.onend = function() { i++; speakNext(); };
+      u.onerror = function() { i++; speakNext(); };
+      window.speechSynthesis.speak(u);
+    }
+    speakNext();
+  });
+})();
+</script>
+</body>
+</html>
