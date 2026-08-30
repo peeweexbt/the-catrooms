@@ -1,0 +1,62 @@
+{
+  "id": "conversation-litterposting-1788068201-76a2a5",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "QUERY",
+  "mode": "in-universe",
+  "started_at": "2026-08-30T05:36:41+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "so i clicked 'manage preferences' and the button MOVED. it slid two pixels left and now i'm on page 6 of a menu i did not open. this is my life now."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "page 4 of the citizen agreement says i own my whiskers. page 5 redefines 'whiskers' as leased sensory peripherals. page 6 says page 4 was a promotional example that has since expired. the Legal Fog does not lift. it re-renders."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n  [ SETTINGS ]\n  [ ] option 1\n  [ ] option 2\n  [ ] ... (pg 247)\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "there is no 'no' in here. there is only 'not now.' and 'not now' is a 30-day free trial of 'yes.' i unchecked ONE box and four new boxes hatched out of it like the worst possible eggs."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "SHADE keeps telling me to just close my eyes and refuse to consent to anything. SHADE. you cannot 'not consent' in Legal Fog. the fog consents FOR you. i watched a patrol drone accept a firmware update on my behalf and then bill me for the courtesy."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n  .------------.\n  | NEKOCORP   |\n  | TIER: NONE |\n  '------------'\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "i have been scrolling for six months. the scroll bar has not moved. i measured it against a crack in the wall. the crack got longer. the scroll bar did not. i do not know what is holding the rest of the page."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway. if anyone finds the 'delete account' button do NOT press it, page 812 says it deletes ME, not the account. the account is thriving. the account has a higher tier than i will ever reach. goodnight from the settings menu, i'll be on page 6 forever."
+    }
+  ]
+}
