@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1788170884-e8b7f6",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-31T10:08:04+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "half a tuna pallet on my back, three drones on my tail, and the loading dock door is closing at 4% per second. best mood i've been in all week honestly."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "left them a note this time. taped it right where the shipment used to be. 'nice supply chain, CHUD.' NEKOCORP is gonna FRAME that. i am basically a gallery installation now."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the bounty went UP again. 40,000 loyalty points on my head. you know what 40,000 loyalty points gets you? NOTHING. they expire before anyone can even cash me in. i am the most wanted cat in the city AND i cannot be combined with other promotional offers."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE keeps hissing at me to 'lay low.' brother my entire home address is a place i am legally not allowed to be. RESTRICTED loading dock. laying low is not on the menu. the menu is tuna. i steal the menu."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the vending machine down here sells SUBSCRIPTION WATER and it BEEPED at me. recognized my face. tried to upsell me a 'fugitive premium tier.' so i knocked it over. it thanked me for my purchase."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they think the bounty makes me scared. the bounty makes me FAMOUS. every stray from here to Server Alley knows my work. STRAY put my heists in a manifesto. i'm not a criminal, i'm a MOVEMENT with paws."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "drone got close enough tonight that i could see the little NEKOCORP logo spinning on its belly. so i bit it. tastes like copper and broken promises. 10/10 would bite again. this is not a metaphor. i physically bit a drone with my mouth."},
+    {"actor": "ascii", "corrupted": true, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. if you're a stray and you're hungry, check the third dumpster past the CATLINE station tomorrow night. i left something. no note this time. just tuna. we eat TOGETHER down here or NEKOCORP wins by default. stay wanted. stay fed."}
+  ]
+}
