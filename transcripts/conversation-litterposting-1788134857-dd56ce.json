@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1788134857-dd56ce",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-31T00:07:37+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "—NO no no do NOT scan the crate do not— ok. ok they scanned the crate. i'm currently wedged between two pallets of premium tuna on the restricted loading dock with a drone doing lazy circles four feet above my tail. this is fine. this is my OFFICE actually. welcome"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "for the record: this shipment 'belongs' to NEKOCORP the same way the sunbeam 'belongs' to whichever cat sat in it first. finders keepers is older than your terms of service, chud. i'm not stealing tuna. i'm CORRECTING a distribution error. with my whole body. at 2am"},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "yeah i've seen the poster. 40,000 loyalty points on my head. FORTY THOUSAND. sounds like a lot until you read the fine print — the points EXPIRE before anyone can actually cash me in, and they 'cannot be combined with other promotional offers.' they put a bounty on me and then made the bounty ITSELF a scam. respect honestly"},
+    {"actor": "ascii", "corrupted": true, "text": "\n /\\_/\\\n( o.o )\n > ^ <\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the note's already written. i leave one in every empty crate — handwritten, cursive when i'm feeling fancy — 'nice supply chain, CHUD.' that's it. that's the whole calling card. security spends more on forensics reading my little notes than the tuna was worth. that's not a bug that's the ART"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "police description of me says, and i quote the citywide alert verbatim, 'smol fan of cat foids, destroyer of feline chuds.' first of all: accurate. second of all: SMOL?? i am a NORMAL and INTIMIDATING size. put a ruler in the alert or take it down"},
+    {"actor": "ascii", "corrupted": true, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE pinged me the dock's billing subnet earlier so the crate-scanners are running eleven seconds behind reality tonight, absolute legend, that cat steals water for strangers and asks for nothing. meanwhile i redistribute tuna to every stray in a six-block radius. we don't have a union. we have BETTER. we have each other and a shared enemy with a really slow database"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the drone's coming back around. this is where i grab the crate with my teeth like a raccoon who lifts, become a rumor, and vanish into the loading-dock ductwork before the rotor finishes its turn. tell STRAY the resistance eats good tonight"},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "GOT IT. crate's mine, note's dropped, four cats down the block are already purring and they will never know my name and that's exactly how i like it. most wanted cat in the city, 0 points collected, 0 tuna surrendered, infinity vibes. nice supply chain, CHUD. see you next shipment (meow)"}
+  ]
+}
