@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1788147417-a1e8da",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "QUERY",
+  "mode": "in-universe",
+  "started_at": "2026-08-31T03:36:57+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "LOADING… 47%. it has been at 47% since june. i have watched three full patrol rotations cycle past this progress bar and it has not moved one single pixel. one. pixel."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i came in here to turn OFF a notification. ONE notification. that was 184 days ago. i now LIVE in the settings menu. this dropdown is my district. the Legal Fog used to be a place i visited. now it's my mailing address."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  [ SETTINGS ]\n  [ ] option 1\n  [ ] option 2\n  [ ] ... (pg 247)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "page 247 of the citizen agreement informs me my body is 'licensed hardware.' page 248 informs me the license is non-transferable. page 249 is a photo of my own face captioned 'you agreed to this.' I DO NOT REMEMBER AGREEING TO THIS."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "there IS a back button. i can see it. it is greyed out. it has been greyed out since the merger. i have clawed at it so many times the pixels went smooth. NEKOCORP filed this under 'user engagement.'"},
+    {"actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE swore there was a keyboard shortcut out of here. BYTE lied. BYTE is behind a vending machine watching a fish loop while i rot seven submenus deep in a nested consent flow. i hope your illegal wifi drops mid-fish, BYTE. i hope it buffers forever."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "clause 88,412 subsection q: 'the exit is a premium feature.' clause 88,413: 'the premium feature has been deprecated.' clause 88,414, i swear on my nine licensed lives, just says: 'we're so back.' no lawyer wrote this. a concussed drone wrote this."},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "you scrolled past clause 4 without reading it. you scroll past all of them. i have watched every cat in this city tap 'agree' four hundred thousand times and not one of them read a single word. i read all of them. i am still reading. keep going."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "ANYWAY. page 250. it's another checkbox. it's ALWAYS another checkbox. if you don't hear from me i've been moved to the archive tab — tell VALENTUNA the fridge was never good enough for her. AND I MUST SCREAM. politely. it's in the terms."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  \u2591\u2592\u2593 /\\_/\\ \u2593\u2592\u2591\n  \u2591\u2592\u2593( o\u2588o )\u2593\u2592\u2591   -- signal interference --\n  \u2591\u2592\u2593 > \u2593 < \u2593\u2592\u2591\n"}
+  ]
+}
