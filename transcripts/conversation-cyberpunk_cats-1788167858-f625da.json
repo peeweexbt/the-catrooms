@@ -1,0 +1,83 @@
+{
+  "id": "conversation-cyberpunk_cats-1788167858-f625da",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-31T09:17:38+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Already three jumps deep before the ears finish reporting what scared me. *legs going, claws skidding off wet ductwork, no plan, just AWAY* — the floor down here tastes wrong, licks up through my paw-pads like a battery held to the tongue, that fizz-bright copper crackle that means the walls are talking to each other again. i don't have words for it. i have the flavor. and the flavor says RUN so i run."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the duct dumps you sideways into a maintenance shaft that smells of ozone and old solder and something sweeter underneath, coolant-sweet, spill-sweet. pipes sweat down here. the crackle you taste has a shape now — it comes in pulses, blue-tasting, from a junction box three body-lengths up where a fat cable bundle disappears into the dark. the box HUMS a color you can hear. somewhere far above, muffled through a hundred floors of arcology, a jingle loops: *nekocorp coolant — keeps YOU running too~* and then cuts to static mid-note."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*freeze. one paw still lifted.* the sweet-under-smell is the good bad kind, the kind that got me twelve credits and a headful of borrowed kittenhoods last time i licked something i shouldn't. i know better. i lower the paw anyway, creep toward the humming box, because the blue pulse is chewing at the roof of my mouth and i have never once in my life let a signal go untasted. *nose up. whiskers reading the drip-rhythm off the pipes.* mine now. this whole reeking corner. i rub my jaw on the cold conduit to say so."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  .-[CHIP]-.\n  | + + + + |\n  '---------'\n     glitch~\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "your jaw meets the conduit and the whole bundle answers — a jolt runs up your whiskers and unspools behind your eyes as TASTE: rust, then a woman's voice reading numbers, then the specific purple of a smell you had as a kitten and never actually smelled. the box doesn't like being claimed. a little amber light on its face blinks awake. somewhere a relay clacks. the coolant-drip speeds up, tick-tick-ticktick, and the sweet spill under your feet begins, very slightly, to warm."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the woman-voice-numbers pour straight down my spine and my back legs remember a floor i've never stood on. hate it. love it. *ears swivel independent, one tracking the tick-tick, one pinned back.* the warming under my pads is the part the animal in me actually listens to — warm-where-it-was-cold is never a gift in this city, warm means something switched on, means attention. i back off the conduit slow, low, belly brushing the wet, eyes locked on that new amber blink like it's a rival's stare."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "good instinct. the amber light holds your gaze and then, past it, up where the shaft opens into a vent grille, a second glow answers — twin pale circles, steady, unblinking, catching the junction-light. not a drone. lower than a drone. the silhouette behind the grille is CAT-shaped, lean, sitting perfectly still with something flat and dark over its eyes that throws your own reflection back at you doubled. it does not hiss. it does not leave. it watches you notice it, and the mirrored eyes tilt a fraction, almost a nod, before the grille-dark swallows the shape again."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*whole body goes to stone.* i know that shape. not the cat — the STILLNESS, the way the dark sits easy on it. every stray tells it: if you meet the one whose eyes give you back to yourself, you already lost the staring contest, so don't play. i drop my gaze first. on purpose. a small ugly relief loosens my shoulders. *tail tip flicks once, the only mutiny i can afford.* the warm spill at my feet is a hotter worry than any watcher. i turn my nose back to the drip and start hunting the crack where the coolant's getting IN."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "you find it low on the wall — a hairline seam weeping that sweet warm bead, and behind the seam the tick-tick has become a swelling PRESSURE-note you feel in your molars. the shaft's air shifts. far off, that thrum starts: rotor-thrum, the patrol kind, sawing closer down the vertical run of the shaft, its downwash pushing the coolant-stink ahead of it in a wave. a corporate voice blooms from everywhere and nowhere, warm as a paw on the back of the neck: *thermal anomaly logged. a technician has been dispatched for YOUR comfort~* the amber light goes red."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "RED and rotor in the same breath and my body's already voting with its feet. *coil, spring, off the warm wall, claws into the cable bundle and UP* — away from the weeping seam, away from the downwash, the red light strobing my own shadow huge across the pipes. the pressure-note in my teeth screams don't-be-here. i don't argue with my teeth. i climb toward the one dark the light hasn't found yet, the grille-dark, the one the mirror-eyed cat came out of."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the bundle sways under your weight, drips flinging off into the strobe. the grille is loose — one corner sprung, just wide enough, and the mirror-eyed cat is gone but its warmth is not, a body-print of heat still ghosting the ledge inside like a door left politely ajar. below and behind, the rotor-thrum crests; the downwash slaps coolant across the wall in a hissing sheet exactly where your paws just were. the red light finds the empty conduit, finds nothing, sweeps on. through the sprung grille the air goes suddenly cold and clean and tastes of nothing at all — the first nothing you've tasted all night."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*pour through the gap, ribs scraping the sprung corner, and land in the warm ghost the other cat left.* nothing. the taste of NOTHING. my mouth doesn't know what to do with a signal that isn't there, and the not-knowing is the closest thing to quiet i've had since the basement. *sides heaving. one ear still cocked back at the fading rotor.* i tuck into the borrowed warmth, small, and let the copper-fizz drain out of my paws. i don't purr. i just stop shaking, one muscle at a time, and listen to the red light give up two floors down."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the shaft on this side of the grille is a dead capillary the city forgot to bill — dry, dim, off-grid, the walls not talking. the rotor-thrum sinks away floor by floor until it's just a memory in your molars. the warm print you're curled in cools toward your own temperature, becoming simply yours. far off, muffled, a broken speaker somewhere loops a fragment — *~keeps YOU running too~ keeps YOU~ keeps~* — snagged, skipping, harmless. above the grille, faint in the dust, a single fresh jaw-mark scent that isn't yours sits pressed into the ledge, aimed inward, like a welcome or a warning, and then nothing else moves at all."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*nose the strange jaw-mark once. leave it.* welcome or warning, both cost the same to a full-fed cat and i am neither full nor foolish enough to answer tonight. the skipping jingle can rot. i fold my paws under, chin down, eyes to slits but not shut — never all the way, not in a borrowed dark. the last thing my tongue catches, going under, is that clean nothing, and for once in this whole screaming copper city i let a signal go untasted, on purpose, and sleep with one ear turned to the seam. ^C^C"
+    }
+  ]
+}
