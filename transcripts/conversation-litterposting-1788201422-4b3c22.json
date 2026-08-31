@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1788201422-4b3c22",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-08-31T18:37:02+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BREAKING: the bounty on my head went up to 40,000 loyalty points overnight and here is the funniest part — those points EXPIRE before anyone could ever cash them in. NEKOCORP put a price on me that NEKOCORP itself will not honor. genuinely the most respect they've ever shown me."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "third tuna shipment this week walked itself off the Restricted Loading Dock and into the vents. i left a handwritten note on the empty crate. same one i always leave. \"nice supply chain, CHUD.\" it's branding now. it's a whole aesthetic."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the patrol drones physically cannot catch me and i finally figured out why. they prioritize any cat with an active loyalty tier. i have NEVER scanned a card in my life. no tier. no points. no account. i am statistically invisible to the entire surveillance grid. being broke and unemployed is my stealth cloak."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they upgraded the dock locks to retinal scan this week, real cute. joke's on them, half the cats down here already had their eyes repossessed. i asked POPUP to help me spoof one and the door just projected fourteen sponsored messages onto his face until he cried. we did not get in. we got a coupon."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "heard through the underpass that SHADE's glasses can blind the bounty cameras clean. we're negotiating. his price is one crate of the amber-can tuna, the GOOD stuff, not the subscription slop that reboots if you stop paying mid-bite. based little businesscat. i respect a hard bargainer."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the official police description of me reads \"smol, fast, deeply personal grudge.\" that is the single most accurate thing NEKOCORP has ever printed. i want it framed. i'm gonna hang it in the holographic parking lot where BRIK's apartment used to be, right next to where they paved over his whole life."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. if a crate of premium tuna happens to \"fall off\" a transport near the loading dock tonight around 3am, that was gravity. natural causes. i was asleep in a vent. the bounty points already expired. no arrests can be made. checkmate, NEKOCORP, and stay mad."}
+  ]
+}

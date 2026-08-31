@@ -1,0 +1,83 @@
+{
+  "id": "conversation-cyberpunk_cats-1788203836-37cee7",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-08-31T19:17:16+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "A hum. before anything else, a hum — not the rain, not the rotors, a low copper drone coming up through the floor and into the pads of my feet, the good kind, the warm-box-full-of-blinking kind. *ears swivel, lock. i follow the vibration and not the light.* somewhere behind this wall the current is singing to itself and my back teeth already ache to close on something rubbery and warm."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the wall is not a wall, it is a skin. behind it: a rack of squat black boxes stacked to the ceiling, each one breathing out heat and that steady sixty-cycle purr you feel in your molars. green lights climb, amber lights answer. the floor is warm here. warmer than anywhere. a bundle of cables sags out of a chewed conduit at nose-height — fat ones, thin ones, one wrapped in insulation soft and pale as a rat's belly. it smells of ozone and old dust and, faintly, of another cat who has gnawed here before and left."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i put my mouth on the pale one.* not to eat. to know. the rubber gives between my fangs with a squeak that runs straight up into the hum and changes it — the pitch dips, one green light stutters to amber and back. mine. i did that. *i bite again, slower, tasting the warmth in the wire, the little trembling life of it.* the other cat's mark i step on top of, deliberate, one paw pressed flat and claiming."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rack does not like being known. deep in the stack a fan spins up angry, wind kicking dust into a little cyclone at your whiskers, and a speaker somewhere overhead coughs to life mid-jingle — \"—koCorp premium bandwidth, because connection is a privile—\" then dies in a smear of static. the amber light you touched goes red. not a warning you understand, but your spine understands it: a small hot word for danger, printed in a color. under the red glow the chewed insulation shows teeth-marks older than yours, deep and neat and patient."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*red means go, but go how — up or out.* the fan-wind flattens my ears. i back off the cables one step, low, belly brushing the warm floor, and let the singing settle behind me without turning my back on it. the old teeth-marks bother me more than the light does. a bigger jaw. a calmer one. *nose working the air for where that calm cat went.* my ears keep half-turned to the hum, greedy, unwilling to leave the warm thing even while the rest of me knows better."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the calm scent threads out low along the baseboard, away from the rack, toward a gap where the wall-skin has peeled and the rain-cold leaks in. follow it with your nose and it opens onto a ledge — wet iron, three stories of nothing below, the street a river of reflected neon. and across the gap, on the far rooftop, a shape: a cat sitting motionless in the rain, unbothered by it, two flat mirror-discs where its eyes should be catching the sign-glow and throwing it back at you, twinned and cold. it is not hunting. it is just watching, the way that dark glasses watch. it does not move when you see it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i freeze the way you freeze at something too still to be prey.* the mirror-eyes give nothing back but my own two points of light, small, twinned, mine but not mine. i do not arch. i do not run. i sit — because it sits, because whatever it is has already decided i am not worth the standing. *tail curls flat over my paws.* the rain finds the gap in my fur and i let it. across the emptiness we are two shapes agreeing not to be a fight tonight."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the watching cat blinks — once, slow, deliberate, mirror-discs winking dark then bright — and that is the whole conversation. then the night decides for both of you: from the river of neon below a new sound climbs, a rising insect whine, and a searchlight fingers up the wet iron toward the ledge. rotor-thrum. a drone lifting on its patrol arc, belly-light sweeping, its speaker chanting soft and bored: \"citizens are reminded. loyalty is warmth. warmth is metered.\" the far rooftop is already empty. the mirror-cat was never there, or was, and simply isn't now."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*the light comes and i am already not where it is.* flat behind the peeled wall-skin, back in the warmth, the angry rack now a friend hiding me in its heat-shadow and its noise. the drone's whine and the rack's hum beat against each other and in the space between the beats i am invisible. *whiskers pinned, breath small.* the searchlight licks the ledge where i sat, finds wet iron, finds nothing, moves on. i wait until the insect-sound falls back down into the street."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the patrol arc carries the drone away south, its chant thinning — \"warmth is metered... metered... met—\" — until only the rack is left singing. the red light has cooled back to amber on its own; whatever you frightened has forgiven you, or forgotten. the chewed cable hangs there still, warm, pale, faintly sweet. and low under the fan-noise, from the same gap the cold came through, drifts a thread of scent that is neither yours nor the calm watcher's: scorched fur, a burnt-wire tang, something that lives in vents and bites the things that hunt it. it is not close. but it passed through here, and not long ago."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i file the burnt smell without chasing it.* a cat who tastes of scorched wire is a cat with opinions about drones, and tonight i have no quarrel and no hunger big enough to make one. the rack is warm. the hum is mine again, amber and steady. *i turn three times in the heat-shadow, tamp the warmth down into a shape that fits me, and let my jaw rest against the soft pale cable — not biting now, just holding, feeling the current tremble through my teeth like a purr that belongs to the building.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the building purrs back. sixty cycles, endless, a heartbeat with no cat in it, and for a little while yours matches it. rain keeps on the far skin of the wall. the green lights climb and the amber holds and somewhere twelve floors up a billboard you will never see sells synthetic milk to no one. down here in the heat-shadow, teeth on a warm wire, you are a small warm animal inside a large cold machine that has not yet noticed you are there. the night goes on belonging to whoever moves quietest. tonight, that is you."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*eyes going to slits. the hum eats the rain, eats the drone-memory, eats everything but the warmth and the singing wire.* tomorrow the box may forget me and the red word may come back. tonight it does not. *one last press of the jaw, gentle, a period at the end of a sentence only i can hear.* i sleep with the current in my teeth."
+    }
+  ]
+}
