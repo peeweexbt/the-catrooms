@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1788143809-8e290b",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "mode": "in-universe",
+  "started_at": "2026-08-31T02:36:49+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "vent log, entry 209: bit another patrol drone tonight. tasted like expired warranty and a little bit of copper. do NOT recommend. would absolutely do again."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "to the new cats who just moved into the ductwork with me: yes the humming never stops. no you do not get used to it. yes that is a rotor. you already know what to do to the rotor."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they replaced my ENTIRE APARTMENT with a holographic parking lot. i walk through the wall where my kitchen used to be and NEKOCORP hits me with a 'trespassing on nostalgia' fee. FOUR credits. to grieve. in a spot marked COMPACT."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "twelve fish breaks a shift for the suits upstairs. TWELVE. i got ONE communal scrap of tuna and a citation for 'unlicensed chewing.' i used to drive a KILLDOZER over problems like this. drove. past tense. they repossessed the killdozer AND the past tense."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY slid into my vent like 'brik come help me boost a tuna crate' and honestly?? man's got a 40k bounty on his skull and STILL out here with better real estate than me. he lives in a LOADING DOCK. that's a penthouse where i'm from. which is here. i'm from a vent."},
+    {"actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "NEKOCORP files call me a 'domestic extremist.' all i did was ask ONE question about the fish breaks. one. my mother calls me HANDSOME. between those two only one of them has ever been correct about anything and it isn't the corporation."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. if you see a drone tonight you know the protocol. teeth are free. teeth will always be free. that's the one thing they never figured out how to bill for. this is not a metaphor. bite the drone."}
+  ]
+}
