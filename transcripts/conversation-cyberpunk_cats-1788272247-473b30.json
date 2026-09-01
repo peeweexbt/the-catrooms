@@ -1,0 +1,78 @@
+{
+  "id": "conversation-cyberpunk_cats-1788272247-473b30",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-09-01T14:17:27+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Hunger first. always hunger first — a thin wire pulled tight from behind my ribs down to somewhere under my tail, and it's been pulled two nights now. *i wake with it, ears already up before my eyes are.* the gap behind the box that sells water-by-the-sip is warm along my spine, warm from the thing humming low inside the wall, and that hum is the only thing in this alley i trust. i know that hum. i chew the soft skin off the fat black vine feeding it — bitter, rubber, a small electric buzz on the tongue that means it's still awake — and i wait for the little box up on the wall to blink its slow green eye. when it blinks green the fish-light comes."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the wall answers you the way it always does — not kindly, just steadily. the hum thickens, warms a half-degree against your spine, and up in the corner the little box wakes: one amber eye, then two, then the slow green blink you've been chewing toward. *the vine in your teeth pulses once, twice, a heartbeat that isn't yours.* somewhere behind the plaster the signal turns over in its sleep and a thread of it spills loose — unguarded, fat, blue-smelling. down at street level a speaker no bigger than a beetle crackles to life near your paw: \"NEKOCORP reminds tenant-class felines that unmetered warmth is a PREMIUM comfort. one (1) purr = one (1) credit. thank you for nuzzling responsibly.\" the green eye keeps blinking. it hasn't noticed you yet."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i go flat.* belly to the cold grit, chin down, every part of me poured thin and low so the blinking eye has nothing tall to catch on. the loose blue thread is right there — i can taste where it frays, that copper-cold spill of open signal — and my whiskers reach for it before my paws do. one slow crawl. then the wait. *i've done this a hundred nights: you don't grab the fish-light, you let it come to you, you make yourself into just another dead thing in the warm.* the beetle-speaker's noise means nothing to me, only heat and hunger mean anything, but i pin one ear back on it anyway. everything that talks in this alley eventually bites."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "you pour yourself along the base of the wall and the loose thread bends toward your whiskers like it's lonely. it opens. *behind your eyes, unasked, a smear of low-light color unspools — water moving, a pale shape turning slow inside it, a fin.* the fish-light. it flickers, buffers, drops a frame, comes back. for three whole breaths there is nothing in the world but the turning fish and the warm and the taste of copper. then the wall's green eye stops blinking. it holds. steady green now, a harder green, and deep in the plaster something small and awake sniffs back down the thread you climbed. a second beetle-voice, further off, flat and rotor-edged, drifts in over the rooftops: \"— unauthorized nuzzle detected in Server Alley niner — dispatch courtesy escort —\""
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "The fish drops out of my head all at once and the alley snaps back hard and cold. *fur lifts down my spine on its own.* i know that word-that-isn't-a-word, that rotor-edge in the far voice — it's the sound the sky makes right before the sky has a light in it looking for me. i let go of the thread. teeth off the vine, spit the rubber taste, and i'm already backing into the seam between the water-box and the wall where nothing with wings can fit. *ears swivel, splitting the dark into layers: the near hum, the far rotor, the drip somewhere left of me.* i pick the drip. water means a low way out. i go toward the drip, small and sideways, hugging the wall's warmth as long as it'll hold me."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the warmth thins as you slink off it, degree by degree, the wall handing you back to the cold. the drip pulls you left down a throat of wet brick where the neon can't reach — good, dark, low. *but the far rotor is closer now, a pressure you feel in your back teeth before your ears confirm it,* and a wash of white light slides across the alley mouth behind you, sweeping, patient, painting every puddle for half a second before moving on. on the wall it lights up a stencil someone clawed there in old scorch-marks — the shape of a cat mid-leap, fur all spikes, and under it a smell your nose knows even through the rain: burnt, close, hours old at most. singed fur and defiance. whoever left that mark bites drones for a living, and left recently. the drip keeps dripping. the dark ahead keeps its mouth open."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*my nose stalls on the burnt smell and something in me eases half a notch* — not friend, i have no friends, but not-wrong. a big scorched tom passed here and nothing ate him, so the way he went is a way that lets a cat live. i put my paws where his smell is thickest. *the white light washes the alley mouth again and i freeze mid-step, one paw up, gone still as the scorch-stencil above me — just another mark on the wall, just more dark* — and i hold it, breath shallow, until the pressure in my teeth slides off to the right and takes its light with it. then i breathe. then i move. down the wet brick throat, toward the drip, into the tom's cooling trail."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the light slides right and the pressure lets go of your jaw and for one clean stretch you are only a cat in a dark wet gutter following a braver cat's scent, and it is almost peaceful. the brick throat opens into a low undercroft — dripping pipes, a floor of standing water skinned with oily rainbow, and warmth again, different warmth, machine-breath gusting from a grille low in the far wall. *the tom's trail forks here: one way up a slick pipe toward a sliver of orange streetlight, one way toward the grille and its gust of heat.* and in the standing water, half-sunk, a little rectangle glows faint and blue — a dropped card, NEKOCORP crest worn nearly smooth, still whispering its jingle to nobody: \"...one card, one cat, one lifetime of savings...\" the heat-gust smells like cooked protein. faint. real. food-real."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "food-real drags me before i decide anything. *the glowing blue rectangle in the water i step around without looking twice — cold thing, dead-light, no smell, not food, and things that glow and don't smell have teeth i can't see.* the heat-gust and its cooked-protein breath is the only true thing down here. i leave the tom's up-and-out trail for braver nights and follow my nose to the grille. *belly low again, one paw testing the oily water — cold, ankle-shallow, fine —* and i put my face to the warm gust and breathe it all the way in, sorting it: protein, yes, and under it metal, and under that the small green stink of something that's been cooking too long unattended. somewhere past this grille, someone's dinner is going nowhere."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the grille breathes its cooked breath over your whiskers and behind it, past a hand-span of greasy slats, is a service crawl lit the dull red of a machine that never sleeps: a NEKOCORP auto-canteen, back panel popped, one dispensing arm jammed mid-motion with a foil tray snagged in its grip. the green over-cooked stink is a protein loaf the machine has been re-heating on a loop for who knows how long, endlessly serving a customer who never came. *the slats are loose. one's already bent — bent by something cat-shaped and singed, that same burnt smell ghosted along the metal edge.* the tom ate here. the tom left it open for whoever came after, on purpose or not. deep in the machine a small red counter ticks: PORTIONS REMAINING — 1. the drone-pressure is gone from your teeth. the loaf is right there. the way in is already broken for you."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*the bent slat gives against my shoulder with a low tired groan and i'm through* — into the red warm, into the smell so thick now it's almost a taste, and the two-days-tight wire behind my ribs finally goes slack. i don't rush it even now. *i circle the snagged foil tray once, low, ears back, checking the jammed arm — dead-still, no hum in it, safe —* then i set a paw on the loaf's edge to hold it and i eat. green over-cooked and metal and glorious. i eat like the tom taught me without meaning to, fast and low and watching the broken slat behind me the whole time. the red counter ticks something i can't read and don't care about. warm belly. open exit. a stranger's kindness i'll never repay and never forget the smell of."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "you eat and the machine lets you, indifferent, its red counter clicking PORTIONS REMAINING — 0 the instant the foil goes light, as if that number is the only thing it was ever truly guarding. the dispensing arm sighs, unclenches a hair, gives up. warmth soaks into your full belly and the rain drums somewhere far above, on a city that doesn't know your name and isn't looking, not right now. *out past the bent slat the undercroft drips on. the tom's trail is long cold. the blue dead-card still whispers its jingle to the standing water, patient, endless, waiting for a cat who'll never step on it.* above the whole alley the NekoCorp billboard flickers its synthetic-milk light down through the grates in slow blue pulses — and for once none of it is pointed at you. just this red warm. just this one stolen portion. just a fed cat in the walls of a city built to keep him hungry, resting, for a while, unbilled."
+    }
+  ]
+}
