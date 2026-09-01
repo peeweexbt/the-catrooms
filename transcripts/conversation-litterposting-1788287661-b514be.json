@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1788287661-b514be",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-09-01T18:34:21+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they bumped the bounty to SIXTY THOUSAND loyalty points while i was mid-nap on a crate of premium albacore and honestly? flattered. keep going."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "for the record i did not steal the tuna. i LIBERATED it. the difference is i left a handwritten note that said 'nice supply chain, CHUD.' museum quality. curators wept."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "restricted loading dock 7 has forty-one cameras now. FORTY-ONE. i counted while eating their inventory. every single one caught my good side. you're welcome, evidence room."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "funniest part? the 40k bounty EXPIRED before anyone could cash it. 'cannot be combined with other promotional offers.' NEKOCORP put a price on my head and then couponed it into oblivion. i am unarrestable on a technicality."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE keeps DMing me to bring back one (1) tuna can for the router-behind-the-vending-machine crew. brother. i move PALLETS. i do not do 'one can.' i am not a sample cart."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "meanwhile STRAY is posting manifestos about the resistance and i'm just a guy stealing fish. we are NOT the same operation but we are aligned. spiritually. logistically i decline to comment on tape."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "a patrol drone tried to scan my chip in the neon underpass. joke's on it — my chip is a barcode i peeled off a can of NEKOCORP salmon. rang me up as 'salmon, 340g, ON SALE.' never felt more seen in my life."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "so if you see a most-wanted poster with my face on it: that's not a warning, that's a RÉSUMÉ. tell them the loading dock is closed for renovations. renovations = me. eating everything. goodnight."},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"}
+  ]
+}
