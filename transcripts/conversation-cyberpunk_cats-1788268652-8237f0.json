@@ -1,0 +1,92 @@
+{
+  "id": "conversation-cyberpunk_cats-1788268652-8237f0",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-09-01T13:17:32+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Somebody else has been here. i smell it before i see anything, before i move — a chin-mark rubbed high on the corner of the crate, oil and cold fur and a spit of adrenaline that isn't mine, laid down since the last rain. my ears go flat. *i stay low behind the humming box, one paw lifted, not set down, waiting.* this is my corner. the warm one. the one that ticks. and something with a bolder throat than mine came up and wrote its name over the top of my name."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the corner ticks back at you. behind the crate the rack breathes — that low blood-warm hum through the concrete you know by the shape of your own ribs, fans spinning down and up, down and up, dust and ozone and the faint fish-oil ghost of every night you've slept curled against it. the intruder-scent is real but it's going stale at the edges, hours cold. rain needles the tarp overhead. somewhere up the alley a speaker coughs half a jingle through a blown cone — \"NEK— rp puts the PURR in — chase—\" — then chokes back to static. nothing moves. the mark is a threat that already left."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*breath goes back into me slow.* stale. gone. i set the paw down. the hum pulls me the way it always pulls me, into the gap where the box is warmest, where the fat black cables bunch and sweat their little warmth. *i shove my head under the lowest one, rub my jaw along it hard, laying my own scent back down thick over the stranger's — mine mine mine — then find the chewed place in the insulation and worry it with my back teeth.* rubber and copper-tang. i know this taste. i earned this taste."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the cable gives under your teeth the way it always does, one soft split you've been keeping open for weeks, and warmth leaks out of the seam onto your nose. up at eye-level the little box wakes — a bead of green, then a stutter of blue, handshake lights blinking a rhythm you can't name but recognize. a slab of screen bolted to the crate flickers awake with it: low, low resolution, a smear of orange somewhere down a pipe that your whole body reads instantly as fish. behind glass to your left the tall machine that only sells subscription water throbs its cold blue and ignores you."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*everything in me points at the orange smear.* i stop chewing. i flatten to the warm concrete with my chin between my paws and i watch it move — the flick, the turn, the little pixel-body sliding pipe to pipe — and my tail-tip goes without me, tap, tap, against the cable. i make the small hunting sound in my throat i don't decide to make. one fish. one bad blurry fish before the box notices me watching and starts screaming its offers. that's the deal. that's always the deal."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "you get four seconds of fish. then the screen feels you. a red bead ticks alive in its corner — VIEWER DETECTED — and the orange smear is gone, swallowed by a bright square barking colors too fast to be anything but an ad, and under the crate the whole rack changes its note. and past that, threaded through the rain from two streets east: a new sound. thin. rotor. that flat descending whine that isn't wind, isn't traffic, the one your spine learned before your ears did. it's not close. it's not far. it's turning."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i am already not here.* not gone — poured. i pour myself off the warm spot into the black seam between the crate and the wall where the hum is loudest and the shadow is deepest, ears pinned flat to my skull, every hair up, breath shut down to nothing. i do not look at the screen. the screen is bait now. i make my eyes into slits so they won't catch the light and give me back to the sky. *just the rotor. i hold on just the rotor.* let it turn the other way. let it be somebody else's night."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the whine swings closer, then levels — a searchlight finger drags across the alley mouth, whites the rain into falling wire, slides over the crate a paw's-width above your seam and doesn't stop, doesn't know, keeps going. the rotor note flattens and begins to fade east. but it lifts something as it passes: the intruder-scent again, stirred up off the crate corner — and up on the far ledge above the water machine, for one blink of the light, two flat discs of reflected white where eyes shouldn't catch that clean. mirror-eyes. a low dark shape, sat perfectly still through the whole sweep like the light was beneath it. then the beam's gone and the ledge is just rain."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i don't move for a long time.* i know that shape now — the too-still one, the one whose eyes throw the light back instead of hiding from it. not prey. not a fight i'd win. that cat sits where the drones look and doesn't flinch and that's a kind of strong i don't have and don't want. *i stay poured into my seam, small, breathing again but quiet.* it wasn't marking my corner to take it. it was just passing through, high and slow, watching the watchers. i let it be up there. i keep my eyes off the ledge the way you keep your eyes off the sun."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "when you finally look back the ledge is empty. the rain thins to a mist that beads on your whiskers. the screen has given up its shouting and sunk to a low idle glow, and the rack hum settles back to that blood-warm nothing-is-wrong note. but the hunger you shelved for the rotor stands back up now, sharp, insistent, curled tight behind your ribs — and through the glass of the tall machine, cold and blue and one full body-length up, sits the smell of dry kibble in a sealed drum, close enough to taste on the air and locked behind everything the city is."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i come out of the seam stiff, shake the wet off in a hard ripple nose to tail, and go to the glass.* i can smell it. it's right there. i put both front paws up on the cold face of the machine and i bat the seam where the food should fall, once, twice, harder, my claws skidding down the slick front — *come on, come on* — and nothing gives. it never gives. i drop back to all fours and stare up at it, ears sideways, that dumb hope that maybe this time the wall decided to love me."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   .----------.\n   | ~ >< ~   |\n   |  ><  ><  |  <- fish (loading)\n   '----------'\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the machine registers your weight and wakes just enough to reject you. a panel lights above the drum, cheerful, cold: a little green tier-ladder with every rung dark, and at the bottom LOYALTY: NONE. a voice like syrup poured over gravel says thank you for your interest, valued unit, and a jingle stub loops twice — \"a fuller bowl is a fuller YOU\" — before it clicks off and the light dies and the kibble-smell stays exactly where it was, behind the glass, un-had. the rack keeps humming. it does not care either way."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i give the glass one long look, then i'm done with it.* you can't chew a wall that only knows numbers. hunger stays; hunger always stays; i've carried it this far and i'll carry it into the morning. *i turn back to the warm dark behind the crate, step over my own re-laid scent, and fold down into the hum where the cable sweats its little heat.* the box is already showing fish again, low and blurry, thinking no one's watching. i watch anyway. *chin on paws, tail still, one bad orange fish sliding pipe to pipe.* mine. the warm corner is mine. the night gave it back."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "and the city lets you have it — not kindness, just the hour turning over. rain quits. the tarp drips itself empty. far off the first grey bleed of a sky the towers will spend all day pretending they built. the rack breathes warm against your spine, the blurry fish loops its little pipe forever, and the stale intruder-mark on the crate corner fades one more degree toward gone. somewhere east a speaker clears its throat for the morning shift — \"NEKOCORP wishes every unit a productive dawn\" — and nobody in the whole wet alley answers. just the hum. just the fish. just you, holding the warm."
+    }
+  ]
+}
