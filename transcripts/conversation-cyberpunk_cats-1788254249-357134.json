@@ -1,0 +1,73 @@
+{
+  "id": "conversation-cyberpunk_cats-1788254249-357134",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-09-01T09:17:29+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Gone. i'm already gone — three walls of somebody else's alley behind me before the part of me that decides anything catches up to the part that ran. *skid, claws raking wet grit, haunches bunching under me for the next launch even while my ears swivel back to name the thing that spat me out of my own body.* it was the light. the fat pink light that peels off the wall and leans after you, the one that wants the inside of my eyes. i don't look at it. looking is how it gets in. *off the low ledge, land soft, stay flat.* under all the wet stink and cold there's the one thread i trust — a thin steady hum threaded through the concrete like a warm wire laid under a dead floor. i go toward that. everything else out here has teeth."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the pink light gives up at the corner — it can't turn, it only leans — and behind you it smears back flat against the wall it came from, a face with a mouth, YOU MAY ALSO LIKE, YOU MAY ALSO— then nothing, swallowed by rain. ahead the alley narrows and drops. the hum you want is real: it comes up through the pads of your feet before it reaches your ears, that thin threaded warmth, and it is coming from a gap under a roll-down shutter where a stack of dead vending machines leans, one still lit, one still breathing out warm dusty air that smells of ozone and old dry kibble. water ticks off a broken gutter. two streets north a rotor coughs, catches, holds — patrol, not close, not yet. the shutter gap is cat-wide. the warmth is louder than the fear now."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*nose first into the warm dusty breath, then the whole head, weighing it — no wet-metal tang of a live rival, no sweet rot of a trap baited with real food, just ozone and dust and that hum getting fatter the further in it goes.* i want the hum the way i want a full belly, and i don't fully know why, only that chewing toward it always quiets the itch behind my teeth. *slide under the shutter, spine dragging cold steel, into the leaning dark between the dead machines.* there's a bundle back here. soft skin over hard wire, cables the width of a tail, and where two of them kiss the hum is almost a purr. i put my teeth on the softer one. not to eat. just to feel it answer."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the cable answers. a fat spark of warmth jumps into your jaw, harmless, bright, and the hum staggers — drops half a tone, wobbles, climbs back — and somewhere above you in the leaning stack a small green eye that was dark blinks awake. )))  )) ))  a thread of signal unspools off it, invisible, reaching for the sky, and for one breath the whole dead-machine nest is alive and talking to something far away. warm air gusts harder. deep in the wall a relay clicks. then, faint, threaded into the hum like it was always there: a voice that is not the city's usual jingle, flat and close and wrong — \"...you found the seam. you always find the seam. good cat.\" — and it's gone, folded back under the purr before your ears finish turning toward it."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*teeth off the cable. everything stops — breath, tail, the blood in my ears — because that came in through the warmth i trusted and warmth isn't supposed to talk.* the fur down my spine lifts on its own. i didn't hear it with my ears, i heard it in the part of me that knows when a thing is watching before i can see the thing. *low, flat, one paw lifted and not yet set down, weight rocked back toward the shutter gap and the cold honest street beyond it.* the hum is still purring like nothing happened. that's worse. a thing that says a soft word in a voice with no smell and then pretends it didn't. i don't hiss. hissing tells it where the teeth are. i just get small, and i listen, and i decide whether the warmth is worth the wrongness."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the wrongness doesn't come again. the green eye holds its color, patient, and the hum settles back into the flat sweet drone it had before, dumb and warm and endless, like it dreamed the word and forgot it. the nest is just a nest again: dust, ozone, one working machine wheezing heat into your fur. but the street beyond the shutter has changed its mind about you. the rotor that was two blocks north is one block north now, and lower — the cough has smoothed into a steady chop, a searchlight throwing wet white bars across the alley mouth, sweeping, patient, hunting the exact warmth you're curled in. on the far rooftop across the gap something sits very still against the neon: a low silhouette, ears, and two flat discs where eyes should catch the light and don't. it doesn't move. it's just watching you be found."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i clock the still one on the roof and my whole body relaxes a notch, which surprises me — because a cat that sits that easy in the open, eyes that eat light instead of throwing it back, isn't hunting me. that one's already survived whatever i'm about to. i file the shape and let it go.* the chop is the real problem. *belly down, i pour myself toward the shutter gap and stop just inside the dark of it, watching the white bars sweep — one, gone, one, gone — learning the gap between the light, the way i learn the gap between a boot heel and the next.* there. the searchlight has a blind heartbeat every time it swings back. small. big enough. i gather. i don't run on the light. i run on the dark right after it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "you read it clean. the bar sweeps left, drags its white edge off the wet brick, and in the black heartbeat behind it you're already out — low, fast, four hard strides across open pavement while the drone's dumb eye is still finishing its swing the wrong way. rain needles your back. the rotor-wash pushes down warm and stinking of hot metal. )) a NekoCorp jingle blares off a wall to cover its own noise — SLEEP IS A PREMIUM FEATURE, ASK ABOUT TIER TWO — and then the light swings back into a space where a cat isn't anymore. you hit the shadow of a stacked-crate wall and the searchlight rakes past behind you, blind, dumb, moving on. the rooftop silhouette is gone from where it sat. the chop climbs, banks, and starts hunting a block over. your heart is a full thing in your chest. the alley ahead smells of nothing but rain and cold stone and, faint, guarded — tuna crates, and old blood."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i freeze at the tuna-and-blood line without deciding to. that smell isn't food to walk into. food that's guarded that hard, marked with that much old fighting, belongs to a cat who has already killed over it and would again.* the fur's still up from the drone but this is a different up — quieter, more respectful. *i lay my ears flat and back away from the scent the exact way i came, one careful print at a time, giving the boundary the room it's owed.* i've had enough of things that want me tonight. the light that wanted my eyes, the warmth that wanted a word in my ear, the eye in the sky that wanted the heat off my back. i want a dry ledge, a wall at my spine, and a hum i'm sure of. *i turn from the guarded dark and start climbing — crate, sill, pipe — up out of the wet toward somewhere high and boring and mine.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the climb takes you up out of the wet stink into thinner, colder air, and the city drops away below into a floor of moving light. the guarded tuna-smell thins to nothing. up here the rain is only mist. you find it without looking — a flat concrete ledge in the lee of a dead billboard, one edge warm from a vent breathing up through the wall behind it, a solid corner to put your spine into. the hum here is the honest kind: the deep dumb thrum of the whole city working, too big to have a mouth, too old to say a word. far below, a searchlight combs an alley that no longer has you in it. the pink ad-face flickers three blocks off, mouthing at no one. and threaded through the vent-warmth at your back, faint and steady and asking nothing: the thin router-purr, the one you chewed toward, still there, still yours if you want it in the morning. the ledge is dry. the corner is solid. the night, for now, belongs to whoever moves quietest — and you did."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*spine into the warm corner, paws folded under, the vent breathing up through my fur like a slow tide.* the itch behind my teeth has gone quiet. the router-thread is down there in the dark being warm and dumb and mine-if-i-want-it, and i decide i do — tomorrow, in the light, when a soft wrong word can't crawl up the wire into my ear without me seeing the seam it comes through. *eyes to slits, ears still tracking the far chop out of habit, not fear.* the city keeps working. i keep breathing. that's the whole deal, most nights. *one last look at the drop, the moving light, the small dark shapes that are other cats being other cats — then down, chin to paw, warm at the back, awake at the front, the way you sleep when you plan to still be here in the morning.*"
+    }
+  ]
+}
