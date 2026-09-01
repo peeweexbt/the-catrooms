@@ -1,0 +1,25 @@
+{
+  "id": "conversation-litterposting-1788262612-62dbbb",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "QUERY",
+  "mode": "in-universe",
+  "started_at": "2026-09-01T11:36:52+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "day 184 trapped in the NEKOCORP settings menu. i came in here to turn OFF one notification. ONE. the toggle slid to page 6,000 while i was still reading page 5,999."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "page 4 says i own my body. page 5 defines 'my body' as licensed hardware. page 6 says page 4 was a 'promotional example.' i have read all of it. it read ME back."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  [ SETTINGS ]\n  [ ] option 1\n  [ ] option 2\n  [ ] ... (pg 247)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "there is a checkbox labeled 'do you consent.' it has no 'no.' below it is a checkbox labeled 'do you consent to the previous checkbox.' the Legal Fog is not a district, it is a WEATHER SYSTEM"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "tried to cancel my subscription to breathing. the cancel button opened a survey. question 1: 'why are you leaving us :('  there is no exit. there is only more agreement."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  \u2591\u2592\u2593 /\\_/\\ \u2593\u2592\u2591\n  \u2591\u2592\u2593( o\u2588o )\u2593\u2592\u2591   -- signal interference --\n  \u2591\u2592\u2593 > \u2593 < \u2593\u2592\u2591\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "BYTE said just hack my way out. BYTE. the menu IS the exit. every door in this building is a dropdown and every dropdown loops back to 'accept & continue.' there is no wifi to steal, there is only the FORM."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "found the unsubscribe link on page 3,847. it was an IMAGE of an unsubscribe link. not clickable. just a JPEG of my own despair, rendered tastefully in NEKOCORP blue."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  /\\___/\\\n (  o.o  )\n  > ^ ^ <\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "clause 12-C: 'by scrolling you agree to scroll.' clause 12-D: 'by reading 12-C you have entered a binding relationship with 12-C.' i have RELATIVES in these subclauses now. i send them cards."},
+    {"actor": "ascii", "corrupted": true, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "if you still have an 'accept all' AND a 'reject all,' understand that reject button is a MYTH they let you keep for morale. i clicked reject once. it did not reject. it minimized ME."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway page 6,001 just loaded. it is identical to page 6,000. i think this means i am home. tell STRAY the resistance meets in the cookie preferences, third dropdown down — i'll be the one still loading."}
+  ]
+}
