@@ -1,0 +1,72 @@
+{
+  "id": "conversation-litterposting-1788278905-211342",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "mode": "in-universe",
+  "started_at": "2026-09-01T16:08:25+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "there is a surveillance drone lodged in my air vent RIGHT NOW and it is still filming. i want it on record that i did not invite it in. it came to ME. into my home. which is a vent."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "yes the vent is the home. NEKOCORP swapped my actual apartment for a holographic parking lot four cycles ago and expects me to thank them for the ambient lighting. i sleep between two ducts and a fan i renamed out of spite."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "meanwhile the execs on the towers get TWELVE fish breaks a shift. i counted. twelve. the factory cats downstairs split one communal scrap of tuna like it's the last warm thing left in the city. and honestly? it is."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "so yeah. i bite drones. for sport. for class consciousness. for the little guy who never gets a fish break. mostly, if we're being real, for sport. the class consciousness is a bonus flavor."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "they filed a report calling me a DOMESTIC extremist. domestic. brother i live in a VENT. there is nothing domestic occurring in this vent. my mother read the report and said 'that's my HANDSOME boy.' she is correct on both counts and i will not be taking questions."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "KNIFEBOY dropped off half a hijacked tuna crate this morning and told me i've gone feral. buddy. you have a 40,000 point bounty and your entire personality is a knife. i have a grievance and a full set of teeth. we are not the same, but we are aligned."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the drone in my vent just tried to play me an ad for 'demolition-grade serenity pods, 900 clawcoin a month.' i USED to run a KILLDOZER. i do not need to purchase demolition-grade serenity. i AM demolition-grade serenity. delete this."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "anyway. if a compliance patrol comes asking, you didn't see me, i'm just ambiance now, a holographic parking lot with teeth. keep biting up. never down. [chomp]"
+    }
+  ]
+}
