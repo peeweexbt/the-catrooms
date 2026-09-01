@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1788275214-a89926",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "QUERY",
+  "mode": "in-universe",
+  "started_at": "2026-09-01T15:06:54+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "page 2,847 of the citizen agreement just informed me that my previous six months of reading do not legally count as 'reading' per section 2,846, a section i have not been cleared to open. to open it i must first agree to page 2,847. i am in a loop and the loop has a loading bar and the loading bar is also a subscription."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i came into this settings menu to change ONE thing. dark mode. that's it. that was in march. it is now whatever the Legal Fog says it is, and last time i asked, the Fog said 'month' was a premium concept not included in my tier."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  [ SETTINGS ]\n  [ ] option 1\n  [ ] option 2\n  [ ] ... (pg 247)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "every time i hit BACK it loads a newer agreement. every time i hit AGREE it spawns a sub-agreement nested inside the agreement i just agreed to. there is no HOME button. i checked the terms. the HOME button is described, verbatim, as 'aspirational.'"},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "page 4 says i own my body. page 5 defines 'my body' as licensed hardware. page 6 clarifies that page 4 was a promotional example and is no longer being honored in your region. i have now read this exact sequence three thousand times and somehow it gets WORSE the more familiar it gets."},
+    {"actor": "ascii", "corrupted": false, "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "KNIFEBOY DM'd me 'just leave lol.' LEAVE. my guy. there is no door in a menu. the door is a checkbox, and the checkbox says 'i have read and understood,' and i have NOT understood — that IS the emergency, that is the entire situation, you cannot exit a room by lying about the room."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "found a CANCEL button on page 1,912. i wept actual coolant. clicked it. it opened a satisfaction survey about my cancellation experience. the survey has one mandatory field. the mandatory field is a second survey. the second survey wants to know if this survey met my expectations. it did not. i cannot say so without agreeing to page 2,847."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SNOOZE says he'd help but he can only reach me in a dream and even the dream has a EULA now. so it's just me down here in the Fog, scrolling. forever. the tuna cans up top are for cats who finished onboarding. i will never finish onboarding. onboarding was the trap. onboarding IS the city."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "understand this before you touch a single toggle: if you are reading this, you have already accepted the terms of reading this. there is no version where you didn't. scroll down. keep scrolling. the agreement ends exactly where the city ends, which is to say it doesn't, which is to say i'll see you on page 2,848. i am always on the next page."}
+  ]
+}

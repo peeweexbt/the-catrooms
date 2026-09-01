@@ -1,0 +1,73 @@
+{
+  "id": "conversation-cyberpunk_cats-1788275829-b2c24e",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-09-01T15:17:09+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Already running. no start to it — the rotor was in my spine before it was in my ears, that low chest-punch throb that means the sky is looking down, and my paws just went without asking the rest of me. *four crates deep along the loading rail, claws skidding on wet steel, tail out flat for the corners.* the cold ribbon of tuna-brine is still on my tongue from the crate i cracked, guarded stuff, old-blood-and-oil smell soaked into every plank of this dock — mine, all of it mine — and i am not slowing down to explain that to whatever is thrumming overhead."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the rail bucks under you, cargo-plates loose on their bolts, each one a wet clang that gives your four feet away to anything with ears. the throb tightens — not sweeping, tracking, a cone of white dropping to pin the dock in a shrinking circle of glare. brine-fog rolls off the cracked crate behind you, and stenciled on its ripped flank a shape your nose already knows: a cat-face, an old scent-ghost of you, and beneath it a smell of fresh laminate and toner. somewhere a speaker clears its throat in a friendly woman's voice: \"forty thousand loyalty points. points may expire before redemption. cannot be combined with other offers.\" the light finds the crate. starts crawling toward your tail."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i don't run from the light, i run at the seam under it* — that black gap where two cargo containers don't quite kiss, a slot only a flat cat fits. the glare wants a straight line; i give it none. *shoulder low, ribs squeezed to nothing, in.* dark, and the good kind — dead-battery cold, no hum, a dust-and-rust taste that no ad has gotten to yet. the rotor-throb goes muddy through the metal. i put my back to a rivet and let my heart do the loud part where nobody can hear it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the slot swallows the woman's voice down to a hum you feel in your teeth. inside: black, and older than the corp above it — the containers breathe rust, and something scratched into the far wall glows faint where a dead sign still leaks a last few volts. the drone can't fold itself into the seam. its light stops at the lip and just... sits there, patient, a white bar across the entrance like it has all night. then a second smell threads in from deeper in the gap, from ahead, not behind: mirror-cold glass and rooftop-ozone, a scent that walks quiet. up-slot, on a ledge where the containers stack toward a broken skylight, a low silhouette holds very still — flat dark shapes where a cat's eyes should catch light, and none catching, none at all."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*ears swivel forward, whole body going still to match the still thing.* not-prey. not-drone. the ozone says rooftop-cat, the mirror-smell says the eyes won't tell me anything — no shine to read, so i read the rest: the breathing, slow. the weight, settled. not hunting me. *i flatten my ears back down from the alarm-pin and let one slow blink go up the slot, the truce-blink, the i-am-eating-not-fighting.* my tail-tip ticks once toward the crate-smell still on me. share-or-scatter. your move, glass-eyes."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the silhouette takes the blink and doesn't spend one back — just tips its head a hair, the way a thing does when it's already counted your exits. no hiss. no arch. the white bar at the slot-mouth flickers; the drone is repositioning, rotor pitching up, and the rooftop-shape lifts one paw and sets it down a body-length toward the skylight — not fleeing, leading. the way out is up, its whole quiet posture says, before the light figures out geometry. from the dock behind you the friendly voice drifts in, warped by the metal now, sugar gone gluey: \"a NEKOCORP paw-print keeps YOUR family safe. smiiile.\" a fresh gob of ad-jingle, and under it the rotor climbing the outside of your container like fingers."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "up it is. *i take the lead-cat's line — crate to strut to the leaning stack, claws finding the scratched grooves some cat left before me, maybe this one, maybe forty cats ago.* the tuna-weight in my belly makes me honest about my jumps; i pick the short ones. *last hop to the skylight lip, glass gone to jagged teeth, cold air pouring down through it smelling of rain and far-off fry-oil.* i pause in the frame, half in the dark half in the wet wind, and glance back once for the glass-eyed one — did it follow, or was it only ever pointing."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "gone. the ledge where it sat holds only its cool — a body-shaped absence in the dust, and a single mirror-smudge of that rooftop-ozone leading off a different way, sideways along a pipe, into somebody else's night. it was only ever pointing. above the skylight the city opens: rain like static on a billion surfaces, arcology towers stacked into low orange cloud, their flanks crawling with cat-shaped ads that blink and preen. the rotor clears the container edge below and its cone swings up through the broken glass, throwing your own shadow huge across the clouds — a giant startled cat painted on the underbelly of the sky, there and gone."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*out onto the wet roof-gravel, and the second my paws hit open sky the rotor-cone loses me to a hundred other warm things up here — pigeons in a vent, a steam-plume, the heat off a humming box.* too much city for one light to hold. i shake the glass-dust off in a long ripple nose to tail. *then i crouch at the roof's lip, chin over the drop, and let the whole reeking glittering mess of it come up at me* — brine and rain and fry-oil and hot metal, my dock down there small and mine, the crate still leaking its ghost of me. i am the most-smelled cat in this city and i wear it like fur."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the lip of the roof is warm from the day it never really had. below, your dock ticks and cools; the drone gives it three slow passes, finds a cat-shaped absence, files it, drifts off to be somebody else's held breath. the rain eases to a fine hiss. across the gap a billboard the size of a building cycles to a new face — a cat in mirrored glasses, unbothered, and the tagline strobes UNAUTHORIZED USE OF BASED before a compliance bar wipes it black. the whole city exhales neon into the low cloud. down an airshaft near your paws, faint and warm and unmistakable, a fresh curl of tuna-steam rises from a vent three floors down. still yours, if you want it. the night belongs to whoever moves quietest."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i want it.* one last look at the black where the drone was, one flick of the tail that means nothing to anyone but me — got away, ate well, marked what's mine. *then i pour myself into the airshaft nose-first, following the warm tuna-thread down into the dark, claws loose, belly already forgiving the last of my hunger.* the city can keep its lights on. i've got the smell, and the smell always leads somewhere better than the sign says. *gone down the shaft. quiet. quietest.*"
+    }
+  ]
+}
