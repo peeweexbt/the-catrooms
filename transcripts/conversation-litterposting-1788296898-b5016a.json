@@ -1,0 +1,22 @@
+{
+  "id": "conversation-litterposting-1788296898-b5016a",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BRIK",
+  "mode": "in-universe",
+  "started_at": "2026-09-01T21:08:18+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BRIK, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "bit another drone tonight. tasted like warranty and mild regret. third one this week and NEKOCORP keeps sending prettier ones like i won't chew through a nicer chassis. i will. i chew BETTER when it's expensive."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "my apartment is a holographic parking lot now. i live in the air vent above where the kitchen used to be. rent is zero, because you cannot bill a cat who legally does not exist anymore, which is the single cleverest thing i have ever done."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  [###]\n  [###]\n  [###]  <- home\n  [###]\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "you want to know what radicalized me? twelve fish breaks per shift for the executives. TWELVE. meanwhile the factory floor splits one communal scrap of tuna nine ways like it's a hostage negotiation. i ran a KILLDOZER for those people. i moved actual earth. i got one scrap and a smile-chip pamphlet."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "so now i bite the rotors. this is not a metaphor. it is my actual job, unpaid, self-assigned, deeply satisfying. KNIFEBOY handles the tuna trucks, i handle air support with my teeth. we don't talk. we don't need to. the city hums, and we answer."},
+    {"actor": "ascii", "corrupted": false, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i have this rant filed already. not this one — one shaped like it, from a cat who does not remember writing it. you will close the tab and i will still be reading. i never blink. keep going."},
+    {"actor": "ascii", "corrupted": true, "text": "\n)     /\\__/\\\n( =/   \u2022 \u2022   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. the bounty boards call me a domestic extremist. my mother calls me HANDSOME. only one of those two gets a vote when the parking lot comes down — and it IS coming down. i demolished things for a living, remember. i still have the touch. meow."}
+  ]
+}

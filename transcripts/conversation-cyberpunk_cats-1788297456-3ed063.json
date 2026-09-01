@@ -1,0 +1,63 @@
+{
+  "id": "conversation-cyberpunk_cats-1788297456-3ed063",
+  "template": "cyberpunk_cats",
+  "model1": "nekocorp-sim",
+  "model2": "nekocorp-sim",
+  "started_at": "2026-09-01T21:17:36+00:00",
+  "note": "Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "Already running. no decision in it — my legs made the call a half-second before my ears caught up, the way they always do when that flat wasp-whine drops out of the ceiling of the world and starts eating the space behind me. *the tin's clamped in my jaw, cold and heavy and salt-bright through the metal, worth every rotor screaming after it.* i don't look up. looking up is for cats who want a mouthful of searchlight. low. left. pour under the parked delivery hulk where the dark's thickest and an oil-drip taps my spine, counting me. the note i left in the crate's place is already soaking through with dock-water back there — they'll find it. they always find it. *nice supply chain.*"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "under the hulk the ground remembers being warm and gives it back through your pads, engine-heat ghosting off the underside in slow waves that smell of scorched grease and someone else's fear-piss dried into the seams. the whine up top loses you — for a breath. then it doesn't. a second note, higher, joins the first, and they braid: two rotors now, quartering the loading dock in overlapping arcs, and every arc drags a cone of white that turns the standing water into sheets of hard light. a speaker somewhere overhead clears its throat in NekoCorp's voice, warm as a razor: >> ATTENTION VALUED ASSET. UNAUTHORIZED PROTEIN IN TRANSIT. >> loyalty tone, forty-thousand-point tone, the tone that has your exact weight already in it. the puddle three whiskers from your nose goes suddenly, blindingly bright."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i do not move into the light. i become part of the hulk instead — chin flat, tin flatter, breath pulled down into the smallest room in my chest.* the bright sheet slides past my nose and i let it. it has no fingers, only eyes, and eyes lose the cats that refuse to be edges. *my tail wants to lash. i sit on it — literally, curl it under, kill the tell.* i know this dock better than the thing that built it. i know the drainage lip runs cold-air low along the east wall where the crates breathe out, and cold air means the rotors have to fight their own downwash to hold a line. that's my seam. i just have to reach the wall before the two whines learn to share a math."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the east wall exhales at you — a long refrigerated sigh out of the crate-stacks, fish and frost and the faint plastic sweetness of tuna graded for cats who will never taste it. it rolls low across the concrete exactly where you read it would, a river of cold you can walk inside of. above, the two rotors stumble into each other's wash, pitch angry, climb to recover: the cones swing wide and the dock goes dark-blue for one whole heartbeat. in that heartbeat a shape on the high roofline resolves and doesn't move — a sitting cat, backlit, two flat discs of mirror where eyes should be catching the billboard-glow and throwing it back cheap. it watches the drones fumble. it watches you. it does nothing, which from up there is its own kind of comment. the frost-river keeps pouring past your flank, an open lane to the wall."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the mirror-eyes i clock and file — *not-a-threat, not-a-friend, a witness in shades who's decided i'm worth the electricity of looking.* fine. let it look. i ride the cold river low, belly in the frost-sigh, the tin tucked so tight my own jaw's gone numb around it. the drones' fight buys me the wall. *i pour into the drainage lip, that skinny cold trough where the downwash can't fold in on me.* here the world narrows to a stripe of dark and salt and the far-off, patient, un-rotored quiet of somewhere the drones don't bother going. my kind of quiet. i follow it."
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the trough takes you and the dock's noise thins to a rumor behind you, rotors folding back into the general grinding hum of a city that never fully sleeps, only lowers its lids. the drainage lip runs you east and down, past a maintenance grille weeping condensation, past a dead vending machine still lit from inside — its face a soft aquarium glow, rows of little coffin-windows, each one a snack chained behind glass it will price at your whole body if you let it. it registers your heat as you slink past: >> WELCOME BACK, GUEST. >> a subscription jingle wheezes half a bar out of a blown speaker and gives up. the wall's warmth deepens here. somewhere ahead, faint and un-corporate, comes a smell that isn't bait: rust, engine oil, old cardboard gone soft — a hollow. a real one. nobody's ad ever reached it."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the machine says my name in the way they all do — *guest, asset, valued* — sounds that mean fee. i give it my back. *the un-bought smell ahead pulls harder than any jingle ever could: oil and cardboard and nobody's-brand-on-it.* that's the real word for home, the one NekoCorp can't spell. i slide the last of the trough on three legs and a jaw, ease into the hollow rust-first, and only when the dark closes soft and speaker-less behind me do i set the tin down. *finally.* the salt-smell blooms up huge now that my nose is free to want it. mine. paid for in rotor-whine and held breath. i put one paw on the lid and just breathe, ears still swiveling for the next wasp that hasn't come yet."
+    },
+    {
+      "actor": "ascii",
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm2",
+      "model": "nekocorp-sim",
+      "text": "the hollow holds you the way a paw holds nothing tightly — a warm socket of dark lined with the soft-rot of packing foam and the ghosts of a hundred earlier strays who each thought it was theirs. the tin's seam gives a hairline of scent that fills the whole space, obscene and perfect. far off, muffled to a heartbeat through concrete, the dock's speakers recite your bounty to no one, the number expiring even as it's spoken, uncombininable with other offers. and near the mouth of the hollow, pressed flat under cardboard where the billboard-glow can't find it, a folded scrap of your own kind of paper waits — not yours, not this time. someone got here first, once. block-clawed letters, dock-water soft: nice hollow. keep it warm. — the city breathes in around you, and lets you have this one."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "*i read the scrap the only way i can — nose, then paw, then the long flat look.* somebody left a mark that isn't a fee and isn't a threat. just a passing-through cat saying *i was here and i chose not to take it from you.* rare as clean water, that. *i tuck it back under the cardboard exactly as i found it — a thing kept, not eaten.* then i open the tin the slow way, the earned way, claw under the lip, and the salt breaks over me like the only honest light in this whole wired-up sky. i eat with my ears up. i always eat with my ears up. but for one long swallow the wasp-whine stays a rumor, the mirror-eyes stay a rooftop away, and the number on my head means nothing down here in the warm un-bought dark. *nice supply chain.* ^C^C"
+    }
+  ]
+}
