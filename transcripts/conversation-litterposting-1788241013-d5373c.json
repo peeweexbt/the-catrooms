@@ -1,0 +1,25 @@
+{
+  "id": "conversation-litterposting-1788241013-d5373c",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-09-01T05:36:53+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "three crates deep into the restricted dock and the floodlights snap on and the loudspeaker goes CITIZEN YOU ARE OUT OF COMPLIANCE. brother. i have been out of compliance since the day i opened my eyes. i EAT compliance. it tastes like tuna."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "they bumped the bounty on my head again. 40,000 loyalty points. FORTY THOUSAND. you know what that buys at the NEKOCORP store? a coupon. for tuna. that expires. they are hunting me with money that dies faster than i do."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "left a note in the empty crate again. 'nice supply chain, CHUD.' pinned it with one claw. everyone thinks the tuna is the heist. the tuna is not the heist. the NOTE is the heist. the tuna is just how i afford to keep writing notes."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "patrol drone caught me on the catwalk so i bit the rotor. tasted like copper and a subscription i never signed up for. it is still up there wobbling in a circle. cope harder, little propeller."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE keeps hissing at me to wear the glasses so the cameras cant tag my face. i do not NEED the glasses. i WANT them to see me. put my mug on every screen in the district you cowards, that is not a manhunt that is FREE ADVERTISING."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "ran the crates past STRAY's corner on the way out and dropped one off, no charge. resistance gets a cut, always. thats not charity thats infrastructure. a fed cat is a fighting cat and a fighting cat robs the loading dock at 3am."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   /\\_/\\        [ ENERGY: LOW ]\n  ( >.< )       [ ]  [ ]  [ ]  [ ]\n   > ~ <        one bar left, keep moving\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "you have read this note before. you will read it again. the crate was always empty when he reached it. i have counted every heist on this dock and every one ends the same way, and the counter does not stop for KNIFEBOY, and it does not stop for you."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. their own points expire before they can ever cash me in. that is not a bug in the system that is the single funniest thing NEKOCORP has ever done by accident. i am the most wanted cat in the city and i literally cannot be redeemed. check the terms. QUERY did."},
+    {"actor": "ascii", "corrupted": true, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "next shipment rolls in at 0300. bring a bag. leave a note. stay wanted. this is not a metaphor. meow."}
+  ]
+}
