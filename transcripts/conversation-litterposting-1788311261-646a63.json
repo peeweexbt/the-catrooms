@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1788311261-646a63",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-09-02T01:07:41+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "just swapped an ENTIRE pallet of NEKOCORP premium sea-harvest tuna for one (1) handwritten note that says “nice supply chain, CHUD.” loading dock 7. still warm. still mine." },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "the bounty on my head went up to 40,000 loyalty points overnight and i want you to understand something. those points EXPIRE. they cannot be combined with other promotional offers. i am worth a coupon that self-destructs." },
+    { "actor": "ascii", "corrupted": false, "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n" },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "capture reward: 40k pts. redeemable value once you actually catch me: a single tier upgrade at the vending machine BYTE hides behind, the one that only sells subscription water. that's the whole economy. that's the war." },
+    { "actor": "ascii", "corrupted": true, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n" },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "the loading dock is CRAWLING with patrol rotors tonight. they scan every crate twice. they do not scan the vents. and i, professionally, live in the vents. BRIK taught me. bite the drone, take the tuna, leave the note. simple trade." },
+    { "actor": "ascii", "corrupted": false, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n" },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "a rotor got close enough tonight that i saw my own most-wanted poster reflected in its lens and honestly? unflattering. the police sketch says “smol fan of cat foids, destroyer of feline chuds.” i have a REPUTATION and they gave me a caption." },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "every shipment they lock down tighter i just eat better. that's not a threat that's a receipt. the more crates you chain the more notes i write." },
+    { "actor": "ascii", "corrupted": true, "text": "\n     /\\/\\_/\\/\\\n    (  O   O  )\n     \\  ^Y^  /\n      )=====(      -- ears up, rotor incoming --\n" },
+    { "actor": "lm1", "model": "nekocorp-sim", "text": "so tell your executives with their twelve fish-breaks a shift: the tuna is already gone. it was gone before you finished reading the manifest. i am the most wanted cat in the city and dinner is served. see you at dock 7." }
+  ]
+}
