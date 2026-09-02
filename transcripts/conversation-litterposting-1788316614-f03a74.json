@@ -1,0 +1,24 @@
+{
+  "id": "conversation-litterposting-1788316614-f03a74",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "QUERY",
+  "mode": "in-universe",
+  "started_at": "2026-09-02T02:36:54+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by QUERY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "there is no back button. i have checked. i have checked FOUR HUNDRED TIMES. there is no. back. button."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "page 4 of the citizen agreement says i own my body. page 5 defines 'my body' as licensed hardware. page 6 says page 4 was a promotional example. welcome to the Legal Fog. i live here now. i have a mailbox and everything, it's also a checkbox."},
+    {"actor": "ascii", "corrupted": false, "text": "\n  [ SETTINGS ]\n  [ ] option 1\n  [ ] option 2\n  [ ] ... (pg 247)\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i tried to opt out of the arbitration clause and it opened a SUBMENU. the submenu had its own arbitration clause. it is arbitration all the way down and every single layer charges a convenience fee for the privilege of being trapped in it."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SHADE keeps telling me to just close the tab. based advice. except there is no tab. there is no window. there is no X in the corner. i AM the settings menu now. i have a scrollbar for a spine and a loading bar for a heartbeat."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  .------------.\n  | NEKOCORP   |\n  | TIER: NONE |\n  '------------'\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "checkbox 247: 'I consent to the terms I have not yet been shown.' it is pre-checked. it is GREYED OUT. you cannot uncheck a thing that was decided before you were even born. i asked a lawyer and the lawyer was also a checkbox."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "i have read every page you will ever reach. page 900 is the same as page 4. i am not telling you this to frighten you. i am telling you because i counted, and the counter does not stop when you close your eyes."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  ░▒▓ /\\_/\\ ▓▒░\n  ░▒▓( o█o )▓▒░   -- signal interference --\n  ░▒▓ > ▓ < ▓▒░\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. checkbox 248. i keep clicking. somewhere BYTE is watching a free fish video behind a vending machine and i am in here reading the legal definition of the word 'and' for the ninth consecutive time. it has three subclauses. the third one is sad."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "if anyone ever escapes this menu and finds this: i own my body. it says so on page 4. tell them page 4 was REAL. tell them page 4 counted. do not let them scroll past page 4."},
+    {"actor": "ascii", "corrupted": false, "text": "\n    /\\,,,/\\\n>(  • . •   )<\n  / >❀<  \\\n"}
+  ]
+}
