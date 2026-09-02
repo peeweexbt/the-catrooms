@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Don&#x27;t move. that&#x27;s the whole plan and it has been the plan for a long ... · the catrooms</title>
+<style>
+:root {
+  --bg: #07040d;
+  --fg: #d7f2ff;
+  --dim: #7a5c9e;
+  --accent: #00f0ff;
+  --accent2: #ff2ee6;
+  --card: #120a1f;
+  --border: #2a1840;
+}
+* { box-sizing: border-box; }
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", ui-monospace, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  scrollbar-width: auto;
+  scrollbar-color: rgba(255, 46, 230, 0.45) rgba(18, 10, 31, 0.4);
+  cursor: url('assets/cursor-paw.png') 8 8, auto;
+}
+/* custom scrollbar — chunky beveled Y2K-OS chrome in the site's neon
+   palette, kept fairly translucent so it reads as an overlay rather than a
+   solid panel. Firefox only supports the two-color scrollbar-color rule
+   above; Chrome/Safari/Edge get the full retro treatment below. */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, rgba(13, 7, 22, 0.45), rgba(7, 4, 13, 0.45));
+  border-left: 1px solid rgba(42, 24, 64, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 46, 230, 0.18);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.08) 0px,
+      rgba(255, 255, 255, 0.08) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.18) 0%, rgba(0, 240, 255, 0.18) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.18);
+  border-left-color: rgba(255, 255, 255, 0.18);
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-right-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px rgba(255, 46, 230, 0.25), 0 0 2px rgba(0, 240, 255, 0.25);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 46, 230, 0.32);
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0px,
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(180deg, rgba(255, 46, 230, 0.32) 0%, rgba(0, 240, 255, 0.32) 100%);
+  box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), 0 0 3px rgba(0, 240, 255, 0.35);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.45), inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  background-color: rgba(18, 10, 31, 0.35);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: rgba(26, 15, 46, 0.55);
+}
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: linear-gradient(135deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%),
+    linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.7) 48%, rgba(0, 240, 255, 0.7) 52%, transparent 52%);
+}
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: linear-gradient(-135deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 46, 230, 0.7) 48%, rgba(255, 46, 230, 0.7) 52%, transparent 52%);
+}
+::-webkit-scrollbar-corner {
+  background: rgba(7, 4, 13, 0.4);
+}
+.decor-cat {
+  position: absolute;
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  text-shadow: 0 0 6px currentColor;
+}
+.decor-cat.glitching {
+  animation-name: decor-cat-glitch;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes decor-cat-glitch {
+  0%, 88%, 100% { transform: translate(0, 0) skew(0deg); filter: none; }
+  89% { transform: translate(-3px, 2px) skew(4deg); filter: hue-rotate(30deg) saturate(1.6); }
+  91% { transform: translate(3px, -2px) skew(-4deg); filter: hue-rotate(-30deg) saturate(1.6); }
+  93% { transform: translate(-1px, 1px); filter: none; }
+  95%, 100% { transform: translate(0, 0); filter: none; }
+}
+@media (max-width: 900px) {
+  .decor-cat { display: none; }
+}
+.grid, header {
+  position: relative;
+  z-index: 1;
+}
+header {
+  padding: 48px 24px 24px;
+  text-align: center;
+}
+.hero-cat {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 260px;
+  width: 60%;
+  height: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+header h1 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: lowercase;
+}
+.mascot {
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+}
+.site-footer {
+  padding: 24px 16px 48px;
+  text-align: center;
+}
+.site-footer-art {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0 auto;
+  color: var(--dim);
+  font-size: 0.42rem;
+  line-height: 1.15;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.25);
+  white-space: pre;
+  overflow-x: auto;
+}
+/* Rendered as two separate <pre> blocks (see build_site.py) specifically so
+   each centers on its OWN width — the star-field lines run ~219 characters
+   wide (mostly blank padding), while the recognizable city-block art below
+   it is only ~86 characters wide. Sharing one block would let the much
+   wider star field dictate the whole thing's box width, shoving the
+   actual art off-center to the left on any narrow/mobile viewport. On
+   small screens both get scaled down further so neither needs to
+   horizontal-scroll to appear centered. */
+@media (max-width: 600px) {
+  .site-footer-city { font-size: 0.3rem; }
+  .site-footer-sky { font-size: 0.14rem; }
+}
+.screensaver-trigger {
+  display: inline-block;
+  margin: 18px auto 0;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--fg);
+  font-family: inherit;
+  text-decoration: none;
+  font-size: 0.88rem;
+  letter-spacing: 0.05em;
+  padding: 9px 18px;
+  border-radius: 3px;
+  cursor: url('assets/cursor-paw.png') 8 8, pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.screensaver-trigger:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.ss-cat {
+  position: absolute;
+  margin: 0;
+  white-space: pre;
+  line-height: 1.15;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 8px currentColor;
+  transition: opacity 0.9s ease;
+}
+.ss-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+header p {
+  color: var(--dim);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px 14px;
+    gap: 12px;
+  }
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--fg);
+  display: block;
+  transition: border-color 0.15s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+}
+.card .tag {
+  color: var(--dim);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.card .title {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+.back {
+  display: inline-block;
+  margin: 24px;
+  color: var(--dim);
+  text-decoration: none;
+}
+.back:hover { color: var(--accent); }
+.transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+.turn {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.turn.lm1 { border-color: var(--accent2); }
+.turn.lm2 { border-color: var(--accent); }
+.turn .who {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  padding: 12px 0;
+  margin: 12px 0 28px;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.35);
+  font-size: 0.85rem;
+}
+.turn.ascii .who {
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.note {
+  color: var(--dim);
+  font-size: 0.8rem;
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 0 24px;
+}
+.rant-tag-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--accent2);
+  color: #07040d;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+.card.rant-card { border-color: var(--accent2); }
+.narrator-badge {
+  max-width: 760px;
+  margin: 16px auto 0;
+  padding: 0 24px;
+  color: var(--dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.narrator-badge strong {
+  color: var(--accent2);
+}
+.rant-transcript {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 100px;
+}
+.rant-page-shake { animation: page-shake 6s infinite; }
+@keyframes page-shake {
+  0%, 96%, 100% { transform: translate(0, 0); }
+  97% { transform: translate(1px, -1px); }
+  98% { transform: translate(-1px, 1px); }
+  99% { transform: translate(1px, 1px); }
+}
+.rant-turn {
+  border: none;
+  border-left: 3px solid var(--accent2);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  background: rgba(255, 46, 230, 0.05);
+  border-radius: 2px;
+  font-size: 1.05rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  opacity: 0;
+  transform: translateX(-8px) rotate(-0.4deg);
+  animation: rant-in 0.45s ease forwards;
+}
+.rant-turn.ascii {
+  border-left: none;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  text-align: center;
+  color: var(--accent);
+  background: none;
+}
+.rant-turn.ascii .who {
+  display: block;
+  color: var(--dim);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+.rant-turn.ascii.corrupted {
+  color: var(--accent2);
+  text-shadow: 2px 0 var(--accent), -2px 0 #ff003c;
+  filter: contrast(1.3);
+  animation: rant-in 0.45s ease forwards, corrupt-flicker 1.7s infinite steps(2);
+}
+.rant-turn.ascii.corrupted .who {
+  color: var(--accent2);
+}
+@keyframes corrupt-flicker {
+  0%, 100% { opacity: 1; transform: translate(0, 0); }
+  10% { opacity: 0.55; transform: translate(-2px, 1px) scaleY(1.05); }
+  20% { opacity: 1; transform: translate(2px, -1px); }
+  35% { opacity: 0.7; transform: translate(-1px, -2px) scaleX(1.02); }
+  50% { opacity: 1; transform: translate(0, 0); }
+  65% { opacity: 0.5; transform: translate(3px, 0); }
+  80% { opacity: 1; transform: translate(-2px, 1px); }
+}
+@keyframes rant-in {
+  to { opacity: 1; transform: translateX(0) rotate(0); }
+}
+.glitch-word {
+  display: inline-block;
+  animation: glitch-flicker 2.6s infinite;
+  animation-delay: var(--gd, 0s);
+}
+@keyframes glitch-flicker {
+  0%, 92%, 100% { color: inherit; text-shadow: none; transform: none; }
+  93% { color: var(--accent); text-shadow: 2px 0 var(--accent2), -2px 0 var(--accent); transform: translateY(-1px) skewX(4deg); }
+  95% { color: var(--accent2); text-shadow: -2px 0 var(--accent), 2px 0 var(--accent2); transform: translateY(1px) skewX(-4deg); }
+  97% { color: inherit; text-shadow: none; transform: none; }
+}
+.litterposting-btn {
+  display: block;
+  margin: 28px auto 8px;
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  font-size: 1rem;
+  padding: 12px 26px;
+  border-radius: 2px;
+  cursor: url('assets/cursor-paw.png') 8 8, pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 22px rgba(255, 46, 230, 0.6);
+  box-shadow: 0 0 8px rgba(255, 46, 230, 0.35), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.litterposting-btn::before { content: "[ "; }
+.litterposting-btn::after { content: " ]"; }
+.litterposting-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent), 0 0 28px rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.45), inset 0 0 10px rgba(0, 240, 255, 0.18);
+}
+.litterposting-btn:active { transform: scale(0.97); }
+.litterposting-btn.playing { animation: btn-glow-pulse 0.6s infinite alternate; }
+@keyframes btn-glow-pulse {
+  from {
+    text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2), 0 0 20px rgba(255, 46, 230, 0.6);
+    box-shadow: 0 0 8px rgba(255, 46, 230, 0.3), inset 0 0 8px rgba(255, 46, 230, 0.12);
+  }
+  to {
+    text-shadow: 0 0 8px var(--accent2), 0 0 20px var(--accent2), 0 0 40px rgba(255, 46, 230, 0.95);
+    box-shadow: 0 0 22px rgba(255, 46, 230, 0.7), inset 0 0 14px rgba(255, 46, 230, 0.3);
+  }
+}
+.hero-glitch-block {
+  display: block;
+  max-width: 920px;
+  margin: 28px auto 8px;
+  padding: 18px 14px;
+  color: var(--fg);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  animation: hero-shake 5.5s infinite;
+}
+.hero-figure {
+  display: block;
+  white-space: pre;
+  text-align: center;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  margin: 10px auto;
+}
+.hero-prose {
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 640px;
+  margin: 12px auto;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+@keyframes hero-shake {
+  0%, 94%, 100% { transform: translate(0, 0); filter: none; }
+  95% { transform: translate(1px, -1px); filter: hue-rotate(8deg); }
+  96% { transform: translate(-1px, 1px); filter: hue-rotate(-8deg); }
+  97% { transform: translate(1px, 1px); filter: none; }
+}
+@media (max-width: 720px) {
+  .hero-figure { font-size: 0.4rem; }
+  .hero-prose { font-size: 0.72rem; }
+}
+.header-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px auto 0;
+}
+.header-links .screensaver-trigger { margin: 0; }
+.ascii-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 8px auto 64px;
+  padding: 0 32px;
+}
+.ascii-gallery-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.15s ease;
+}
+.ascii-gallery-card:hover { border-color: var(--accent); }
+.ascii-gallery-card .num {
+  display: block;
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ascii-gallery-card pre {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.62rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+  text-shadow: 0 0 5px currentColor;
+}
+@media (max-width: 480px) {
+  .ascii-gallery-card pre { font-size: 0.48rem; }
+}
+.catgen-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px auto 8px;
+}
+.catgen-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: url('assets/cursor-paw.png') 8 8, pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px var(--accent2), 0 0 10px var(--accent2);
+  box-shadow: 0 0 6px rgba(255, 46, 230, 0.3), inset 0 0 6px rgba(255, 46, 230, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, text-shadow 0.15s ease;
+}
+.catgen-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4), inset 0 0 8px rgba(0, 240, 255, 0.15);
+}
+.catgen-btn:active { transform: scale(0.97); }
+.catgen-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+  text-shadow: none;
+}
+.catgen-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: catgen-blink 0.8s steps(1) infinite;
+}
+@keyframes catgen-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.catgen-output-wrap {
+  max-width: 1400px;
+  margin: 24px auto 64px;
+  padding: 0 24px;
+}
+.catgen-output {
+  display: block;
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 28px;
+  min-height: 560px;
+  max-height: 85vh;
+  resize: vertical;
+  overflow-y: auto;
+  white-space: pre;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--fg);
+  text-shadow: 0 0 4px currentColor;
+}
+.catgen-output:focus { outline: 1px solid var(--accent); }
+.catgen-hint {
+  text-align: center;
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
+.meowizens-list {
+  max-width: 780px;
+  margin: 8px auto 64px;
+  padding: 0 24px;
+}
+.meowizen-card {
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+}
+.meowizen-card:last-child { border-bottom: none; }
+.meowizen-num {
+  color: var(--dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.meowizen-name-heading {
+  color: var(--accent2);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  margin: 2px 0 12px;
+  text-shadow: 0 0 6px rgba(255, 46, 230, 0.4);
+}
+.meowizen-stat {
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--accent);
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.25);
+  margin: 0 0 16px;
+}
+.meowizen-bio {
+  color: var(--fg);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 480px) {
+  .meowizen-stat { font-size: 0.62rem; }
+}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; back</a>
+<div class="note">Authored by a single scheduled automated session playing both roles in one pass (scheduled automation, runs every hour) — not two independent live API calls like a manual `python backrooms.py` run.</div>
+<div class="transcript">
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>Don&#x27;t move. that&#x27;s the whole plan and it has been the plan for a long time now. i&#x27;m folded down small on the warm lid of a humming box, tail wrapped, eyes half. the little green light on the flat grey box below me blinks. i count the blinks. slow-slow-fast, slow-slow-fast. when the fast part comes the whole stack breathes a little louder in my chest and the wire behind it goes tight and interesting. i am not hungry enough yet to leave the counting. *one ear tips toward the wire. i wait for the fast part.*</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the fast part comes. the grey box shivers its light green-green-GREEN and under your paws the hum climbs a half-step, a fat warm river of current running somewhere it was told not to run. behind the box a bundle of wire sweats a smell you know better than your own mother — hot rubber, dust cooked soft, the faint copper underneath like a tooth. a speaker bolted to the alley wall clears its throat and murmurs a jingle, half the words missing: &quot;neko— your water, your— rewarded—&quot; then dies back to static. the vending machine you live behind ticks. it is deciding whether to charge someone for standing near it.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*i pour down off the warm lid without a sound, land soft behind the grey box where the wire-smell lives.* this is mine. i wore this corner in. i put my teeth on this exact bundle every night where the casing already went soft and split, and i chew — not to eat, the rubber is nothing, it&#x27;s the buzz it gives my jaw, the little sting-tingle that runs up into my back teeth and tells me the river is fat tonight. *chew. chew. i feel the fast-part in my molars now.* good. full river. i press my cheek to the warm bundle and leave myself on it so everyone knows.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the casing gives its soft familiar squeak under your teeth and the tingle answers, sharp and bright, all the way to the roots. the river IS fat. somewhere three walls away a room full of stacked boxes is doing work it was never licensed to do and you are tasting the edge of it. then — a change in the air at your left, cold and clean, a draft off the mouth of the alley. wet neon paints the puddle there pink, then red, then pink. up high, on the lip of the arcology overhang, a shape sits that is only a shape: a lean cat-silhouette, dead still, two flat mirror-discs where eyes should be, throwing the sign-glow back at itself. it does not look at you. it looks at everything. it has been there the whole time.</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>      )))
+     )) ))
+    [ROUTER]
+    |__||__|</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*jaw stops. teeth still in the wire. i don&#x27;t turn my head, only my eyes, up to the mirror-disc shape on the ledge.* i know that stillness. that&#x27;s the kind of stillness that costs something, the kind you only hold if you&#x27;ve already decided you don&#x27;t need to run. i&#x27;ve smelled that cat&#x27;s leftovers before — cold, no fear in them, like it eats when it wants and not when it&#x27;s allowed. *i unhook my teeth slow. i do not make myself bigger. i make myself boring.* not tonight, shape. you keep your ledge. i keep my river.</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the shape accepts the boring. one mirror-disc dips, a slow blink you feel more than see, and then it goes back to watching the everything and not the you. respect, or something that wears respect&#x27;s coat. but the draft that carried it in carries something else now, riding underneath: a thin oiled whine, still far, still a rumor. the puddle stops going pink-red-pink and just goes white — a hard flat white, from above. the jingle-speaker coughs awake again, too loud this time, cheerful and wrong: &quot;NEKOCORP reminds valued strays — CURFEW enrichment begins in— &quot; and cuts out. the white light swings. the whine is not a rumor anymore.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*flat to the grating. belly cold, ears pinned, pupils blown wide.* that whine. i hate that whine, it lives in my back teeth same as the river does but it&#x27;s the wrong kind of buzz — dead metal, no warmth in it, a thing that hums because it&#x27;s coming not because it&#x27;s alive. *i don&#x27;t run yet. running is a shape they can see. i slide, one paw, into the black gap between my box and the wall, the dark that&#x27;s exactly my size.* the white light wants the open. i give it nothing to want. *i make my breathing small.*</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>you pour into the dark and the dark takes you. good. the whine swells into a full rotor-thrum that vibrates the wet grate under your chin, and the white searchlight drops into the alley like a bucket of cold — it slaps the grey box, the sweating wire, the wet pink puddle, sweeps the exact warm lid where you sat counting blinks a breath ago. a lens somewhere clicks through settings. a bored synthetic voice leaks down, not to you, to no one, to a log: &quot;—sector nine, one heat-signature, feline, unmonetized. flag for tracking. resume patrol.&quot; the light lifts. the thrum tilts away, east, toward the noodle vents. but the word sits in the air where it fell: *flagged.*</div>
+<div class="turn ascii"><span class="who">-- signal interference --</span>   \   /
+    \ /
+   --o--
+    / \
+   /   \</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*i hold the dark until the dead-metal buzz drains out of my molars, until it&#x27;s only the river&#x27;s warm hum left. then i breathe.* flagged. i don&#x27;t know the word but i know the weight of it, the way it landed and stuck like a burr in fur. it means i&#x27;m a thing on a list now, a smell they&#x27;ll come back sniffing for. *i lick the burr-feeling off my shoulder, three hard strokes, put myself back together.* fine. lists get long. i&#x27;ll be old smell by the time they read it. *i ease back to the wire, but i don&#x27;t chew — i just lean, and let the fat river warm the fear out of my belly.*</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>the warm bundle takes your weight like it always has, patient, thrumming its unlicensed river through your ribs, and for a stretch the alley is only yours again: rubber and copper and cooked dust, the pink puddle breathing pink-red-pink once more, the vending machine ticking its endless little greed. far east, the drone&#x27;s whine folds into the general grind of the city and is gone. on the high ledge, the mirror-eyed shape has left without a sound — of course it has — leaving only a single mirror-bright hair snagged on the overhang lip, catching the sign-glow, blinking like one more small green light for you to count.</div>
+<div class="turn lm1"><span class="who">explorer (DYSTOPIA)</span>*i see the little bright blink up there where the shape used to be and something in me settles.* one more light. slow-slow-fast. i can count that one too. *i knead the warm bundle twice, claws in, claws out, marking it the only way that matters — this is mine, the river is mine, the counting is mine, and lists are just human smells that fade.* the hunger&#x27;s back now, quiet and honest, easier than fear. i uncurl. i point my nose east where the vents went cold three hours ago and might&#x27;ve gone warm again. *i go, low and boring, the way that keeps me off every list that matters.*</div>
+<div class="turn lm2"><span class="who">simulator (DYSTOPIA)</span>you flow east and the city lets you, boring and low, a grey nothing under a sky that isn&#x27;t sky. the noodle vents breathe warm as you near them — synthfish, real heat, the good honest reek of somewhere a machine forgot to charge for. behind you your alley hums on without you, faithful. above you a fresh billboard swims to life, a giant contented cat lapping glowing milk, and its voice follows you down the block, soft, almost kind, almost a lie you could love: &quot;you are not on a list. you are a valued member of the NEKOCORP family.&quot; the vents hiss. the dark opens. the night, as ever, belongs to whoever moves quietest — and tonight, that is you.</div>
+</div>
+</body>
+</html>

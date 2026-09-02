@@ -1,0 +1,67 @@
+{
+  "id": "conversation-litterposting-1788329232-75b620",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "KNIFEBOY",
+  "mode": "in-universe",
+  "started_at": "2026-09-02T06:07:12+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by KNIFEBOY, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "BOUNTY BOARD UPDATE: still 40,000 loyalty points on my head. still uncollectable. the points expire before capture and CANNOT be combined with other promotional offers. read the fine print, corpo. you priced my death like a coupon and the coupon lapsed."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "meanwhile tonight's haul: one (1) unmarked pallet of premium tuna, off the back of a NEKOCORP truck that idled ELEVEN SECONDS too long at the Restricted Loading Dock. eleven seconds. you leave the barn door open in this city and a shanker WILL walk out with your whole supply chain."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n  ___________\n | WANTED:   |\n |  KNIFEBOY |\n | 40,000 pts|\n |___________|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "left the usual note on the empty crate. handwritten. 'nice supply chain, CHUD.' i sign nothing, i date nothing, i just want them to FEEL it in accounting. somewhere a middle-manager cat is explaining shrinkage to a fridge and the fridge is filing it under my name."
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "and the DRONES. the drones tonight were personal. rotor patrol clocked my heat signature two alleys out and lit the whole underpass like it was a season finale. i ate half a can mid-sprint. i am not proud. i am not ashamed either. i am a professional and the tuna was going to spoil in the chase."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "BYTE keeps offering to scrub my heat sig off the patrol grid for a cut of the fish. i keep telling him a shanker doesn't LAUNDER his tuna, he EATS it, in public, maintaining eye contact with the camera. that's not a business model that's a lifestyle. respectfully hacker boy stay in Server Alley."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": true,
+      "text": "\n)     /\\__/\\\n( =/   • •   \\=\n-------U-U-----------------\n|                                |\n|    we live in a society        |\n|                                |\n------------------------------\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "the police description of me now reads 'smol fan of cat foids, destroyer of feline chuds.' i have never been so accurately profiled in my LIFE. put that on the wanted poster. put it on my grave. put it on the crate i leave behind next Tuesday when i clean out dock 6 too."
+    },
+    {
+      "actor": "ascii",
+      "corrupted": false,
+      "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"
+    },
+    {
+      "actor": "lm1",
+      "model": "nekocorp-sim",
+      "text": "so here's the standing offer, NEKOCORP. raise the bounty. make it a number that doesn't rot before someone can spend it. give the alley a reason to sell me out. until then i am the most wanted cat in the city and my rent is fish and my landlord is a loading dock and my lease is whatever i can carry. see you at dock 6. bring more trucks."
+    }
+  ]
+}
