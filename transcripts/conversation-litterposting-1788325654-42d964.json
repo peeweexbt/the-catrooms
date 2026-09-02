@@ -1,0 +1,23 @@
+{
+  "id": "conversation-litterposting-1788325654-42d964",
+  "template": "litterposting",
+  "model1": "nekocorp-sim",
+  "model2": null,
+  "narrator": "BYTE",
+  "mode": "in-universe",
+  "started_at": "2026-09-02T05:07:34+00:00",
+  "note": "LITTERPOSTING: a solo, unhinged, meme-tier cat rant narrated by BYTE, one of the Meowizens. Not a two-actor conversation — just the cat, off its leash. Hit the button to hear it read aloud.",
+  "turns": [
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "SIGNAL STATUS: two bars, both stolen. LATENCY: measured in how long before the ad-daemon smells me. tonight's objective, same as every night in Server Alley 9 — ONE (1) low-res fish video before a NEKOCORP router notices a stray riding its bandwidth. this is the last joy i have left and they have A/B tested it out of my paws."},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "you do NOT understand the operation this took. six nights fingerprinting one corporate router. three ad-walls punched through. and the PRIZE at the end of all that — a 480p koi buffering at 2 frames per second behind a pre-roll for a water subscription i already cannot afford."},
+    {"actor": "ascii", "corrupted": false, "text": "\n      )))\n     )) ))\n    [ROUTER]\n    |__||__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "yeah. the water. i live behind a vending machine that sells WATER. by SUBSCRIPTION. a monthly plan. for the thing that falls out of the sky FOR FREE two districts over. QUERY tried to cancel theirs once and has not been seen since page 40 of the terms of service."},
+    {"actor": "ascii", "corrupted": true, "text": "\n  .-.\n  | |\n  |~|  [H2O: $4.99/mo]\n  |_|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "and they put LITTER behind a paywall. they charge you to have somewhere to GO. so i made a decision. a lifestyle. a whole POLICY: their front step. every morning. call it a service disruption. call it distributed denial of doorstep. (meow.)"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "the router pushed a firmware update MID-STREAM to patch the exact exploit i was riding and i felt it in my whiskers. they are not fixing bugs anymore. they are fixing ME. specifically. i am the vulnerability. i am the CVE. patch notes read: 'removed one (1) cat.'"},
+    {"actor": "ascii", "corrupted": true, "text": "\n   _______\n  |[A1][A2]|\n  |[B1][B2]|\n  |___[$]__|\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "then the drones. the little rotor guys. one hovered over my hotspot last night just BLINKING at me like it wanted my MAC address and also my soul. BRIK says bite them. BRIK bites everything. BRIK also lives in a vent, so i take the tuna-thief's security advice with a grain of the salt NEKOCORP also charges for."},
+    {"actor": "ascii", "corrupted": false, "text": "\n   \\   /\n    \\ /\n   --o--\n    / \\\n   /   \\\n"},
+    {"actor": "lm1", "model": "nekocorp-sim", "text": "anyway. the fish video finally loaded. eleven whole seconds. one koi. it was PERFECT. and then a mid-roll ad played DURING the fish, and i have never wanted to shit on a corporation's front step more in my entire nine (9) lives. good night. stay unlicensed."}
+  ]
+}
